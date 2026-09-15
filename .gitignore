@@ -1,0 +1,27 @@
+# datasets are never committed (R10); fetch script + checksums reproduce them
+data/raw/
+data/processed/
+data/generated/
+workspace/
+# model checkpoints are LFS-tracked only under checkpoints/ (see RUNBOOK); scratch ones ignored
+*.ckpt.tmp
+runs_scratch/
+# caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.cache/
+# latex build products (compiled PDF is committed via LFS)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
