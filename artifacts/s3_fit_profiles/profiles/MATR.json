@@ -1,0 +1,5842 @@
+{
+  "dataset": "MATR",
+  "declared_used": {
+    "q_nom_Ah": 1.1,
+    "rho": 0.8,
+    "k_q1": 20,
+    "sg_window": 11,
+    "sg_polyorder": 2,
+    "detection_k": 2.5,
+    "detection_m": 2,
+    "detection_max_duration": 11,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage",
+      "internal_resistance",
+      "temperature_mean"
+    ],
+    "cleaning_rule": {
+      "name": "D12",
+      "drop_degenerate": true,
+      "capacity_low_frac": null,
+      "capacity_high_frac": null,
+      "isolated_excursion_frac": 0.05,
+      "drop_recovered_collapse": true
+    },
+    "channel_rule": {
+      "frac": 0.05
+    },
+    "channels_available": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage",
+      "internal_resistance",
+      "temperature_mean"
+    ]
+  },
+  "units": {
+    "fitting": [
+      "MATR_b1c1",
+      "MATR_b1c11",
+      "MATR_b1c12",
+      "MATR_b1c13",
+      "MATR_b1c18",
+      "MATR_b1c19",
+      "MATR_b1c20",
+      "MATR_b1c21",
+      "MATR_b1c22",
+      "MATR_b1c23",
+      "MATR_b1c25",
+      "MATR_b1c27",
+      "MATR_b1c28",
+      "MATR_b1c29",
+      "MATR_b1c30",
+      "MATR_b1c31",
+      "MATR_b1c32",
+      "MATR_b1c33",
+      "MATR_b1c34",
+      "MATR_b1c35",
+      "MATR_b1c37",
+      "MATR_b1c38",
+      "MATR_b1c39",
+      "MATR_b1c4",
+      "MATR_b1c40",
+      "MATR_b1c42",
+      "MATR_b1c43",
+      "MATR_b1c5",
+      "MATR_b1c9",
+      "MATR_b2c0",
+      "MATR_b2c10",
+      "MATR_b2c11",
+      "MATR_b2c17",
+      "MATR_b2c18",
+      "MATR_b2c19",
+      "MATR_b2c2",
+      "MATR_b2c20",
+      "MATR_b2c21",
+      "MATR_b2c22",
+      "MATR_b2c24",
+      "MATR_b2c25",
+      "MATR_b2c27",
+      "MATR_b2c28",
+      "MATR_b2c29",
+      "MATR_b2c30",
+      "MATR_b2c32",
+      "MATR_b2c34",
+      "MATR_b2c35",
+      "MATR_b2c36",
+      "MATR_b2c37",
+      "MATR_b2c38",
+      "MATR_b2c39",
+      "MATR_b2c41",
+      "MATR_b2c42",
+      "MATR_b2c44",
+      "MATR_b2c45",
+      "MATR_b2c47",
+      "MATR_b2c6",
+      "MATR_b3c1",
+      "MATR_b3c10",
+      "MATR_b3c11",
+      "MATR_b3c12",
+      "MATR_b3c13",
+      "MATR_b3c14",
+      "MATR_b3c16",
+      "MATR_b3c17",
+      "MATR_b3c18",
+      "MATR_b3c2",
+      "MATR_b3c20",
+      "MATR_b3c22",
+      "MATR_b3c23",
+      "MATR_b3c24",
+      "MATR_b3c25",
+      "MATR_b3c26",
+      "MATR_b3c27",
+      "MATR_b3c28",
+      "MATR_b3c29",
+      "MATR_b3c3",
+      "MATR_b3c30",
+      "MATR_b3c31",
+      "MATR_b3c32",
+      "MATR_b3c34",
+      "MATR_b3c35",
+      "MATR_b3c36",
+      "MATR_b3c38",
+      "MATR_b3c39",
+      "MATR_b3c4",
+      "MATR_b3c42",
+      "MATR_b3c43",
+      "MATR_b3c44",
+      "MATR_b3c45",
+      "MATR_b3c5",
+      "MATR_b3c6",
+      "MATR_b3c7",
+      "MATR_b3c8"
+    ],
+    "fitting_passing_guard": [
+      "MATR_b1c1",
+      "MATR_b1c11",
+      "MATR_b1c12",
+      "MATR_b1c13",
+      "MATR_b1c18",
+      "MATR_b1c19",
+      "MATR_b1c20",
+      "MATR_b1c21",
+      "MATR_b1c22",
+      "MATR_b1c23",
+      "MATR_b1c25",
+      "MATR_b1c27",
+      "MATR_b1c28",
+      "MATR_b1c29",
+      "MATR_b1c30",
+      "MATR_b1c31",
+      "MATR_b1c32",
+      "MATR_b1c33",
+      "MATR_b1c34",
+      "MATR_b1c35",
+      "MATR_b1c37",
+      "MATR_b1c38",
+      "MATR_b1c39",
+      "MATR_b1c4",
+      "MATR_b1c40",
+      "MATR_b1c42",
+      "MATR_b1c43",
+      "MATR_b1c5",
+      "MATR_b1c9",
+      "MATR_b2c0",
+      "MATR_b2c10",
+      "MATR_b2c11",
+      "MATR_b2c17",
+      "MATR_b2c18",
+      "MATR_b2c19",
+      "MATR_b2c2",
+      "MATR_b2c20",
+      "MATR_b2c21",
+      "MATR_b2c22",
+      "MATR_b2c24",
+      "MATR_b2c25",
+      "MATR_b2c27",
+      "MATR_b2c28",
+      "MATR_b2c29",
+      "MATR_b2c30",
+      "MATR_b2c32",
+      "MATR_b2c34",
+      "MATR_b2c35",
+      "MATR_b2c36",
+      "MATR_b2c37",
+      "MATR_b2c38",
+      "MATR_b2c39",
+      "MATR_b2c41",
+      "MATR_b2c42",
+      "MATR_b2c44",
+      "MATR_b2c45",
+      "MATR_b2c47",
+      "MATR_b2c6",
+      "MATR_b3c1",
+      "MATR_b3c10",
+      "MATR_b3c11",
+      "MATR_b3c12",
+      "MATR_b3c13",
+      "MATR_b3c14",
+      "MATR_b3c16",
+      "MATR_b3c17",
+      "MATR_b3c18",
+      "MATR_b3c2",
+      "MATR_b3c20",
+      "MATR_b3c22",
+      "MATR_b3c23",
+      "MATR_b3c24",
+      "MATR_b3c25",
+      "MATR_b3c26",
+      "MATR_b3c27",
+      "MATR_b3c28",
+      "MATR_b3c29",
+      "MATR_b3c3",
+      "MATR_b3c30",
+      "MATR_b3c31",
+      "MATR_b3c32",
+      "MATR_b3c34",
+      "MATR_b3c35",
+      "MATR_b3c36",
+      "MATR_b3c38",
+      "MATR_b3c39",
+      "MATR_b3c4",
+      "MATR_b3c42",
+      "MATR_b3c43",
+      "MATR_b3c44",
+      "MATR_b3c45",
+      "MATR_b3c5",
+      "MATR_b3c6",
+      "MATR_b3c7",
+      "MATR_b3c8"
+    ],
+    "fitting_reaching_eol": [
+      "MATR_b1c1",
+      "MATR_b1c11",
+      "MATR_b1c18",
+      "MATR_b1c19",
+      "MATR_b1c20",
+      "MATR_b1c21",
+      "MATR_b1c23",
+      "MATR_b1c25",
+      "MATR_b1c27",
+      "MATR_b1c28",
+      "MATR_b1c29",
+      "MATR_b1c30",
+      "MATR_b1c31",
+      "MATR_b1c32",
+      "MATR_b1c33",
+      "MATR_b1c34",
+      "MATR_b1c35",
+      "MATR_b1c37",
+      "MATR_b1c38",
+      "MATR_b1c39",
+      "MATR_b1c4",
+      "MATR_b1c40",
+      "MATR_b1c42",
+      "MATR_b1c43",
+      "MATR_b1c5",
+      "MATR_b1c9",
+      "MATR_b2c0",
+      "MATR_b2c10",
+      "MATR_b2c11",
+      "MATR_b2c17",
+      "MATR_b2c18",
+      "MATR_b2c19",
+      "MATR_b2c2",
+      "MATR_b2c20",
+      "MATR_b2c21",
+      "MATR_b2c22",
+      "MATR_b2c24",
+      "MATR_b2c25",
+      "MATR_b2c27",
+      "MATR_b2c28",
+      "MATR_b2c29",
+      "MATR_b2c30",
+      "MATR_b2c32",
+      "MATR_b2c34",
+      "MATR_b2c35",
+      "MATR_b2c36",
+      "MATR_b2c37",
+      "MATR_b2c38",
+      "MATR_b2c39",
+      "MATR_b2c41",
+      "MATR_b2c42",
+      "MATR_b2c44",
+      "MATR_b2c45",
+      "MATR_b2c47",
+      "MATR_b2c6",
+      "MATR_b3c1",
+      "MATR_b3c10",
+      "MATR_b3c11",
+      "MATR_b3c12",
+      "MATR_b3c13",
+      "MATR_b3c14",
+      "MATR_b3c16",
+      "MATR_b3c17",
+      "MATR_b3c18",
+      "MATR_b3c2",
+      "MATR_b3c20",
+      "MATR_b3c22",
+      "MATR_b3c24",
+      "MATR_b3c25",
+      "MATR_b3c26",
+      "MATR_b3c27",
+      "MATR_b3c28",
+      "MATR_b3c29",
+      "MATR_b3c3",
+      "MATR_b3c30",
+      "MATR_b3c31",
+      "MATR_b3c34",
+      "MATR_b3c35",
+      "MATR_b3c36",
+      "MATR_b3c38",
+      "MATR_b3c39",
+      "MATR_b3c4",
+      "MATR_b3c42",
+      "MATR_b3c43",
+      "MATR_b3c44",
+      "MATR_b3c45",
+      "MATR_b3c5",
+      "MATR_b3c6",
+      "MATR_b3c7",
+      "MATR_b3c8"
+    ]
+  },
+  "estimated_from_data": {
+    "E1_theta_distribution": {
+      "family": "two_term_exponential",
+      "param_names": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "n_units": 90,
+      "per_unit": [
+        {
+          "cell_id": "MATR_b1c1",
+          "family_params": [
+            1.0029000941409623,
+            -0.031608493008071746,
+            -0.000180290750518414,
+            3.0350977854206374
+          ],
+          "q1": 1.082415053379957,
+          "T": 2158.0,
+          "t1": 14,
+          "n_positive": 4,
+          "n_negative": 2,
+          "fit_positions": 2145,
+          "noise": {
+            "capacity": {
+              "variance": 3.852059372275561e-06,
+              "phi": 0.9439433953079204,
+              "n_used": 2130
+            },
+            "charge_time": {
+              "variance": 2.235652150734328,
+              "phi": 0.8106708740007466,
+              "n_used": 2053
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0012843418456732058,
+              "phi": 0.9831355324987833,
+              "n_used": 2130
+            },
+            "internal_resistance": {
+              "variance": 2.3435513151843198e-07,
+              "phi": 0.9089107404534292,
+              "n_used": 2127
+            },
+            "temperature_mean": {
+              "variance": 0.6386626270538809,
+              "phi": 0.8578811819554241,
+              "n_used": 2128
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c11",
+          "family_params": [
+            1.000896037557068,
+            -0.014276660446054067,
+            -0.000339356264765061,
+            7.885770977755545
+          ],
+          "q1": 1.0602274261072295,
+          "T": 786.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 767,
+          "noise": {
+            "capacity": {
+              "variance": 4.727295702739164e-06,
+              "phi": 0.9817995560783653,
+              "n_used": 767
+            },
+            "charge_time": {
+              "variance": 0.5713158871314605,
+              "phi": 0.7271499077579879,
+              "n_used": 762
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00014720078915392374,
+              "phi": 0.9829461462845118,
+              "n_used": 767
+            },
+            "internal_resistance": {
+              "variance": 8.702278487575313e-08,
+              "phi": 0.9834810826779212,
+              "n_used": 766
+            },
+            "temperature_mean": {
+              "variance": 0.7287307784919721,
+              "phi": 0.9626106267687915,
+              "n_used": 767
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c18",
+          "family_params": [
+            1.0026253308346211,
+            -0.09700181024476962,
+            -8.665654401222438e-06,
+            13.939704309218518
+          ],
+          "q1": 1.070131970396274,
+          "T": 688.0,
+          "t1": 19,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 670,
+          "noise": {
+            "capacity": {
+              "variance": 4.256462823699026e-06,
+              "phi": 0.9408793961306623,
+              "n_used": 662
+            },
+            "charge_time": {
+              "variance": 1.18090288840636,
+              "phi": 0.7459032142002774,
+              "n_used": 636
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00011608230961319094,
+              "phi": 0.9414376309253428,
+              "n_used": 662
+            },
+            "internal_resistance": {
+              "variance": 7.834423964384462e-07,
+              "phi": 0.9700671724369375,
+              "n_used": 662
+            },
+            "temperature_mean": {
+              "variance": 0.8972774324967469,
+              "phi": 0.962168735464833,
+              "n_used": 662
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c19",
+          "family_params": [
+            1.000817696706045,
+            -0.023309666133402986,
+            -0.0008450073009798688,
+            6.8416621919555
+          ],
+          "q1": 1.0891354750582787,
+          "T": 786.0,
+          "t1": 15,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 772,
+          "noise": {
+            "capacity": {
+              "variance": 7.702923629403237e-06,
+              "phi": 0.9875293670148851,
+              "n_used": 762
+            },
+            "charge_time": {
+              "variance": 1.8302533827334002,
+              "phi": 0.878400150407224,
+              "n_used": 742
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004034279161815452,
+              "phi": 0.9894210873704354,
+              "n_used": 762
+            },
+            "internal_resistance": {
+              "variance": 2.571175004223771e-07,
+              "phi": 0.9844696909102576,
+              "n_used": 761
+            },
+            "temperature_mean": {
+              "variance": 0.6176130255244522,
+              "phi": 0.9690373755860628,
+              "n_used": 762
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c20",
+          "family_params": [
+            1.0065607136338868,
+            -0.2210422466893494,
+            -0.0001971409195842962,
+            11.126907712502092
+          ],
+          "q1": 1.0762344988345025,
+          "T": 532.0,
+          "t1": 7,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 526,
+          "noise": {
+            "capacity": {
+              "variance": 2.12956328099847e-06,
+              "phi": 0.9579856614193539,
+              "n_used": 515
+            },
+            "charge_time": {
+              "variance": 1.0844515274438773,
+              "phi": 0.770442756925886,
+              "n_used": 502
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00020502558017069524,
+              "phi": 0.9766431230350369,
+              "n_used": 515
+            },
+            "internal_resistance": {
+              "variance": 8.834047046796677e-08,
+              "phi": 0.9834002488516999,
+              "n_used": 515
+            },
+            "temperature_mean": {
+              "variance": 1.214648184626086,
+              "phi": 0.9922507442673029,
+              "n_used": 515
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c21",
+          "family_params": [
+            1.0054461638321324,
+            -0.15504458717861555,
+            -5.2878238980604414e-05,
+            13.67810606000644
+          ],
+          "q1": 1.086218375291379,
+          "T": 557.0,
+          "t1": 7,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 551,
+          "noise": {
+            "capacity": {
+              "variance": 2.2997591195902532e-06,
+              "phi": 0.9335516671873066,
+              "n_used": 547
+            },
+            "charge_time": {
+              "variance": 1.043360911325185,
+              "phi": 0.8037536022341961,
+              "n_used": 537
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002676583566971121,
+              "phi": 0.9636284227557901,
+              "n_used": 546
+            },
+            "internal_resistance": {
+              "variance": 1.2207216743673234e-07,
+              "phi": 0.961901093677257,
+              "n_used": 546
+            },
+            "temperature_mean": {
+              "variance": 1.395930692994518,
+              "phi": 0.9900451391692526,
+              "n_used": 546
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c23",
+          "family_params": [
+            1.0014313584696464,
+            -0.023872852009796906,
+            -0.0002877700366623043,
+            6.287447149297422
+          ],
+          "q1": 1.0831145179487216,
+          "T": 1012.0,
+          "t1": 18,
+          "n_positive": 11,
+          "n_negative": 1,
+          "fit_positions": 995,
+          "noise": {
+            "capacity": {
+              "variance": 1.2568731131966084e-06,
+              "phi": 0.8699032114687584,
+              "n_used": 938
+            },
+            "charge_time": {
+              "variance": 0.5261636761580627,
+              "phi": 0.7003015797942391,
+              "n_used": 935
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003355326460676671,
+              "phi": 0.9524005738227117,
+              "n_used": 937
+            },
+            "internal_resistance": {
+              "variance": 1.2699822952816305e-07,
+              "phi": 0.9575370605226801,
+              "n_used": 937
+            },
+            "temperature_mean": {
+              "variance": 1.0037177126661245,
+              "phi": 0.9430003552383998,
+              "n_used": 937
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c25",
+          "family_params": [
+            1.0004686163942906,
+            -0.005267700636089058,
+            -0.001194856140601,
+            5.9189144320662
+          ],
+          "q1": 1.0793122790209826,
+          "T": 852.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 834,
+          "noise": {
+            "capacity": {
+              "variance": 5.426523589625322e-06,
+              "phi": 0.9875694044717933,
+              "n_used": 834
+            },
+            "charge_time": {
+              "variance": 0.40367067075071655,
+              "phi": 0.6053794063393291,
+              "n_used": 831
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002755761256967961,
+              "phi": 0.9924122017836393,
+              "n_used": 834
+            },
+            "internal_resistance": {
+              "variance": 1.1269298306202018e-07,
+              "phi": 0.9864039703007894,
+              "n_used": 833
+            },
+            "temperature_mean": {
+              "variance": 0.6457924932450891,
+              "phi": 0.9735223444841435,
+              "n_used": 834
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c27",
+          "family_params": [
+            1.0007725645855545,
+            -0.02444043432729505,
+            -0.000258140410717012,
+            7.729792796842576
+          ],
+          "q1": 1.08276243636364,
+          "T": 840.0,
+          "t1": 14,
+          "n_positive": 4,
+          "n_negative": 1,
+          "fit_positions": 827,
+          "noise": {
+            "capacity": {
+              "variance": 1.5733087713786263e-06,
+              "phi": 0.905309315676337,
+              "n_used": 812
+            },
+            "charge_time": {
+              "variance": 0.6049802735483295,
+              "phi": 0.734474485130794,
+              "n_used": 796
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002851857267383956,
+              "phi": 0.9732654112617679,
+              "n_used": 812
+            },
+            "internal_resistance": {
+              "variance": 6.863562740291646e-08,
+              "phi": 0.974468874589566,
+              "n_used": 812
+            },
+            "temperature_mean": {
+              "variance": 0.5440261888588228,
+              "phi": 0.9671383277122982,
+              "n_used": 812
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c28",
+          "family_params": [
+            1.0001700244737768,
+            -0.006939160759073373,
+            -0.0009652734065793942,
+            6.151339320453958
+          ],
+          "q1": 1.0811753869463905,
+          "T": 858.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 839,
+          "noise": {
+            "capacity": {
+              "variance": 7.962416001065331e-06,
+              "phi": 0.973005304971536,
+              "n_used": 826
+            },
+            "charge_time": {
+              "variance": 0.32818550604681906,
+              "phi": 0.6211034080293631,
+              "n_used": 824
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00033686594207904785,
+              "phi": 0.9841043532550111,
+              "n_used": 826
+            },
+            "internal_resistance": {
+              "variance": 9.241322214775158e-08,
+              "phi": 0.976388278422022,
+              "n_used": 825
+            },
+            "temperature_mean": {
+              "variance": 0.6415986518825374,
+              "phi": 0.9606452693528837,
+              "n_used": 826
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c29",
+          "family_params": [
+            1.0009949314323343,
+            -0.021928115287325686,
+            -0.0005439873242124122,
+            6.31428313336055
+          ],
+          "q1": 1.0832527911421947,
+          "T": 915.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 896,
+          "noise": {
+            "capacity": {
+              "variance": 4.453839884524235e-06,
+              "phi": 0.9741144956539022,
+              "n_used": 891
+            },
+            "charge_time": {
+              "variance": 0.34710859690847673,
+              "phi": 0.55817592348502,
+              "n_used": 884
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00047328114617474054,
+              "phi": 0.9805966130637965,
+              "n_used": 891
+            },
+            "internal_resistance": {
+              "variance": 8.960240636097949e-08,
+              "phi": 0.9791874141999356,
+              "n_used": 890
+            },
+            "temperature_mean": {
+              "variance": 0.6084243129438331,
+              "phi": 0.9694447868935641,
+              "n_used": 890
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c30",
+          "family_params": [
+            1.0002677279186565,
+            -0.030422063048601733,
+            -0.00011314425554128111,
+            10.39920132723844
+          ],
+          "q1": 1.0838315762237798,
+          "T": 707.0,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 688,
+          "noise": {
+            "capacity": {
+              "variance": 5.049858654537722e-06,
+              "phi": 0.9537302866669477,
+              "n_used": 683
+            },
+            "charge_time": {
+              "variance": 0.5357058223050646,
+              "phi": 0.752649328925279,
+              "n_used": 679
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000386653148862169,
+              "phi": 0.9781310520728763,
+              "n_used": 683
+            },
+            "internal_resistance": {
+              "variance": 6.908972383004374e-08,
+              "phi": 0.9674998434471955,
+              "n_used": 683
+            },
+            "temperature_mean": {
+              "variance": 0.5330077106811462,
+              "phi": 0.9628884396669648,
+              "n_used": 683
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c31",
+          "family_params": [
+            0.9996302634730357,
+            -0.02764644215031891,
+            -0.0002175950142948146,
+            7.7005722659859455
+          ],
+          "q1": 1.0983169682983722,
+          "T": 874.0,
+          "t1": 13,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 862,
+          "noise": {
+            "capacity": {
+              "variance": 5.7078757698673995e-06,
+              "phi": 0.9688247447639939,
+              "n_used": 853
+            },
+            "charge_time": {
+              "variance": 0.7915810857941626,
+              "phi": 0.8838682175109899,
+              "n_used": 852
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0007177336868390535,
+              "phi": 0.9855192087063578,
+              "n_used": 853
+            },
+            "internal_resistance": {
+              "variance": 8.821387394066422e-08,
+              "phi": 0.9744040298508498,
+              "n_used": 853
+            },
+            "temperature_mean": {
+              "variance": 0.7306780991457862,
+              "phi": 0.960264162465468,
+              "n_used": 853
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c32",
+          "family_params": [
+            1.0003319294467277,
+            -0.017983478327786153,
+            -0.0004822231562581581,
+            8.152583509313448
+          ],
+          "q1": 1.0813510976690013,
+          "T": 729.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 710,
+          "noise": {
+            "capacity": {
+              "variance": 6.952611558630385e-06,
+              "phi": 0.9764871029770067,
+              "n_used": 710
+            },
+            "charge_time": {
+              "variance": 0.5316619150213742,
+              "phi": 0.7696639800811339,
+              "n_used": 707
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003792424822604336,
+              "phi": 0.9903308704651881,
+              "n_used": 710
+            },
+            "internal_resistance": {
+              "variance": 1.343662679296809e-07,
+              "phi": 0.9845067810863103,
+              "n_used": 709
+            },
+            "temperature_mean": {
+              "variance": 0.6992311724413797,
+              "phi": 0.9700852603368051,
+              "n_used": 710
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c33",
+          "family_params": [
+            1.0001378151517195,
+            -0.018585857654403282,
+            -0.0006621575347073095,
+            7.525603544362871
+          ],
+          "q1": 1.0965167762237797,
+          "T": 755.0,
+          "t1": 15,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 741,
+          "noise": {
+            "capacity": {
+              "variance": 4.839310907532331e-06,
+              "phi": 0.9592608997971234,
+              "n_used": 741
+            },
+            "charge_time": {
+              "variance": 1.0889052848447314,
+              "phi": 0.8706169378821611,
+              "n_used": 740
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00042898055980674526,
+              "phi": 0.991957788959707,
+              "n_used": 741
+            },
+            "internal_resistance": {
+              "variance": 1.095077452787635e-07,
+              "phi": 0.9827928835554649,
+              "n_used": 740
+            },
+            "temperature_mean": {
+              "variance": 0.7656320317573226,
+              "phi": 0.9605328003043555,
+              "n_used": 741
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c34",
+          "family_params": [
+            1.0011745809480896,
+            -0.026388440202288418,
+            -9.865031758450875e-05,
+            10.109692907298344
+          ],
+          "q1": 1.0804175680652717,
+          "T": 740.0,
+          "t1": 14,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 727,
+          "noise": {
+            "capacity": {
+              "variance": 3.8360600233394035e-06,
+              "phi": 0.9432379488722323,
+              "n_used": 714
+            },
+            "charge_time": {
+              "variance": 0.6378450747401118,
+              "phi": 0.8009618213135319,
+              "n_used": 713
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0005940357430686462,
+              "phi": 0.9755347809148628,
+              "n_used": 714
+            },
+            "internal_resistance": {
+              "variance": 4.73530815335787e-08,
+              "phi": 0.9638271920038927,
+              "n_used": 714
+            },
+            "temperature_mean": {
+              "variance": 0.6369729890531334,
+              "phi": 0.9649735578537215,
+              "n_used": 713
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c35",
+          "family_params": [
+            1.0003787021404642,
+            -0.004773911735011986,
+            -0.0005027812526170972,
+            8.437615962278866
+          ],
+          "q1": 1.0745774247086284,
+          "T": 701.0,
+          "t1": 14,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 688,
+          "noise": {
+            "capacity": {
+              "variance": 4.210771005718765e-06,
+              "phi": 0.9668495774533982,
+              "n_used": 688
+            },
+            "charge_time": {
+              "variance": 1.1988629393423995,
+              "phi": 0.9119355575026432,
+              "n_used": 684
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004180920701472255,
+              "phi": 0.9920428496360524,
+              "n_used": 688
+            },
+            "internal_resistance": {
+              "variance": 1.0209014440054284e-07,
+              "phi": 0.9784815013889614,
+              "n_used": 687
+            },
+            "temperature_mean": {
+              "variance": 0.7107184705876359,
+              "phi": 0.9679293730161215,
+              "n_used": 688
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c37",
+          "family_params": [
+            1.0004951144825034,
+            -0.020430818874562866,
+            -0.00041475513239350983,
+            9.37590372571139
+          ],
+          "q1": 1.078749237529141,
+          "T": 646.0,
+          "t1": 18,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 629,
+          "noise": {
+            "capacity": {
+              "variance": 4.377379531970354e-06,
+              "phi": 0.9675510509985955,
+              "n_used": 619
+            },
+            "charge_time": {
+              "variance": 0.9445171495729331,
+              "phi": 0.8796062102375433,
+              "n_used": 616
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003518856464159353,
+              "phi": 0.9906011464303262,
+              "n_used": 619
+            },
+            "internal_resistance": {
+              "variance": 1.1766492121982014e-07,
+              "phi": 0.9701431508500774,
+              "n_used": 618
+            },
+            "temperature_mean": {
+              "variance": 0.7240340500593513,
+              "phi": 0.9557195689395268,
+              "n_used": 619
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c38",
+          "family_params": [
+            1.0006942187540588,
+            -0.01980970870682009,
+            -0.0002471968529467031,
+            10.727672351727987
+          ],
+          "q1": 1.0764563393939428,
+          "T": 615.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 597,
+          "noise": {
+            "capacity": {
+              "variance": 6.143001837856733e-06,
+              "phi": 0.959110772481866,
+              "n_used": 597
+            },
+            "charge_time": {
+              "variance": 0.41227125598503317,
+              "phi": 0.49685913415954847,
+              "n_used": 595
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004488977216040808,
+              "phi": 0.9899356141896368,
+              "n_used": 597
+            },
+            "internal_resistance": {
+              "variance": 4.686916748434436e-08,
+              "phi": 0.9347231467110003,
+              "n_used": 596
+            },
+            "temperature_mean": {
+              "variance": 0.6524988435999025,
+              "phi": 0.9626698381363542,
+              "n_used": 597
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c39",
+          "family_params": [
+            1.0001567387190466,
+            -0.008896005380010423,
+            -0.0004555309617538561,
+            9.735634834250854
+          ],
+          "q1": 1.0860723601398639,
+          "T": 623.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 604,
+          "noise": {
+            "capacity": {
+              "variance": 8.058961869121214e-06,
+              "phi": 0.9731700531968137,
+              "n_used": 594
+            },
+            "charge_time": {
+              "variance": 0.8048440975739752,
+              "phi": 0.929252679803845,
+              "n_used": 592
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00043549549626877926,
+              "phi": 0.9883343956934934,
+              "n_used": 594
+            },
+            "internal_resistance": {
+              "variance": 8.234047756397533e-08,
+              "phi": 0.9656563373793423,
+              "n_used": 593
+            },
+            "temperature_mean": {
+              "variance": 0.5123571219806148,
+              "phi": 0.9504186765921159,
+              "n_used": 594
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c4",
+          "family_params": [
+            1.0029343363878231,
+            -0.026239365733609625,
+            -0.00047449954121455605,
+            3.3814338946539286
+          ],
+          "q1": 1.0828334538461575,
+          "T": 1707.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 1688,
+          "noise": {
+            "capacity": {
+              "variance": 3.5980504980898297e-06,
+              "phi": 0.9051210392614442,
+              "n_used": 1681
+            },
+            "charge_time": {
+              "variance": 1.7236437613942837,
+              "phi": 0.8481666404386704,
+              "n_used": 1653
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0006413576869074558,
+              "phi": 0.9787853629835638,
+              "n_used": 1681
+            },
+            "internal_resistance": {
+              "variance": 1.414433985624514e-07,
+              "phi": 0.942480408484661,
+              "n_used": 1678
+            },
+            "temperature_mean": {
+              "variance": 1.2072188773626968,
+              "phi": 0.9367425694388679,
+              "n_used": 1674
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c40",
+          "family_params": [
+            1.0010465937561264,
+            -0.012382903746643413,
+            -0.0010821560122619657,
+            5.310590010348623
+          ],
+          "q1": 1.0874031818181855,
+          "T": 964.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 2,
+          "fit_positions": 945,
+          "noise": {
+            "capacity": {
+              "variance": 7.858657281905781e-07,
+              "phi": 0.9693975318707396,
+              "n_used": 937
+            },
+            "charge_time": {
+              "variance": 0.6778297909296973,
+              "phi": 0.9108393205243053,
+              "n_used": 935
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00028944185216464493,
+              "phi": 0.9883641680001376,
+              "n_used": 937
+            },
+            "internal_resistance": {
+              "variance": 1.1101559185620275e-07,
+              "phi": 0.9439759684607546,
+              "n_used": 934
+            },
+            "temperature_mean": {
+              "variance": 0.5248166418186768,
+              "phi": 0.9351382252507001,
+              "n_used": 936
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c42",
+          "family_params": [
+            1.000352074148616,
+            0.018363282978420117,
+            -0.0019952646907244985,
+            6.661735660694313
+          ],
+          "q1": 1.084126252214456,
+          "T": 700.0,
+          "t1": 19,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 682,
+          "noise": {
+            "capacity": {
+              "variance": 8.070205230269786e-06,
+              "phi": 0.9919803970272772,
+              "n_used": 674
+            },
+            "charge_time": {
+              "variance": 0.47021878821848784,
+              "phi": 0.8583536368580575,
+              "n_used": 671
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004613398166129984,
+              "phi": 0.9922797176950897,
+              "n_used": 674
+            },
+            "internal_resistance": {
+              "variance": 7.56941362918892e-08,
+              "phi": 0.9618022258912269,
+              "n_used": 673
+            },
+            "temperature_mean": {
+              "variance": 0.5437768183496791,
+              "phi": 0.9573262583458041,
+              "n_used": 674
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c43",
+          "family_params": [
+            0.9995148919331411,
+            -0.018691337005127515,
+            -0.00037393607023189507,
+            9.482001627804063
+          ],
+          "q1": 1.0716266890442927,
+          "T": 649.0,
+          "t1": 15,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 635,
+          "noise": {
+            "capacity": {
+              "variance": 6.629410255723598e-06,
+              "phi": 0.9770597414052052,
+              "n_used": 610
+            },
+            "charge_time": {
+              "variance": 0.1894011356937669,
+              "phi": 0.7799650342249361,
+              "n_used": 610
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00029496387158262175,
+              "phi": 0.9861025486464858,
+              "n_used": 610
+            },
+            "internal_resistance": {
+              "variance": 4.7412900644671446e-08,
+              "phi": 0.9418159599342893,
+              "n_used": 609
+            },
+            "temperature_mean": {
+              "variance": 0.685916866687056,
+              "phi": 0.9620189323530404,
+              "n_used": 609
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c5",
+          "family_params": [
+            1.0050866518669832,
+            -0.04647740938072785,
+            -1.3152675604704107e-05,
+            8.691658241708959
+          ],
+          "q1": 1.0803666487179524,
+          "T": 1071.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1052,
+          "noise": {
+            "capacity": {
+              "variance": 3.3720912624806824e-06,
+              "phi": 0.9806062746000968,
+              "n_used": 1052
+            },
+            "charge_time": {
+              "variance": 0.671617692915311,
+              "phi": 0.7303356968183263,
+              "n_used": 1043
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0001574430075472741,
+              "phi": 0.9481608790631916,
+              "n_used": 1052
+            },
+            "internal_resistance": {
+              "variance": 8.290117893606087e-08,
+              "phi": 0.9089494915100439,
+              "n_used": 1052
+            },
+            "temperature_mean": {
+              "variance": 1.4657642839395628,
+              "phi": 0.9468421919651965,
+              "n_used": 1049
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b1c9",
+          "family_params": [
+            1.002640285440156,
+            -0.025248808912912712,
+            -0.00029765531573930094,
+            6.019478680065482
+          ],
+          "q1": 1.0876293834498871,
+          "T": 1052.0,
+          "t1": 20,
+          "n_positive": 3,
+          "n_negative": 7,
+          "fit_positions": 1033,
+          "noise": {
+            "capacity": {
+              "variance": 7.809336699163857e-07,
+              "phi": 0.8029046515556023,
+              "n_used": 993
+            },
+            "charge_time": {
+              "variance": 0.728452988708703,
+              "phi": 0.7472079502473945,
+              "n_used": 975
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004213891167956819,
+              "phi": 0.9339938429703689,
+              "n_used": 993
+            },
+            "internal_resistance": {
+              "variance": 1.399773144139674e-07,
+              "phi": 0.9014117188973931,
+              "n_used": 987
+            },
+            "temperature_mean": {
+              "variance": 0.9885986013151222,
+              "phi": 0.8847750332227021,
+              "n_used": 986
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c0",
+          "family_params": [
+            1.9999999999999998,
+            0.6756199224617401,
+            -0.9945649647530032,
+            1.6381471153207008
+          ],
+          "q1": 1.0730828268065304,
+          "T": 299.0,
+          "t1": 6,
+          "n_positive": 0,
+          "n_negative": 2,
+          "fit_positions": 294,
+          "noise": {
+            "capacity": {
+              "variance": 2.2880892641466406e-06,
+              "phi": 0.6425650330043708,
+              "n_used": 287
+            },
+            "charge_time": {
+              "variance": 2.461235797779671,
+              "phi": 0.8510758402392737,
+              "n_used": 276
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0007951438060963254,
+              "phi": 0.937068370465969,
+              "n_used": 287
+            },
+            "internal_resistance": {
+              "variance": 7.42543862400148e-07,
+              "phi": 0.8972258438993769,
+              "n_used": 287
+            },
+            "temperature_mean": {
+              "variance": 0.3063048332701543,
+              "phi": -0.1084706191542998,
+              "n_used": 286
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c10",
+          "family_params": [
+            1.006127902568244,
+            -0.11501330936398993,
+            -0.0009134263797726866,
+            8.791541878927962
+          ],
+          "q1": 1.0738626494172532,
+          "T": 559.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 541,
+          "noise": {
+            "capacity": {
+              "variance": 5.036080816879366e-07,
+              "phi": 0.9036973925742713,
+              "n_used": 538
+            },
+            "charge_time": {
+              "variance": 1.4542719750641988,
+              "phi": 0.873200041701095,
+              "n_used": 532
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002650073898226961,
+              "phi": 0.989101868262249,
+              "n_used": 538
+            },
+            "internal_resistance": {
+              "variance": 5.905792385937055e-08,
+              "phi": 0.9731667755351274,
+              "n_used": 538
+            },
+            "temperature_mean": {
+              "variance": 1.6133329231469111,
+              "phi": 0.9658188922808147,
+              "n_used": 538
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c11",
+          "family_params": [
+            1.0068034507876522,
+            -0.07561687143323495,
+            -0.0020619684985997856,
+            9.01864136050577
+          ],
+          "q1": 1.0757885573426609,
+          "T": 475.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 3,
+          "fit_positions": 456,
+          "noise": {
+            "capacity": {
+              "variance": 7.132493625388549e-07,
+              "phi": 0.8830310977878486,
+              "n_used": 435
+            },
+            "charge_time": {
+              "variance": 1.017909320836774,
+              "phi": 0.8452401570262457,
+              "n_used": 434
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0012647344986743301,
+              "phi": 0.9928441797105125,
+              "n_used": 435
+            },
+            "internal_resistance": {
+              "variance": 2.007274867323296e-07,
+              "phi": 0.9728475193932423,
+              "n_used": 435
+            },
+            "temperature_mean": {
+              "variance": 0.11588072766215052,
+              "phi": 0.9112365149626807,
+              "n_used": 435
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c17",
+          "family_params": [
+            1.004815735554018,
+            -0.07453745646063308,
+            -0.00020861817070085692,
+            13.422625327650898
+          ],
+          "q1": 1.0746564020979057,
+          "T": 493.0,
+          "t1": 19,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 475,
+          "noise": {
+            "capacity": {
+              "variance": 2.809338867079029e-06,
+              "phi": 0.6141040793679028,
+              "n_used": 464
+            },
+            "charge_time": {
+              "variance": 3.8372280349281267,
+              "phi": 0.9671052473334889,
+              "n_used": 461
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008365071607963047,
+              "phi": 0.9657455995600949,
+              "n_used": 464
+            },
+            "internal_resistance": {
+              "variance": 2.3319932367792094e-07,
+              "phi": 0.7899465584002279,
+              "n_used": 463
+            },
+            "temperature_mean": {
+              "variance": 0.413397279799541,
+              "phi": 0.4118409866322977,
+              "n_used": 463
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c18",
+          "family_params": [
+            1.006070158770676,
+            -0.15257977338762327,
+            -0.00010484003317521555,
+            14.397175660081457
+          ],
+          "q1": 1.067379839393943,
+          "T": 486.0,
+          "t1": 18,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 469,
+          "noise": {
+            "capacity": {
+              "variance": 1.1513385799356165e-06,
+              "phi": 0.8579637158579706,
+              "n_used": 459
+            },
+            "charge_time": {
+              "variance": 2.0530794969345814,
+              "phi": 0.8876119475876433,
+              "n_used": 441
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000545919670180735,
+              "phi": 0.9596116100593367,
+              "n_used": 459
+            },
+            "internal_resistance": {
+              "variance": 3.1221314491594044e-07,
+              "phi": 0.9037562632943926,
+              "n_used": 459
+            },
+            "temperature_mean": {
+              "variance": 0.19460235630930003,
+              "phi": 0.2780817784795728,
+              "n_used": 458
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c19",
+          "family_params": [
+            1.0027372872362708,
+            -0.19482476359221765,
+            -7.764909303825413e-06,
+            19.999999999999996
+          ],
+          "q1": 1.049446110489514,
+          "T": 461.0,
+          "t1": 6,
+          "n_positive": 1,
+          "n_negative": 3,
+          "fit_positions": 456,
+          "noise": {
+            "capacity": {
+              "variance": 3.6019674535805264e-07,
+              "phi": 0.7855145660900473,
+              "n_used": 443
+            },
+            "charge_time": {
+              "variance": 1.040354489790479,
+              "phi": 0.72382207268377,
+              "n_used": 434
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.50774972637701e-05,
+              "phi": 0.8563841292658425,
+              "n_used": 443
+            },
+            "internal_resistance": {
+              "variance": 1.7085472483671885e-07,
+              "phi": 0.9250347490074382,
+              "n_used": 443
+            },
+            "temperature_mean": {
+              "variance": 0.10881994353513655,
+              "phi": 0.7085092387293843,
+              "n_used": 443
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c2",
+          "family_params": [
+            1.0062367147963918,
+            -0.09707940303102751,
+            -0.00017352754577943934,
+            15.483279312052943
+          ],
+          "q1": 1.0788818755244791,
+          "T": 437.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 418,
+          "noise": {
+            "capacity": {
+              "variance": 2.1542279317143993e-06,
+              "phi": 0.9015426795810486,
+              "n_used": 416
+            },
+            "charge_time": {
+              "variance": 4.085561770213176,
+              "phi": 0.969503504817769,
+              "n_used": 415
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0010340876511718425,
+              "phi": 0.9735529020317932,
+              "n_used": 416
+            },
+            "internal_resistance": {
+              "variance": 2.7427197615631564e-07,
+              "phi": 0.9073018950886187,
+              "n_used": 415
+            },
+            "temperature_mean": {
+              "variance": 0.22528002136121295,
+              "phi": 0.47990010555081736,
+              "n_used": 415
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c20",
+          "family_params": [
+            1.003646254101344,
+            -0.03770072417375501,
+            -0.0010536205919873122,
+            10.292672361423657
+          ],
+          "q1": 1.0888189480186514,
+          "T": 500.0,
+          "t1": 19,
+          "n_positive": 1,
+          "n_negative": 6,
+          "fit_positions": 482,
+          "noise": {
+            "capacity": {
+              "variance": 4.0545710597880355e-07,
+              "phi": 0.7945519058746053,
+              "n_used": 456
+            },
+            "charge_time": {
+              "variance": 2.9515995680114635,
+              "phi": 0.9401603440561253,
+              "n_used": 451
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0012946172512063748,
+              "phi": 0.9859423776073019,
+              "n_used": 456
+            },
+            "internal_resistance": {
+              "variance": 1.0318934398556106e-07,
+              "phi": 0.8923255908997741,
+              "n_used": 456
+            },
+            "temperature_mean": {
+              "variance": 0.16986503583243753,
+              "phi": 0.8838989339785874,
+              "n_used": 456
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c21",
+          "family_params": [
+            1.005520045056171,
+            -0.10311522580881348,
+            -0.0004072840148199328,
+            12.006964502678859
+          ],
+          "q1": 1.0818682671328708,
+          "T": 488.0,
+          "t1": 18,
+          "n_positive": 0,
+          "n_negative": 2,
+          "fit_positions": 471,
+          "noise": {
+            "capacity": {
+              "variance": 1.0593531670774682e-06,
+              "phi": 0.9349681169533659,
+              "n_used": 463
+            },
+            "charge_time": {
+              "variance": 3.106007342704486,
+              "phi": 0.9598765909828554,
+              "n_used": 461
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0012658316255433008,
+              "phi": 0.9928352083317591,
+              "n_used": 463
+            },
+            "internal_resistance": {
+              "variance": 1.7086474172020827e-07,
+              "phi": 0.9561728181231868,
+              "n_used": 463
+            },
+            "temperature_mean": {
+              "variance": 0.7003473164803216,
+              "phi": 0.9552213257361771,
+              "n_used": 463
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c22",
+          "family_params": [
+            1.0047808371609501,
+            -0.07208698109649458,
+            -0.00023865925879865103,
+            12.771281277968557
+          ],
+          "q1": 1.0848692850815889,
+          "T": 511.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 492,
+          "noise": {
+            "capacity": {
+              "variance": 1.338805315014782e-06,
+              "phi": 0.966960605645347,
+              "n_used": 485
+            },
+            "charge_time": {
+              "variance": 4.499366426747975,
+              "phi": 0.9877214920159906,
+              "n_used": 485
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008457346235639133,
+              "phi": 0.9934712047290597,
+              "n_used": 485
+            },
+            "internal_resistance": {
+              "variance": 1.3298273582034425e-07,
+              "phi": 0.9882595507872983,
+              "n_used": 485
+            },
+            "temperature_mean": {
+              "variance": 0.17961079695910614,
+              "phi": 0.9701754774455504,
+              "n_used": 485
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c24",
+          "family_params": [
+            1.0041056149231913,
+            -0.05679602675531452,
+            -0.00015758486667635422,
+            14.046633781887799
+          ],
+          "q1": 1.0724225086247121,
+          "T": 494.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 475,
+          "noise": {
+            "capacity": {
+              "variance": 1.7788378684729541e-06,
+              "phi": 0.9519715436034092,
+              "n_used": 470
+            },
+            "charge_time": {
+              "variance": 3.257517863496015,
+              "phi": 0.9627440421208973,
+              "n_used": 467
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0009518918518497042,
+              "phi": 0.9889286865406506,
+              "n_used": 470
+            },
+            "internal_resistance": {
+              "variance": 1.3580654277727158e-07,
+              "phi": 0.8875549062706993,
+              "n_used": 470
+            },
+            "temperature_mean": {
+              "variance": 0.4290181927819179,
+              "phi": 0.8801897967753328,
+              "n_used": 470
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c25",
+          "family_params": [
+            1.0061594770015505,
+            -0.10965747722954036,
+            -0.0001605176714409437,
+            14.684421365237197
+          ],
+          "q1": 1.071927690442894,
+          "T": 460.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 442,
+          "noise": {
+            "capacity": {
+              "variance": 1.361406284705084e-06,
+              "phi": 0.9374344225700509,
+              "n_used": 435
+            },
+            "charge_time": {
+              "variance": 3.463569391927604,
+              "phi": 0.9471716901983976,
+              "n_used": 430
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008076395862511912,
+              "phi": 0.9912710734519785,
+              "n_used": 435
+            },
+            "internal_resistance": {
+              "variance": 1.7563369382861813e-07,
+              "phi": 0.9699742230875334,
+              "n_used": 435
+            },
+            "temperature_mean": {
+              "variance": 0.3470287220644621,
+              "phi": 0.909396168744808,
+              "n_used": 435
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c27",
+          "family_params": [
+            1.0047233324282459,
+            -0.06625843403630438,
+            -0.00027258151258632184,
+            13.60227707281908
+          ],
+          "q1": 1.071101937529141,
+          "T": 467.0,
+          "t1": 18,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 450,
+          "noise": {
+            "capacity": {
+              "variance": 1.5169406298624866e-06,
+              "phi": 0.9482313556052598,
+              "n_used": 450
+            },
+            "charge_time": {
+              "variance": 2.7554271899204834,
+              "phi": 0.9559646308878672,
+              "n_used": 443
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000820397844256634,
+              "phi": 0.9881458088431779,
+              "n_used": 449
+            },
+            "internal_resistance": {
+              "variance": 1.154812910038494e-07,
+              "phi": 0.9228105598800586,
+              "n_used": 450
+            },
+            "temperature_mean": {
+              "variance": 0.19038971610010766,
+              "phi": 0.7683681982091779,
+              "n_used": 450
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c28",
+          "family_params": [
+            1.002572447413432,
+            -0.0334445529308369,
+            -0.0003416056903363069,
+            12.262948313490593
+          ],
+          "q1": 1.0771009006993044,
+          "T": 509.0,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 5,
+          "fit_positions": 490,
+          "noise": {
+            "capacity": {
+              "variance": 1.8144294417077239e-06,
+              "phi": 0.3783363869336876,
+              "n_used": 470
+            },
+            "charge_time": {
+              "variance": 1.5358584870657335,
+              "phi": 0.8491862228386765,
+              "n_used": 469
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0014596699510892024,
+              "phi": 0.9800474795748195,
+              "n_used": 470
+            },
+            "internal_resistance": {
+              "variance": 6.078849449240248e-08,
+              "phi": 0.7845521042049477,
+              "n_used": 469
+            },
+            "temperature_mean": {
+              "variance": 0.20032119888389546,
+              "phi": 0.6038905884141373,
+              "n_used": 470
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c29",
+          "family_params": [
+            1.0027750524087211,
+            -0.021101490657535964,
+            -0.00015982391525177692,
+            14.188994223544862
+          ],
+          "q1": 1.0777096389277425,
+          "T": 497.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 478,
+          "noise": {
+            "capacity": {
+              "variance": 1.4190590454963205e-06,
+              "phi": 0.9479945982342248,
+              "n_used": 468
+            },
+            "charge_time": {
+              "variance": 2.637996347821361,
+              "phi": 0.951721475417841,
+              "n_used": 463
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000807214472189472,
+              "phi": 0.9923566331521737,
+              "n_used": 468
+            },
+            "internal_resistance": {
+              "variance": 7.9158307403364e-08,
+              "phi": 0.9120311982172333,
+              "n_used": 468
+            },
+            "temperature_mean": {
+              "variance": 0.16430633847723375,
+              "phi": 0.7981968980205372,
+              "n_used": 468
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c30",
+          "family_params": [
+            1.0053159461779277,
+            -0.06978869955938734,
+            -0.0001631290339876077,
+            14.288288925709157
+          ],
+          "q1": 1.0723456801864837,
+          "T": 480.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 461,
+          "noise": {
+            "capacity": {
+              "variance": 1.544425109626408e-06,
+              "phi": 0.9396754896337218,
+              "n_used": 456
+            },
+            "charge_time": {
+              "variance": 1.6212021927795681,
+              "phi": 0.9325827330530192,
+              "n_used": 455
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0007037316235689695,
+              "phi": 0.9913720214518632,
+              "n_used": 456
+            },
+            "internal_resistance": {
+              "variance": 1.0205345363751682e-07,
+              "phi": 0.9774870253387651,
+              "n_used": 456
+            },
+            "temperature_mean": {
+              "variance": 0.1604129517921216,
+              "phi": 0.9282762698217142,
+              "n_used": 456
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c32",
+          "family_params": [
+            1.0023621536878002,
+            -0.022801581571329423,
+            -0.0002067593765006515,
+            13.105900083270505
+          ],
+          "q1": 1.079654732400936,
+          "T": 518.0,
+          "t1": 17,
+          "n_positive": 2,
+          "n_negative": 5,
+          "fit_positions": 502,
+          "noise": {
+            "capacity": {
+              "variance": 2.102020927362376e-06,
+              "phi": 0.6591376755135778,
+              "n_used": 469
+            },
+            "charge_time": {
+              "variance": 2.583636997488718,
+              "phi": 0.9485834973286396,
+              "n_used": 467
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00150233887259568,
+              "phi": 0.9707594124634424,
+              "n_used": 469
+            },
+            "internal_resistance": {
+              "variance": 4.498871522032128e-08,
+              "phi": 0.7013426820243045,
+              "n_used": 469
+            },
+            "temperature_mean": {
+              "variance": 0.2057009397533111,
+              "phi": 0.6195807993496766,
+              "n_used": 468
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c34",
+          "family_params": [
+            1.0021971724137437,
+            -0.026865571400277687,
+            -0.00011341021068983624,
+            14.789910211087774
+          ],
+          "q1": 1.0747136470862508,
+          "T": 498.0,
+          "t1": 17,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 482,
+          "noise": {
+            "capacity": {
+              "variance": 1.8969166606853543e-06,
+              "phi": 0.9085965576513504,
+              "n_used": 474
+            },
+            "charge_time": {
+              "variance": 1.8183112382443076,
+              "phi": 0.966408128792112,
+              "n_used": 472
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0014751645031873418,
+              "phi": 0.9941750621508364,
+              "n_used": 474
+            },
+            "internal_resistance": {
+              "variance": 3.0718289249814197e-08,
+              "phi": 0.9117992712425771,
+              "n_used": 474
+            },
+            "temperature_mean": {
+              "variance": 0.19769424975736777,
+              "phi": 0.9385447338806034,
+              "n_used": 473
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c35",
+          "family_params": [
+            1.0057783880893432,
+            -0.08789838178117332,
+            -7.84816506428078e-05,
+            16.35048396763512
+          ],
+          "q1": 1.0738122151515188,
+          "T": 462.0,
+          "t1": 17,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 446,
+          "noise": {
+            "capacity": {
+              "variance": 1.939682852499697e-06,
+              "phi": 0.9286423476657885,
+              "n_used": 443
+            },
+            "charge_time": {
+              "variance": 1.9471976257934498,
+              "phi": 0.9495895214188895,
+              "n_used": 443
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0006558127250361772,
+              "phi": 0.9886784635339748,
+              "n_used": 443
+            },
+            "internal_resistance": {
+              "variance": 7.27852139904863e-08,
+              "phi": 0.981402755626406,
+              "n_used": 443
+            },
+            "temperature_mean": {
+              "variance": 0.149166344308323,
+              "phi": 0.9466022140457035,
+              "n_used": 442
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c36",
+          "family_params": [
+            1.0025711297983628,
+            -0.024305582422746032,
+            -0.00030387267356036423,
+            12.027172305316787
+          ],
+          "q1": 1.0851975307692343,
+          "T": 533.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 514,
+          "noise": {
+            "capacity": {
+              "variance": 1.2208414056266735e-06,
+              "phi": 0.9217709459916057,
+              "n_used": 503
+            },
+            "charge_time": {
+              "variance": 3.866437040768096,
+              "phi": 0.9830224462422427,
+              "n_used": 503
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000869750749409112,
+              "phi": 0.9944881492789497,
+              "n_used": 503
+            },
+            "internal_resistance": {
+              "variance": 1.0375958450916401e-07,
+              "phi": 0.9832711469202966,
+              "n_used": 503
+            },
+            "temperature_mean": {
+              "variance": 0.11027334079850959,
+              "phi": 0.9319031673925087,
+              "n_used": 503
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c37",
+          "family_params": [
+            1.001837728472031,
+            -0.004616390523494015,
+            -0.00025817758512059407,
+            13.87774815567239
+          ],
+          "q1": 1.080121601398605,
+          "T": 477.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 458,
+          "noise": {
+            "capacity": {
+              "variance": 1.7444767013202884e-06,
+              "phi": 0.9453647879666256,
+              "n_used": 446
+            },
+            "charge_time": {
+              "variance": 4.785140009843238,
+              "phi": 0.9796949669708006,
+              "n_used": 446
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008907065641982412,
+              "phi": 0.9935057783099382,
+              "n_used": 446
+            },
+            "internal_resistance": {
+              "variance": 1.347807926642831e-07,
+              "phi": 0.9862839006603191,
+              "n_used": 446
+            },
+            "temperature_mean": {
+              "variance": 0.18779215943300925,
+              "phi": 0.9855922372495911,
+              "n_used": 446
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c38",
+          "family_params": [
+            1.0040914543489152,
+            -0.04782771648306007,
+            -8.606281335155346e-05,
+            16.340061980201835
+          ],
+          "q1": 1.0748100869463906,
+          "T": 464.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 445,
+          "noise": {
+            "capacity": {
+              "variance": 1.1198591563981569e-06,
+              "phi": 0.9366417578149404,
+              "n_used": 438
+            },
+            "charge_time": {
+              "variance": 3.283880730908974,
+              "phi": 0.9622377794222364,
+              "n_used": 435
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0011093331132258518,
+              "phi": 0.9945629172094244,
+              "n_used": 438
+            },
+            "internal_resistance": {
+              "variance": 6.216515660621555e-08,
+              "phi": 0.9679565444026866,
+              "n_used": 438
+            },
+            "temperature_mean": {
+              "variance": 0.14198463387646246,
+              "phi": 0.9524249537189013,
+              "n_used": 438
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c39",
+          "family_params": [
+            1.0032336563590738,
+            -0.028593120037808045,
+            -0.00013535511365576268,
+            15.79417937582849
+          ],
+          "q1": 1.0855229659673693,
+          "T": 458.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 439,
+          "noise": {
+            "capacity": {
+              "variance": 1.3217032874024441e-06,
+              "phi": 0.9009073889588608,
+              "n_used": 423
+            },
+            "charge_time": {
+              "variance": 3.5525119196033534,
+              "phi": 0.9809706518371218,
+              "n_used": 423
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0011034188911595694,
+              "phi": 0.9920859807145649,
+              "n_used": 423
+            },
+            "internal_resistance": {
+              "variance": 6.766448860471155e-08,
+              "phi": 0.9452954229894756,
+              "n_used": 423
+            },
+            "temperature_mean": {
+              "variance": 0.15979398195961986,
+              "phi": 0.9357361565898261,
+              "n_used": 423
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c41",
+          "family_params": [
+            1.003812040276346,
+            -0.04460324415181541,
+            -0.00021970871478885028,
+            15.539772100686191
+          ],
+          "q1": 1.0747969599067635,
+          "T": 428.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 409,
+          "noise": {
+            "capacity": {
+              "variance": 9.890135846604728e-07,
+              "phi": 0.9037981356227084,
+              "n_used": 404
+            },
+            "charge_time": {
+              "variance": 1.2294763978070233,
+              "phi": 0.9390485212295362,
+              "n_used": 404
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.001471234990036984,
+              "phi": 0.9928623280834626,
+              "n_used": 404
+            },
+            "internal_resistance": {
+              "variance": 1.5293828711233417e-07,
+              "phi": 0.9060354396752353,
+              "n_used": 404
+            },
+            "temperature_mean": {
+              "variance": 0.1993800874027843,
+              "phi": 0.7100485140781747,
+              "n_used": 404
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c42",
+          "family_params": [
+            1.0026847217202872,
+            -0.024141853427380573,
+            -0.00046074693698557316,
+            12.962555792844043
+          ],
+          "q1": 1.0832161708624746,
+          "T": 464.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 445,
+          "noise": {
+            "capacity": {
+              "variance": 2.3285560666614016e-06,
+              "phi": 0.9793882275544807,
+              "n_used": 436
+            },
+            "charge_time": {
+              "variance": 2.38647325539187,
+              "phi": 0.9896670842744686,
+              "n_used": 436
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0009147994637061247,
+              "phi": 0.9928358155509293,
+              "n_used": 436
+            },
+            "internal_resistance": {
+              "variance": 8.458424769910465e-08,
+              "phi": 0.9427837193178367,
+              "n_used": 436
+            },
+            "temperature_mean": {
+              "variance": 0.14560616141289054,
+              "phi": 0.9015519703934438,
+              "n_used": 436
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c44",
+          "family_params": [
+            1.0022800099810967,
+            -0.020050302127361405,
+            -0.00020501015836567584,
+            14.93152629640652
+          ],
+          "q1": 1.0762321946386981,
+          "T": 455.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 436,
+          "noise": {
+            "capacity": {
+              "variance": 1.6181398071415497e-06,
+              "phi": 0.9738295755085885,
+              "n_used": 428
+            },
+            "charge_time": {
+              "variance": 2.3689725148022087,
+              "phi": 0.9851019303816668,
+              "n_used": 428
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0010060220967269204,
+              "phi": 0.9920278635931014,
+              "n_used": 428
+            },
+            "internal_resistance": {
+              "variance": 5.772566086677697e-08,
+              "phi": 0.9444392637285767,
+              "n_used": 428
+            },
+            "temperature_mean": {
+              "variance": 0.12250061791847905,
+              "phi": 0.9149566035928405,
+              "n_used": 428
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c45",
+          "family_params": [
+            1.0043866057194135,
+            -0.0678172082936583,
+            -0.00017399641227713639,
+            14.025661968172678
+          ],
+          "q1": 1.0751993039627077,
+          "T": 485.0,
+          "t1": 18,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 468,
+          "noise": {
+            "capacity": {
+              "variance": 1.269277484681809e-06,
+              "phi": 0.959396246575495,
+              "n_used": 466
+            },
+            "charge_time": {
+              "variance": 1.7893663169769654,
+              "phi": 0.9762404274363542,
+              "n_used": 466
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0009350881295919006,
+              "phi": 0.9937368843092992,
+              "n_used": 466
+            },
+            "internal_resistance": {
+              "variance": 1.0916956676618376e-07,
+              "phi": 0.9720453380130096,
+              "n_used": 465
+            },
+            "temperature_mean": {
+              "variance": 0.14014105834700213,
+              "phi": 0.8983441658749785,
+              "n_used": 465
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c47",
+          "family_params": [
+            1.0057780179392537,
+            -0.09068510973492272,
+            -0.00010353639460853162,
+            9.717949933120394
+          ],
+          "q1": 1.0501250871794907,
+          "T": 712.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 693,
+          "noise": {
+            "capacity": {
+              "variance": 9.505312576999623e-07,
+              "phi": 0.9645783889854923,
+              "n_used": 691
+            },
+            "charge_time": {
+              "variance": 0.5313337214143093,
+              "phi": 0.8587317382025473,
+              "n_used": 691
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002864478643862911,
+              "phi": 0.9928876837667745,
+              "n_used": 691
+            },
+            "internal_resistance": {
+              "variance": 1.7914471457014716e-08,
+              "phi": 0.9029794040656889,
+              "n_used": 691
+            },
+            "temperature_mean": {
+              "variance": 0.12841080246137218,
+              "phi": 0.9795387313107008,
+              "n_used": 691
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b2c6",
+          "family_params": [
+            1.0084634023310048,
+            -0.29912416872899494,
+            -1.6380492427497334e-05,
+            15.630421127566239
+          ],
+          "q1": 1.0724161662004696,
+          "T": 509.0,
+          "t1": 11,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 499,
+          "noise": {
+            "capacity": {
+              "variance": 1.5703860650327738e-06,
+              "phi": 0.9446377693514396,
+              "n_used": 499
+            },
+            "charge_time": {
+              "variance": 0.7611168770736685,
+              "phi": 0.7178947892830121,
+              "n_used": 492
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002851643344817994,
+              "phi": 0.9764071227686545,
+              "n_used": 499
+            },
+            "internal_resistance": {
+              "variance": 1.624942949653001e-07,
+              "phi": 0.9832427912997087,
+              "n_used": 499
+            },
+            "temperature_mean": {
+              "variance": 0.08768254736074578,
+              "phi": 0.8417138449047592,
+              "n_used": 499
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c1",
+          "family_params": [
+            1.0018586454499014,
+            -0.03809779733774818,
+            -1.2108754140138966e-05,
+            8.871242975878134
+          ],
+          "q1": 1.068427683449887,
+          "T": 1061.0,
+          "t1": 16,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1046,
+          "noise": {
+            "capacity": {
+              "variance": 4.1858946843002925e-06,
+              "phi": 0.9777743767707856,
+              "n_used": 1036
+            },
+            "charge_time": {
+              "variance": 0.19269652914805221,
+              "phi": 0.9828163183845002,
+              "n_used": 1036
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00014396579826295074,
+              "phi": 0.9237469212426841,
+              "n_used": 1036
+            },
+            "internal_resistance": {
+              "variance": 3.427288116380296e-08,
+              "phi": 0.9902043303369983,
+              "n_used": 1035
+            },
+            "temperature_mean": {
+              "variance": 0.06468597918674535,
+              "phi": 0.980955881900614,
+              "n_used": 1035
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c10",
+          "family_params": [
+            1.0021111227126047,
+            -0.03216282077914419,
+            -2.497629737220576e-05,
+            8.108047645642484
+          ],
+          "q1": 1.064645648251752,
+          "T": 1076.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1057,
+          "noise": {
+            "capacity": {
+              "variance": 6.3568469665779045e-06,
+              "phi": 0.9732952536507886,
+              "n_used": 1057
+            },
+            "charge_time": {
+              "variance": 0.06305212656804575,
+              "phi": 0.9465183829111011,
+              "n_used": 1057
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00015843183896724884,
+              "phi": 0.9654596090808357,
+              "n_used": 1057
+            },
+            "internal_resistance": {
+              "variance": 1.5296310195304406e-08,
+              "phi": 0.9928054084320267,
+              "n_used": 1057
+            },
+            "temperature_mean": {
+              "variance": 0.10602816119209106,
+              "phi": 0.9917151357142431,
+              "n_used": 1057
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c11",
+          "family_params": [
+            1.002988653058744,
+            -0.04904908301372196,
+            -7.872656103697411e-05,
+            9.212786104173544
+          ],
+          "q1": 1.070726958508162,
+          "T": 815.0,
+          "t1": 17,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 799,
+          "noise": {
+            "capacity": {
+              "variance": 8.381286469586719e-07,
+              "phi": 0.9796487422647493,
+              "n_used": 799
+            },
+            "charge_time": {
+              "variance": 0.04009581505405795,
+              "phi": 0.9610761323054331,
+              "n_used": 799
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003306625203919455,
+              "phi": 0.9849037260862629,
+              "n_used": 799
+            },
+            "internal_resistance": {
+              "variance": 4.225312786437299e-09,
+              "phi": 0.9599279009279691,
+              "n_used": 799
+            },
+            "temperature_mean": {
+              "variance": 0.14145812726762833,
+              "phi": 0.990282262181775,
+              "n_used": 799
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c12",
+          "family_params": [
+            1.0027524657408484,
+            -0.031762170999389466,
+            -2.772509745281113e-05,
+            9.318271948439868
+          ],
+          "q1": 1.0768634296037334,
+          "T": 930.0,
+          "t1": 19,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 912,
+          "noise": {
+            "capacity": {
+              "variance": 1.627024764430817e-06,
+              "phi": 0.989310078521847,
+              "n_used": 909
+            },
+            "charge_time": {
+              "variance": 0.03274919510688654,
+              "phi": 0.9713239183809974,
+              "n_used": 909
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0006992543935264989,
+              "phi": 0.9934412752306654,
+              "n_used": 909
+            },
+            "internal_resistance": {
+              "variance": 3.35427329327163e-09,
+              "phi": 0.9416811339805605,
+              "n_used": 909
+            },
+            "temperature_mean": {
+              "variance": 0.07569674280220712,
+              "phi": 0.9825021454137075,
+              "n_used": 909
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c13",
+          "family_params": [
+            1.003237668540552,
+            -0.049399253842217154,
+            -0.00011847293582595376,
+            8.692208293015314
+          ],
+          "q1": 1.0695746181818218,
+          "T": 814.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 795,
+          "noise": {
+            "capacity": {
+              "variance": 4.353427533053624e-07,
+              "phi": 0.9700645761426695,
+              "n_used": 786
+            },
+            "charge_time": {
+              "variance": 0.13083273662656275,
+              "phi": 0.9901429192438648,
+              "n_used": 786
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00025294989130042624,
+              "phi": 0.9843434551539602,
+              "n_used": 786
+            },
+            "internal_resistance": {
+              "variance": 7.486765952027645e-09,
+              "phi": 0.9786654337306451,
+              "n_used": 786
+            },
+            "temperature_mean": {
+              "variance": 0.14680523377510613,
+              "phi": 0.9921725290199335,
+              "n_used": 786
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c14",
+          "family_params": [
+            1.0030776273427278,
+            -0.03405569589726202,
+            -8.874350434035922e-05,
+            8.730015076821008
+          ],
+          "q1": 1.0772953130536167,
+          "T": 856.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 837,
+          "noise": {
+            "capacity": {
+              "variance": 6.060061784485042e-07,
+              "phi": 0.9744989333136364,
+              "n_used": 835
+            },
+            "charge_time": {
+              "variance": 0.052863520526026414,
+              "phi": 0.9596068564398657,
+              "n_used": 835
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000505499340398982,
+              "phi": 0.9893093795211214,
+              "n_used": 835
+            },
+            "internal_resistance": {
+              "variance": 1.4253593275926593e-08,
+              "phi": 0.9892018133495288,
+              "n_used": 835
+            },
+            "temperature_mean": {
+              "variance": 0.04880138537072314,
+              "phi": 0.9770682280234352,
+              "n_used": 835
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c16",
+          "family_params": [
+            1.0013922762759946,
+            -0.03193846441977005,
+            -4.873060664527726e-05,
+            4.832572669413677
+          ],
+          "q1": 1.0643385261072296,
+          "T": 1636.0,
+          "t1": 18,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1619,
+          "noise": {
+            "capacity": {
+              "variance": 5.494339481306746e-06,
+              "phi": 0.9877654508027939,
+              "n_used": 1612
+            },
+            "charge_time": {
+              "variance": 0.46180295583556874,
+              "phi": 0.9943052601461414,
+              "n_used": 1612
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0010144235286733804,
+              "phi": 0.9946731324372606,
+              "n_used": 1612
+            },
+            "internal_resistance": {
+              "variance": 2.064266420883039e-07,
+              "phi": 0.9938215001049494,
+              "n_used": 1612
+            },
+            "temperature_mean": {
+              "variance": 0.38018724918034275,
+              "phi": 0.9950960583872815,
+              "n_used": 1612
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c17",
+          "family_params": [
+            0.9990085314409907,
+            -0.031221882392853118,
+            -8.725191247723985e-05,
+            5.649301704164992
+          ],
+          "q1": 1.0698727412587448,
+          "T": 1313.0,
+          "t1": 10,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 1304,
+          "noise": {
+            "capacity": {
+              "variance": 7.0134604543529245e-06,
+              "phi": 0.9895137285698271,
+              "n_used": 1291
+            },
+            "charge_time": {
+              "variance": 0.3208486751980411,
+              "phi": 0.9899062810252657,
+              "n_used": 1291
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00023495736466851928,
+              "phi": 0.9897491309328534,
+              "n_used": 1291
+            },
+            "internal_resistance": {
+              "variance": 4.4862384333787466e-08,
+              "phi": 0.9919967664578982,
+              "n_used": 1291
+            },
+            "temperature_mean": {
+              "variance": 0.08114052009177682,
+              "phi": 0.9785616406866366,
+              "n_used": 1291
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c18",
+          "family_params": [
+            1.0006507860999958,
+            -0.0373539658056811,
+            -5.873668439979006e-05,
+            6.84978813457217
+          ],
+          "q1": 1.0700733776223812,
+          "T": 1144.0,
+          "t1": 16,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1129,
+          "noise": {
+            "capacity": {
+              "variance": 5.959889829809064e-06,
+              "phi": 0.9812784584304127,
+              "n_used": 1121
+            },
+            "charge_time": {
+              "variance": 0.2731925841216544,
+              "phi": 0.9944689413625747,
+              "n_used": 1121
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002549545220441118,
+              "phi": 0.9900810132840828,
+              "n_used": 1121
+            },
+            "internal_resistance": {
+              "variance": 2.5255701862028814e-08,
+              "phi": 0.9882508201058292,
+              "n_used": 1121
+            },
+            "temperature_mean": {
+              "variance": 0.08456356504754294,
+              "phi": 0.9878426948708985,
+              "n_used": 1121
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c2",
+          "family_params": [
+            1.0001585934232307,
+            -0.031058457013891778,
+            -8.975299507555717e-05,
+            5.846600496503413
+          ],
+          "q1": 1.0630037177156213,
+          "T": 1265.0,
+          "t1": 17,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1249,
+          "noise": {
+            "capacity": {
+              "variance": 7.735530187088242e-06,
+              "phi": 0.9821383954666233,
+              "n_used": 1238
+            },
+            "charge_time": {
+              "variance": 0.3277153277345899,
+              "phi": 0.9875556769881808,
+              "n_used": 1238
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0005962974062313596,
+              "phi": 0.9771500881291979,
+              "n_used": 1238
+            },
+            "internal_resistance": {
+              "variance": 5.861594898097898e-08,
+              "phi": 0.9718107243873407,
+              "n_used": 1238
+            },
+            "temperature_mean": {
+              "variance": 0.36566776349371405,
+              "phi": 0.9549626202607296,
+              "n_used": 1238
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c20",
+          "family_params": [
+            1.0033909085321924,
+            -0.04452266367806922,
+            -4.663288346024212e-06,
+            12.803290096028014
+          ],
+          "q1": 1.068003553379957,
+          "T": 811.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 792,
+          "noise": {
+            "capacity": {
+              "variance": 1.644304410294425e-06,
+              "phi": 0.9903100515174699,
+              "n_used": 786
+            },
+            "charge_time": {
+              "variance": 0.04321233352054393,
+              "phi": 0.9656786172204113,
+              "n_used": 786
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00021535548470897549,
+              "phi": 0.9684596411442774,
+              "n_used": 786
+            },
+            "internal_resistance": {
+              "variance": 1.4285578151363434e-08,
+              "phi": 0.9942243821848403,
+              "n_used": 786
+            },
+            "temperature_mean": {
+              "variance": 0.08251454085484722,
+              "phi": 0.9873289254842399,
+              "n_used": 786
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c22",
+          "family_params": [
+            1.0034851200571626,
+            -0.042710636658271246,
+            -2.0160778647923568e-07,
+            13.377293763300932
+          ],
+          "q1": 1.0590757659673695,
+          "T": 1000.0,
+          "t1": 17,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 984,
+          "noise": {
+            "capacity": {
+              "variance": 1.9875518482452047e-06,
+              "phi": 0.9906647020788963,
+              "n_used": 984
+            },
+            "charge_time": {
+              "variance": 0.10107896886938876,
+              "phi": 0.9820289661256355,
+              "n_used": 984
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0015396532608488772,
+              "phi": 0.9961185381901373,
+              "n_used": 984
+            },
+            "internal_resistance": {
+              "variance": 8.28865196210551e-09,
+              "phi": 0.9759810878461896,
+              "n_used": 984
+            },
+            "temperature_mean": {
+              "variance": 0.08284924221277307,
+              "phi": 0.9878959886724982,
+              "n_used": 984
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c24",
+          "family_params": [
+            1.0050627156018734,
+            -0.050554497476060514,
+            -6.037810218700561e-06,
+            12.090420733244038
+          ],
+          "q1": 1.050482590442894,
+          "T": 823.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 804,
+          "noise": {
+            "capacity": {
+              "variance": 1.9579610339842545e-06,
+              "phi": 0.9655606534724523,
+              "n_used": 804
+            },
+            "charge_time": {
+              "variance": 0.042745630259512196,
+              "phi": 0.9133809995800773,
+              "n_used": 804
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0001552639275859857,
+              "phi": 0.896367893646201,
+              "n_used": 804
+            },
+            "internal_resistance": {
+              "variance": 3.435606779229641e-08,
+              "phi": 0.9842869273378386,
+              "n_used": 803
+            },
+            "temperature_mean": {
+              "variance": 0.18896796587107875,
+              "phi": 0.9885763322232854,
+              "n_used": 803
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c25",
+          "family_params": [
+            1.0037980649255256,
+            -0.04096656235957188,
+            -3.992122176421958e-06,
+            10.616066756079519
+          ],
+          "q1": 1.0650901836829871,
+          "T": 987.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 968,
+          "noise": {
+            "capacity": {
+              "variance": 1.6645501255204155e-06,
+              "phi": 0.9778072706128467,
+              "n_used": 962
+            },
+            "charge_time": {
+              "variance": 0.06858709792830807,
+              "phi": 0.9494267558666103,
+              "n_used": 962
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00013990295083481053,
+              "phi": 0.7886609089218863,
+              "n_used": 962
+            },
+            "internal_resistance": {
+              "variance": 1.8033439783927376e-08,
+              "phi": 0.9883979148248668,
+              "n_used": 962
+            },
+            "temperature_mean": {
+              "variance": 0.06179786084521853,
+              "phi": 0.9757384429525543,
+              "n_used": 962
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c26",
+          "family_params": [
+            1.0017446485240236,
+            -0.030186749945711067,
+            -0.00011946134935728958,
+            7.022000583467233
+          ],
+          "q1": 1.0755010188811225,
+          "T": 1026.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1007,
+          "noise": {
+            "capacity": {
+              "variance": 2.800641711812214e-06,
+              "phi": 0.980095774785222,
+              "n_used": 1007
+            },
+            "charge_time": {
+              "variance": 0.1667095932228124,
+              "phi": 0.9771648539324695,
+              "n_used": 1007
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0001198315216024789,
+              "phi": 0.8585107792034834,
+              "n_used": 1007
+            },
+            "internal_resistance": {
+              "variance": 3.824597727450368e-09,
+              "phi": 0.9745585467906117,
+              "n_used": 1007
+            },
+            "temperature_mean": {
+              "variance": 0.07133391066649228,
+              "phi": 0.9819213649179608,
+              "n_used": 1007
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c27",
+          "family_params": [
+            1.0028546554264417,
+            -0.04217358125756993,
+            -3.9647134923125354e-05,
+            9.684314343458999
+          ],
+          "q1": 1.064168887412591,
+          "T": 848.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 829,
+          "noise": {
+            "capacity": {
+              "variance": 5.68081627286877e-07,
+              "phi": 0.9484535419419966,
+              "n_used": 809
+            },
+            "charge_time": {
+              "variance": 0.045979219822755484,
+              "phi": 0.9504531836767878,
+              "n_used": 809
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00013752164973907297,
+              "phi": 0.7745377565577726,
+              "n_used": 809
+            },
+            "internal_resistance": {
+              "variance": 2.0668644317463227e-08,
+              "phi": 0.9902214686307057,
+              "n_used": 809
+            },
+            "temperature_mean": {
+              "variance": 0.1827856316781952,
+              "phi": 0.989963686441326,
+              "n_used": 809
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c28",
+          "family_params": [
+            1.0028418878367718,
+            -0.20086133123296976,
+            -0.00046388770752201234,
+            9.090708094167217
+          ],
+          "q1": 1.0527228668997703,
+          "T": 539.0,
+          "t1": 6,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 534,
+          "noise": {
+            "capacity": {
+              "variance": 3.585206640243144e-07,
+              "phi": 0.937235935446878,
+              "n_used": 534
+            },
+            "charge_time": {
+              "variance": 0.08070588600416016,
+              "phi": 0.9380996889082958,
+              "n_used": 533
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00015573151093448032,
+              "phi": 0.9446512233742876,
+              "n_used": 534
+            },
+            "internal_resistance": {
+              "variance": 3.755789361210925e-08,
+              "phi": 0.9869477112440698,
+              "n_used": 534
+            },
+            "temperature_mean": {
+              "variance": 0.7967391916771305,
+              "phi": 0.9974473578256804,
+              "n_used": 534
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c29",
+          "family_params": [
+            1.00360536733141,
+            -0.04559862817164388,
+            -9.400479183581593e-05,
+            8.576845941815083
+          ],
+          "q1": 1.0708673715617751,
+          "T": 856.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 837,
+          "noise": {
+            "capacity": {
+              "variance": 5.054228975001683e-07,
+              "phi": 0.9502142846087746,
+              "n_used": 837
+            },
+            "charge_time": {
+              "variance": 0.149306273632435,
+              "phi": 0.9835033530720796,
+              "n_used": 837
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00010732137342535814,
+              "phi": 0.9047653959676231,
+              "n_used": 837
+            },
+            "internal_resistance": {
+              "variance": 1.0977091760093291e-08,
+              "phi": 0.9839898288349055,
+              "n_used": 837
+            },
+            "temperature_mean": {
+              "variance": 0.08880138126672436,
+              "phi": 0.9834963375499733,
+              "n_used": 837
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c3",
+          "family_params": [
+            1.00210435327711,
+            -0.03624104860598978,
+            -1.711913865250885e-05,
+            8.129685413124363
+          ],
+          "q1": 1.0652432510489547,
+          "T": 1113.0,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1094,
+          "noise": {
+            "capacity": {
+              "variance": 2.681136604028496e-06,
+              "phi": 0.9729467013812252,
+              "n_used": 1087
+            },
+            "charge_time": {
+              "variance": 0.13987722113654574,
+              "phi": 0.9748350721397037,
+              "n_used": 1087
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00012964957872503834,
+              "phi": 0.9019306969857962,
+              "n_used": 1087
+            },
+            "internal_resistance": {
+              "variance": 1.800869122003409e-08,
+              "phi": 0.9873721901615494,
+              "n_used": 1087
+            },
+            "temperature_mean": {
+              "variance": 0.1231079115665255,
+              "phi": 0.9794370435404446,
+              "n_used": 1087
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c30",
+          "family_params": [
+            1.0025859797232883,
+            -0.03584260604568486,
+            -1.2264696627842046e-05,
+            10.091387454248338
+          ],
+          "q1": 1.0721533466200504,
+          "T": 933.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 914,
+          "noise": {
+            "capacity": {
+              "variance": 3.346601859080716e-07,
+              "phi": 0.9845294314874444,
+              "n_used": 912
+            },
+            "charge_time": {
+              "variance": 0.06654170166679511,
+              "phi": 0.9821473957332927,
+              "n_used": 912
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00039132123726307277,
+              "phi": 0.9812840852393367,
+              "n_used": 912
+            },
+            "internal_resistance": {
+              "variance": 1.5626086767336757e-08,
+              "phi": 0.9822402079177898,
+              "n_used": 912
+            },
+            "temperature_mean": {
+              "variance": 0.07565572757027547,
+              "phi": 0.9863321291787104,
+              "n_used": 912
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c31",
+          "family_params": [
+            1.0028299233605753,
+            -0.042112076184068356,
+            -1.586460290788702e-05,
+            12.605570209237392
+          ],
+          "q1": 1.0714425400932437,
+          "T": 729.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 710,
+          "noise": {
+            "capacity": {
+              "variance": 1.1801804252076387e-06,
+              "phi": 0.9793751906326689,
+              "n_used": 706
+            },
+            "charge_time": {
+              "variance": 0.03565307180109617,
+              "phi": 0.9569940270054758,
+              "n_used": 706
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008135992089296475,
+              "phi": 0.9885437751553294,
+              "n_used": 706
+            },
+            "internal_resistance": {
+              "variance": 1.4620643709735692e-08,
+              "phi": 0.9929117445923615,
+              "n_used": 706
+            },
+            "temperature_mean": {
+              "variance": 0.10824789770176382,
+              "phi": 0.9841167882568429,
+              "n_used": 706
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c34",
+          "family_params": [
+            1.0008494506922903,
+            -0.03770731048172476,
+            -4.0125910607792966e-05,
+            7.065053823193077
+          ],
+          "q1": 1.0642233501165537,
+          "T": 1156.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1137,
+          "noise": {
+            "capacity": {
+              "variance": 9.683658800394986e-06,
+              "phi": 0.9939817598699416,
+              "n_used": 1137
+            },
+            "charge_time": {
+              "variance": 0.2944618063408275,
+              "phi": 0.9897777783251056,
+              "n_used": 1137
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003146411327128455,
+              "phi": 0.9914000681118602,
+              "n_used": 1137
+            },
+            "internal_resistance": {
+              "variance": 5.813506097619136e-08,
+              "phi": 0.9869548830154711,
+              "n_used": 1137
+            },
+            "temperature_mean": {
+              "variance": 0.11558303483944635,
+              "phi": 0.9902073496471976,
+              "n_used": 1137
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c35",
+          "family_params": [
+            1.0014984348189895,
+            -0.03528031872920581,
+            -0.00011141754081440801,
+            6.579703173292707
+          ],
+          "q1": 1.065326200466204,
+          "T": 1091.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 1073,
+          "noise": {
+            "capacity": {
+              "variance": 3.1191571117619816e-06,
+              "phi": 0.9847895113774574,
+              "n_used": 1067
+            },
+            "charge_time": {
+              "variance": 0.15693946100582504,
+              "phi": 0.9856675130225736,
+              "n_used": 1067
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00017843777879111112,
+              "phi": 0.9668521267545327,
+              "n_used": 1067
+            },
+            "internal_resistance": {
+              "variance": 2.7781164770627722e-08,
+              "phi": 0.9807661952608433,
+              "n_used": 1066
+            },
+            "temperature_mean": {
+              "variance": 0.08282215936993854,
+              "phi": 0.985987577307041,
+              "n_used": 1066
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c36",
+          "family_params": [
+            1.0041136594191244,
+            -0.05728522151215257,
+            -2.494578458244156e-07,
+            14.221797805116205
+          ],
+          "q1": 1.060545249417253,
+          "T": 921.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 902,
+          "noise": {
+            "capacity": {
+              "variance": 2.2122782110554716e-06,
+              "phi": 0.9958261601021154,
+              "n_used": 902
+            },
+            "charge_time": {
+              "variance": 0.14404438540183387,
+              "phi": 0.9772741095527255,
+              "n_used": 902
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0024722059545637803,
+              "phi": 0.9964350294938107,
+              "n_used": 902
+            },
+            "internal_resistance": {
+              "variance": 5.626422993401644e-09,
+              "phi": 0.9416690493184774,
+              "n_used": 902
+            },
+            "temperature_mean": {
+              "variance": 0.19169278567171796,
+              "phi": 0.9940497013221827,
+              "n_used": 902
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c38",
+          "family_params": [
+            1.0023968652451496,
+            -0.03189744963842351,
+            -3.0393954294838408e-05,
+            4.304548279971622
+          ],
+          "q1": 1.0725392601398638,
+          "T": 1933.0,
+          "t1": 19,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1915,
+          "noise": {
+            "capacity": {
+              "variance": 1.8968219153991448e-06,
+              "phi": 0.9968159582040113,
+              "n_used": 1915
+            },
+            "charge_time": {
+              "variance": 0.5128557352635632,
+              "phi": 0.9946725180937179,
+              "n_used": 1915
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0005592034276927411,
+              "phi": 0.996649626967058,
+              "n_used": 1915
+            },
+            "internal_resistance": {
+              "variance": 1.4174573541392356e-07,
+              "phi": 0.9917630575570779,
+              "n_used": 1915
+            },
+            "temperature_mean": {
+              "variance": 0.3178888382230486,
+              "phi": 0.9935119703471474,
+              "n_used": 1914
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c39",
+          "family_params": [
+            1.003800817859332,
+            -0.04678090374003502,
+            -1.6050426659556989e-07,
+            11.702945316131725
+          ],
+          "q1": 1.0514178428904464,
+          "T": 1154.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1135,
+          "noise": {
+            "capacity": {
+              "variance": 1.2717310006211547e-06,
+              "phi": 0.9916306480984282,
+              "n_used": 1132
+            },
+            "charge_time": {
+              "variance": 0.05279962179728813,
+              "phi": 0.9689555530378433,
+              "n_used": 1132
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.655349272406443e-05,
+              "phi": 0.9797157052125143,
+              "n_used": 1132
+            },
+            "internal_resistance": {
+              "variance": 4.337946956413321e-08,
+              "phi": 0.9862643145063629,
+              "n_used": 1132
+            },
+            "temperature_mean": {
+              "variance": 0.05721747416749197,
+              "phi": 0.9851820218442269,
+              "n_used": 1132
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c4",
+          "family_params": [
+            1.0022144098549821,
+            -0.03287839604661163,
+            -9.832022389098332e-05,
+            7.058974056543084
+          ],
+          "q1": 1.0748160550116586,
+          "T": 1046.0,
+          "t1": 16,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1031,
+          "noise": {
+            "capacity": {
+              "variance": 1.8740594538489817e-06,
+              "phi": 0.9734751979223522,
+              "n_used": 1031
+            },
+            "charge_time": {
+              "variance": 0.2841381855486166,
+              "phi": 0.989384285608859,
+              "n_used": 1031
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.066836381180172e-05,
+              "phi": 0.9062243227428188,
+              "n_used": 1031
+            },
+            "internal_resistance": {
+              "variance": 1.1428809244203774e-08,
+              "phi": 0.9867982220175702,
+              "n_used": 1031
+            },
+            "temperature_mean": {
+              "variance": 0.1504468784192495,
+              "phi": 0.9905786761351216,
+              "n_used": 1031
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c42",
+          "family_params": [
+            1.0039055106519381,
+            -0.032925816641828885,
+            -9.516055817786012e-05,
+            4.408852832137333
+          ],
+          "q1": 1.0697535997669032,
+          "T": 1640.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1621,
+          "noise": {
+            "capacity": {
+              "variance": 2.1301065705083494e-06,
+              "phi": 0.9906728291113317,
+              "n_used": 1619
+            },
+            "charge_time": {
+              "variance": 0.49558490611916667,
+              "phi": 0.992965054744419,
+              "n_used": 1619
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0008278444360270216,
+              "phi": 0.9890209345208473,
+              "n_used": 1619
+            },
+            "internal_resistance": {
+              "variance": 1.7478950339095805e-07,
+              "phi": 0.9858327581366225,
+              "n_used": 1619
+            },
+            "temperature_mean": {
+              "variance": 0.9199061568019089,
+              "phi": 0.9858744346279843,
+              "n_used": 1619
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c43",
+          "family_params": [
+            1.0033192370731427,
+            -0.03487578997774895,
+            -6.667741528828724e-06,
+            9.627264625710193
+          ],
+          "q1": 1.0731610986014022,
+          "T": 1044.0,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1025,
+          "noise": {
+            "capacity": {
+              "variance": 2.695903865643373e-06,
+              "phi": 0.9946440419411422,
+              "n_used": 1016
+            },
+            "charge_time": {
+              "variance": 0.08587724798699277,
+              "phi": 0.9738144082292883,
+              "n_used": 1016
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002687979376574992,
+              "phi": 0.9730127841121945,
+              "n_used": 1016
+            },
+            "internal_resistance": {
+              "variance": 3.4255865655869475e-08,
+              "phi": 0.9448041943271284,
+              "n_used": 1016
+            },
+            "temperature_mean": {
+              "variance": 0.2697393282746939,
+              "phi": 0.9620099948207385,
+              "n_used": 1016
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c44",
+          "family_params": [
+            1.0039556765708302,
+            -0.036970247361708376,
+            -3.292528050415783e-06,
+            11.437751012214406
+          ],
+          "q1": 1.0736855699300736,
+          "T": 938.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 919,
+          "noise": {
+            "capacity": {
+              "variance": 1.984138816115495e-06,
+              "phi": 0.995602148202219,
+              "n_used": 919
+            },
+            "charge_time": {
+              "variance": 0.02274401319049785,
+              "phi": 0.9449264536109976,
+              "n_used": 919
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0005883315626882313,
+              "phi": 0.9914312158895713,
+              "n_used": 919
+            },
+            "internal_resistance": {
+              "variance": 9.13706433013595e-09,
+              "phi": 0.9866450935200898,
+              "n_used": 919
+            },
+            "temperature_mean": {
+              "variance": 0.04823770744471543,
+              "phi": 0.9819316321244514,
+              "n_used": 919
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c45",
+          "family_params": [
+            1.0033032579611016,
+            -0.030813940425307815,
+            -5.988262045017656e-05,
+            4.28775505690539
+          ],
+          "q1": 1.0716944969697004,
+          "T": 1799.0,
+          "t1": 16,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 1784,
+          "noise": {
+            "capacity": {
+              "variance": 2.386287873568087e-06,
+              "phi": 0.9692886988840473,
+              "n_used": 1782
+            },
+            "charge_time": {
+              "variance": 0.6722284730934527,
+              "phi": 0.9857985476843822,
+              "n_used": 1782
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.001244564268167801,
+              "phi": 0.989199037022978,
+              "n_used": 1782
+            },
+            "internal_resistance": {
+              "variance": 1.498616826865964e-07,
+              "phi": 0.9807078438306409,
+              "n_used": 1782
+            },
+            "temperature_mean": {
+              "variance": 0.3388650717720136,
+              "phi": 0.977992980212094,
+              "n_used": 1782
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c5",
+          "family_params": [
+            1.0045372270536805,
+            -0.058479160462075665,
+            -1.0531301753040247e-05,
+            11.34665667175453
+          ],
+          "q1": 1.0538047477855512,
+          "T": 826.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 807,
+          "noise": {
+            "capacity": {
+              "variance": 1.676055499891075e-06,
+              "phi": 0.9905047392194788,
+              "n_used": 800
+            },
+            "charge_time": {
+              "variance": 0.053596565803107614,
+              "phi": 0.9494233497220204,
+              "n_used": 800
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00010563365775669976,
+              "phi": 0.9252260154835418,
+              "n_used": 800
+            },
+            "internal_resistance": {
+              "variance": 1.565360132724938e-08,
+              "phi": 0.98852404624478,
+              "n_used": 800
+            },
+            "temperature_mean": {
+              "variance": 6.9316499120605215,
+              "phi": 0.9898851383068117,
+              "n_used": 800
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c6",
+          "family_params": [
+            1.0006550228074047,
+            -0.18440872424375618,
+            -0.00040521226782060576,
+            7.407212981879604
+          ],
+          "q1": 1.063035861118881,
+          "T": 665.0,
+          "t1": 4,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 662,
+          "noise": {
+            "capacity": {
+              "variance": 1.5570784558321103e-06,
+              "phi": 0.9658908845621631,
+              "n_used": 662
+            },
+            "charge_time": {
+              "variance": 0.2099330527683672,
+              "phi": 0.9762582512622462,
+              "n_used": 662
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002493210933057293,
+              "phi": 0.9265353642288426,
+              "n_used": 662
+            },
+            "internal_resistance": {
+              "variance": 1.91729088806016e-08,
+              "phi": 0.9734307491485558,
+              "n_used": 661
+            },
+            "temperature_mean": {
+              "variance": 0.46336964453780655,
+              "phi": 0.9790865764705218,
+              "n_used": 661
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c7",
+          "family_params": [
+            1.0024384330039748,
+            -0.026771090241333874,
+            -8.523062784202386e-05,
+            4.027671501587365
+          ],
+          "q1": 1.0708184925407962,
+          "T": 1834.0,
+          "t1": 14,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1821,
+          "noise": {
+            "capacity": {
+              "variance": 1.8513699770490464e-06,
+              "phi": 0.9533766365511992,
+              "n_used": 1814
+            },
+            "charge_time": {
+              "variance": 0.4644204531119485,
+              "phi": 0.9831684371919537,
+              "n_used": 1814
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0004056221048784271,
+              "phi": 0.9792931061943868,
+              "n_used": 1814
+            },
+            "internal_resistance": {
+              "variance": 7.634296279062084e-08,
+              "phi": 0.9455219153908513,
+              "n_used": 1814
+            },
+            "temperature_mean": {
+              "variance": 0.571820321036416,
+              "phi": 0.9792707533695368,
+              "n_used": 1814
+            }
+          }
+        },
+        {
+          "cell_id": "MATR_b3c8",
+          "family_params": [
+            1.0039107521007005,
+            -0.047343875444670974,
+            -5.904600445245532e-06,
+            12.229327308326457
+          ],
+          "q1": 1.0684814097902133,
+          "T": 826.0,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 807,
+          "noise": {
+            "capacity": {
+              "variance": 1.2397213033501052e-06,
+              "phi": 0.9828416311027343,
+              "n_used": 807
+            },
+            "charge_time": {
+              "variance": 0.08707242242716932,
+              "phi": 0.98080523399435,
+              "n_used": 807
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00023718884776765525,
+              "phi": 0.9754608267012937,
+              "n_used": 807
+            },
+            "internal_resistance": {
+              "variance": 1.934220681619927e-08,
+              "phi": 0.9942688948656155,
+              "n_used": 807
+            },
+            "temperature_mean": {
+              "variance": 0.06202270087433393,
+              "phi": 0.9820444416529636,
+              "n_used": 807
+            }
+          }
+        }
+      ]
+    },
+    "E2_family_choice": {
+      "selected": "two_term_exponential",
+      "lowest_cv": "two_term_exponential",
+      "lowest_cv_eligible": "two_term_exponential",
+      "margin": 0.05,
+      "margin_changed_choice": false,
+      "identifiability_changed_choice": false,
+      "max_frac_units_at_bound": 0.2,
+      "frac_units_at_bound": {
+        "power_law": 0.3888888888888889,
+        "two_term_exponential": 0.022222222222222223,
+        "rollover": 0.34444444444444444
+      },
+      "eligible": [
+        "two_term_exponential"
+      ],
+      "median_cv_rmse": {
+        "power_law": 0.012911766262902063,
+        "two_term_exponential": 0.006093030492047499,
+        "rollover": 0.006733121968262977
+      },
+      "median_in_sample_rmse": {
+        "power_law": 0.004558232775361746,
+        "two_term_exponential": 0.0013582464482349886,
+        "rollover": 0.0010754430129490417
+      },
+      "units_in_selection": 90
+    },
+    "E3_channel_mappings": {
+      "capacity": {
+        "channel": "capacity",
+        "kind": "affine_capacity",
+        "increasing": false,
+        "grid": [
+          0.0,
+          1.0
+        ],
+        "values": [
+          1.0746564020979057,
+          -0.19465640209790558
+        ],
+        "phi0": 1.0746564020979057,
+        "phi1": 0.8800000000000001,
+        "delta": -0.19465640209790558
+      },
+      "charge_time": {
+        "channel": "charge_time",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          29.33692023358584,
+          28.763525236075747,
+          28.620980088495592,
+          28.398010326353724,
+          28.345975070575548,
+          28.212329823943573,
+          28.04447593759523,
+          27.700463548051456,
+          27.687601049502433,
+          27.36132694715446,
+          27.23894916127739,
+          27.18504555916075,
+          27.125334241462657,
+          26.897256440460897,
+          26.687698896551755,
+          26.687698896551755,
+          26.475100407759328,
+          26.475100407759328,
+          26.16362506245536,
+          26.07416084942076,
+          26.07416084942076,
+          25.851539063283287,
+          25.407411666666583,
+          25.407411666666583,
+          25.407411666666583,
+          25.407411666666583,
+          25.407411666666583,
+          25.25395355590072,
+          25.179020829975855,
+          25.179020829975855,
+          25.013132333948345,
+          24.845764898155917,
+          24.845764898155917,
+          24.776014260726182,
+          24.748130152512598,
+          24.748130152512598,
+          24.58132104620984,
+          24.58132104620984,
+          24.45702188500146,
+          24.45702188500146,
+          24.400698318776897,
+          24.339765010982802,
+          24.28744865040677,
+          24.28744865040677,
+          24.09891536989269,
+          24.09891536989269,
+          23.995578791666574,
+          23.83950678797478,
+          23.69448750394911,
+          23.69448750394911,
+          23.49985076910055,
+          23.49985076910055,
+          23.49985076910055,
+          23.49985076910055,
+          23.32453517054275,
+          23.294280377510177,
+          23.27912027272739,
+          23.178637359307384,
+          23.054001199377414,
+          22.998577914230147,
+          22.873091301369932,
+          22.784671066066032,
+          22.704029037634523,
+          22.598695233333185,
+          22.396856856060715,
+          22.396856856060715,
+          22.378257068376264,
+          22.2170483183182,
+          22.131852016088246,
+          22.131852016088246,
+          22.131852016088246,
+          22.055057686170574,
+          21.98098741228036,
+          21.98098741228036,
+          21.758821688033958,
+          21.670526382113614,
+          21.62920235922302,
+          21.62920235922302,
+          21.62920235922302,
+          21.504423393393207,
+          21.504423393393207,
+          21.43413754125383,
+          21.366651465201247,
+          21.26499619858142,
+          21.25540608040167,
+          21.190697083332882,
+          21.099656675126926,
+          21.099656675126926,
+          21.099656675126926,
+          21.03678246177379,
+          21.03678246177379,
+          21.03678246177379,
+          21.03678246177379,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213,
+          20.998175097809213
+        ],
+        "phi0": 29.33692023358584,
+        "phi1": 20.998175097809213,
+        "delta": -8.338745135776627
+      },
+      "mean_discharge_voltage": {
+        "channel": "mean_discharge_voltage",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          2.7830866524978757,
+          2.7830866524978757,
+          2.7809314944851846,
+          2.779395522864385,
+          2.7758883189844332,
+          2.775088464310552,
+          2.7735527991141606,
+          2.7724367443100397,
+          2.7721835943095448,
+          2.7721835943095448,
+          2.7721835943095448,
+          2.768260372339014,
+          2.768260372339014,
+          2.767463818326846,
+          2.767463818326846,
+          2.7660105816522806,
+          2.7660105816522806,
+          2.764542232232989,
+          2.764542232232989,
+          2.7635480714434872,
+          2.7622089725113534,
+          2.7622089725113534,
+          2.7622089725113534,
+          2.7612362141563227,
+          2.7603025941523343,
+          2.756500604528443,
+          2.755772578713738,
+          2.755772578713738,
+          2.7545067316985477,
+          2.7478972620025526,
+          2.746160159409898,
+          2.744627802091566,
+          2.7417034483059486,
+          2.738541275457871,
+          2.737223101430216,
+          2.7324927868790905,
+          2.7324004575274508,
+          2.7289865028967673,
+          2.7229900515995573,
+          2.7205505134214016,
+          2.717950155261446,
+          2.7152277739556188,
+          2.7102185308703515,
+          2.7066808769500406,
+          2.7059517471135304,
+          2.7011409881159816,
+          2.7010857589601427,
+          2.698643775135381,
+          2.698643775135381,
+          2.6963119786735668,
+          2.6956152520106,
+          2.693693020406569,
+          2.6817433688034824,
+          2.6817433688034824,
+          2.6785907982866606,
+          2.676883540788094,
+          2.673635141276988,
+          2.672599140405331,
+          2.671386365513573,
+          2.670213829771975,
+          2.6682426500150878,
+          2.6671433492159227,
+          2.663763824955981,
+          2.6634988955588432,
+          2.6607703757772643,
+          2.6607703757772643,
+          2.659468742317065,
+          2.655923967751167,
+          2.6545458499470853,
+          2.652888290170092,
+          2.647284502345799,
+          2.643604875585292,
+          2.6419009897556385,
+          2.6419009897556385,
+          2.6419009897556385,
+          2.6419009897556385,
+          2.6393305043199398,
+          2.638591952773025,
+          2.6331840073777246,
+          2.632094698750465,
+          2.632094698750465,
+          2.628254246918733,
+          2.627682294250179,
+          2.6241902916272726,
+          2.624028394726617,
+          2.6224216680605545,
+          2.6224216680605545,
+          2.6166603409619564,
+          2.6162330269692458,
+          2.61474645184972,
+          2.6119682807038362,
+          2.6107631969305793,
+          2.6095831913430705,
+          2.6067845656238147,
+          2.605118148641349,
+          2.6010445696676316,
+          2.6010445696676316,
+          2.600640450022813,
+          2.600047357512124,
+          2.600047357512124,
+          2.5860276944693354
+        ],
+        "phi0": 2.7830866524978757,
+        "phi1": 2.5860276944693354,
+        "delta": -0.19705895802854023
+      },
+      "internal_resistance": {
+        "channel": "internal_resistance",
+        "kind": "isotonic_pchip",
+        "increasing": true,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.016169184684427042,
+          0.01618278851025911,
+          0.01618278851025911,
+          0.01618278851025911,
+          0.01618278851025911,
+          0.01618278851025911,
+          0.01618278851025911,
+          0.016277205907766993,
+          0.016277205907766993,
+          0.016277205907766993,
+          0.016277205907766993,
+          0.016310998148014434,
+          0.016310998148014434,
+          0.016310998148014434,
+          0.01636666178744493,
+          0.016369200238726792,
+          0.01639039943163097,
+          0.016475892512263092,
+          0.016475892512263092,
+          0.016475892512263092,
+          0.016503244392405064,
+          0.0165481989375,
+          0.016558099251141555,
+          0.016578742748691103,
+          0.016589398602523658,
+          0.016631751357409717,
+          0.016631751357409717,
+          0.016680294150684935,
+          0.01670140464130435,
+          0.01670140464130435,
+          0.016703011498106064,
+          0.016707653910256408,
+          0.016718199203319507,
+          0.016749053451612903,
+          0.016749646749103942,
+          0.01684555813900415,
+          0.016880201925816022,
+          0.016880201925816022,
+          0.016901500945,
+          0.01690932144927536,
+          0.016931397021097045,
+          0.016957820912162164,
+          0.01696278139856802,
+          0.01696278139856802,
+          0.01700052385714286,
+          0.01704253860542797,
+          0.01704253860542797,
+          0.01704357339543726,
+          0.017049616742718446,
+          0.017128037353711788,
+          0.017135291863387976,
+          0.017175687703947368,
+          0.017278017792592592,
+          0.017312647580299784,
+          0.017312647580299784,
+          0.017312647580299784,
+          0.017312647580299784,
+          0.017312647580299784,
+          0.017327764339743583,
+          0.017382971358585863,
+          0.017505997546762592,
+          0.017512016023529406,
+          0.017512016023529406,
+          0.017572271653846158,
+          0.017605742388235295,
+          0.01766218155844156,
+          0.01766218155844156,
+          0.0176834309015544,
+          0.017721707163742686,
+          0.01779503109937888,
+          0.01789751447328244,
+          0.017933247325396823,
+          0.018039433291139242,
+          0.018066244492647057,
+          0.018101075836879435,
+          0.018196666445454538,
+          0.018339538025423728,
+          0.018433387264705885,
+          0.018488544404580153,
+          0.018635806543046363,
+          0.018767856504201683,
+          0.018878704346666664,
+          0.01959205411111111
+        ],
+        "phi0": 0.016169184684427042,
+        "phi1": 0.01959205411111111,
+        "delta": 0.0034228694266840685
+      },
+      "temperature_mean": {
+        "channel": "temperature_mean",
+        "kind": "isotonic_pchip",
+        "increasing": true,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          33.10833726921993,
+          33.467723221339064,
+          33.723047285113,
+          33.97060654895831,
+          34.12237901534705,
+          34.2890098600352,
+          34.60775536819003,
+          34.64526746823818,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978,
+          34.64671661850978
+        ],
+        "phi0": 33.10833726921993,
+        "phi1": 34.64671661850978,
+        "delta": 1.5383793492898477
+      }
+    },
+    "E4_channel_covariance": {
+      "channels": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage",
+        "internal_resistance",
+        "temperature_mean"
+      ],
+      "covariance": [
+        [
+          2.7988083296668595e-06,
+          5.695146024100174e-05,
+          -2.3509691006101832e-06,
+          7.49583880079661e-09,
+          8.1748800813956e-05
+        ],
+        [
+          5.695146024100174e-05,
+          8.691689332694354,
+          -0.14681563268571882,
+          0.002639780505570739,
+          -3.501629886891084
+        ],
+        [
+          -2.3509691006101832e-06,
+          -0.14681563268571882,
+          0.004048078726118918,
+          -4.8480724605362694e-05,
+          0.057801305037998456
+        ],
+        [
+          7.49583880079661e-09,
+          0.002639780505570739,
+          -4.8480724605362694e-05,
+          1.216841338039476e-06,
+          -0.0010999971433899931
+        ],
+        [
+          8.1748800813956e-05,
+          -3.501629886891084,
+          0.057801305037998456,
+          -0.0010999971433899931,
+          3.357349737572982
+        ]
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.011546920814722687,
+          -0.022086956063098094,
+          0.004061782667540511,
+          0.026668372924550304
+        ],
+        [
+          0.011546920814722689,
+          1.0,
+          -0.7827007113963127,
+          0.8117059741492417,
+          -0.648216155460952
+        ],
+        [
+          -0.022086956063098094,
+          -0.7827007113963126,
+          1.0,
+          -0.6907607459268532,
+          0.4958095376845383
+        ],
+        [
+          0.004061782667540511,
+          0.8117059741492418,
+          -0.6907607459268532,
+          1.0,
+          -0.544222242655138
+        ],
+        [
+          0.026668372924550304,
+          -0.648216155460952,
+          0.4958095376845382,
+          -0.544222242655138,
+          1.0
+        ]
+      ],
+      "n_positions": 78386
+    },
+    "E5_noise": {
+      "capacity": {
+        "variance": 2.818708601780269e-06,
+        "phi": 0.9415210134933107,
+        "n_used": 78795
+      },
+      "charge_time": {
+        "variance": 0.8161342021576741,
+        "phi": 0.9058420545694321,
+        "n_used": 78433
+      },
+      "mean_discharge_voltage": {
+        "variance": 0.0005355052511216185,
+        "phi": 0.9658934962479901,
+        "n_used": 78792
+      },
+      "internal_resistance": {
+        "variance": 9.031964020315397e-08,
+        "phi": 0.9629400510475847,
+        "n_used": 78755
+      },
+      "temperature_mean": {
+        "variance": 0.49963958452264245,
+        "phi": 0.9430219995493502,
+        "n_used": 78755
+      }
+    },
+    "E6_patterns": {
+      "positive": {
+        "enabled": false,
+        "events": 97,
+        "measured_rate_per_100": 0.12190830484616931,
+        "noise_only_rate_per_100": 0.14393939393939392,
+        "ratio_to_noise": 0.8469419073523342,
+        "noise_factor": 2.0,
+        "noise_segment_length": 792,
+        "units_with_event": 55,
+        "amplitude_Ah": [
+          0.004051857319474294,
+          0.0047157628047947145,
+          0.004759324680411518,
+          0.0038720110027761967,
+          0.0021578029704628376,
+          0.0021526004537787006,
+          0.0025997237299652735,
+          0.0029399347909687,
+          0.0078123611000697375,
+          0.01309805998222804,
+          0.009944737404991499,
+          0.002162141915668433,
+          0.0027529891255776446,
+          0.00260474284025004,
+          0.0027390896927583733,
+          0.002176691770824794,
+          0.0031640284809465787,
+          0.002480709833831548,
+          0.0024420621113730484,
+          0.002446957857349321,
+          0.0022644059012119026,
+          0.0026456455143828938,
+          0.0027157218340886423,
+          0.0026766846950383744,
+          0.002980930374426638,
+          0.002800184595654787,
+          0.005800846955706367,
+          0.004320977903901413,
+          0.004308893802511031,
+          0.004247737390095604,
+          0.0042549701921419745,
+          0.004694559128108651,
+          0.0033874074954793327,
+          0.003257459656381322,
+          0.003622214806919189,
+          0.005190769791407536,
+          0.009287451680169052,
+          0.006135954597237986,
+          0.004395091870433738,
+          0.011052113779235416,
+          0.0064678210965303205,
+          0.01079533172824293,
+          0.002462439047754182,
+          0.002096857433309686,
+          0.002678881857053363,
+          0.0023443149293656024,
+          0.005690922224899456,
+          0.00439647171056133,
+          0.001641255069439664,
+          0.0032883927114228176,
+          0.0051184931342843866,
+          0.007179710971192839,
+          0.003912924214970269,
+          0.007043276022646839,
+          0.008707629165964627,
+          0.003393780701861931,
+          0.007194694719278966,
+          0.009778845801263931,
+          0.006805669354200008,
+          0.0078781505827265,
+          0.003927763844809605,
+          0.006527718238397764,
+          0.0038280216772714347,
+          0.00852315373430037,
+          0.007681919227575959,
+          0.0038809434652959814,
+          0.006238810027498462,
+          0.003293392696387398,
+          0.003463295158292221,
+          0.0033237484471528595,
+          0.005642154419921975,
+          0.004286598004278963,
+          0.004990104378441773,
+          0.0037253315316902575,
+          0.004967457089006423,
+          0.004876969510224808,
+          0.004886026997616169,
+          0.00794172530515244,
+          0.001177847358561456,
+          0.0015016465935124342,
+          0.0015029779308430586,
+          0.0013604056394125113,
+          0.0014656237903532352,
+          0.0013968330656401542,
+          0.0015675480510143056,
+          0.0013899878750146387,
+          0.0011669908719006985,
+          0.005963026248696017,
+          0.005827832676066923,
+          0.0028355253976809222,
+          0.0029525643283573834,
+          0.002077515485054076,
+          0.004791681834863186,
+          0.004219993298943067,
+          0.003858539760481716,
+          0.008218933504690195,
+          0.005709744503424184
+        ],
+        "duration": [
+          2,
+          4,
+          3,
+          2,
+          2,
+          7,
+          9,
+          2,
+          4,
+          4,
+          10,
+          2,
+          6,
+          4,
+          9,
+          3,
+          9,
+          4,
+          5,
+          5,
+          4,
+          4,
+          2,
+          4,
+          5,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          7,
+          3,
+          3,
+          7,
+          2,
+          8,
+          10,
+          2,
+          8,
+          6,
+          11,
+          6,
+          2,
+          5,
+          2,
+          2,
+          2,
+          2,
+          6,
+          4,
+          5,
+          2,
+          2,
+          8,
+          2,
+          6,
+          8,
+          8,
+          8,
+          2,
+          5,
+          2,
+          7,
+          6,
+          2,
+          2,
+          2,
+          6,
+          2,
+          3,
+          7,
+          10,
+          8,
+          5,
+          4,
+          2,
+          6,
+          2,
+          2,
+          4,
+          4,
+          2,
+          2,
+          5,
+          2,
+          2,
+          6,
+          10,
+          4,
+          3,
+          2,
+          4,
+          3,
+          2,
+          9,
+          7
+        ],
+        "rate_per_position_by_unit": {
+          "MATR_b1c1": 0.0018648018648018648,
+          "MATR_b1c11": 0.0,
+          "MATR_b1c12": 0.00340522133938706,
+          "MATR_b1c13": 0.001141552511415525,
+          "MATR_b1c18": 0.0029850746268656717,
+          "MATR_b1c19": 0.0012953367875647669,
+          "MATR_b1c20": 0.0,
+          "MATR_b1c21": 0.0,
+          "MATR_b1c22": 0.0,
+          "MATR_b1c23": 0.011055276381909548,
+          "MATR_b1c25": 0.0,
+          "MATR_b1c27": 0.0048367593712212815,
+          "MATR_b1c28": 0.0011918951132300357,
+          "MATR_b1c29": 0.0011160714285714285,
+          "MATR_b1c30": 0.0029069767441860465,
+          "MATR_b1c31": 0.002320185614849188,
+          "MATR_b1c32": 0.0,
+          "MATR_b1c33": 0.0,
+          "MATR_b1c34": 0.0041265474552957355,
+          "MATR_b1c35": 0.0,
+          "MATR_b1c37": 0.003179650238473768,
+          "MATR_b1c38": 0.0,
+          "MATR_b1c39": 0.0016556291390728477,
+          "MATR_b1c4": 0.0005924170616113745,
+          "MATR_b1c40": 0.0,
+          "MATR_b1c42": 0.001466275659824047,
+          "MATR_b1c43": 0.0031496062992125984,
+          "MATR_b1c5": 0.0,
+          "MATR_b1c9": 0.002904162633107454,
+          "MATR_b2c0": 0.0,
+          "MATR_b2c10": 0.0,
+          "MATR_b2c11": 0.0021929824561403508,
+          "MATR_b2c17": 0.002105263157894737,
+          "MATR_b2c18": 0.0021321961620469083,
+          "MATR_b2c19": 0.0021929824561403508,
+          "MATR_b2c2": 0.0,
+          "MATR_b2c20": 0.002074688796680498,
+          "MATR_b2c21": 0.0,
+          "MATR_b2c22": 0.0020325203252032522,
+          "MATR_b2c24": 0.002105263157894737,
+          "MATR_b2c25": 0.0,
+          "MATR_b2c27": 0.0,
+          "MATR_b2c28": 0.004081632653061225,
+          "MATR_b2c29": 0.0020920502092050207,
+          "MATR_b2c30": 0.0,
+          "MATR_b2c32": 0.00398406374501992,
+          "MATR_b2c34": 0.002074688796680498,
+          "MATR_b2c35": 0.0,
+          "MATR_b2c36": 0.0019455252918287938,
+          "MATR_b2c37": 0.002183406113537118,
+          "MATR_b2c38": 0.0022471910112359553,
+          "MATR_b2c39": 0.002277904328018223,
+          "MATR_b2c41": 0.0024449877750611247,
+          "MATR_b2c42": 0.0022471910112359553,
+          "MATR_b2c44": 0.0022935779816513763,
+          "MATR_b2c45": 0.002136752136752137,
+          "MATR_b2c47": 0.001443001443001443,
+          "MATR_b2c6": 0.0,
+          "MATR_b3c1": 0.0028680688336520078,
+          "MATR_b3c10": 0.0,
+          "MATR_b3c11": 0.0,
+          "MATR_b3c12": 0.0010964912280701754,
+          "MATR_b3c13": 0.0,
+          "MATR_b3c14": 0.0,
+          "MATR_b3c16": 0.0006176652254478073,
+          "MATR_b3c17": 0.0007668711656441718,
+          "MATR_b3c18": 0.0008857395925597874,
+          "MATR_b3c2": 0.0024019215372297837,
+          "MATR_b3c20": 0.0012626262626262627,
+          "MATR_b3c22": 0.0,
+          "MATR_b3c23": 0.0041417395306028535,
+          "MATR_b3c24": 0.0,
+          "MATR_b3c25": 0.0010330578512396695,
+          "MATR_b3c26": 0.0,
+          "MATR_b3c27": 0.0012062726176115801,
+          "MATR_b3c28": 0.0,
+          "MATR_b3c29": 0.0,
+          "MATR_b3c3": 0.0018281535648994515,
+          "MATR_b3c30": 0.0010940919037199124,
+          "MATR_b3c31": 0.0014084507042253522,
+          "MATR_b3c32": 0.0,
+          "MATR_b3c34": 0.0,
+          "MATR_b3c35": 0.0,
+          "MATR_b3c36": 0.0,
+          "MATR_b3c38": 0.0,
+          "MATR_b3c39": 0.000881057268722467,
+          "MATR_b3c4": 0.0,
+          "MATR_b3c42": 0.0006169031462060457,
+          "MATR_b3c43": 0.000975609756097561,
+          "MATR_b3c44": 0.0,
+          "MATR_b3c45": 0.0,
+          "MATR_b3c5": 0.0,
+          "MATR_b3c6": 0.0,
+          "MATR_b3c7": 0.0005491488193300384,
+          "MATR_b3c8": 0.0
+        }
+      },
+      "negative": {
+        "enabled": false,
+        "events": 86,
+        "measured_rate_per_100": 0.10808365171928412,
+        "noise_only_rate_per_100": 0.1388888888888889,
+        "ratio_to_noise": 0.7782022923788456,
+        "noise_factor": 2.0,
+        "noise_segment_length": 792,
+        "units_with_event": 44,
+        "amplitude_Ah": [
+          -0.004390763950430252,
+          -0.0041639186409277275,
+          -0.0038755538827607325,
+          -0.011861746464358936,
+          -0.004763138066897253,
+          -0.0031196542944701734,
+          -0.0030779538902467483,
+          -0.005741274389290918,
+          -0.006460285933528156,
+          -0.004246199556367568,
+          -0.004227082730677381,
+          -0.005757125916393747,
+          -0.0029764852323798823,
+          -0.0023069439645829054,
+          -0.006253239651613947,
+          -0.004056469397337024,
+          -0.0022076322845916074,
+          -0.0021862254441562565,
+          -0.0021699310231227055,
+          -0.002421463534829348,
+          -0.0028023641185782482,
+          -0.002165613276037248,
+          -0.017751014377081643,
+          -0.005376289247666587,
+          -0.003075632408871409,
+          -0.002975640255161296,
+          -0.0037178511273587315,
+          -0.00499449394551868,
+          -0.022556823072384564,
+          -0.010356784445167744,
+          -0.0035389673105505155,
+          -0.0016304703059960989,
+          -0.005504154593232431,
+          -0.0018778111104292157,
+          -0.004482958747083995,
+          -0.001953969697408504,
+          -0.0018242730242730236,
+          -0.0034594066266225394,
+          -0.0024531468806319374,
+          -0.0020260453089808715,
+          -0.0017531626861857126,
+          -0.003451057097079566,
+          -0.004686636951878037,
+          -0.003224363148553147,
+          -0.004130999073016446,
+          -0.008630920494231255,
+          -0.003530430065058585,
+          -0.0034073849358141127,
+          -0.00433929438432949,
+          -0.0035827989131952437,
+          -0.02202313763458366,
+          -0.003925358447708875,
+          -0.004382996980376085,
+          -0.006156694471986358,
+          -0.014159595212192285,
+          -0.004010556871689136,
+          -0.0035535665350203147,
+          -0.005659105415571376,
+          -0.0038004032879124347,
+          -0.004113231323714721,
+          -0.0027412573607015133,
+          -0.00317646255795426,
+          -0.006582217604074501,
+          -0.004670975560223485,
+          -0.004696649046096419,
+          -0.004778144222968384,
+          -0.004808240480661797,
+          -0.004791259794844597,
+          -0.0022765495626206832,
+          -0.0025231169362217496,
+          -0.010176154856483753,
+          -0.0024862607055423642,
+          -0.0016287374960813042,
+          -0.0012753324197540825,
+          -0.0012591890463327976,
+          -0.0013507601111171599,
+          -0.0012424189378111928,
+          -0.0013214727675547094,
+          -0.0013181762606457694,
+          -0.001530207092971611,
+          -0.002100135665636718,
+          -0.001756983379378893,
+          -0.0018391652371625646,
+          -0.0061606565975912166,
+          -0.003615643418754215,
+          -0.0034929152116628453
+        ],
+        "duration": [
+          2,
+          2,
+          2,
+          11,
+          4,
+          2,
+          2,
+          2,
+          9,
+          2,
+          2,
+          3,
+          2,
+          6,
+          8,
+          3,
+          2,
+          2,
+          3,
+          2,
+          11,
+          4,
+          2,
+          5,
+          3,
+          8,
+          3,
+          8,
+          7,
+          2,
+          8,
+          3,
+          6,
+          2,
+          2,
+          2,
+          4,
+          7,
+          3,
+          2,
+          2,
+          6,
+          2,
+          3,
+          7,
+          2,
+          2,
+          2,
+          6,
+          4,
+          2,
+          5,
+          2,
+          2,
+          11,
+          8,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          2,
+          2,
+          9,
+          3,
+          2,
+          2,
+          9,
+          2,
+          3,
+          6,
+          6,
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          9,
+          10,
+          2,
+          2,
+          6,
+          2,
+          7
+        ],
+        "rate_per_position_by_unit": {
+          "MATR_b1c1": 0.0009324009324009324,
+          "MATR_b1c11": 0.0,
+          "MATR_b1c12": 0.0011350737797956867,
+          "MATR_b1c13": 0.0,
+          "MATR_b1c18": 0.0,
+          "MATR_b1c19": 0.0,
+          "MATR_b1c20": 0.0019011406844106464,
+          "MATR_b1c21": 0.0018148820326678765,
+          "MATR_b1c22": 0.0,
+          "MATR_b1c23": 0.0010050251256281408,
+          "MATR_b1c25": 0.0,
+          "MATR_b1c27": 0.0012091898428053204,
+          "MATR_b1c28": 0.0023837902264600714,
+          "MATR_b1c29": 0.0011160714285714285,
+          "MATR_b1c30": 0.0,
+          "MATR_b1c31": 0.0,
+          "MATR_b1c32": 0.0,
+          "MATR_b1c33": 0.0,
+          "MATR_b1c34": 0.0,
+          "MATR_b1c35": 0.0,
+          "MATR_b1c37": 0.0,
+          "MATR_b1c38": 0.0,
+          "MATR_b1c39": 0.0,
+          "MATR_b1c4": 0.001184834123222749,
+          "MATR_b1c40": 0.0021164021164021165,
+          "MATR_b1c42": 0.0,
+          "MATR_b1c43": 0.0015748031496062992,
+          "MATR_b1c5": 0.0,
+          "MATR_b1c9": 0.006776379477250726,
+          "MATR_b2c0": 0.006802721088435374,
+          "MATR_b2c10": 0.0018484288354898336,
+          "MATR_b2c11": 0.006578947368421052,
+          "MATR_b2c17": 0.004210526315789474,
+          "MATR_b2c18": 0.0021321961620469083,
+          "MATR_b2c19": 0.006578947368421052,
+          "MATR_b2c2": 0.0023923444976076554,
+          "MATR_b2c20": 0.012448132780082987,
+          "MATR_b2c21": 0.004246284501061571,
+          "MATR_b2c22": 0.0020325203252032522,
+          "MATR_b2c24": 0.0,
+          "MATR_b2c25": 0.0022624434389140274,
+          "MATR_b2c27": 0.0,
+          "MATR_b2c28": 0.01020408163265306,
+          "MATR_b2c29": 0.0020920502092050207,
+          "MATR_b2c30": 0.0021691973969631237,
+          "MATR_b2c32": 0.0099601593625498,
+          "MATR_b2c34": 0.0,
+          "MATR_b2c35": 0.002242152466367713,
+          "MATR_b2c36": 0.0019455252918287938,
+          "MATR_b2c37": 0.004366812227074236,
+          "MATR_b2c38": 0.0044943820224719105,
+          "MATR_b2c39": 0.004555808656036446,
+          "MATR_b2c41": 0.0024449877750611247,
+          "MATR_b2c42": 0.0022471910112359553,
+          "MATR_b2c44": 0.0022935779816513763,
+          "MATR_b2c45": 0.0,
+          "MATR_b2c47": 0.0,
+          "MATR_b2c6": 0.0,
+          "MATR_b3c1": 0.0,
+          "MATR_b3c10": 0.0,
+          "MATR_b3c11": 0.0,
+          "MATR_b3c12": 0.0,
+          "MATR_b3c13": 0.0012578616352201257,
+          "MATR_b3c14": 0.0011947431302270011,
+          "MATR_b3c16": 0.0,
+          "MATR_b3c17": 0.0007668711656441718,
+          "MATR_b3c18": 0.0,
+          "MATR_b3c2": 0.0,
+          "MATR_b3c20": 0.0,
+          "MATR_b3c22": 0.0,
+          "MATR_b3c23": 0.0041417395306028535,
+          "MATR_b3c24": 0.0,
+          "MATR_b3c25": 0.0,
+          "MATR_b3c26": 0.0,
+          "MATR_b3c27": 0.0012062726176115801,
+          "MATR_b3c28": 0.0,
+          "MATR_b3c29": 0.0,
+          "MATR_b3c3": 0.0,
+          "MATR_b3c30": 0.0,
+          "MATR_b3c31": 0.0,
+          "MATR_b3c32": 0.0009017132551848512,
+          "MATR_b3c34": 0.0,
+          "MATR_b3c35": 0.0009319664492078285,
+          "MATR_b3c36": 0.0,
+          "MATR_b3c38": 0.0,
+          "MATR_b3c39": 0.0,
+          "MATR_b3c4": 0.0,
+          "MATR_b3c42": 0.0,
+          "MATR_b3c43": 0.0,
+          "MATR_b3c44": 0.0,
+          "MATR_b3c45": 0.0005605381165919282,
+          "MATR_b3c5": 0.0012391573729863693,
+          "MATR_b3c6": 0.0,
+          "MATR_b3c7": 0.0,
+          "MATR_b3c8": 0.0
+        }
+      }
+    },
+    "E7_length_distribution": [
+      2158,
+      786,
+      688,
+      786,
+      532,
+      557,
+      1012,
+      852,
+      840,
+      858,
+      915,
+      707,
+      874,
+      729,
+      755,
+      740,
+      701,
+      646,
+      615,
+      623,
+      1707,
+      964,
+      700,
+      649,
+      1071,
+      1052,
+      299,
+      559,
+      475,
+      493,
+      486,
+      461,
+      437,
+      500,
+      488,
+      511,
+      494,
+      460,
+      467,
+      509,
+      497,
+      480,
+      518,
+      498,
+      462,
+      533,
+      477,
+      464,
+      458,
+      428,
+      464,
+      455,
+      485,
+      712,
+      509,
+      1061,
+      1076,
+      815,
+      930,
+      814,
+      856,
+      1636,
+      1313,
+      1144,
+      1265,
+      811,
+      1000,
+      823,
+      987,
+      1026,
+      848,
+      539,
+      856,
+      1113,
+      933,
+      729,
+      1156,
+      1091,
+      921,
+      1933,
+      1154,
+      1046,
+      1640,
+      1044,
+      938,
+      1799,
+      826,
+      665,
+      1834,
+      826
+    ]
+  },
+  "derived": {
+    "channel_roles": {
+      "weighted": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "demoted_by_guard": [],
+      "zero_weight_redundant": [
+        "internal_resistance",
+        "temperature_mean"
+      ]
+    },
+    "reference_point_x0": {
+      "capacity": 1.0746564020979057,
+      "charge_time": 29.33692023358584,
+      "mean_discharge_voltage": 2.7830866524978757,
+      "internal_resistance": 0.016169184684427042,
+      "temperature_mean": 33.10833726921993
+    },
+    "null_permuted_source_values": {
+      "channel": "charge_time",
+      "n": 81533,
+      "median": 26.525731666667465
+    },
+    "capacity_affinity_max_abs_error_Ah": 0.0
+  }
+}
