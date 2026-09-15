@@ -67,3 +67,10 @@ def test_eol_search_starts_at_q1_position():
     q = np.concatenate([np.full(5, 0.85), np.linspace(1.08, 1.07, 30), np.linspace(1.07, 0.85, 400)])
     st = unit_state(q, SPEC)
     assert st.T is not None and st.T > st.t1 > 5
+
+
+def test_at_bound_not_flagged_for_interior_parameters_with_infinite_bounds():
+    pos = np.arange(1, 1001, dtype=float)
+    y = FAMILIES["rollover"]([1.0, -0.02, 0.7, 0.05, -0.8], pos)
+    fit = fit_family("rollover", pos, y)
+    assert "m_o" not in fit.at_bound and "m_f" not in fit.at_bound

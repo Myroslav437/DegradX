@@ -80,3 +80,22 @@ Held citations found during the review (not edited in round 1; handled by D10): 
 | D12, D13 | §3.3, declared list | Adds the glitch fraction and the record-end tolerance. | The list must name what is declared. | none |
 
 Blast radius (round 2): §3.2.2 "This is the same quantity that measured datasets provide as a RUL label" is made truer by D13 (HUST T equals the dataset's cycle life). Figure 3 caption ("reach EOL at different positions") is unaffected. No contradiction found in the Introduction or Related Work.
+
+## Round 3 — S3 decisions (2026-09-15), against the S2 commit
+
+`artifacts/amendments/latexdiff_round3.pdf`.
+
+| id | where (paper/paper.tex) | what changed | why | cost / what it buys |
+|---|---|---|---|---|
+| D04 | §3.3 step two | Selection among families whose parameters are determined by the data (not at a bound in more than a declared share of units), with a margin within which the simpler family is preferred. | NASA rollover held its transition width at the lower bound in 6 of 8 units; EOL reproduction p90 26 % vs 9.6 % (power law). | NASA profile has no knee. |
+| D05 | §3.3 detection, last sentence | A type is enabled only if detected at least a declared factor more often than in noise simulated with the profile's fitted variance and autocorrelation. | MATR/HUST detections at the declared k occur at 0.85×/0.47× their noise-only rate; NASA 6.8×. | MATR and HUST carry no inserted patterns; every sparse-set measurement rests on NASA PCoE. |
+| D02 | §3.1.1, ρ paragraph | Units not reaching EOL are excluded from EOL-dependent quantities only (θ, lengths, transfer target) and retained for mappings, noise and patterns. | Their degradation state is defined under C3; NASA noise estimates rest on 13 instead of 8 units. | Mappings near z = 1 rest on reaching units. |
+| D02 | §3.5.1, after "effective number of independent units" | Every measurement has a declared minimum count (interval within half its value); below it the cell is void with its count. | Resampling: median T readable from 5 units, pattern amplitude from 10 events. | NASA regeneration statistics (6 events) void. |
+| D17 | §3.3 step one | The single-reading rule applies in any channel, relative to the channel's typical value. | A few charge-time readings inflated MATR noise variance 25×. | NASA charge-time role borderline. |
+| D02/D04/D05 | §3.3 declared list | Adds the at-bound share and simplicity margin, the noise factor, the minimum counts. | The list names what is declared. | none |
+
+Blast radius (round 3):
+- §3.4 profiles paragraph (NASA "included for one property the others lack") is now what the data show (D05). It stays unchanged.
+- §3.1.2 "A profile enables only the inserted pattern types its dataset exhibits" stays true under the noise-calibrated reading. Unchanged.
+- §1 contribution text: "a sparse set of positions carrying the inserted patterns" holds for NASA PCoE only; the Results must say so, and §1 is not edited.
+- Table 3 rows "Correlation of graded and sparse fields" and "Error change, pattern term removed" will be void for MATR/HUST with the reason "no inserted patterns (D05)".

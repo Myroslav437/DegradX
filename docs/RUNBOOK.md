@@ -45,7 +45,14 @@ python scripts/s2_audit_datasets.py --datasets NASA_PCoE      # one dataset
 python experiments/decisions/D12/run.py                        # decision harnesses (D11-D16) re-run standalone
 ```
 
-## S3 … S9
+## S3 — profile fitting
+
+```bash
+python scripts/s3_fit_profiles.py --workers 12                 # ~1 min; profiles/<dataset>.json
+python scripts/s3_fit_profiles.py --datasets NASA_PCoE
+```
+
+## S4 … S9
 
 Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
 

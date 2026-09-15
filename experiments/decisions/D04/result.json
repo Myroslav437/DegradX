@@ -1,0 +1,80 @@
+{
+ "MATR": {
+  "power_law": {
+   "median_cv_rmse": 0.012911766262902,
+   "frac_units_at_bound": 0.3888888888888889,
+   "T_rel_err_median": 0.013410749152194019,
+   "T_rel_err_p90": 0.041028305502982705,
+   "T_not_reached": 0
+  },
+  "two_term_exponential": {
+   "median_cv_rmse": 0.00609303049204745,
+   "frac_units_at_bound": 0.022222222222222223,
+   "T_rel_err_median": 0.0043361974955815445,
+   "T_rel_err_p90": 0.008243838634173209,
+   "T_not_reached": 0
+  },
+  "rollover": {
+   "median_cv_rmse": 0.0067331219682629,
+   "frac_units_at_bound": 0.34444444444444444,
+   "T_rel_err_median": 0.002072594501718213,
+   "T_rel_err_p90": 0.004367193941429749,
+   "T_not_reached": 0
+  },
+  "choice_a": "two_term_exponential",
+  "choice_b": "two_term_exponential",
+  "units": 90
+ },
+ "HUST": {
+  "power_law": {
+   "median_cv_rmse": 0.0100320926979631,
+   "frac_units_at_bound": 0.0,
+   "T_rel_err_median": 0.008703163208961112,
+   "T_rel_err_p90": 0.017042016125217115,
+   "T_not_reached": 0
+  },
+  "two_term_exponential": {
+   "median_cv_rmse": 0.008408272448915,
+   "frac_units_at_bound": 0.037037037037037035,
+   "T_rel_err_median": 0.008514044095439445,
+   "T_rel_err_p90": 0.01590952736583805,
+   "T_not_reached": 0
+  },
+  "rollover": {
+   "median_cv_rmse": 0.00271378663357515,
+   "frac_units_at_bound": 0.0,
+   "T_rel_err_median": 0.0018557803403512338,
+   "T_rel_err_p90": 0.00641831041602601,
+   "T_not_reached": 0
+  },
+  "choice_a": "rollover",
+  "choice_b": "rollover",
+  "units": 54
+ },
+ "NASA_PCoE": {
+  "power_law": {
+   "median_cv_rmse": 0.0111330342998775,
+   "frac_units_at_bound": 0.125,
+   "T_rel_err_median": 0.04880952380952381,
+   "T_rel_err_p90": 0.09608672659968269,
+   "T_not_reached": 0
+  },
+  "two_term_exponential": {
+   "median_cv_rmse": 0.011327992478604151,
+   "frac_units_at_bound": 0.875,
+   "T_rel_err_median": 0.049206349206349205,
+   "T_rel_err_p90": Infinity,
+   "T_not_reached": 1
+  },
+  "rollover": {
+   "median_cv_rmse": 0.01053274024613145,
+   "frac_units_at_bound": 0.75,
+   "T_rel_err_median": 0.03333333333333333,
+   "T_rel_err_p90": 0.26210382513661196,
+   "T_not_reached": 0
+  },
+  "choice_a": "rollover",
+  "choice_b": "power_law",
+  "units": 8
+ }
+}

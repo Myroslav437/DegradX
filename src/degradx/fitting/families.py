@@ -99,7 +99,8 @@ def fit_family(name: str, positions: np.ndarray, y: np.ndarray) -> FitResult:
     if best is None:
         return FitResult(name, np.full(fam.n_params, np.nan), np.nan, False, [])
     rmse = float(np.sqrt(np.mean((fam(best.x, positions) - y) ** 2)))
-    tol = 1e-6 * np.maximum(1.0, np.abs(hi - lo))
+    span = np.where(np.isfinite(hi - lo), np.abs(hi - lo), np.maximum(1.0, np.abs(best.x)))  # unbounded side: scale by the value
+    tol = 1e-6 * np.maximum(1.0, span)
     at_bound = [fam.params[i] for i in range(fam.n_params)
                 if (np.isfinite(lo[i]) and best.x[i] - lo[i] < tol[i]) or (np.isfinite(hi[i]) and hi[i] - best.x[i] < tol[i])]
     return FitResult(name, best.x, rmse, bool(best.success), at_bound)

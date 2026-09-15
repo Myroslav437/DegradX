@@ -1,0 +1,142 @@
+{
+ "censored": {
+  "MATR": {
+   "with_censored": {
+    "fitting_units": 95,
+    "reaching": 90,
+    "family": "two_term_exponential",
+    "positive_events": 97,
+    "noise_variance": {
+     "capacity": 2.818708601780269e-06,
+     "charge_time": 0.8161342021576741,
+     "mean_discharge_voltage": 0.0005355052511216185,
+     "internal_resistance": 9.031964020315397e-08,
+     "temperature_mean": 0.49963958452264245
+    },
+    "noise_phi": {
+     "capacity": 0.9415210134933107,
+     "charge_time": 0.9058420545694321,
+     "mean_discharge_voltage": 0.9658934962479901,
+     "internal_resistance": 0.9629400510475847,
+     "temperature_mean": 0.9430219995493502
+    },
+    "phi1": {
+     "capacity": 0.8800000000000001,
+     "charge_time": 20.998175097809213,
+     "mean_discharge_voltage": 2.5860276944693354,
+     "internal_resistance": 0.01959205411111111,
+     "temperature_mean": 34.64671661850978
+    }
+   },
+   "reaching_only": {
+    "fitting_units": 90,
+    "reaching": 90,
+    "family": "two_term_exponential",
+    "positive_events": 84,
+    "noise_variance": {
+     "capacity": 3.042905953580806e-06,
+     "charge_time": 0.8212628835207362,
+     "mean_discharge_voltage": 0.00048204514777004025,
+     "internal_resistance": 9.072220354050653e-08,
+     "temperature_mean": 0.4780385615412785
+    },
+    "noise_phi": {
+     "capacity": 0.9509492835651071,
+     "charge_time": 0.9061818475835342,
+     "mean_discharge_voltage": 0.9611911037567928,
+     "internal_resistance": 0.9614508021315904,
+     "temperature_mean": 0.9370828391982987
+    },
+    "phi1": {
+     "capacity": 0.8800000000000001,
+     "charge_time": 20.998175097809213,
+     "mean_discharge_voltage": 2.5860276944693354,
+     "internal_resistance": 0.01959205411111111,
+     "temperature_mean": 34.599156643647746
+    }
+   }
+  },
+  "NASA_PCoE": {
+   "with_censored": {
+    "fitting_units": 13,
+    "reaching": 8,
+    "family": "rollover",
+    "positive_events": 7,
+    "noise_variance": {
+     "capacity": 0.00021522609564961527,
+     "charge_time": 47.30042333209718,
+     "mean_discharge_voltage": 0.0002453570403998296,
+     "temperature_mean": 1.2494353696853162
+    },
+    "noise_phi": {
+     "capacity": 0.4739627650895187,
+     "charge_time": 0.5037856957849557,
+     "mean_discharge_voltage": 0.6979780638717945,
+     "temperature_mean": 0.5930316792828427
+    },
+    "phi1": {
+     "capacity": 1.6,
+     "charge_time": 158.54557142857144,
+     "mean_discharge_voltage": 3.468209791847512,
+     "temperature_mean": 29.186689540402522
+    }
+   },
+   "reaching_only": {
+    "fitting_units": 8,
+    "reaching": 8,
+    "family": "rollover",
+    "positive_events": 7,
+    "noise_variance": {
+     "capacity": 0.0002442441298520133,
+     "charge_time": 61.17786428793739,
+     "mean_discharge_voltage": 0.00042993641828241767,
+     "temperature_mean": 2.5184657396229313
+    },
+    "noise_phi": {
+     "capacity": 0.5977095289674986,
+     "charge_time": 0.5711565611163448,
+     "mean_discharge_voltage": 0.8313216605783962,
+     "temperature_mean": 0.6768109472717989
+    },
+    "phi1": {
+     "capacity": 1.6,
+     "charge_time": 166.5806268955651,
+     "mean_discharge_voltage": 3.472004151907236,
+     "temperature_mean": 27.874504973224933
+    }
+   }
+  }
+ },
+ "resampling": {
+  "relative_half_width_95": {
+   "theta_median_T": {
+    "3": 0.44034717715768984,
+    "5": 0.373134328358209,
+    "8": 0.3345960415314728,
+    "12": 0.2982316677482154,
+    "20": 0.2209685269305645,
+    "40": 0.12504866969500328
+   },
+   "theta_median_half_life_fraction": {
+    "3": 0.04474044862550605,
+    "5": 0.030690424798722346,
+    "8": 0.01905460451524237,
+    "12": 0.01572079202319012,
+    "20": 0.009628822763014418,
+    "40": 0.006230634646073996
+   },
+   "pattern_median_amplitude": {
+    "3": 0.7710329334864977,
+    "5": 0.6945700696921521,
+    "7": 0.6397002851629161,
+    "10": 0.48291530224416274,
+    "15": 0.38903477401202113,
+    "21": 0.3567954769776212
+   }
+  },
+  "pools": {
+   "MATR_reaching_fitting_units": 90,
+   "NASA_S2_positive_events": 21
+  }
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "a_k2.5_any": {
+  "MATR": {
+   "pos": true,
+   "neg": true
+  },
+  "HUST": {
+   "pos": true,
+   "neg": true
+  },
+  "NASA_PCoE": {
+   "pos": true,
+   "neg": true
+  }
+ },
+ "b_k3.0_any": {
+  "MATR": {
+   "pos": true,
+   "neg": true
+  },
+  "HUST": {
+   "pos": true,
+   "neg": true
+  },
+  "NASA_PCoE": {
+   "pos": true,
+   "neg": false
+  }
+ },
+ "d_k2.5_noise2x": {
+  "MATR": {
+   "pos": false,
+   "neg": false
+  },
+  "HUST": {
+   "pos": false,
+   "neg": false
+  },
+  "NASA_PCoE": {
+   "pos": true,
+   "neg": false
+  }
+ },
+ "c_per_profile_k": {
+  "MATR": {
+   "k": "3.0",
+   "events+": 65
+  },
+  "HUST": {
+   "k": "3.5",
+   "events+": 40
+  },
+  "NASA_PCoE": {
+   "k": "2.0",
+   "events+": 10
+  }
+ },
+ "events_pos_fitting_split": {
+  "MATR": {
+   "2.0": 163,
+   "2.5": 97,
+   "3.0": 65,
+   "3.5": 47,
+   "4.0": 38
+  },
+  "HUST": {
+   "2.0": 86,
+   "2.5": 59,
+   "3.0": 57,
+   "3.5": 40,
+   "4.0": 55
+  },
+  "NASA_PCoE": {
+   "2.0": 10,
+   "2.5": 7,
+   "3.0": 3,
+   "3.5": 1,
+   "4.0": 0
+  }
+ }
+}

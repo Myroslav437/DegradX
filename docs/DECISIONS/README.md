@@ -21,3 +21,7 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D15 | EOL search starts at the position of q1 | S2 | taken (paper round 2) |
 | D16 | pattern residual fitted from q1; runs capped at the smoothing window | S2 | taken (paper round 2) |
 | D03 | NASA PCoE keeps its regeneration role | S2 | taken |
+| D17 | non-capacity channel glitch rule (5 % isolated excursions) | S3 | taken (paper round 3) |
+| D02 | censored units feed T-free quantities; minimum counts 5 units / 10 events / 5 held-out (provisional) | S3 | taken (paper round 3); held-out minimum re-tested at S5 |
+| D04 | family selection: 5 % simplicity margin, identifiability (≤ 20 % at bounds) | S3 | taken (paper round 3) |
+| D05 | detection at k = 2.5; enable only above 2× the noise-only rate | S3 | taken (paper round 3) |

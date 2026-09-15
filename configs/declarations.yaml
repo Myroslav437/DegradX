@@ -43,6 +43,10 @@ meta:
     - {date: 2026-09-15, comment: D14, keys: [declared_by_design.datasets.matr_batches], r2: "all four MATR batches (status CONFIRM)", new: "the three Severson 2019 batches", reason: "the cited dataset; batch 4 IR is zero in every cycle"}
     - {date: 2026-09-15, comment: D16, keys: [declared_by_design.pattern_detection.residual, declared_by_design.pattern_detection.max_duration], r2: "families fitted over 1..T; runs of any length >= m", new: "families fitted over t1..T; runs longer than the smoothing window are not patterns", reason: "early-rise misfit and low-frequency misfit dominated MATR/HUST detections"}
     - {date: 2026-09-15, comment: D04, keys: [declared_by_design.trajectory_families.selection.simplicity_margin, declared_by_design.statistics.splits.measured.stratify_by], r2: "selection by lowest median CV-RMSE, no margin; split unstratified", new: "5% relative simplicity margin; split stratified by EOL attainment", reason: "declared before S3 so the family choice and split cannot follow the observed errors"}
+    - {date: 2026-09-15, comment: D05, keys: [declared_by_design.pattern_detection.enable_rule], r2: "enabled iff >= 1 run detected", new: "enabled iff detected rate >= 2x the rate on the profile's fitted AR(1) noise", reason: "at k = 2.5 MATR/HUST detections are below their noise-only rate (ratio 0.79/0.46); NASA 7.97"}
+    - {date: 2026-09-15, comment: D17, keys: [declared_by_design.channel_series.cleaning_rule], r2: "no channel glitch rule", new: "isolated > 5% of channel median departures masked", reason: "a few readings inflated MATR charge-time noise variance 25x"}
+    - {date: 2026-09-15, comment: D02, keys: [declared_by_design.minimum_counts], r2: "censored units excluded from everything; no minimum counts", new: "censored units feed T-free quantities; minima 5 units / 10 events / 5 held-out units", reason: "z is defined for censored units (C3); readability curves from resampling"}
+    - {date: 2026-09-15, comment: D04b, keys: [declared_by_design.trajectory_families.selection.identifiability], r2: "all families eligible", new: "families with parameters at bounds in > 20% of units not eligible", reason: "NASA rollover: transition width at its lower bound in 6 of 8 units; T reproduction p90 26% vs 9.6% for power law"}
     - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
 
 # ---------------------------------------------------------------------------------------------
@@ -179,7 +183,9 @@ declared_by_design:
       source: "paper l.173, l.243 ('the sign of the run gives the type')"
       affects_fitted_parameters: true
     enable_rule:
-      value: "a type is enabled in a profile iff at least one run of that sign is detected in the fitting split at the declared k and m"
+      # D05 (2026-09-15, S3) supersedes r1/r2 "at least one run": noise-calibrated enable rule.
+      value: "a type is enabled in a profile iff its detected rate in the fitting split (declared k, m, max duration) is at least noise_factor times the rate the same rule returns on stationary AR(1) noise with the profile's fitted capacity-noise variance and lag-1 coefficient (200 segments of the median fitted length, generation seed stream 'D05')"
+      noise_factor: 2.0
       source: "paper l.175, l.245"
       affects_fitted_parameters: true
     record_per_pattern: {value: [extremum_position, signed_amplitude, duration], source: "paper l.243", affects_fitted_parameters: true}
@@ -211,6 +217,10 @@ declared_by_design:
         rule: "if a family with fewer parameters has median CV-RMSE within 5% (relative) of the lowest, the family with fewest parameters among those within the margin is selected; every candidate's error is reported"
         order: [power_law, two_term_exponential, rollover]
         source: "D04, declared 2026-09-15 before any S3 fit ran (brief v2 §4 D04)"
+      identifiability:
+        value: "a family with any parameter at a bound in more than 20% of the fitting units reaching EOL is not eligible for selection (all families eligible if none qualifies)"
+        max_frac_units_at_bound: 0.2
+        source: "docs/DECISIONS/D04_family_selection.md (2026-09-15, after the first S3 run: the 20% threshold was the S3 sanity check written before that run)"
       units: "fitting-split units reaching EOL (fit range t1..T)"
       source: "paper l.236 ('cross-validated fit error across units'); protocol UNDERSPECIFIED-IN-PAPER"
 
@@ -246,6 +256,20 @@ declared_by_design:
     shape: {value: raised_cosine, detail: "p_j = A * sin^2(pi*(j+1)/(D+1)), j=0..D-1; extremum at the centre", source: UNDERSPECIFIED-IN-PAPER, rationale: "finite support of exactly D positions so the sparse set is unambiguous; symmetric like paper Fig. 2"}
     occurrence: {value: "Poisson over positions of the unit at the resampled per-unit rate per type; amplitude and duration resampled from detected patterns of that type", source: UNDERSPECIFIED-IN-PAPER}
     affects_fitted_parameters: false
+
+  channel_series:
+    cleaning_rule:
+      value: "non-capacity channels: IR = 0 is missing; a single position departing > 0.05 of the unit's channel median from the centred 11-position rolling median, neither neighbour departing, is missing (capacity positions kept)"
+      frac: 0.05
+      source: "docs/DECISIONS/D17_channel_glitch_rule.md (2026-09-15, S3)"
+      affects_fitted_parameters: true
+
+  minimum_counts:
+    value: {theta_and_length_units: 5, pattern_events: 10, held_out_units: 5}
+    criterion: "a statistic is reported only where its 95% resampling half-width relative to its value is <= 0.5; below the count the cell is void; counts gate reporting, not generation"
+    held_out_units_status: "provisional; S5 tests with its own resampling"
+    censored_scope: "guard-passing units not reaching EOL feed mappings, noise, covariance and patterns; theta, lengths and the transfer target use units reaching EOL"
+    source: "docs/DECISIONS/D02_censored_units_and_minimum_counts.md (2026-09-15, S3)"
 
   audit:
     monotonicity_tolerance:
