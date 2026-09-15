@@ -67,6 +67,8 @@
   \texttt{olena.pavliuk@polsl.pl} \\
 }
 
+\input{tables/table_fidelity_notes}
+\input{tables/table_properties_notes}
 \begin{document}
 \maketitle
 
@@ -302,47 +304,45 @@ Generation, model initialization, and any sampling performed by an attribution m
 \section{Results}
 \label{sec:results}
 
-This section reports the measurements defined in Section~\ref{sec:protocol}, one subsection per research question, followed by the reference values of Section~\ref{sec:protocol} for published attribution methods. \hl{All entries below are placeholders: the tables and figures state what is reported and in what form, and no value in them has been measured yet.} Every reported quantity is accompanied by an interval obtained by bootstrap over units, and the seeds controlling generation, model initialization, and attribution sampling are varied separately so that their contributions to the spread are reported apart.
+This section reports the measurements defined in Section~\ref{sec:protocol}, one subsection per research question, followed by the reference values of Section~\ref{sec:protocol} for published attribution methods. Intervals are obtained by bootstrap over units, and the seeds controlling generation, model initialization, and attribution sampling are varied separately so that their contributions to the spread are reported apart. A measurement whose count of units or events falls below its declared minimum is reported as void, with the count and the reason in the table note.
+
+The three profiles rest on the following measured units. MATR comprises the 135 cells of the three batches of~\cite{severson2019}, of which 128 reach EOL; HUST all 77 cells, all of which reach EOL; and NASA PCoE 34 cells, of which 14 start too close to the EOL threshold for the degradation state to be defined and 11 reach it. The fitting splits hold 95, 54, and 13 of the units that define a degradation state, and the held-out splits 40, 23, and 5. The audit that precedes fitting confirmed the property NASA PCoE was included for. Its positive capacity-residual runs occur at 1.03 per 100 cycles with a median amplitude of 74.5\,mAh, against 0.11 per 100 cycles and 2.95\,mAh in MATR and 0.054 per 100 cycles and 2.29\,mAh in HUST. On the fitting splits, the MATR and HUST runs occur at 0.85 and 0.47 times the rate at which the same rule detects runs in noise with the fitted variance and autocorrelation, whereas the NASA PCoE runs occur at 6.8 times that rate. Only the NASA PCoE profile therefore carries inserted patterns, and every measurement that concerns the sparse set is made on it.
 
 \subsection{Profile Fidelity}
 \label{sec:res:fidelity}
 
 Table~\ref{tab:res:fidelity} reports, per profile, the discriminative measure, the representation-space distance, the agreement of the cross-channel covariance structure, and the transfer ratio, with the window length and the effective number of independent units stated alongside. The discriminative measure is read as a coarse indicator only, for the reason given in Section~\ref{sec:protocol}; the property-level comparison of Table~\ref{tab:res:properties} carries the evidence, setting the generated and the measured side of each fitted quantity against each other. Figure~\ref{fig:res:fidelity} shows the fitted and the measured capacity trajectories of the same profile for visual comparison, which is reported as illustration and not as a measurement.
 
+The transfer measurement separates the two profiles that can be assessed. A model trained on the HUST profile predicts the RUL of held-out HUST cells with 1.46 [1.11, 1.76] times the error of the same architecture trained on measured HUST cells. A model trained on the MATR profile reaches 3.42 [2.28, 4.96] times that error, 515.8 against 150.8 cycles. The ratio is stable across seeds in the sense that matters: over the fifteen combinations of generation and initialization seed it ranges from 1.27 to 1.93 for HUST and from 2.56 to 5.56 for MATR, so the two intervals do not overlap under any seed. The distributional measures agree with this ordering only in part. The discriminator separates generated from held-out windows in both profiles, with an error of 0.05 to 0.09 for MATR and 0.12 to 0.20 for HUST; this is the saturation anticipated in Section~\ref{sec:protocol}, and it does not indicate which property is responsible. The cross-channel correlation of MATR windows departs from the measured one by 0.69 in relative Frobenius distance, against 0.28 between two measured splits, and that of HUST by 0.42 against 0.04. The representation distance of HUST windows is 2.95, against 0.16 between measured splits; for MATR it is void, because the heterogeneity of the measured cells makes its interval wider than its value at 40 held-out units.
+
+The property comparison of Table~\ref{tab:res:properties} locates the difference. The trajectory of the degradation state is reproduced: the selected family is recovered from generated units in both profiles, the median drift is 25.6 against 24.4\,mAh per 100 cycles for MATR and 16.3 against 17.4 for HUST, the transition falls at the same fraction of life, and the median unit length is 744 against 807 cycles for MATR and 1938 against 1805 for HUST. The capacity noise is reproduced to within a factor of 2.3 in variance, with the same lag-one autocorrelation. What resists calibration is the per-unit structure of the other channels. The residual variance of the MATR charge time is 53.5\,min$^2$ in the held-out cells and 0.66\,min$^2$ in generated units, and the residual cross-channel correlation differs by 0.68 in relative Frobenius distance. The charge time of a MATR cell is set largely by its charging protocol, which varies from cell to cell~\cite{severson2019}, whereas the generator maps every channel from the degradation state through one function shared by all units of a profile (Section~\ref{sec:generator}), so that offsets which identify a cell's protocol are present in the measured sequences and absent from the generated ones. HUST cells share one charging protocol, and HUST transfers at less than half the MATR ratio, which is consistent with this reading; the measurements do not isolate it as the only cause. The transfer measurement thus does what Section~\ref{sec:protocol} designed it for: the MATR profile matches its dataset in the shape and pace of degradation and in capacity, and it fails the test that the dependence between the sequences and the RUL be preserved.
+
+NASA PCoE cannot be assessed on any of these measures. Its held-out split contains 5 units, 3 of which reach EOL, below the minimum of every measure; its property rows are void where they rest on the 3 units reaching EOL or on the 3 regeneration events those units contain. Cross-fitting over all 18 units that define a degradation state does not remedy this: the pooled transfer ratio over the 10 held-out units that reach EOL is 1.22 [1.06, 3.07], an interval wider than its value, and the refitted profiles select three different trajectory families across the five folds. The NASA PCoE profile therefore supplies measured regeneration parameters and exact attribution ground truth, but no evidence that it reproduces its dataset.
+
 \begin{table}[t]
-  \caption{Profile fidelity. One row per profile. The transfer ratio is the error of a model trained on the profile divided by that of the same architecture trained on the measured fitting split, both evaluated on the held-out measured units; a ratio near one indicates that a model learns as much from the profile as from the dataset it stands for. \hl{Placeholder values.}}
+  \caption{Profile fidelity, on windows of $L=24$ positions. One row per profile. Units: held-out measured units and generated units per generation seed. Discriminative error: range over three generation seeds, $0.5$ meaning indistinguishable. Representation distance and covariance agreement (relative Frobenius distance between channel correlation matrices): generated against held-out windows, with the same measure between the measured fitting and held-out windows in parentheses. The transfer ratio is the error of a model trained on the profile divided by that of the same architecture trained on the measured fitting split, both evaluated on the held-out measured units, pooled over three generation and five initialization seeds; a ratio near one indicates that a model learns as much from the profile as from the dataset it stands for. \protect\TabFidelityNotes}
   \centering
   \begin{tabular}{lccccc}
     \toprule
-    Profile & Units (eff.) & Discriminative err. & Repr. distance & Covariance agr. & Transfer ratio [CI] \\
+    Profile & Units & Discriminative err. & Repr. distance & Covariance agr. & Transfer ratio [CI] \\
     \midrule
-    MATR & -- & -- & -- & -- & -- [--, --] \\
-    HUST & -- & -- & -- & -- & -- [--, --] \\
-    NASA PCoE & -- & -- & -- & -- & -- [--, --] \\
+\csname @@input\endcsname tables/table_fidelity.tex
     \bottomrule
   \end{tabular}
   \label{tab:res:fidelity}
 \end{table}
 
 \begin{table}[t]
-  \caption{Property-level comparison between each profile and the dataset it was fitted to. Each cell holds the measured value and the generated value of the same quantity. The detection thresholds behind the regeneration rows, and the sensitivity of those rows to them, are reported with the counts of Section~\ref{sec:calibration}. \hl{Placeholder values.}}
+  \caption{Property-level comparison between each profile and the dataset it was fitted to. Each cell holds the measured value, estimated on the held-out measured units, and the generated value of the same quantity, estimated on generated units by the same fitting procedure; medians where a distribution is summarized. The regeneration rows count positive runs detected at the declared threshold; in MATR and HUST no pattern type is enabled, since the runs occur no more often than in the fitted noise, so their rows show the detector's response to noise on both sides. Cross-channel covariance: relative Frobenius distance between the measured and generated residual correlation matrices. \protect\TabPropertiesNotes}
   \centering
+  \small
   \begin{tabular}{lcccccc}
     \toprule
     & \multicolumn{2}{c}{MATR} & \multicolumn{2}{c}{HUST} & \multicolumn{2}{c}{NASA PCoE} \\
     \cmidrule(r){2-3} \cmidrule(r){4-5} \cmidrule(r){6-7}
     Property & meas. & gen. & meas. & gen. & meas. & gen. \\
     \midrule
-    Trajectory family, fit error & -- & -- & -- & -- & -- & -- \\
-    Drift rate & -- & -- & -- & -- & -- & -- \\
-    Transition position & -- & -- & -- & -- & -- & -- \\
-    Noise variance (per channel) & -- & -- & -- & -- & -- & -- \\
-    Noise autocorrelation & -- & -- & -- & -- & -- & -- \\
-    Unit length & -- & -- & -- & -- & -- & -- \\
-    Regeneration rate & -- & -- & -- & -- & -- & -- \\
-    Regeneration amplitude & -- & -- & -- & -- & -- & -- \\
-    Regeneration duration & -- & -- & -- & -- & -- & -- \\
-    Cross-channel covariance & -- & -- & -- & -- & -- & -- \\
+\csname @@input\endcsname tables/table_properties.tex
     \bottomrule
   \end{tabular}
   \label{tab:res:properties}
@@ -350,8 +350,8 @@ Table~\ref{tab:res:fidelity} reports, per profile, the discriminative measure, t
 
 \begin{figure}[t]
   \centering
-  \fbox{\parbox[c][3.0cm][c]{0.9\linewidth}{\centering \texttt{[FIGURE]} Measured and generated capacity trajectories of one profile, one panel per profile: measured units in the background, units generated from the fitted parameter distribution overlaid, with the state axis of Equation~\ref{eq:state} marked.}}
-  \caption{Fitted against measured trajectories, reported as illustration alongside the measurements of Tables~\ref{tab:res:fidelity} and~\ref{tab:res:properties}.}
+  \includegraphics[width=\linewidth]{img/fig_res_fidelity.pdf}
+  \caption{Fitted against measured trajectories, reported as illustration alongside the measurements of Tables~\ref{tab:res:fidelity} and~\ref{tab:res:properties}: capacity of every measured unit of the profile's scope (grey) and of 25 generated units (black), with the pristine level $z=0$ and the EOL threshold $z=1$ of Equation~\ref{eq:state} marked.}
   \label{fig:res:fidelity}
 \end{figure}
 

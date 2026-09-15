@@ -1,0 +1,89 @@
+{
+ "measured_amplitude_mAh": {
+  "audit_median": 74.5282385748808,
+  "audit_max": 650.9952153156663,
+  "fitting_median": 40.22174867745777
+ },
+ "multipliers": {
+  "1": {
+   "generated_amplitude_median_mAh": 40.22174867745777,
+   "share_above_measured_max": 0.0,
+   "variance_ratio": {
+    "recency": 0.0003453255791898517,
+    "uniform": 0.00022974166597836823,
+    "final_position": 0.002448447638879351
+   },
+   "ablation_pattern_term_removed": {
+    "nmse_increase": 0.0003622558672222434,
+    "ci_low": -0.00027657691562200373,
+    "ci_high": 0.0010728031602675295,
+    "units": 41
+   },
+   "full_model_nrmse": 0.1471825181392725
+  },
+  "2": {
+   "generated_amplitude_median_mAh": 80.44349735491554,
+   "share_above_measured_max": 0.0,
+   "variance_ratio": {
+    "recency": 0.0013813023167594067,
+    "uniform": 0.0009189666639134729,
+    "final_position": 0.009793790555517405
+   },
+   "ablation_pattern_term_removed": {
+    "nmse_increase": 0.000811620780195536,
+    "ci_low": -0.000970317683533101,
+    "ci_high": 0.002991927012271513,
+    "units": 41
+   },
+   "full_model_nrmse": 0.1459447810464413
+  },
+  "4": {
+   "generated_amplitude_median_mAh": 160.88699470983107,
+   "share_above_measured_max": 0.0,
+   "variance_ratio": {
+    "recency": 0.005525209267037627,
+    "uniform": 0.0036758666556538917,
+    "final_position": 0.03917516222206962
+   },
+   "ablation_pattern_term_removed": {
+    "nmse_increase": 0.007100184451789177,
+    "ci_low": 0.004041738788227988,
+    "ci_high": 0.01131303255913499,
+    "units": 41
+   },
+   "full_model_nrmse": 0.14614845525470324
+  },
+  "8": {
+   "generated_amplitude_median_mAh": 321.77398941966214,
+   "share_above_measured_max": 0.16666666666666666,
+   "variance_ratio": {
+    "recency": 0.022100837068150508,
+    "uniform": 0.014703466622615567,
+    "final_position": 0.15670064888827848
+   },
+   "ablation_pattern_term_removed": {
+    "nmse_increase": 0.030307900026656405,
+    "ci_low": 0.02046078843575063,
+    "ci_high": 0.04742271374900635,
+    "units": 41
+   },
+   "full_model_nrmse": 0.15612312828036834
+  },
+  "16": {
+   "generated_amplitude_median_mAh": 643.5479788393243,
+   "share_above_measured_max": 0.5,
+   "variance_ratio": {
+    "recency": 0.08840334827260203,
+    "uniform": 0.05881386649046227,
+    "final_position": 0.6268025955531139
+   },
+   "ablation_pattern_term_removed": {
+    "nmse_increase": 0.10262412589897525,
+    "ci_low": 0.07144578833224445,
+    "ci_high": 0.1700839610926086,
+    "units": 41
+   },
+   "full_model_nrmse": 0.1598698861069218
+  }
+ }
+}

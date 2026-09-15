@@ -1,0 +1,352 @@
+{
+  "MATR": {
+    "recency": {
+      "windows": {
+        "train_incl_validation": 212884,
+        "test": 36554
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.7415877834901228,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.008267272559644292,
+          "nrmse": 0.03639236246469504,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.008164836001516204,
+          "nrmse": 0.0359414388588579,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.008142944104835504,
+          "nrmse": 0.03584507118338865,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.008248598576735832,
+          "nrmse": 0.0363101599789585,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.00811620864314254,
+          "nrmse": 0.035727382235120425,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.008396509882981346,
+          "nrmse": 0.03696126248352439,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.008208491927168065,
+          "nrmse": 0.03613361133878914,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.0082206937080183,
+          "nrmse": 0.0361873233252046,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.008443438096478328,
+          "nrmse": 0.03716783950673025,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.008234500943546896,
+          "nrmse": 0.03624810248984045,
+          "epochs": 30,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.03639236246469504,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 2.004897231001246,
+          "ci_low": 1.947038859474884,
+          "ci_high": 2.0596586938626076,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0009050832935963721,
+          "ci_low": 0.0007828179588933705,
+          "ci_high": 0.001106943031012687,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.00029527156471904686,
+          "ci_low": 0.00023548948339089022,
+          "ci_high": 0.00036681709158790585,
+          "units": 45
+        },
+        "internal_resistance": {
+          "nmse_increase": 0.0001725595428644582,
+          "ci_low": 0.00012089071819871403,
+          "ci_high": 0.00021775629701307943,
+          "units": 45
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.000204207792587095,
+          "ci_low": 0.0001393698639741656,
+          "ci_high": 0.0002741524974819332,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 4.344449617119782e-06,
+          "ci_low": -1.758035997964287e-05,
+          "ci_high": 2.3475538147806544e-05,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -5.550592132064219e-06,
+          "ci_low": -1.642398640634433e-05,
+          "ci_high": 3.274742195325215e-06,
+          "units": 45
+        }
+      },
+      "redundant_channels": {
+        "internal_resistance": {
+          "predictability_r2": 0.5460211038589478,
+          "conditional_importance": {
+            "nmse_increase": 1.5857674865541553e-05,
+            "ci_low": -2.5035973143307534e-05,
+            "ci_high": 4.135781101992574e-05,
+            "units": 45
+          }
+        },
+        "temperature_mean": {
+          "predictability_r2": 0.1071060299873352,
+          "conditional_importance": {
+            "nmse_increase": 0.00016126468948881415,
+            "ci_low": 9.764828448225803e-05,
+            "ci_high": 0.00023482838354405667,
+            "units": 45
+          }
+        }
+      },
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.008432447966400452,
+        0.008042786404431273,
+        0.008656813071155635,
+        0.007980537712174834,
+        0.005826224042129139
+      ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 212884,
+        "test": 36554
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.7364422643336379,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.00811632025119113,
+          "nrmse": 0.036682212267801335,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.008343980598451694,
+          "nrmse": 0.03771113731323036,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.008196456404944845,
+          "nrmse": 0.03704439257998006,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.008093769124462297,
+          "nrmse": 0.036580291053267724,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.008211137419352912,
+          "nrmse": 0.037110744334242635,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.008247634542138912,
+          "nrmse": 0.037275695342059705,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.008199645287194066,
+          "nrmse": 0.03705880493089066,
+          "epochs": 24,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.008119040152800775,
+          "nrmse": 0.036694505031653016,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.008170829859303971,
+          "nrmse": 0.0369285718191185,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.008240085672449516,
+          "nrmse": 0.03724157775776554,
+          "epochs": 26,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.036682212267801335,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 2.0034277508978855,
+          "ci_low": 1.9380643599953746,
+          "ci_high": 2.0620353448828337,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0012463764035447356,
+          "ci_low": 0.001124839928466812,
+          "ci_high": 0.0014392804939862476,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.00031290943425930174,
+          "ci_low": 0.00024400151649641994,
+          "ci_high": 0.00040452367856214994,
+          "units": 45
+        },
+        "internal_resistance": {
+          "nmse_increase": 0.00017495481358124968,
+          "ci_low": 0.00012165286664637468,
+          "ci_high": 0.0002323765754831367,
+          "units": 45
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.00017563364473554793,
+          "ci_low": 0.00011055793284704411,
+          "ci_high": 0.00023974619370267282,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": -1.9772198042977708e-05,
+          "ci_low": -4.418438552414756e-05,
+          "ci_high": -3.3687863258944923e-06,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -2.841629498160747e-06,
+          "ci_low": -1.9493714889157296e-05,
+          "ci_high": 1.0175472675493557e-05,
+          "units": 45
+        }
+      },
+      "redundant_channels": {
+        "internal_resistance": {
+          "predictability_r2": 0.5461100935935974,
+          "conditional_importance": {
+            "nmse_increase": -2.3712467993659723e-06,
+            "ci_low": -5.68843793965736e-05,
+            "ci_high": 3.5597697706487215e-05,
+            "units": 45
+          }
+        },
+        "temperature_mean": {
+          "predictability_r2": 0.10834664106369019,
+          "conditional_importance": {
+            "nmse_increase": 0.00011747860414464825,
+            "ci_low": 5.6533288694557425e-05,
+            "ci_high": 0.00017908238187439707,
+            "units": 45
+          }
+        }
+      },
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.008259430179091294,
+        0.007779731473041166,
+        0.008885680274692548,
+        0.0076717185527427,
+        0.005923334945122085
+      ]
+    }
+  }
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "name": "MATR [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance -0.001",
+    "observed": "-0.004",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.001",
+    "observed": "0.002",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.003",
+    "observed": "-0.001",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.002",
+    "observed": "0.004",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.002",
+    "observed": "0.004",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.003",
+    "observed": "0.005",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] added_noise: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] smoothing: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance -0.001",
+    "observed": "-0.002",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: fully permuted map scores at chance (paired retrieval)",
+    "expected": "~ chance 0.050",
+    "observed": "0.048",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] added_noise: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] smoothing: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance 0.002",
+    "observed": "0.001",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: fully permuted map scores at chance (paired retrieval)",
+    "expected": "~ chance 0.035",
+    "observed": "0.038",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] added_noise: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] smoothing: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: fully permuted graded map scores at chance (rank)",
+    "expected": "~ chance -0.004",
+    "observed": "0.001",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: fully permuted map scores at chance (paired retrieval)",
+    "expected": "~ chance 0.029",
+    "observed": "0.007",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1)",
+    "expected": "1",
+    "observed": "1.000000",
+    "passed": true,
+    "severity": "error"
+  }
+]

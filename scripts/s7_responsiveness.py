@@ -191,6 +191,7 @@ def main() -> int:
     p = stage_parser(__doc__, "s7_responsiveness")
     p.add_argument("--datasets", nargs="*", default=list(PROFILES))
     p.add_argument("--skip-part-two", action="store_true")
+    p.add_argument("--skip-part-one", action="store_true", help="reuse tables/part1_degradation.json")
     args = p.parse_args()
     ctx = StageContext.from_args(args)
     decl, dd = ctx.declarations, ctx.declarations["declared_by_design"]
@@ -216,8 +217,11 @@ def main() -> int:
             P = Profile.from_json(prof, np.concatenate([u.eps[:, len(prof["declared_used"]["channels_available"]) + 1] for u in units]))
             spec = TargetSpec.build(P, beta, L, 6.0)
             has_patterns = any(len(u.patterns) for u in units)
-            res1[ds] = {}
-            for kind in ("recency", "uniform", "final_position"):
+            if args.skip_part_one:
+                res1 = json.loads((out / "tables" / "part1_degradation.json").read_text())
+            else:
+                res1[ds] = {}
+            for kind in (() if args.skip_part_one else ("recency", "uniform", "final_position")):
                 with rec.section(f"{ds}_{kind}_part1"):
                     r = part_one(ds, test, spec, kind, ops, has_patterns, args.seed)
                 res1[ds][kind] = r
@@ -240,9 +244,56 @@ def main() -> int:
                     rows = part_two(ds, P, (beta, L, 6.0), settings, base_cfg, ctx.device, args.seed)
                 res2 += rows
                 write_json(res2, out / "tables" / "part2_generator_settings.json")
+        if res2:
+            with rec.section("operating_range"):
+                rows, table5 = operating_range(res2, res1, dd, args.seed)
+                write_json(rows, out / "tables" / "part2_generator_settings.json")
+                save_table(pd.DataFrame(table5), out / "tables" / "operating_range")
+                save_figure(viz.settings_panel(rows, None), out / "figures" / "score_vs_generator_settings")
         code = ct.finalize(out)
         (out / "logs" / "checks.md").write_text(ct.markdown() + "\n")
     return code
+
+
+def operating_range(rows, res1, dd, seed):
+    """Normalised score (s - chance) / (ceiling - chance) with ceiling 1 (the undegraded ground truth scores 1 under D01) and
+    chance from part one (recency); 95% interval over test units; saturation >= 0.95, near chance <= 0.05 or interval
+    including chance (declarations responsiveness.operating_range)."""
+    sat, chance_thr = 0.95, 0.05
+    out_rows, table = [], []
+    for r in rows:
+        ds = r["dataset"]
+        c_rank = res1[ds]["recency"]["chance_rank"]
+        c_ret = res1[ds]["recency"].get("chance_retrieval")
+        r = dict(r)
+        for key, c, units_key in (("rank_ig", c_rank, "rank_ig_units"), ("retrieval_ig", c_ret, "retrieval_ig_units")):
+            vals = np.asarray(r.get(units_key) or [], float)
+            vals = vals[np.isfinite(vals)]
+            if c is None or not len(vals):
+                r[f"{key}_norm"] = None
+                continue
+            norm = (vals - c) / (1.0 - c)
+            r[f"{key}_norm"] = float(norm.mean())
+            if len(norm) >= 3 and np.std(norm) > 0:
+                ci = bootstrap((norm,), np.mean, n_resamples=2000, method="BCa", random_state=np.random.default_rng(seed)).confidence_interval
+                r[f"{key}_norm_ci"] = [float(ci.low), float(ci.high)]
+            else:
+                r[f"{key}_norm_ci"] = [float(norm.mean()), float(norm.mean())]
+            lo = r[f"{key}_norm_ci"][0]
+            r[f"{key}_state"] = "saturated" if r[f"{key}_norm"] >= sat else ("near chance" if (r[f"{key}_norm"] <= chance_thr or lo <= 0) else "responsive")
+        out_rows.append(r)
+    for ds in sorted({r["dataset"] for r in out_rows}):
+        for setting in sorted({r["setting"] for r in out_rows if r["dataset"] == ds}):
+            rr = [r for r in out_rows if r["dataset"] == ds and r["setting"] == setting]
+            for key in ("rank_ig", "retrieval_ig"):
+                states = [(r["value"], r.get(f"{key}_state")) for r in rr if r.get(f"{key}_state")]
+                if not states:
+                    continue
+                resp = [v for v, s in states if s == "responsive"]
+                table.append({"dataset": ds, "setting": setting, "score": key, "range_examined": [rr[0]["value"], rr[-1]["value"]],
+                              "responsive_values": resp, "responsive_range": [min(resp), max(resp)] if resp else None,
+                              "outside": {str(v): s for v, s in states if s != "responsive"}})
+    return out_rows, table
 
 
 if __name__ == "__main__":

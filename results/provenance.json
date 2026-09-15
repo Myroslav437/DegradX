@@ -1,0 +1,578 @@
+[
+  {
+    "cell": "Figure 6 / MATR",
+    "artifact": "artifacts/s3_fit_profiles/profiles/MATR.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "96a40f606be7667a5f5ec17508f80ba67c889f31"
+  },
+  {
+    "cell": "Figure 6 / HUST",
+    "artifact": "artifacts/s3_fit_profiles/profiles/HUST.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "14a0dd70565aaa0b0927538ffc1d1e39b9618cb6"
+  },
+  {
+    "cell": "Figure 6 / NASA PCoE",
+    "artifact": "artifacts/s3_fit_profiles/profiles/NASA_PCoE.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "387b4f059e61c5f0c935ae1e1fcff768217e021d"
+  },
+  {
+    "cell": "Table 1 / MATR / discriminative_error",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / MATR / representation_distance",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / MATR / covariance_agreement",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / MATR / transfer_ratio",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / HUST / discriminative_error",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / HUST / representation_distance",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / HUST / covariance_agreement",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / HUST / transfer_ratio",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / NASA PCoE / discriminative_error",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "NASA_PCoE",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / NASA PCoE / representation_distance",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "NASA_PCoE",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / NASA PCoE / covariance_agreement",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "NASA_PCoE",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 1 / NASA PCoE / transfer_ratio",
+    "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
+    "key": "NASA_PCoE",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / trajectory family / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "trajectory family",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / trajectory family / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "trajectory family",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / trajectory family / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "trajectory family",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / trajectory family / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "trajectory family",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / trajectory family / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "trajectory family",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / drift rate / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "drift rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / drift rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "drift rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / drift rate / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "drift rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / drift rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "drift rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / drift rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "drift rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / transition position / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "transition position",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / transition position / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "transition position",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / transition position / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "transition position",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / transition position / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "transition position",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / transition position / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "transition position",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise variance, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise variance, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise variance, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise variance, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise variance, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise variance, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise variance, charge_time / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise variance, charge_time / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise variance, charge_time / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise variance, charge_time / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise variance, charge_time / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise variance, charge_time / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise lag-1 autocorrelation, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / noise lag-1 autocorrelation, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise lag-1 autocorrelation, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / noise lag-1 autocorrelation, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise lag-1 autocorrelation, capacity / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / noise lag-1 autocorrelation, capacity / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "noise lag-1 autocorrelation, capacity",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / unit length / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "unit length",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / unit length / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "unit length",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / unit length / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "unit length",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / unit length / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "unit length",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / unit length / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "unit length",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern rate / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern rate / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / positive pattern rate / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / positive pattern rate / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "positive pattern rate",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern amplitude / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern amplitude",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern amplitude / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern amplitude",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern amplitude / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern amplitude",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern amplitude / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern amplitude",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / positive pattern amplitude / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "positive pattern amplitude",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern duration / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern duration",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / positive pattern duration / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "positive pattern duration",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern duration / measured",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern duration",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / positive pattern duration / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "positive pattern duration",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / positive pattern duration / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "positive pattern duration",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / MATR / cross-channel residual correlation / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_MATR.json",
+    "key": "cross-channel residual correlation",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / HUST / cross-channel residual correlation / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_HUST.json",
+    "key": "cross-channel residual correlation",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 2 / NASA PCoE / cross-channel residual correlation / generated",
+    "artifact": "artifacts/s5_fidelity/tables/properties_NASA_PCoE.json",
+    "key": "cross-channel residual correlation",
+    "script": "scripts/s5_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  }
+]

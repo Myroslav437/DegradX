@@ -30,3 +30,7 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D06 | graded/sparse correlation above bound | S4 | not triggered: NASA 0.07-0.08 (recency), -0.03-0.00 (uniform), 0.14 (final position) < 0.30 |
 | D02b | per-measure held-out minima: transfer 20, covariance 12, discriminator 8, representation distance by unit bootstrap | S5 | taken |
 | D19 | NASA PCoE fidelity void at the declared split (cross-fitting unreadable, family unstable across folds) | S5 | taken |
+| D21 | NASA pattern term negligible at fitted amplitudes: generator unchanged; trained-model sparse scores void | S6 | taken |
+| D08 | non-responding scores explained by field construction; drop reported beside resolution | S7 | taken |
+| D22 | TimeSHAP l1_reg 'auto' (cell-level default) | S8 | taken |
+| D23 | S8 budget: TimeSHAP on 40 of 120 windows, seeds 0-1 trained / 0 reference | S8 | taken |

@@ -1,0 +1,80 @@
+{
+  "MATR": {
+    "units_held_out": 40,
+    "units_held_out_reaching_eol": 38,
+    "generated_units_per_seed": 300,
+    "window_length": 24,
+    "discriminative_error_per_generation_seed": [
+      0.09250003099441528,
+      0.07125002145767212,
+      0.05187499523162842
+    ],
+    "representation_distance_mean": 64.13381373356852,
+    "representation_distance_baseline": 59.919741575447304,
+    "covariance_rel_frobenius_mean": 0.6873697840966545,
+    "covariance_baseline": 0.2780475058895786,
+    "transfer_ratio": 3.4201964487768874,
+    "transfer_ci": [
+      2.276480201346431,
+      4.957907742362334
+    ],
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null,
+      "representation_distance": "bootstrap half-width 1.45 of the value > 0.5 at 40 held-out units",
+      "transfer_ratio": null
+    }
+  },
+  "HUST": {
+    "units_held_out": 23,
+    "units_held_out_reaching_eol": 23,
+    "generated_units_per_seed": 300,
+    "window_length": 24,
+    "discriminative_error_per_generation_seed": [
+      0.20399993658065796,
+      0.11699998378753662,
+      0.17199993133544922
+    ],
+    "representation_distance_mean": 2.945878846590657,
+    "representation_distance_baseline": 0.16425533664565733,
+    "covariance_rel_frobenius_mean": 0.4243181678171406,
+    "covariance_baseline": 0.03757220016113322,
+    "transfer_ratio": 1.4612937680490141,
+    "transfer_ci": [
+      1.1113580311093105,
+      1.76383636719532
+    ],
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null,
+      "representation_distance": null,
+      "transfer_ratio": null
+    }
+  },
+  "NASA_PCoE": {
+    "units_held_out": 5,
+    "units_held_out_reaching_eol": 3,
+    "generated_units_per_seed": 300,
+    "window_length": 24,
+    "discriminative_error_per_generation_seed": [
+      0.5,
+      0.022727251052856445,
+      0.022727251052856445
+    ],
+    "representation_distance_mean": 28.375790692785575,
+    "representation_distance_baseline": 30.574167221699845,
+    "covariance_rel_frobenius_mean": 0.42029062226203506,
+    "covariance_baseline": 0.7387117912425617,
+    "transfer_ratio": 1.6411627211090731,
+    "transfer_ci": [
+      0.8674189390268614,
+      2.0035188936537
+    ],
+    "void": {
+      "discriminative_error": "held-out units 5 < 8",
+      "covariance_agreement": "held-out units 5 < 12",
+      "representation_distance": "bootstrap half-width 0.93 of the value > 0.5 at 5 held-out units",
+      "transfer_ratio": "held-out units reaching EOL 3 < 20"
+    }
+  }
+}

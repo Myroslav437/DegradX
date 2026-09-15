@@ -1,0 +1,16 @@
+{
+  "stage": "s7_responsiveness",
+  "device": "cpu",
+  "wall_clock_s": 178.507,
+  "sections_s": {
+    "MATR_recency_part1": 15.192,
+    "MATR_uniform_part1": 15.328,
+    "MATR_final_position_part1": 14.9,
+    "HUST_recency_part1": 15.21,
+    "HUST_uniform_part1": 14.964,
+    "HUST_final_position_part1": 15.274,
+    "NASA_PCoE_recency_part1": 32.256,
+    "NASA_PCoE_uniform_part1": 34.359,
+    "NASA_PCoE_final_position_part1": 16.522
+  }
+}

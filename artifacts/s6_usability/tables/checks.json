@@ -1,0 +1,58 @@
+[
+  {
+    "name": "NASA_PCoE [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.131",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0022 [0.0009, 0.0041]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0015 [0.0006, 0.0026]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: mean term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "10.3046 [9.4298, 10.9013]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: pattern term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "-0.0000 [-0.0004, 0.0003]",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: variance ratio of the two terms within the declared band [0.05, 0.5]",
+    "expected": "[0.05, 0.5]",
+    "observed": "0.0004",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE [recency]: graded/sparse correlation <= 0.3",
+    "expected": "<= 0.3",
+    "observed": "0.074",
+    "passed": true,
+    "severity": "warn"
+  }
+]

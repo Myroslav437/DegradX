@@ -1,0 +1,11 @@
+{
+  "stage": "s6_usability",
+  "device": "cuda",
+  "wall_clock_s": 54.204,
+  "sections_s": {
+    "NASA_PCoE_recency_windows": 0.054,
+    "NASA_PCoE_recency_ensemble": 32.137,
+    "NASA_PCoE_recency_importance": 0.608,
+    "NASA_PCoE_recency_ablation": 20.708
+  }
+}
