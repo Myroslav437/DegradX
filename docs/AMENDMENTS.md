@@ -29,6 +29,9 @@ Later rounds = decisions under `docs/DECISIONS/` that alter the methodology.
 | C3.4 | §3.1.1, ρ-conventions paragraph | States what ρ is taken against (documented nominal capacity) and why (stopping rules are stated against nominal; a higher initial capacity would put EOL below where cycling stopped); denominator guard; sensitivity sweep includes the first-position-anchored definition. | C3 edit list. | Previous convention reported rather than deleted. |
 | C3.5 | §3.3, "Declared by design" list | Adds nominal capacity per dataset, `k`, and the exclusion margin. | The list must name what is declared. | none |
 | C3.6 | §3.4, property-audit list | Adds "how often the early-life reference differs materially from the first-position capacity". | Makes the C3.3 forward reference true. | none |
+| C4.1 | §3.2.1, paragraph after Eq. 5 (inside the C1 span) | Adds: a method whose values sum to f(window) − f(baseline) recovers ϕ* only when the baseline is `x⁰` (forward reference to §3.6). | C4 edit list ("one sentence tying ϕ* to the declared reference point"). | none |
+| C4.2 | §3.6, new paragraph after the reference-values paragraph; `\label{sec:models}` added to the subsection | Declared baseline = pristine window (IG baseline, occlusion value, TimeSHAP background instance) and why (target zero there; lies near the first windows of every unit, unlike a zero input); ground truth `w(m + Σp − b)` supplied for any baseline `b`, so methods keep their defaults; secondary TimeSHAP run from the conventional average event as a sensitivity readout; mean-conditional background not adopted (circularity); occlusion has no efficiency property, so it is compared in rank and retrieval, not in sum. | C4: scoring efficiency-satisfying attributions against ϕ* presumes f(baseline) = 0, which an average event violates under a drifting mean. | Buys a baseline under which Σϕ = y holds for the reference model. Cost: the trained model's f(x⁰) is only approximately 0 (reported at S8); the secondary run adds one TimeSHAP pass. |
+| C1×C3 | §3.3 step three | Capacity mapping "taken at the median early-life reference of the fitting units so that it is shared across units like every other mapping". | Blast radius of C1 + C3: with a per-unit `q₁` in Eq. 3 the capacity mapping would differ by unit, contradicting §3.1 ("mappings shared across all units") and C1 (`x⁰` identical across units). | Cost: generated units do not vary in initial capacity; the property table reports the measured spread of `q₁`. |
 
 Build note (C2): over/underfull boxes rose from 1 to 4 (review build). All of the new ones are `Underfull \vbox … while \output is active` float-page artefacts from shifted page breaks; LaTeX and package warnings stay at 0.
 
@@ -39,3 +42,26 @@ Build note (C2): over/underfull boxes rose from 1 to 4 (review build). All of th
 - C2.2: null-channel permutation importance, redundant-channel predictability and conditional importance → Table 3 (S6).
 - C2.3: ensemble identifiability floor → S6 training, Table 6 companion (S8).
 - C3.3/C3.6: frequency of material difference between robust and first-position q₁; attainment per definition and ρ → S2 audit tables.
+- C4.2: f(x⁰) of trained models; ranking under primary vs average-event background → S8.
+
+## Round 1 blast-radius review
+
+Re-read after C1–C4: Introduction, Related Work, all of Section 3, and the Results/Discussion scaffolding.
+
+| location | sentence | status |
+|---|---|---|
+| §1 ¶5 | "The target variable is an explicit additive function of the first two terms" | Holds (additive about `x⁰`). No edit. |
+| §1 ¶5 | "a dense graded field from the mean component … and a sparse set of positions carrying the inserted patterns" | Holds under recency/uniform weighting; the final-position collapse of both is now stated in §3.2.1. No edit. |
+| §2 last ¶ | "attribution ground truth defined at every observation for a continuous target" | Holds. No edit. |
+| Fig. 1, Fig. 2 captions | ϕ* as graded field + sparse set | Hold (Fig. 2 is illustrative, "vertical scales arbitrary"). No edit. |
+| §3.1 Eq. 2 ¶ | "mappings φ_c … shared across all units of a profile" | Was contradicted by per-unit `q₁` for capacity; fixed by the C1×C3 row above. |
+| §3.2.1 | "Since m = φ_c(z_u), the first term is a fixed function of the degradation state" | Holds. No edit. |
+| §3.3 declared list | named `a` and `b`; lacked `q_nom`, `k`, margin | Fixed (C1.7, C3.5). |
+| §3.4 audit list | lacked the early-life reference comparison referenced by C3.3 | Fixed (C3.6). |
+| §3.5.2 | "the two terms of Equation 4" | Holds (Eq. 4 keeps two terms). No edit. |
+| §3.6 ¶1 | "a single trained architecture" | Holds: ensemble members differ only in size and initialization. No edit. |
+| §4.2 Table 3 row "Permutation importance, zero-weight channels" | results scaffold | Contradicted by C2.2 (gate is on null channels; redundant channels reported). Results placeholder, rewritten at S9. |
+| §4.4 ¶1 "since the reference model reproduces the decomposable target up to ε" | results scaffold | Imprecise after C1 (up to `Σ w ε`). Results text, rewritten at S9. |
+| Table 6 caption "mass on zero-weight channels is error by construction" | results scaffold | Holds for null and redundant channels alike (w = 0 ⇒ ϕ* = 0). Kept. |
+
+Held citations found during the review (not edited in round 1; handled by D10): `pan2022` (§3.1.2, §3.3) uses a rest-time/decomposition method on CALCE data; the temperature-as-input claim cited to `olivares2013` (§3.1.2).

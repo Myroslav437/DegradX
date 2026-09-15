@@ -30,6 +30,10 @@ meta:
        r1: "z_t = (q1 - q_t) / ((1 - rho) q1), q1 = first position of smoothed capacity (status OPEN)",
        r2: "z_t = (q1 - q_t) / (q1 - rho * q_nom), q_nom per profile from primary documentation, q1 = max smoothed capacity over first k=20 positions, guard q1 - rho*q_nom >= 0.05 q_nom; r1 definition kept as a sensitivity point",
        reason: "MATR/HUST cells were cycled to 80% of nominal capacity; rho applied to a higher observed initial capacity puts EOL below where cycling stopped, and early capacity rise makes a first-position anchor give z < 0"}
+    - {date: 2026-09-15, comment: C4, keys: [declared_by_design.attribution.baseline],
+       r1: "attribution baseline OPEN (TimeSHAP convention: average-event background)",
+       r2: "primary baseline = pristine window x0 for IG, occlusion and TimeSHAP background; ground truth supplied per baseline; secondary TimeSHAP run from the average event scored against phi*(xbar)",
+       reason: "Shapley and path methods satisfy sum(phi) = f(x) - f(baseline); scoring against phi* presumes f(baseline) = 0, which an average event does not satisfy under a drifting mean"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -356,7 +360,20 @@ declared_by_design:
       timeshap: {nsamples: 32000, pruning: off, granularity: "cell level with top_x_events=L, top_x_feats=C", l1_reg: auto, source: "timeshap 1.0.4 (no local default for nsamples; 32000 is the global/paper value)"}
       integrated_gradients: {n_steps: 50, method: gausslegendre, internal_batch_size: null, cudnn: "disabled inside attribution (eval-mode RNN backward)", source: "captum 0.9.0 defaults"}
       feature_occlusion: {implementation: "captum FeatureAblation, one cell at a time", source: "benchmark code bases occlude single cells (FIT, Dynamask, tint)"}
-      baseline: {status: OPEN}
+      # r2 (C4): supersedes r1 `baseline: {status: OPEN}`.
+      baseline:
+        primary:
+          value: "the pristine window: x0_c = phi_c(0) at every position (target.reference_point; null channels per channels.null)"
+          applied_as: {integrated_gradients: baselines, feature_occlusion: baselines, timeshap: "background instance of shape (1, C) tiled over L (TimeSHAP's single-event background form)"}
+          rationale: "the input at which the target is zero, so efficiency-satisfying attributions sum to g(x) - g(x0) = y (+ noise term); unlike a zero input it lies near the first windows of every unit, so the trained model is not queried far outside its training support"
+        secondary:
+          value: "TimeSHAP only, from the conventional average event: timeshap.utils.calc_avg_event (per-channel median) over the model's normalised training windows"
+          scored_against: "phi*(xbar)_{u,c} = w_{u,c} (m_{u,c} + sum_k p_{k,u,c} - xbar_c)"
+          purpose: "baseline-sensitivity readout: do the method rankings move? reported, not an evaluation of backgrounds"
+        ground_truth_per_baseline: "phi*(b)_{u,c} = w_{u,c} (m_{u,c} + sum_k p_{k,u,c} - b_{u,c}); shipped with the benchmark for the primary and secondary baselines"
+        not_adopted: "a background conditioned on the local mean component: it would make trend-conditional backgrounds correct by construction and any later evaluation of them circular"
+        occlusion_note: "feature occlusion has no efficiency property; its maps are scored in rank and retrieval, not in sum"
+        source: "C4 (r2)"
     windows_scored_per_profile: 120
     primary_scoring_target:
       value: reference_model
