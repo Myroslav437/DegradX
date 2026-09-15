@@ -1,8 +1,46 @@
 name,expected,observed,passed,severity
+MATR: results present,present,present,True,error
+MATR: window count matches the stored results,120,120,True,error
+MATR [recency]: all method rows present,none missing,none missing,True,error
+MATR [recency]: identifiability floor over ten members,10,10,True,error
 MATR [recency]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,2.32e-08,True,error
 MATR [recency]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,8.64e-08,True,error
+MATR [uniform]: all method rows present,none missing,none missing,True,error
+MATR [uniform]: identifiability floor over ten members,10,10,True,error
 MATR [uniform]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,8.29e-09,True,error
 MATR [uniform]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,1.16e-07,True,error
+MATR [final_position]: all method rows present,none missing,none missing,True,error
+MATR [final_position]: identifiability floor over ten members,10,10,True,error
 MATR [final_position]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,2.16e-07,True,error
 MATR [final_position]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,2.35e-07,True,error
 MATR: TimeSHAP background instance recorded,recorded,recorded,True,error
+HUST: results present,present,present,True,error
+HUST: window count matches the stored results,120,120,True,error
+HUST [recency]: all method rows present,none missing,none missing,True,error
+HUST [recency]: identifiability floor over ten members,10,10,True,error
+HUST [recency]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,9.64e-09,True,error
+HUST [recency]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,1.10e-07,True,error
+HUST [uniform]: all method rows present,none missing,none missing,True,error
+HUST [uniform]: identifiability floor over ten members,10,10,True,error
+HUST [uniform]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,3.00e-09,True,error
+HUST [uniform]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,1.13e-07,True,error
+HUST [final_position]: all method rows present,none missing,none missing,True,error
+HUST [final_position]: identifiability floor over ten members,10,10,True,error
+HUST [final_position]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,8.59e-08,True,error
+HUST [final_position]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,9.40e-08,True,error
+HUST: TimeSHAP background instance recorded,recorded,recorded,True,error
+NASA_PCoE: results present,present,present,True,error
+NASA_PCoE: window count matches the stored results,120,120,True,error
+NASA_PCoE [recency]: all method rows present,none missing,none missing,True,error
+NASA_PCoE [recency]: identifiability floor over ten members,10,10,True,error
+NASA_PCoE [recency]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,1.81e-07,True,error
+NASA_PCoE [recency]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,2.51e-07,True,error
+NASA_PCoE [uniform]: all method rows present,none missing,none missing,True,error
+NASA_PCoE [uniform]: identifiability floor over ten members,10,10,True,error
+NASA_PCoE [uniform]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,6.90e-08,True,error
+NASA_PCoE [uniform]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,1.71e-07,True,error
+NASA_PCoE [final_position]: all method rows present,none missing,none missing,True,error
+NASA_PCoE [final_position]: identifiability floor over ten members,10,10,True,error
+NASA_PCoE [final_position]: integrated_gradients on the reference model equals w(x - x0),< 1e-3 relative,1.54e-06,True,error
+NASA_PCoE [final_position]: feature_occlusion on the reference model equals w(x - x0),< 1e-3 relative,1.59e-06,True,error
+NASA_PCoE: TimeSHAP background instance recorded,recorded,recorded,True,error

@@ -2,68 +2,76 @@
   a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
   return fun(*args, **kwargs)
-[s8] HUST recency trained/integrated_gradients: rank 0.3205170655682675 (0s)
-[s8] HUST recency trained/feature_occlusion: rank 0.29838615535958013 (0s)
+[s8] NASA_PCoE recency trained/integrated_gradients: rank 0.316464804965986 (0s)
+[s8] NASA_PCoE recency trained/feature_occlusion: rank 0.2827248300440409 (1s)
+[s8] NASA_PCoE recency trained/timeshap: rank 0.2862292212703203 (1047s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE recency reference/integrated_gradients: rank 0.7333703786492158 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE recency reference/feature_occlusion: rank 0.7333703786492158 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE recency reference/timeshap: rank 0.7444285210854881 (507s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE uniform trained/integrated_gradients: rank 0.1914192429545744 (0s)
+[s8] NASA_PCoE uniform trained/feature_occlusion: rank 0.25780133864358246 (0s)
+[s8] NASA_PCoE uniform trained/timeshap: rank 0.15530810064974107 (953s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE uniform reference/integrated_gradients: rank 0.690948747383116 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE uniform reference/feature_occlusion: rank 0.690948747383116 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE uniform reference/timeshap: rank 0.7036419676151323 (461s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] NASA_PCoE final_position trained/integrated_gradients: rank 0.15256875003781944 (0s)
+[s8] NASA_PCoE final_position trained/feature_occlusion: rank 0.15502233648758 (0s)
 /home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
   res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST recency trained/timeshap: rank 0.33291041865899335 (498s)
+[s8] NASA_PCoE final_position trained/timeshap: rank 0.18056691907149255 (947s)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
   a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
   return fun(*args, **kwargs)
-[s8] HUST recency reference/integrated_gradients: rank 0.8701092826343239 (0s)
-[s8] HUST recency reference/feature_occlusion: rank 0.8701092618368027 (0s)
+[s8] NASA_PCoE final_position reference/integrated_gradients: rank 0.8443209814188146 (0s)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
   a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
   return fun(*args, **kwargs)
-/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
-  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST recency reference/timeshap: rank 0.8591213174399265 (228s)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
-  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
-  return fun(*args, **kwargs)
-[s8] HUST uniform trained/integrated_gradients: rank 0.44757807173239694 (0s)
-[s8] HUST uniform trained/feature_occlusion: rank 0.3250454335780217 (0s)
-/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
-  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST uniform trained/timeshap: rank 0.3630440165661778 (456s)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
-  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
-  return fun(*args, **kwargs)
-[s8] HUST uniform reference/integrated_gradients: rank 0.81237255906899 (0s)
-[s8] HUST uniform reference/feature_occlusion: rank 0.8123756423464141 (0s)
+[s8] NASA_PCoE final_position reference/feature_occlusion: rank 0.8443209814188146 (0s)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
   a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
   return fun(*args, **kwargs)
 /home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
   res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST uniform reference/timeshap: rank 0.7944753503780683 (223s)
-[s8] HUST final_position trained/integrated_gradients: rank 0.16028856510649597 (0s)
-[s8] HUST final_position trained/feature_occlusion: rank 0.15451348532071546 (0s)
-/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
-  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST final_position trained/timeshap: rank 0.18344057724142496 (455s)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
-  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
-  return fun(*args, **kwargs)
-[s8] HUST final_position reference/integrated_gradients: rank 0.8696437076805568 (0s)
-[s8] HUST final_position reference/feature_occlusion: rank 0.8696437076805568 (0s)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
-  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
-/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
-  return fun(*args, **kwargs)
-/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:179: RuntimeWarning: Mean of empty slice
-  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
-[s8] HUST final_position reference/timeshap: rank 0.8782883535853899 (217s)
-[PASS] HUST [recency]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 9.64e-09
-[PASS] HUST [recency]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.10e-07
-[PASS] HUST [uniform]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 3.00e-09
-[PASS] HUST [uniform]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.13e-07
-[PASS] HUST [final_position]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 8.59e-08
-[PASS] HUST [final_position]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 9.40e-08
-[PASS] HUST: TimeSHAP background instance recorded: expected recorded; observed recorded
+[s8] NASA_PCoE final_position reference/timeshap: rank 0.9118260742686218 (451s)
+[PASS] NASA_PCoE [recency]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.81e-07
+[PASS] NASA_PCoE [recency]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 2.51e-07
+[PASS] NASA_PCoE [uniform]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 6.90e-08
+[PASS] NASA_PCoE [uniform]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.71e-07
+[PASS] NASA_PCoE [final_position]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.54e-06
+[PASS] NASA_PCoE [final_position]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.59e-06
+[PASS] NASA_PCoE: TimeSHAP background instance recorded: expected recorded; observed recorded

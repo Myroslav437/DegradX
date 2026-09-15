@@ -3,3 +3,4 @@ s7 part2 exit 1
 s7 part2 rerun exit 0
 s7 range exit 0
 d20 exit 0
+s8 nasa exit 0

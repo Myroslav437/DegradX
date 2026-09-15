@@ -32,6 +32,8 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D19 | NASA PCoE fidelity void at the declared split (cross-fitting unreadable, family unstable across folds) | S5 | taken |
 | D21 | NASA pattern term negligible at fitted amplitudes: generator unchanged; trained-model sparse scores void | S6 | taken |
 | D08 | non-responding scores explained by field construction; drop reported beside resolution | S7 | taken |
+| D20 | operating range read on both probes (reference model and IG on the trained model) with the accuracy gate | S7 | taken (paper round 6) |
 | D22 | TimeSHAP l1_reg 'auto' (cell-level default) | S8 | taken |
 | D23 | S8 budget: TimeSHAP on 40 of 120 windows, seeds 0-1 trained / 0 reference | S8 | taken |
 | D10 | held citations: pan2022 verified and re-described; olivares2013 temperature-input claim removed | S9 | taken (paper round 5) |
+| D24 | Table 6 per profile, not averaged over profiles | S9 | taken (paper round 6) |

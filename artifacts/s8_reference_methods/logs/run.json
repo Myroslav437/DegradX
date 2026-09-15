@@ -3,7 +3,7 @@
   "argv": [
     "scripts/s8_reference_methods.py",
     "--datasets",
-    "MATR",
+    "NASA_PCoE",
     "--timeshap-windows",
     "40",
     "--timeshap-seeds",
@@ -13,13 +13,13 @@
     "0",
     "--secondary-background"
   ],
-  "started_utc": "2026-09-15T19:44:15.023278+00:00",
-  "finished_utc": "2026-09-15T20:33:20.135861+00:00",
-  "wall_clock_s": 2945.113,
+  "started_utc": "2026-09-15T22:16:10.125285+00:00",
+  "finished_utc": "2026-09-15T23:37:43.801687+00:00",
+  "wall_clock_s": 4893.676,
   "status": "ok",
   "error": null,
   "git": {
-    "commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b",
+    "commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64",
     "dirty": true,
     "branch": "main"
   },

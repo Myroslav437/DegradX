@@ -86,6 +86,49 @@ def score_maps(A, Apf, W, zero_ch):
     return out
 
 
+def verify_all(args, ctx) -> int:
+    """Checks over every profile in reference_values.json (the per-dataset runs each overwrite checks.md): the reference
+    model's IG and occlusion equal its exact attribution on the same windows, every method row is present, and the
+    TimeSHAP background is recorded. Recomputes no TimeSHAP maps and writes no results."""
+    dd = ctx.declarations["declared_by_design"]
+    out, ct = ctx.out_dir, CheckTable()
+    beta, L = dd["target"]["weights"]["beta"]["value"], int(dd["target"]["window_length_L"]["value"])
+    n_win = args.windows or int(dd["attribution"]["windows_scored_per_profile"])
+    results = json.loads((out / "tables" / "reference_values.json").read_text())
+    rows = ["reference_exact", "reference_exact_timeshap_windows"] + [f"{m}/{meth}" for m in ("trained", "reference")
+                                                                      for meth in ("integrated_gradients", "feature_occlusion", "timeshap")]
+    for ds in args.datasets:
+        ct.require(f"{ds}: results present", ds in results, "present", "present" if ds in results else "missing")
+        if ds not in results:
+            continue
+        prof = json.loads((ARTIFACTS_DIR / "s3_fit_profiles" / "profiles" / f"{ds}.json").read_text())
+        units, table = pickle.loads((DATA_DIR / "generated" / ds / "seed0.pkl").read_bytes())
+        split = dict(zip(table["index"], table["split"]))
+        test = [u for u in units if split[u.index] == "test"]
+        P = Profile.from_json(prof, np.concatenate([u.eps[:, len(prof["declared_used"]["channels_available"]) + 1] for u in units]))
+        spec = TargetSpec.build(P, beta, L, 6.0)
+        eligible, picks = select_windows(test, spec, n_win, rng(args.seed, "evaluation", "s8", ds))
+        ct.require(f"{ds}: window count matches the stored results", len(picks) == results[ds]["windows"], str(results[ds]["windows"]), str(len(picks)))
+        baseline = np.broadcast_to(spec.x0, (L, len(spec.x0))).copy()
+        for kind in args.weightings:
+            rk = results[ds]["weightings"].get(kind, {})
+            missing = [r for r in rows if r not in rk.get("scores", {})]
+            ct.require(f"{ds} [{kind}]: all method rows present", not missing, "none missing", ", ".join(missing) or "none missing")
+            ct.require(f"{ds} [{kind}]: identifiability floor over ten members", len(rk.get("identifiability_floor", {}).get("integrated_gradients", {}).get("members", [])) == 10,
+                       "10", str(len(rk.get("identifiability_floor", {}).get("integrated_gradients", {}).get("members", []))))
+            X = np.stack([unit_targets(eligible[ui], spec, kind, ends=np.array([e]))["x"][0] for ui, e in picks]).astype(np.float32)
+            exact = spec.weights(kind)[None] * (X - spec.x0)
+            ref = M.ReferenceModel(spec.weights(kind), spec.x0)
+            for meth, fn in (("integrated_gradients", M.integrated_gradients), ("feature_occlusion", M.feature_occlusion)):
+                err = float(np.max(np.abs(fn(ref, X, baseline, ctx.device) - exact)))
+                ct.require(f"{ds} [{kind}]: {meth} on the reference model equals w(x - x0)", err < 1e-3 * max(1.0, np.abs(exact).max()), "< 1e-3 relative", f"{err:.2e}")
+        ct.require(f"{ds}: TimeSHAP background instance recorded", "timeshap_background_event" in results[ds], "recorded",
+                   "recorded" if "timeshap_background_event" in results[ds] else "missing")
+    code = ct.finalize(out)
+    (out / "logs" / "checks.md").write_text(ct.markdown() + "\n")
+    return code
+
+
 def main() -> int:
     p = stage_parser(__doc__, "s8_reference_methods")
     p.add_argument("--datasets", nargs="*", default=list(PROFILES))
@@ -97,8 +140,11 @@ def main() -> int:
     p.add_argument("--secondary-background", action="store_true", help="also run TimeSHAP on the trained model from the average event (C4 secondary, D09)")
     p.add_argument("--timeshap-l1", default="auto", help="TimeSHAP l1_reg ('auto' = library default at cell level, or 'False')")
     p.add_argument("--skip-ensemble", action="store_true")
+    p.add_argument("--checks-only", action="store_true", help="re-run the stage checks over all stored profiles; no attribution maps recomputed")
     args = p.parse_args()
     ctx = StageContext.from_args(args)
+    if args.checks_only:
+        return verify_all(args, ctx)
     decl, dd = ctx.declarations, ctx.declarations["declared_by_design"]
     n_win = args.windows or int(dd["attribution"]["windows_scored_per_profile"])
     ts_seeds = args.timeshap_seeds if args.timeshap_seeds is not None else dd["statistics"]["seeds"]["attribution_sampling"]

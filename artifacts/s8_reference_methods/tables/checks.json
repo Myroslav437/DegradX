@@ -1,5 +1,33 @@
 [
   {
+    "name": "MATR: results present",
+    "expected": "present",
+    "observed": "present",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: window count matches the stored results",
+    "expected": "120",
+    "observed": "120",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
     "name": "MATR [recency]: integrated_gradients on the reference model equals w(x - x0)",
     "expected": "< 1e-3 relative",
     "observed": "2.32e-08",
@@ -14,6 +42,20 @@
     "severity": "error"
   },
   {
+    "name": "MATR [uniform]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
     "name": "MATR [uniform]: integrated_gradients on the reference model equals w(x - x0)",
     "expected": "< 1e-3 relative",
     "observed": "8.29e-09",
@@ -24,6 +66,20 @@
     "name": "MATR [uniform]: feature_occlusion on the reference model equals w(x - x0)",
     "expected": "< 1e-3 relative",
     "observed": "1.16e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
     "passed": true,
     "severity": "error"
   },
@@ -43,6 +99,216 @@
   },
   {
     "name": "MATR: TimeSHAP background instance recorded",
+    "expected": "recorded",
+    "observed": "recorded",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: results present",
+    "expected": "present",
+    "observed": "present",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: window count matches the stored results",
+    "expected": "120",
+    "observed": "120",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "9.64e-09",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.10e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "3.00e-09",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.13e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "8.59e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [final_position]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "9.40e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: TimeSHAP background instance recorded",
+    "expected": "recorded",
+    "observed": "recorded",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: results present",
+    "expected": "present",
+    "observed": "present",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: window count matches the stored results",
+    "expected": "120",
+    "observed": "120",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.81e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "2.51e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "6.90e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.71e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: all method rows present",
+    "expected": "none missing",
+    "observed": "none missing",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: identifiability floor over ten members",
+    "expected": "10",
+    "observed": "10",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.54e-06",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [final_position]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.59e-06",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: TimeSHAP background instance recorded",
     "expected": "recorded",
     "observed": "recorded",
     "passed": true,
