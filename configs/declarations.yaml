@@ -34,6 +34,15 @@ meta:
        r1: "attribution baseline OPEN (TimeSHAP convention: average-event background)",
        r2: "primary baseline = pristine window x0 for IG, occlusion and TimeSHAP background; ground truth supplied per baseline; secondary TimeSHAP run from the average event scored against phi*(xbar)",
        reason: "Shapley and path methods satisfy sum(phi) = f(x) - f(baseline); scoring against phi* presumes f(baseline) = 0, which an average event does not satisfy under a drifting mean"}
+    - {date: 2026-09-15, comment: D13, keys: [declared_by_design.eol.record_end_rule],
+       r2: "T = min{t : z_t >= 1} only",
+       new: "measured records ending within 0.01 q_nom of the threshold reach EOL at their last position",
+       reason: "HUST and MATR b1/b3 records were truncated at the stopping threshold (S1); strict attainment was 11/77 HUST, 96/180 MATR"}
+    - {date: 2026-09-15, comment: D11, keys: [declared_by_design.capacity_series.source], r2: "capacity = max discharge capacity of the cycle (source unnamed)", new: "cycler-reported per-cycle capacity", reason: "HUST integrated capacity reads +18 mAh; 1/77 vs 77/77 units reach EOL"}
+    - {date: 2026-09-15, comment: D12, keys: [declared_by_design.capacity_series.cleaning_rule], r2: "no glitch rule", new: "isolated > 5% q_nom excursions and recovered collapses below 50% q_nom removed", reason: "single-cycle glitches set q1, T = 1-3 on NASA units, broke monotonicity in 16 MATR units"}
+    - {date: 2026-09-15, comment: D14, keys: [declared_by_design.datasets.matr_batches], r2: "all four MATR batches (status CONFIRM)", new: "the three Severson 2019 batches", reason: "the cited dataset; batch 4 IR is zero in every cycle"}
+    - {date: 2026-09-15, comment: D16, keys: [declared_by_design.pattern_detection.residual, declared_by_design.pattern_detection.max_duration], r2: "families fitted over 1..T; runs of any length >= m", new: "families fitted over t1..T; runs longer than the smoothing window are not patterns", reason: "early-rise misfit and low-frequency misfit dominated MATR/HUST detections"}
+    - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -51,10 +60,9 @@ declared_by_design:
 
   datasets:
     matr_batches:
-      value: [20170512, 20170630, 20180412, 20190124]
-      source: "paper l.83, l.253 cite severson2019 (first three batches); BatteryML's MATR bundle adds 20190124 (Attia 2020)"
-      rationale: "all four enter the audit; the Severson subset is reported alongside so the cited dataset is recoverable"
-      status: CONFIRM
+      value: [20170512, 20170630, 20180412]
+      source: "paper l.83, l.253 cite severson2019 (first three batches); D14 (2026-09-15) supersedes r1/r2 [all four batches, status CONFIRM]"
+      rationale: "the cited dataset; batch 20190124 (Attia 2020) records IR as zero in every cycle, contradicting the MATR channel set of paper l.253 (docs/DECISIONS/D14_matr_scope.md)"
       affects_fitted_parameters: true
     nasa_pcoe_cells: {value: all_34_in_repository, source: "paper l.253", rationale: "the S2 audit decides which reach EOL; no pre-selection by literature", affects_fitted_parameters: true}
 
@@ -94,6 +102,17 @@ declared_by_design:
       source: "paper l.158 ('range these conventions span'); grid UNDERSPECIFIED-IN-PAPER"
       rationale: "70% NASA rated-capacity rule; 76% Pan 2022; 80% convention; 90% BatteryLife for cells not reaching 80%."
       affects_fitted_parameters: true
+    eol_search_start:
+      value: "T = min{t >= t1 : z_t >= 1}, t1 = position of q1"
+      source: "docs/DECISIONS/D15_eol_search_start.md (2026-09-15, after S1, before fitting)"
+      affects_fitted_parameters: true
+    record_end_rule:
+      # D13 (2026-09-15, after S1 ingestion, before any fitting): supersedes the strict reading of T for measured records.
+      value: "measured units only: if the smoothed state never reaches 1 but the mean raw capacity of the last 5 recorded positions lies within tau * q_nom of the threshold, T = last recorded position"
+      tau: 0.01
+      applies_to: measured units (never to generated units, whose trajectories are not truncated)
+      source: "docs/DECISIONS/D13_truncated_records.md"
+      affects_fitted_parameters: true
     definitions_reported:
       value:
         nominal_anchor_r2: "z = (q1 - q_t)/(q1 - rho q_nom), q1 = max over first k"
@@ -101,6 +120,15 @@ declared_by_design:
       use: "S2 measures attainment per profile under both definitions at every rho on the grid; S4 rho-sensitivity reports both"
       source: "C3 (r2)"
       affects_fitted_parameters: false
+
+  capacity_series:
+    # D11 + D12 (2026-09-15, after S1 ingestion, before any fitting)
+    source: {value: capacity_cycler_Ah, rationale: "docs/DECISIONS/D11_capacity_source.md", affects_fitted_parameters: true}
+    cleaning_rule:
+      value: "drop degenerate cycles (< 10 samples or no capacity); drop a single position deviating > 0.05 q_nom from the centred 11-position rolling median while neither neighbour does; drop readings < 0.5 q_nom followed later by a reading >= 0.8 q_nom; positions re-indexed over kept cycles"
+      params: {isolated_excursion_frac: 0.05, drop_recovered_collapse: true, drop_degenerate: true}
+      source: "docs/DECISIONS/D12_glitch_rule.md"
+      affects_fitted_parameters: true
 
   smoothing:
     filter: {value: savitzky_golay, source: "paper l.236", affects_fitted_parameters: true}
@@ -114,7 +142,13 @@ declared_by_design:
     window_sensitivity_grid: {value: [7, 11, 21], source: UNDERSPECIFIED-IN-PAPER, affects_fitted_parameters: false}
 
   pattern_detection:
+    max_duration:
+      value: smoothing_window_length   # 11
+      rationale: "a run longer than the smoothing window survives smoothing, so it is part of q_t and changes z_t, which inserted patterns must not (paper l.175)"
+      source: "docs/DECISIONS/D16_detection_residual.md (2026-09-15, S2, before S3 fitting)"
+      affects_fitted_parameters: true
     residual:
+      fit_range: "positions t1..T (early-life reference to EOL; D16 supersedes 1..T)"
       value: raw_capacity_minus_fitted_trajectory
       source: "paper l.236 (step five uses the step-two residuals), l.243"
       rationale: "Residuals of the smoothed series would retain only 37-71% of a regeneration peak at W=11 (domain research §2)."
@@ -153,7 +187,7 @@ declared_by_design:
     source: "paper l.236 (families named, equations cited not written); equations UNDERSPECIFIED-IN-PAPER"
     affects_fitted_parameters: true
     fit_quantity: {value: capacity_over_q1, rationale: "dimensionless so one bound set serves 1.1 Ah and 2 Ah cells", r2_note: "q1 is the robust early-life reference of eol.q1_reference (C3)"}
-    fit_range: {value: "positions 1..T of the unit (T from Eq. 3 on smoothed capacity)"}
+    fit_range: {value: "positions t1..T of the unit (D16 supersedes 1..T; T from Eq. 3 with D13/D15); censored units: t1..N"}
     candidates:
       two_term_exponential:
         equation: "y(n) = a*exp(b*n) + c*exp(d*n)"

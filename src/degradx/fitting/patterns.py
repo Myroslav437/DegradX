@@ -3,7 +3,8 @@ the S2 audit and by S3 fitting (brief S2).
 
 Rule (declarations ``pattern_detection``): residual r_t = raw capacity - fitted trajectory; residual scale
 s = 1.4826 * median(|r - median(r)|) per unit; a candidate pattern is a maximal run of consecutive positions
-with r_t > k s (positive type) or r_t < -k s (negative type) of length >= m. For each pattern: extremum
+with r_t > k s (positive type) or r_t < -k s (negative type) of length >= m and <= the smoothing window (D16).
+The trajectory is fitted over positions t1..T, from the early-life reference to EOL (D16). For each pattern: extremum
 position (1-based), signed amplitude (the residual at the extremum, in the units of r), duration in positions.
 """
 
@@ -34,7 +35,9 @@ class Pattern:
                 "amplitude": self.amplitude, "duration": self.duration}
 
 
-def detect(r: np.ndarray, k: float, m: int, scale: float | None = None) -> tuple[list[Pattern], float]:
+def detect(r: np.ndarray, k: float, m: int, scale: float | None = None, max_duration: int | None = None) -> tuple[list[Pattern], float]:
+    """Runs beyond k*s of length >= m; with ``max_duration`` (decision D16: the smoothing window), longer runs are
+    part of the smoothed trajectory, and so of z_t, rather than inserted patterns, and are not returned."""
     r = np.asarray(r, float)
     s = residual_scale(r) if scale is None else scale
     out: list[Pattern] = []
@@ -50,7 +53,7 @@ def detect(r: np.ndarray, k: float, m: int, scale: float | None = None) -> tuple
             j = i
             while j + 1 < n and hit[j + 1]:
                 j += 1
-            if j - i + 1 >= m:
+            if j - i + 1 >= m and (max_duration is None or j - i + 1 <= max_duration):
                 seg = r[i : j + 1]
                 e = i + int(np.argmax(sign * seg))
                 out.append(Pattern(sign, i + 1, j + 1, e + 1, float(r[e]), j - i + 1))

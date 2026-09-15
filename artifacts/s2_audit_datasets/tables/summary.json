@@ -1,0 +1,1001 @@
+{
+  "datasets": {
+    "MATR": {
+      "units": 135,
+      "too_short_after_cleaning": 0,
+      "cycles_dropped_by_cleaning": 15,
+      "units_with_dropped_cycles": 15,
+      "guard_excluded_r2_declared_rho": 0,
+      "reach_eol_r2_declared_rho": 128,
+      "monotone_within_tolerance": {
+        "n": 132,
+        "of": 135,
+        "fraction": 0.9777777777777777
+      },
+      "q1_material_difference": {
+        "n": 0,
+        "of": 135
+      },
+      "q1_minus_first_mAh": {
+        "q0": 0.0,
+        "q25": 3.0547009324046748,
+        "q50": 3.7096547785584466,
+        "q75": 4.633154079257573,
+        "q100": 7.623116550120157
+      },
+      "length_stored_cycles": {
+        "q0": 169.0,
+        "q25": 531.0,
+        "q50": 786.0,
+        "q75": 1003.5,
+        "q100": 2236.0
+      },
+      "length_kept_cycles": {
+        "q0": 169.0,
+        "q25": 530.5,
+        "q50": 786.0,
+        "q75": 1003.5,
+        "q100": 2236.0
+      },
+      "T_r2_declared_rho": {
+        "q0": 147.0,
+        "q25": 498.0,
+        "q50": 762.5,
+        "q75": 1001.75,
+        "q100": 2234.0
+      },
+      "best_family_in_sample": {
+        "rollover": 110,
+        "two_term_exponential": 24,
+        "power_law": 1
+      },
+      "residual_scale_mAh": {
+        "q0": 0.35798464523551854,
+        "q25": 0.9198697027296023,
+        "q50": 1.1494352312586789,
+        "q75": 1.3786148226814419,
+        "q100": 2.8091537914982587
+      },
+      "positive_regeneration": {
+        "events": 124,
+        "units_with_event": 62,
+        "pooled_rate_per_100_cycles": 0.11150076431975542,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.20577525616055553,
+          "q100": 0.9356725146198831
+        },
+        "amplitude_mAh": {
+          "q0": 0.9779356612448823,
+          "q25": 1.9721775708267406,
+          "q50": 2.948962231222911,
+          "q75": 4.172635850220729,
+          "q100": 72.86151314313094
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.0,
+          "q50": 3.0,
+          "q75": 4.0,
+          "q100": 11.0
+        }
+      },
+      "negative_dip": {
+        "events": 179,
+        "units_with_event": 79,
+        "pooled_rate_per_100_cycles": 0.16095674849384048,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.11641443538998836,
+          "q75": 0.2237147661755285,
+          "q100": 1.366120218579235
+        },
+        "amplitude_mAh": {
+          "q0": -42.67944247644904,
+          "q25": -5.1246468643610426,
+          "q50": -3.7900705550702973,
+          "q75": -2.5707300820070778,
+          "q100": -0.9151570177068457
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.0,
+          "q50": 3.0,
+          "q75": 4.5,
+          "q100": 11.0
+        }
+      }
+    },
+    "HUST": {
+      "units": 77,
+      "too_short_after_cleaning": 0,
+      "cycles_dropped_by_cleaning": 0,
+      "units_with_dropped_cycles": 0,
+      "guard_excluded_r2_declared_rho": 0,
+      "reach_eol_r2_declared_rho": 77,
+      "monotone_within_tolerance": {
+        "n": 42,
+        "of": 77,
+        "fraction": 0.5454545454545454
+      },
+      "q1_material_difference": {
+        "n": 35,
+        "of": 77
+      },
+      "q1_minus_first_mAh": {
+        "q0": 0.0,
+        "q25": 0.0,
+        "q50": 0.0,
+        "q75": 15.091034136238024,
+        "q100": 19.555801813005314
+      },
+      "length_stored_cycles": {
+        "q0": 1142.0,
+        "q25": 1609.0,
+        "q50": 1873.0,
+        "q75": 2202.0,
+        "q100": 2689.0
+      },
+      "length_kept_cycles": {
+        "q0": 1142.0,
+        "q25": 1609.0,
+        "q50": 1873.0,
+        "q75": 2202.0,
+        "q100": 2689.0
+      },
+      "T_r2_declared_rho": {
+        "q0": 1142.0,
+        "q25": 1609.0,
+        "q50": 1873.0,
+        "q75": 2202.0,
+        "q100": 2689.0
+      },
+      "best_family_in_sample": {
+        "rollover": 77
+      },
+      "residual_scale_mAh": {
+        "q0": 0.29202138878431977,
+        "q25": 0.7460397222250102,
+        "q50": 0.8573219064178298,
+        "q75": 1.124242193728295,
+        "q100": 2.0887007127626087
+      },
+      "positive_regeneration": {
+        "events": 78,
+        "units_with_event": 52,
+        "pooled_rate_per_100_cycles": 0.05363146929598382,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.049701789264413515,
+          "q75": 0.07246376811594203,
+          "q100": 0.36576444769568395
+        },
+        "amplitude_mAh": {
+          "q0": 0.9193095251153297,
+          "q25": 1.778691995225408,
+          "q50": 2.2862684507458777,
+          "q75": 2.692752010882872,
+          "q100": 9.836291554817933
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.0,
+          "q50": 3.0,
+          "q75": 5.0,
+          "q100": 11.0
+        }
+      },
+      "negative_dip": {
+        "events": 196,
+        "units_with_event": 27,
+        "pooled_rate_per_100_cycles": 0.13476625617965168,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0643915003219575,
+          "q100": 0.9708737864077669
+        },
+        "amplitude_mAh": {
+          "q0": -5.804414967448342,
+          "q25": -2.117176468916985,
+          "q50": -1.8008817310387086,
+          "q75": -1.6112230283334774,
+          "q100": -1.1449860754646894
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.0,
+          "q50": 4.0,
+          "q75": 5.0,
+          "q100": 10.0
+        }
+      }
+    },
+    "NASA_PCoE": {
+      "units": 34,
+      "too_short_after_cleaning": 2,
+      "cycles_dropped_by_cleaning": 117,
+      "units_with_dropped_cycles": 26,
+      "guard_excluded_r2_declared_rho": 14,
+      "reach_eol_r2_declared_rho": 11,
+      "monotone_within_tolerance": {
+        "n": 11,
+        "of": 32,
+        "fraction": 0.34375
+      },
+      "q1_material_difference": {
+        "n": 4,
+        "of": 32
+      },
+      "q1_minus_first_mAh": {
+        "q0": 0.0,
+        "q25": 0.0,
+        "q50": 0.0,
+        "q75": 0.7009757239312877,
+        "q100": 756.9814508898778
+      },
+      "length_stored_cycles": {
+        "q0": 25.0,
+        "q25": 40.0,
+        "q50": 69.5,
+        "q75": 112.0,
+        "q100": 197.0
+      },
+      "length_kept_cycles": {
+        "q0": 22.0,
+        "q25": 38.0,
+        "q50": 68.0,
+        "q75": 108.0,
+        "q100": 194.0
+      },
+      "T_r2_declared_rho": {
+        "q0": 15.0,
+        "q25": 32.0,
+        "q50": 45.0,
+        "q75": 68.5,
+        "q100": 183.0
+      },
+      "best_family_in_sample": {
+        "rollover": 26,
+        "two_term_exponential": 4,
+        "power_law": 2
+      },
+      "residual_scale_mAh": {
+        "q0": 2.6906760860069974,
+        "q25": 7.595578242364171,
+        "q50": 13.25419735706124,
+        "q75": 25.413714996271587,
+        "q100": 725.0963874475694
+      },
+      "positive_regeneration": {
+        "events": 21,
+        "units_with_event": 16,
+        "pooled_rate_per_100_cycles": 1.0263929618768328,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.49504950495049505,
+          "q75": 1.5937019969278032,
+          "q100": 5.0
+        },
+        "amplitude_mAh": {
+          "q0": 24.728071950321276,
+          "q25": 37.15805042602114,
+          "q50": 74.52823857488083,
+          "q75": 95.14620332900665,
+          "q100": 650.9952153156663
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q100": 4.0
+        }
+      },
+      "negative_dip": {
+        "events": 3,
+        "units_with_event": 3,
+        "pooled_rate_per_100_cycles": 0.1466275659824047,
+        "per_unit_rate_per_100_cycles": {
+          "q0": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q100": 3.7037037037037033
+        },
+        "amplitude_mAh": {
+          "q0": -1059.0285390518613,
+          "q25": -547.6822344286547,
+          "q50": -36.335929805448075,
+          "q75": -34.377638035400444,
+          "q100": -32.419346265352814
+        },
+        "duration_positions": {
+          "q0": 2.0,
+          "q25": 2.5,
+          "q50": 3.0,
+          "q75": 6.0,
+          "q100": 9.0
+        }
+      }
+    }
+  },
+  "attainment_rows": [
+    {
+      "dataset": "MATR",
+      "definition": "r2",
+      "rho": 0.7,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r2",
+      "rho": 0.75,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 43,
+      "fraction_reach": 0.31851851851851853
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r2",
+      "rho": 0.8,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 128,
+      "fraction_reach": 0.9481481481481482
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r2",
+      "rho": 0.85,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 131,
+      "fraction_reach": 0.9703703703703703
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r2",
+      "rho": 0.9,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 135,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r1",
+      "rho": 0.7,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r1",
+      "rho": 0.75,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r1",
+      "rho": 0.8,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 46,
+      "fraction_reach": 0.34074074074074073
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r1",
+      "rho": 0.85,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 130,
+      "fraction_reach": 0.9629629629629629
+    },
+    {
+      "dataset": "MATR",
+      "definition": "r1",
+      "rho": 0.9,
+      "units_audited": 135,
+      "excluded_by_guard": 0,
+      "reach_threshold": 135,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r2",
+      "rho": 0.7,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r2",
+      "rho": 0.75,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r2",
+      "rho": 0.8,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r2",
+      "rho": 0.85,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r2",
+      "rho": 0.9,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r1",
+      "rho": 0.7,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 0,
+      "fraction_reach": 0.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r1",
+      "rho": 0.75,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 75,
+      "fraction_reach": 0.974025974025974
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r1",
+      "rho": 0.8,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r1",
+      "rho": 0.85,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "HUST",
+      "definition": "r1",
+      "rho": 0.9,
+      "units_audited": 77,
+      "excluded_by_guard": 0,
+      "reach_threshold": 77,
+      "fraction_reach": 1.0
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r2",
+      "rho": 0.7,
+      "units_audited": 32,
+      "excluded_by_guard": 7,
+      "reach_threshold": 15,
+      "fraction_reach": 0.46875
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r2",
+      "rho": 0.75,
+      "units_audited": 32,
+      "excluded_by_guard": 11,
+      "reach_threshold": 11,
+      "fraction_reach": 0.34375
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r2",
+      "rho": 0.8,
+      "units_audited": 32,
+      "excluded_by_guard": 14,
+      "reach_threshold": 11,
+      "fraction_reach": 0.34375
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r2",
+      "rho": 0.85,
+      "units_audited": 32,
+      "excluded_by_guard": 19,
+      "reach_threshold": 9,
+      "fraction_reach": 0.28125
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r2",
+      "rho": 0.9,
+      "units_audited": 32,
+      "excluded_by_guard": 31,
+      "reach_threshold": 1,
+      "fraction_reach": 0.03125
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r1",
+      "rho": 0.7,
+      "units_audited": 32,
+      "excluded_by_guard": 0,
+      "reach_threshold": 11,
+      "fraction_reach": 0.34375
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r1",
+      "rho": 0.75,
+      "units_audited": 32,
+      "excluded_by_guard": 0,
+      "reach_threshold": 16,
+      "fraction_reach": 0.5
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r1",
+      "rho": 0.8,
+      "units_audited": 32,
+      "excluded_by_guard": 0,
+      "reach_threshold": 19,
+      "fraction_reach": 0.59375
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r1",
+      "rho": 0.85,
+      "units_audited": 32,
+      "excluded_by_guard": 0,
+      "reach_threshold": 20,
+      "fraction_reach": 0.625
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "definition": "r1",
+      "rho": 0.9,
+      "units_audited": 32,
+      "excluded_by_guard": 0,
+      "reach_threshold": 24,
+      "fraction_reach": 0.75
+    }
+  ],
+  "sweep_rows": [
+    {
+      "dataset": "MATR",
+      "k": 2.0,
+      "m": 2,
+      "positive_events": 203,
+      "negative_events": 293,
+      "units_with_positive": 87,
+      "units_with_negative": 98,
+      "positive_rate_per_100_cycles": 0.18253754158798668,
+      "negative_rate_per_100_cycles": 0.263465515691035
+    },
+    {
+      "dataset": "MATR",
+      "k": 2.0,
+      "m": 3,
+      "positive_events": 141,
+      "negative_events": 155,
+      "units_with_positive": 70,
+      "units_with_negative": 85,
+      "positive_rate_per_100_cycles": 0.12678715942810898,
+      "negative_rate_per_100_cycles": 0.13937595539969427
+    },
+    {
+      "dataset": "MATR",
+      "k": 2.5,
+      "m": 2,
+      "positive_events": 124,
+      "negative_events": 179,
+      "units_with_positive": 62,
+      "units_with_negative": 79,
+      "positive_rate_per_100_cycles": 0.11150076431975542,
+      "negative_rate_per_100_cycles": 0.16095674849384048
+    },
+    {
+      "dataset": "MATR",
+      "k": 2.5,
+      "m": 3,
+      "positive_events": 64,
+      "negative_events": 91,
+      "units_with_positive": 39,
+      "units_with_negative": 58,
+      "positive_rate_per_100_cycles": 0.05754878158438989,
+      "negative_rate_per_100_cycles": 0.08182717381530438
+    },
+    {
+      "dataset": "MATR",
+      "k": 3.0,
+      "m": 2,
+      "positive_events": 56,
+      "negative_events": 111,
+      "units_with_positive": 37,
+      "units_with_negative": 57,
+      "positive_rate_per_100_cycles": 0.05035518388634115,
+      "negative_rate_per_100_cycles": 0.09981116806042623
+    },
+    {
+      "dataset": "MATR",
+      "k": 3.0,
+      "m": 3,
+      "positive_events": 27,
+      "negative_events": 59,
+      "units_with_positive": 19,
+      "units_with_negative": 40,
+      "positive_rate_per_100_cycles": 0.024278392230914485,
+      "negative_rate_per_100_cycles": 0.05305278302310943
+    },
+    {
+      "dataset": "MATR",
+      "k": 3.5,
+      "m": 2,
+      "positive_events": 33,
+      "negative_events": 64,
+      "units_with_positive": 22,
+      "units_with_negative": 36,
+      "positive_rate_per_100_cycles": 0.029673590504451036,
+      "negative_rate_per_100_cycles": 0.05754878158438989
+    },
+    {
+      "dataset": "MATR",
+      "k": 3.5,
+      "m": 3,
+      "positive_events": 11,
+      "negative_events": 31,
+      "units_with_positive": 9,
+      "units_with_negative": 22,
+      "positive_rate_per_100_cycles": 0.009891196834817012,
+      "negative_rate_per_100_cycles": 0.027875191079938855
+    },
+    {
+      "dataset": "MATR",
+      "k": 4.0,
+      "m": 2,
+      "positive_events": 8,
+      "negative_events": 51,
+      "units_with_positive": 6,
+      "units_with_negative": 26,
+      "positive_rate_per_100_cycles": 0.007193597698048736,
+      "negative_rate_per_100_cycles": 0.0458591853250607
+    },
+    {
+      "dataset": "MATR",
+      "k": 4.0,
+      "m": 3,
+      "positive_events": 4,
+      "negative_events": 23,
+      "units_with_positive": 4,
+      "units_with_negative": 17,
+      "positive_rate_per_100_cycles": 0.003596798849024368,
+      "negative_rate_per_100_cycles": 0.02068159338189012
+    },
+    {
+      "dataset": "HUST",
+      "k": 2.0,
+      "m": 2,
+      "positive_events": 115,
+      "negative_events": 433,
+      "units_with_positive": 52,
+      "units_with_negative": 57,
+      "positive_rate_per_100_cycles": 0.07907203806459154,
+      "negative_rate_per_100_cycles": 0.2977234128866795
+    },
+    {
+      "dataset": "HUST",
+      "k": 2.0,
+      "m": 3,
+      "positive_events": 54,
+      "negative_events": 320,
+      "units_with_positive": 39,
+      "units_with_negative": 54,
+      "positive_rate_per_100_cycles": 0.03712947874337342,
+      "negative_rate_per_100_cycles": 0.22002654070147212
+    },
+    {
+      "dataset": "HUST",
+      "k": 2.5,
+      "m": 2,
+      "positive_events": 78,
+      "negative_events": 196,
+      "units_with_positive": 52,
+      "units_with_negative": 27,
+      "positive_rate_per_100_cycles": 0.05363146929598382,
+      "negative_rate_per_100_cycles": 0.13476625617965168
+    },
+    {
+      "dataset": "HUST",
+      "k": 2.5,
+      "m": 3,
+      "positive_events": 45,
+      "negative_events": 144,
+      "units_with_positive": 35,
+      "units_with_negative": 23,
+      "positive_rate_per_100_cycles": 0.030941232286144517,
+      "negative_rate_per_100_cycles": 0.09901194331566246
+    },
+    {
+      "dataset": "HUST",
+      "k": 3.0,
+      "m": 2,
+      "positive_events": 77,
+      "negative_events": 82,
+      "units_with_positive": 47,
+      "units_with_negative": 21,
+      "positive_rate_per_100_cycles": 0.05294388635629173,
+      "negative_rate_per_100_cycles": 0.056381801054752226
+    },
+    {
+      "dataset": "HUST",
+      "k": 3.0,
+      "m": 3,
+      "positive_events": 49,
+      "negative_events": 60,
+      "units_with_positive": 31,
+      "units_with_negative": 19,
+      "positive_rate_per_100_cycles": 0.03369156404491292,
+      "negative_rate_per_100_cycles": 0.041254976381526025
+    },
+    {
+      "dataset": "HUST",
+      "k": 3.5,
+      "m": 2,
+      "positive_events": 64,
+      "negative_events": 39,
+      "units_with_positive": 45,
+      "units_with_negative": 14,
+      "positive_rate_per_100_cycles": 0.04400530814029442,
+      "negative_rate_per_100_cycles": 0.02681573464799191
+    },
+    {
+      "dataset": "HUST",
+      "k": 3.5,
+      "m": 3,
+      "positive_events": 45,
+      "negative_events": 33,
+      "units_with_positive": 35,
+      "units_with_negative": 11,
+      "positive_rate_per_100_cycles": 0.030941232286144517,
+      "negative_rate_per_100_cycles": 0.022690237009839312
+    },
+    {
+      "dataset": "HUST",
+      "k": 4.0,
+      "m": 2,
+      "positive_events": 68,
+      "negative_events": 23,
+      "units_with_positive": 43,
+      "units_with_negative": 11,
+      "positive_rate_per_100_cycles": 0.046755639899062826,
+      "negative_rate_per_100_cycles": 0.01581440761291831
+    },
+    {
+      "dataset": "HUST",
+      "k": 4.0,
+      "m": 3,
+      "positive_events": 49,
+      "negative_events": 17,
+      "units_with_positive": 34,
+      "units_with_negative": 9,
+      "positive_rate_per_100_cycles": 0.03369156404491292,
+      "negative_rate_per_100_cycles": 0.011688909974765706
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 2.0,
+      "m": 2,
+      "positive_events": 35,
+      "negative_events": 8,
+      "units_with_positive": 19,
+      "units_with_negative": 6,
+      "positive_rate_per_100_cycles": 1.7106549364613879,
+      "negative_rate_per_100_cycles": 0.39100684261974583
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 2.0,
+      "m": 3,
+      "positive_events": 15,
+      "negative_events": 5,
+      "units_with_positive": 12,
+      "units_with_negative": 5,
+      "positive_rate_per_100_cycles": 0.7331378299120235,
+      "negative_rate_per_100_cycles": 0.24437927663734116
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 2.5,
+      "m": 2,
+      "positive_events": 21,
+      "negative_events": 3,
+      "units_with_positive": 16,
+      "units_with_negative": 3,
+      "positive_rate_per_100_cycles": 1.0263929618768328,
+      "negative_rate_per_100_cycles": 0.1466275659824047
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 2.5,
+      "m": 3,
+      "positive_events": 7,
+      "negative_events": 2,
+      "units_with_positive": 7,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.3421309872922776,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 3.0,
+      "m": 2,
+      "positive_events": 12,
+      "negative_events": 2,
+      "units_with_positive": 11,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.5865102639296188,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 3.0,
+      "m": 3,
+      "positive_events": 4,
+      "negative_events": 2,
+      "units_with_positive": 4,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.19550342130987292,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 3.5,
+      "m": 2,
+      "positive_events": 6,
+      "negative_events": 2,
+      "units_with_positive": 6,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.2932551319648094,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 3.5,
+      "m": 3,
+      "positive_events": 2,
+      "negative_events": 2,
+      "units_with_positive": 2,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.09775171065493646,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 4.0,
+      "m": 2,
+      "positive_events": 4,
+      "negative_events": 2,
+      "units_with_positive": 4,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.19550342130987292,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    },
+    {
+      "dataset": "NASA_PCoE",
+      "k": 4.0,
+      "m": 3,
+      "positive_events": 2,
+      "negative_events": 2,
+      "units_with_positive": 2,
+      "units_with_negative": 2,
+      "positive_rate_per_100_cycles": 0.09775171065493646,
+      "negative_rate_per_100_cycles": 0.09775171065493646
+    }
+  ],
+  "channel_availability": {
+    "MATR": {
+      "charge_time_min": {
+        "units_with_channel": 135,
+        "units": 135,
+        "available_in_every_unit": true
+      },
+      "mean_discharge_voltage_V": {
+        "units_with_channel": 135,
+        "units": 135,
+        "available_in_every_unit": true
+      },
+      "internal_resistance_ohm": {
+        "units_with_channel": 135,
+        "units": 135,
+        "available_in_every_unit": true
+      },
+      "temperature_mean_C": {
+        "units_with_channel": 135,
+        "units": 135,
+        "available_in_every_unit": true
+      }
+    },
+    "HUST": {
+      "charge_time_min": {
+        "units_with_channel": 77,
+        "units": 77,
+        "available_in_every_unit": true
+      },
+      "mean_discharge_voltage_V": {
+        "units_with_channel": 77,
+        "units": 77,
+        "available_in_every_unit": true
+      },
+      "internal_resistance_ohm": {
+        "units_with_channel": 0,
+        "units": 77,
+        "available_in_every_unit": false
+      },
+      "temperature_mean_C": {
+        "units_with_channel": 0,
+        "units": 77,
+        "available_in_every_unit": false
+      }
+    },
+    "NASA_PCoE": {
+      "charge_time_min": {
+        "units_with_channel": 34,
+        "units": 34,
+        "available_in_every_unit": true
+      },
+      "mean_discharge_voltage_V": {
+        "units_with_channel": 34,
+        "units": 34,
+        "available_in_every_unit": true
+      },
+      "internal_resistance_ohm": {
+        "units_with_channel": 0,
+        "units": 34,
+        "available_in_every_unit": false
+      },
+      "temperature_mean_C": {
+        "units_with_channel": 34,
+        "units": 34,
+        "available_in_every_unit": true
+      }
+    }
+  }
+}

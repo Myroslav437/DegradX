@@ -1,0 +1,272 @@
+[
+  {
+    "dataset": "MATR",
+    "definition": "r2",
+    "rho": 0.7,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r2",
+    "rho": 0.75,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 43,
+    "fraction_reach": 0.3185185185
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r2",
+    "rho": 0.8,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 128,
+    "fraction_reach": 0.9481481481
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r2",
+    "rho": 0.85,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 131,
+    "fraction_reach": 0.9703703704
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r2",
+    "rho": 0.9,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 135,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r1",
+    "rho": 0.7,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r1",
+    "rho": 0.75,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r1",
+    "rho": 0.8,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 46,
+    "fraction_reach": 0.3407407407
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r1",
+    "rho": 0.85,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 130,
+    "fraction_reach": 0.962962963
+  },
+  {
+    "dataset": "MATR",
+    "definition": "r1",
+    "rho": 0.9,
+    "units_audited": 135,
+    "excluded_by_guard": 0,
+    "reach_threshold": 135,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r2",
+    "rho": 0.7,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r2",
+    "rho": 0.75,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r2",
+    "rho": 0.8,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r2",
+    "rho": 0.85,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r2",
+    "rho": 0.9,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r1",
+    "rho": 0.7,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 0,
+    "fraction_reach": 0.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r1",
+    "rho": 0.75,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 75,
+    "fraction_reach": 0.974025974
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r1",
+    "rho": 0.8,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r1",
+    "rho": 0.85,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "HUST",
+    "definition": "r1",
+    "rho": 0.9,
+    "units_audited": 77,
+    "excluded_by_guard": 0,
+    "reach_threshold": 77,
+    "fraction_reach": 1.0
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r2",
+    "rho": 0.7,
+    "units_audited": 32,
+    "excluded_by_guard": 7,
+    "reach_threshold": 15,
+    "fraction_reach": 0.46875
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r2",
+    "rho": 0.75,
+    "units_audited": 32,
+    "excluded_by_guard": 11,
+    "reach_threshold": 11,
+    "fraction_reach": 0.34375
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r2",
+    "rho": 0.8,
+    "units_audited": 32,
+    "excluded_by_guard": 14,
+    "reach_threshold": 11,
+    "fraction_reach": 0.34375
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r2",
+    "rho": 0.85,
+    "units_audited": 32,
+    "excluded_by_guard": 19,
+    "reach_threshold": 9,
+    "fraction_reach": 0.28125
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r2",
+    "rho": 0.9,
+    "units_audited": 32,
+    "excluded_by_guard": 31,
+    "reach_threshold": 1,
+    "fraction_reach": 0.03125
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r1",
+    "rho": 0.7,
+    "units_audited": 32,
+    "excluded_by_guard": 0,
+    "reach_threshold": 11,
+    "fraction_reach": 0.34375
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r1",
+    "rho": 0.75,
+    "units_audited": 32,
+    "excluded_by_guard": 0,
+    "reach_threshold": 16,
+    "fraction_reach": 0.5
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r1",
+    "rho": 0.8,
+    "units_audited": 32,
+    "excluded_by_guard": 0,
+    "reach_threshold": 19,
+    "fraction_reach": 0.59375
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r1",
+    "rho": 0.85,
+    "units_audited": 32,
+    "excluded_by_guard": 0,
+    "reach_threshold": 20,
+    "fraction_reach": 0.625
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "definition": "r1",
+    "rho": 0.9,
+    "units_audited": 32,
+    "excluded_by_guard": 0,
+    "reach_threshold": 24,
+    "fraction_reach": 0.75
+  }
+]

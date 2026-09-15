@@ -39,11 +39,12 @@ def summarise(units: pd.DataFrame, patterns: pd.DataFrame, dd: dict) -> dict:
         s["T_r2_declared_rho"] = _q(ok["T"])
         s["best_family_in_sample"] = ok["best_family_in_sample"].value_counts().to_dict()
         s["residual_scale_mAh"] = _q(ok["residual_scale_Ah"] * 1000)
-        positions = float(ok["fit_end"].sum())
+        fit_len = ok["fit_end"] - ok["fit_start"] + 1
+        positions = float(fit_len.sum())
         pats = patterns[patterns["dataset"] == ds] if len(patterns) else pd.DataFrame(columns=["sign", "amplitude", "duration", "cell_id"])
         for sign, name in ((1, "positive_regeneration"), (-1, "negative_dip")):
             p = pats[pats["sign"] == sign]
-            per_unit = ok[f"n_{'pos' if sign > 0 else 'neg'}_k{k0}_m{m0}"] / ok["fit_end"] * 100
+            per_unit = ok[f"n_{'pos' if sign > 0 else 'neg'}_k{k0}_m{m0}"] / fit_len * 100
             s[name] = {"events": int(len(p)), "units_with_event": int((ok[f"n_{'pos' if sign > 0 else 'neg'}_k{k0}_m{m0}"] > 0).sum()),
                        "pooled_rate_per_100_cycles": float(len(p) / positions * 100) if positions else None,
                        "per_unit_rate_per_100_cycles": _q(per_unit), "amplitude_mAh": _q(p["amplitude"] * 1000),
@@ -129,7 +130,7 @@ def regeneration(units: pd.DataFrame, patterns: pd.DataFrame, k0: float, m0: int
     for j, ds in enumerate(ds_list):
         u = units[(units["dataset"] == ds) & ~units["too_short"].astype(bool)]
         p = patterns[patterns["dataset"] == ds] if len(patterns) else pd.DataFrame(columns=["sign", "amplitude", "duration"])
-        rate = u[f"n_pos_k{k0}_m{m0}"] / u["fit_end"] * 100
+        rate = u[f"n_pos_k{k0}_m{m0}"] / (u["fit_end"] - u["fit_start"] + 1) * 100
         axes[0][j].hist(rate, bins=20, color=style.MEASURED)
         axes[0][j].set_xlabel("positive events per 100 cycles")
         axes[0][j].set_title(f"{LABEL[ds]} (k={k0}, m={m0})")
@@ -165,7 +166,7 @@ def residual_examples(units: pd.DataFrame, traces: dict, k0: float, m0: int, per
         for j, cid in enumerate(picks[:per_dataset]):
             tr = traces[ds][cid]
             r = tr["residual"] * 1000
-            pats, s = detect(tr["residual"], k0, m0)
+            pats, s = detect(tr["residual"], k0, m0, max_duration=11)  # declared smoothing window (D16)
             ax = axes[i][j]
             ax.plot(tr["position"], r, color=style.MEASURED, lw=style.LW_THIN)
             for sgn in (1, -1):
@@ -177,7 +178,7 @@ def residual_examples(units: pd.DataFrame, traces: dict, k0: float, m0: int, per
             ax.set_xlabel("position (cycle)")
             ax.set_ylabel("residual [mAh]")
             style.despine(ax)
-    fig.text(0.99, 0.005, f"dashed: ±{k0}× residual scale; bold: detected runs (≥{m0} positions)", ha="right", va="bottom", fontsize=7, color=style.GREY)
+    fig.text(0.99, 0.005, f"dashed: ±{k0}× residual scale; bold: detected runs ({m0}-11 positions); fit from $q_1$ to EOL", ha="right", va="bottom", fontsize=7, color=style.GREY)
     fig.tight_layout()
     return fig
 

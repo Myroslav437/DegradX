@@ -50,3 +50,20 @@ def test_families_recover_their_own_curves():
         y = FAMILIES[name](p, pos)
         fit = fit_family(name, pos, y)
         assert fit.rmse < 2e-3, (name, fit.rmse)
+
+
+def test_record_end_rule_only_for_records_ending_at_threshold():
+    n = np.arange(1, 1001)
+    q = 1.08 - 0.1995 * (n / 1000) ** 3  # ends at 0.8805 Ah, never <= 0.88
+    strict = unit_state(q, SPEC)
+    assert strict.T is None
+    tol = unit_state(q, StateSpec(**{**SPEC.__dict__, "record_end_tau": 0.01}))
+    assert tol.T == 1000 and tol.T_from_record_end
+    far = unit_state(q + 0.05, StateSpec(**{**SPEC.__dict__, "record_end_tau": 0.01}))
+    assert far.T is None
+
+
+def test_eol_search_starts_at_q1_position():
+    q = np.concatenate([np.full(5, 0.85), np.linspace(1.08, 1.07, 30), np.linspace(1.07, 0.85, 400)])
+    st = unit_state(q, SPEC)
+    assert st.T is not None and st.T > st.t1 > 5

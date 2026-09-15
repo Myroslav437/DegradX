@@ -1,0 +1,110 @@
+{
+ "HUST": {
+  "units": 30,
+  "a": {
+   "n_pos": 59.0,
+   "n_neg": 95.0,
+   "early50": 40.0,
+   "long": 47.0,
+   "amp_abs_mAh_median": 4.501622663446417,
+   "dur_median": 12.75,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9717990812038789,
+   "extra": -9.0
+  },
+  "b": {
+   "n_pos": 56.0,
+   "n_neg": 87.0,
+   "early50": 33.0,
+   "long": 31.0,
+   "amp_abs_mAh_median": 4.040165145606522,
+   "dur_median": 7.0,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9638920280671617,
+   "extra": -7.0
+  },
+  "c": {
+   "n_pos": 34.0,
+   "n_neg": 78.0,
+   "early50": 15.0,
+   "long": 0.0,
+   "amp_abs_mAh_median": 2.5264567354664447,
+   "dur_median": 4.0,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9638920280671617,
+   "extra": -7.0
+  }
+ },
+ "MATR": {
+  "units": 30,
+  "a": {
+   "n_pos": 38.0,
+   "n_neg": 94.0,
+   "early50": 34.0,
+   "long": 10.0,
+   "amp_abs_mAh_median": 5.646500211951561,
+   "dur_median": 5.75,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9318996819048627,
+   "extra": -10.0
+  },
+  "b": {
+   "n_pos": 50.0,
+   "n_neg": 87.0,
+   "early50": 18.0,
+   "long": 10.0,
+   "amp_abs_mAh_median": 3.254144920219559,
+   "dur_median": 3.0,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9307745729871973,
+   "extra": -17.0
+  },
+  "c": {
+   "n_pos": 48.0,
+   "n_neg": 79.0,
+   "early50": 14.0,
+   "long": 0.0,
+   "amp_abs_mAh_median": 3.2267662500996708,
+   "dur_median": 2.75,
+   "recall": 1.0,
+   "amp_ratio_median": 0.9307745729871973,
+   "extra": -14.0
+  }
+ },
+ "NASA_PCoE": {
+  "units": 9,
+  "a": {
+   "n_pos": 7.0,
+   "n_neg": 1.0,
+   "early50": 5.0,
+   "long": 0.0,
+   "amp_abs_mAh_median": 35.36842785466332,
+   "dur_median": 2.0,
+   "recall": 0.8,
+   "amp_ratio_median": 0.9282354065379725,
+   "extra": -3.0
+  },
+  "b": {
+   "n_pos": 8.0,
+   "n_neg": 1.0,
+   "early50": 6.0,
+   "long": 0.0,
+   "amp_abs_mAh_median": 35.56221543419087,
+   "dur_median": 2.0,
+   "recall": 0.8,
+   "amp_ratio_median": 0.9282354065379725,
+   "extra": -3.0
+  },
+  "c": {
+   "n_pos": 8.0,
+   "n_neg": 1.0,
+   "early50": 6.0,
+   "long": 0.0,
+   "amp_abs_mAh_median": 35.56221543419087,
+   "dur_median": 2.0,
+   "recall": 0.8,
+   "amp_ratio_median": 0.9282354065379725,
+   "extra": -3.0
+  }
+ }
+}

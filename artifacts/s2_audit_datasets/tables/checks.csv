@@ -1,0 +1,19 @@
+name,expected,observed,passed,severity
+MATR: every unit audited,all units,135,True,error
+MATR: family fits finite for every audited unit,finite,finite,True,warn
+MATR: T >= t1 for every unit reaching EOL (D15),all,0 violations,True,error
+MATR: no record-end T for a unit whose smoothed state crossed,record-end T equals last kept position,ok,True,error
+"MATR: every detected pattern lies inside its unit's fit range [t1, T]",all inside,True,True,error
+"MATR: pattern durations within [m, smoothing window] (D16)","[2, 11]","[2, 11]",True,error
+HUST: every unit audited,all units,77,True,error
+HUST: family fits finite for every audited unit,finite,finite,True,warn
+HUST: T >= t1 for every unit reaching EOL (D15),all,0 violations,True,error
+HUST: no record-end T for a unit whose smoothed state crossed,record-end T equals last kept position,ok,True,error
+"HUST: every detected pattern lies inside its unit's fit range [t1, T]",all inside,True,True,error
+"HUST: pattern durations within [m, smoothing window] (D16)","[2, 11]","[2, 11]",True,error
+NASA_PCoE: every unit audited,all units,34,True,error
+NASA_PCoE: family fits finite for every audited unit,finite,finite,True,warn
+NASA_PCoE: T >= t1 for every unit reaching EOL (D15),all,0 violations,True,error
+NASA_PCoE: no record-end T for a unit whose smoothed state crossed,record-end T equals last kept position,ok,True,error
+"NASA_PCoE: every detected pattern lies inside its unit's fit range [t1, T]",all inside,True,True,error
+"NASA_PCoE: pattern durations within [m, smoothing window] (D16)","[2, 11]","[2, 9]",True,error

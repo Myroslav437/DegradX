@@ -40,13 +40,22 @@ def audit_dataset(ds: str, ctx) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     spec = spec_from_declarations(decl, q_nom)
     rule = CleaningRule(**cfg["cleaning_rule"])
     df = pd.read_csv(TABLES / f"{ds}.csv.gz", low_memory=False)
-    if cfg.get("unit_filter", {}).get(ds):
-        df = df[df["cell_id"].isin(cfg["unit_filter"][ds])]
+    if ds == "MATR":  # declarations datasets.matr_batches (D14)
+        batches = [f"{str(b)[:4]}-{str(b)[4:6]}-{str(b)[6:]}" for b in dd["datasets"]["matr_batches"]["value"]]
+        df = df[df["batch"].isin(batches)]
     fn = partial(audit_unit, column=cfg["capacity_column"], rule=rule, q_nom=q_nom, decl=decl,
                  rho_grid=dd["eol"]["rho_sensitivity_grid"]["value"], k_grid=dd["eol"]["q1_reference"]["sensitivity_k"],
                  sweep_k=dd["pattern_detection"]["sweep"]["multiple_k"], sweep_m=dd["pattern_detection"]["sweep"]["min_run_length"],
                  k_default=float(dd["pattern_detection"]["multiple_k"]["value"]), m_default=int(dd["pattern_detection"]["min_run_length"]["value"]),
                  mono_tol=float(dd["audit"]["monotonicity_tolerance"]["value"]), spec_base=spec)
+    # channel availability within scope: a channel is available in a unit if >= 50% of its non-degenerate cycles carry a
+    # finite value (IR recorded as exactly 0 counts as missing); "available in every unit" feeds channels.availability_rule
+    nd = df[~df["degenerate"].astype(bool)]
+    avail = {}
+    for ch in ("charge_time_min", "mean_discharge_voltage_V", "internal_resistance_ohm", "temperature_mean_C"):
+        v = nd[ch].where(~((ch == "internal_resistance_ohm") & (nd[ch] == 0)))
+        per_unit = v.notna().groupby(nd["cell_id"]).mean() >= 0.5
+        avail[ch] = {"units_with_channel": int(per_unit.sum()), "units": int(per_unit.size), "available_in_every_unit": bool(per_unit.all())}
     groups = [g for _, g in df.groupby("cell_id", sort=True)]
     with ProcessPoolExecutor(max_workers=ctx.args.workers) as ex:
         recs = list(ex.map(fn, groups, chunksize=2))
@@ -54,6 +63,7 @@ def audit_dataset(ds: str, ctx) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     patterns = pd.DataFrame([p for r in recs for p in r.pop("patterns", [])])
     units = pd.DataFrame(recs)
     units.insert(1, "dataset", ds)
+    units.attrs["channel_availability"] = avail
     return units, patterns, traces
 
 
@@ -77,6 +87,8 @@ def main() -> int:
             with rec.section(f"audit_{ds}"):
                 units, patterns, traces = audit_dataset(ds, ctx)
             patterns.insert(0, "dataset", ds) if len(patterns) else None
+            avail_all = locals().setdefault("avail_all", {})
+            avail_all[ds] = units.attrs.get("channel_availability", {})
             all_units.append(units)
             all_patterns.append(patterns)
             all_traces[ds] = traces
@@ -85,6 +97,7 @@ def main() -> int:
         save_table(units, tab_dir / "units")
         save_table(patterns, tab_dir / "patterns_default_threshold")
         summary = viz.summarise(units, patterns, dd)
+        summary["channel_availability"] = avail_all
         write_json(summary, tab_dir / "summary.json")
         save_table(pd.DataFrame(summary["attainment_rows"]), tab_dir / "eol_attainment")
         save_table(pd.DataFrame(summary["sweep_rows"]), tab_dir / "detection_sweep")
@@ -97,7 +110,20 @@ def main() -> int:
             ct.require(f"{ds}: every unit audited", len(u) > 0 and u["n_kept"].notna().all(), "all units", len(u))
             ct.require(f"{ds}: family fits finite for every audited unit", bool(u.loc[~u["too_short"], [c for c in u if c.startswith("rmse_")]].notna().all().all()),
                        "finite", "finite" if u.loc[~u["too_short"], [c for c in u if c.startswith("rmse_")]].notna().all().all() else "some NaN", severity="warn")
-            ct.require(f"{ds}: T (r2, declared rho) equals first crossing of the smoothed threshold", True, "by construction (unit tests)", "see tests/test_state_patterns_families.py")
+            r = u[~u["too_short"].astype(bool) & u["T"].notna()]
+            ct.require(f"{ds}: T >= t1 for every unit reaching EOL (D15)", bool((r["T"] >= r["t1"]).all()), "all", f"{int((r['T'] < r['t1']).sum())} violations")
+            ct.require(f"{ds}: no record-end T for a unit whose smoothed state crossed", bool((~r["T_from_record_end"].astype(bool) | (r["T"] == r["n_kept"])).all()),
+                       "record-end T equals last kept position", "ok")
+            p_ds = patterns[patterns["dataset"] == ds] if len(patterns) else pd.DataFrame()
+            if len(p_ds):
+                fr = u.set_index("cell_id")[["fit_start", "fit_end"]]
+                inside = p_ds.join(fr, on="cell_id")
+                ok_in = bool(((inside["start"] >= inside["fit_start"]) & (inside["end"] <= inside["fit_end"])).all())
+                ct.require(f"{ds}: every detected pattern lies inside its unit's fit range [t1, T]", ok_in, "all inside", ok_in)
+                w = int(dd["smoothing"]["window_length"]["value"])
+                m = int(dd["pattern_detection"]["min_run_length"]["value"])
+                ct.require(f"{ds}: pattern durations within [m, smoothing window] (D16)", bool(p_ds["duration"].between(m, w).all()), f"[{m}, {w}]",
+                           f"[{int(p_ds['duration'].min())}, {int(p_ds['duration'].max())}]")
         rec.extra["datasets"] = args.datasets
         code = ct.finalize(out)
         (out / "logs" / "checks.md").write_text(ct.markdown() + "\n")

@@ -1,0 +1,9 @@
+[PASS] MATR: every unit audited: expected all units; observed 180
+[PASS] MATR: family fits finite for every audited unit: expected finite; observed finite
+[PASS] MATR: T (r2, declared rho) equals first crossing of the smoothed threshold: expected by construction (unit tests); observed see tests/test_state_patterns_families.py
+[PASS] HUST: every unit audited: expected all units; observed 77
+[PASS] HUST: family fits finite for every audited unit: expected finite; observed finite
+[PASS] HUST: T (r2, declared rho) equals first crossing of the smoothed threshold: expected by construction (unit tests); observed see tests/test_state_patterns_families.py
+[PASS] NASA_PCoE: every unit audited: expected all units; observed 34
+[PASS] NASA_PCoE: family fits finite for every audited unit: expected finite; observed finite
+[PASS] NASA_PCoE: T (r2, declared rho) equals first crossing of the smoothed threshold: expected by construction (unit tests); observed see tests/test_state_patterns_families.py

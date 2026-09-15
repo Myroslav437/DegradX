@@ -1,0 +1,106 @@
+{
+ "scopes": {
+  "a_all_four": {
+   "cells": 180,
+   "reach_eol": 173,
+   "ir_available_every_cell": false,
+   "cells_ir_all_zero": 45,
+   "temperature_available_every_cell": true,
+   "best_family_counts": {
+    "rollover": 147,
+    "two_term_exponential": 32,
+    "power_law": 1
+   },
+   "residual_scale_mAh_median": 1.1721526991428501,
+   "T_median": 771.0,
+   "T_iqr": [
+    519.0,
+    933.0
+   ],
+   "positive_events_per_100": 0.09435716597907612,
+   "distinct_charge_policies": 79
+  },
+  "b_severson_batches": {
+   "cells": 135,
+   "reach_eol": 128,
+   "ir_available_every_cell": true,
+   "cells_ir_all_zero": 0,
+   "temperature_available_every_cell": true,
+   "best_family_counts": {
+    "rollover": 110,
+    "two_term_exponential": 24,
+    "power_law": 1
+   },
+   "residual_scale_mAh_median": 1.1494352312586,
+   "T_median": 762.5,
+   "T_iqr": [
+    498.0,
+    1001.75
+   ],
+   "positive_events_per_100": 0.11150076431975542,
+   "distinct_charge_policies": 70
+  },
+  "c_severson_124": {
+   "cells": 124,
+   "reach_eol": 124,
+   "ir_available_every_cell": true,
+   "cells_ir_all_zero": 0,
+   "temperature_available_every_cell": true,
+   "best_family_counts": {
+    "rollover": 103,
+    "two_term_exponential": 20,
+    "power_law": 1
+   },
+   "residual_scale_mAh_median": 1.18261755901395,
+   "T_median": 734.5,
+   "T_iqr": [
+    497.75,
+    944.5
+   ],
+   "positive_events_per_100": 0.0946755304916953,
+   "distinct_charge_policies": 69
+  }
+ },
+ "per_batch": {
+  "2017-05-12": {
+   "cells": 46,
+   "reach": 41,
+   "T_med": 840.0,
+   "resid_mAh": 1.0786722274,
+   "ir_zero": 0.0004247401,
+   "charge_time_med": 30.3980208333,
+   "mdv_med": 2.7336845228,
+   "pos_events": 69.0
+  },
+  "2017-06-30": {
+   "cells": 43,
+   "reach": 43,
+   "T_med": 480.0,
+   "resid_mAh": 1.2760292814,
+   "ir_zero": 0.0,
+   "charge_time_med": 30.01265,
+   "mdv_med": 2.692801526,
+   "pos_events": 23.0
+  },
+  "2018-04-12": {
+   "cells": 46,
+   "reach": 44,
+   "T_med": 1003.5,
+   "resid_mAh": 1.1982115561,
+   "ir_zero": 0.0,
+   "charge_time_med": 24.6104429167,
+   "mdv_med": 2.7856990446,
+   "pos_events": 32.0
+  },
+  "2019-01-24": {
+   "cells": 45,
+   "reach": 45,
+   "T_med": 773.0,
+   "resid_mAh": 1.2098986881,
+   "ir_zero": 1.0,
+   "charge_time_med": 23.9738366667,
+   "mdv_med": 2.7535230532,
+   "pos_events": 13.0
+  }
+ }
+}

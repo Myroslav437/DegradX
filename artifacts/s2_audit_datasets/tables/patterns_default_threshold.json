@@ -1,0 +1,6012 @@
+[
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 255,
+    "end": 256,
+    "extremum": 255,
+    "amplitude": -0.016119457,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 387,
+    "end": 390,
+    "extremum": 389,
+    "amplitude": -0.021723706,
+    "duration": 4,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 405,
+    "end": 406,
+    "extremum": 406,
+    "amplitude": -0.019335866,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 524,
+    "end": 526,
+    "extremum": 525,
+    "amplitude": -0.0250545474,
+    "duration": 3,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 545,
+    "end": 548,
+    "extremum": 547,
+    "amplitude": -0.019034069,
+    "duration": 4,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 559,
+    "end": 560,
+    "extremum": 559,
+    "amplitude": -0.0133158362,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 576,
+    "end": 577,
+    "extremum": 576,
+    "amplitude": -0.0278054935,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 595,
+    "end": 596,
+    "extremum": 595,
+    "amplitude": -0.010803383,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 607,
+    "end": 610,
+    "extremum": 609,
+    "amplitude": -0.0426794425,
+    "duration": 4,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 636,
+    "end": 637,
+    "extremum": 637,
+    "amplitude": -0.0292859095,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 647,
+    "end": 648,
+    "extremum": 648,
+    "amplitude": -0.0187334863,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 653,
+    "end": 655,
+    "extremum": 655,
+    "amplitude": -0.0172859145,
+    "duration": 3,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 661,
+    "end": 663,
+    "extremum": 662,
+    "amplitude": -0.0170845548,
+    "duration": 3,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 703,
+    "end": 704,
+    "extremum": 703,
+    "amplitude": -0.0279243586,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 707,
+    "end": 709,
+    "extremum": 708,
+    "amplitude": -0.0226625448,
+    "duration": 3,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 746,
+    "end": 747,
+    "extremum": 746,
+    "amplitude": -0.0263892782,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 751,
+    "end": 752,
+    "extremum": 752,
+    "amplitude": -0.016277178,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 755,
+    "end": 756,
+    "extremum": 755,
+    "amplitude": -0.0284420034,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 768,
+    "end": 769,
+    "extremum": 768,
+    "amplitude": -0.0384244869,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 781,
+    "end": 782,
+    "extremum": 782,
+    "amplitude": -0.0096938496,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 792,
+    "end": 794,
+    "extremum": 793,
+    "amplitude": -0.0269884259,
+    "duration": 3,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 818,
+    "end": 819,
+    "extremum": 818,
+    "amplitude": -0.0157468869,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 829,
+    "end": 830,
+    "extremum": 830,
+    "amplitude": -0.0306726102,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 845,
+    "end": 846,
+    "extremum": 846,
+    "amplitude": -0.0274049108,
+    "duration": 2,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1846,
+    "end": 1849,
+    "extremum": 1849,
+    "amplitude": -0.0083843989,
+    "duration": 4,
+    "cell_id": "MATR_b1c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1245,
+    "end": 1246,
+    "extremum": 1246,
+    "amplitude": -0.0044751005,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1255,
+    "end": 1256,
+    "extremum": 1255,
+    "amplitude": -0.0042756246,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1258,
+    "end": 1260,
+    "extremum": 1258,
+    "amplitude": -0.0042040648,
+    "duration": 3,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1263,
+    "end": 1264,
+    "extremum": 1263,
+    "amplitude": -0.0049016454,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1266,
+    "end": 1267,
+    "extremum": 1266,
+    "amplitude": -0.0038592087,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1561,
+    "end": 1564,
+    "extremum": 1564,
+    "amplitude": 0.0041679422,
+    "duration": 4,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1571,
+    "end": 1572,
+    "extremum": 1571,
+    "amplitude": 0.0040519261,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1575,
+    "end": 1577,
+    "extremum": 1577,
+    "amplitude": 0.0047123299,
+    "duration": 3,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1584,
+    "end": 1594,
+    "extremum": 1593,
+    "amplitude": 0.0049301502,
+    "duration": 11,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1596,
+    "end": 1598,
+    "extremum": 1598,
+    "amplitude": 0.0042139501,
+    "duration": 3,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1604,
+    "end": 1606,
+    "extremum": 1605,
+    "amplitude": 0.0043757345,
+    "duration": 3,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1609,
+    "end": 1610,
+    "extremum": 1609,
+    "amplitude": 0.0038937513,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1614,
+    "end": 1615,
+    "extremum": 1615,
+    "amplitude": 0.0040469221,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 2141,
+    "end": 2142,
+    "extremum": 2142,
+    "amplitude": -0.0044259722,
+    "duration": 2,
+    "cell_id": "MATR_b1c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 20,
+    "amplitude": -0.0028002099,
+    "duration": 9,
+    "cell_id": "MATR_b1c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 352,
+    "end": 353,
+    "extremum": 353,
+    "amplitude": 0.0019970387,
+    "duration": 2,
+    "cell_id": "MATR_b1c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 505,
+    "end": 507,
+    "extremum": 505,
+    "amplitude": -0.0035623228,
+    "duration": 3,
+    "cell_id": "MATR_b1c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 901,
+    "end": 904,
+    "extremum": 904,
+    "amplitude": 0.0021299007,
+    "duration": 4,
+    "cell_id": "MATR_b1c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 504,
+    "end": 505,
+    "extremum": 505,
+    "amplitude": -0.003928304,
+    "duration": 2,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 507,
+    "end": 509,
+    "extremum": 507,
+    "amplitude": -0.0020846882,
+    "duration": 3,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 511,
+    "end": 512,
+    "extremum": 511,
+    "amplitude": -0.0020494833,
+    "duration": 2,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 625,
+    "end": 626,
+    "extremum": 626,
+    "amplitude": 0.001954933,
+    "duration": 2,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 628,
+    "end": 629,
+    "extremum": 629,
+    "amplitude": 0.0022125403,
+    "duration": 2,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 632,
+    "end": 637,
+    "extremum": 637,
+    "amplitude": 0.0023305044,
+    "duration": 6,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 689,
+    "end": 690,
+    "extremum": 690,
+    "amplitude": -0.0019961596,
+    "duration": 2,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 714,
+    "end": 716,
+    "extremum": 716,
+    "amplitude": -0.0020720425,
+    "duration": 3,
+    "cell_id": "MATR_b1c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 20,
+    "amplitude": -0.0021182039,
+    "duration": 9,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 346,
+    "end": 350,
+    "extremum": 349,
+    "amplitude": 0.0018578401,
+    "duration": 5,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 501,
+    "end": 502,
+    "extremum": 502,
+    "amplitude": -0.0038709192,
+    "duration": 2,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 734,
+    "end": 740,
+    "extremum": 734,
+    "amplitude": 0.0019262959,
+    "duration": 7,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 742,
+    "end": 750,
+    "extremum": 749,
+    "amplitude": 0.0025639686,
+    "duration": 9,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 752,
+    "end": 753,
+    "extremum": 752,
+    "amplitude": 0.0019047473,
+    "duration": 2,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 825,
+    "end": 826,
+    "extremum": 826,
+    "amplitude": -0.001813234,
+    "duration": 2,
+    "cell_id": "MATR_b1c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 894,
+    "end": 895,
+    "extremum": 894,
+    "amplitude": 0.0029399348,
+    "duration": 2,
+    "cell_id": "MATR_b1c13"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 29,
+    "extremum": 20,
+    "amplitude": -0.0045360948,
+    "duration": 10,
+    "cell_id": "MATR_b1c14"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 20,
+    "amplitude": -0.0039550715,
+    "duration": 7,
+    "cell_id": "MATR_b1c15"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 588,
+    "end": 589,
+    "extremum": 588,
+    "amplitude": 0.0031719713,
+    "duration": 2,
+    "cell_id": "MATR_b1c15"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 591,
+    "end": 593,
+    "extremum": 591,
+    "amplitude": 0.0033076994,
+    "duration": 3,
+    "cell_id": "MATR_b1c15"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 20,
+    "amplitude": -0.0038746513,
+    "duration": 7,
+    "cell_id": "MATR_b1c16"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 708,
+    "end": 709,
+    "extremum": 709,
+    "amplitude": 0.0030375923,
+    "duration": 2,
+    "cell_id": "MATR_b1c16"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 21,
+    "extremum": 20,
+    "amplitude": -0.0031346468,
+    "duration": 2,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 504,
+    "end": 505,
+    "extremum": 505,
+    "amplitude": -0.0044645114,
+    "duration": 2,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 691,
+    "end": 694,
+    "extremum": 694,
+    "amplitude": 0.0034130578,
+    "duration": 4,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 696,
+    "end": 697,
+    "extremum": 696,
+    "amplitude": 0.0032597067,
+    "duration": 2,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 699,
+    "end": 700,
+    "extremum": 700,
+    "amplitude": 0.0032485832,
+    "duration": 2,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 704,
+    "end": 705,
+    "extremum": 705,
+    "amplitude": 0.0030217648,
+    "duration": 2,
+    "cell_id": "MATR_b1c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 687,
+    "end": 688,
+    "extremum": 688,
+    "amplitude": 0.004057892,
+    "duration": 2,
+    "cell_id": "MATR_b1c18"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 15,
+    "end": 22,
+    "extremum": 15,
+    "amplitude": -0.0033909102,
+    "duration": 8,
+    "cell_id": "MATR_b1c19"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 504,
+    "end": 505,
+    "extremum": 505,
+    "amplitude": -0.0043417137,
+    "duration": 2,
+    "cell_id": "MATR_b1c19"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1217,
+    "end": 1218,
+    "extremum": 1218,
+    "amplitude": -0.0056355594,
+    "duration": 2,
+    "cell_id": "MATR_b1c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1223,
+    "end": 1224,
+    "extremum": 1223,
+    "amplitude": -0.0055332738,
+    "duration": 2,
+    "cell_id": "MATR_b1c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1229,
+    "end": 1230,
+    "extremum": 1230,
+    "amplitude": -0.0051866926,
+    "duration": 2,
+    "cell_id": "MATR_b1c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1233,
+    "end": 1235,
+    "extremum": 1235,
+    "amplitude": -0.0054324626,
+    "duration": 3,
+    "cell_id": "MATR_b1c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 2232,
+    "end": 2234,
+    "extremum": 2233,
+    "amplitude": -0.0058903215,
+    "duration": 3,
+    "cell_id": "MATR_b1c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 554,
+    "end": 557,
+    "extremum": 555,
+    "amplitude": -0.0045281123,
+    "duration": 4,
+    "cell_id": "MATR_b1c21"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 22,
+    "extremum": 19,
+    "amplitude": -0.0025924173,
+    "duration": 4,
+    "cell_id": "MATR_b1c24"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 209,
+    "end": 210,
+    "extremum": 210,
+    "amplitude": -0.0041341176,
+    "duration": 2,
+    "cell_id": "MATR_b1c24"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 901,
+    "end": 902,
+    "extremum": 901,
+    "amplitude": -0.0049540245,
+    "duration": 2,
+    "cell_id": "MATR_b1c24"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 21,
+    "extremum": 19,
+    "amplitude": -0.0022231208,
+    "duration": 3,
+    "cell_id": "MATR_b1c25"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 489,
+    "end": 491,
+    "extremum": 489,
+    "amplitude": -0.0027737386,
+    "duration": 3,
+    "cell_id": "MATR_b1c25"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 715,
+    "end": 716,
+    "extremum": 716,
+    "amplitude": -0.0022438435,
+    "duration": 2,
+    "cell_id": "MATR_b1c25"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 845,
+    "end": 852,
+    "extremum": 852,
+    "amplitude": -0.0037549942,
+    "duration": 8,
+    "cell_id": "MATR_b1c25"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 15,
+    "extremum": 15,
+    "amplitude": -0.0016609619,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 343,
+    "end": 346,
+    "extremum": 343,
+    "amplitude": 0.0017470761,
+    "duration": 4,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 426,
+    "end": 427,
+    "extremum": 427,
+    "amplitude": -0.0028985799,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 495,
+    "end": 498,
+    "extremum": 496,
+    "amplitude": -0.0033354013,
+    "duration": 4,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 542,
+    "end": 544,
+    "extremum": 544,
+    "amplitude": -0.0021224787,
+    "duration": 3,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 671,
+    "end": 673,
+    "extremum": 671,
+    "amplitude": 0.0017417833,
+    "duration": 3,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 677,
+    "end": 678,
+    "extremum": 678,
+    "amplitude": 0.0018304433,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 684,
+    "end": 685,
+    "extremum": 684,
+    "amplitude": 0.0021039088,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 688,
+    "end": 691,
+    "extremum": 691,
+    "amplitude": 0.0021402362,
+    "duration": 4,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 694,
+    "end": 695,
+    "extremum": 694,
+    "amplitude": 0.0022096491,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 700,
+    "end": 704,
+    "extremum": 702,
+    "amplitude": 0.0020345944,
+    "duration": 5,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 708,
+    "end": 709,
+    "extremum": 709,
+    "amplitude": 0.00165792,
+    "duration": 2,
+    "cell_id": "MATR_b1c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 19,
+    "extremum": 19,
+    "amplitude": -0.0027413804,
+    "duration": 6,
+    "cell_id": "MATR_b1c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 493,
+    "end": 497,
+    "extremum": 496,
+    "amplitude": -0.0034854628,
+    "duration": 5,
+    "cell_id": "MATR_b1c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 525,
+    "end": 526,
+    "extremum": 526,
+    "amplitude": -0.0015967203,
+    "duration": 2,
+    "cell_id": "MATR_b1c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 647,
+    "end": 648,
+    "extremum": 648,
+    "amplitude": 0.0017033287,
+    "duration": 2,
+    "cell_id": "MATR_b1c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 650,
+    "end": 651,
+    "extremum": 650,
+    "amplitude": 0.0015323636,
+    "duration": 2,
+    "cell_id": "MATR_b1c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 499,
+    "end": 500,
+    "extremum": 499,
+    "amplitude": -0.0031993876,
+    "duration": 2,
+    "cell_id": "MATR_b1c28"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 20,
+    "amplitude": -0.0027055826,
+    "duration": 9,
+    "cell_id": "MATR_b1c29"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 502,
+    "end": 503,
+    "extremum": 503,
+    "amplitude": -0.0034037655,
+    "duration": 2,
+    "cell_id": "MATR_b1c29"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 878,
+    "end": 879,
+    "extremum": 878,
+    "amplitude": -0.0046137608,
+    "duration": 2,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 970,
+    "end": 971,
+    "extremum": 970,
+    "amplitude": -0.0034052667,
+    "duration": 2,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1108,
+    "end": 1109,
+    "extremum": 1108,
+    "amplitude": 0.0033644157,
+    "duration": 2,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1111,
+    "end": 1115,
+    "extremum": 1113,
+    "amplitude": 0.0036399462,
+    "duration": 5,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1117,
+    "end": 1118,
+    "extremum": 1118,
+    "amplitude": 0.0032265027,
+    "duration": 2,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1149,
+    "end": 1150,
+    "extremum": 1149,
+    "amplitude": 0.003597874,
+    "duration": 2,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1251,
+    "end": 1253,
+    "extremum": 1253,
+    "amplitude": -0.0046227176,
+    "duration": 3,
+    "cell_id": "MATR_b1c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 502,
+    "end": 503,
+    "extremum": 502,
+    "amplitude": -0.0029782656,
+    "duration": 2,
+    "cell_id": "MATR_b1c30"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 575,
+    "end": 578,
+    "extremum": 577,
+    "amplitude": 0.0024178354,
+    "duration": 4,
+    "cell_id": "MATR_b1c30"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 506,
+    "end": 507,
+    "extremum": 506,
+    "amplitude": -0.003534079,
+    "duration": 2,
+    "cell_id": "MATR_b1c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 690,
+    "end": 691,
+    "extremum": 690,
+    "amplitude": 0.0023281635,
+    "duration": 2,
+    "cell_id": "MATR_b1c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 693,
+    "end": 694,
+    "extremum": 694,
+    "amplitude": 0.0024766932,
+    "duration": 2,
+    "cell_id": "MATR_b1c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 700,
+    "end": 702,
+    "extremum": 702,
+    "amplitude": 0.002386198,
+    "duration": 3,
+    "cell_id": "MATR_b1c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 502,
+    "end": 503,
+    "extremum": 503,
+    "amplitude": -0.0040139906,
+    "duration": 2,
+    "cell_id": "MATR_b1c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 601,
+    "end": 607,
+    "extremum": 607,
+    "amplitude": 0.0023851261,
+    "duration": 7,
+    "cell_id": "MATR_b1c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 745,
+    "end": 746,
+    "extremum": 746,
+    "amplitude": 0.0023897866,
+    "duration": 2,
+    "cell_id": "MATR_b1c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 748,
+    "end": 755,
+    "extremum": 755,
+    "amplitude": 0.0038612806,
+    "duration": 8,
+    "cell_id": "MATR_b1c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 15,
+    "extremum": 14,
+    "amplitude": -0.0028328173,
+    "duration": 2,
+    "cell_id": "MATR_b1c34"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 735,
+    "end": 740,
+    "extremum": 739,
+    "amplitude": 0.0040807382,
+    "duration": 6,
+    "cell_id": "MATR_b1c34"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 16,
+    "extremum": 14,
+    "amplitude": -0.0024603455,
+    "duration": 3,
+    "cell_id": "MATR_b1c35"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 18,
+    "end": 19,
+    "extremum": 18,
+    "amplitude": -0.0025840048,
+    "duration": 2,
+    "cell_id": "MATR_b1c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 493,
+    "end": 494,
+    "extremum": 494,
+    "amplitude": 0.0038644813,
+    "duration": 2,
+    "cell_id": "MATR_b1c39"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 29,
+    "extremum": 20,
+    "amplitude": -0.0035252474,
+    "duration": 10,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 351,
+    "end": 353,
+    "extremum": 353,
+    "amplitude": 0.0029034081,
+    "duration": 3,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 500,
+    "end": 501,
+    "extremum": 501,
+    "amplitude": -0.0031068012,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 879,
+    "end": 880,
+    "extremum": 879,
+    "amplitude": -0.0172775835,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1342,
+    "end": 1343,
+    "extremum": 1342,
+    "amplitude": 0.0028788104,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1408,
+    "end": 1409,
+    "extremum": 1408,
+    "amplitude": 0.0030523615,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1412,
+    "end": 1413,
+    "extremum": 1413,
+    "amplitude": 0.0031743516,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1415,
+    "end": 1416,
+    "extremum": 1415,
+    "amplitude": 0.0029269496,
+    "duration": 2,
+    "cell_id": "MATR_b1c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 333,
+    "end": 337,
+    "extremum": 337,
+    "amplitude": 0.0013197898,
+    "duration": 5,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 470,
+    "end": 474,
+    "extremum": 471,
+    "amplitude": 0.0015428402,
+    "duration": 5,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 482,
+    "end": 484,
+    "extremum": 482,
+    "amplitude": -0.0029088636,
+    "duration": 3,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 805,
+    "end": 806,
+    "extremum": 806,
+    "amplitude": 0.0012156251,
+    "duration": 2,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 808,
+    "end": 813,
+    "extremum": 809,
+    "amplitude": 0.0014998653,
+    "duration": 6,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 926,
+    "end": 935,
+    "extremum": 931,
+    "amplitude": 0.0016795268,
+    "duration": 10,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 961,
+    "end": 962,
+    "extremum": 962,
+    "amplitude": -0.0014671084,
+    "duration": 2,
+    "cell_id": "MATR_b1c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 26,
+    "extremum": 19,
+    "amplitude": -0.0027017158,
+    "duration": 8,
+    "cell_id": "MATR_b1c42"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 20,
+    "amplitude": -0.0037958571,
+    "duration": 9,
+    "cell_id": "MATR_b1c6"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 632,
+    "end": 634,
+    "extremum": 634,
+    "amplitude": 0.0041509056,
+    "duration": 3,
+    "cell_id": "MATR_b1c6"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 7,
+    "end": 9,
+    "extremum": 7,
+    "amplitude": -0.0018447805,
+    "duration": 3,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 12,
+    "end": 17,
+    "extremum": 12,
+    "amplitude": -0.0049158224,
+    "duration": 6,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 504,
+    "end": 509,
+    "extremum": 508,
+    "amplitude": 0.0021269412,
+    "duration": 6,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 517,
+    "end": 520,
+    "extremum": 518,
+    "amplitude": -0.0034739014,
+    "duration": 4,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 545,
+    "end": 546,
+    "extremum": 545,
+    "amplitude": -0.0016235141,
+    "duration": 2,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 569,
+    "end": 570,
+    "extremum": 569,
+    "amplitude": -0.0078816979,
+    "duration": 2,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 862,
+    "end": 868,
+    "extremum": 867,
+    "amplitude": 0.0025404601,
+    "duration": 7,
+    "cell_id": "MATR_b1c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 20,
+    "amplitude": -0.0021736264,
+    "duration": 7,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 339,
+    "end": 344,
+    "extremum": 343,
+    "amplitude": 0.0019847728,
+    "duration": 6,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 490,
+    "end": 493,
+    "extremum": 491,
+    "amplitude": -0.0040598245,
+    "duration": 4,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 554,
+    "end": 555,
+    "extremum": 554,
+    "amplitude": -0.0018302756,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 715,
+    "end": 716,
+    "extremum": 716,
+    "amplitude": 0.0019336112,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 726,
+    "end": 735,
+    "extremum": 732,
+    "amplitude": 0.0030616807,
+    "duration": 10,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 744,
+    "end": 745,
+    "extremum": 744,
+    "amplitude": 0.0018148971,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 755,
+    "end": 756,
+    "extremum": 756,
+    "amplitude": 0.0019779258,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 804,
+    "end": 806,
+    "extremum": 806,
+    "amplitude": -0.0019126721,
+    "duration": 3,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 808,
+    "end": 811,
+    "extremum": 808,
+    "amplitude": -0.0020020171,
+    "duration": 4,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 823,
+    "end": 824,
+    "extremum": 824,
+    "amplitude": -0.0020326241,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 827,
+    "end": 828,
+    "extremum": 827,
+    "amplitude": -0.001807397,
+    "duration": 2,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 871,
+    "end": 877,
+    "extremum": 876,
+    "amplitude": 0.0026543393,
+    "duration": 7,
+    "cell_id": "MATR_b1c8"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 27,
+    "extremum": 20,
+    "amplitude": -0.0025350885,
+    "duration": 8,
+    "cell_id": "MATR_b1c9"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 495,
+    "end": 496,
+    "extremum": 495,
+    "amplitude": -0.0038174204,
+    "duration": 2,
+    "cell_id": "MATR_b1c9"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 797,
+    "end": 799,
+    "extremum": 797,
+    "amplitude": 0.0022117699,
+    "duration": 3,
+    "cell_id": "MATR_b1c9"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 72,
+    "end": 73,
+    "extremum": 72,
+    "amplitude": -0.0177510144,
+    "duration": 2,
+    "cell_id": "MATR_b2c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 295,
+    "end": 299,
+    "extremum": 299,
+    "amplitude": -0.0053762892,
+    "duration": 5,
+    "cell_id": "MATR_b2c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 250,
+    "end": 252,
+    "extremum": 250,
+    "amplitude": -0.0030756324,
+    "duration": 3,
+    "cell_id": "MATR_b2c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 27,
+    "extremum": 22,
+    "amplitude": -0.0029756403,
+    "duration": 8,
+    "cell_id": "MATR_b2c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 249,
+    "end": 251,
+    "extremum": 249,
+    "amplitude": -0.0037178511,
+    "duration": 3,
+    "cell_id": "MATR_b2c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 442,
+    "end": 443,
+    "extremum": 443,
+    "amplitude": 0.0023443149,
+    "duration": 2,
+    "cell_id": "MATR_b2c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 468,
+    "end": 475,
+    "extremum": 475,
+    "amplitude": -0.0049944939,
+    "duration": 8,
+    "cell_id": "MATR_b2c11"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 23,
+    "extremum": 14,
+    "amplitude": -0.004678565,
+    "duration": 10,
+    "cell_id": "MATR_b2c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 454,
+    "end": 455,
+    "extremum": 454,
+    "amplitude": -0.001977936,
+    "duration": 2,
+    "cell_id": "MATR_b2c13"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 480,
+    "end": 482,
+    "extremum": 482,
+    "amplitude": 0.0031069993,
+    "duration": 3,
+    "cell_id": "MATR_b2c13"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 111,
+    "end": 117,
+    "extremum": 112,
+    "amplitude": -0.0224783881,
+    "duration": 7,
+    "cell_id": "MATR_b2c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 143,
+    "end": 144,
+    "extremum": 144,
+    "amplitude": -0.0101839786,
+    "duration": 2,
+    "cell_id": "MATR_b2c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 492,
+    "end": 493,
+    "extremum": 493,
+    "amplitude": 0.0045912074,
+    "duration": 2,
+    "cell_id": "MATR_b2c17"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 18,
+    "end": 25,
+    "extremum": 19,
+    "amplitude": -0.0034813076,
+    "duration": 8,
+    "cell_id": "MATR_b2c18"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 485,
+    "end": 486,
+    "extremum": 486,
+    "amplitude": 0.0044315259,
+    "duration": 2,
+    "cell_id": "MATR_b2c18"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 6,
+    "end": 16,
+    "extremum": 6,
+    "amplitude": -0.0019072585,
+    "duration": 11,
+    "cell_id": "MATR_b2c19"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 248,
+    "end": 253,
+    "extremum": 248,
+    "amplitude": -0.0050626012,
+    "duration": 6,
+    "cell_id": "MATR_b2c19"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 21,
+    "end": 22,
+    "extremum": 21,
+    "amplitude": -0.0044829587,
+    "duration": 2,
+    "cell_id": "MATR_b2c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 20,
+    "extremum": 19,
+    "amplitude": -0.0022750208,
+    "duration": 2,
+    "cell_id": "MATR_b2c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 22,
+    "end": 26,
+    "extremum": 23,
+    "amplitude": -0.0021212157,
+    "duration": 5,
+    "cell_id": "MATR_b2c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 248,
+    "end": 251,
+    "extremum": 248,
+    "amplitude": -0.0034178056,
+    "duration": 4,
+    "cell_id": "MATR_b2c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 473,
+    "end": 474,
+    "extremum": 473,
+    "amplitude": -0.0018081414,
+    "duration": 2,
+    "cell_id": "MATR_b2c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 497,
+    "end": 500,
+    "extremum": 499,
+    "amplitude": 0.0025569419,
+    "duration": 4,
+    "cell_id": "MATR_b2c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 18,
+    "end": 23,
+    "extremum": 20,
+    "amplitude": -0.0034510571,
+    "duration": 6,
+    "cell_id": "MATR_b2c21"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 248,
+    "end": 249,
+    "extremum": 248,
+    "amplitude": -0.004686637,
+    "duration": 2,
+    "cell_id": "MATR_b2c21"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 21,
+    "extremum": 20,
+    "amplitude": -0.0035216662,
+    "duration": 2,
+    "cell_id": "MATR_b2c22"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 510,
+    "end": 511,
+    "extremum": 511,
+    "amplitude": 0.004279492,
+    "duration": 2,
+    "cell_id": "MATR_b2c22"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 13,
+    "end": 19,
+    "extremum": 13,
+    "amplitude": -0.0024478939,
+    "duration": 7,
+    "cell_id": "MATR_b2c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 21,
+    "end": 22,
+    "extremum": 21,
+    "amplitude": -0.0018989189,
+    "duration": 2,
+    "cell_id": "MATR_b2c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 247,
+    "end": 250,
+    "extremum": 247,
+    "amplitude": -0.0025574553,
+    "duration": 4,
+    "cell_id": "MATR_b2c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 522,
+    "end": 526,
+    "extremum": 526,
+    "amplitude": 0.0029579897,
+    "duration": 5,
+    "cell_id": "MATR_b2c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 492,
+    "end": 494,
+    "extremum": 494,
+    "amplitude": 0.0056044375,
+    "duration": 3,
+    "cell_id": "MATR_b2c24"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 25,
+    "extremum": 19,
+    "amplitude": -0.0041611075,
+    "duration": 7,
+    "cell_id": "MATR_b2c25"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 25,
+    "extremum": 21,
+    "amplitude": -0.003929999,
+    "duration": 7,
+    "cell_id": "MATR_b2c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 247,
+    "end": 248,
+    "extremum": 247,
+    "amplitude": -0.0083228927,
+    "duration": 2,
+    "cell_id": "MATR_b2c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 315,
+    "end": 316,
+    "extremum": 316,
+    "amplitude": -0.0037900706,
+    "duration": 2,
+    "cell_id": "MATR_b2c28"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 355,
+    "end": 356,
+    "extremum": 356,
+    "amplitude": -0.0038904935,
+    "duration": 2,
+    "cell_id": "MATR_b2c28"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 508,
+    "end": 509,
+    "extremum": 509,
+    "amplitude": 0.0053854622,
+    "duration": 2,
+    "cell_id": "MATR_b2c28"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 246,
+    "end": 247,
+    "extremum": 246,
+    "amplitude": -0.0215484163,
+    "duration": 2,
+    "cell_id": "MATR_b2c29"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 496,
+    "end": 497,
+    "extremum": 497,
+    "amplitude": 0.0057132414,
+    "duration": 2,
+    "cell_id": "MATR_b2c29"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 24,
+    "extremum": 20,
+    "amplitude": -0.0039253584,
+    "duration": 5,
+    "cell_id": "MATR_b2c30"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 21,
+    "extremum": 21,
+    "amplitude": -0.0027911196,
+    "duration": 2,
+    "cell_id": "MATR_b2c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 490,
+    "end": 491,
+    "extremum": 491,
+    "amplitude": 0.0031954536,
+    "duration": 2,
+    "cell_id": "MATR_b2c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 202,
+    "end": 203,
+    "extremum": 202,
+    "amplitude": -0.0039493513,
+    "duration": 2,
+    "cell_id": "MATR_b2c32"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 249,
+    "end": 250,
+    "extremum": 250,
+    "amplitude": -0.0058396007,
+    "duration": 2,
+    "cell_id": "MATR_b2c32"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 517,
+    "end": 518,
+    "extremum": 518,
+    "amplitude": 0.0052665046,
+    "duration": 2,
+    "cell_id": "MATR_b2c32"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 517,
+    "end": 519,
+    "extremum": 519,
+    "amplitude": 0.0047087369,
+    "duration": 3,
+    "cell_id": "MATR_b2c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 497,
+    "end": 498,
+    "extremum": 498,
+    "amplitude": 0.0058921344,
+    "duration": 2,
+    "cell_id": "MATR_b2c34"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 17,
+    "end": 20,
+    "extremum": 17,
+    "amplitude": -0.0056786892,
+    "duration": 4,
+    "cell_id": "MATR_b2c35"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 22,
+    "extremum": 21,
+    "amplitude": -0.0031764626,
+    "duration": 3,
+    "cell_id": "MATR_b2c38"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 247,
+    "end": 248,
+    "extremum": 248,
+    "amplitude": -0.0065822176,
+    "duration": 2,
+    "cell_id": "MATR_b2c38"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 463,
+    "end": 464,
+    "extremum": 464,
+    "amplitude": 0.0039277638,
+    "duration": 2,
+    "cell_id": "MATR_b2c38"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 456,
+    "end": 458,
+    "extremum": 458,
+    "amplitude": 0.0053497933,
+    "duration": 3,
+    "cell_id": "MATR_b2c39"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 15,
+    "end": 24,
+    "extremum": 15,
+    "amplitude": -0.0041137455,
+    "duration": 10,
+    "cell_id": "MATR_b2c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 246,
+    "end": 248,
+    "extremum": 246,
+    "amplitude": -0.0044525251,
+    "duration": 3,
+    "cell_id": "MATR_b2c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 64,
+    "end": 66,
+    "extremum": 65,
+    "amplitude": -0.0065711703,
+    "duration": 3,
+    "cell_id": "MATR_b2c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 247,
+    "end": 248,
+    "extremum": 248,
+    "amplitude": -0.0047274562,
+    "duration": 2,
+    "cell_id": "MATR_b2c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 337,
+    "end": 339,
+    "extremum": 338,
+    "amplitude": -0.0153197195,
+    "duration": 3,
+    "cell_id": "MATR_b2c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 250,
+    "end": 252,
+    "extremum": 250,
+    "amplitude": -0.0047781442,
+    "duration": 3,
+    "cell_id": "MATR_b2c41"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 427,
+    "end": 428,
+    "extremum": 428,
+    "amplitude": 0.0038280217,
+    "duration": 2,
+    "cell_id": "MATR_b2c41"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 463,
+    "end": 464,
+    "extremum": 464,
+    "amplitude": 0.0047824496,
+    "duration": 2,
+    "cell_id": "MATR_b2c42"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 247,
+    "end": 248,
+    "extremum": 247,
+    "amplitude": -0.0045188628,
+    "duration": 2,
+    "cell_id": "MATR_b2c43"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 459,
+    "end": 461,
+    "extremum": 461,
+    "amplitude": 0.0045729027,
+    "duration": 3,
+    "cell_id": "MATR_b2c43"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 454,
+    "end": 455,
+    "extremum": 455,
+    "amplitude": 0.0044536236,
+    "duration": 2,
+    "cell_id": "MATR_b2c44"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 484,
+    "end": 485,
+    "extremum": 485,
+    "amplitude": 0.0037777139,
+    "duration": 2,
+    "cell_id": "MATR_b2c45"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 426,
+    "end": 427,
+    "extremum": 427,
+    "amplitude": 0.0041867167,
+    "duration": 2,
+    "cell_id": "MATR_b2c46"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 257,
+    "end": 258,
+    "extremum": 257,
+    "amplitude": 0.0062416268,
+    "duration": 2,
+    "cell_id": "MATR_b2c47"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 25,
+    "extremum": 23,
+    "amplitude": -0.0030285933,
+    "duration": 6,
+    "cell_id": "MATR_b3c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1003,
+    "end": 1007,
+    "extremum": 1007,
+    "amplitude": 0.0051250767,
+    "duration": 5,
+    "cell_id": "MATR_b3c0"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 16,
+    "end": 22,
+    "extremum": 17,
+    "amplitude": -0.0030034466,
+    "duration": 7,
+    "cell_id": "MATR_b3c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 989,
+    "end": 992,
+    "extremum": 990,
+    "amplitude": -0.0029062506,
+    "duration": 4,
+    "cell_id": "MATR_b3c1"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1075,
+    "end": 1076,
+    "extremum": 1076,
+    "amplitude": 0.0051836646,
+    "duration": 2,
+    "cell_id": "MATR_b3c10"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 928,
+    "end": 930,
+    "extremum": 930,
+    "amplitude": 0.0056114438,
+    "duration": 3,
+    "cell_id": "MATR_b3c12"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 20,
+    "amplitude": -0.0022765496,
+    "duration": 9,
+    "cell_id": "MATR_b3c13"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 21,
+    "extremum": 20,
+    "amplitude": -0.0025231169,
+    "duration": 2,
+    "cell_id": "MATR_b3c14"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 35,
+    "end": 36,
+    "extremum": 36,
+    "amplitude": -0.0026330045,
+    "duration": 2,
+    "cell_id": "MATR_b3c16"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 39,
+    "end": 40,
+    "extremum": 40,
+    "amplitude": -0.0025980729,
+    "duration": 2,
+    "cell_id": "MATR_b3c16"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1142,
+    "end": 1144,
+    "extremum": 1144,
+    "amplitude": 0.003833094,
+    "duration": 3,
+    "cell_id": "MATR_b3c18"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 17,
+    "end": 27,
+    "extremum": 18,
+    "amplitude": -0.0024862851,
+    "duration": 11,
+    "cell_id": "MATR_b3c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1037,
+    "end": 1038,
+    "extremum": 1037,
+    "amplitude": 0.0021156666,
+    "duration": 2,
+    "cell_id": "MATR_b3c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1040,
+    "end": 1046,
+    "extremum": 1043,
+    "amplitude": 0.0022370261,
+    "duration": 7,
+    "cell_id": "MATR_b3c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1263,
+    "end": 1265,
+    "extremum": 1265,
+    "amplitude": 0.0025582398,
+    "duration": 3,
+    "cell_id": "MATR_b3c2"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 808,
+    "end": 811,
+    "extremum": 811,
+    "amplitude": 0.0064682495,
+    "duration": 4,
+    "cell_id": "MATR_b3c20"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 768,
+    "end": 770,
+    "extremum": 770,
+    "amplitude": -0.0040618179,
+    "duration": 3,
+    "cell_id": "MATR_b3c21"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 35,
+    "end": 37,
+    "extremum": 36,
+    "amplitude": -0.0011076959,
+    "duration": 3,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 43,
+    "end": 47,
+    "extremum": 46,
+    "amplitude": -0.0022859591,
+    "duration": 5,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 52,
+    "end": 53,
+    "extremum": 52,
+    "amplitude": -0.000915157,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 203,
+    "end": 204,
+    "extremum": 204,
+    "amplitude": -0.0013694185,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 206,
+    "end": 207,
+    "extremum": 206,
+    "amplitude": -0.0012765505,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 212,
+    "end": 213,
+    "extremum": 213,
+    "amplitude": 0.0010836375,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 267,
+    "end": 268,
+    "extremum": 267,
+    "amplitude": 0.0014085796,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 272,
+    "end": 275,
+    "extremum": 275,
+    "amplitude": 0.0014103537,
+    "duration": 4,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 281,
+    "end": 284,
+    "extremum": 281,
+    "amplitude": 0.0012681594,
+    "duration": 4,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 286,
+    "end": 287,
+    "extremum": 287,
+    "amplitude": 0.0014347654,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 289,
+    "end": 293,
+    "extremum": 290,
+    "amplitude": 0.0013740184,
+    "duration": 5,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 301,
+    "end": 304,
+    "extremum": 304,
+    "amplitude": 0.0013064,
+    "duration": 4,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 309,
+    "end": 311,
+    "extremum": 311,
+    "amplitude": 0.0010737913,
+    "duration": 3,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 313,
+    "end": 315,
+    "extremum": 315,
+    "amplitude": 0.0010564293,
+    "duration": 3,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 349,
+    "end": 354,
+    "extremum": 354,
+    "amplitude": 0.0014830315,
+    "duration": 6,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 458,
+    "end": 461,
+    "extremum": 459,
+    "amplitude": -0.001322693,
+    "duration": 4,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1695,
+    "end": 1697,
+    "extremum": 1696,
+    "amplitude": -0.0013024973,
+    "duration": 3,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1928,
+    "end": 1931,
+    "extremum": 1929,
+    "amplitude": 0.0012102663,
+    "duration": 4,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1933,
+    "end": 1934,
+    "extremum": 1934,
+    "amplitude": 0.001272959,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1939,
+    "end": 1940,
+    "extremum": 1939,
+    "amplitude": 0.0009779357,
+    "duration": 2,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1944,
+    "end": 1946,
+    "extremum": 1944,
+    "amplitude": 0.0010311601,
+    "duration": 3,
+    "cell_id": "MATR_b3c23"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 28,
+    "extremum": 21,
+    "amplitude": -0.0029401746,
+    "duration": 9,
+    "cell_id": "MATR_b3c26"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 842,
+    "end": 848,
+    "extremum": 848,
+    "amplitude": 0.0044204986,
+    "duration": 7,
+    "cell_id": "MATR_b3c27"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 22,
+    "amplitude": -0.0028562359,
+    "duration": 7,
+    "cell_id": "MATR_b3c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1108,
+    "end": 1113,
+    "extremum": 1113,
+    "amplitude": 0.0042632197,
+    "duration": 6,
+    "cell_id": "MATR_b3c3"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 37,
+    "end": 38,
+    "extremum": 37,
+    "amplitude": -0.0013610794,
+    "duration": 2,
+    "cell_id": "MATR_b3c30"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 932,
+    "end": 933,
+    "extremum": 933,
+    "amplitude": 0.0020701414,
+    "duration": 2,
+    "cell_id": "MATR_b3c30"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 727,
+    "end": 729,
+    "extremum": 729,
+    "amplitude": 0.0041953504,
+    "duration": 3,
+    "cell_id": "MATR_b3c31"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 19,
+    "end": 20,
+    "extremum": 20,
+    "amplitude": -0.0017569834,
+    "duration": 2,
+    "cell_id": "MATR_b3c32"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 922,
+    "end": 923,
+    "extremum": 923,
+    "amplitude": -0.0018391652,
+    "duration": 2,
+    "cell_id": "MATR_b3c32"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 27,
+    "extremum": 20,
+    "amplitude": -0.00305545,
+    "duration": 8,
+    "cell_id": "MATR_b3c33"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 356,
+    "end": 357,
+    "extremum": 356,
+    "amplitude": -0.0050624011,
+    "duration": 2,
+    "cell_id": "MATR_b3c35"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 15,
+    "end": 22,
+    "extremum": 16,
+    "amplitude": -0.0120479118,
+    "duration": 8,
+    "cell_id": "MATR_b3c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 592,
+    "end": 593,
+    "extremum": 592,
+    "amplitude": 0.0089429292,
+    "duration": 2,
+    "cell_id": "MATR_b3c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 596,
+    "end": 601,
+    "extremum": 597,
+    "amplitude": 0.0728615131,
+    "duration": 6,
+    "cell_id": "MATR_b3c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 618,
+    "end": 620,
+    "extremum": 619,
+    "amplitude": -0.0041534492,
+    "duration": 3,
+    "cell_id": "MATR_b3c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 1061,
+    "end": 1063,
+    "extremum": 1063,
+    "amplitude": -0.0145487829,
+    "duration": 3,
+    "cell_id": "MATR_b3c37"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1151,
+    "end": 1154,
+    "extremum": 1154,
+    "amplitude": 0.0043637279,
+    "duration": 4,
+    "cell_id": "MATR_b3c39"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 16,
+    "end": 26,
+    "extremum": 16,
+    "amplitude": -0.002966351,
+    "duration": 11,
+    "cell_id": "MATR_b3c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1037,
+    "end": 1046,
+    "extremum": 1046,
+    "amplitude": 0.0048026272,
+    "duration": 10,
+    "cell_id": "MATR_b3c4"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 17,
+    "end": 25,
+    "extremum": 17,
+    "amplitude": -0.0022589733,
+    "duration": 9,
+    "cell_id": "MATR_b3c40"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 27,
+    "extremum": 21,
+    "amplitude": -0.0021411278,
+    "duration": 8,
+    "cell_id": "MATR_b3c41"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 781,
+    "end": 784,
+    "extremum": 784,
+    "amplitude": 0.0030095696,
+    "duration": 4,
+    "cell_id": "MATR_b3c41"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 16,
+    "end": 22,
+    "extremum": 16,
+    "amplitude": -0.0039556719,
+    "duration": 7,
+    "cell_id": "MATR_b3c45"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 26,
+    "end": 27,
+    "extremum": 26,
+    "amplitude": -0.0045516754,
+    "duration": 2,
+    "cell_id": "MATR_b3c45"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 36,
+    "end": 37,
+    "extremum": 36,
+    "amplitude": -0.0042681541,
+    "duration": 2,
+    "cell_id": "MATR_b3c45"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 22,
+    "amplitude": -0.003464132,
+    "duration": 7,
+    "cell_id": "MATR_b3c5"
+  },
+  {
+    "dataset": "MATR",
+    "sign": -1,
+    "start": 14,
+    "end": 15,
+    "extremum": 14,
+    "amplitude": -0.0034144034,
+    "duration": 2,
+    "cell_id": "MATR_b3c7"
+  },
+  {
+    "dataset": "MATR",
+    "sign": 1,
+    "start": 1033,
+    "end": 1037,
+    "extremum": 1037,
+    "amplitude": 0.0058111434,
+    "duration": 5,
+    "cell_id": "MATR_b3c9"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 35,
+    "end": 36,
+    "extremum": 36,
+    "amplitude": 0.0022127076,
+    "duration": 2,
+    "cell_id": "HUST_1-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 11,
+    "extremum": 1,
+    "amplitude": 0.0098362916,
+    "duration": 11,
+    "cell_id": "HUST_1-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 26,
+    "extremum": 20,
+    "amplitude": -0.0047795613,
+    "duration": 7,
+    "cell_id": "HUST_1-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 60,
+    "end": 62,
+    "extremum": 62,
+    "amplitude": 0.0028259097,
+    "duration": 3,
+    "cell_id": "HUST_1-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1045,
+    "end": 1046,
+    "extremum": 1045,
+    "amplitude": 0.0027067521,
+    "duration": 2,
+    "cell_id": "HUST_1-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1073,
+    "end": 1074,
+    "extremum": 1073,
+    "amplitude": 0.0029060137,
+    "duration": 2,
+    "cell_id": "HUST_1-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1085,
+    "end": 1086,
+    "extremum": 1085,
+    "amplitude": 0.002883271,
+    "duration": 2,
+    "cell_id": "HUST_1-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 23,
+    "extremum": 20,
+    "amplitude": -0.0047481165,
+    "duration": 4,
+    "cell_id": "HUST_1-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1966,
+    "end": 1971,
+    "extremum": 1970,
+    "amplitude": -0.0039599691,
+    "duration": 6,
+    "cell_id": "HUST_1-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 26,
+    "end": 30,
+    "extremum": 30,
+    "amplitude": 0.0023037409,
+    "duration": 5,
+    "cell_id": "HUST_1-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 2276,
+    "end": 2285,
+    "extremum": 2285,
+    "amplitude": 0.0027667298,
+    "duration": 10,
+    "cell_id": "HUST_1-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 27,
+    "end": 28,
+    "extremum": 28,
+    "amplitude": 0.0021401658,
+    "duration": 2,
+    "cell_id": "HUST_10-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 49,
+    "end": 52,
+    "extremum": 52,
+    "amplitude": 0.001450367,
+    "duration": 4,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 136,
+    "end": 137,
+    "extremum": 136,
+    "amplitude": -0.0013249874,
+    "duration": 2,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 141,
+    "end": 146,
+    "extremum": 141,
+    "amplitude": -0.0015790817,
+    "duration": 6,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 150,
+    "end": 155,
+    "extremum": 150,
+    "amplitude": -0.0015932978,
+    "duration": 6,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 161,
+    "end": 164,
+    "extremum": 161,
+    "amplitude": -0.0014491275,
+    "duration": 4,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 166,
+    "end": 172,
+    "extremum": 166,
+    "amplitude": -0.0016718267,
+    "duration": 7,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 174,
+    "end": 181,
+    "extremum": 174,
+    "amplitude": -0.0017163006,
+    "duration": 8,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 185,
+    "end": 190,
+    "extremum": 185,
+    "amplitude": -0.0015842963,
+    "duration": 6,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 192,
+    "end": 198,
+    "extremum": 192,
+    "amplitude": -0.0017080706,
+    "duration": 7,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 200,
+    "end": 207,
+    "extremum": 200,
+    "amplitude": -0.0017597673,
+    "duration": 8,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 209,
+    "end": 217,
+    "extremum": 209,
+    "amplitude": -0.0017593577,
+    "duration": 9,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 221,
+    "end": 225,
+    "extremum": 221,
+    "amplitude": -0.0015590056,
+    "duration": 5,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 231,
+    "end": 234,
+    "extremum": 231,
+    "amplitude": -0.0015078396,
+    "duration": 4,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 241,
+    "end": 243,
+    "extremum": 241,
+    "amplitude": -0.0014209781,
+    "duration": 3,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 251,
+    "end": 252,
+    "extremum": 251,
+    "amplitude": -0.0013338004,
+    "duration": 2,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1833,
+    "end": 1834,
+    "extremum": 1834,
+    "amplitude": -0.0015008031,
+    "duration": 2,
+    "cell_id": "HUST_10-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 69,
+    "end": 74,
+    "extremum": 74,
+    "amplitude": 0.0020516188,
+    "duration": 6,
+    "cell_id": "HUST_10-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 77,
+    "end": 78,
+    "extremum": 78,
+    "amplitude": 0.0017527126,
+    "duration": 2,
+    "cell_id": "HUST_10-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1805,
+    "end": 1806,
+    "extremum": 1805,
+    "amplitude": 0.0019155463,
+    "duration": 2,
+    "cell_id": "HUST_10-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1808,
+    "end": 1809,
+    "extremum": 1808,
+    "amplitude": 0.0019706534,
+    "duration": 2,
+    "cell_id": "HUST_10-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 86,
+    "end": 88,
+    "extremum": 88,
+    "amplitude": 0.0021791095,
+    "duration": 3,
+    "cell_id": "HUST_10-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 27,
+    "end": 28,
+    "extremum": 28,
+    "amplitude": 0.0026965951,
+    "duration": 2,
+    "cell_id": "HUST_10-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 75,
+    "end": 79,
+    "extremum": 79,
+    "amplitude": 0.0017720851,
+    "duration": 5,
+    "cell_id": "HUST_10-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 82,
+    "end": 85,
+    "extremum": 85,
+    "amplitude": 0.0016513157,
+    "duration": 4,
+    "cell_id": "HUST_10-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 171,
+    "end": 172,
+    "extremum": 171,
+    "amplitude": -0.0014937181,
+    "duration": 2,
+    "cell_id": "HUST_10-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 205,
+    "end": 208,
+    "extremum": 205,
+    "amplitude": -0.0016882672,
+    "duration": 4,
+    "cell_id": "HUST_10-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 39,
+    "end": 41,
+    "extremum": 41,
+    "amplitude": 0.0017265183,
+    "duration": 3,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 119,
+    "end": 120,
+    "extremum": 119,
+    "amplitude": -0.0016313829,
+    "duration": 2,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 131,
+    "end": 134,
+    "extremum": 131,
+    "amplitude": -0.0018669635,
+    "duration": 4,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 139,
+    "end": 142,
+    "extremum": 139,
+    "amplitude": -0.0018148391,
+    "duration": 4,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 145,
+    "end": 149,
+    "extremum": 145,
+    "amplitude": -0.0019366401,
+    "duration": 5,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 166,
+    "end": 172,
+    "extremum": 166,
+    "amplitude": -0.0020355199,
+    "duration": 7,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 174,
+    "end": 179,
+    "extremum": 174,
+    "amplitude": -0.0019972333,
+    "duration": 6,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 183,
+    "end": 186,
+    "extremum": 183,
+    "amplitude": -0.0018616373,
+    "duration": 4,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 192,
+    "end": 194,
+    "extremum": 192,
+    "amplitude": -0.0017177953,
+    "duration": 3,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 199,
+    "end": 201,
+    "extremum": 199,
+    "amplitude": -0.0017463798,
+    "duration": 3,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1382,
+    "end": 1383,
+    "extremum": 1383,
+    "amplitude": -0.0017474688,
+    "duration": 2,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1389,
+    "end": 1390,
+    "extremum": 1390,
+    "amplitude": -0.0019210244,
+    "duration": 2,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1392,
+    "end": 1400,
+    "extremum": 1399,
+    "amplitude": -0.0024739335,
+    "duration": 9,
+    "cell_id": "HUST_10-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 176,
+    "end": 178,
+    "extremum": 176,
+    "amplitude": -0.0021242386,
+    "duration": 3,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 183,
+    "end": 187,
+    "extremum": 183,
+    "amplitude": -0.0022480573,
+    "duration": 5,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 191,
+    "end": 197,
+    "extremum": 191,
+    "amplitude": -0.0023414373,
+    "duration": 7,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 201,
+    "end": 207,
+    "extremum": 201,
+    "amplitude": -0.0023506114,
+    "duration": 7,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 267,
+    "end": 269,
+    "extremum": 267,
+    "amplitude": -0.0021071426,
+    "duration": 3,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 278,
+    "end": 279,
+    "extremum": 278,
+    "amplitude": -0.0020294451,
+    "duration": 2,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 284,
+    "end": 287,
+    "extremum": 284,
+    "amplitude": -0.002162044,
+    "duration": 4,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 294,
+    "end": 298,
+    "extremum": 294,
+    "amplitude": -0.0021915885,
+    "duration": 5,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 305,
+    "end": 306,
+    "extremum": 305,
+    "amplitude": -0.0020848916,
+    "duration": 2,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 312,
+    "end": 316,
+    "extremum": 312,
+    "amplitude": -0.0022044003,
+    "duration": 5,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 334,
+    "end": 335,
+    "extremum": 334,
+    "amplitude": -0.0020321724,
+    "duration": 2,
+    "cell_id": "HUST_2-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 25,
+    "extremum": 20,
+    "amplitude": -0.005804415,
+    "duration": 6,
+    "cell_id": "HUST_2-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 115,
+    "end": 117,
+    "extremum": 115,
+    "amplitude": -0.0017949449,
+    "duration": 3,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 124,
+    "end": 125,
+    "extremum": 124,
+    "amplitude": -0.0017351991,
+    "duration": 2,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 131,
+    "end": 137,
+    "extremum": 135,
+    "amplitude": -0.0020659672,
+    "duration": 7,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 141,
+    "end": 142,
+    "extremum": 142,
+    "amplitude": -0.0018307836,
+    "duration": 2,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 145,
+    "end": 149,
+    "extremum": 145,
+    "amplitude": -0.0019200441,
+    "duration": 5,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 153,
+    "end": 156,
+    "extremum": 153,
+    "amplitude": -0.0019117939,
+    "duration": 4,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 158,
+    "end": 160,
+    "extremum": 158,
+    "amplitude": -0.0017820415,
+    "duration": 3,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 162,
+    "end": 168,
+    "extremum": 162,
+    "amplitude": -0.0020626774,
+    "duration": 7,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 171,
+    "end": 175,
+    "extremum": 171,
+    "amplitude": -0.0019633061,
+    "duration": 5,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 178,
+    "end": 183,
+    "extremum": 178,
+    "amplitude": -0.0020115679,
+    "duration": 6,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 185,
+    "end": 190,
+    "extremum": 185,
+    "amplitude": -0.0020507557,
+    "duration": 6,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 194,
+    "end": 198,
+    "extremum": 194,
+    "amplitude": -0.0019452838,
+    "duration": 5,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 202,
+    "end": 205,
+    "extremum": 202,
+    "amplitude": -0.0018981473,
+    "duration": 4,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 211,
+    "end": 213,
+    "extremum": 211,
+    "amplitude": -0.0017817476,
+    "duration": 3,
+    "cell_id": "HUST_2-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 44,
+    "end": 46,
+    "extremum": 46,
+    "amplitude": 0.0009829699,
+    "duration": 3,
+    "cell_id": "HUST_2-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 48,
+    "end": 54,
+    "extremum": 50,
+    "amplitude": 0.0013795409,
+    "duration": 7,
+    "cell_id": "HUST_2-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 84,
+    "end": 87,
+    "extremum": 87,
+    "amplitude": 0.0011570822,
+    "duration": 4,
+    "cell_id": "HUST_2-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 89,
+    "end": 98,
+    "extremum": 94,
+    "amplitude": 0.0012599966,
+    "duration": 10,
+    "cell_id": "HUST_2-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 101,
+    "end": 102,
+    "extremum": 102,
+    "amplitude": 0.0009193095,
+    "duration": 2,
+    "cell_id": "HUST_2-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 23,
+    "extremum": 20,
+    "amplitude": -0.0045220064,
+    "duration": 4,
+    "cell_id": "HUST_2-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 109,
+    "end": 113,
+    "extremum": 113,
+    "amplitude": 0.0022852225,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 320,
+    "end": 323,
+    "extremum": 320,
+    "amplitude": -0.0022871285,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 329,
+    "end": 332,
+    "extremum": 329,
+    "amplitude": -0.0022401085,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 339,
+    "end": 340,
+    "extremum": 339,
+    "amplitude": -0.0021470796,
+    "duration": 2,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 345,
+    "end": 348,
+    "extremum": 345,
+    "amplitude": -0.002239873,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 354,
+    "end": 356,
+    "extremum": 354,
+    "amplitude": -0.0021463812,
+    "duration": 3,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 360,
+    "end": 364,
+    "extremum": 360,
+    "amplitude": -0.0023150529,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 369,
+    "end": 371,
+    "extremum": 369,
+    "amplitude": -0.0022497512,
+    "duration": 3,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 374,
+    "end": 378,
+    "extremum": 374,
+    "amplitude": -0.0023489789,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 383,
+    "end": 387,
+    "extremum": 383,
+    "amplitude": -0.0022944028,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 391,
+    "end": 396,
+    "extremum": 391,
+    "amplitude": -0.002378461,
+    "duration": 6,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 398,
+    "end": 402,
+    "extremum": 398,
+    "amplitude": -0.0023747782,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 406,
+    "end": 410,
+    "extremum": 406,
+    "amplitude": -0.0023176014,
+    "duration": 5,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 415,
+    "end": 418,
+    "extremum": 415,
+    "amplitude": -0.0022615671,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 423,
+    "end": 425,
+    "extremum": 423,
+    "amplitude": -0.0022772861,
+    "duration": 3,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 430,
+    "end": 433,
+    "extremum": 430,
+    "amplitude": -0.0022410859,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 439,
+    "end": 442,
+    "extremum": 439,
+    "amplitude": -0.0021697389,
+    "duration": 4,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 449,
+    "end": 450,
+    "extremum": 449,
+    "amplitude": -0.0021148224,
+    "duration": 2,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 455,
+    "end": 456,
+    "extremum": 455,
+    "amplitude": -0.0021458738,
+    "duration": 2,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 463,
+    "end": 464,
+    "extremum": 463,
+    "amplitude": -0.0020909994,
+    "duration": 2,
+    "cell_id": "HUST_2-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 11,
+    "extremum": 1,
+    "amplitude": 0.0072091536,
+    "duration": 11,
+    "cell_id": "HUST_2-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 43,
+    "end": 48,
+    "extremum": 48,
+    "amplitude": 0.0025879458,
+    "duration": 6,
+    "cell_id": "HUST_3-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 50,
+    "end": 60,
+    "extremum": 58,
+    "amplitude": 0.0028549564,
+    "duration": 11,
+    "cell_id": "HUST_3-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 63,
+    "end": 66,
+    "extremum": 66,
+    "amplitude": 0.0024649677,
+    "duration": 4,
+    "cell_id": "HUST_3-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 76,
+    "end": 77,
+    "extremum": 77,
+    "amplitude": 0.0022873144,
+    "duration": 2,
+    "cell_id": "HUST_3-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 38,
+    "end": 41,
+    "extremum": 41,
+    "amplitude": 0.0028203844,
+    "duration": 4,
+    "cell_id": "HUST_3-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 2651,
+    "end": 2652,
+    "extremum": 2652,
+    "amplitude": 0.0045221415,
+    "duration": 2,
+    "cell_id": "HUST_3-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 2656,
+    "end": 2657,
+    "extremum": 2657,
+    "amplitude": 0.0044172572,
+    "duration": 2,
+    "cell_id": "HUST_3-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 90,
+    "end": 92,
+    "extremum": 92,
+    "amplitude": 0.0026812229,
+    "duration": 3,
+    "cell_id": "HUST_3-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 93,
+    "end": 94,
+    "extremum": 94,
+    "amplitude": 0.0024749318,
+    "duration": 2,
+    "cell_id": "HUST_3-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 353,
+    "end": 354,
+    "extremum": 353,
+    "amplitude": -0.002441777,
+    "duration": 2,
+    "cell_id": "HUST_3-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 34,
+    "end": 35,
+    "extremum": 35,
+    "amplitude": 0.0017294652,
+    "duration": 2,
+    "cell_id": "HUST_4-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 65,
+    "end": 69,
+    "extremum": 69,
+    "amplitude": 0.0019129008,
+    "duration": 5,
+    "cell_id": "HUST_4-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 73,
+    "end": 75,
+    "extremum": 73,
+    "amplitude": 0.002204953,
+    "duration": 3,
+    "cell_id": "HUST_4-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 29,
+    "end": 30,
+    "extremum": 30,
+    "amplitude": 0.0020150561,
+    "duration": 2,
+    "cell_id": "HUST_4-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 41,
+    "end": 44,
+    "extremum": 44,
+    "amplitude": 0.0016569396,
+    "duration": 4,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 125,
+    "end": 126,
+    "extremum": 125,
+    "amplitude": -0.0015975027,
+    "duration": 2,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 133,
+    "end": 136,
+    "extremum": 133,
+    "amplitude": -0.0017472199,
+    "duration": 4,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 141,
+    "end": 145,
+    "extremum": 141,
+    "amplitude": -0.0017843939,
+    "duration": 5,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 148,
+    "end": 154,
+    "extremum": 148,
+    "amplitude": -0.0018832046,
+    "duration": 7,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 174,
+    "end": 181,
+    "extremum": 174,
+    "amplitude": -0.0019279281,
+    "duration": 8,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 202,
+    "end": 208,
+    "extremum": 202,
+    "amplitude": -0.0019035423,
+    "duration": 7,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 213,
+    "end": 217,
+    "extremum": 213,
+    "amplitude": -0.001763801,
+    "duration": 5,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 223,
+    "end": 226,
+    "extremum": 223,
+    "amplitude": -0.0016992254,
+    "duration": 4,
+    "cell_id": "HUST_4-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 111,
+    "end": 113,
+    "extremum": 111,
+    "amplitude": -0.0014271878,
+    "duration": 3,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 118,
+    "end": 121,
+    "extremum": 118,
+    "amplitude": -0.0014861366,
+    "duration": 4,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 124,
+    "end": 129,
+    "extremum": 124,
+    "amplitude": -0.0016712612,
+    "duration": 6,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 132,
+    "end": 137,
+    "extremum": 132,
+    "amplitude": -0.0016726365,
+    "duration": 6,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 195,
+    "end": 201,
+    "extremum": 195,
+    "amplitude": -0.0017621875,
+    "duration": 7,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 205,
+    "end": 210,
+    "extremum": 205,
+    "amplitude": -0.001624024,
+    "duration": 6,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 213,
+    "end": 217,
+    "extremum": 213,
+    "amplitude": -0.0016202127,
+    "duration": 5,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 223,
+    "end": 226,
+    "extremum": 223,
+    "amplitude": -0.0014927385,
+    "duration": 4,
+    "cell_id": "HUST_4-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 32,
+    "end": 34,
+    "extremum": 34,
+    "amplitude": 0.0016543888,
+    "duration": 3,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 113,
+    "end": 114,
+    "extremum": 113,
+    "amplitude": -0.0015463162,
+    "duration": 2,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 125,
+    "end": 127,
+    "extremum": 125,
+    "amplitude": -0.001740149,
+    "duration": 3,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 133,
+    "end": 135,
+    "extremum": 133,
+    "amplitude": -0.0016924128,
+    "duration": 3,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 140,
+    "end": 142,
+    "extremum": 140,
+    "amplitude": -0.0016832721,
+    "duration": 3,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 146,
+    "end": 149,
+    "extremum": 146,
+    "amplitude": -0.0017932838,
+    "duration": 4,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 152,
+    "end": 156,
+    "extremum": 152,
+    "amplitude": -0.0018510697,
+    "duration": 5,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 160,
+    "end": 163,
+    "extremum": 160,
+    "amplitude": -0.0017655517,
+    "duration": 4,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 167,
+    "end": 170,
+    "extremum": 167,
+    "amplitude": -0.001798396,
+    "duration": 4,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 173,
+    "end": 177,
+    "extremum": 173,
+    "amplitude": -0.0018555713,
+    "duration": 5,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 180,
+    "end": 184,
+    "extremum": 180,
+    "amplitude": -0.0018770769,
+    "duration": 5,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 188,
+    "end": 191,
+    "extremum": 188,
+    "amplitude": -0.0017816443,
+    "duration": 4,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 197,
+    "end": 198,
+    "extremum": 197,
+    "amplitude": -0.0016102232,
+    "duration": 2,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 1366,
+    "end": 1367,
+    "extremum": 1367,
+    "amplitude": -0.0018505655,
+    "duration": 2,
+    "cell_id": "HUST_4-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 7,
+    "extremum": 1,
+    "amplitude": 0.0085532219,
+    "duration": 7,
+    "cell_id": "HUST_5-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 29,
+    "extremum": 20,
+    "amplitude": -0.0057227558,
+    "duration": 10,
+    "cell_id": "HUST_5-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 51,
+    "end": 55,
+    "extremum": 55,
+    "amplitude": 0.002437445,
+    "duration": 5,
+    "cell_id": "HUST_5-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 75,
+    "end": 76,
+    "extremum": 76,
+    "amplitude": 0.0021711756,
+    "duration": 2,
+    "cell_id": "HUST_5-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 2,
+    "extremum": 1,
+    "amplitude": 0.0063578959,
+    "duration": 2,
+    "cell_id": "HUST_5-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 84,
+    "end": 88,
+    "extremum": 88,
+    "amplitude": 0.0017729672,
+    "duration": 5,
+    "cell_id": "HUST_5-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 91,
+    "end": 95,
+    "extremum": 95,
+    "amplitude": 0.0017778581,
+    "duration": 5,
+    "cell_id": "HUST_5-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 42,
+    "end": 43,
+    "extremum": 43,
+    "amplitude": 0.0016611053,
+    "duration": 2,
+    "cell_id": "HUST_6-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 105,
+    "end": 108,
+    "extremum": 108,
+    "amplitude": 0.0013952988,
+    "duration": 4,
+    "cell_id": "HUST_6-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 108,
+    "end": 109,
+    "extremum": 108,
+    "amplitude": -0.0012871615,
+    "duration": 2,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 113,
+    "end": 117,
+    "extremum": 113,
+    "amplitude": -0.0015215564,
+    "duration": 5,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 119,
+    "end": 127,
+    "extremum": 119,
+    "amplitude": -0.0017294202,
+    "duration": 9,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 246,
+    "end": 253,
+    "extremum": 246,
+    "amplitude": -0.0017120701,
+    "duration": 8,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 256,
+    "end": 261,
+    "extremum": 256,
+    "amplitude": -0.0016115563,
+    "duration": 6,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 268,
+    "end": 271,
+    "extremum": 268,
+    "amplitude": -0.0014035128,
+    "duration": 4,
+    "cell_id": "HUST_6-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 34,
+    "end": 35,
+    "extremum": 34,
+    "amplitude": 0.0012850939,
+    "duration": 2,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 86,
+    "end": 87,
+    "extremum": 86,
+    "amplitude": -0.0011449861,
+    "duration": 2,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 91,
+    "end": 97,
+    "extremum": 91,
+    "amplitude": -0.0014265565,
+    "duration": 7,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 101,
+    "end": 106,
+    "extremum": 101,
+    "amplitude": -0.0014027552,
+    "duration": 6,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 202,
+    "end": 208,
+    "extremum": 202,
+    "amplitude": -0.0014368049,
+    "duration": 7,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 210,
+    "end": 212,
+    "extremum": 211,
+    "amplitude": -0.0014499686,
+    "duration": 3,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 218,
+    "end": 221,
+    "extremum": 218,
+    "amplitude": -0.001282968,
+    "duration": 4,
+    "cell_id": "HUST_6-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 118,
+    "end": 122,
+    "extremum": 122,
+    "amplitude": 0.0022360449,
+    "duration": 5,
+    "cell_id": "HUST_6-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 128,
+    "end": 129,
+    "extremum": 129,
+    "amplitude": 0.0020920468,
+    "duration": 2,
+    "cell_id": "HUST_6-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 395,
+    "end": 396,
+    "extremum": 395,
+    "amplitude": -0.0020466807,
+    "duration": 2,
+    "cell_id": "HUST_6-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 73,
+    "end": 74,
+    "extremum": 74,
+    "amplitude": 0.0024193652,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 214,
+    "end": 216,
+    "extremum": 214,
+    "amplitude": -0.0024271048,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 222,
+    "end": 223,
+    "extremum": 222,
+    "amplitude": -0.0024231346,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 229,
+    "end": 231,
+    "extremum": 229,
+    "amplitude": -0.002493434,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 236,
+    "end": 239,
+    "extremum": 236,
+    "amplitude": -0.002554243,
+    "duration": 4,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 242,
+    "end": 247,
+    "extremum": 242,
+    "amplitude": -0.0026745445,
+    "duration": 6,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 251,
+    "end": 256,
+    "extremum": 251,
+    "amplitude": -0.0026162943,
+    "duration": 6,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 294,
+    "end": 295,
+    "extremum": 294,
+    "amplitude": -0.002403649,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 301,
+    "end": 303,
+    "extremum": 301,
+    "amplitude": -0.0024705924,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 310,
+    "end": 311,
+    "extremum": 310,
+    "amplitude": -0.0023996039,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 317,
+    "end": 318,
+    "extremum": 317,
+    "amplitude": -0.0024456066,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 322,
+    "end": 326,
+    "extremum": 322,
+    "amplitude": -0.0026500475,
+    "duration": 5,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 332,
+    "end": 334,
+    "extremum": 332,
+    "amplitude": -0.0025057679,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 348,
+    "end": 350,
+    "extremum": 348,
+    "amplitude": -0.0024586314,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 356,
+    "end": 358,
+    "extremum": 356,
+    "amplitude": -0.0024497094,
+    "duration": 3,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 365,
+    "end": 366,
+    "extremum": 365,
+    "amplitude": -0.0023738779,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 372,
+    "end": 373,
+    "extremum": 372,
+    "amplitude": -0.0024089111,
+    "duration": 2,
+    "cell_id": "HUST_6-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 31,
+    "end": 33,
+    "extremum": 33,
+    "amplitude": 0.0020792515,
+    "duration": 3,
+    "cell_id": "HUST_7-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 81,
+    "end": 82,
+    "extremum": 82,
+    "amplitude": 0.0025503491,
+    "duration": 2,
+    "cell_id": "HUST_7-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1287,
+    "end": 1295,
+    "extremum": 1294,
+    "amplitude": 0.0036252001,
+    "duration": 9,
+    "cell_id": "HUST_7-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 19,
+    "end": 20,
+    "extremum": 20,
+    "amplitude": 0.0025709342,
+    "duration": 2,
+    "cell_id": "HUST_7-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 170,
+    "end": 171,
+    "extremum": 170,
+    "amplitude": -0.0013304286,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 178,
+    "end": 179,
+    "extremum": 178,
+    "amplitude": -0.0013573041,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 184,
+    "end": 188,
+    "extremum": 184,
+    "amplitude": -0.0015268133,
+    "duration": 5,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 192,
+    "end": 195,
+    "extremum": 192,
+    "amplitude": -0.0014805724,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 200,
+    "end": 204,
+    "extremum": 200,
+    "amplitude": -0.0014702721,
+    "duration": 5,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 243,
+    "end": 244,
+    "extremum": 243,
+    "amplitude": -0.0013028726,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 257,
+    "end": 260,
+    "extremum": 260,
+    "amplitude": -0.0017500211,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 263,
+    "end": 267,
+    "extremum": 263,
+    "amplitude": -0.0015455811,
+    "duration": 5,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 280,
+    "end": 282,
+    "extremum": 280,
+    "amplitude": -0.0014251812,
+    "duration": 3,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 286,
+    "end": 290,
+    "extremum": 286,
+    "amplitude": -0.0015988799,
+    "duration": 5,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 296,
+    "end": 299,
+    "extremum": 296,
+    "amplitude": -0.0014462838,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 302,
+    "end": 305,
+    "extremum": 302,
+    "amplitude": -0.0015067822,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 310,
+    "end": 313,
+    "extremum": 310,
+    "amplitude": -0.0014722839,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 325,
+    "end": 328,
+    "extremum": 325,
+    "amplitude": -0.0015108318,
+    "duration": 4,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 335,
+    "end": 336,
+    "extremum": 335,
+    "amplitude": -0.00131968,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 343,
+    "end": 344,
+    "extremum": 343,
+    "amplitude": -0.001318324,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 349,
+    "end": 351,
+    "extremum": 349,
+    "amplitude": -0.0013940404,
+    "duration": 3,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 366,
+    "end": 367,
+    "extremum": 366,
+    "amplitude": -0.0012943132,
+    "duration": 2,
+    "cell_id": "HUST_7-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 42,
+    "end": 45,
+    "extremum": 45,
+    "amplitude": 0.0016386425,
+    "duration": 4,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 123,
+    "end": 124,
+    "extremum": 123,
+    "amplitude": -0.0014748676,
+    "duration": 2,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 139,
+    "end": 141,
+    "extremum": 139,
+    "amplitude": -0.0015980092,
+    "duration": 3,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 146,
+    "end": 150,
+    "extremum": 146,
+    "amplitude": -0.0017056583,
+    "duration": 5,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 155,
+    "end": 159,
+    "extremum": 155,
+    "amplitude": -0.0017353778,
+    "duration": 5,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 162,
+    "end": 167,
+    "extremum": 162,
+    "amplitude": -0.0018544495,
+    "duration": 6,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 171,
+    "end": 177,
+    "extremum": 171,
+    "amplitude": -0.0018360213,
+    "duration": 7,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 182,
+    "end": 186,
+    "extremum": 182,
+    "amplitude": -0.0017634012,
+    "duration": 5,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 193,
+    "end": 196,
+    "extremum": 193,
+    "amplitude": -0.001631486,
+    "duration": 4,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 202,
+    "end": 204,
+    "extremum": 202,
+    "amplitude": -0.0015942254,
+    "duration": 3,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 211,
+    "end": 212,
+    "extremum": 211,
+    "amplitude": -0.0015865405,
+    "duration": 2,
+    "cell_id": "HUST_7-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 51,
+    "end": 52,
+    "extremum": 52,
+    "amplitude": 0.0014700088,
+    "duration": 2,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 125,
+    "end": 127,
+    "extremum": 125,
+    "amplitude": -0.0014408505,
+    "duration": 3,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 135,
+    "end": 137,
+    "extremum": 135,
+    "amplitude": -0.0014647619,
+    "duration": 3,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 142,
+    "end": 147,
+    "extremum": 142,
+    "amplitude": -0.0016260526,
+    "duration": 6,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 150,
+    "end": 157,
+    "extremum": 150,
+    "amplitude": -0.0017432195,
+    "duration": 8,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 201,
+    "end": 208,
+    "extremum": 201,
+    "amplitude": -0.0017438453,
+    "duration": 8,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 212,
+    "end": 217,
+    "extremum": 212,
+    "amplitude": -0.0016825353,
+    "duration": 6,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 221,
+    "end": 228,
+    "extremum": 221,
+    "amplitude": -0.0017143925,
+    "duration": 8,
+    "cell_id": "HUST_7-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 66,
+    "end": 71,
+    "extremum": 71,
+    "amplitude": 0.00253287,
+    "duration": 6,
+    "cell_id": "HUST_7-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 75,
+    "end": 80,
+    "extremum": 80,
+    "amplitude": 0.0024814519,
+    "duration": 6,
+    "cell_id": "HUST_7-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 26,
+    "end": 29,
+    "extremum": 29,
+    "amplitude": 0.0017811935,
+    "duration": 4,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 122,
+    "end": 123,
+    "extremum": 122,
+    "amplitude": -0.001624369,
+    "duration": 2,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 130,
+    "end": 132,
+    "extremum": 130,
+    "amplitude": -0.0016626482,
+    "duration": 3,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 146,
+    "end": 149,
+    "extremum": 146,
+    "amplitude": -0.0017678291,
+    "duration": 4,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 154,
+    "end": 158,
+    "extremum": 154,
+    "amplitude": -0.0018033674,
+    "duration": 5,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 164,
+    "end": 166,
+    "extremum": 164,
+    "amplitude": -0.001710511,
+    "duration": 3,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 172,
+    "end": 175,
+    "extremum": 172,
+    "amplitude": -0.0017584359,
+    "duration": 4,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 180,
+    "end": 183,
+    "extremum": 180,
+    "amplitude": -0.001805107,
+    "duration": 4,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 189,
+    "end": 192,
+    "extremum": 189,
+    "amplitude": -0.0017424677,
+    "duration": 4,
+    "cell_id": "HUST_8-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 7,
+    "extremum": 1,
+    "amplitude": 0.0060261823,
+    "duration": 7,
+    "cell_id": "HUST_8-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 9,
+    "end": 10,
+    "extremum": 10,
+    "amplitude": 0.0030931517,
+    "duration": 2,
+    "cell_id": "HUST_8-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 24,
+    "end": 26,
+    "extremum": 26,
+    "amplitude": 0.0023493391,
+    "duration": 3,
+    "cell_id": "HUST_8-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 342,
+    "end": 343,
+    "extremum": 342,
+    "amplitude": -0.0019889959,
+    "duration": 2,
+    "cell_id": "HUST_8-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 1,
+    "end": 4,
+    "extremum": 1,
+    "amplitude": 0.0052880398,
+    "duration": 4,
+    "cell_id": "HUST_8-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 20,
+    "end": 22,
+    "extremum": 20,
+    "amplitude": -0.002895355,
+    "duration": 3,
+    "cell_id": "HUST_8-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 42,
+    "end": 43,
+    "extremum": 43,
+    "amplitude": 0.0020818502,
+    "duration": 2,
+    "cell_id": "HUST_8-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 46,
+    "end": 51,
+    "extremum": 49,
+    "amplitude": 0.0025657767,
+    "duration": 6,
+    "cell_id": "HUST_8-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 71,
+    "end": 72,
+    "extremum": 72,
+    "amplitude": 0.002073617,
+    "duration": 2,
+    "cell_id": "HUST_8-8"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 61,
+    "end": 66,
+    "extremum": 64,
+    "amplitude": 0.0037382378,
+    "duration": 6,
+    "cell_id": "HUST_9-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 70,
+    "end": 72,
+    "extremum": 72,
+    "amplitude": 0.0033920718,
+    "duration": 3,
+    "cell_id": "HUST_9-1"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 24,
+    "end": 25,
+    "extremum": 25,
+    "amplitude": 0.0024599231,
+    "duration": 2,
+    "cell_id": "HUST_9-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 85,
+    "end": 86,
+    "extremum": 86,
+    "amplitude": 0.0022298062,
+    "duration": 2,
+    "cell_id": "HUST_9-2"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 72,
+    "end": 73,
+    "extremum": 73,
+    "amplitude": 0.002586566,
+    "duration": 2,
+    "cell_id": "HUST_9-3"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 26,
+    "end": 27,
+    "extremum": 27,
+    "amplitude": 0.0025039656,
+    "duration": 2,
+    "cell_id": "HUST_9-4"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 97,
+    "end": 98,
+    "extremum": 98,
+    "amplitude": 0.0021095043,
+    "duration": 2,
+    "cell_id": "HUST_9-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 318,
+    "end": 319,
+    "extremum": 318,
+    "amplitude": -0.0020888668,
+    "duration": 2,
+    "cell_id": "HUST_9-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 335,
+    "end": 336,
+    "extremum": 335,
+    "amplitude": -0.0020923239,
+    "duration": 2,
+    "cell_id": "HUST_9-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 344,
+    "end": 345,
+    "extremum": 344,
+    "amplitude": -0.0020817635,
+    "duration": 2,
+    "cell_id": "HUST_9-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 360,
+    "end": 361,
+    "extremum": 360,
+    "amplitude": -0.0021136145,
+    "duration": 2,
+    "cell_id": "HUST_9-5"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 195,
+    "end": 196,
+    "extremum": 195,
+    "amplitude": -0.0019835682,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 201,
+    "end": 202,
+    "extremum": 201,
+    "amplitude": -0.0020263747,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 207,
+    "end": 208,
+    "extremum": 207,
+    "amplitude": -0.0019847524,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 213,
+    "end": 214,
+    "extremum": 213,
+    "amplitude": -0.0020192512,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 219,
+    "end": 220,
+    "extremum": 219,
+    "amplitude": -0.0020152874,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 225,
+    "end": 226,
+    "extremum": 225,
+    "amplitude": -0.0019996104,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 231,
+    "end": 232,
+    "extremum": 231,
+    "amplitude": -0.0020093028,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 236,
+    "end": 238,
+    "extremum": 236,
+    "amplitude": -0.0020957419,
+    "duration": 3,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": -1,
+    "start": 243,
+    "end": 244,
+    "extremum": 243,
+    "amplitude": -0.001993303,
+    "duration": 2,
+    "cell_id": "HUST_9-6"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 77,
+    "end": 82,
+    "extremum": 82,
+    "amplitude": 0.0024255898,
+    "duration": 6,
+    "cell_id": "HUST_9-7"
+  },
+  {
+    "dataset": "HUST",
+    "sign": 1,
+    "start": 89,
+    "end": 93,
+    "extremum": 93,
+    "amplitude": 0.0023350865,
+    "duration": 5,
+    "cell_id": "HUST_9-8"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 48,
+    "end": 49,
+    "extremum": 48,
+    "amplitude": 0.0351746403,
+    "duration": 2,
+    "cell_id": "NASA_B0005"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 48,
+    "end": 49,
+    "extremum": 48,
+    "amplitude": 0.0793575468,
+    "duration": 2,
+    "cell_id": "NASA_B0006"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 48,
+    "end": 49,
+    "extremum": 49,
+    "amplitude": 0.0284768421,
+    "duration": 2,
+    "cell_id": "NASA_B0007"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 46,
+    "end": 48,
+    "extremum": 46,
+    "amplitude": 0.0837372394,
+    "duration": 3,
+    "cell_id": "NASA_B0018"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": -1,
+    "start": 134,
+    "end": 142,
+    "extremum": 137,
+    "amplitude": -1.0590285391,
+    "duration": 9,
+    "cell_id": "NASA_B0033"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 1,
+    "end": 2,
+    "extremum": 1,
+    "amplitude": 0.1391276983,
+    "duration": 2,
+    "cell_id": "NASA_B0034"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 63,
+    "end": 64,
+    "extremum": 64,
+    "amplitude": 0.1472735966,
+    "duration": 2,
+    "cell_id": "NASA_B0034"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 151,
+    "end": 152,
+    "extremum": 151,
+    "amplitude": 0.1305261112,
+    "duration": 2,
+    "cell_id": "NASA_B0034"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": -1,
+    "start": 151,
+    "end": 152,
+    "extremum": 152,
+    "amplitude": -0.0324193463,
+    "duration": 2,
+    "cell_id": "NASA_B0036"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 154,
+    "end": 156,
+    "extremum": 154,
+    "amplitude": 0.0421020978,
+    "duration": 3,
+    "cell_id": "NASA_B0036"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 158,
+    "end": 159,
+    "extremum": 159,
+    "amplitude": 0.0355622154,
+    "duration": 2,
+    "cell_id": "NASA_B0036"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 42,
+    "end": 44,
+    "extremum": 44,
+    "amplitude": 0.0640701438,
+    "duration": 3,
+    "cell_id": "NASA_B0038"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 24,
+    "end": 27,
+    "extremum": 27,
+    "amplitude": 0.0371580504,
+    "duration": 4,
+    "cell_id": "NASA_B0039"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": -1,
+    "start": 28,
+    "end": 30,
+    "extremum": 28,
+    "amplitude": -0.0363359298,
+    "duration": 3,
+    "cell_id": "NASA_B0039"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 26,
+    "end": 27,
+    "extremum": 27,
+    "amplitude": 0.0261632884,
+    "duration": 2,
+    "cell_id": "NASA_B0040"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 40,
+    "end": 41,
+    "extremum": 40,
+    "amplitude": 0.6509952153,
+    "duration": 2,
+    "cell_id": "NASA_B0041"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 20,
+    "end": 22,
+    "extremum": 20,
+    "amplitude": 0.024728072,
+    "duration": 3,
+    "cell_id": "NASA_B0042"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 33,
+    "end": 34,
+    "extremum": 33,
+    "amplitude": 0.0387159471,
+    "duration": 2,
+    "cell_id": "NASA_B0045"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 43,
+    "end": 44,
+    "extremum": 44,
+    "amplitude": 0.0853799903,
+    "duration": 2,
+    "cell_id": "NASA_B0053"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 21,
+    "end": 23,
+    "extremum": 21,
+    "amplitude": 0.0951462033,
+    "duration": 3,
+    "cell_id": "NASA_B0054"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 22,
+    "end": 24,
+    "extremum": 22,
+    "amplitude": 0.091898624,
+    "duration": 3,
+    "cell_id": "NASA_B0055"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 49,
+    "end": 50,
+    "extremum": 49,
+    "amplitude": 0.0663927334,
+    "duration": 2,
+    "cell_id": "NASA_B0055"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 90,
+    "end": 91,
+    "extremum": 90,
+    "amplitude": 0.0745282386,
+    "duration": 2,
+    "cell_id": "NASA_B0055"
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "sign": 1,
+    "start": 89,
+    "end": 90,
+    "extremum": 89,
+    "amplitude": 0.1320070098,
+    "duration": 2,
+    "cell_id": "NASA_B0056"
+  }
+]

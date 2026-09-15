@@ -1,0 +1,11 @@
+{
+  "stage": "s2_audit_datasets",
+  "device": "cuda",
+  "wall_clock_s": 20.631,
+  "sections_s": {
+    "audit_MATR": 8.855,
+    "audit_HUST": 6.482,
+    "audit_NASA_PCoE": 1.753,
+    "figures": 3.417
+  }
+}

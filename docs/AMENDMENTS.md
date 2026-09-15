@@ -65,3 +65,18 @@ Re-read after C1–C4: Introduction, Related Work, all of Section 3, and the Res
 | Table 6 caption "mass on zero-weight channels is error by construction" | results scaffold | Holds for null and redundant channels alike (w = 0 ⇒ ϕ* = 0). Kept. |
 
 Held citations found during the review (not edited in round 1; handled by D10): `pan2022` (§3.1.2, §3.3) uses a rest-time/decomposition method on CALCE data; the temperature-as-input claim cited to `olivares2013` (§3.1.2).
+
+## Round 2 — S2 decisions (2026-09-15), against commit `a460111` (round 1)
+
+`artifacts/amendments/latexdiff_round2.pdf`.
+
+| id | where (paper/paper.tex) | what changed | why | cost / what it buys |
+|---|---|---|---|---|
+| D15 | §3.1.1, sentence introducing q₁; Eq. 3 | q₁ "attained at position t₁"; `T = min{t ≥ t₁ : z_t ≥ 1}` | The fall is measured from q₁; a record whose earliest readings sit below the threshold got T = 1 (NASA B0038). | One unit changes; none on MATR/HUST. |
+| D13 | §3.1.1, ρ paragraph after the guard sentence | Measured records that end within a declared tolerance of the threshold reach EOL at their last position; generated units follow Eq. 3 alone. | HUST and MATR b1/b3 were recorded only to the stopping threshold: strict attainment 11/77 and 96/180; record-end rule 77/77 (T = Table S1 exactly) and 173/180. | A second EOL clause for measured records; z_T ∈ [0.983, 1) for them. |
+| D12 | §3.3, step one | Readings no degradation produces are removed before smoothing: isolated single-position departures beyond a declared fraction of nominal capacity, and readings below half of nominal capacity that the record later recovers from. | A 2.88 Ah reading on a 1.1 Ah cell set q₁; failed NASA discharges gave T = 1–3. | 15 of MATR's 135 cells and 26 NASA units lose cycles; positions are re-indexed. |
+| D16 | §3.3, step two | Families fitted "from the early-life reference to EOL". | Early-rise misfit dominated MATR/HUST residuals. | θ describes the fall only; generated units start at the fall. |
+| D16 | §3.3, detection rule | Runs longer than the smoothing window are not patterns, with the reason (they change z_t, which patterns must not). | Long misfit runs (up to 120 positions) were detected as patterns. | Slow misfit hovering at the threshold can still split into short runs (HUST 7-5). |
+| D12, D13 | §3.3, declared list | Adds the glitch fraction and the record-end tolerance. | The list must name what is declared. | none |
+
+Blast radius (round 2): §3.2.2 "This is the same quantity that measured datasets provide as a RUL label" is made truer by D13 (HUST T equals the dataset's cycle life). Figure 3 caption ("reach EOL at different positions") is unaffected. No contradiction found in the Introduction or Related Work.

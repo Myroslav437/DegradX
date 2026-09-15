@@ -37,7 +37,15 @@ python scripts/s1_fetch_data.py --rehash                         # recompute SHA
 - MATR runs one batch per child process (b2, b1, b3, b4). A batch whose `data/work/matr_b<k>_log.json` exists is skipped
   unless `--force`.
 
-## S2 … S9
+## S2 — dataset property audit
+
+```bash
+python scripts/s2_audit_datasets.py --workers 12              # all three datasets, ~2 min
+python scripts/s2_audit_datasets.py --datasets NASA_PCoE      # one dataset
+python experiments/decisions/D12/run.py                        # decision harnesses (D11-D16) re-run standalone
+```
+
+## S3 … S9
 
 Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
 
