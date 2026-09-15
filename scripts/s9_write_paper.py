@@ -150,6 +150,84 @@ def table_properties():
     return res
 
 
+OPS = [("added_noise", "Added noise"), ("shift_to_start", "Shifted mass (start)"), ("shift_to_end", "Shifted mass (end)"), ("smoothing", "Smoothing"),
+       ("permuted_fraction", "Permuted fraction")]
+
+
+def table_resolution(kind="recency"):
+    """Table 4: smallest reliably resolved magnitude per score and operator, with the mean change of the score there."""
+    src = ARTIFACTS_DIR / "s7_responsiveness" / "tables" / "part1_degradation.json"
+    R = json.loads(src.read_text())
+    rows, res = [], {}
+
+    def cell(s, key):
+        rr = s[f"{key}_resolution"]["resolution"] if f"{key}_resolution" in s else None
+        grid = s["grid"]
+        means = s[f"{key}_mean"]
+        if rr is None:
+            return "not resolved", None
+        drop = means[grid.index(rr)] - means[0]
+        return f"{rr:g} ({drop:+.3f})", drop
+
+    for label, ds_list, key in (("Rank agreement, graded field", ("MATR", "HUST", "NASA_PCoE"), "rank"),
+                                ("Retrieval (paired), sparse set", ("NASA_PCoE",), "retrieval"),
+                                ("Retrieval (plain), sparse set", ("NASA_PCoE",), "plain_retrieval")):
+        for ds in ds_list:
+            r = R[ds][kind]
+            cells = []
+            for op, _ in OPS:
+                s = r["operators"][op]
+                if key == "plain_retrieval":
+                    s = {"grid": s["grid"], "plain_retrieval_mean": s["plain_retrieval_mean"], "plain_retrieval_resolution": s["plain_retrieval_resolution"]}
+                txt, drop = cell(s, key)
+                cells.append(txt)
+                res.setdefault(f"{label} / {NAME[ds]}", {})[op] = {"resolution": s[f"{key}_resolution"]["resolution"], "drop": drop}
+                prov(f"Table 4 / {label} / {NAME[ds]} / {op}", src, f"{ds}.{kind}.operators.{op}", "scripts/s7_responsiveness.py", "generation 0; evaluation 20260915")
+            rows.append(f"    {label.split(',')[0]} ({NAME[ds]}) & " + " & ".join(cells) + " \\\\")
+    (TABLES / "table_resolution.tex").write_text("\n".join(rows) + "\n")
+    write_json(res, RESULTS_DIR / "table4_resolution.json")
+    return res
+
+
+def figure_degradation(kind="recency"):
+    """Figure 7: each score against degradation magnitude, one panel per operator (recency weighting)."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    from degradx.viz import style
+
+    src = ARTIFACTS_DIR / "s7_responsiveness" / "tables" / "part1_degradation.json"
+    R = json.loads(src.read_text())
+    style.apply()
+    fig, axes = plt.subplots(1, len(OPS), figsize=(style.TEXTWIDTH_IN, 2.1), sharey=True)
+    ls = {"MATR": "-", "HUST": "--", "NASA_PCoE": ":"}
+    xlab = {"added_noise": "noise SD [× map SD]", "shift_to_start": "fraction to start", "shift_to_end": "fraction to end", "smoothing": "Gaussian σ [positions]",
+            "permuted_fraction": "fraction permuted"}
+    for ax, (op, title) in zip(axes, OPS):
+        for ds in ("MATR", "HUST", "NASA_PCoE"):
+            s = R[ds][kind]["operators"][op]
+            x = np.arange(len(s["grid"]))
+            ax.plot(x, s["rank_mean"], color="black", ls=ls[ds], lw=1.0, marker="o", ms=2, label=f"rank, {NAME[ds]}")
+            if "retrieval_mean" in s:
+                ax.plot(x, s["retrieval_mean"], color=style.MEASURED, lw=1.2, marker="s", ms=2, label="retrieval (paired), NASA PCoE")
+                ax.plot(x, s["plain_retrieval_mean"], color=style.MEASURED_BUNDLE, ls=":", lw=1.2, marker="^", ms=2, label="retrieval (plain), NASA PCoE")
+                ax.axhline(R[ds][kind]["chance_retrieval"], color=style.REFERENCE, lw=style.LW_THIN, ls="--")
+        ax.axhline(R["MATR"][kind]["chance_rank"], color=style.REFERENCE, lw=style.LW_THIN)
+        ax.set_xticks(x, [f"{g:g}" for g in s["grid"]], fontsize=5.5, rotation=60)
+        ax.set_title(title, fontsize=7.5)
+        ax.set_xlabel(xlab[op], fontsize=6.5)
+        style.despine(ax)
+    axes[0].set_ylabel("score")
+    axes[0].legend(frameon=False, fontsize=5, loc="lower left")
+    fig.tight_layout()
+    fig.savefig(PAPER / "img" / "fig_res_degradation.pdf")
+    fig.savefig(RESULTS_DIR / "fig_res_degradation.png", dpi=200)
+    plt.close(fig)
+    prov("Figure 7", src, f"all profiles, {kind}", "scripts/s7_responsiveness.py; scripts/s9_write_paper.py", "generation 0; evaluation 20260915")
+
+
 def figure_fidelity():
     """Paper Figure 6: measured (grey) and generated (black) capacity trajectories, one panel per profile, z = 0 and z = 1 marked."""
     import pickle
@@ -207,13 +285,28 @@ def main() -> int:
     args = p.parse_args()
     StageContext.from_args(args)
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    fns = {"fidelity": table_fidelity, "properties": table_properties, "figure_fidelity": figure_fidelity}
+    fns = {"fidelity": table_fidelity, "properties": table_properties, "figure_fidelity": figure_fidelity, "resolution": table_resolution,
+           "figure_degradation": figure_degradation}
     for t in args.tables:
         fns[t]()
     old = json.loads((RESULTS_DIR / "provenance.json").read_text()) if (RESULTS_DIR / "provenance.json").exists() else []
     keep = [x for x in old if not any(x["cell"].startswith(y["cell"].split(" / ")[0]) for y in PROV)]
-    write_json(keep + PROV, RESULTS_DIR / "provenance.json")
+    allp = keep + PROV
+    write_json(allp, RESULTS_DIR / "provenance.json")
+    write_provenance_md(allp)
     return 0
+
+
+def write_provenance_md(entries):
+    lines = ["# Results provenance", "",
+             "Every table cell and figure in Section 4 of `paper/paper.tex` and the artifact that produced it. Generated by",
+             "`scripts/s9_write_paper.py` from `results/provenance.json`; the artifact commit is the last commit touching the artifact",
+             "file. Seeds: generation / model_init / attribution_sampling / evaluation streams (`degradx.utils.seeding.derive_seed` under",
+             "base seed 20260915 unless stated). Configs: `configs/declarations.yaml` (r2 + dated decisions) and `configs/stages/<stage>.yaml`.", "",
+             "| table / figure cell | artifact | key | script | seeds | artifact commit |", "|---|---|---|---|---|---|"]
+    for e in sorted(entries, key=lambda x: x["cell"]):
+        lines.append(f"| {e['cell']} | `{e['artifact']}` | {e['key']} | `{e['script']}` | {e['seeds']} | `{e['artifact_commit'][:10]}` |")
+    (REPO_ROOT / "docs" / "RESULTS_PROVENANCE.md").write_text("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":

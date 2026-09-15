@@ -1,0 +1,112 @@
+{
+  "Rank agreement, graded field / MATR": {
+    "added_noise": {
+      "resolution": 0.05,
+      "drop": -0.11503807369666164
+    },
+    "shift_to_start": {
+      "resolution": 0.05,
+      "drop": -0.008877848977865255
+    },
+    "shift_to_end": {
+      "resolution": 0.05,
+      "drop": -6.052180493221204e-05
+    },
+    "smoothing": {
+      "resolution": 0.5,
+      "drop": -0.00032156022857976474
+    },
+    "permuted_fraction": {
+      "resolution": 0.05,
+      "drop": -0.0408361021174144
+    }
+  },
+  "Rank agreement, graded field / HUST": {
+    "added_noise": {
+      "resolution": 0.05,
+      "drop": -0.05290482026565846
+    },
+    "shift_to_start": {
+      "resolution": 0.05,
+      "drop": -0.023879987958763227
+    },
+    "shift_to_end": {
+      "resolution": 0.05,
+      "drop": -6.041066265938255e-05
+    },
+    "smoothing": {
+      "resolution": 0.5,
+      "drop": -7.985525817311157e-05
+    },
+    "permuted_fraction": {
+      "resolution": 0.05,
+      "drop": -0.040399342790158776
+    }
+  },
+  "Rank agreement, graded field / NASA PCoE": {
+    "added_noise": {
+      "resolution": 0.05,
+      "drop": -0.11479298780771707
+    },
+    "shift_to_start": {
+      "resolution": 0.05,
+      "drop": -0.01999340497233848
+    },
+    "shift_to_end": {
+      "resolution": 0.05,
+      "drop": -5.786667099727527e-05
+    },
+    "smoothing": {
+      "resolution": 0.5,
+      "drop": -0.0056401387750801835
+    },
+    "permuted_fraction": {
+      "resolution": 0.05,
+      "drop": -0.04129170677006044
+    }
+  },
+  "Retrieval (paired), sparse set / NASA PCoE": {
+    "added_noise": {
+      "resolution": 0.05,
+      "drop": -0.3301697384317184
+    },
+    "shift_to_start": {
+      "resolution": 0.05,
+      "drop": -0.001595238095238205
+    },
+    "shift_to_end": {
+      "resolution": 0.05,
+      "drop": -0.0017462042788131127
+    },
+    "smoothing": {
+      "resolution": 1,
+      "drop": -0.011724033816425172
+    },
+    "permuted_fraction": {
+      "resolution": 0.05,
+      "drop": -0.7164251220309193
+    }
+  },
+  "Retrieval (plain), sparse set / NASA PCoE": {
+    "added_noise": {
+      "resolution": 0.05,
+      "drop": -0.003584834161826797
+    },
+    "shift_to_start": {
+      "resolution": null,
+      "drop": null
+    },
+    "shift_to_end": {
+      "resolution": 1.0,
+      "drop": -0.03572594040980037
+    },
+    "smoothing": {
+      "resolution": 4,
+      "drop": -0.006769808516431983
+    },
+    "permuted_fraction": {
+      "resolution": 0.05,
+      "drop": -0.002738961935877998
+    }
+  }
+}

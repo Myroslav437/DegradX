@@ -574,5 +574,213 @@
     "script": "scripts/s5_fidelity.py",
     "seeds": "generation 0; evaluation 20260915",
     "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / MATR / added_noise",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "MATR.recency.operators.added_noise",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / MATR / shift_to_start",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "MATR.recency.operators.shift_to_start",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / MATR / shift_to_end",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "MATR.recency.operators.shift_to_end",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / MATR / smoothing",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "MATR.recency.operators.smoothing",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / MATR / permuted_fraction",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "MATR.recency.operators.permuted_fraction",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / HUST / added_noise",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "HUST.recency.operators.added_noise",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / HUST / shift_to_start",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "HUST.recency.operators.shift_to_start",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / HUST / shift_to_end",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "HUST.recency.operators.shift_to_end",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / HUST / smoothing",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "HUST.recency.operators.smoothing",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / HUST / permuted_fraction",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "HUST.recency.operators.permuted_fraction",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / NASA PCoE / added_noise",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.added_noise",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / NASA PCoE / shift_to_start",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_start",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / NASA PCoE / shift_to_end",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_end",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / NASA PCoE / smoothing",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.smoothing",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Rank agreement, graded field / NASA PCoE / permuted_fraction",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.permuted_fraction",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (paired), sparse set / NASA PCoE / added_noise",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.added_noise",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (paired), sparse set / NASA PCoE / shift_to_start",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_start",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (paired), sparse set / NASA PCoE / shift_to_end",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_end",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (paired), sparse set / NASA PCoE / smoothing",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.smoothing",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (paired), sparse set / NASA PCoE / permuted_fraction",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.permuted_fraction",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (plain), sparse set / NASA PCoE / added_noise",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.added_noise",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (plain), sparse set / NASA PCoE / shift_to_start",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_start",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (plain), sparse set / NASA PCoE / shift_to_end",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.shift_to_end",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (plain), sparse set / NASA PCoE / smoothing",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.smoothing",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 4 / Retrieval (plain), sparse set / NASA PCoE / permuted_fraction",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "NASA_PCoE.recency.operators.permuted_fraction",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Figure 7",
+    "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
+    "key": "all profiles, recency",
+    "script": "scripts/s7_responsiveness.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
   }
 ]

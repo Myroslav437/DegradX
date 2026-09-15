@@ -115,7 +115,8 @@ def main() -> int:
     for ds in args.datasets:
         f = ARTIFACTS_DIR / "s6_usability" / "tables" / f"usability_{ds}.json"
         s6.update(json.loads(f.read_text()) if f.exists() else {})
-    results = {}
+    prev = out / "tables" / "reference_values.json"
+    results = json.loads(prev.read_text()) if prev.exists() else {}  # runs per dataset merge into one file
     maps_dir = DATA_DIR / "attributions"
     maps_dir.mkdir(parents=True, exist_ok=True)
     with RunRecord("s8_reference_methods", out, {"config": ctx.config, "windows": n_win, "timeshap_windows": args.timeshap_windows, "timeshap_seeds": ts_seeds, "l1_reg": str(l1)},

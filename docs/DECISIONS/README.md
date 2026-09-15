@@ -34,3 +34,4 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D08 | non-responding scores explained by field construction; drop reported beside resolution | S7 | taken |
 | D22 | TimeSHAP l1_reg 'auto' (cell-level default) | S8 | taken |
 | D23 | S8 budget: TimeSHAP on 40 of 120 windows, seeds 0-1 trained / 0 reference | S8 | taken |
+| D10 | held citations: pan2022 verified and re-described; olivares2013 temperature-input claim removed | S9 | taken (paper round 5) |
