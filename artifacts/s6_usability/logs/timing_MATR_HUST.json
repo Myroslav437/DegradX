@@ -1,0 +1,25 @@
+{
+  "stage": "s6_usability",
+  "device": "cuda",
+  "wall_clock_s": 8570.191,
+  "sections_s": {
+    "MATR_recency_windows": 0.796,
+    "MATR_recency_ensemble": 741.324,
+    "MATR_recency_importance": 2.481,
+    "MATR_uniform_windows": 0.804,
+    "MATR_uniform_ensemble": 644.957,
+    "MATR_uniform_importance": 2.354,
+    "MATR_final_position_windows": 0.712,
+    "MATR_final_position_ensemble": 626.12,
+    "MATR_final_position_importance": 2.29,
+    "HUST_recency_windows": 1.471,
+    "HUST_recency_ensemble": 2297.777,
+    "HUST_recency_importance": 1.785,
+    "HUST_uniform_windows": 2.633,
+    "HUST_uniform_ensemble": 2012.659,
+    "HUST_uniform_importance": 1.774,
+    "HUST_final_position_windows": 1.296,
+    "HUST_final_position_ensemble": 2223.032,
+    "HUST_final_position_importance": 1.93
+  }
+}

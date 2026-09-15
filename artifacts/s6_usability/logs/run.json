@@ -3,28 +3,28 @@
   "argv": [
     "scripts/s6_usability.py",
     "--datasets",
-    "NASA_PCoE",
-    "--weightings",
-    "recency"
+    "NASA_PCoE"
   ],
-  "started_utc": "2026-09-15T19:07:43.303327+00:00",
-  "finished_utc": "2026-09-15T19:08:37.507666+00:00",
-  "wall_clock_s": 54.204,
+  "started_utc": "2026-09-15T21:32:23.559902+00:00",
+  "finished_utc": "2026-09-15T21:35:56.117617+00:00",
+  "wall_clock_s": 212.558,
   "status": "ok",
   "error": null,
   "git": {
-    "commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2",
-    "dirty": false,
+    "commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b",
+    "dirty": true,
     "branch": "main"
   },
-  "config_hash": "dc57e2db159245e0ac91f72351af5fe0ca6939be868ac7c630c102a91485947d",
+  "config_hash": "ddbe5205e81217fe66e285242870fae45214bd7c81e8ebb370060fc63fd98f06",
   "config": {
     "config": {},
     "datasets": [
       "NASA_PCoE"
     ],
     "weightings": [
-      "recency"
+      "recency",
+      "uniform",
+      "final_position"
     ],
     "train_stride": 1
   },

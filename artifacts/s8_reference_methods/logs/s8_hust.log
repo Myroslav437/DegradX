@@ -1,0 +1,6 @@
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] HUST recency trained/integrated_gradients: rank 0.3205170655682675 (0s)
+[s8] HUST recency trained/feature_occlusion: rank 0.29838615535958013 (0s)

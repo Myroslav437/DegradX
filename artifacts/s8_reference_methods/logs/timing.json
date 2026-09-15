@@ -1,0 +1,8 @@
+{
+  "stage": "s8_reference_methods",
+  "device": "cuda",
+  "wall_clock_s": 2945.113,
+  "sections_s": {
+    "figures": 0.397
+  }
+}

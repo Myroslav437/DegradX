@@ -13,3 +13,54 @@
   return fun(*args, **kwargs)
 [s8] MATR recency reference/integrated_gradients: rank 0.8152077222431915 (0s)
 [s8] MATR recency reference/feature_occlusion: rank 0.8152077222431915 (0s)
+/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:176: RuntimeWarning: Mean of empty slice
+  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
+[s8] MATR recency reference/timeshap: rank 0.7548236213446535 (287s)
+[W915 22:03:51.197523776 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 717225984 bytes (free: 95158272, total: 6027083776).
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] MATR uniform trained/integrated_gradients: rank 0.5718953845470307 (0s)
+[s8] MATR uniform trained/feature_occlusion: rank 0.48512261931952255 (0s)
+/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:176: RuntimeWarning: Mean of empty slice
+  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
+[s8] MATR uniform trained/timeshap: rank 0.47022515612918436 (593s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] MATR uniform reference/integrated_gradients: rank 0.8102412569071719 (0s)
+[s8] MATR uniform reference/feature_occlusion: rank 0.8102412569071719 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:176: RuntimeWarning: Mean of empty slice
+  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
+[s8] MATR uniform reference/timeshap: rank 0.7423824139622824 (290s)
+[s8] MATR final_position trained/integrated_gradients: rank 0.14932958442438757 (0s)
+[s8] MATR final_position trained/feature_occlusion: rank 0.16065344255046773 (0s)
+/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:176: RuntimeWarning: Mean of empty slice
+  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
+[s8] MATR final_position trained/timeshap: rank 0.13959428178100175 (591s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[s8] MATR final_position reference/integrated_gradients: rank 0.8495709891293438 (0s)
+[s8] MATR final_position reference/feature_occlusion: rank 0.8495709891293438 (0s)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/scripts/s8_reference_methods.py:176: RuntimeWarning: Mean of empty slice
+  res_k["scores"][f"{model_name}/{meth}"]["seed_spread"] = {k: [float(np.nanmean(ps[k])) for ps in per_seed] for k in sc}
+[s8] MATR final_position reference/timeshap: rank 0.7871174612825006 (278s)
+[PASS] MATR [recency]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 2.32e-08
+[PASS] MATR [recency]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 8.64e-08
+[PASS] MATR [uniform]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 8.29e-09
+[PASS] MATR [uniform]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 1.16e-07
+[PASS] MATR [final_position]: integrated_gradients on the reference model equals w(x - x0): expected < 1e-3 relative; observed 2.16e-07
+[PASS] MATR [final_position]: feature_occlusion on the reference model equals w(x - x0): expected < 1e-3 relative; observed 2.35e-07
+[PASS] MATR: TimeSHAP background instance recorded: expected recorded; observed recorded

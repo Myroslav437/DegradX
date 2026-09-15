@@ -1,0 +1,1469 @@
+{
+  "MATR": {
+    "recency": {
+      "windows": {
+        "train_incl_validation": 212884,
+        "test": 36554
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.7415877834901228,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.008267272559644292,
+          "nrmse": 0.03639236246469504,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.008164836001516204,
+          "nrmse": 0.0359414388588579,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.008142944104835504,
+          "nrmse": 0.03584507118338865,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.008248598576735832,
+          "nrmse": 0.0363101599789585,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.00811620864314254,
+          "nrmse": 0.035727382235120425,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.008396509882981346,
+          "nrmse": 0.03696126248352439,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.008208491927168065,
+          "nrmse": 0.03613361133878914,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.0082206937080183,
+          "nrmse": 0.0361873233252046,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.008443438096478328,
+          "nrmse": 0.03716783950673025,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.008234500943546896,
+          "nrmse": 0.03624810248984045,
+          "epochs": 30,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.03639236246469504,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 2.004897231001246,
+          "ci_low": 1.947038859474884,
+          "ci_high": 2.0596586938626076,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0009050832935963721,
+          "ci_low": 0.0007828179588933705,
+          "ci_high": 0.001106943031012687,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.00029527156471904686,
+          "ci_low": 0.00023548948339089022,
+          "ci_high": 0.00036681709158790585,
+          "units": 45
+        },
+        "internal_resistance": {
+          "nmse_increase": 0.0001725595428644582,
+          "ci_low": 0.00012089071819871403,
+          "ci_high": 0.00021775629701307943,
+          "units": 45
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.000204207792587095,
+          "ci_low": 0.0001393698639741656,
+          "ci_high": 0.0002741524974819332,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 4.344449617119782e-06,
+          "ci_low": -1.758035997964287e-05,
+          "ci_high": 2.3475538147806544e-05,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -5.550592132064219e-06,
+          "ci_low": -1.642398640634433e-05,
+          "ci_high": 3.274742195325215e-06,
+          "units": 45
+        }
+      },
+      "redundant_channels": {
+        "internal_resistance": {
+          "predictability_r2": 0.5460211038589478,
+          "conditional_importance": {
+            "nmse_increase": 1.5857674865541553e-05,
+            "ci_low": -2.5035973143307534e-05,
+            "ci_high": 4.135781101992574e-05,
+            "units": 45
+          }
+        },
+        "temperature_mean": {
+          "predictability_r2": 0.1071060299873352,
+          "conditional_importance": {
+            "nmse_increase": 0.00016126468948881415,
+            "ci_low": 9.764828448225803e-05,
+            "ci_high": 0.00023482838354405667,
+            "units": 45
+          }
+        }
+      },
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.008432447966400452,
+        0.008042786404431273,
+        0.008656813071155635,
+        0.007980537712174834,
+        0.005826224042129139
+      ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 212884,
+        "test": 36554
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.7364422643336379,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.00811632025119113,
+          "nrmse": 0.036682212267801335,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.008343980598451694,
+          "nrmse": 0.03771113731323036,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.008196456404944845,
+          "nrmse": 0.03704439257998006,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.008093769124462297,
+          "nrmse": 0.036580291053267724,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.008211137419352912,
+          "nrmse": 0.037110744334242635,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.008247634542138912,
+          "nrmse": 0.037275695342059705,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.008199645287194066,
+          "nrmse": 0.03705880493089066,
+          "epochs": 24,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.008119040152800775,
+          "nrmse": 0.036694505031653016,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.008170829859303971,
+          "nrmse": 0.0369285718191185,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.008240085672449516,
+          "nrmse": 0.03724157775776554,
+          "epochs": 26,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.036682212267801335,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 2.0034277508978855,
+          "ci_low": 1.9380643599953746,
+          "ci_high": 2.0620353448828337,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0012463764035447356,
+          "ci_low": 0.001124839928466812,
+          "ci_high": 0.0014392804939862476,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.00031290943425930174,
+          "ci_low": 0.00024400151649641994,
+          "ci_high": 0.00040452367856214994,
+          "units": 45
+        },
+        "internal_resistance": {
+          "nmse_increase": 0.00017495481358124968,
+          "ci_low": 0.00012165286664637468,
+          "ci_high": 0.0002323765754831367,
+          "units": 45
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.00017563364473554793,
+          "ci_low": 0.00011055793284704411,
+          "ci_high": 0.00023974619370267282,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": -1.9772198042977708e-05,
+          "ci_low": -4.418438552414756e-05,
+          "ci_high": -3.3687863258944923e-06,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -2.841629498160747e-06,
+          "ci_low": -1.9493714889157296e-05,
+          "ci_high": 1.0175472675493557e-05,
+          "units": 45
+        }
+      },
+      "redundant_channels": {
+        "internal_resistance": {
+          "predictability_r2": 0.5461100935935974,
+          "conditional_importance": {
+            "nmse_increase": -2.3712467993659723e-06,
+            "ci_low": -5.68843793965736e-05,
+            "ci_high": 3.5597697706487215e-05,
+            "units": 45
+          }
+        },
+        "temperature_mean": {
+          "predictability_r2": 0.10834664106369019,
+          "conditional_importance": {
+            "nmse_increase": 0.00011747860414464825,
+            "ci_low": 5.6533288694557425e-05,
+            "ci_high": 0.00017908238187439707,
+            "units": 45
+          }
+        }
+      },
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.008259430179091294,
+        0.007779731473041166,
+        0.008885680274692548,
+        0.0076717185527427,
+        0.005923334945122085
+      ]
+    },
+    "final_position": {
+      "windows": {
+        "train_incl_validation": 212884,
+        "test": 36554
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.7485920515030042,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.008629897524306636,
+          "nrmse": 0.03666346610137654,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.008695947496850985,
+          "nrmse": 0.0369440744078548,
+          "epochs": 29,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.008728493094745184,
+          "nrmse": 0.03708234191587354,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.008759503734467895,
+          "nrmse": 0.037214088270341054,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.008622883644318003,
+          "nrmse": 0.036633668163396624,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.008595783222178108,
+          "nrmse": 0.036518534072214136,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.008619672985316584,
+          "nrmse": 0.036620027921768016,
+          "epochs": 24,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.008806365293629565,
+          "nrmse": 0.03741317605567598,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.008703925344396136,
+          "nrmse": 0.03697796768899861,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.00873951183839939,
+          "nrmse": 0.03712915421385366,
+          "epochs": 31,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.03666346610137654,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.9686510561023767,
+          "ci_low": 1.924544097986321,
+          "ci_high": 2.0143189121677034,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0009859883309121442,
+          "ci_low": 0.000899926585995906,
+          "ci_high": 0.001099884427484504,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.0002184233735481098,
+          "ci_low": 0.000185105726536803,
+          "ci_high": 0.00025452003779034306,
+          "units": 45
+        },
+        "internal_resistance": {
+          "nmse_increase": 0.00022625798158894587,
+          "ci_low": 0.00018065854335712597,
+          "ci_high": 0.0002730114232781466,
+          "units": 45
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.00011666051621007117,
+          "ci_low": 3.666047551705508e-05,
+          "ci_high": 0.00017551945767218223,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 4.958947082568514e-06,
+          "ci_low": -3.8613764925363386e-06,
+          "ci_high": 1.6624434362974234e-05,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": 3.6519385266099335e-06,
+          "ci_low": -2.923716593007574e-06,
+          "ci_high": 1.1221268111716795e-05,
+          "units": 45
+        }
+      },
+      "redundant_channels": {
+        "internal_resistance": {
+          "predictability_r2": 0.5468091070652008,
+          "conditional_importance": {
+            "nmse_increase": 1.803953472453326e-05,
+            "ci_low": -1.1988774647985878e-05,
+            "ci_high": 3.9373491333823444e-05,
+            "units": 45
+          }
+        },
+        "temperature_mean": {
+          "predictability_r2": 0.1078609824180603,
+          "conditional_importance": {
+            "nmse_increase": 9.472806674513879e-05,
+            "ci_low": 2.5017351723848978e-05,
+            "ci_high": 0.0001487220326432538,
+            "units": 45
+          }
+        }
+      },
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.008530057847542965,
+        0.009161883432635184,
+        0.009367609962802646,
+        0.008126244807287908,
+        0.0065425135176214256
+      ]
+    }
+  },
+  "HUST": {
+    "recency": {
+      "windows": {
+        "train_incl_validation": 477109,
+        "test": 85660
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.9147481732741045,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.0031816432907545026,
+          "nrmse": 0.01176853731337559,
+          "epochs": 45,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.0031371016557310786,
+          "nrmse": 0.011603782862336041,
+          "epochs": 54,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.0033207516920391073,
+          "nrmse": 0.012283083496437384,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.0033435193971327708,
+          "nrmse": 0.01236729865271003,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.0033064163841383643,
+          "nrmse": 0.012230058820032313,
+          "epochs": 35,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.0034675121853212604,
+          "nrmse": 0.01282593389903888,
+          "epochs": 21,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.0031612091163504166,
+          "nrmse": 0.011692953622192697,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.0031689233493944484,
+          "nrmse": 0.011721487694408327,
+          "epochs": 55,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.003348857894616154,
+          "nrmse": 0.012387045148809428,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.003173494796074745,
+          "nrmse": 0.011738396956672111,
+          "epochs": 54,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.01176853731337559,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.9759535195005338,
+          "ci_low": 1.952919579310842,
+          "ci_high": 1.9982605395728243,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.000181724450837346,
+          "ci_low": 0.0001677751964980877,
+          "ci_high": 0.00019463089176883244,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 2.8682348363606378e-05,
+          "ci_low": 2.4155604468603706e-05,
+          "ci_high": 3.356307827457144e-05,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 4.434635812479046e-07,
+          "ci_low": -1.3770120587953915e-06,
+          "ci_high": 2.0783338422368328e-06,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -1.7657019625718654e-07,
+          "ci_low": -7.609439248615658e-07,
+          "ci_high": 3.362435770878289e-07,
+          "units": 45
+        }
+      },
+      "redundant_channels": {},
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.003240399614324561,
+        0.003534808793260992,
+        0.002921136295159335,
+        0.002791997013840496,
+        0.002778298583513188
+      ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 477109,
+        "test": 85660
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.9141495545832311,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.003439758261077862,
+          "nrmse": 0.012769810300444624,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.003066650125822611,
+          "nrmse": 0.011384678047787658,
+          "epochs": 43,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.0033934501662101235,
+          "nrmse": 0.01259789543261007,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.00313628508632315,
+          "nrmse": 0.011643191922420287,
+          "epochs": 47,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.003348826300541732,
+          "nrmse": 0.012432233122585028,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.0031491178735239753,
+          "nrmse": 0.011690832554622494,
+          "epochs": 53,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.0032594244651385565,
+          "nrmse": 0.012100336404281228,
+          "epochs": 31,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.0031100010192764665,
+          "nrmse": 0.011545614556618674,
+          "epochs": 55,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.0034373703754415094,
+          "nrmse": 0.012760945477895778,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.003316516972013878,
+          "nrmse": 0.012312287485444192,
+          "epochs": 26,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.012769810300444624,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.9696469332522364,
+          "ci_low": 1.9507090338420272,
+          "ci_high": 1.9910057631506883,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.00011233664595443044,
+          "ci_low": 0.00010444901081411444,
+          "ci_high": 0.00012060715563125263,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 3.036891984330157e-05,
+          "ci_low": 2.402136309880997e-05,
+          "ci_high": 3.544037705781777e-05,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 3.1726741089758044e-07,
+          "ci_low": -1.4265026714319375e-06,
+          "ci_high": 2.2123320679069876e-06,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": -4.91576170718281e-08,
+          "ci_low": -7.099439929545822e-07,
+          "ci_high": 6.389875944050059e-07,
+          "units": 45
+        }
+      },
+      "redundant_channels": {},
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.0037079755164720705,
+        0.003607310483413387,
+        0.003237797609196171,
+        0.0026746419694045737,
+        0.0029171758376523578
+      ]
+    },
+    "final_position": {
+      "windows": {
+        "train_incl_validation": 477109,
+        "test": 85660
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": null,
+      "variance_ratio_void": "no inserted patterns in this profile (D05)",
+      "spearman_y_rul": -0.9155587427193844,
+      "graded_sparse_correlation": null,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.003497949892705109,
+          "nrmse": 0.01286991733976857,
+          "epochs": 42,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.0035202299932612525,
+          "nrmse": 0.012951891942400042,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.003428764322578066,
+          "nrmse": 0.012615364645775801,
+          "epochs": 57,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.003491798216827926,
+          "nrmse": 0.012847283636465529,
+          "epochs": 52,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.0035337459147580614,
+          "nrmse": 0.013001620725764692,
+          "epochs": 38,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.0035562192139354156,
+          "nrmse": 0.013084306159128851,
+          "epochs": 34,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.003518917632610264,
+          "nrmse": 0.012947063407510674,
+          "epochs": 52,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.003521046870677813,
+          "nrmse": 0.012954897458531015,
+          "epochs": 47,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.0036808914735302206,
+          "nrmse": 0.013543009606795012,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.003612369669007307,
+          "nrmse": 0.013290899088568092,
+          "epochs": 28,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.01286991733976857,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.9486870681496755,
+          "ci_low": 1.9280785395894897,
+          "ci_high": 1.9703152003162185,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.0010060819144326496,
+          "ci_low": 0.0009613188492074503,
+          "ci_high": 0.0010565348985903445,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 2.9757858314267008e-05,
+          "ci_low": 2.4226483386494472e-05,
+          "ci_high": 3.55064917287026e-05,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": 7.655111211015322e-07,
+          "ci_low": -4.2412963376562976e-07,
+          "ci_high": 1.713242237473605e-06,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": 3.1111392321397045e-07,
+          "ci_low": -3.373562024335734e-07,
+          "ci_high": 1.1705262607561243e-06,
+          "units": 45
+        }
+      },
+      "redundant_channels": {},
+      "term_ablation": {
+        "void": "no inserted patterns in this profile (D05): the pattern term is identically zero"
+      },
+      "rmse_by_state_quintile": [
+        0.0032733163248339207,
+        0.0039050579619227,
+        0.0033156540549323533,
+        0.0031197558793403207,
+        0.003928297254323427
+      ]
+    }
+  },
+  "NASA_PCoE": {
+    "recency": {
+      "windows": {
+        "train_incl_validation": 11606,
+        "test": 2602
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": 0.00039328477995874325,
+      "variance_ratio_void": null,
+      "spearman_y_rul": -0.533130214568554,
+      "graded_sparse_correlation": 0.07418140997521144,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.02501330877595855,
+          "nrmse": 0.13094758076271257,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.029340489595416422,
+          "nrmse": 0.1536008756508898,
+          "epochs": 19,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.025454381411813016,
+          "nrmse": 0.13325664731296796,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.024438973027097022,
+          "nrmse": 0.127940866315912,
+          "epochs": 39,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.028315072417026483,
+          "nrmse": 0.14823269745481893,
+          "epochs": 19,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.02620090792366467,
+          "nrmse": 0.13716480043168525,
+          "epochs": 27,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.026987198015448417,
+          "nrmse": 0.14128112051628497,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.02790366542998658,
+          "nrmse": 0.14607893402654623,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.029449498819699386,
+          "nrmse": 0.1541715516189726,
+          "epochs": 17,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.02855687023062031,
+          "nrmse": 0.14949853713270503,
+          "epochs": 18,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.13094758076271257,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.8653951779256028,
+          "ci_low": 1.768949553031418,
+          "ci_high": 1.9811992419572788,
+          "units": 39
+        },
+        "charge_time": {
+          "nmse_increase": 0.009534582314654885,
+          "ci_low": 0.005622871245473471,
+          "ci_high": 0.013366459329149042,
+          "units": 39
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.0023456830329810006,
+          "ci_low": 0.001020723785565569,
+          "ci_high": 0.00412335165272638,
+          "units": 39
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.00770019246381863,
+          "ci_low": 0.0042462246354823836,
+          "ci_high": 0.012911147776932096,
+          "units": 39
+        },
+        "null_flat": {
+          "nmse_increase": 0.0022125320369895908,
+          "ci_low": 0.0009065843545064609,
+          "ci_high": 0.004145413607631883,
+          "units": 39
+        },
+        "null_permuted": {
+          "nmse_increase": 0.001491646863606747,
+          "ci_low": 0.0005754971957847656,
+          "ci_high": 0.0025601819196214718,
+          "units": 39
+        }
+      },
+      "redundant_channels": {
+        "temperature_mean": {
+          "predictability_r2": 0.13025158643722534,
+          "conditional_importance": {
+            "nmse_increase": 0.006218171011928702,
+            "ci_low": 0.00324658047433734,
+            "ci_high": 0.010350913726407686,
+            "units": 39
+          }
+        }
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 10.304589026073018,
+          "ci_low": 9.429841025549065,
+          "ci_high": 10.901282930009664,
+          "units": 39
+        },
+        "pattern_term_removed": {
+          "nmse_increase": -3.652465033163998e-05,
+          "ci_low": -0.00039338976524687743,
+          "ci_high": 0.00033132648468346947,
+          "units": 39
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.02113645239216332,
+        0.034662501975103815,
+        0.026448045848200007,
+        0.02292616384340853,
+        0.015356527992953969
+      ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 11606,
+        "test": 2602
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": 0.0002995493905931775,
+      "variance_ratio_void": null,
+      "spearman_y_rul": -0.4433652812613116,
+      "graded_sparse_correlation": -0.02976988179710145,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.025198965440510118,
+          "nrmse": 0.12512181697648148,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.024988847963153198,
+          "nrmse": 0.1240785090435634,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.025587473673629086,
+          "nrmse": 0.12705089839662664,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.02346526788184201,
+          "nrmse": 0.11651339258936298,
+          "epochs": 37,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.025585046796403572,
+          "nrmse": 0.12703884808889665,
+          "epochs": 21,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.023498907691390524,
+          "nrmse": 0.11668042619649219,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.025897736806795017,
+          "nrmse": 0.12859146509386607,
+          "epochs": 18,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.023378727898452613,
+          "nrmse": 0.11608369082290122,
+          "epochs": 34,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.02326543482379621,
+          "nrmse": 0.11552115045253059,
+          "epochs": 31,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.025074024931461898,
+          "nrmse": 0.12450144295585013,
+          "epochs": 27,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.12512181697648148,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.7126822913951996,
+          "ci_low": 1.6266908506845297,
+          "ci_high": 1.8362290104757157,
+          "units": 39
+        },
+        "charge_time": {
+          "nmse_increase": 0.0032574987702389327,
+          "ci_low": 0.0007071968055190005,
+          "ci_high": 0.005713318346140665,
+          "units": 39
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.0005388990139992166,
+          "ci_low": -9.473619907330246e-05,
+          "ci_high": 0.001133367563672686,
+          "units": 39
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.016199669194718762,
+          "ci_low": 0.008515573427944166,
+          "ci_high": 0.02610698584508385,
+          "units": 39
+        },
+        "null_flat": {
+          "nmse_increase": 0.00039521037673072523,
+          "ci_low": -0.0004995929897150464,
+          "ci_high": 0.0013613254204872611,
+          "units": 39
+        },
+        "null_permuted": {
+          "nmse_increase": 0.0010611556065017274,
+          "ci_low": 0.0004836590295205286,
+          "ci_high": 0.0021191933088994526,
+          "units": 39
+        }
+      },
+      "redundant_channels": {
+        "temperature_mean": {
+          "predictability_r2": 0.13025152683258057,
+          "conditional_importance": {
+            "nmse_increase": 0.01666914840160514,
+            "ci_low": 0.011162592439208882,
+            "ci_high": 0.02394666629030569,
+            "units": 39
+          }
+        }
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 8.29395966973613,
+          "ci_low": 7.329697185953586,
+          "ci_high": 8.959362319751076,
+          "units": 39
+        },
+        "pattern_term_removed": {
+          "nmse_increase": -0.00045181512194773554,
+          "ci_low": -0.0011225187045210006,
+          "ci_high": 3.0184946368275684e-05,
+          "units": 39
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.031592677431145105,
+        0.02902929883539274,
+        0.02765904930761725,
+        0.022648024710348682,
+        0.01701319411188702
+      ]
+    },
+    "final_position": {
+      "windows": {
+        "train_incl_validation": 11606,
+        "test": 2602
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": 0.002371211084720736,
+      "variance_ratio_void": null,
+      "spearman_y_rul": -0.6728101901778222,
+      "graded_sparse_correlation": 0.13815672414865524,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.046442922405856554,
+          "nrmse": 0.24794219052601085,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.04226705010458101,
+          "nrmse": 0.22564869838339346,
+          "epochs": 35,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.04266927732520137,
+          "nrmse": 0.22779604598779885,
+          "epochs": 37,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.04065126278690318,
+          "nrmse": 0.21702258645468614,
+          "epochs": 38,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.04101494320194149,
+          "nrmse": 0.2189641464187214,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.04120672699577456,
+          "nrmse": 0.21998801165990534,
+          "epochs": 42,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.04174664423422519,
+          "nrmse": 0.22287043713766386,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.042191390500464804,
+          "nrmse": 0.2252447787545861,
+          "epochs": 41,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.041364107602258234,
+          "nrmse": 0.22082821055989862,
+          "epochs": 43,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.04180958092309996,
+          "nrmse": 0.22320643366190707,
+          "epochs": 33,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.24794219052601085,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.7558088741754194,
+          "ci_low": 1.6060449679515785,
+          "ci_high": 1.8912183925714312,
+          "units": 39
+        },
+        "charge_time": {
+          "nmse_increase": 0.03158117264219551,
+          "ci_low": 0.014631271916523862,
+          "ci_high": 0.047756120024471084,
+          "units": 39
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.022322172393954096,
+          "ci_low": 0.0022725526818173874,
+          "ci_high": 0.08969577981625287,
+          "units": 39
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.007969132424539041,
+          "ci_low": -0.0033229473524553263,
+          "ci_high": 0.015861208307604683,
+          "units": 39
+        },
+        "null_flat": {
+          "nmse_increase": -0.0001555521921806603,
+          "ci_low": -0.008231455809630788,
+          "ci_high": 0.004221216790702793,
+          "units": 39
+        },
+        "null_permuted": {
+          "nmse_increase": -0.001967911308284362,
+          "ci_low": -0.008565537030715635,
+          "ci_high": 0.002589705524198772,
+          "units": 39
+        }
+      },
+      "redundant_channels": {
+        "temperature_mean": {
+          "predictability_r2": 0.13025152683258057,
+          "conditional_importance": {
+            "nmse_increase": 0.010442798873240768,
+            "ci_low": 0.0002780536823027516,
+            "ci_high": 0.019733225729986946,
+            "units": 39
+          }
+        }
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 12.433210873835975,
+          "ci_low": 11.862440855394686,
+          "ci_high": 12.95808777794872,
+          "units": 39
+        },
+        "pattern_term_removed": {
+          "nmse_increase": -0.002996522218440092,
+          "ci_low": -0.006531777961121607,
+          "ci_high": -0.000584592901440655,
+          "units": 39
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.015204484868973498,
+        0.07118510102214394,
+        0.037795495003284434,
+        0.04238577055144262,
+        0.038660211406410294
+      ]
+    }
+  }
+}

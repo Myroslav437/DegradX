@@ -1,3 +1,27 @@
 /home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:113: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
 Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
   tot += float(loss) * len(idx)
+[PASS] MATR [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.036
+[PASS] MATR [recency]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] MATR [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] MATR [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0000, 0.0000]
+[PASS] MATR [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.037
+[PASS] MATR [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] MATR [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0000, -0.0000]
+[PASS] MATR [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0000, 0.0000]
+[PASS] MATR [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.037
+[PASS] MATR [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] MATR [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] MATR [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.012
+[PASS] HUST [recency]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] HUST [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0000, 0.0000]
+[PASS] HUST [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.013
+[PASS] HUST [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] HUST [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0000, 0.0000]
+[PASS] HUST [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.013
+[PASS] HUST [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it): expected 10/10; observed 10/10
+[PASS] HUST [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]

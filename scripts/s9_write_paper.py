@@ -228,6 +228,51 @@ def figure_degradation(kind="recency"):
     prov("Figure 7", src, f"all profiles, {kind}", "scripts/s7_responsiveness.py; scripts/s9_write_paper.py", "generation 0; evaluation 20260915")
 
 
+def table_usability(kind="recency"):
+    """Table 3: declared target properties and usability checks per profile (recency weighting; other weightings in results)."""
+    notes = Notes()
+    U = {}
+    for ds in ("MATR", "HUST", "NASA_PCoE"):
+        src = ARTIFACTS_DIR / "s6_usability" / "tables" / f"usability_{ds}.json"
+        U[ds] = (src, json.loads(src.read_text())[ds])
+    no_pat = "no inserted patterns in the profile (D05)"
+
+    def ci(x):
+        return f"{f3(x['nmse_increase'], 4)} [{f3(x['ci_low'], 4)}, {f3(x['ci_high'], 4)}]"
+
+    rows = []
+
+    def row(label, bound, fn):
+        cells = []
+        for ds in ("MATR", "HUST", "NASA_PCoE"):
+            src, r = U[ds]
+            cells.append(fn(ds, r[kind]))
+            prov(f"Table 3 / {label} / {NAME[ds]}", src, f"{ds}.{kind}", "scripts/s6_usability.py", "generation 0; model_init 0-4 (A, B); evaluation 20260915")
+        rows.append(f"    {label} & {bound} & " + " & ".join(cells) + " \\\\")
+
+    row("Variance ratio of the two terms of Eq.~\\ref{eq:target}", "0.05--0.50",
+        lambda ds, r: notes.void(no_pat) if r["variance_ratio_pattern_to_mean"] is None else f3(r["variance_ratio_pattern_to_mean"], 4))
+    row("Association of $y$ with RUL (Spearman)", "reported", lambda ds, r: f3(r["spearman_y_rul"], 2))
+    row("Model error on $y$ (NRMSE; members passing)", "$\\le$ 0.30", lambda ds, r: f"{f3(r['primary_nrmse'], 3)} ({r['gate_pass_members']}/10)")
+    row("Correlation of graded and sparse fields", "$\\le$ 0.30",
+        lambda ds, r: notes.void(no_pat) if r["graded_sparse_correlation"] is None else f3(r["graded_sparse_correlation"], 3))
+    for name, label in (("mean_term_removed", "Error change, mean term removed"), ("pattern_term_removed", "Error change, pattern term removed")):
+        row(label, "$>0$", lambda ds, r, name=name: notes.void(no_pat) if "void" in r["term_ablation"] else ci(r["term_ablation"][name]))
+    for c, label in (("null_flat", "Permutation importance, null channel (flat)"), ("null_permuted", "Permutation importance, null channel (permuted)")):
+        row(label, "$\\le$ 0.02", lambda ds, r, c=c: ci(r["permutation_importance"][c]))
+
+    def redundant(ds, r):
+        red = r["redundant_channels"]
+        if not red:
+            return "--"
+        return "; ".join(f"{c.replace('_', ' ').replace('internal resistance', 'IR').replace('temperature mean', 'temp.')}: {f3(v['predictability_r2'], 2)}, {f3(v['conditional_importance']['nmse_increase'], 4)}"
+                         for c, v in red.items())
+    row("Redundant channels: $R^2$ from others, conditional importance", "reported", redundant)
+    (TABLES / "table_usability.tex").write_text("\n".join(rows) + "\n")
+    (TABLES / "table_usability_notes.tex").write_text("\\def\\TabUsabilityNotes{" + notes.text() + "}\n")
+    write_json({ds: U[ds][1] for ds in U}, RESULTS_DIR / "table3_usability.json")
+
+
 def figure_fidelity():
     """Paper Figure 6: measured (grey) and generated (black) capacity trajectories, one panel per profile, z = 0 and z = 1 marked."""
     import pickle
@@ -286,7 +331,7 @@ def main() -> int:
     StageContext.from_args(args)
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     fns = {"fidelity": table_fidelity, "properties": table_properties, "figure_fidelity": figure_fidelity, "resolution": table_resolution,
-           "figure_degradation": figure_degradation}
+           "figure_degradation": figure_degradation, "usability": table_usability}
     for t in args.tables:
         fns[t]()
     old = json.loads((RESULTS_DIR / "provenance.json").read_text()) if (RESULTS_DIR / "provenance.json").exists() else []

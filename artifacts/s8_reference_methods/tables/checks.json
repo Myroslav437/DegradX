@@ -1,0 +1,51 @@
+[
+  {
+    "name": "MATR [recency]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "2.32e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "8.64e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "8.29e-09",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "1.16e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position]: integrated_gradients on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "2.16e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [final_position]: feature_occlusion on the reference model equals w(x - x0)",
+    "expected": "< 1e-3 relative",
+    "observed": "2.35e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: TimeSHAP background instance recorded",
+    "expected": "recorded",
+    "observed": "recorded",
+    "passed": true,
+    "severity": "error"
+  }
+]

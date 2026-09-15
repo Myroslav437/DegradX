@@ -1,11 +1,19 @@
 {
   "stage": "s6_usability",
   "device": "cuda",
-  "wall_clock_s": 54.204,
+  "wall_clock_s": 212.558,
   "sections_s": {
-    "NASA_PCoE_recency_windows": 0.054,
-    "NASA_PCoE_recency_ensemble": 32.137,
-    "NASA_PCoE_recency_importance": 0.608,
-    "NASA_PCoE_recency_ablation": 20.708
+    "NASA_PCoE_recency_windows": 0.058,
+    "NASA_PCoE_recency_ensemble": 32.82,
+    "NASA_PCoE_recency_importance": 0.6,
+    "NASA_PCoE_recency_ablation": 21.124,
+    "NASA_PCoE_uniform_windows": 0.051,
+    "NASA_PCoE_uniform_ensemble": 38.429,
+    "NASA_PCoE_uniform_importance": 0.499,
+    "NASA_PCoE_uniform_ablation": 20.684,
+    "NASA_PCoE_final_position_windows": 0.048,
+    "NASA_PCoE_final_position_ensemble": 57.095,
+    "NASA_PCoE_final_position_importance": 0.99,
+    "NASA_PCoE_final_position_ablation": 37.837
   }
 }

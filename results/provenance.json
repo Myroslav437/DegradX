@@ -782,5 +782,221 @@
     "script": "scripts/s7_responsiveness.py; scripts/s9_write_paper.py",
     "seeds": "generation 0; evaluation 20260915",
     "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Variance ratio of the two terms of Eq.~\\ref{eq:target} / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Variance ratio of the two terms of Eq.~\\ref{eq:target} / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Variance ratio of the two terms of Eq.~\\ref{eq:target} / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Association of $y$ with RUL (Spearman) / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Association of $y$ with RUL (Spearman) / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Association of $y$ with RUL (Spearman) / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Model error on $y$ (NRMSE; members passing) / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Model error on $y$ (NRMSE; members passing) / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Model error on $y$ (NRMSE; members passing) / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Correlation of graded and sparse fields / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Correlation of graded and sparse fields / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Correlation of graded and sparse fields / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Error change, mean term removed / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Error change, mean term removed / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Error change, mean term removed / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Error change, pattern term removed / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Error change, pattern term removed / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Error change, pattern term removed / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (flat) / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (flat) / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (flat) / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (permuted) / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (permuted) / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Permutation importance, null channel (permuted) / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+  },
+  {
+    "cell": "Table 3 / Redundant channels: $R^2$ from others, conditional importance / MATR",
+    "artifact": "artifacts/s6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "603f8fe295aac12159c115d9a17d2bf6f7a36e2b"
+  },
+  {
+    "cell": "Table 3 / Redundant channels: $R^2$ from others, conditional importance / HUST",
+    "artifact": "artifacts/s6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "uncommitted"
+  },
+  {
+    "cell": "Table 3 / Redundant channels: $R^2$ from others, conditional importance / NASA PCoE",
+    "artifact": "artifacts/s6_usability/tables/usability_NASA_PCoE.json",
+    "key": "NASA_PCoE.recency",
+    "script": "scripts/s6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
   }
 ]

@@ -158,6 +158,9 @@ def main() -> int:
                 exact_pf = Wt[None] * (Xpf - spec.x0)
                 sc = score_maps(exact, exact_pf, W, zero_ch)
                 res_k["scores"]["reference_exact"] = {k: unit_mean_ci(v, unit_ids, args.seed) for k, v in sc.items()}
+                ts_sorted = sorted(ts_idx)  # the same ceiling on the TimeSHAP window subset (D23), so TimeSHAP rows compare like with like
+                res_k["scores"]["reference_exact_timeshap_windows"] = {k: unit_mean_ci([v[i] for i in ts_sorted], [unit_ids[i] for i in ts_sorted], args.seed)
+                                                                       for k, v in sc.items()}
                 for model_name, model in (("trained", trained), ("reference", ref)):
                     for meth in ("integrated_gradients", "feature_occlusion", "timeshap"):
                         t0 = time.perf_counter()

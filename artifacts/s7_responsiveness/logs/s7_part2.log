@@ -1,0 +1,6 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:113: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[s7-2] MATR noise_variance_multiplier=0.25: nrmse 0.022 rank IG 0.482 ref 0.869 retrieval IG None
+[s7-2] MATR noise_variance_multiplier=0.5: nrmse 0.026 rank IG 0.535 ref 0.880 retrieval IG None
+[s7-2] MATR noise_variance_multiplier=1: nrmse 0.037 rank IG 0.518 ref 0.799 retrieval IG None

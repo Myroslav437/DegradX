@@ -169,6 +169,346 @@
         0.02292616384340853,
         0.015356527992953969
       ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 11606,
+        "test": 2602
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": 0.0002995493905931775,
+      "variance_ratio_void": null,
+      "spearman_y_rul": -0.4433652812613116,
+      "graded_sparse_correlation": -0.02976988179710145,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.025198965440510118,
+          "nrmse": 0.12512181697648148,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.024988847963153198,
+          "nrmse": 0.1240785090435634,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.025587473673629086,
+          "nrmse": 0.12705089839662664,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.02346526788184201,
+          "nrmse": 0.11651339258936298,
+          "epochs": 37,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.025585046796403572,
+          "nrmse": 0.12703884808889665,
+          "epochs": 21,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.023498907691390524,
+          "nrmse": 0.11668042619649219,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.025897736806795017,
+          "nrmse": 0.12859146509386607,
+          "epochs": 18,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.023378727898452613,
+          "nrmse": 0.11608369082290122,
+          "epochs": 34,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.02326543482379621,
+          "nrmse": 0.11552115045253059,
+          "epochs": 31,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.025074024931461898,
+          "nrmse": 0.12450144295585013,
+          "epochs": 27,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.12512181697648148,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.7126822913951996,
+          "ci_low": 1.6266908506845297,
+          "ci_high": 1.8362290104757157,
+          "units": 39
+        },
+        "charge_time": {
+          "nmse_increase": 0.0032574987702389327,
+          "ci_low": 0.0007071968055190005,
+          "ci_high": 0.005713318346140665,
+          "units": 39
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.0005388990139992166,
+          "ci_low": -9.473619907330246e-05,
+          "ci_high": 0.001133367563672686,
+          "units": 39
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.016199669194718762,
+          "ci_low": 0.008515573427944166,
+          "ci_high": 0.02610698584508385,
+          "units": 39
+        },
+        "null_flat": {
+          "nmse_increase": 0.00039521037673072523,
+          "ci_low": -0.0004995929897150464,
+          "ci_high": 0.0013613254204872611,
+          "units": 39
+        },
+        "null_permuted": {
+          "nmse_increase": 0.0010611556065017274,
+          "ci_low": 0.0004836590295205286,
+          "ci_high": 0.0021191933088994526,
+          "units": 39
+        }
+      },
+      "redundant_channels": {
+        "temperature_mean": {
+          "predictability_r2": 0.13025152683258057,
+          "conditional_importance": {
+            "nmse_increase": 0.01666914840160514,
+            "ci_low": 0.011162592439208882,
+            "ci_high": 0.02394666629030569,
+            "units": 39
+          }
+        }
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 8.29395966973613,
+          "ci_low": 7.329697185953586,
+          "ci_high": 8.959362319751076,
+          "units": 39
+        },
+        "pattern_term_removed": {
+          "nmse_increase": -0.00045181512194773554,
+          "ci_low": -0.0011225187045210006,
+          "ci_high": 3.0184946368275684e-05,
+          "units": 39
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.031592677431145105,
+        0.02902929883539274,
+        0.02765904930761725,
+        0.022648024710348682,
+        0.01701319411188702
+      ]
+    },
+    "final_position": {
+      "windows": {
+        "train_incl_validation": 11606,
+        "test": 2602
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "variance_ratio_pattern_to_mean": 0.002371211084720736,
+      "variance_ratio_void": null,
+      "spearman_y_rul": -0.6728101901778222,
+      "graded_sparse_correlation": 0.13815672414865524,
+      "ensemble": [
+        {
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.046442922405856554,
+          "nrmse": 0.24794219052601085,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.04226705010458101,
+          "nrmse": 0.22564869838339346,
+          "epochs": 35,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.04266927732520137,
+          "nrmse": 0.22779604598779885,
+          "epochs": 37,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.04065126278690318,
+          "nrmse": 0.21702258645468614,
+          "epochs": 38,
+          "passes_gate": true
+        },
+        {
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.04101494320194149,
+          "nrmse": 0.2189641464187214,
+          "epochs": 46,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.04120672699577456,
+          "nrmse": 0.21998801165990534,
+          "epochs": 42,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.04174664423422519,
+          "nrmse": 0.22287043713766386,
+          "epochs": 36,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.042191390500464804,
+          "nrmse": 0.2252447787545861,
+          "epochs": 41,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.041364107602258234,
+          "nrmse": 0.22082821055989862,
+          "epochs": 43,
+          "passes_gate": true
+        },
+        {
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.04180958092309996,
+          "nrmse": 0.22320643366190707,
+          "epochs": 33,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.24794219052601085,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 1.7558088741754194,
+          "ci_low": 1.6060449679515785,
+          "ci_high": 1.8912183925714312,
+          "units": 39
+        },
+        "charge_time": {
+          "nmse_increase": 0.03158117264219551,
+          "ci_low": 0.014631271916523862,
+          "ci_high": 0.047756120024471084,
+          "units": 39
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.022322172393954096,
+          "ci_low": 0.0022725526818173874,
+          "ci_high": 0.08969577981625287,
+          "units": 39
+        },
+        "temperature_mean": {
+          "nmse_increase": 0.007969132424539041,
+          "ci_low": -0.0033229473524553263,
+          "ci_high": 0.015861208307604683,
+          "units": 39
+        },
+        "null_flat": {
+          "nmse_increase": -0.0001555521921806603,
+          "ci_low": -0.008231455809630788,
+          "ci_high": 0.004221216790702793,
+          "units": 39
+        },
+        "null_permuted": {
+          "nmse_increase": -0.001967911308284362,
+          "ci_low": -0.008565537030715635,
+          "ci_high": 0.002589705524198772,
+          "units": 39
+        }
+      },
+      "redundant_channels": {
+        "temperature_mean": {
+          "predictability_r2": 0.13025152683258057,
+          "conditional_importance": {
+            "nmse_increase": 0.010442798873240768,
+            "ci_low": 0.0002780536823027516,
+            "ci_high": 0.019733225729986946,
+            "units": 39
+          }
+        }
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 12.433210873835975,
+          "ci_low": 11.862440855394686,
+          "ci_high": 12.95808777794872,
+          "units": 39
+        },
+        "pattern_term_removed": {
+          "nmse_increase": -0.002996522218440092,
+          "ci_low": -0.006531777961121607,
+          "ci_high": -0.000584592901440655,
+          "units": 39
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.015204484868973498,
+        0.07118510102214394,
+        0.037795495003284434,
+        0.04238577055144262,
+        0.038660211406410294
+      ]
     }
   }
 }

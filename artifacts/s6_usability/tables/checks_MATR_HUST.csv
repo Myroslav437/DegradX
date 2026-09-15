@@ -1,0 +1,25 @@
+name,expected,observed,passed,severity
+MATR [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.036,True,warn
+MATR [recency]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+MATR [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+MATR [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"-0.0000 [-0.0000, 0.0000]",True,warn
+MATR [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.037,True,warn
+MATR [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+MATR [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"-0.0000 [-0.0000, -0.0000]",True,warn
+MATR [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"-0.0000 [-0.0000, 0.0000]",True,warn
+MATR [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.037,True,warn
+MATR [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+MATR [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+MATR [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+HUST [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.012,True,warn
+HUST [recency]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+HUST [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+HUST [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"-0.0000 [-0.0000, 0.0000]",True,warn
+HUST [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.013,True,warn
+HUST [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+HUST [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+HUST [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"-0.0000 [-0.0000, 0.0000]",True,warn
+HUST [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3),<= 0.3,0.013,True,warn
+HUST [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it),10/10,10/10,True,warn
+HUST [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn
+HUST [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test),<= 0.02,"0.0000 [-0.0000, 0.0000]",True,warn

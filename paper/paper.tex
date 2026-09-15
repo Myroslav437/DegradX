@@ -69,6 +69,7 @@
 
 \input{tables/table_fidelity_notes}
 \input{tables/table_properties_notes}
+\input{tables/table_usability_notes}
 \begin{document}
 \maketitle
 
@@ -360,20 +361,21 @@ NASA PCoE cannot be assessed on any of these measures. Its held-out split contai
 
 Table~\ref{tab:res:usability} reports the four checks of Section~\ref{sec:protocol} together with the two declared properties of the decomposable target. A profile that fails the accuracy threshold has its attribution scores reported as void rather than as poor, and the row records which of the two outcomes applies; the same convention is used in every table that follows.
 
+The graded field is learnable in all three profiles. The primary model predicts the decomposable target of held-out generated units with a normalized error of 0.036 in MATR, 0.012 in HUST, and 0.131 in NASA PCoE under recency weighting, and every one of the ten ensemble members passes the bound under all three weightings; the largest error, 0.248, occurs for NASA PCoE under final-position weighting. The target is associated with RUL as intended, with rank correlations of $-0.74$, $-0.91$, and $-0.53$. The construction-level leakage test passes in every profile: permuting either null channel raises the normalized error by at most 0.004 at the upper end of its interval. No channel intended to carry no information is used.
+
+The redundant channels behave as Section~\ref{sec:protocol} anticipates, and the models' use of the channels shows the non-identifiability that motivates the reference model. In every profile the model's error rests almost entirely on capacity: permuting it raises the normalized error by 1.7 to 2.0, whereas permuting charge time or mean discharge voltage, which carry two thirds of the target weights, raises it by at most 0.032. Every channel is a function of one degradation state, and capacity determines that state with the least noise, so a model that reads capacity alone reproduces the target that is defined on three channels. The redundant zero-weight channels are predicted from the others with a coefficient of determination of 0.55 for MATR internal resistance and 0.11 to 0.13 for temperature, and their conditional permutation importance is at most 0.017: they add little that the other channels do not already carry.
+
+The sparse set is not usable on a trained model. In MATR and HUST no pattern type is enabled, so the variance ratio, the graded-sparse correlation, and the ablations are void. In NASA PCoE the pattern term accounts for a variance ratio of 0.0004 against the mean term under recency weighting, below the declared band by two orders of magnitude, and retraining without it leaves the error on $y$ unchanged, $-0.0000$ [$-0.0004$, $0.0003$]; under final-position weighting its removal even lowers the error, by 0.003. The fields are separable in the sense of the correlation bound, 0.074 under recency weighting and 0.14 under final-position weighting, but a model has no reason to use a term that carries so little of the target. At the amplitudes fitted from NASA PCoE, whose median is 40\,mAh, the pattern term becomes learnable only when those amplitudes are multiplied by four, where the ablation first raises the error significantly and no generated amplitude yet exceeds the largest regeneration measured in the dataset; the declared band is reached only at a multiple of sixteen, where half the generated amplitudes exceed it. The generator retains the fitted amplitudes, and attribution scores against the sparse set are consequently void on trained models and are reported on the reference model only.
+
 \begin{table}[t]
-  \caption{Usability of the attribution ground truth, per profile. The first two rows are the declared properties of the decomposable target, the remaining rows the checks that the target is learnable and that its two contributions are separable. Each threshold or declared bound is stated in the row it governs. \hl{Placeholder values.}}
+  \caption{Usability of the attribution ground truth, per profile, under recency weighting on generated test units. The first two rows are the declared properties of the decomposable target, the remaining rows the checks that the target is learnable and that its two contributions are separable. Each threshold or declared bound is stated in the row it governs. Model error: normalized root-mean-square error of the primary model, and the number of the ten ensemble members that pass the bound. Error changes and permutation importance: increase in mean squared error normalized by the variance of $y$, with 95\% intervals over test units. Redundant channels carry the degradation state but have zero target weight; for each, the coefficient of determination when it is predicted from the other channels, and its conditional permutation importance. \protect\TabUsabilityNotes}
   \centering
+  \scriptsize
   \begin{tabular}{llccc}
     \toprule
     Quantity & Bound & MATR & HUST & NASA PCoE \\
     \midrule
-    Variance ratio of the two terms of Eq.~\ref{eq:target} & band \hl{--} & -- & -- & -- \\
-    Association of $y$ with RUL & reported & -- & -- & -- \\
-    Model error on $y$ & $\le$ \hl{--} & -- & -- & -- \\
-    Correlation of graded and sparse fields & $\le$ \hl{--} & -- & -- & -- \\
-    Error change, mean term removed & sign & -- & -- & -- \\
-    Error change, pattern term removed & sign & -- & -- & -- \\
-    Permutation importance, zero-weight channels & $\approx 0$ & -- & -- & -- \\
+\csname @@input\endcsname tables/table_usability.tex
     \bottomrule
   \end{tabular}
   \label{tab:res:usability}

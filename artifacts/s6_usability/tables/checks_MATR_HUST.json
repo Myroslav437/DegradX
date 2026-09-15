@@ -1,0 +1,170 @@
+[
+  {
+    "name": "MATR [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.036",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.037",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0000, -0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.037",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.012",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.013",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [final_position]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.013",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [final_position]: all 10 ensemble members pass the gate (identifiability floor requires it)",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [final_position]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [final_position]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "warn"
+  }
+]
