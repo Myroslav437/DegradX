@@ -1,0 +1,464 @@
+[
+ {
+  "cell_id": "HUST_1-1",
+  "n_cycles": 1504,
+  "source_n_cycles": 1504,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-2",
+  "n_cycles": 2678,
+  "source_n_cycles": 2678,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-3",
+  "n_cycles": 1858,
+  "source_n_cycles": 1858,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-4",
+  "n_cycles": 1500,
+  "source_n_cycles": 1500,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-5",
+  "n_cycles": 1971,
+  "source_n_cycles": 1971,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-6",
+  "n_cycles": 1143,
+  "source_n_cycles": 1143,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-7",
+  "n_cycles": 1678,
+  "source_n_cycles": 1678,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_1-8",
+  "n_cycles": 2285,
+  "source_n_cycles": 2285,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-1",
+  "n_cycles": 1702,
+  "source_n_cycles": 1702,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-2",
+  "n_cycles": 1697,
+  "source_n_cycles": 1697,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-3",
+  "n_cycles": 1848,
+  "source_n_cycles": 1848,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-4",
+  "n_cycles": 1811,
+  "source_n_cycles": 1811,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-5",
+  "n_cycles": 2030,
+  "source_n_cycles": 2030,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-6",
+  "n_cycles": 2285,
+  "source_n_cycles": 2285,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-7",
+  "n_cycles": 1783,
+  "source_n_cycles": 1783,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_10-8",
+  "n_cycles": 1400,
+  "source_n_cycles": 1400,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-2",
+  "n_cycles": 2651,
+  "source_n_cycles": 2651,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-3",
+  "n_cycles": 1751,
+  "source_n_cycles": 1751,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-4",
+  "n_cycles": 1499,
+  "source_n_cycles": 1499,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-5",
+  "n_cycles": 1386,
+  "source_n_cycles": 1386,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-6",
+  "n_cycles": 1572,
+  "source_n_cycles": 1572,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-7",
+  "n_cycles": 2202,
+  "source_n_cycles": 2202,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_2-8",
+  "n_cycles": 1481,
+  "source_n_cycles": 1481,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-1",
+  "n_cycles": 1938,
+  "source_n_cycles": 1938,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-2",
+  "n_cycles": 2283,
+  "source_n_cycles": 2283,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-3",
+  "n_cycles": 1649,
+  "source_n_cycles": 1649,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-4",
+  "n_cycles": 1766,
+  "source_n_cycles": 1766,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-5",
+  "n_cycles": 2657,
+  "source_n_cycles": 2657,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-6",
+  "n_cycles": 2491,
+  "source_n_cycles": 2491,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-7",
+  "n_cycles": 2479,
+  "source_n_cycles": 2479,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_3-8",
+  "n_cycles": 2342,
+  "source_n_cycles": 2342,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-1",
+  "n_cycles": 2217,
+  "source_n_cycles": 2217,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-2",
+  "n_cycles": 1782,
+  "source_n_cycles": 1782,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-3",
+  "n_cycles": 1142,
+  "source_n_cycles": 1142,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-4",
+  "n_cycles": 1491,
+  "source_n_cycles": 1491,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-5",
+  "n_cycles": 1561,
+  "source_n_cycles": 1561,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-6",
+  "n_cycles": 1380,
+  "source_n_cycles": 1380,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-7",
+  "n_cycles": 2216,
+  "source_n_cycles": 2216,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_4-8",
+  "n_cycles": 1706,
+  "source_n_cycles": 1706,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-1",
+  "n_cycles": 2507,
+  "source_n_cycles": 2507,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-2",
+  "n_cycles": 1926,
+  "source_n_cycles": 1926,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-3",
+  "n_cycles": 2689,
+  "source_n_cycles": 2689,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-4",
+  "n_cycles": 1962,
+  "source_n_cycles": 1962,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-5",
+  "n_cycles": 1583,
+  "source_n_cycles": 1583,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-6",
+  "n_cycles": 2460,
+  "source_n_cycles": 2460,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_5-7",
+  "n_cycles": 1448,
+  "source_n_cycles": 1448,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-1",
+  "n_cycles": 1609,
+  "source_n_cycles": 1609,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-2",
+  "n_cycles": 1908,
+  "source_n_cycles": 1908,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-3",
+  "n_cycles": 1804,
+  "source_n_cycles": 1804,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-4",
+  "n_cycles": 1717,
+  "source_n_cycles": 1717,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-5",
+  "n_cycles": 2178,
+  "source_n_cycles": 2178,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-6",
+  "n_cycles": 2468,
+  "source_n_cycles": 2468,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_6-8",
+  "n_cycles": 2450,
+  "source_n_cycles": 2450,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-1",
+  "n_cycles": 1690,
+  "source_n_cycles": 1690,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-2",
+  "n_cycles": 2030,
+  "source_n_cycles": 2030,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-3",
+  "n_cycles": 1295,
+  "source_n_cycles": 1295,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-4",
+  "n_cycles": 1393,
+  "source_n_cycles": 1393,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-5",
+  "n_cycles": 1873,
+  "source_n_cycles": 1875,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-6",
+  "n_cycles": 1419,
+  "source_n_cycles": 1419,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-7",
+  "n_cycles": 1685,
+  "source_n_cycles": 1685,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_7-8",
+  "n_cycles": 1938,
+  "source_n_cycles": 1938,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-1",
+  "n_cycles": 1308,
+  "source_n_cycles": 1308,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-2",
+  "n_cycles": 2041,
+  "source_n_cycles": 2041,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-3",
+  "n_cycles": 2290,
+  "source_n_cycles": 2290,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-4",
+  "n_cycles": 1885,
+  "source_n_cycles": 1885,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-5",
+  "n_cycles": 1348,
+  "source_n_cycles": 1348,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-6",
+  "n_cycles": 2365,
+  "source_n_cycles": 2365,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-7",
+  "n_cycles": 2047,
+  "source_n_cycles": 2047,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_8-8",
+  "n_cycles": 1679,
+  "source_n_cycles": 1679,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-1",
+  "n_cycles": 2057,
+  "source_n_cycles": 2057,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-2",
+  "n_cycles": 2143,
+  "source_n_cycles": 2143,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-3",
+  "n_cycles": 1905,
+  "source_n_cycles": 1905,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-4",
+  "n_cycles": 1975,
+  "source_n_cycles": 1975,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-5",
+  "n_cycles": 2168,
+  "source_n_cycles": 2168,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-6",
+  "n_cycles": 1742,
+  "source_n_cycles": 1742,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-7",
+  "n_cycles": 2012,
+  "source_n_cycles": 2012,
+  "dq_missing": 0
+ },
+ {
+  "cell_id": "HUST_9-8",
+  "n_cycles": 2308,
+  "source_n_cycles": 2308,
+  "dq_missing": 0
+ }
+]

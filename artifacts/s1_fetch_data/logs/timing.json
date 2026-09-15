@@ -1,0 +1,12 @@
+{
+  "stage": "s1_fetch_data",
+  "device": "cpu",
+  "wall_clock_s": 25.288,
+  "sections_s": {
+    "verify_raw": 0.003,
+    "ingest": 20.586,
+    "cycle_tables": 0.605,
+    "checks": 2.28,
+    "figures": 1.814
+  }
+}

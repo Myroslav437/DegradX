@@ -24,7 +24,20 @@ cd paper && pdflatex paper && bibtex paper && pdflatex paper && pdflatex paper
 
 The preamble switch `\reviewtrue` / `\reviewfalse` toggles highlighting of amended spans.
 
-## S1 … S9
+## S1 — data acquisition
+
+```bash
+python scripts/s1_fetch_data.py --device cpu --workers 4        # fetch/verify, ingest, cycle tables, checks, figures
+python scripts/s1_fetch_data.py --no-download                    # print the manual file tree instead of downloading
+python scripts/s1_fetch_data.py --rehash                         # recompute SHA-256 of raw files
+```
+
+- Needs ~12 GB for raw data, ~12.5 GB for `data/processed/`, ~5 GB RAM per MATR batch process, and ~4.3 GB of temporary
+  disk for BatteryML's HUST extraction.
+- MATR runs one batch per child process (b2, b1, b3, b4). A batch whose `data/work/matr_b<k>_log.json` exists is skipped
+  unless `--force`.
+
+## S2 … S9
 
 Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
 

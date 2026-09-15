@@ -1,0 +1,66 @@
+{
+  "stage": "s1_fetch_data",
+  "argv": [
+    "scripts/s1_fetch_data.py",
+    "--device",
+    "cpu"
+  ],
+  "started_utc": "2026-09-15T17:15:35.931376+00:00",
+  "finished_utc": "2026-09-15T17:16:01.219531+00:00",
+  "wall_clock_s": 25.288,
+  "status": "ok",
+  "error": null,
+  "git": {
+    "commit": "a460111cb2a09e4d6c50e78affd881c1d243b806",
+    "dirty": false,
+    "branch": "main"
+  },
+  "config_hash": "8a5bbeb2651b60a45a88b653ca84ea3a19e01878fc15c851e15ee132b2b95e7c",
+  "config": {
+    "config": {},
+    "args": {
+      "config": "/home/mmishchuk/projects/DegradX/configs/stages/s1_fetch_data.yaml",
+      "out_dir": "/home/mmishchuk/projects/DegradX/artifacts/s1_fetch_data",
+      "seed": "20260915",
+      "device": "cpu",
+      "dry_run": "False",
+      "force": "False",
+      "no_download": "False",
+      "rehash": "False",
+      "workers": "4"
+    }
+  },
+  "declarations_sha256": "dc541d2ca05cf296f216772206a2d7b23e191979f09a2f06fa1ea6fee5ece87c",
+  "seeds": {
+    "note": "no random numbers are drawn in S1"
+  },
+  "device": {
+    "device": "cpu",
+    "torch": "2.14.0+cu130",
+    "cuda_available": true
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "torch": "2.14.0+cu130",
+    "captum": "0.9.0",
+    "timeshap": "1.0.4",
+    "shap": "0.49.1",
+    "BatteryML": "0.0.1",
+    "h5py": "3.16.0",
+    "matplotlib": "3.11.2",
+    "csaps": "1.3.3",
+    "kneed": null,
+    "degradx": "0.0.1"
+  },
+  "skipped": [
+    "cycle table MATR",
+    "cycle table HUST",
+    "cycle table NASA_PCoE"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "MATR_cycles_outside_voltage within 1.5-4.5 V": {
+    "cycles": 12,
+    "cells": 1,
+    "cycles_with_nan_samples": 0
+  },
+  "MATR_cycles_outside_|current| <= 10 C": {
+    "cycles": 3,
+    "cells": 3,
+    "cycles_with_nan_samples": 0
+  },
+  "MATR_cycles_outside_cycler capacity within [0, 1.5 x nominal] Ah": {
+    "cycles": 1,
+    "cells": 1,
+    "cycles_with_nan_samples": 0
+  },
+  "MATR_cycles_outside_temperature within -5..80 degC": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 0
+  },
+  "MATR_integrated_minus_cycler_mAh": {
+    "median": 0.0,
+    "p05": 0.0,
+    "p95": 0.0
+  },
+  "MATR_units": 180,
+  "MATR_cycles": 154231,
+  "MATR_cycles_per_unit": {
+    "min": 169,
+    "median": 829.0,
+    "max": 2236
+  },
+  "MATR_degenerate_cycles": 0,
+  "HUST_cycles_outside_voltage within 1.5-4.5 V": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 0
+  },
+  "HUST_cycles_outside_|current| <= 10 C": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 0
+  },
+  "HUST_cycles_outside_cycler capacity within [0, 1.5 x nominal] Ah": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 0
+  },
+  "HUST_integrated_minus_cycler_mAh": {
+    "median": 18.32869583333241,
+    "p05": 13.737413888888584,
+    "p95": 24.432872361112892
+  },
+  "HUST_units": 77,
+  "HUST_cycles": 146120,
+  "HUST_cycles_per_unit": {
+    "min": 1142,
+    "median": 1873.0,
+    "max": 2689
+  },
+  "HUST_degenerate_cycles": 0,
+  "NASA_PCoE_cycles_outside_voltage within 1.5-4.5 V": {
+    "cycles": 17,
+    "cells": 5,
+    "cycles_with_nan_samples": 12
+  },
+  "NASA_PCoE_cycles_outside_|current| <= 10 C": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 12
+  },
+  "NASA_PCoE_cycles_outside_cycler capacity within [0, 1.5 x nominal] Ah": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 0
+  },
+  "NASA_PCoE_cycles_outside_temperature within -5..80 degC": {
+    "cycles": 0,
+    "cells": 0,
+    "cycles_with_nan_samples": 12
+  },
+  "NASA_PCoE_integrated_minus_cycler_mAh": {
+    "median": 27.661018168156694,
+    "p05": 3.382422038397781,
+    "p95": 333.0239790966591
+  },
+  "NASA_PCoE_units": 34,
+  "NASA_PCoE_cycles": 2794,
+  "NASA_PCoE_cycles_per_unit": {
+    "min": 25,
+    "median": 69.5,
+    "max": 197
+  },
+  "NASA_PCoE_degenerate_cycles": 39,
+  "MATR_dropped_placeholder_cycles": {},
+  "nasa_B0005_integrated_minus_raw_capacity_mAh_median": 6.925777749517303
+}

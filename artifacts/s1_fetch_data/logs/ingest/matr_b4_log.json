@@ -1,0 +1,367 @@
+{
+ "batch": 4,
+ "load_s": 110.00469598000018,
+ "total_s": 125.11837618200025,
+ "cells": [
+  {
+   "cell_id": "MATR_b4c0",
+   "n_cycles": 982,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 857.0,
+   "policy": "4.8-5.2-5.2-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c1",
+   "n_cycles": 861,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 761.0,
+   "policy": "3.6-6-5.6-4.755",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c2",
+   "n_cycles": 784,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 743.0,
+   "policy": "3.6-6-5.6-4.755",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c3",
+   "n_cycles": 911,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 778.0,
+   "policy": "8-4.4-4.4-3.94",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c4",
+   "n_cycles": 912,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 657.0,
+   "policy": "8-6-4.8-3",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c5",
+   "n_cycles": 1067,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 914.0,
+   "policy": "4.4-5.6-5.2-4.252",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c6",
+   "n_cycles": 777,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 707.0,
+   "policy": "8-4.4-4.4-3.94",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c7",
+   "n_cycles": 562,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 530.0,
+   "policy": "8-6-4.8-3",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c8",
+   "n_cycles": 718,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 678.0,
+   "policy": "4.4-5.6-5.2-4.252",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c9",
+   "n_cycles": 529,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 443.0,
+   "policy": "8-7-5.2-2.68",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c10",
+   "n_cycles": 1082,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 873.0,
+   "policy": "4.8-5.2-5.2-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c11",
+   "n_cycles": 930,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 864.0,
+   "policy": "4.8-5.2-5.2-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c12",
+   "n_cycles": 898,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 819.0,
+   "policy": "6-5.6-4.4-3.834",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c13",
+   "n_cycles": 869,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 772.0,
+   "policy": "6-5.6-4.4-3.834",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c14",
+   "n_cycles": 767,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 608.0,
+   "policy": "8-4.4-4.4-3.94",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c15",
+   "n_cycles": 871,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 676.0,
+   "policy": "8-4.4-4.4-3.94",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c16",
+   "n_cycles": 983,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 910.0,
+   "policy": "7-4.8-4.8-3.652",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c17",
+   "n_cycles": 930,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 828.0,
+   "policy": "7-4.8-4.8-3.652",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c18",
+   "n_cycles": 1057,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 907.0,
+   "policy": "3.6-6-5.6-4.755",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c19",
+   "n_cycles": 1111,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 992.0,
+   "policy": "7-4.8-4.8-3.652",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c20",
+   "n_cycles": 804,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 748.0,
+   "policy": "3.6-6-5.6-4.755",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c21",
+   "n_cycles": 903,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 774.0,
+   "policy": "4.8-5.2-5.2-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c22",
+   "n_cycles": 745,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 672.0,
+   "policy": "8-6-4.8-3",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c23",
+   "n_cycles": 1094,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 1039.0,
+   "policy": "6-5.6-4.4-3.834",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c24",
+   "n_cycles": 1115,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 989.0,
+   "policy": "4.4-5.6-5.2-4.252",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c25",
+   "n_cycles": 567,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 454.0,
+   "policy": "8-7-5.2-2.68",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c26",
+   "n_cycles": 579,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 477.0,
+   "policy": "8-7-5.2-2.68",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c27",
+   "n_cycles": 563,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 501.0,
+   "policy": "8-6-4.8-3",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c28",
+   "n_cycles": 882,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 829.0,
+   "policy": "6-5.6-4.4-3.834",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c29",
+   "n_cycles": 956,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 888.0,
+   "policy": "5.2-5.2-4.8-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c30",
+   "n_cycles": 719,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 616.0,
+   "policy": "3.6-6-5.6-4.755",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c31",
+   "n_cycles": 832,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 560.0,
+   "policy": "8-6-4.8-3",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c32",
+   "n_cycles": 839,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 755.0,
+   "policy": "7-4.8-4.8-3.652",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c33",
+   "n_cycles": 530,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 506.0,
+   "policy": "8-7-5.2-2.68",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c34",
+   "n_cycles": 997,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 892.0,
+   "policy": "5.2-5.2-4.8-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c35",
+   "n_cycles": 1131,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 1082.0,
+   "policy": "4.8-5.2-5.2-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c36",
+   "n_cycles": 713,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 600.0,
+   "policy": "8-7-5.2-2.68",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c37",
+   "n_cycles": 1005,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 864.0,
+   "policy": "7-4.8-4.8-3.652",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c38",
+   "n_cycles": 1230,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 1166.0,
+   "policy": "5.2-5.2-4.8-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c39",
+   "n_cycles": 761,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 739.0,
+   "policy": "8-4.4-4.4-3.94",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c40",
+   "n_cycles": 1122,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 1089.0,
+   "policy": "4.4-5.6-5.2-4.252",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c41",
+   "n_cycles": 997,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 837.0,
+   "policy": "5.2-5.2-4.8-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c42",
+   "n_cycles": 915,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 775.0,
+   "policy": "5.2-5.2-4.8-4.16",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c43",
+   "n_cycles": 951,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 751.0,
+   "policy": "4.4-5.6-5.2-4.252",
+   "batch": "2019-01-24"
+  },
+  {
+   "cell_id": "MATR_b4c44",
+   "n_cycles": 1077,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 943.0,
+   "policy": "6-5.6-4.4-3.834",
+   "batch": "2019-01-24"
+  }
+ ]
+}

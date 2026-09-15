@@ -1,0 +1,450 @@
+[
+  {
+    "name": "raw MATR/MATR_batch_20170512.mat present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "raw MATR/MATR_batch_20170630.mat present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "raw MATR/MATR_batch_20180412.mat present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "raw MATR/MATR_batch_20190124.mat present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "raw HUST/hust_data.zip present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'published/S0'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "raw NASA_PCoE/5.Battery_Data_Set.zip present, size and sha256 as recorded",
+    "expected": "present, size and hash match",
+    "observed": "{'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'published/S0'}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "no duplicate cell ids across datasets",
+    "expected": "unique",
+    "observed": "291 ids, unique=True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: cycle_number strictly increasing within every cell",
+    "expected": "True",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 0.99992",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: every finite cycle has voltage within 1.5-4.5 V",
+    "expected": "all cycles",
+    "observed": "12 cycles in 1 cells outside; 0 cycles with NaN samples",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 0.99998",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: every finite cycle has |current| <= 10 C",
+    "expected": "all cycles",
+    "observed": "3 cycles in 3 cells outside; 0 cycles with NaN samples",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 0.99999",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "all cycles",
+    "observed": "1 cycles in 1 cells outside; 0 cycles with NaN samples",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: units plausible, median cycle and >= 99% of cycles with temperature within -5..80 degC",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: every finite cycle has temperature within -5..80 degC",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 0 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: median cycle duration in seconds within documented range",
+    "expected": "(1800, 7200) s",
+    "observed": "2721 s",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: time non-decreasing within cycles",
+    "expected": "0 negative steps",
+    "observed": "max fraction 1.51e-03",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: cycle_number strictly increasing within every cell",
+    "expected": "True",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: every finite cycle has voltage within 1.5-4.5 V",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 0 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: every finite cycle has |current| <= 10 C",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 0 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 0 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: median cycle duration in seconds within documented range",
+    "expected": "(1800, 14400) s",
+    "observed": "3175 s",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: time non-decreasing within cycles",
+    "expected": "0 negative steps",
+    "observed": "max fraction 0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: cycle_number strictly increasing within every cell",
+    "expected": "True",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 0.99380",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: every finite cycle has voltage within 1.5-4.5 V",
+    "expected": "all cycles",
+    "observed": "17 cycles in 5 cells outside; 12 cycles with NaN samples",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: every finite cycle has |current| <= 10 C",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 12 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 0 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: units plausible, median cycle and >= 99% of cycles with temperature within -5..80 degC",
+    "expected": "median inside, >= 0.99",
+    "observed": "median inside=True, fraction 1.00000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: every finite cycle has temperature within -5..80 degC",
+    "expected": "all cycles",
+    "observed": "0 cycles in 0 cells outside; 12 cycles with NaN samples",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: median cycle duration in seconds within documented range",
+    "expected": "(3600, 86400) s",
+    "observed": "14190 s",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: time non-decreasing within cycles",
+    "expected": "0 negative steps",
+    "observed": "max fraction 0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: 180 unique cells (BatteryML convention)",
+    "expected": "180",
+    "observed": "180",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: carry-over keys b2c7/8/9/15/16 not emitted",
+    "expected": "absent",
+    "observed": "absent",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2017-05-12: cells emitted",
+    "expected": "46",
+    "observed": "46",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2017-05-12: stored + dropped + skipped index 0 equals file cycle entries",
+    "expected": "42204",
+    "observed": "42204",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2017-06-30: cells emitted",
+    "expected": "43",
+    "observed": "43",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2017-06-30: stored + dropped + skipped index 0 equals file cycle entries",
+    "expected": "21527",
+    "observed": "21527",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2018-04-12: cells emitted",
+    "expected": "46",
+    "observed": "46",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2018-04-12: stored + dropped + skipped index 0 equals file cycle entries",
+    "expected": "51007",
+    "observed": "51007",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2019-01-24: cells emitted",
+    "expected": "45",
+    "observed": "45",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR 2019-01-24: stored + dropped + skipped index 0 equals file cycle entries",
+    "expected": "39673",
+    "observed": "39673",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR merged b1c0..4 lengths equal merged entries",
+    "expected": "{'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}",
+    "observed": "{'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: 77 cells equal to ESI Table S1 channels",
+    "expected": "Table S1 channels",
+    "observed": "77 cells; diff []",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: per-cell cycle counts equal Table S1 cycle life (7-5 minus 2)",
+    "expected": "0 mismatches",
+    "observed": "0 mismatches",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: total stored cycles = 146,120",
+    "expected": "146120",
+    "observed": "146120",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: cycler capacity attached to every cycle",
+    "expected": "0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA: 34 unique cells",
+    "expected": "34",
+    "observed": "34",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA: one cycle per discharge operation (counts equal the file scan)",
+    "expected": "0 mismatches",
+    "observed": "0 mismatches",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA BatteryData carries every BatteryData field present in MATR",
+    "expected": "['already_spent_cycles', 'anode_material', 'cathode_material', 'cell_id', 'charge_protocol', 'cycle_data', 'depth_of_charge', 'depth_of_discharge', 'description', 'discharge_protocol', 'electrolyte_material', 'form_factor', 'max_current_limit_in_A', 'max_voltage_limit_in_V', 'min_current_limit_in_A', 'min_voltage_limit_in_V', 'nominal_capacity_in_Ah', 'reference']",
+    "observed": "missing []",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA CycleData has the core CycleData fields of MATR",
+    "expected": "['charge_capacity_in_Ah', 'current_in_A', 'cycle_number', 'discharge_capacity_in_Ah', 'internal_resistance_in_ohm', 'temperature_in_C', 'time_in_s', 'voltage_in_V']",
+    "observed": "missing []",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA BatteryData carries every BatteryData field present in HUST",
+    "expected": "['already_spent_cycles', 'anode_material', 'cathode_material', 'cell_id', 'charge_protocol', 'cycle_data', 'depth_of_charge', 'depth_of_discharge', 'description', 'discharge_protocol', 'electrolyte_material', 'form_factor', 'max_current_limit_in_A', 'max_voltage_limit_in_V', 'min_current_limit_in_A', 'min_voltage_limit_in_V', 'nominal_capacity_in_Ah', 'reference']",
+    "observed": "missing []",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA CycleData has the core CycleData fields of HUST",
+    "expected": "['charge_capacity_in_Ah', 'current_in_A', 'cycle_number', 'discharge_capacity_in_Ah', 'internal_resistance_in_ohm', 'temperature_in_C', 'time_in_s', 'voltage_in_V']",
+    "observed": "missing []",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA cycle_number strictly increasing from 1",
+    "expected": "1..N",
+    "observed": "1..168",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA series stored as list[float] like BatteryML",
+    "expected": "list[float]",
+    "observed": "float",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA time_in_s non-decreasing within every cycle",
+    "expected": "True",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA B0005 first discharge: converted V/I/T equal raw arrays",
+    "expected": "max abs diff 0",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA B0005 capacity_cycler_Ah equals raw Capacity for every discharge",
+    "expected": "equal",
+    "observed": "max diff 0.0",
+    "passed": true,
+    "severity": "error"
+  }
+]

@@ -1,0 +1,95 @@
+{
+ "MATR": {
+  "units": 180,
+  "a": {
+   "reach": 96,
+   "median_abs_T_minus_documented": 1.0,
+   "p90_abs_T_minus_documented": 2.0,
+   "documented_compared": 96,
+   "z_at_T_min": 1.00005877798204
+  },
+  "b": {
+   "reach": 173,
+   "median_abs_T_minus_documented": 4.0,
+   "p90_abs_T_minus_documented": 6.0,
+   "documented_compared": 173,
+   "z_at_T_min": 0.9800218175387767
+  },
+  "c": {
+   "reach": 173,
+   "median_abs_T_minus_documented": 2.0,
+   "p90_abs_T_minus_documented": 2.0,
+   "documented_compared": 173,
+   "z_at_T_min": 0.982645251977099
+  },
+  "d": {
+   "reach": 175,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 1.0000014110253386
+  }
+ },
+ "HUST": {
+  "units": 77,
+  "a": {
+   "reach": 11,
+   "median_abs_T_minus_documented": 0.0,
+   "p90_abs_T_minus_documented": 0.0,
+   "documented_compared": 11,
+   "z_at_T_min": 1.000055345619633
+  },
+  "b": {
+   "reach": 77,
+   "median_abs_T_minus_documented": 17.0,
+   "p90_abs_T_minus_documented": 28.80000000000001,
+   "documented_compared": 77,
+   "z_at_T_min": 0.9800023445627014
+  },
+  "c": {
+   "reach": 77,
+   "median_abs_T_minus_documented": 0.0,
+   "p90_abs_T_minus_documented": 0.0,
+   "documented_compared": 77,
+   "z_at_T_min": 0.9974342608288678
+  },
+  "d": {
+   "reach": 77,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 1.0000123756591508
+  }
+ },
+ "NASA_PCoE": {
+  "units": 33,
+  "a": {
+   "reach": 12,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 1.0006497043002403
+  },
+  "b": {
+   "reach": 12,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 0.9807746101345858
+  },
+  "c": {
+   "reach": 12,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 1.0006497043002403
+  },
+  "d": {
+   "reach": 14,
+   "median_abs_T_minus_documented": null,
+   "p90_abs_T_minus_documented": null,
+   "documented_compared": 0,
+   "z_at_T_min": 1.0077250532894837
+  }
+ }
+}

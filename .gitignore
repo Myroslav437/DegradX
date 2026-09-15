@@ -1,5 +1,6 @@
 # datasets are never committed (R10); fetch script + checksums reproduce them
-data/raw/
+/data/
+# (data/raw, data/processed, data/generated, data/work are all ignored)
 data/processed/
 data/generated/
 workspace/

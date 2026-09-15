@@ -1,0 +1,50 @@
+{
+ "HUST": {
+  "capacity_cycler_Ah": {
+   "units": 77,
+   "units_crossing": 0,
+   "median_abs_diff_to_documented_cycles": null,
+   "within_5_cycles_of_documented": 0,
+   "comparable_units": 0
+  },
+  "capacity_integrated_Ah": {
+   "units": 77,
+   "units_crossing": 0,
+   "median_abs_diff_to_documented_cycles": null,
+   "within_5_cycles_of_documented": 0,
+   "comparable_units": 0
+  }
+ },
+ "MATR": {
+  "capacity_cycler_Ah": {
+   "units": 180,
+   "units_crossing": 88,
+   "median_abs_diff_to_documented_cycles": 1.0,
+   "within_5_cycles_of_documented": 86,
+   "comparable_units": 88
+  },
+  "capacity_integrated_Ah": {
+   "units": 180,
+   "units_crossing": 88,
+   "median_abs_diff_to_documented_cycles": 1.0,
+   "within_5_cycles_of_documented": 86,
+   "comparable_units": 88
+  }
+ },
+ "NASA_PCoE": {
+  "capacity_cycler_Ah": {
+   "units": 34,
+   "units_crossing": 26,
+   "median_abs_diff_to_documented_cycles": 43.0,
+   "within_5_cycles_of_documented": 0,
+   "comparable_units": 3
+  },
+  "capacity_integrated_Ah": {
+   "units": 34,
+   "units_crossing": 25,
+   "median_abs_diff_to_documented_cycles": 42.0,
+   "within_5_cycles_of_documented": 0,
+   "comparable_units": 3
+  }
+ }
+}

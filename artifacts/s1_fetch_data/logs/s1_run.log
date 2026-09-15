@@ -1,0 +1,106 @@
+[skip] MATR batch 2: /home/mmishchuk/projects/DegradX/data/work/matr_b2_log.json exists
+[skip] MATR batch 1: /home/mmishchuk/projects/DegradX/data/work/matr_b1_log.json exists
+[skip] MATR batch 3: /home/mmishchuk/projects/DegradX/data/work/matr_b3_log.json exists
+[skip] MATR batch 4: /home/mmishchuk/projects/DegradX/data/work/matr_b4_log.json exists
+[skip] HUST BatteryML preprocess: 77 pickles exist
+[skip] NASA_B0005.pkl exists
+[skip] NASA_B0006.pkl exists
+[skip] NASA_B0007.pkl exists
+[skip] NASA_B0018.pkl exists
+[skip] NASA_B0025.pkl exists
+[skip] NASA_B0026.pkl exists
+[skip] NASA_B0027.pkl exists
+[skip] NASA_B0028.pkl exists
+[skip] NASA_B0029.pkl exists
+[skip] NASA_B0030.pkl exists
+[skip] NASA_B0031.pkl exists
+[skip] NASA_B0032.pkl exists
+[skip] NASA_B0033.pkl exists
+[skip] NASA_B0034.pkl exists
+[skip] NASA_B0036.pkl exists
+[skip] NASA_B0038.pkl exists
+[skip] NASA_B0039.pkl exists
+[skip] NASA_B0040.pkl exists
+[skip] NASA_B0041.pkl exists
+[skip] NASA_B0042.pkl exists
+[skip] NASA_B0043.pkl exists
+[skip] NASA_B0044.pkl exists
+[skip] NASA_B0045.pkl exists
+[skip] NASA_B0046.pkl exists
+[skip] NASA_B0047.pkl exists
+[skip] NASA_B0048.pkl exists
+[skip] NASA_B0049.pkl exists
+[skip] NASA_B0050.pkl exists
+[skip] NASA_B0051.pkl exists
+[skip] NASA_B0052.pkl exists
+[skip] NASA_B0053.pkl exists
+[skip] NASA_B0054.pkl exists
+[skip] NASA_B0055.pkl exists
+[skip] NASA_B0056.pkl exists
+[skip] cycle table MATR: outputs exist (/home/mmishchuk/projects/DegradX/data/processed/cycle_tables/MATR.csv.gz); use --force to recompute
+[skip] cycle table HUST: outputs exist (/home/mmishchuk/projects/DegradX/data/processed/cycle_tables/HUST.csv.gz); use --force to recompute
+[skip] cycle table NASA_PCoE: outputs exist (/home/mmishchuk/projects/DegradX/data/processed/cycle_tables/NASA_PCoE.csv.gz); use --force to recompute
+[PASS] raw MATR/MATR_batch_20170512.mat present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}
+[PASS] raw MATR/MATR_batch_20170630.mat present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}
+[PASS] raw MATR/MATR_batch_20180412.mat present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}
+[PASS] raw MATR/MATR_batch_20190124.mat present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'first verification (no published hash)'}
+[PASS] raw HUST/hust_data.zip present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'published/S0'}
+[PASS] raw NASA_PCoE/5.Battery_Data_Set.zip present, size and sha256 as recorded: expected present, size and hash match; observed {'present': True, 'size_ok': True, 'sha256_ok': True, 'sha256_reference': 'published/S0'}
+[PASS] no duplicate cell ids across datasets: expected unique; observed 291 ids, unique=True
+[PASS] MATR: cycle_number strictly increasing within every cell: expected True; observed True
+[PASS] MATR: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V: expected median inside, >= 0.99; observed median inside=True, fraction 0.99992
+[WARN] MATR: every finite cycle has voltage within 1.5-4.5 V: expected all cycles; observed 12 cycles in 1 cells outside; 0 cycles with NaN samples
+[PASS] MATR: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C: expected median inside, >= 0.99; observed median inside=True, fraction 0.99998
+[WARN] MATR: every finite cycle has |current| <= 10 C: expected all cycles; observed 3 cycles in 3 cells outside; 0 cycles with NaN samples
+[PASS] MATR: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah: expected median inside, >= 0.99; observed median inside=True, fraction 0.99999
+[WARN] MATR: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah: expected all cycles; observed 1 cycles in 1 cells outside; 0 cycles with NaN samples
+[PASS] MATR: units plausible, median cycle and >= 99% of cycles with temperature within -5..80 degC: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] MATR: every finite cycle has temperature within -5..80 degC: expected all cycles; observed 0 cycles in 0 cells outside; 0 cycles with NaN samples
+[PASS] MATR: median cycle duration in seconds within documented range: expected (1800, 7200) s; observed 2721 s
+[WARN] MATR: time non-decreasing within cycles: expected 0 negative steps; observed max fraction 1.51e-03
+[PASS] HUST: cycle_number strictly increasing within every cell: expected True; observed True
+[PASS] HUST: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] HUST: every finite cycle has voltage within 1.5-4.5 V: expected all cycles; observed 0 cycles in 0 cells outside; 0 cycles with NaN samples
+[PASS] HUST: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] HUST: every finite cycle has |current| <= 10 C: expected all cycles; observed 0 cycles in 0 cells outside; 0 cycles with NaN samples
+[PASS] HUST: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] HUST: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah: expected all cycles; observed 0 cycles in 0 cells outside; 0 cycles with NaN samples
+[PASS] HUST: median cycle duration in seconds within documented range: expected (1800, 14400) s; observed 3175 s
+[PASS] HUST: time non-decreasing within cycles: expected 0 negative steps; observed max fraction 0.00e+00
+[PASS] NASA_PCoE: cycle_number strictly increasing within every cell: expected True; observed True
+[PASS] NASA_PCoE: units plausible, median cycle and >= 99% of cycles with voltage within 1.5-4.5 V: expected median inside, >= 0.99; observed median inside=True, fraction 0.99380
+[WARN] NASA_PCoE: every finite cycle has voltage within 1.5-4.5 V: expected all cycles; observed 17 cycles in 5 cells outside; 12 cycles with NaN samples
+[PASS] NASA_PCoE: units plausible, median cycle and >= 99% of cycles with |current| <= 10 C: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] NASA_PCoE: every finite cycle has |current| <= 10 C: expected all cycles; observed 0 cycles in 0 cells outside; 12 cycles with NaN samples
+[PASS] NASA_PCoE: units plausible, median cycle and >= 99% of cycles with cycler capacity within [0, 1.5 x nominal] Ah: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] NASA_PCoE: every finite cycle has cycler capacity within [0, 1.5 x nominal] Ah: expected all cycles; observed 0 cycles in 0 cells outside; 0 cycles with NaN samples
+[PASS] NASA_PCoE: units plausible, median cycle and >= 99% of cycles with temperature within -5..80 degC: expected median inside, >= 0.99; observed median inside=True, fraction 1.00000
+[PASS] NASA_PCoE: every finite cycle has temperature within -5..80 degC: expected all cycles; observed 0 cycles in 0 cells outside; 12 cycles with NaN samples
+[PASS] NASA_PCoE: median cycle duration in seconds within documented range: expected (3600, 86400) s; observed 14190 s
+[PASS] NASA_PCoE: time non-decreasing within cycles: expected 0 negative steps; observed max fraction 0.00e+00
+[PASS] MATR: 180 unique cells (BatteryML convention): expected 180; observed 180
+[PASS] MATR: carry-over keys b2c7/8/9/15/16 not emitted: expected absent; observed absent
+[PASS] MATR 2017-05-12: cells emitted: expected 46; observed 46
+[PASS] MATR 2017-05-12: stored + dropped + skipped index 0 equals file cycle entries: expected 42204; observed 42204
+[PASS] MATR 2017-06-30: cells emitted: expected 43; observed 43
+[PASS] MATR 2017-06-30: stored + dropped + skipped index 0 equals file cycle entries: expected 21527; observed 21527
+[PASS] MATR 2018-04-12: cells emitted: expected 46; observed 46
+[PASS] MATR 2018-04-12: stored + dropped + skipped index 0 equals file cycle entries: expected 51007; observed 51007
+[PASS] MATR 2019-01-24: cells emitted: expected 45; observed 45
+[PASS] MATR 2019-01-24: stored + dropped + skipped index 0 equals file cycle entries: expected 39673; observed 39673
+[PASS] MATR merged b1c0..4 lengths equal merged entries: expected {'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}; observed {'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}
+[PASS] HUST: 77 cells equal to ESI Table S1 channels: expected Table S1 channels; observed 77 cells; diff []
+[PASS] HUST: per-cell cycle counts equal Table S1 cycle life (7-5 minus 2): expected 0 mismatches; observed 0 mismatches
+[PASS] HUST: total stored cycles = 146,120: expected 146120; observed 146120
+[PASS] HUST: cycler capacity attached to every cycle: expected 0; observed 0
+[PASS] NASA: 34 unique cells: expected 34; observed 34
+[PASS] NASA: one cycle per discharge operation (counts equal the file scan): expected 0 mismatches; observed 0 mismatches
+[PASS] NASA BatteryData carries every BatteryData field present in MATR: expected ['already_spent_cycles', 'anode_material', 'cathode_material', 'cell_id', 'charge_protocol', 'cycle_data', 'depth_of_charge', 'depth_of_discharge', 'description', 'discharge_protocol', 'electrolyte_material', 'form_factor', 'max_current_limit_in_A', 'max_voltage_limit_in_V', 'min_current_limit_in_A', 'min_voltage_limit_in_V', 'nominal_capacity_in_Ah', 'reference']; observed missing []
+[PASS] NASA CycleData has the core CycleData fields of MATR: expected ['charge_capacity_in_Ah', 'current_in_A', 'cycle_number', 'discharge_capacity_in_Ah', 'internal_resistance_in_ohm', 'temperature_in_C', 'time_in_s', 'voltage_in_V']; observed missing []
+[PASS] NASA BatteryData carries every BatteryData field present in HUST: expected ['already_spent_cycles', 'anode_material', 'cathode_material', 'cell_id', 'charge_protocol', 'cycle_data', 'depth_of_charge', 'depth_of_discharge', 'description', 'discharge_protocol', 'electrolyte_material', 'form_factor', 'max_current_limit_in_A', 'max_voltage_limit_in_V', 'min_current_limit_in_A', 'min_voltage_limit_in_V', 'nominal_capacity_in_Ah', 'reference']; observed missing []
+[PASS] NASA CycleData has the core CycleData fields of HUST: expected ['charge_capacity_in_Ah', 'current_in_A', 'cycle_number', 'discharge_capacity_in_Ah', 'internal_resistance_in_ohm', 'temperature_in_C', 'time_in_s', 'voltage_in_V']; observed missing []
+[PASS] NASA cycle_number strictly increasing from 1: expected 1..N; observed 1..168
+[PASS] NASA series stored as list[float] like BatteryML: expected list[float]; observed float
+[PASS] NASA time_in_s non-decreasing within every cycle: expected True; observed True
+[PASS] NASA B0005 first discharge: converted V/I/T equal raw arrays: expected max abs diff 0; observed 0.0
+[PASS] NASA B0005 capacity_cycler_Ah equals raw Capacity for every discharge: expected equal; observed max diff 0.0

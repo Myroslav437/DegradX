@@ -1,0 +1,68 @@
+[
+  {
+    "file": "MATR/MATR_batch_20170512.mat",
+    "present": true,
+    "bytes": 3025320241,
+    "expected_bytes": 3025320241,
+    "size_ok": true,
+    "sha256": "9d928ab978f0e3c70b31cb833a749fedd35094d01af76475d69b40aa3497f5ba",
+    "sha256_reference": "first verification (no published hash)",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  },
+  {
+    "file": "MATR/MATR_batch_20170630.mat",
+    "present": true,
+    "bytes": 2007331155,
+    "expected_bytes": 2007331155,
+    "size_ok": true,
+    "sha256": "63ab200d09ecb237fee5ef3a5c5db76e3212e3206a0bd92f769e1427fed338b8",
+    "sha256_reference": "first verification (no published hash)",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  },
+  {
+    "file": "MATR/MATR_batch_20180412.mat",
+    "present": true,
+    "bytes": 3236690412,
+    "expected_bytes": 3236690412,
+    "size_ok": true,
+    "sha256": "62c30e413b63e6144720e016deed3661fac8468641794a5807b123fe84717998",
+    "sha256_reference": "first verification (no published hash)",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  },
+  {
+    "file": "MATR/MATR_batch_20190124.mat",
+    "present": true,
+    "bytes": 2601295745,
+    "expected_bytes": 2601295745,
+    "size_ok": true,
+    "sha256": "9604dfd58926a99d8aece76e1c407defb7359190edcc21e4d4dd217a726882af",
+    "sha256_reference": "first verification (no published hash)",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  },
+  {
+    "file": "HUST/hust_data.zip",
+    "present": true,
+    "bytes": 1188136932,
+    "expected_bytes": 1188136932,
+    "size_ok": true,
+    "sha256": "071d24617153693b0d29059568525e620f6af6512acc9d00c98c7adcf15125db",
+    "sha256_reference": "published/S0",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  },
+  {
+    "file": "NASA_PCoE/5.Battery_Data_Set.zip",
+    "present": true,
+    "bytes": 209708670,
+    "expected_bytes": 209708670,
+    "size_ok": true,
+    "sha256": "82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e",
+    "sha256_reference": "published/S0",
+    "hash_source": "recorded configs/raw_checksums.sha256",
+    "sha256_ok": true
+  }
+]

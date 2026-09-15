@@ -1,0 +1,14 @@
+{
+ "MATR": {
+  "capacity_cycler_Ah": 173,
+  "capacity_integrated_Ah": 173
+ },
+ "HUST": {
+  "capacity_cycler_Ah": 77,
+  "capacity_integrated_Ah": 1
+ },
+ "NASA_PCoE": {
+  "capacity_cycler_Ah": 12,
+  "capacity_integrated_Ah": 15
+ }
+}

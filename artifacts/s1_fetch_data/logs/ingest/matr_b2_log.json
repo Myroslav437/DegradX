@@ -1,0 +1,351 @@
+{
+ "batch": 2,
+ "load_s": 72.34985595199942,
+ "total_s": 84.50845651399959,
+ "cells": [
+  {
+   "cell_id": "MATR_b2c0",
+   "n_cycles": 325,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 300.0,
+   "policy": "1C(4%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c1",
+   "n_cycles": 169,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 148.0,
+   "policy": "2C(10%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c2",
+   "n_cycles": 463,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 438.0,
+   "policy": "2C(2%)-5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c3",
+   "n_cycles": 360,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 335.0,
+   "policy": "2C(7%)-5.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c4",
+   "n_cycles": 470,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 444.0,
+   "policy": "3.6C(22%)-5.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c5",
+   "n_cycles": 506,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 480.0,
+   "policy": "3.6C(2%)-4.85C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c6",
+   "n_cycles": 544,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 511.0,
+   "policy": "3.6C(30%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c10",
+   "n_cycles": 595,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 561.0,
+   "policy": "3.6C(9%)-5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c11",
+   "n_cycles": 504,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 477.0,
+   "policy": "4C(13%)-5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c12",
+   "n_cycles": 490,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 458.0,
+   "policy": "4C(31%)-5",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c13",
+   "n_cycles": 519,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 483.0,
+   "policy": "4C(40%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c14",
+   "n_cycles": 508,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 485.0,
+   "policy": "4C(4%)-4.85C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c17",
+   "n_cycles": 524,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 494.0,
+   "policy": "4.4C(24%)-5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c18",
+   "n_cycles": 522,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 487.0,
+   "policy": "4.4C(47%)-5.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c19",
+   "n_cycles": 488,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 461.0,
+   "policy": "4.4C(55%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c20",
+   "n_cycles": 530,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 502.0,
+   "policy": "4.4C(8%)-4.85C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c21",
+   "n_cycles": 519,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 489.0,
+   "policy": "4.65C(19%)-4.85C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c22",
+   "n_cycles": 539,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 513.0,
+   "policy": "4.65C(44%)-5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c23",
+   "n_cycles": 561,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 527.0,
+   "policy": "4.65C(69%)-6C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c24",
+   "n_cycles": 523,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 495.0,
+   "policy": "4.8C(80%)-4.8C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c25",
+   "n_cycles": 486,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 461.0,
+   "policy": "4.8C(80%)-4.8C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c26",
+   "n_cycles": 497,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 471.0,
+   "policy": "4.8C(80%)-4.8C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c27",
+   "n_cycles": 494,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 468.0,
+   "policy": "4.9C(27%)-4.75C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c28",
+   "n_cycles": 540,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 509.0,
+   "policy": "4.9C(61%)-4.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c29",
+   "n_cycles": 521,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 498.0,
+   "policy": "4.9C(69%)-4.25C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c30",
+   "n_cycles": 506,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 481.0,
+   "policy": "5.2C(10%)-4.75C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c31",
+   "n_cycles": 518,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 492.0,
+   "policy": "5.2C(37%)-4.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c32",
+   "n_cycles": 543,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 519.0,
+   "policy": "5.2C(50%)-4.25C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c33",
+   "n_cycles": 545,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 520.0,
+   "policy": "5.2C(58%)-4C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c34",
+   "n_cycles": 525,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 499.0,
+   "policy": "5.2C(66%)-3.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c35",
+   "n_cycles": 485,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 463.0,
+   "policy": "5.2C(71%)-3C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c36",
+   "n_cycles": 559,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 535.0,
+   "policy": "5.6C(25%)-4.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c37",
+   "n_cycles": 501,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 478.0,
+   "policy": "5.6C(38%)-4.25C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c38",
+   "n_cycles": 486,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 465.0,
+   "policy": "5.6C(47%)-4C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c39",
+   "n_cycles": 479,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 459.0,
+   "policy": "5.6C(58%)-3.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c40",
+   "n_cycles": 529,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 499.0,
+   "policy": "5.6C(5%)-4.75C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c41",
+   "n_cycles": 451,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 429.0,
+   "policy": "5.6C(65%)-3C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c42",
+   "n_cycles": 491,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 466.0,
+   "policy": "6C(20%)-4.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c43",
+   "n_cycles": 486,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 462.0,
+   "policy": "6C(31%)-4.25C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c44",
+   "n_cycles": 478,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 457.0,
+   "policy": "6C(40%)-4C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c45",
+   "n_cycles": 513,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 487.0,
+   "policy": "6C(4%)-4.75C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c46",
+   "n_cycles": 448,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 429.0,
+   "policy": "6C(52%)-3.5C",
+   "batch": "2017-06-30"
+  },
+  {
+   "cell_id": "MATR_b2c47",
+   "n_cycles": 744,
+   "dropped_placeholder_cycles": 0,
+   "cycle_life_field": 713.0,
+   "policy": "6C(60%)-3C",
+   "batch": "2017-06-30"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+channel,MATR,HUST,NASA_PCoE
+capacity_cycler_Ah,1.0,1.0,1.0
+capacity_integrated_Ah,1.0,1.0,1.0
+charge_time_min,1.0,1.0,1.0
+mean_discharge_voltage_V,1.0,1.0,1.0
+internal_resistance_ohm,1.0,0.0,0.0
+temperature_mean_C,1.0,0.0,1.0

@@ -1,0 +1,38 @@
+[
+  {
+    "channel": "capacity_cycler_Ah",
+    "MATR": 1.0,
+    "HUST": 1.0,
+    "NASA_PCoE": 1.0
+  },
+  {
+    "channel": "capacity_integrated_Ah",
+    "MATR": 1.0,
+    "HUST": 1.0,
+    "NASA_PCoE": 1.0
+  },
+  {
+    "channel": "charge_time_min",
+    "MATR": 1.0,
+    "HUST": 1.0,
+    "NASA_PCoE": 1.0
+  },
+  {
+    "channel": "mean_discharge_voltage_V",
+    "MATR": 1.0,
+    "HUST": 1.0,
+    "NASA_PCoE": 1.0
+  },
+  {
+    "channel": "internal_resistance_ohm",
+    "MATR": 1.0,
+    "HUST": 0.0,
+    "NASA_PCoE": 0.0
+  },
+  {
+    "channel": "temperature_mean_C",
+    "MATR": 1.0,
+    "HUST": 0.0,
+    "NASA_PCoE": 1.0
+  }
+]

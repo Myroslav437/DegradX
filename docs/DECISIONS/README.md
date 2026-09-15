@@ -14,3 +14,6 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 
 | id | decision | stage | status |
 |---|---|---|---|
+| D11 | capacity channel = cycler-reported per-cycle capacity | S1 | taken |
+| D12 | glitch-cycle rule before smoothing and fitting | S2 | open (S2) |
+| D13 | EOL attainment for records truncated at the stopping threshold | S2 | harness run, record at S2 |
