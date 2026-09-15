@@ -1,0 +1,2102 @@
+[
+  {
+    "index": 0,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 1,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 2,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 3,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 4,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 5,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 6,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 7,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "test"
+  },
+  {
+    "index": 8,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 9,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 10,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 11,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 12,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 3,
+    "split": "test"
+  },
+  {
+    "index": 13,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 14,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 15,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 16,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 17,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 18,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 19,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 20,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 21,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 22,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 7,
+    "split": "train"
+  },
+  {
+    "index": 23,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 24,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 25,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 26,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 27,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 28,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 29,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 30,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 31,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 32,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "test"
+  },
+  {
+    "index": 33,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 34,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 35,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 36,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 37,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 38,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 39,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 40,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 41,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 42,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 43,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 44,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 45,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 46,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 47,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 48,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 49,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 50,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 51,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 52,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 53,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 54,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 55,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 56,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 57,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 58,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 59,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 60,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 61,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 6,
+    "split": "test"
+  },
+  {
+    "index": 62,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 63,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 64,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 65,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 66,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 67,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 68,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 69,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 3,
+    "split": "test"
+  },
+  {
+    "index": 70,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 71,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 72,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 73,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "test"
+  },
+  {
+    "index": 74,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 75,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 76,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 77,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 78,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 79,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 80,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 81,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 82,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 83,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 4,
+    "split": "train"
+  },
+  {
+    "index": 84,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 85,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 86,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 87,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 88,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 89,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 90,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 91,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 92,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 93,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 94,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 95,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 96,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 97,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 98,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 99,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 100,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 101,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 102,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 103,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 104,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 105,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 106,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 107,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 108,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 109,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 110,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 111,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 112,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 113,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 3,
+    "split": "validation"
+  },
+  {
+    "index": 114,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 115,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 116,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 117,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 118,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 119,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 120,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 121,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 122,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 123,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 124,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 125,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 126,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 127,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 128,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 129,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 130,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 131,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 132,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 133,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 134,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 135,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 136,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 137,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 138,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 139,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 140,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 141,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 142,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 143,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 144,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 145,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 146,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 147,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 148,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 149,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 150,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 151,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 152,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 153,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 154,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 155,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 156,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 157,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 158,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 159,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 160,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 161,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 162,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "test"
+  },
+  {
+    "index": 163,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 164,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 165,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 4,
+    "split": "train"
+  },
+  {
+    "index": 166,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 167,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 168,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 169,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 170,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "test"
+  },
+  {
+    "index": 171,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 172,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 173,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 174,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 4,
+    "split": "train"
+  },
+  {
+    "index": 175,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 176,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 4,
+    "split": "test"
+  },
+  {
+    "index": 177,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 178,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 179,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 180,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 181,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 4,
+    "split": "train"
+  },
+  {
+    "index": 182,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 183,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 184,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 185,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 186,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 187,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 188,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 189,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 190,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 191,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 192,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 193,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 194,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 195,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 196,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 197,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 198,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 199,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 200,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 201,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "test"
+  },
+  {
+    "index": 202,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 203,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 204,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 205,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 206,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 207,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 208,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 209,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 210,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 211,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 212,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 213,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 214,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 215,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 216,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 217,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 218,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 219,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 220,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 5,
+    "split": "train"
+  },
+  {
+    "index": 221,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 222,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 223,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 224,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 225,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 226,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 227,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 228,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 229,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "validation"
+  },
+  {
+    "index": 230,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 231,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 232,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 4,
+    "split": "test"
+  },
+  {
+    "index": 233,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 3,
+    "split": "test"
+  },
+  {
+    "index": 234,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 235,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 236,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 237,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 238,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 239,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 5,
+    "split": "train"
+  },
+  {
+    "index": 240,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 241,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 242,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 243,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 244,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 245,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 246,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 247,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 248,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 249,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 4,
+    "split": "train"
+  },
+  {
+    "index": 250,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 251,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 252,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 253,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 254,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 255,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 256,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 257,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 258,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 259,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 260,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 261,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 262,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 263,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 264,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 265,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 266,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 267,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 268,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 269,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 270,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 271,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 272,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 273,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 274,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "test"
+  },
+  {
+    "index": 275,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 276,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 277,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 278,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 279,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 280,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 281,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 282,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 283,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 284,
+    "source_unit": "NASA_B0018",
+    "T": 63,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 285,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "test"
+  },
+  {
+    "index": 286,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 287,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 288,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 289,
+    "source_unit": "NASA_B0043",
+    "T": 16,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 290,
+    "source_unit": "NASA_B0007",
+    "T": 83,
+    "n_patterns": 0,
+    "split": "validation"
+  },
+  {
+    "index": 291,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 292,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 293,
+    "source_unit": "NASA_B0005",
+    "T": 74,
+    "n_patterns": 0,
+    "split": "train"
+  },
+  {
+    "index": 294,
+    "source_unit": "NASA_B0006",
+    "T": 66,
+    "n_patterns": 2,
+    "split": "train"
+  },
+  {
+    "index": 295,
+    "source_unit": "NASA_B0036",
+    "T": 198,
+    "n_patterns": 1,
+    "split": "train"
+  },
+  {
+    "index": 296,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 297,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 1,
+    "split": "validation"
+  },
+  {
+    "index": 298,
+    "source_unit": "NASA_B0040",
+    "T": 35,
+    "n_patterns": 3,
+    "split": "train"
+  },
+  {
+    "index": 299,
+    "source_unit": "NASA_B0030",
+    "T": 33,
+    "n_patterns": 0,
+    "split": "test"
+  }
+]

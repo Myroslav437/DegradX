@@ -1,0 +1,28 @@
+{
+  "stage": "s4_generate_units",
+  "device": "cuda",
+  "wall_clock_s": 41.706,
+  "sections_s": {
+    "MATR_generate_seed0": 1.026,
+    "MATR_checks_seed0": 3.203,
+    "MATR_generate_seed1": 0.968,
+    "MATR_checks_seed1": 2.765,
+    "MATR_generate_seed2": 0.983,
+    "MATR_checks_seed2": 2.774,
+    "MATR_figures": 2.348,
+    "HUST_generate_seed0": 1.122,
+    "HUST_checks_seed0": 5.982,
+    "HUST_generate_seed1": 1.184,
+    "HUST_checks_seed1": 5.762,
+    "HUST_generate_seed2": 1.101,
+    "HUST_checks_seed2": 5.374,
+    "HUST_figures": 1.4,
+    "NASA_PCoE_generate_seed0": 0.419,
+    "NASA_PCoE_checks_seed0": 0.275,
+    "NASA_PCoE_generate_seed1": 0.406,
+    "NASA_PCoE_checks_seed1": 0.271,
+    "NASA_PCoE_generate_seed2": 0.414,
+    "NASA_PCoE_checks_seed2": 0.27,
+    "NASA_PCoE_figures": 0.383
+  }
+}

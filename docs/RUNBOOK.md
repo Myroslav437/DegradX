@@ -52,7 +52,16 @@ python scripts/s3_fit_profiles.py --workers 12                 # ~1 min; profile
 python scripts/s3_fit_profiles.py --datasets NASA_PCoE
 ```
 
-## S4 … S9
+## S4 — generator and ground truth
+
+```bash
+python scripts/s4_generate_units.py --workers 12              # 3 seeds x 300 units per profile, checks, figures, rho sweep (~15 min)
+python scripts/s4_generate_units.py --skip-rho                 # without the rho-sensitivity refits
+```
+
+Generated units are cached in `data/generated/<profile>/seed<g>.pkl` and regenerate bit-identically from the seeds.
+
+## S5 … S9
 
 Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
 

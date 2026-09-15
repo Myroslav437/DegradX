@@ -1,0 +1,1136 @@
+[
+  {
+    "name": "MATR seed 0 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 249438 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.65e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.019e-03, SE 1.304e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 249438 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "3.40e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.007e-03, SE 1.302e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 249438 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "6.94e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.055e-03, SE 1.306e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.021 noise SD (SE 0.017)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.018 noise SD (SE 0.020)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.007 noise SD (SE 0.030)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: E[eps_internal_resistance] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.043 noise SD (SE 0.017)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.017 noise SD (SE 0.019)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 0: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 238319 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.44e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.755e-03, SE 1.505e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 238319 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "3.47e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.751e-03, SE 1.501e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 238319 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "6.94e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.749e-03, SE 1.512e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.026 noise SD (SE 0.019)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.036 noise SD (SE 0.019)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.073 noise SD (SE 0.032)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: E[eps_internal_resistance] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.034 noise SD (SE 0.019)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.020 noise SD (SE 0.019)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 1: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 243588 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.30e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -1.855e-03, SE 1.231e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 243588 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.30e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -1.886e-03, SE 1.232e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 243588 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "7.36e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -1.806e-03, SE 1.231e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.038 noise SD (SE 0.017)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.000 noise SD (SE 0.017)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.048 noise SD (SE 0.027)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: E[eps_internal_resistance] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.023 noise SD (SE 0.020)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.042 noise SD (SE 0.021)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR seed 2: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562769 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "7.98e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.133e-04, SE 1.225e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562769 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "6.90e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.053e-04, SE 1.226e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562769 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.60e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.241e-04, SE 1.224e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.001 noise SD (SE 0.010)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.019 noise SD (SE 0.034)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.024 noise SD (SE 0.020)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 0: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562851 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "8.40e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -7.454e-04, SE 1.133e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562851 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "7.36e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -7.376e-04, SE 1.133e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562851 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.56e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -7.554e-04, SE 1.133e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.006 noise SD (SE 0.010)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.002 noise SD (SE 0.033)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.022 noise SD (SE 0.018)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 1: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562398 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "8.51e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -2.616e-03, SE 1.245e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562398 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "7.91e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -2.623e-03, SE 1.245e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "0.00e+00 over 562398 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.52e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -2.608e-03, SE 1.245e-03",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.012 noise SD (SE 0.008)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.039 noise SD (SE 0.036)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.049 noise SD (SE 0.020)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST seed 2: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14208 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "2.28e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 2.163e-02, SE 2.176e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14208 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.66e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.218e-02, SE 2.080e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "1.11e-16 over 14208 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.88e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.291e-02, SE 2.482e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.007 noise SD (SE 0.016)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.002 noise SD (SE 0.013)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.027 noise SD (SE 0.062)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.002 noise SD (SE 0.015)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [recency]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.074",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [uniform]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "-0.030",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 0 [final_position]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.138",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14082 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "2.14e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.082e-03, SE 1.862e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14082 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.67e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 8.573e-03, SE 1.886e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14082 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.66e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean -1.417e-02, SE 1.785e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.022 noise SD (SE 0.017)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.018 noise SD (SE 0.014)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.023 noise SD (SE 0.051)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.005 noise SD (SE 0.015)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [recency]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.078",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [uniform]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "-0.023",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 1 [final_position]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.143",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [recency]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14142 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [recency]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "2.38e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [recency]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.037e-02, SE 1.795e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [uniform]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "2.22e-16 over 14142 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [uniform]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "1.73e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [uniform]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 1.140e-02, SE 1.484e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [final_position]: sum(phi*) == y on every window",
+    "expected": "< 1e-9 (relative)",
+    "observed": "1.11e-16 over 14142 windows",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [final_position]: g(x) - y == sum(w eps) on every window",
+    "expected": "< 1e-9",
+    "observed": "4.66e-15",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [final_position]: mean over units of g(x) - y ~ 0",
+    "expected": "|mean| <= 3 SE",
+    "observed": "mean 9.431e-03, SE 2.071e-02",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: final-position weighting collapses graded and sparse fields to the last position",
+    "expected": "0 outside last",
+    "observed": "0.0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: pristine unit (z = 0, no patterns, no noise) has y = 0",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: E[eps_capacity] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.014 noise SD (SE 0.015)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: E[eps_charge_time] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.013 noise SD (SE 0.013)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: E[eps_mean_discharge_voltage] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "-0.030 noise SD (SE 0.038)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: E[eps_temperature_mean] ~ 0",
+    "expected": "|mean| <= 3 SE over units",
+    "observed": "+0.023 noise SD (SE 0.013)",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: z starts at the pristine level and T is the first crossing of z = 1",
+    "expected": "z_1 <= 0.05; z_T >= 1 > z_{T-1}",
+    "observed": "max z_1 0.000; first crossing True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2: disabling patterns leaves z, T, R and noise unchanged",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [recency]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.081",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [uniform]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "-0.004",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE seed 2 [final_position]: |graded|/|sparse| correlation below the declared bound",
+    "expected": "<= 0.3",
+    "observed": "0.140",
+    "passed": true,
+    "severity": "warn"
+  }
+]

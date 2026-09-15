@@ -47,6 +47,7 @@ meta:
     - {date: 2026-09-15, comment: D17, keys: [declared_by_design.channel_series.cleaning_rule], r2: "no channel glitch rule", new: "isolated > 5% of channel median departures masked", reason: "a few readings inflated MATR charge-time noise variance 25x"}
     - {date: 2026-09-15, comment: D02, keys: [declared_by_design.minimum_counts], r2: "censored units excluded from everything; no minimum counts", new: "censored units feed T-free quantities; minima 5 units / 10 events / 5 held-out units", reason: "z is defined for censored units (C3); readability curves from resampling"}
     - {date: 2026-09-15, comment: D04b, keys: [declared_by_design.trajectory_families.selection.identifiability], r2: "all families eligible", new: "families with parameters at bounds in > 20% of units not eligible", reason: "NASA rollover: transition width at its lower bound in 6 of 8 units; T reproduction p90 26% vs 9.6% for power law"}
+    - {date: 2026-09-15, comment: D01, keys: [declared_by_design.scoring], r2: "scores unspecified (rank agreement, retrieval, zero-weight mass named only)", new: "Spearman on pattern-free map vs graded field; AP on paired difference vs sparse set; plain AP secondary", reason: "plain retrieval scores the ground truth itself at chance (0.064 vs 0.048); paired 1.000"}
     - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
 
 # ---------------------------------------------------------------------------------------------
@@ -382,6 +383,15 @@ declared_by_design:
       reported_at: S8
       source: "C2 (r2)"
     variance_ratio_band: {value: [0.05, 0.50], definition: "Var(pattern term) / Var(mean term) over windows", source: "Table 3 row 1; UNDERSPECIFIED-IN-PAPER"}
+
+  scoring:
+    # D01 (2026-09-15, S4, before any attribution method ran)
+    rank_agreement: {value: "Spearman rho (scipy.stats.spearmanr) over the L x C cells of the window between the method's map on the pattern-free counterpart window and the graded field w(m - x0)"}
+    retrieval: {value: "average precision (sklearn.metrics.average_precision_score) of |map(x) - map(x without patterns)| ranking the sparse-set cells (w p != 0)", secondary: "plain AP of |map(x)| (reported for comparability)"}
+    zero_weight_mass: {value: "share of sum |map| on channels with zero target weight (null and redundant channels)"}
+    aggregation: "per window, then mean over windows within a unit, then mean over units; bootstrap over units"
+    paired_runs: "the two maps of a window share the attribution sampling seed"
+    source: "docs/DECISIONS/D01_sparse_retrieval.md"
 
   responsiveness:
     operators:
