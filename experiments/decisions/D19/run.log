@@ -1,0 +1,26 @@
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:113: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+{'fold': 0, 'fitting_units': 13, 'held_out_reaching': 2, 'family': 'power_law', 'positive_enabled': True, 'fold_ratio': 1.4366727423267298}
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+{'fold': 1, 'fitting_units': 14, 'held_out_reaching': 2, 'family': 'rollover', 'positive_enabled': True, 'fold_ratio': 3.943890388488761}
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+{'fold': 2, 'fitting_units': 15, 'held_out_reaching': 2, 'family': 'two_term_exponential', 'positive_enabled': True, 'fold_ratio': 3.6443930878382256}
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+{'fold': 3, 'fitting_units': 15, 'held_out_reaching': 2, 'family': 'power_law', 'positive_enabled': True, 'fold_ratio': 1.0520977597292898}
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+{'fold': 4, 'fitting_units': 15, 'held_out_reaching': 2, 'family': 'rollover', 'positive_enabled': True, 'fold_ratio': 2.3644488454805344}
+{
+ "ratio": 1.224284970026391,
+ "ci_low": 1.0647911728544737,
+ "ci_high": 3.0725301024414264,
+ "units": 10,
+ "method": "BCa over held-out units",
+ "relative_half_width_95": 0.8199638886131526
+}

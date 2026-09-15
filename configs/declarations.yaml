@@ -48,6 +48,7 @@ meta:
     - {date: 2026-09-15, comment: D02, keys: [declared_by_design.minimum_counts], r2: "censored units excluded from everything; no minimum counts", new: "censored units feed T-free quantities; minima 5 units / 10 events / 5 held-out units", reason: "z is defined for censored units (C3); readability curves from resampling"}
     - {date: 2026-09-15, comment: D04b, keys: [declared_by_design.trajectory_families.selection.identifiability], r2: "all families eligible", new: "families with parameters at bounds in > 20% of units not eligible", reason: "NASA rollover: transition width at its lower bound in 6 of 8 units; T reproduction p90 26% vs 9.6% for power law"}
     - {date: 2026-09-15, comment: D01, keys: [declared_by_design.scoring], r2: "scores unspecified (rank agreement, retrieval, zero-weight mass named only)", new: "Spearman on pattern-free map vs graded field; AP on paired difference vs sparse set; plain AP secondary", reason: "plain retrieval scores the ground truth itself at chance (0.064 vs 0.048); paired 1.000"}
+    - {date: 2026-09-15, comment: D02b, keys: [declared_by_design.minimum_counts.held_out_units_per_measure], r2: "5 held-out units for every measure (provisional)", new: "transfer 20 reaching; covariance 12; discriminator 8 (distance-to-0.5 readability); representation distance by unit bootstrap", reason: "resampling over MATR held-out units; a 5-unit split leaves the discriminator one test unit"}
     - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
 
 # ---------------------------------------------------------------------------------------------
@@ -268,7 +269,13 @@ declared_by_design:
   minimum_counts:
     value: {theta_and_length_units: 5, pattern_events: 10, held_out_units: 5}
     criterion: "a statistic is reported only where its 95% resampling half-width relative to its value is <= 0.5; below the count the cell is void; counts gate reporting, not generation"
-    held_out_units_status: "provisional; S5 tests with its own resampling"
+    held_out_units_status: "superseded by D02b (2026-09-15): per-measure minima below"
+    held_out_units_per_measure:
+      transfer_ratio: {min_units_reaching_eol: 20}
+      covariance_agreement: {min_units: 12}
+      discriminative_error: {min_units: 8, readability: "95% half-width <= 0.5 * |0.5 - value|"}
+      representation_distance: {readability: "unit bootstrap at the profile's own held-out count: 95% half-width <= 0.5 * value"}
+      source: "docs/DECISIONS/D02b_held_out_minimum_per_measure.md"
     censored_scope: "guard-passing units not reaching EOL feed mappings, noise, covariance and patterns; theta, lengths and the transfer target use units reaching EOL"
     source: "docs/DECISIONS/D02_censored_units_and_minimum_counts.md (2026-09-15, S3)"
 

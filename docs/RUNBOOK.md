@@ -61,7 +61,14 @@ python scripts/s4_generate_units.py --skip-rho                 # without the rho
 
 Generated units are cached in `data/generated/<profile>/seed<g>.pkl` and regenerate bit-identically from the seeds.
 
-## S5 … S9
+## S5 — fidelity
+
+```bash
+python scripts/s5_fidelity.py                                  # ~13 min on GPU
+python experiments/decisions/D02b/run.py; python experiments/decisions/D19/run.py
+```
+
+## S6 … S9
 
 Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
 

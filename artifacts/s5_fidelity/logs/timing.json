@@ -1,0 +1,16 @@
+{
+  "stage": "s5_fidelity",
+  "device": "cuda",
+  "wall_clock_s": 874.216,
+  "sections_s": {
+    "MATR_distributional": 62.979,
+    "MATR_tstr": 217.264,
+    "MATR_properties": 97.469,
+    "HUST_distributional": 58.271,
+    "HUST_tstr": 236.923,
+    "HUST_properties": 90.432,
+    "NASA_PCoE_distributional": 42.149,
+    "NASA_PCoE_tstr": 2.036,
+    "NASA_PCoE_properties": 63.099
+  }
+}

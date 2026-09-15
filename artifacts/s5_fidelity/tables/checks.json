@@ -1,0 +1,65 @@
+[
+  {
+    "name": "MATR: window length and effective unit counts recorded next to every measure",
+    "expected": "recorded",
+    "observed": "{'measured_fitting': 95, 'measured_held_out': 40, 'measured_held_out_reaching_eol': 38, 'generated_per_seed': 300}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact)",
+    "expected": "< 0.99",
+    "observed": "0.928",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "3.4201964487768874",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: window length and effective unit counts recorded next to every measure",
+    "expected": "recorded",
+    "observed": "{'measured_fitting': 54, 'measured_held_out': 23, 'measured_held_out_reaching_eol': 23, 'generated_per_seed': 300}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact)",
+    "expected": "< 0.99",
+    "observed": "0.836",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "1.4612937680490141",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: window length and effective unit counts recorded next to every measure",
+    "expected": "recorded",
+    "observed": "{'measured_fitting': 13, 'measured_held_out': 5, 'measured_held_out_reaching_eol': 3, 'generated_per_seed': 300}",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact)",
+    "expected": "< 0.99",
+    "observed": "0.818",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "1.6411627211090731",
+    "passed": true,
+    "severity": "error"
+  }
+]

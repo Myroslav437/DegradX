@@ -28,3 +28,5 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D01 | sparse set scored on paired maps (window vs pattern-free counterpart); plain retrieval secondary | S4 | taken (paper round 4) |
 | D18 | generated state anchored at its own trajectory's early-life reference | S4 | taken |
 | D06 | graded/sparse correlation above bound | S4 | not triggered: NASA 0.07-0.08 (recency), -0.03-0.00 (uniform), 0.14 (final position) < 0.30 |
+| D02b | per-measure held-out minima: transfer 20, covariance 12, discriminator 8, representation distance by unit bootstrap | S5 | taken |
+| D19 | NASA PCoE fidelity void at the declared split (cross-fitting unreadable, family unstable across folds) | S5 | taken |

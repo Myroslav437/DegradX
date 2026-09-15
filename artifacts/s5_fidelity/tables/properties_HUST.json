@@ -1,0 +1,248 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "measured": "rollover; 0.0032",
+    "generated": "rollover; 0.0014",
+    "units_measured": 23,
+    "units_generated": 175,
+    "dataset": "HUST"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "measured": {
+      "n": 23,
+      "median": 16.292134742027308,
+      "q25": 14.734648884656348,
+      "q75": 20.005601546963323
+    },
+    "generated": {
+      "n": 175,
+      "median": 17.36789930694734,
+      "q25": 14.403126629668858,
+      "q75": 20.817402203898663
+    },
+    "units_measured": 23,
+    "units_generated": 175,
+    "dataset": "HUST"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "measured": {
+      "n": 23,
+      "median": 0.6506996770721205,
+      "q25": 0.6323333333333333,
+      "q75": 0.7118503833879185
+    },
+    "generated": {
+      "n": 175,
+      "median": 0.6738916256157635,
+      "q25": 0.6376238805466095,
+      "q75": 0.7200540098269057
+    },
+    "units_measured": 23,
+    "units_generated": 175,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, capacity",
+    "measured": 1.0639060845816568e-06,
+    "generated": 9.430345258977325e-07,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "measured": 0.9483930822776654,
+    "generated": 0.9186388769855324,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, charge_time",
+    "measured": 1.4459129257959356,
+    "generated": 1.078722452653898,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "measured": 0.9928716819481959,
+    "generated": 0.9880382762919017,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage",
+    "measured": 3.54896365652513e-05,
+    "generated": 2.3436367585989164e-05,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "measured": 0.9840066802350437,
+    "generated": 0.9737047306793053,
+    "units_measured": 23,
+    "units_generated": 300,
+    "dataset": "HUST"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "measured": {
+      "n": 23,
+      "median": 1938.0,
+      "q25": 1566.5,
+      "q75": 2250.5
+    },
+    "generated": {
+      "n": 175,
+      "median": 1805.0,
+      "q25": 1501.0,
+      "q75": 2173.5
+    },
+    "units_measured": 23,
+    "units_generated": 175,
+    "dataset": "HUST"
+  },
+  {
+    "property": "positive pattern rate [per 100 positions] (enabled in profile: False)",
+    "measured": 0.043623005395476984,
+    "generated": 0.11352196165949748,
+    "events_measured": 19,
+    "events_generated": 645,
+    "noise_only_rate_measured": 0.12063574778530485,
+    "noise_only_rate_generated": 0.124031007751938,
+    "dataset": "HUST"
+  },
+  {
+    "property": "positive pattern amplitude [mAh]",
+    "measured": {
+      "n": 19,
+      "median": 2.6812228883533304,
+      "q25": 2.31015452102538,
+      "q75": 2.854590337160456
+    },
+    "generated": {
+      "n": 645,
+      "median": 2.5260790253231105,
+      "q25": 2.163953191949337,
+      "q75": 3.1229602949554987
+    },
+    "events_measured": 19,
+    "events_generated": 645,
+    "void": null,
+    "dataset": "HUST"
+  },
+  {
+    "property": "positive pattern duration [positions]",
+    "measured": {
+      "n": 19,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 5.5
+    },
+    "generated": {
+      "n": 645,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 5.0
+    },
+    "events_measured": 19,
+    "events_generated": 645,
+    "void": null,
+    "dataset": "HUST"
+  },
+  {
+    "property": "negative pattern rate [per 100 positions] (enabled in profile: False)",
+    "measured": 0.15612444036275974,
+    "generated": 0.11598600423815322,
+    "events_measured": 68,
+    "events_generated": 659,
+    "noise_only_rate_measured": 0.1112558624283481,
+    "noise_only_rate_generated": 0.132890365448505,
+    "dataset": "HUST"
+  },
+  {
+    "property": "negative pattern amplitude [mAh]",
+    "measured": {
+      "n": 68,
+      "median": -1.8663240892085171,
+      "q25": -2.187272421483994,
+      "q75": -1.7059864660016155
+    },
+    "generated": {
+      "n": 659,
+      "median": -2.5665306918632296,
+      "q25": -3.08041790963343,
+      "q75": -2.1855766424805796
+    },
+    "events_measured": 68,
+    "events_generated": 659,
+    "void": null,
+    "dataset": "HUST"
+  },
+  {
+    "property": "negative pattern duration [positions]",
+    "measured": {
+      "n": 68,
+      "median": 4.0,
+      "q25": 2.0,
+      "q75": 5.0
+    },
+    "generated": {
+      "n": 659,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 5.0
+    },
+    "events_measured": 68,
+    "events_generated": 659,
+    "void": null,
+    "dataset": "HUST"
+  },
+  {
+    "property": "cross-channel residual correlation (relative Frobenius distance, mean |delta rho|)",
+    "measured": [
+      [
+        1.0,
+        -0.02455644144856355,
+        -0.0051722711790979595
+      ],
+      [
+        -0.02455644144856355,
+        1.0,
+        0.3277420166662366
+      ],
+      [
+        -0.00517227117909796,
+        0.3277420166662366,
+        1.0
+      ]
+    ],
+    "generated": [
+      [
+        1.0,
+        -0.033138428309794035,
+        -0.04178678797181224
+      ],
+      [
+        -0.033138428309794035,
+        1.0,
+        -0.001594442193898455
+      ],
+      [
+        -0.04178678797181224,
+        -0.0015944421938984552,
+        1.0
+      ]
+    ],
+    "relative_frobenius": 0.26139899275997885,
+    "mean_abs_delta_rho": 0.12484432083802662,
+    "dataset": "HUST"
+  }
+]

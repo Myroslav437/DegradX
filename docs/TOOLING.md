@@ -40,12 +40,13 @@ and every such case states why no package fits. Evidence for S0 entries: `docs/S
 |---|---|---|
 | Stage CLI, provenance, seeding by source | `degradx.utils` | glue specific to this repository's reproducibility contract (brief §4); `argparse`, `PyYAML`, `numpy.random.SeedSequence` do the actual work |
 | TimeSHAP import shim | `degradx.attribution.timeshap_compat` | upstream timeshap is unmaintained since 2023 and imports a renamed shap class |
-| Discriminative score (planned, S5) | `degradx.metrics` | tsgm unusable (above); ~60 lines of torch GRU following TimeGAN defaults, with the unit-level split the paper requires |
-| Fréchet distance in representation space (planned, S5) | `degradx.metrics` + vendored TS2Vec (MIT) | TS2Vec official code is not pip-installable; the PyPI `ts2vec` is an unlicensed copy |
+| Discriminative score | `degradx.metrics.fidelity` | tsgm unusable (above); ~60 lines of torch GRU following TimeGAN defaults, with the unit-level split the paper requires |
+| Fréchet distance in representation space | `degradx.metrics.fidelity` + vendored TS2Vec (`degradx.metrics.ts2vec`, official commit b0088e1, MIT; import lines only changed) | TS2Vec official code is not pip-installable; the PyPI `ts2vec` is an unlicensed copy; FID formula via `scipy.linalg.sqrtm` |
 | NASA PCoE → BatteryData converter | `degradx.data.nasa` | brief §2.2: BatteryML has no NASA preprocessor; validated against raw arrays (max diff 0) and against BatteryML MATR/HUST object fields (S1 checks) |
 | MATR time-unit fix and summary attachment | `degradx.data.matr` | BatteryML stores MATR minutes as `time_in_s` and drops summary fields the channel set needs |
 | HUST cycler capacity attachment | `degradx.data.hust` | BatteryML drops the source `dq`; D11 |
 | Per-cycle channel derivation | `degradx.data.channels` | benchmark-specific channel definitions (declarations `channels.candidates`); integration follows BatteryML's `calc_Q` rule |
 | Degradation state Eq. 3 | `degradx.generator.state` | benchmark definition (R2 exception); smoothing is `scipy.signal.savgol_filter` |
 | Pattern detection rule | `degradx.fitting.patterns` | benchmark rule of §3.3 step five; residual scale is a MAD |
-| TSTR ratio (planned, S5) | `degradx.metrics` | no package provides a regression TSTR error ratio with a unit-level bootstrap |
+| TSTR ratio | `degradx.metrics.fidelity` + `scipy.stats.bootstrap` (BCa over units) | no package provides a regression TSTR error ratio with a unit-level bootstrap |
+| LSTM regressor and training loop | `degradx.models.lstm` (torch) | architecture declared in configs/models/lstm.yaml; a training loop with unit-level validation and early stopping is a few lines of torch |

@@ -1,0 +1,10 @@
+name,expected,observed,passed,severity
+MATR: window length and effective unit counts recorded next to every measure,recorded,"{'measured_fitting': 95, 'measured_held_out': 40, 'measured_held_out_reaching_eol': 38, 'generated_per_seed': 300}",True,error
+MATR: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact),< 0.99,0.928,True,warn
+MATR: TSTR ratio finite with interval,finite,3.4201964487768874,True,error
+HUST: window length and effective unit counts recorded next to every measure,recorded,"{'measured_fitting': 54, 'measured_held_out': 23, 'measured_held_out_reaching_eol': 23, 'generated_per_seed': 300}",True,error
+HUST: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact),< 0.99,0.836,True,warn
+HUST: TSTR ratio finite with interval,finite,1.4612937680490141,True,error
+NASA_PCoE: window length and effective unit counts recorded next to every measure,recorded,"{'measured_fitting': 13, 'measured_held_out': 5, 'measured_held_out_reaching_eol': 3, 'generated_per_seed': 300}",True,error
+NASA_PCoE: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact),< 0.99,0.818,True,warn
+NASA_PCoE: TSTR ratio finite with interval,finite,1.6411627211090731,True,error

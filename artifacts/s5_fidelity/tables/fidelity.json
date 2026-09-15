@@ -1,0 +1,767 @@
+{
+  "MATR": {
+    "window_length": 24,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage",
+      "internal_resistance",
+      "temperature_mean"
+    ],
+    "units": {
+      "measured_fitting": 95,
+      "measured_held_out": 40,
+      "measured_held_out_reaching_eol": 38,
+      "generated_per_seed": 300
+    },
+    "baseline_measured_fitting_vs_held_out": {
+      "frechet_ts2vec": 59.919741575447304,
+      "cov_relative_frobenius": 0.2780475058895786,
+      "cov_mean_abs_delta_rho": 0.15069601840806746,
+      "windows": {
+        "fitting": 4000,
+        "held_out": 4000
+      }
+    },
+    "encoder_final_loss": 1.469076939417178,
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "accuracy": 0.9074999690055847,
+        "discriminative_error": 0.09250003099441528,
+        "abs_acc_minus_half": 0.4074999690055847,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "frechet_ts2vec": 64.21469920449621,
+        "cov_relative_frobenius": 0.6850915992848444,
+        "cov_mean_abs_delta_rho": 0.35548430299900835,
+        "generated_windows": 30000,
+        "frechet_bootstrap_units": {
+          "ci_low": 4.961990610156885,
+          "ci_high": 191.58862894053985,
+          "relative_half_width": 1.4531457800343919
+        }
+      },
+      {
+        "generation_seed": 1,
+        "accuracy": 0.9287499785423279,
+        "discriminative_error": 0.07125002145767212,
+        "abs_acc_minus_half": 0.4287499785423279,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "frechet_ts2vec": 64.11517044829854,
+        "cov_relative_frobenius": 0.6831252072309106,
+        "cov_mean_abs_delta_rho": 0.35518110055921337,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 2,
+        "accuracy": 0.9481250047683716,
+        "discriminative_error": 0.05187499523162842,
+        "abs_acc_minus_half": 0.4481250047683716,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "frechet_ts2vec": 64.07157154791079,
+        "cov_relative_frobenius": 0.6938925457742083,
+        "cov_mean_abs_delta_rho": 0.35773162715158946,
+        "generated_windows": 30000
+      }
+    ],
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null,
+      "representation_distance": "bootstrap half-width 1.45 of the value > 0.5 at 40 held-out units"
+    },
+    "discriminative_error_seed_half_range": 0.020312517881393433,
+    "tstr": {
+      "ratio": 3.4201964487768874,
+      "ci_low": 2.276480201346431,
+      "ci_high": 4.957907742362334,
+      "units": 38,
+      "method": "BCa over held-out units",
+      "rmse_tstr_cycles": 515.8336911269289,
+      "rmse_trtr_cycles": 150.81990138648283,
+      "held_out_units": 38,
+      "held_out_windows": 29605,
+      "training_units_each": 90,
+      "runs": [
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 0,
+          "rmse": 142.1031251218474,
+          "epochs": 21
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 1,
+          "rmse": 194.29665283775037,
+          "epochs": 13
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 2,
+          "rmse": 141.4505349412763,
+          "epochs": 16
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 3,
+          "rmse": 130.87362353793904,
+          "epochs": 13
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 4,
+          "rmse": 136.57439959476267,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 0,
+          "rmse": 523.2786912089276,
+          "epochs": 16
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 1,
+          "rmse": 828.1922790613665,
+          "epochs": 33
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 2,
+          "rmse": 624.4615592166599,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 3,
+          "rmse": 381.4083471211234,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 4,
+          "rmse": 475.70696269128206,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 0,
+          "rmse": 439.9700468641873,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 1,
+          "rmse": 517.7639791344868,
+          "epochs": 18
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 2,
+          "rmse": 571.6023268486566,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 3,
+          "rmse": 621.1281581598565,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 4,
+          "rmse": 449.13742917345627,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 0,
+          "rmse": 425.0044851073304,
+          "epochs": 14
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 1,
+          "rmse": 441.08550492430123,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 2,
+          "rmse": 440.105515463226,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 3,
+          "rmse": 389.3526135722726,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 4,
+          "rmse": 416.46207069398616,
+          "epochs": 20
+        }
+      ],
+      "void": null,
+      "ratio_spread": {
+        "min": 2.5587629052746266,
+        "max": 5.55611249227354
+      }
+    },
+    "properties_file": "tables/properties_MATR.json"
+  },
+  "HUST": {
+    "window_length": 24,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "units": {
+      "measured_fitting": 54,
+      "measured_held_out": 23,
+      "measured_held_out_reaching_eol": 23,
+      "generated_per_seed": 300
+    },
+    "baseline_measured_fitting_vs_held_out": {
+      "frechet_ts2vec": 0.16425533664565733,
+      "cov_relative_frobenius": 0.03757220016113322,
+      "cov_mean_abs_delta_rho": 0.03272830234493871,
+      "windows": {
+        "fitting": 2300,
+        "held_out": 2300
+      }
+    },
+    "encoder_final_loss": 1.7979597681000254,
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "accuracy": 0.796000063419342,
+        "discriminative_error": 0.20399993658065796,
+        "abs_acc_minus_half": 0.29600006341934204,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "frechet_ts2vec": 2.929965169183961,
+        "cov_relative_frobenius": 0.42116447490399356,
+        "cov_mean_abs_delta_rho": 0.3375064049425613,
+        "generated_windows": 30000,
+        "frechet_bootstrap_units": {
+          "ci_low": 2.131557056730695,
+          "ci_high": 4.498606285676796,
+          "relative_half_width": 0.40393811739498575
+        }
+      },
+      {
+        "generation_seed": 1,
+        "accuracy": 0.8830000162124634,
+        "discriminative_error": 0.11699998378753662,
+        "abs_acc_minus_half": 0.3830000162124634,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "frechet_ts2vec": 2.9599833612868105,
+        "cov_relative_frobenius": 0.4256185233649625,
+        "cov_mean_abs_delta_rho": 0.34352570094892254,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 2,
+        "accuracy": 0.8280000686645508,
+        "discriminative_error": 0.17199993133544922,
+        "abs_acc_minus_half": 0.3280000686645508,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "frechet_ts2vec": 2.9476880093011983,
+        "cov_relative_frobenius": 0.4261715051824657,
+        "cov_mean_abs_delta_rho": 0.34370232877451007,
+        "generated_windows": 30000
+      }
+    ],
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null,
+      "representation_distance": null
+    },
+    "discriminative_error_seed_half_range": 0.04349997639656067,
+    "tstr": {
+      "ratio": 1.4612937680490141,
+      "ci_low": 1.1113580311093105,
+      "ci_high": 1.76383636719532,
+      "units": 23,
+      "method": "BCa over held-out units",
+      "rmse_tstr_cycles": 301.64129424593256,
+      "rmse_trtr_cycles": 206.42070803371485,
+      "held_out_units": 23,
+      "held_out_windows": 43272,
+      "training_units_each": 54,
+      "runs": [
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 0,
+          "rmse": 210.7714831816297,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 1,
+          "rmse": 192.74169735013405,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 2,
+          "rmse": 216.9591990447166,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 3,
+          "rmse": 207.5301630114045,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 4,
+          "rmse": 203.30642118743074,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 0,
+          "rmse": 307.5233218574729,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 1,
+          "rmse": 328.07194482294193,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 2,
+          "rmse": 398.11751195990666,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 3,
+          "rmse": 262.8641045603995,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 4,
+          "rmse": 314.41172515104375,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 0,
+          "rmse": 283.6875755465205,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 1,
+          "rmse": 272.0864951484687,
+          "epochs": 19
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 2,
+          "rmse": 270.6895388193097,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 3,
+          "rmse": 339.7469777357882,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 4,
+          "rmse": 262.70161769078294,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 0,
+          "rmse": 331.1169691638484,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 1,
+          "rmse": 262.0635942173702,
+          "epochs": 30
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 2,
+          "rmse": 287.06222276850906,
+          "epochs": 14
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 3,
+          "rmse": 294.95462976922227,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 4,
+          "rmse": 276.0779474895288,
+          "epochs": 13
+        }
+      ],
+      "void": null,
+      "ratio_spread": {
+        "min": 1.2705387203173009,
+        "max": 1.9301563641147692
+      }
+    },
+    "properties_file": "tables/properties_HUST.json"
+  },
+  "NASA_PCoE": {
+    "window_length": 24,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage",
+      "temperature_mean"
+    ],
+    "units": {
+      "measured_fitting": 13,
+      "measured_held_out": 5,
+      "measured_held_out_reaching_eol": 3,
+      "generated_per_seed": 300
+    },
+    "baseline_measured_fitting_vs_held_out": {
+      "frechet_ts2vec": 30.574167221699845,
+      "cov_relative_frobenius": 0.7387117912425617,
+      "cov_mean_abs_delta_rho": 0.4846110058385995,
+      "windows": {
+        "fitting": 64,
+        "held_out": 64
+      }
+    },
+    "encoder_final_loss": 1.7250653830441562,
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "accuracy": 0.5,
+        "discriminative_error": 0.5,
+        "abs_acc_minus_half": 0.0,
+        "test_windows_per_class": 5,
+        "train_units": {
+          "measured": 4,
+          "generated": 214
+        },
+        "test_units": {
+          "measured": 1,
+          "generated": 54
+        },
+        "frechet_ts2vec": 27.522004201190562,
+        "cov_relative_frobenius": 0.4237562920938745,
+        "cov_mean_abs_delta_rho": 0.2470282083470308,
+        "generated_windows": 11733,
+        "frechet_bootstrap_units": {
+          "ci_low": 8.52488382123072,
+          "ci_high": 59.676793860690815,
+          "relative_half_width": 0.9292911530993686
+        }
+      },
+      {
+        "generation_seed": 1,
+        "accuracy": 0.9772727489471436,
+        "discriminative_error": 0.022727251052856445,
+        "abs_acc_minus_half": 0.47727274894714355,
+        "test_windows_per_class": 22,
+        "train_units": {
+          "measured": 4,
+          "generated": 213
+        },
+        "test_units": {
+          "measured": 1,
+          "generated": 53
+        },
+        "frechet_ts2vec": 28.971875512799826,
+        "cov_relative_frobenius": 0.42702652661171286,
+        "cov_mean_abs_delta_rho": 0.2518190515021271,
+        "generated_windows": 11757
+      },
+      {
+        "generation_seed": 2,
+        "accuracy": 0.9772727489471436,
+        "discriminative_error": 0.022727251052856445,
+        "abs_acc_minus_half": 0.47727274894714355,
+        "test_windows_per_class": 22,
+        "train_units": {
+          "measured": 4,
+          "generated": 204
+        },
+        "test_units": {
+          "measured": 1,
+          "generated": 51
+        },
+        "frechet_ts2vec": 28.633492364366347,
+        "cov_relative_frobenius": 0.41008904808051777,
+        "cov_mean_abs_delta_rho": 0.23985508297441993,
+        "generated_windows": 11517
+      }
+    ],
+    "void": {
+      "discriminative_error": "held-out units 5 < 8",
+      "covariance_agreement": "held-out units 5 < 12",
+      "representation_distance": "bootstrap half-width 0.93 of the value > 0.5 at 5 held-out units"
+    },
+    "discriminative_error_seed_half_range": 0.23863637447357178,
+    "tstr": {
+      "ratio": 1.6411627211090731,
+      "ci_low": 0.8674189390268614,
+      "ci_high": 2.0035188936537,
+      "units": 3,
+      "method": "BCa over held-out units",
+      "rmse_tstr_cycles": 26.35063218590204,
+      "rmse_trtr_cycles": 16.056075273324925,
+      "held_out_units": 3,
+      "held_out_windows": 43,
+      "training_units_each": 8,
+      "runs": [
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 0,
+          "rmse": 17.42868728300486,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 1,
+          "rmse": 12.471872233968117,
+          "epochs": 22
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 2,
+          "rmse": 16.634981881203206,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 3,
+          "rmse": 16.850864354802606,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 4,
+          "rmse": 16.401426059713955,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 0,
+          "rmse": 51.123716931025605,
+          "epochs": 27
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 1,
+          "rmse": 10.438471901952408,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 2,
+          "rmse": 52.17920900935847,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 3,
+          "rmse": 9.950431096843376,
+          "epochs": 41
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 4,
+          "rmse": 10.189054024503044,
+          "epochs": 30
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 0,
+          "rmse": 25.82211187669378,
+          "epochs": 38
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 1,
+          "rmse": 23.409844800553255,
+          "epochs": 30
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 2,
+          "rmse": 24.51912716723523,
+          "epochs": 27
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 3,
+          "rmse": 28.11188907943159,
+          "epochs": 48
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 4,
+          "rmse": 31.070102784854473,
+          "epochs": 100
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 0,
+          "rmse": 14.70986113123292,
+          "epochs": 27
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 1,
+          "rmse": 5.9175258440960805,
+          "epochs": 31
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 2,
+          "rmse": 15.127559635335105,
+          "epochs": 26
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 3,
+          "rmse": 17.161487260769633,
+          "epochs": 28
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 4,
+          "rmse": 20.515044418043008,
+          "epochs": 34
+        }
+      ],
+      "void": "held-out units reaching EOL 3 < 20",
+      "ratio_spread": {
+        "min": 0.37082884129423815,
+        "max": 3.269872599862887
+      }
+    },
+    "properties_file": "tables/properties_NASA_PCoE.json"
+  }
+}

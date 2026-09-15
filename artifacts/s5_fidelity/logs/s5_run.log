@@ -1,0 +1,16 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:113: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+[PASS] MATR: window length and effective unit counts recorded next to every measure: expected recorded; observed {'measured_fitting': 95, 'measured_held_out': 40, 'measured_held_out_reaching_eol': 38, 'generated_per_seed': 300}
+[PASS] MATR: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact): expected < 0.99; observed 0.928
+[PASS] MATR: TSTR ratio finite with interval: expected finite; observed 3.4201964487768874
+[PASS] HUST: window length and effective unit counts recorded next to every measure: expected recorded; observed {'measured_fitting': 54, 'measured_held_out': 23, 'measured_held_out_reaching_eol': 23, 'generated_per_seed': 300}
+[PASS] HUST: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact): expected < 0.99; observed 0.836
+[PASS] HUST: TSTR ratio finite with interval: expected finite; observed 1.4612937680490141
+[PASS] NASA_PCoE: window length and effective unit counts recorded next to every measure: expected recorded; observed {'measured_fitting': 13, 'measured_held_out': 5, 'measured_held_out_reaching_eol': 3, 'generated_per_seed': 300}
+[PASS] NASA_PCoE: discriminator does not separate trivially (accuracy < 0.99; else look for a scaling/padding artefact): expected < 0.99; observed 0.818
+[PASS] NASA_PCoE: TSTR ratio finite with interval: expected finite; observed 1.6411627211090731

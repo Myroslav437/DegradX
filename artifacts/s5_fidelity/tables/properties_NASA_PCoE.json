@@ -1,0 +1,266 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "measured": "rollover; 0.0163",
+    "generated": "power_law; 0.0090",
+    "units_measured": 3,
+    "units_generated": 216,
+    "dataset": "NASA_PCoE",
+    "void": "measured units 3 < 5"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "measured": {
+      "n": 3,
+      "median": 536.3900734750897,
+      "q25": 458.5599455794479,
+      "q75": 542.310900327725
+    },
+    "generated": {
+      "n": 216,
+      "median": 434.5020078559638,
+      "q25": 318.3635008688843,
+      "q75": 683.2945542202458
+    },
+    "units_measured": 3,
+    "units_generated": 216,
+    "dataset": "NASA_PCoE",
+    "void": "measured units 3 < 5"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "measured": {
+      "n": 3,
+      "median": 0.96875,
+      "q25": 0.5129464285714286,
+      "q75": 0.9732638888888889
+    },
+    "generated": {
+      "n": 216,
+      "median": 0.125,
+      "q25": 0.03278688524590164,
+      "q75": 0.9714285714285714
+    },
+    "units_measured": 3,
+    "units_generated": 216,
+    "dataset": "NASA_PCoE",
+    "void": "measured units 3 < 5"
+  },
+  {
+    "property": "noise variance, capacity",
+    "measured": 0.0001481094385342208,
+    "generated": 0.0002435149624196697,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "measured": 0.1527242025681523,
+    "generated": 0.5097514636593435,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise variance, charge_time",
+    "measured": 32.1809242560417,
+    "generated": 67.48509823897017,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "measured": 0.5744856196028855,
+    "generated": 0.4293404095353183,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage",
+    "measured": 0.0029910200983118756,
+    "generated": 0.0003658411844847932,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "measured": 0.649893232061789,
+    "generated": 0.7404864524387376,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise variance, temperature_mean",
+    "measured": 1.4087401457199387,
+    "generated": 1.361396131691968,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, temperature_mean",
+    "measured": 0.47540578894608043,
+    "generated": 0.6450423599840774,
+    "units_measured": 5,
+    "units_generated": 300,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "measured": {
+      "n": 3,
+      "median": 35.0,
+      "q25": 33.5,
+      "q75": 40.0
+    },
+    "generated": {
+      "n": 216,
+      "median": 53.5,
+      "q25": 34.0,
+      "q75": 73.0
+    },
+    "units_measured": 3,
+    "units_generated": 216,
+    "dataset": "NASA_PCoE",
+    "void": "measured units 3 < 5"
+  },
+  {
+    "property": "positive pattern rate [per 100 positions] (enabled in profile: True)",
+    "measured": 1.8867924528301887,
+    "generated": 0.43711297288858825,
+    "events_measured": 3,
+    "events_generated": 84,
+    "noise_only_rate_measured": 0.03333333333333333,
+    "noise_only_rate_generated": 0.0603448275862069,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "positive pattern amplitude [mAh]",
+    "measured": null,
+    "generated": {
+      "n": 84,
+      "median": 53.68528373343514,
+      "q25": 39.83035635964474,
+      "q75": 63.55262634278572
+    },
+    "events_measured": 3,
+    "events_generated": 84,
+    "void": "measured events 3 < 10",
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "positive pattern duration [positions]",
+    "measured": null,
+    "generated": {
+      "n": 84,
+      "median": 2.0,
+      "q25": 2.0,
+      "q75": 2.0
+    },
+    "events_measured": 3,
+    "events_generated": 84,
+    "void": "measured events 3 < 10",
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "negative pattern rate [per 100 positions] (enabled in profile: False)",
+    "measured": 0.628930817610063,
+    "generated": 0.0884633397512619,
+    "events_measured": 1,
+    "events_generated": 17,
+    "noise_only_rate_measured": 0.13333333333333333,
+    "noise_only_rate_generated": 0.1206896551724138,
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "negative pattern amplitude [mAh]",
+    "measured": null,
+    "generated": {
+      "n": 17,
+      "median": -36.252094921314374,
+      "q25": -54.51053686682064,
+      "q75": -29.31081286810363
+    },
+    "events_measured": 1,
+    "events_generated": 17,
+    "void": "measured events 1 < 10",
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "negative pattern duration [positions]",
+    "measured": null,
+    "generated": {
+      "n": 17,
+      "median": 2.0,
+      "q25": 2.0,
+      "q75": 2.0
+    },
+    "events_measured": 1,
+    "events_generated": 17,
+    "void": "measured events 1 < 10",
+    "dataset": "NASA_PCoE"
+  },
+  {
+    "property": "cross-channel residual correlation (relative Frobenius distance, mean |delta rho|)",
+    "measured": [
+      [
+        1.0,
+        -0.024333427645948032,
+        0.17078036554302203,
+        0.002246928595130476
+      ],
+      [
+        -0.024333427645948032,
+        0.9999999999999999,
+        -0.0833989774167795,
+        -0.43811908049090403
+      ],
+      [
+        0.17078036554302203,
+        -0.0833989774167795,
+        1.0,
+        0.29876008498202694
+      ],
+      [
+        0.002246928595130476,
+        -0.43811908049090403,
+        0.2987600849820269,
+        1.0
+      ]
+    ],
+    "generated": [
+      [
+        1.0,
+        -0.03453887423238041,
+        -0.033274388910061285,
+        -0.09479412462660464
+      ],
+      [
+        -0.03453887423238042,
+        0.9999999999999998,
+        0.011704696655518989,
+        0.015295159669999
+      ],
+      [
+        -0.033274388910061285,
+        0.01170469665551899,
+        1.0,
+        0.050211963888439556
+      ],
+      [
+        -0.09479412462660462,
+        0.015295159669999002,
+        0.050211963888439556,
+        1.0
+      ]
+    ],
+    "relative_frobenius": 0.3759230764655686,
+    "mean_abs_delta_rho": 0.1847278815980066,
+    "dataset": "NASA_PCoE"
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "measured": "two_term_exponential; 0.0054",
+    "generated": "two_term_exponential; 0.0028",
+    "units_measured": 38,
+    "units_generated": 205,
+    "dataset": "MATR"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "measured": {
+      "n": 38,
+      "median": 25.60255077163324,
+      "q25": 20.12604381399429,
+      "q75": 40.65106699983032
+    },
+    "generated": {
+      "n": 205,
+      "median": 24.388526482995516,
+      "q25": 19.322940264579167,
+      "q75": 38.65390774356202
+    },
+    "units_measured": 38,
+    "units_generated": 205,
+    "dataset": "MATR"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "measured": {
+      "n": 38,
+      "median": 0.9986532992809144,
+      "q25": 0.9979412482536903,
+      "q75": 0.9989704754644595
+    },
+    "generated": {
+      "n": 205,
+      "median": 0.9987608426270136,
+      "q25": 0.9980237154150198,
+      "q75": 0.9990108803165183
+    },
+    "units_measured": 38,
+    "units_generated": 205,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, capacity",
+    "measured": 4.569370418643904e-06,
+    "generated": 1.954323836083489e-06,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "measured": 0.9154154381104281,
+    "generated": 0.9262151577889147,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, charge_time",
+    "measured": 53.45302032488275,
+    "generated": 0.6583640215560572,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "measured": 0.76782976545689,
+    "generated": 0.8999300010216168,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage",
+    "measured": 0.0004963534924795882,
+    "generated": 0.0004177737538623583,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "measured": 0.9707006643514121,
+    "generated": 0.9605290307782547,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, internal_resistance",
+    "measured": 9.683542444589332e-08,
+    "generated": 7.748701670174625e-08,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, internal_resistance",
+    "measured": 0.9468725061400235,
+    "generated": 0.9505182485779784,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, temperature_mean",
+    "measured": 0.6124615554451244,
+    "generated": 0.423601621284343,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, temperature_mean",
+    "measured": 0.9169140153588617,
+    "generated": 0.9378914521085793,
+    "units_measured": 40,
+    "units_generated": 300,
+    "dataset": "MATR"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "measured": {
+      "n": 38,
+      "median": 743.5,
+      "q25": 485.75,
+      "q75": 974.75
+    },
+    "generated": {
+      "n": 205,
+      "median": 807.0,
+      "q25": 506.0,
+      "q75": 1011.0
+    },
+    "units_measured": 38,
+    "units_generated": 205,
+    "dataset": "MATR"
+  },
+  {
+    "property": "positive pattern rate [per 100 positions] (enabled in profile: False)",
+    "measured": 0.12009354655205108,
+    "generated": 0.09890032260343326,
+    "events_measured": 38,
+    "events_generated": 252,
+    "noise_only_rate_measured": 0.1551047120418848,
+    "noise_only_rate_generated": 0.1446078431372549,
+    "dataset": "MATR"
+  },
+  {
+    "property": "positive pattern amplitude [mAh]",
+    "measured": {
+      "n": 38,
+      "median": 4.637750430140842,
+      "q25": 3.2264535104565715,
+      "q75": 6.3939046088115195
+    },
+    "generated": {
+      "n": 252,
+      "median": 3.526054344040224,
+      "q25": 2.4103365172181515,
+      "q75": 4.934694949094699
+    },
+    "events_measured": 38,
+    "events_generated": 252,
+    "void": null,
+    "dataset": "MATR"
+  },
+  {
+    "property": "positive pattern duration [positions]",
+    "measured": {
+      "n": 38,
+      "median": 6.0,
+      "q25": 3.0,
+      "q75": 8.0
+    },
+    "generated": {
+      "n": 252,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 4.0
+    },
+    "events_measured": 38,
+    "events_generated": 252,
+    "void": null,
+    "dataset": "MATR"
+  },
+  {
+    "property": "negative pattern rate [per 100 positions] (enabled in profile: False)",
+    "measured": 0.2022628152455597,
+    "generated": 0.1008626305915966,
+    "events_measured": 64,
+    "events_generated": 257,
+    "noise_only_rate_measured": 0.14659685863874344,
+    "noise_only_rate_generated": 0.1446078431372549,
+    "dataset": "MATR"
+  },
+  {
+    "property": "negative pattern amplitude [mAh]",
+    "measured": {
+      "n": 64,
+      "median": -6.2314337932218,
+      "q25": -19.443276655655254,
+      "q75": -4.0648118615298925
+    },
+    "generated": {
+      "n": 257,
+      "median": -3.4426325176613175,
+      "q25": -4.557195229066337,
+      "q75": -2.3159704218341606
+    },
+    "events_measured": 64,
+    "events_generated": 257,
+    "void": null,
+    "dataset": "MATR"
+  },
+  {
+    "property": "negative pattern duration [positions]",
+    "measured": {
+      "n": 64,
+      "median": 2.5,
+      "q25": 2.0,
+      "q75": 3.0
+    },
+    "generated": {
+      "n": 257,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 4.0
+    },
+    "events_measured": 64,
+    "events_generated": 257,
+    "void": null,
+    "dataset": "MATR"
+  },
+  {
+    "property": "cross-channel residual correlation (relative Frobenius distance, mean |delta rho|)",
+    "measured": [
+      [
+        1.0,
+        0.04529068398364355,
+        -0.009681059600094587,
+        0.009402378346731965,
+        0.002802675548835255
+      ],
+      [
+        0.045290683983643554,
+        1.0,
+        -0.6508679996058253,
+        0.6918769925321615,
+        -0.606133732546123
+      ],
+      [
+        -0.009681059600094586,
+        -0.6508679996058254,
+        0.9999999999999999,
+        -0.7471349681252004,
+        0.28553386736371184
+      ],
+      [
+        0.009402378346731965,
+        0.6918769925321615,
+        -0.7471349681252004,
+        1.0,
+        -0.443072639749889
+      ],
+      [
+        0.0028026755488352547,
+        -0.606133732546123,
+        0.28553386736371184,
+        -0.443072639749889,
+        1.0
+      ]
+    ],
+    "generated": [
+      [
+        1.0,
+        -0.10922071881093683,
+        -0.03498552306960802,
+        0.014591929921411244,
+        0.07450657101545681
+      ],
+      [
+        -0.10922071881093683,
+        1.0,
+        -0.006362439713032687,
+        -0.025202401880016965,
+        -0.03975654284594006
+      ],
+      [
+        -0.03498552306960802,
+        -0.006362439713032687,
+        0.9999999999999999,
+        -0.0014315395658099828,
+        -0.01922094370278501
+      ],
+      [
+        0.014591929921411244,
+        -0.025202401880016965,
+        -0.001431539565809983,
+        1.0,
+        0.01643750045215943
+      ],
+      [
+        0.0745065710154568,
+        -0.03975654284594006,
+        -0.01922094370278501,
+        0.016437500452159432,
+        1.0
+      ]
+    ],
+    "relative_frobenius": 0.6814995659025227,
+    "mean_abs_delta_rho": 0.36946398371384837,
+    "dataset": "MATR"
+  }
+]
