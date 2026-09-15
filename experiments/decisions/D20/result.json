@@ -1,0 +1,1921 @@
+[
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.02171220470744981,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.4823809597712339,
+        "ci": [
+          0.4558101402588755,
+          0.5045495342332238
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8695252286163518,
+        "ci": [
+          0.8215052288360761,
+          0.9064529731803288
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.025602698453229936,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5352541512732375,
+        "ci": [
+          0.5011132365073647,
+          0.5566934724867058
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8798255355116542,
+        "ci": [
+          0.8190578859617184,
+          0.917958840920063
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.037127477349211284,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5178182336656738,
+        "ci": [
+          0.44541910370626336,
+          0.5598587175198902
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7993740871153429,
+        "ci": [
+          0.6829504420625694,
+          0.8668874100169012
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.05922405379782689,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.4533861448404332,
+        "ci": [
+          0.41324161879900667,
+          0.4964943143344048
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7253507677892287,
+        "ci": [
+          0.6512286331243402,
+          0.7855494538564867
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.07929832306818291,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.45691310386985196,
+        "ci": [
+          0.40974309429849076,
+          0.49994047311521006
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6614804603731383,
+        "ci": [
+          0.5747768067848411,
+          0.7373980340091655
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.10327472785996497,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.3770133667767568,
+        "ci": [
+          0.3165838302782203,
+          0.4228053978205035
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6091964444454382,
+        "ci": [
+          0.5129216374815729,
+          0.6813142065619568
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.13994443847341972,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.3621614521249565,
+        "ci": [
+          0.2874035714141664,
+          0.42305120344298097
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.5833089233255011,
+        "ci": [
+          0.45700217910448915,
+          0.6788601636566486
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.07905366597906294,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.24687317164345027,
+        "ci": [
+          0.2210583030855728,
+          0.2738734695146094
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9942032547392909,
+        "ci": [
+          0.9830578412540183,
+          0.9976575299320981
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.039731910861672805,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.6725637790160891,
+        "ci": [
+          0.6558681025510765,
+          0.6839850620740173
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9551104459556667,
+        "ci": [
+          0.911135781846953,
+          0.9759176895493273
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.040489981018887705,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.487359451804306,
+        "ci": [
+          0.4404354962173741,
+          0.5266924806484136
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8167675351115831,
+        "ci": [
+          0.7440220325532194,
+          0.8631066712214805
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.05068393304633086,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.37913680044763765,
+        "ci": [
+          0.317214081652487,
+          0.4261042137463605
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.5309818604310234,
+        "ci": [
+          0.4388427407067443,
+          0.6022597532203544
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.07203826644180619,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.08843569443110652,
+        "ci": [
+          0.0327601644609863,
+          0.14780570959998468
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.17937418265153038,
+        "ci": [
+          0.07965599308342451,
+          0.27242210269607353
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.04454146872911063,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5714865579695156,
+        "ci": [
+          0.5372557240946033,
+          0.6076975637651112
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8388545722054898,
+        "ci": [
+          0.7868246197808315,
+          0.884811627105974
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.04584964509424886,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.43807748552629394,
+        "ci": [
+          0.4019927652073872,
+          0.4648860766838488
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8456912879323595,
+        "ci": [
+          0.7830429081409653,
+          0.889081928979728
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "value": 24,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.04156751561149051,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.4571808015589342,
+        "ci": [
+          0.41256555215527,
+          0.48744031291752193
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7955374313818829,
+        "ci": [
+          0.7085821821885916,
+          0.8526265548207613
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "value": 48,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.03560978491402585,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5772731190444788,
+        "ci": [
+          0.535960738505797,
+          0.6045441921016469
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8164409686041086,
+        "ci": [
+          0.7375568303356599,
+          0.8671387420105615
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "value": 96,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.039525669717023516,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.4969613920670002,
+        "ci": [
+          0.4651839462397057,
+          0.5205140841275699
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.845459168657274,
+        "ci": [
+          0.7933373740393286,
+          0.8847482712785906
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.008775083477735049,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.29714436018286305,
+        "ci": [
+          0.2811658696539711,
+          0.3140459001359173
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9456865908871014,
+        "ci": [
+          0.9142710626424274,
+          0.9617123084587098
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.009434079978846101,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.6235233492142211,
+        "ci": [
+          0.6140856704831055,
+          0.6323997273271236
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9663233913738074,
+        "ci": [
+          0.9522856955499641,
+          0.9764478010984718
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.012018287039956142,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5193620664030617,
+        "ci": [
+          0.5064257330674272,
+          0.5320641560513387
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9225460825397127,
+        "ci": [
+          0.8848968012614388,
+          0.9489104917014064
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.01812173692873685,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.4325871543052454,
+        "ci": [
+          0.41462383547439813,
+          0.44790531789565513
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9149828401033119,
+        "ci": [
+          0.8758972260062903,
+          0.9388928973884098
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.024106025224909844,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.46372489031137937,
+        "ci": [
+          0.4510413407018198,
+          0.4756263021404288
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9022303400951479,
+        "ci": [
+          0.8725616202845747,
+          0.9242785764706565
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.03305628177892503,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.1851016675748077,
+        "ci": [
+          0.15745567823097983,
+          0.21466442516108558
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7688725878753757,
+        "ci": [
+          0.7196859537512779,
+          0.8205299251106484
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.044496789476836225,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.3236963369228693,
+        "ci": [
+          0.2968611304249294,
+          0.3499356819845817
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7477537601536032,
+        "ci": [
+          0.6728918485618803,
+          0.8041616699323157
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.023219801263077187,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.10380990008885609,
+        "ci": [
+          0.09010127854420902,
+          0.11993129153798474
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9982178001771917,
+        "ci": [
+          0.9973225651300953,
+          0.998743308701507
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.015168435816370816,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.3911435798996281,
+        "ci": [
+          0.3829830700558683,
+          0.3984788606462788
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9905259272106468,
+        "ci": [
+          0.9810425129264007,
+          0.9943950140425165
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.014196329340226974,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.482467446857878,
+        "ci": [
+          0.46756835315943757,
+          0.49421990686247697
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9184234415224676,
+        "ci": [
+          0.8810158452305571,
+          0.941742767741651
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.017623170362290653,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.21402066260609692,
+        "ci": [
+          0.18369754824470994,
+          0.23993276125277438
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6396867941298535,
+        "ci": [
+          0.5272008833096125,
+          0.7201414088250979
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.017674596852511347,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.1596661873490878,
+        "ci": [
+          0.13270767806430697,
+          0.191762065593205
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.39018900673099727,
+        "ci": [
+          0.2778293115227352,
+          0.4817865127507131
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.014485377564428852,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5470843781576232,
+        "ci": [
+          0.5296640674968238,
+          0.5639602721819499
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9183207050918789,
+        "ci": [
+          0.8821206428130753,
+          0.9445760419513954
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.012254202036926343,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.46534692062613614,
+        "ci": [
+          0.46013288511421924,
+          0.47082840518232305
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9351238884484124,
+        "ci": [
+          0.9102612511059023,
+          0.951768037341213
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "value": 24,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.014215016925884857,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.49372219974214504,
+        "ci": [
+          0.4822779648307078,
+          0.5039558514595233
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9352835563677048,
+        "ci": [
+          0.9013691930467592,
+          0.9554821493814182
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "value": 48,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.012942428535490253,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.5639331832706972,
+        "ci": [
+          0.5501311640496924,
+          0.5794369032167358
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9563028563254347,
+        "ci": [
+          0.9268392912968415,
+          0.9693807377098015
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "value": 96,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.01066037257116172,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.33383810182251744,
+        "ci": [
+          0.31350462082928604,
+          0.35211612563273215
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9371253464366948,
+        "ci": [
+          0.908463266650381,
+          0.9552953905658971
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.09589016441763619,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.24122386492994083,
+        "ci": [
+          0.22560663934597505,
+          0.2620123991250286
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8148465093004728,
+        "ci": [
+          0.7041849591582097,
+          0.8787872018864351
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.8361273777525369,
+        "ci": [
+          0.5716092463965332,
+          0.9433645223809746
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.10439017530640862,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.2925655862017814,
+        "ci": [
+          0.2712382485392582,
+          0.31841219332262444
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8158529435441805,
+        "ci": [
+          0.7211061446467736,
+          0.8697713481117549
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9731839888370031,
+        "ci": [
+          0.8947088914036034,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.1260482484907572,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.22237962961289626,
+        "ci": [
+          0.19411442368733112,
+          0.2520524088199357
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6618556277603629,
+        "ci": [
+          0.5621253044592462,
+          0.7411647092731641
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9967523686327718,
+        "ci": [
+          0.9837618431638597,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.19250776565300334,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.30412521993973823,
+        "ci": [
+          0.2500964732304315,
+          0.35344094558672123
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6466795117071417,
+        "ci": [
+          0.5643266879913834,
+          0.7100697775313042
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.28446683141698764,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.42734999175862876,
+        "ci": [
+          0.37860320564005767,
+          0.47561144652255005
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.5839683500943071,
+        "ci": [
+          0.490059420479254,
+          0.6459024583865247
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.990182294390035,
+        "ci": [
+          0.9725680260053242,
+          0.9990135319722047
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.3343841931639672,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.2692535419287211,
+        "ci": [
+          0.22578085842911091,
+          0.31375697169625305
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.4296268491096691,
+        "ci": [
+          0.33616420217605325,
+          0.507300258586176
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.3607168737627827,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.16804929973366195,
+        "ci": [
+          0.1187318036683373,
+          0.2218604577871207
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.3518463801735464,
+        "ci": [
+          0.2863058081015874,
+          0.43066572686096416
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9832537545503666,
+        "ci": [
+          0.9571463166922648,
+          0.9958841243284723
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.20253090389254438,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.3578490056554177,
+        "ci": [
+          0.33580560198205084,
+          0.3832361899372172
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.8055747204925353,
+        "ci": [
+          0.714394351573459,
+          0.8653672703646618
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9693794756804215,
+        "ci": [
+          0.8706734507021068,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.1488733187613073,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.604902978272897,
+        "ci": [
+          0.573177805564167,
+          0.6320135703841818
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7863904011248719,
+        "ci": [
+          0.6925972646986527,
+          0.8516746725231265
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9993736710934632,
+        "ci": [
+          0.9968683554673157,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.14646759571485068,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.1841987904459264,
+        "ci": [
+          0.15733096382084594,
+          0.2155134498071105
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7113851578703226,
+        "ci": [
+          0.6217472633320129,
+          0.7772876343903667
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.1518930025403159,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.220332663059088,
+        "ci": [
+          0.18477087702923184,
+          0.2609956946081904
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.5836196346548322,
+        "ci": [
+          0.49710133307235516,
+          0.6624839639256518
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9929980418845168,
+        "ci": [
+          0.9664073576555561,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.18111760294966603,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.22923859145067735,
+        "ci": [
+          0.17441077674436686,
+          0.2843624019214365
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.46469887056177245,
+        "ci": [
+          0.37113804472400846,
+          0.5385553213025084
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9039744172733033,
+        "ci": [
+          0.8178224713073248,
+          0.9616508858519328
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.21837434743432152,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.228879924349209,
+        "ci": [
+          0.16699313906113802,
+          0.28061607667769517
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.5768553142313507,
+        "ci": [
+          0.4816273852549472,
+          0.6661247419682856
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.8856719843094661,
+        "ci": [
+          0.7394993689562211,
+          0.9685791665220687
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "value": 16,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.15211850620856243,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.1562396714551878,
+        "ci": [
+          0.1133728301851098,
+          0.19439228019382787
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.676513992355818,
+        "ci": [
+          0.5915658276628116,
+          0.7465305545440188
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9970875705846037,
+        "ci": [
+          0.9902131047856882,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "value": 24,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.14301376827533996,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.25877067977398444,
+        "ci": [
+          0.22929640692409867,
+          0.28478305820458905
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.698895092196332,
+        "ci": [
+          0.6095531867792334,
+          0.7639186733247798
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9939387020069897,
+        "ci": [
+          0.9727489681862322,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "value": 48,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.13469412344634588,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.41101951753777,
+        "ci": [
+          0.3822527753185038,
+          0.4344051460038487
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7173413291737504,
+        "ci": [
+          0.6404141423301731,
+          0.7660052316336177
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9977891403013416,
+        "ci": [
+          0.9931656941912695,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "value": 96,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.09488100186268085,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.18836244769639898,
+        "ci": [
+          0.14272063092315018,
+          0.2191935787619304
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.9293788223271225,
+        "ci": [
+          0.9122579135145386,
+          0.9429303307796937
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9580298085692862,
+        "ci": [
+          0.904213426615239,
+          0.9858794068046413
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 0.25,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.16077763851470134,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.21159272070980392,
+        "ci": [
+          0.18135842152505066,
+          0.24532982290307567
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.666505012824015,
+        "ci": [
+          0.5707392765099005,
+          0.7449116801065768
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9953343314377671,
+        "ci": [
+          0.9794092771864632,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 0.5,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.14953593818790947,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.10594122383523465,
+        "ci": [
+          0.07701331918601548,
+          0.13515302971558157
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6828085962349484,
+        "ci": [
+          0.5901632350936723,
+          0.753315173530354
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9982763428492106,
+        "ci": [
+          0.9921893508395352,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 1,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.164004822108165,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.23315031796748661,
+        "ci": [
+          0.20539633178881084,
+          0.25936074940113635
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7325888036762148,
+        "ci": [
+          0.6285197861357863,
+          0.8019213570757991
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 2,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.1514307775886213,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.23166435299649712,
+        "ci": [
+          0.204265017213164,
+          0.268560005521429
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.6753803011141931,
+        "ci": [
+          0.5738637131069436,
+          0.7502843401080568
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9862019466117041,
+        "ci": [
+          0.9310097330585207,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 4,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.1426819901655801,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.26799965152389704,
+        "ci": [
+          0.23878152202391068,
+          0.30379940650344733
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.7191974074956861,
+        "ci": [
+          0.6242336232693175,
+          0.7854179902363477
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 0.9996711773240682,
+        "ci": [
+          0.9983558866203408,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "value": 8,
+    "reproduces_stored_reference_mean": true,
+    "nrmse_trained": 0.12885266001985446,
+    "rank": {
+      "a_trained_ig": {
+        "norm": 0.28050237671067835,
+        "ci": [
+          0.24700701693894667,
+          0.31227501463868934
+        ],
+        "state": "responsive"
+      },
+      "b_reference": {
+        "norm": 0.693884903165198,
+        "ci": [
+          0.6080945706123754,
+          0.7569182884912915
+        ],
+        "state": "responsive"
+      },
+      "c_both": "responsive"
+    },
+    "retrieval": {
+      "a_trained_ig": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "b_reference": {
+        "norm": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "state": "saturated"
+      },
+      "c_both": "saturated"
+    }
+  }
+]

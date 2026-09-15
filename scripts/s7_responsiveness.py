@@ -130,23 +130,59 @@ def part_one(ds, units, spec, kind, ops, has_patterns, seed, per_unit=20):
     return out
 
 
-def part_two(ds, P, spec_kw, settings, base_cfg, device, seed, n_units=150, per_unit=10, overrides_key=None):
-    rows = []
+def setting_units(ds, P, spec_kw, setting, val, seed, n_units=150):
+    """Generated units, target spec and the unit split for one generator setting value (generation seed 0)."""
     beta, L0, h = spec_kw
+    ov = {} if setting == "window_length_L" else {setting: float(val)}
+    L = int(val) if setting == "window_length_L" else L0
+    spec = TargetSpec.build(P, beta, L, h if setting != "window_length_L" else h * L / L0)
+    units, i = [], 0
+    while len(units) < n_units and i < 4 * n_units:
+        u = generate_unit(P, 0, i, overrides=ov)
+        i += 1
+        if u is not None and u.T >= L + 2:
+            units.append(u)
+    g = rng(seed, "split", ds, "s7", setting, val)
+    perm = g.permutation(len(units))
+    return units, spec, g, perm[: int(0.7 * len(units))], perm[int(0.7 * len(units)): int(0.85 * len(units))], perm[int(0.85 * len(units)):]
+
+
+def reference_unit_scores(ds, P, spec_kw, setting, val, seed, per_unit=10):
+    """Per-unit scores of the reference model's exact attribution for a part-two row, from the same units, split and
+    windows as the row (training and IG consume no draws from the split stream). Fills rows cached before these values
+    were stored."""
+    units, spec, g, _tr, _va, te = setting_units(ds, P, spec_kw, setting, val, seed)
+    w = spec.weights("recency")[None]
+    has_pat = any(len(units[k].patterns) for k in te)
+    rank, ret = [], []
+    for k in te:
+        tg = unit_targets(units[k], spec, "recency")
+        idx = np.sort(g.choice(len(tg["y"]), size=min(per_unit, len(tg["y"])), replace=False))
+        Rpf, R = w * (tg["x_pattern_free"][idx] - spec.x0), w * (tg["x"][idx] - spec.x0)
+        rank.append(np.nanmean([rank_agreement(Rpf[j], tg["graded"][idx][j]) for j in range(len(idx))]))
+        if has_pat:
+            sp = tg["sparse"][idx] != 0
+            ok = [j for j in range(len(idx)) if sp[j].any()]
+            if ok:
+                ret.append(np.nanmean([retrieval_ap(R[j] - Rpf[j], sp[j]) for j in ok]))
+    return [float(v) for v in rank], [float(v) for v in ret]
+
+
+def part_two(ds, P, spec_kw, settings, base_cfg, device, seed, n_units=150, per_unit=10, cache=None):
+    rows = []
+    done = {}
+    if cache is not None and cache.exists():  # resumable: one JSON line per finished (profile, setting, value)
+        for line in cache.read_text().splitlines():
+            r = json.loads(line)
+            done[(r["dataset"], r["setting"], r["value"])] = r
     for setting, grid in settings.items():
         for val in grid:
-            ov = {} if setting == "window_length_L" else {setting: float(val)}
-            L = int(val) if setting == "window_length_L" else L0
-            spec = TargetSpec.build(P, beta, L, h if setting != "window_length_L" else h * L / L0)
-            units, i = [], 0
-            while len(units) < n_units and i < 4 * n_units:
-                u = generate_unit(P, 0, i, overrides=ov)
-                i += 1
-                if u is not None and u.T >= L + 2:
-                    units.append(u)
-            g = rng(seed, "split", ds, "s7", setting, val)
-            perm = g.permutation(len(units))
-            tr, va, te = perm[: int(0.7 * len(units))], perm[int(0.7 * len(units)): int(0.85 * len(units))], perm[int(0.85 * len(units)):]
+            if (ds, setting, val) in done:
+                rows.append(done[(ds, setting, val)])
+                print(f"[skip] {ds} {setting}={val} (cached)", flush=True)
+                continue
+            units, spec, g, tr, va, te = setting_units(ds, P, spec_kw, setting, val, seed, n_units)
+            L = spec.L
             Xs, ys, us = [], [], []
             for k in np.concatenate([tr, va]):
                 tg = unit_targets(units[k], spec, "recency")
@@ -180,9 +216,13 @@ def part_two(ds, P, spec_kw, settings, base_cfg, device, seed, n_units=150, per_
             row = {"dataset": ds, "setting": setting, "value": val, "units": len(units), "test_units": int(len(te)),
                    "nrmse": float(np.sqrt(np.mean((pt - yt) ** 2)) / np.std(yt)),
                    "rank_ig": float(np.nanmean(rank_ig)), "rank_ig_units": rank_ig, "rank_reference_exact": float(np.nanmean(rank_ref)),
+                   "rank_reference_exact_units": rank_ref,
                    "retrieval_ig": float(np.nanmean(ret_ig)) if ret_ig else None, "retrieval_ig_units": ret_ig,
-                   "retrieval_reference_exact": float(np.nanmean(ret_ref)) if ret_ref else None}
+                   "retrieval_reference_exact": float(np.nanmean(ret_ref)) if ret_ref else None, "retrieval_reference_exact_units": ret_ref}
             rows.append(row)
+            if cache is not None:
+                with open(cache, "a") as fh:
+                    fh.write(json.dumps(row) + "\n")
             print(f"[s7-2] {ds} {setting}={val}: nrmse {row['nrmse']:.3f} rank IG {row['rank_ig']:.3f} ref {row['rank_reference_exact']:.3f} retrieval IG {row['retrieval_ig']}", flush=True)
     return rows
 
@@ -201,6 +241,10 @@ def main() -> int:
     from degradx.viz import s7 as viz
 
     out, ct = ctx.out_dir, CheckTable()
+    if args.skip_part_one and (out / "tables" / "checks.json").exists():  # keep part one's checks when only part two runs
+        for c in json.loads((out / "tables" / "checks.json").read_text()):
+            if not c["name"].startswith("part two"):
+                ct.require(c["name"], c["passed"], c["expected"], c["observed"], c["severity"])
     beta = dd["target"]["weights"]["beta"]["value"]
     L = int(dd["target"]["window_length_L"]["value"])
     ops = {k: v for k, v in dd["responsiveness"]["operators"].items() if k != "source"}
@@ -241,7 +285,23 @@ def main() -> int:
             if not args.skip_part_two:
                 settings = {k: v for k, v in settings_all.items() if k != "pattern_amplitude_multiplier" or has_patterns}
                 with rec.section(f"{ds}_part2"):
-                    rows = part_two(ds, P, (beta, L, 6.0), settings, base_cfg, ctx.device, args.seed)
+                    rows = part_two(ds, P, (beta, L, 6.0), settings, base_cfg, ctx.device, args.seed, cache=out / "logs" / "part2_rows.jsonl")
+                with rec.section(f"{ds}_part2_reference_units"):
+                    for r in rows:
+                        if "rank_reference_exact_units" not in r:
+                            r["rank_reference_exact_units"], r["retrieval_reference_exact_units"] = reference_unit_scores(ds, P, (beta, L, 6.0), r["setting"], r["value"], args.seed)
+                            ct.require(f"part two {ds} {r['setting']}={r['value']}: recomputed reference-model unit scores reproduce the stored mean",
+                                       abs(np.nanmean(r["rank_reference_exact_units"]) - r["rank_reference_exact"]) < 1e-9, "|diff| < 1e-9",
+                                       f"{abs(np.nanmean(r['rank_reference_exact_units']) - r['rank_reference_exact']):.1e}")
+                for setting, grid in settings.items():
+                    got = sorted(r["value"] for r in rows if r["setting"] == setting)
+                    ct.require(f"part two {ds} {setting}: every declared value measured", got == sorted(grid), str(sorted(grid)), str(got))
+                for r in rows:
+                    ct.require(f"part two {ds} {r['setting']}={r['value']}: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void)",
+                               r["nrmse"] <= 0.3, "<= 0.3", f"{r['nrmse']:.3f}", severity="warn")
+                    if r.get("retrieval_reference_exact") is not None:
+                        ct.require(f"part two {ds} {r['setting']}={r['value']}: exact attribution retrieves the sparse set (paired AP 1)",
+                                   abs(r["retrieval_reference_exact"] - 1.0) < 1e-9, "1", f"{r['retrieval_reference_exact']:.6f}")
                 res2 += rows
                 write_json(res2, out / "tables" / "part2_generator_settings.json")
         if res2:
@@ -261,12 +321,14 @@ def operating_range(rows, res1, dd, seed):
     including chance (declarations responsiveness.operating_range)."""
     sat, chance_thr = 0.95, 0.05
     out_rows, table = [], []
+    keys = ("rank_ig", "retrieval_ig", "rank_reference_exact", "retrieval_reference_exact")
     for r in rows:
         ds = r["dataset"]
         c_rank = res1[ds]["recency"]["chance_rank"]
         c_ret = res1[ds]["recency"].get("chance_retrieval")
         r = dict(r)
-        for key, c, units_key in (("rank_ig", c_rank, "rank_ig_units"), ("retrieval_ig", c_ret, "retrieval_ig_units")):
+        for key in keys:
+            c, units_key = (c_rank if key.startswith("rank") else c_ret), f"{key}_units"
             vals = np.asarray(r.get(units_key) or [], float)
             vals = vals[np.isfinite(vals)]
             if c is None or not len(vals):
@@ -285,8 +347,8 @@ def operating_range(rows, res1, dd, seed):
     for ds in sorted({r["dataset"] for r in out_rows}):
         for setting in sorted({r["setting"] for r in out_rows if r["dataset"] == ds}):
             rr = [r for r in out_rows if r["dataset"] == ds and r["setting"] == setting]
-            for key in ("rank_ig", "retrieval_ig"):
-                states = [(r["value"], r.get(f"{key}_state")) for r in rr if r.get(f"{key}_state")]
+            for key in keys:
+                states =[(r["value"], r.get(f"{key}_state")) for r in rr if r.get(f"{key}_state")]
                 if not states:
                     continue
                 resp = [v for v, s in states if s == "responsive"]

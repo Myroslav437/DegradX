@@ -1,0 +1,29 @@
+dataset,setting,score,range_examined,responsive_values,responsive_range,outside
+HUST,noise_variance_multiplier,rank_ig,"[0.25, 16]","[0.25, 0.5, 1, 2, 4, 8, 16]","[0.25, 16]",{}
+HUST,noise_variance_multiplier,rank_reference_exact,"[0.25, 16]","[0.25, 1, 2, 4, 8, 16]","[0.25, 16]",{'0.5': 'saturated'}
+HUST,transition_sharpness_multiplier,rank_ig,"[0.25, 4]","[0.25, 0.5, 1, 2, 4]","[0.25, 4]",{}
+HUST,transition_sharpness_multiplier,rank_reference_exact,"[0.25, 4]","[1, 2, 4]","[1, 4]","{'0.25': 'saturated', '0.5': 'saturated'}"
+HUST,window_length_L,rank_ig,"[8, 96]","[8, 16, 24, 48, 96]","[8, 96]",{}
+HUST,window_length_L,rank_reference_exact,"[8, 96]","[8, 16, 24, 96]","[8, 96]",{'48': 'saturated'}
+MATR,noise_variance_multiplier,rank_ig,"[0.25, 16]","[0.25, 0.5, 1, 2, 4, 8, 16]","[0.25, 16]",{}
+MATR,noise_variance_multiplier,rank_reference_exact,"[0.25, 16]","[0.25, 0.5, 1, 2, 4, 8, 16]","[0.25, 16]",{}
+MATR,transition_sharpness_multiplier,rank_ig,"[0.25, 4]","[0.25, 0.5, 1, 2, 4]","[0.25, 4]",{}
+MATR,transition_sharpness_multiplier,rank_reference_exact,"[0.25, 4]","[1, 2, 4]","[1, 4]","{'0.25': 'saturated', '0.5': 'saturated'}"
+MATR,window_length_L,rank_ig,"[8, 96]","[8, 16, 24, 48, 96]","[8, 96]",{}
+MATR,window_length_L,rank_reference_exact,"[8, 96]","[8, 16, 24, 48, 96]","[8, 96]",{}
+NASA_PCoE,noise_variance_multiplier,rank_ig,"[0.25, 16]","[0.25, 0.5, 1, 2, 4, 8, 16]","[0.25, 16]",{}
+NASA_PCoE,noise_variance_multiplier,retrieval_ig,"[0.25, 16]",[0.25],"[0.25, 0.25]","{'0.5': 'saturated', '1': 'saturated', '2': 'saturated', '4': 'saturated', '8': 'saturated', '16': 'saturated'}"
+NASA_PCoE,noise_variance_multiplier,rank_reference_exact,"[0.25, 16]","[0.25, 0.5, 1, 2, 4, 8, 16]","[0.25, 16]",{}
+NASA_PCoE,noise_variance_multiplier,retrieval_reference_exact,"[0.25, 16]",[],,"{'0.25': 'saturated', '0.5': 'saturated', '1': 'saturated', '2': 'saturated', '4': 'saturated', '8': 'saturated', '16': 'saturated'}"
+NASA_PCoE,pattern_amplitude_multiplier,rank_ig,"[0.25, 8]","[0.25, 0.5, 1, 2, 4, 8]","[0.25, 8]",{}
+NASA_PCoE,pattern_amplitude_multiplier,retrieval_ig,"[0.25, 8]",[],,"{'0.25': 'saturated', '0.5': 'saturated', '1': 'saturated', '2': 'saturated', '4': 'saturated', '8': 'saturated'}"
+NASA_PCoE,pattern_amplitude_multiplier,rank_reference_exact,"[0.25, 8]","[0.25, 0.5, 1, 2, 4, 8]","[0.25, 8]",{}
+NASA_PCoE,pattern_amplitude_multiplier,retrieval_reference_exact,"[0.25, 8]",[],,"{'0.25': 'saturated', '0.5': 'saturated', '1': 'saturated', '2': 'saturated', '4': 'saturated', '8': 'saturated'}"
+NASA_PCoE,transition_sharpness_multiplier,rank_ig,"[0.25, 4]","[0.25, 0.5, 1, 2, 4]","[0.25, 4]",{}
+NASA_PCoE,transition_sharpness_multiplier,retrieval_ig,"[0.25, 4]",[4],"[4, 4]","{'0.25': 'saturated', '0.5': 'saturated', '1': 'saturated', '2': 'saturated'}"
+NASA_PCoE,transition_sharpness_multiplier,rank_reference_exact,"[0.25, 4]","[0.25, 0.5, 1, 2, 4]","[0.25, 4]",{}
+NASA_PCoE,transition_sharpness_multiplier,retrieval_reference_exact,"[0.25, 4]",[],,"{'0.25': 'saturated', '0.5': 'saturated', '1': 'saturated', '2': 'saturated', '4': 'saturated'}"
+NASA_PCoE,window_length_L,rank_ig,"[8, 96]","[8, 16, 24, 48, 96]","[8, 96]",{}
+NASA_PCoE,window_length_L,retrieval_ig,"[8, 96]",[8],"[8, 8]","{'16': 'saturated', '24': 'saturated', '48': 'saturated', '96': 'saturated'}"
+NASA_PCoE,window_length_L,rank_reference_exact,"[8, 96]","[8, 16, 24, 48, 96]","[8, 96]",{}
+NASA_PCoE,window_length_L,retrieval_reference_exact,"[8, 96]",[],,"{'8': 'saturated', '16': 'saturated', '24': 'saturated', '48': 'saturated', '96': 'saturated'}"

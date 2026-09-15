@@ -63,6 +63,7 @@ class TrainedModel:
     device: str = "cpu"
 
     def predict(self, X: np.ndarray, batch: int = 4096) -> np.ndarray:
+        batch = min(batch, max(256, 100000 // X.shape[1]))
         self.model.eval()
         out = []
         with torch.no_grad():
@@ -115,7 +116,8 @@ def train_regressor(X: np.ndarray, y: np.ndarray, unit_ids: np.ndarray, *, seed:
         if xv is not None:
             model.eval()
             with torch.no_grad():
-                sse = sum(float(lossf(model(xv[i:i + 8192]), yv[i:i + 8192])) * len(yv[i:i + 8192]) for i in range(0, len(xv), 8192))
+                ch = max(256, 50000 // X.shape[1])  # windows per validation chunk, bounded for long windows (S7 L = 96 ran out of GPU memory at 8192)
+                sse = sum(float(lossf(model(xv[i:i + ch]), yv[i:i + ch])) * len(yv[i:i + ch]) for i in range(0, len(xv), ch))
                 vl = sse / len(xv)
             hist["val"].append(vl)
             if vl < best - 1e-6:

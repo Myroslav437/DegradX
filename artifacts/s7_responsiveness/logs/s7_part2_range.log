@@ -1,0 +1,276 @@
+[skip] MATR noise_variance_multiplier=0.25 (cached)
+[skip] MATR noise_variance_multiplier=0.5 (cached)
+[skip] MATR noise_variance_multiplier=1 (cached)
+[skip] MATR noise_variance_multiplier=2 (cached)
+[skip] MATR noise_variance_multiplier=4 (cached)
+[skip] MATR noise_variance_multiplier=8 (cached)
+[skip] MATR noise_variance_multiplier=16 (cached)
+[skip] MATR transition_sharpness_multiplier=0.25 (cached)
+[skip] MATR transition_sharpness_multiplier=0.5 (cached)
+[skip] MATR transition_sharpness_multiplier=1 (cached)
+[skip] MATR transition_sharpness_multiplier=2 (cached)
+[skip] MATR transition_sharpness_multiplier=4 (cached)
+[skip] MATR window_length_L=8 (cached)
+[skip] MATR window_length_L=16 (cached)
+[skip] MATR window_length_L=24 (cached)
+[skip] MATR window_length_L=48 (cached)
+[skip] MATR window_length_L=96 (cached)
+[skip] HUST noise_variance_multiplier=0.25 (cached)
+[skip] HUST noise_variance_multiplier=0.5 (cached)
+[skip] HUST noise_variance_multiplier=1 (cached)
+[skip] HUST noise_variance_multiplier=2 (cached)
+[skip] HUST noise_variance_multiplier=4 (cached)
+[skip] HUST noise_variance_multiplier=8 (cached)
+[skip] HUST noise_variance_multiplier=16 (cached)
+[skip] HUST transition_sharpness_multiplier=0.25 (cached)
+[skip] HUST transition_sharpness_multiplier=0.5 (cached)
+[skip] HUST transition_sharpness_multiplier=1 (cached)
+[skip] HUST transition_sharpness_multiplier=2 (cached)
+[skip] HUST transition_sharpness_multiplier=4 (cached)
+[skip] HUST window_length_L=8 (cached)
+[skip] HUST window_length_L=16 (cached)
+[skip] HUST window_length_L=24 (cached)
+[skip] HUST window_length_L=48 (cached)
+[skip] HUST window_length_L=96 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=0.25 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=0.5 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=1 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=2 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=4 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=8 (cached)
+[skip] NASA_PCoE noise_variance_multiplier=16 (cached)
+[skip] NASA_PCoE transition_sharpness_multiplier=0.25 (cached)
+[skip] NASA_PCoE transition_sharpness_multiplier=0.5 (cached)
+[skip] NASA_PCoE transition_sharpness_multiplier=1 (cached)
+[skip] NASA_PCoE transition_sharpness_multiplier=2 (cached)
+[skip] NASA_PCoE transition_sharpness_multiplier=4 (cached)
+[skip] NASA_PCoE window_length_L=8 (cached)
+[skip] NASA_PCoE window_length_L=16 (cached)
+[skip] NASA_PCoE window_length_L=24 (cached)
+[skip] NASA_PCoE window_length_L=48 (cached)
+[skip] NASA_PCoE window_length_L=96 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=0.25 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=0.5 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=1 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=2 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=4 (cached)
+[skip] NASA_PCoE pattern_amplitude_multiplier=8 (cached)
+[PASS] MATR [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [recency]: fully permuted graded map scores at chance (rank): expected ~ chance -0.001; observed -0.004
+[PASS] MATR [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [uniform]: fully permuted graded map scores at chance (rank): expected ~ chance 0.001; observed 0.002
+[PASS] MATR [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] MATR [final_position]: fully permuted graded map scores at chance (rank): expected ~ chance 0.003; observed -0.001
+[PASS] MATR [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [recency]: fully permuted graded map scores at chance (rank): expected ~ chance 0.002; observed 0.004
+[PASS] HUST [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [uniform]: fully permuted graded map scores at chance (rank): expected ~ chance 0.002; observed 0.004
+[PASS] HUST [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] HUST [final_position]: fully permuted graded map scores at chance (rank): expected ~ chance 0.003; observed 0.005
+[PASS] HUST [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] added_noise: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] smoothing: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency]: fully permuted graded map scores at chance (rank): expected ~ chance -0.001; observed -0.002
+[PASS] NASA_PCoE [recency]: fully permuted map scores at chance (paired retrieval): expected ~ chance 0.050; observed 0.048
+[PASS] NASA_PCoE [recency] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [recency] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] added_noise: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] smoothing: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform]: fully permuted graded map scores at chance (rank): expected ~ chance 0.002; observed 0.001
+[PASS] NASA_PCoE [uniform]: fully permuted map scores at chance (paired retrieval): expected ~ chance 0.035; observed 0.038
+[PASS] NASA_PCoE [uniform] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [uniform] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] added_noise: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] added_noise: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] shift_to_start: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] shift_to_start: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] shift_to_end: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] shift_to_end: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] smoothing: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] smoothing: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position]: fully permuted graded map scores at chance (rank): expected ~ chance -0.004; observed 0.001
+[PASS] NASA_PCoE [final_position]: fully permuted map scores at chance (paired retrieval): expected ~ chance 0.029; observed 0.007
+[PASS] NASA_PCoE [final_position] permuted_fraction: undegraded ground truth at its ceiling (rank agreement 1): expected 1; observed 1.000000
+[PASS] NASA_PCoE [final_position] permuted_fraction: undegraded ground truth at its ceiling (paired retrieval 1): expected 1; observed 1.000000
+[PASS] part two MATR noise_variance_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR transition_sharpness_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR transition_sharpness_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR transition_sharpness_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR transition_sharpness_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR transition_sharpness_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR window_length_L=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR window_length_L=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR window_length_L=24: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR window_length_L=48: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR window_length_L=96: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two MATR noise_variance_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4, 8, 16]; observed [0.25, 0.5, 1, 2, 4, 8, 16]
+[PASS] part two MATR transition_sharpness_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4]; observed [0.25, 0.5, 1, 2, 4]
+[PASS] part two MATR window_length_L: every declared value measured: expected [8, 16, 24, 48, 96]; observed [8, 16, 24, 48, 96]
+[PASS] part two MATR noise_variance_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.022
+[PASS] part two MATR noise_variance_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.026
+[PASS] part two MATR noise_variance_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.037
+[PASS] part two MATR noise_variance_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.059
+[PASS] part two MATR noise_variance_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.079
+[PASS] part two MATR noise_variance_multiplier=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.103
+[PASS] part two MATR noise_variance_multiplier=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.140
+[PASS] part two MATR transition_sharpness_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.079
+[PASS] part two MATR transition_sharpness_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.040
+[PASS] part two MATR transition_sharpness_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.040
+[PASS] part two MATR transition_sharpness_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.051
+[PASS] part two MATR transition_sharpness_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.072
+[PASS] part two MATR window_length_L=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.045
+[PASS] part two MATR window_length_L=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.046
+[PASS] part two MATR window_length_L=24: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.042
+[PASS] part two MATR window_length_L=48: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.036
+[PASS] part two MATR window_length_L=96: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.040
+[PASS] part two HUST noise_variance_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST transition_sharpness_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST transition_sharpness_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST transition_sharpness_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST transition_sharpness_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST transition_sharpness_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST window_length_L=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST window_length_L=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST window_length_L=24: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST window_length_L=48: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST window_length_L=96: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two HUST noise_variance_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4, 8, 16]; observed [0.25, 0.5, 1, 2, 4, 8, 16]
+[PASS] part two HUST transition_sharpness_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4]; observed [0.25, 0.5, 1, 2, 4]
+[PASS] part two HUST window_length_L: every declared value measured: expected [8, 16, 24, 48, 96]; observed [8, 16, 24, 48, 96]
+[PASS] part two HUST noise_variance_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.009
+[PASS] part two HUST noise_variance_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.009
+[PASS] part two HUST noise_variance_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.012
+[PASS] part two HUST noise_variance_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.018
+[PASS] part two HUST noise_variance_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.024
+[PASS] part two HUST noise_variance_multiplier=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.033
+[PASS] part two HUST noise_variance_multiplier=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.044
+[PASS] part two HUST transition_sharpness_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.023
+[PASS] part two HUST transition_sharpness_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.015
+[PASS] part two HUST transition_sharpness_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.014
+[PASS] part two HUST transition_sharpness_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.018
+[PASS] part two HUST transition_sharpness_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.018
+[PASS] part two HUST window_length_L=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.014
+[PASS] part two HUST window_length_L=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.012
+[PASS] part two HUST window_length_L=24: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.014
+[PASS] part two HUST window_length_L=48: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.013
+[PASS] part two HUST window_length_L=96: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.011
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE window_length_L=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE window_length_L=16: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE window_length_L=24: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE window_length_L=48: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE window_length_L=96: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.25: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.5: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=1: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=2: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=4: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=8: recomputed reference-model unit scores reproduce the stored mean: expected |diff| < 1e-9; observed 0.0e+00
+[PASS] part two NASA_PCoE noise_variance_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4, 8, 16]; observed [0.25, 0.5, 1, 2, 4, 8, 16]
+[PASS] part two NASA_PCoE transition_sharpness_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4]; observed [0.25, 0.5, 1, 2, 4]
+[PASS] part two NASA_PCoE window_length_L: every declared value measured: expected [8, 16, 24, 48, 96]; observed [8, 16, 24, 48, 96]
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier: every declared value measured: expected [0.25, 0.5, 1, 2, 4, 8]; observed [0.25, 0.5, 1, 2, 4, 8]
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.096
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.25: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.104
+[PASS] part two NASA_PCoE noise_variance_multiplier=0.5: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE noise_variance_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.126
+[PASS] part two NASA_PCoE noise_variance_multiplier=1: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE noise_variance_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.193
+[PASS] part two NASA_PCoE noise_variance_multiplier=2: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE noise_variance_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.284
+[PASS] part two NASA_PCoE noise_variance_multiplier=4: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[WARN] part two NASA_PCoE noise_variance_multiplier=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.334
+[PASS] part two NASA_PCoE noise_variance_multiplier=8: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[WARN] part two NASA_PCoE noise_variance_multiplier=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.361
+[PASS] part two NASA_PCoE noise_variance_multiplier=16: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.203
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.25: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.149
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=0.5: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.146
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=1: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.152
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=2: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.181
+[PASS] part two NASA_PCoE transition_sharpness_multiplier=4: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE window_length_L=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.218
+[PASS] part two NASA_PCoE window_length_L=8: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE window_length_L=16: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.152
+[PASS] part two NASA_PCoE window_length_L=16: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE window_length_L=24: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.143
+[PASS] part two NASA_PCoE window_length_L=24: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE window_length_L=48: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.135
+[PASS] part two NASA_PCoE window_length_L=48: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE window_length_L=96: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.095
+[PASS] part two NASA_PCoE window_length_L=96: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.25: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.161
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.25: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.5: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.150
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=0.5: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=1: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.164
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=1: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=2: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.151
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=2: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=4: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.143
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=4: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=8: trained model reaches the accuracy gate (NRMSE <= 0.3; else its scores are void): expected <= 0.3; observed 0.129
+[PASS] part two NASA_PCoE pattern_amplitude_multiplier=8: exact attribution retrieves the sparse set (paired AP 1): expected 1; observed 1.000000

@@ -68,9 +68,54 @@ python scripts/s5_fidelity.py                                  # ~13 min on GPU
 python experiments/decisions/D02b/run.py; python experiments/decisions/D19/run.py
 ```
 
-## S6 … S9
+## S6 — usability
 
-Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
+```bash
+python scripts/s6_usability.py --datasets MATR HUST            # ~2.4 h on GPU: 10 ensemble members x 3 weightings, ablations
+python scripts/s6_usability.py --datasets NASA_PCoE            # ~4 min
+python experiments/decisions/D21/run.py                        # pattern amplitude multipliers (NASA), ~40 min
+```
+
+Models are saved to `artifacts/s6_usability/models/<profile>_<weighting>_<A|B>_seed<s>.pt` (LFS); S8 loads them. A run
+per dataset group writes its own `usability_<profile>.json`; the checks of the MATR/HUST run are kept as
+`tables/checks_MATR_HUST.*`.
+
+## S7 — responsiveness
+
+```bash
+python scripts/s7_responsiveness.py                            # part one (~3 min, CPU) and part two (~35 min, GPU)
+python scripts/s7_responsiveness.py --skip-part-one            # part two only, reusing tables/part1_degradation.json
+python scripts/s7_responsiveness.py --skip-part-two
+```
+
+Part two trains one LSTM per (profile, setting, value) and appends each finished row to `logs/part2_rows.jsonl`; a
+restarted run skips cached rows. Delete that file to recompute from scratch.
+
+## S8 — reference values
+
+```bash
+for ds in MATR HUST NASA_PCoE; do                              # ~2.5 h (MATR, HUST), ~1.5 h (NASA; paired maps)
+  python scripts/s8_reference_methods.py --datasets $ds --timeshap-windows 40 --timeshap-seeds 0 1 \
+      --timeshap-seeds-reference 0 --secondary-background     # D23 budget
+done
+python scripts/s8_reference_methods.py --checks-only           # checks over all profiles (each run overwrites checks.md)
+```
+
+Runs merge into `tables/reference_values.json`; raw maps go to `data/attributions/` (not committed).
+`experiments/s8_matr_exact_subset.py` added the exact-attribution ceiling on the TimeSHAP window subset to the MATR entry,
+which ran before the script computed it; the current script computes it directly.
+
+## S9 — results and paper
+
+```bash
+python scripts/s9_write_paper.py --tables fidelity properties figure_fidelity resolution figure_degradation usability \
+    range figure_range reference                               # results/*.json, paper/tables/*.tex, paper/img/fig_res_*.pdf,
+                                                               # docs/RESULTS_PROVENANCE.md
+bash scripts/build_paper.sh                                    # paper.pdf (review) and paper_clean.pdf
+bash scripts/latexdiff_round.sh <commit-before-round> round<N> # artifacts/amendments/round<N>_diff.pdf
+```
+
+`scripts/run_all.sh` chains S1–S9 with these invocations (`DEGRADX_FROM=s6` resumes from a stage).
 
 ## Git LFS policy
 

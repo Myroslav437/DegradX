@@ -1,0 +1,602 @@
+[
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "HUST",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {
+      "0.5": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      0.25,
+      4
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "HUST",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      1,
+      4
+    ],
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated"
+    }
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "score": "rank_ig",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "HUST",
+    "setting": "window_length_L",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {
+      "48": "saturated"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "MATR",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      0.25,
+      4
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "MATR",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      1,
+      4
+    ],
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated"
+    }
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "score": "rank_ig",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "MATR",
+    "setting": "window_length_L",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "score": "retrieval_ig",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25
+    ],
+    "responsive_range": [
+      0.25,
+      0.25
+    ],
+    "outside": {
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated",
+      "4": "saturated",
+      "8": "saturated",
+      "16": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "responsive_range": [
+      0.25,
+      16
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "noise_variance_multiplier",
+    "score": "retrieval_reference_exact",
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [],
+    "responsive_range": null,
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated",
+      "4": "saturated",
+      "8": "saturated",
+      "16": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "responsive_range": [
+      0.25,
+      8
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "score": "retrieval_ig",
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [],
+    "responsive_range": null,
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated",
+      "4": "saturated",
+      "8": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "responsive_range": [
+      0.25,
+      8
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "pattern_amplitude_multiplier",
+    "score": "retrieval_reference_exact",
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [],
+    "responsive_range": null,
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated",
+      "4": "saturated",
+      "8": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_ig",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      0.25,
+      4
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "score": "retrieval_ig",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      4
+    ],
+    "responsive_range": [
+      4,
+      4
+    ],
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "responsive_range": [
+      0.25,
+      4
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "transition_sharpness_multiplier",
+    "score": "retrieval_reference_exact",
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [],
+    "responsive_range": null,
+    "outside": {
+      "0.25": "saturated",
+      "0.5": "saturated",
+      "1": "saturated",
+      "2": "saturated",
+      "4": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "score": "rank_ig",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "score": "retrieval_ig",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8
+    ],
+    "responsive_range": [
+      8,
+      8
+    ],
+    "outside": {
+      "16": "saturated",
+      "24": "saturated",
+      "48": "saturated",
+      "96": "saturated"
+    }
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "score": "rank_reference_exact",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "responsive_range": [
+      8,
+      96
+    ],
+    "outside": {}
+  },
+  {
+    "dataset": "NASA_PCoE",
+    "setting": "window_length_L",
+    "score": "retrieval_reference_exact",
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [],
+    "responsive_range": null,
+    "outside": {
+      "8": "saturated",
+      "16": "saturated",
+      "24": "saturated",
+      "48": "saturated",
+      "96": "saturated"
+    }
+  }
+]

@@ -2,18 +2,16 @@
   "stage": "s7_responsiveness",
   "argv": [
     "scripts/s7_responsiveness.py",
-    "--skip-part-two",
-    "--device",
-    "cpu"
+    "--skip-part-one"
   ],
-  "started_utc": "2026-09-15T19:13:24.306802+00:00",
-  "finished_utc": "2026-09-15T19:16:22.814220+00:00",
-  "wall_clock_s": 178.507,
+  "started_utc": "2026-09-15T22:44:56.307148+00:00",
+  "finished_utc": "2026-09-15T22:45:32.562668+00:00",
+  "wall_clock_s": 36.256,
   "status": "ok",
   "error": null,
   "git": {
-    "commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2",
-    "dirty": false,
+    "commit": "ba687a3dbcd58597f82a291e864d9beb24a29673",
+    "dirty": true,
     "branch": "main"
   },
   "config_hash": "dd924e5b6cffb20536c7e9a803774c6e878fdaab3db70eb15e9173b6dae38eb0",
@@ -32,9 +30,12 @@
     "model_init": 0
   },
   "device": {
-    "device": "cpu",
+    "device": "cuda",
     "torch": "2.14.0+cu130",
-    "cuda_available": true
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "cuda_runtime": "13.0",
+    "cudnn": 92400
   },
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
