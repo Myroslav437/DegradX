@@ -42,6 +42,7 @@ meta:
     - {date: 2026-09-15, comment: D12, keys: [declared_by_design.capacity_series.cleaning_rule], r2: "no glitch rule", new: "isolated > 5% q_nom excursions and recovered collapses below 50% q_nom removed", reason: "single-cycle glitches set q1, T = 1-3 on NASA units, broke monotonicity in 16 MATR units"}
     - {date: 2026-09-15, comment: D14, keys: [declared_by_design.datasets.matr_batches], r2: "all four MATR batches (status CONFIRM)", new: "the three Severson 2019 batches", reason: "the cited dataset; batch 4 IR is zero in every cycle"}
     - {date: 2026-09-15, comment: D16, keys: [declared_by_design.pattern_detection.residual, declared_by_design.pattern_detection.max_duration], r2: "families fitted over 1..T; runs of any length >= m", new: "families fitted over t1..T; runs longer than the smoothing window are not patterns", reason: "early-rise misfit and low-frequency misfit dominated MATR/HUST detections"}
+    - {date: 2026-09-15, comment: D04, keys: [declared_by_design.trajectory_families.selection.simplicity_margin, declared_by_design.statistics.splits.measured.stratify_by], r2: "selection by lowest median CV-RMSE, no margin; split unstratified", new: "5% relative simplicity margin; split stratified by EOL attainment", reason: "declared before S3 so the family choice and split cannot follow the observed errors"}
     - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
 
 # ---------------------------------------------------------------------------------------------
@@ -205,6 +206,12 @@ declared_by_design:
     solver: {value: "scipy.optimize.least_squares(method='trf', loss='linear') with multistart", rationale: "plain NLS as the paper says; robust loss would change the residuals patterns are detected from"}
     selection:
       value: "5 contiguous-block folds per unit; RMSE on held-out blocks; family with lowest median CV-RMSE across fitting-split units"
+      simplicity_margin:
+        value: 0.05
+        rule: "if a family with fewer parameters has median CV-RMSE within 5% (relative) of the lowest, the family with fewest parameters among those within the margin is selected; every candidate's error is reported"
+        order: [power_law, two_term_exponential, rollover]
+        source: "D04, declared 2026-09-15 before any S3 fit ran (brief v2 §4 D04)"
+      units: "fitting-split units reaching EOL (fit range t1..T)"
       source: "paper l.236 ('cross-validated fit error across units'); protocol UNDERSPECIFIED-IN-PAPER"
 
   theta_distribution:
@@ -377,7 +384,10 @@ declared_by_design:
     seeds: {generation: [0, 1, 2], model_init: [0, 1, 2, 3, 4], attribution_sampling: [0, 1, 2], source: "paper l.291 (separate seeds); counts UNDERSPECIFIED-IN-PAPER"}
     bootstrap: {n_resamples: 10000, method: BCa, confidence: 0.95, resample_over: units, package: scipy.stats.bootstrap, source: "paper l.266, l.296; values UNDERSPECIFIED-IN-PAPER"}
     splits:
-      measured: {fitting: 0.7, held_out: 0.3, level: unit, source: "paper l.234, l.247; fractions UNDERSPECIFIED-IN-PAPER", affects_fitted_parameters: true}
+      measured: {fitting: 0.7, held_out: 0.3, level: unit, source: "paper l.234, l.247; fractions UNDERSPECIFIED-IN-PAPER", affects_fitted_parameters: true,
+               eligible: "units audited at S2 that pass the denominator guard (z is defined)",
+               stratify_by: "reaches EOL (declared 2026-09-15 before S3 ran: keeps censored units in proportion in both splits)",
+               seed_source: "split", rounding: "fitting count = round(0.7 * n) per stratum, at least 1 per non-empty stratum"}
       model_validation_from_training_units: 0.2
       generated: {train: 0.7, validation: 0.15, test: 0.15, level: unit}
     generated_units: {tstr: "same number of units as the measured fitting split", attribution_and_usability: 300}
