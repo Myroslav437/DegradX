@@ -113,9 +113,21 @@ Blast radius (round 4): §1's description of the protocol ("rank agreement again
 
 ## Round 5 — held citations (D10), 2026-09-15
 
-To be included in `artifacts/amendments/latexdiff_round5.pdf` (produced at S9 with the final round).
+In `artifacts/amendments/latexdiff_round5_6.pdf`, which covers rounds 5 and 6 together (both were produced at S9, against commit `0bdb0c3`).
 
 | id | where | what changed | why | cost / what it buys |
 |---|---|---|---|---|
 | D10 | §3.3, detection families | The families are distinguished by what triggers a detection (the capacity sequence itself vs rest time). pan2022 is described as decomposition plus a rest-time trigger, with one sentence noting that the families are not disjoint in the information they use. | pan2022 full text: regeneration is predicted by GPR on rest time and triggered by a rest-time threshold, not by assigning trend-uncorrelated components. | The argument for adopting residual detection is unchanged. |
 | D10 | §3.1.2, negative fluctuations | Removed "entering prognostic models as an explicit input on the usable capacity of a cycle~\cite{olivares2013}". | The claim cannot be verified from any accessible text of olivares2013. | Temperature's role is supported by dataset evidence only (severson2019). |
+
+## Round 6 — S7 and S8 results presentation (2026-09-16), against commit `603f8fe` (Results 4.3 part one)
+
+In `artifacts/amendments/latexdiff_round5_6.pdf` (against commit `0bdb0c3`, covering rounds 5 and 6).
+
+| id | where | what changed | why | cost / what it buys |
+|---|---|---|---|---|
+| D20 | Table 5 caption | The operating range is read on two probes, the reference model and Integrated Gradients on the trained model, with the declared accuracy gate; the table gains a profile and a score column and a failure column naming the probe. | On the trained model alone every examined setting value is "responsive", so the range would exclude nothing, including two values where the trained model is below the accuracy gate and its scores are void. | Two probes per setting value (6 CPU-min); interval boundaries near the saturation level are marked rather than smoothed. |
+| D24 | Table 6 caption | Reference values are reported per profile under recency weighting instead of averaged over profiles, with the exact attribution of the reference model, the ensemble range and the average-event background as rows. | The averaged ordering of the methods differs from the per-profile ordering, the ensemble range is per profile, and retrieval exists only in NASA PCoE, so an "average over profiles" would be one profile in that column. | Table 6 is three times longer and set in \scriptsize; later work quotes reference values per profile. |
+| — | Figure 8 | Placeholder box replaced by the measured panel (`img/fig_res_range.pdf`), caption states the two probes and the marked levels. | The figure is now measured. | none |
+
+Blast radius (round 6): §3.5.3's sentence "The range over which they remain responsive is reported as the operating range of the benchmark" is unchanged and is what D20 implements. §3.6's "reported in aggregate, without stratification by position within the trajectory" is unaffected: D24 separates profiles, not positions within a window. No sentence in §1–§3 states that reference values are averaged over profiles.

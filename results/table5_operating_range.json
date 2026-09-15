@@ -1,0 +1,617 @@
+{
+  "noise_variance_multiplier / MATR / rank": {
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "outside": {},
+    "states": {
+      "0.25": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "noise_variance_multiplier / HUST / rank": {
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "outside": {
+      "0.5": "reference model saturated"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "noise_variance_multiplier / NASA_PCoE / rank": {
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "outside": {
+      "8": "IG on the trained model below the accuracy gate",
+      "16": "IG on the trained model below the accuracy gate"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "below the accuracy gate"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "below the accuracy gate"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "noise_variance_multiplier / NASA_PCoE / retrieval": {
+    "range_examined": [
+      0.25,
+      16
+    ],
+    "responsive_values": [],
+    "outside": {
+      "0.25": "reference model saturated",
+      "0.5": "reference model saturated; IG on the trained model saturated",
+      "1": "reference model saturated; IG on the trained model saturated",
+      "2": "reference model saturated; IG on the trained model saturated",
+      "4": "reference model saturated; IG on the trained model saturated",
+      "8": "reference model saturated; IG on the trained model below the accuracy gate",
+      "16": "reference model saturated; IG on the trained model below the accuracy gate"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "1": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "2": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "4": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "8": {
+        "reference model": "saturated",
+        "IG on the trained model": "below the accuracy gate"
+      },
+      "16": {
+        "reference model": "saturated",
+        "IG on the trained model": "below the accuracy gate"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "transition_sharpness_multiplier / MATR / rank": {
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      1,
+      2,
+      4
+    ],
+    "outside": {
+      "0.25": "reference model saturated",
+      "0.5": "reference model saturated"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "transition_sharpness_multiplier / HUST / rank": {
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      1,
+      2,
+      4
+    ],
+    "outside": {
+      "0.25": "reference model saturated",
+      "0.5": "reference model saturated"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "transition_sharpness_multiplier / NASA_PCoE / rank": {
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "outside": {},
+    "states": {
+      "0.25": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "transition_sharpness_multiplier / NASA_PCoE / retrieval": {
+    "range_examined": [
+      0.25,
+      4
+    ],
+    "responsive_values": [],
+    "outside": {
+      "0.25": "reference model saturated; IG on the trained model saturated",
+      "0.5": "reference model saturated; IG on the trained model saturated",
+      "1": "reference model saturated; IG on the trained model saturated",
+      "2": "reference model saturated; IG on the trained model saturated",
+      "4": "reference model saturated"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "1": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "2": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "4": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "window_length_L / MATR / rank": {
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "outside": {},
+    "states": {
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "24": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "48": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "96": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "window_length_L / HUST / rank": {
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      96
+    ],
+    "outside": {
+      "48": "reference model saturated"
+    },
+    "states": {
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "24": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "48": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "96": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "window_length_L / NASA_PCoE / rank": {
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [
+      8,
+      16,
+      24,
+      48,
+      96
+    ],
+    "outside": {},
+    "states": {
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "24": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "48": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "96": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "window_length_L / NASA_PCoE / retrieval": {
+    "range_examined": [
+      8,
+      96
+    ],
+    "responsive_values": [],
+    "outside": {
+      "8": "reference model saturated",
+      "16": "reference model saturated; IG on the trained model saturated",
+      "24": "reference model saturated; IG on the trained model saturated",
+      "48": "reference model saturated; IG on the trained model saturated",
+      "96": "reference model saturated; IG on the trained model saturated"
+    },
+    "states": {
+      "8": {
+        "reference model": "saturated",
+        "IG on the trained model": "responsive"
+      },
+      "16": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "24": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "48": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "96": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "pattern_amplitude_multiplier / NASA_PCoE / rank": {
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "outside": {},
+    "states": {
+      "0.25": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "0.5": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "1": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "2": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "4": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      },
+      "8": {
+        "reference model": "responsive",
+        "IG on the trained model": "responsive"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  },
+  "pattern_amplitude_multiplier / NASA_PCoE / retrieval": {
+    "range_examined": [
+      0.25,
+      8
+    ],
+    "responsive_values": [],
+    "outside": {
+      "0.25": "reference model saturated; IG on the trained model saturated",
+      "0.5": "reference model saturated; IG on the trained model saturated",
+      "1": "reference model saturated; IG on the trained model saturated",
+      "2": "reference model saturated; IG on the trained model saturated",
+      "4": "reference model saturated; IG on the trained model saturated",
+      "8": "reference model saturated; IG on the trained model saturated"
+    },
+    "states": {
+      "0.25": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "0.5": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "1": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "2": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "4": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      },
+      "8": {
+        "reference model": "saturated",
+        "IG on the trained model": "saturated"
+      }
+    },
+    "probes": [
+      "reference_exact",
+      "ig"
+    ]
+  }
+}

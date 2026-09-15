@@ -12,7 +12,7 @@ trap 'rm -rf "$work"' EXIT
 git -C "$root" show "$old:paper/paper.tex" > "$work/old.tex"
 cp "$root/paper/paper.tex" "$work/new.tex"
 cp "$root/paper/PRIMEarxiv.sty" "$root/paper/references.bib" "$work/"
-cp -r "$root/paper/img" "$work/"
+cp -r "$root/paper/img" "$root/paper/tables" "$work/"
 python3 - "$work/new.tex" "$work/old.tex" <<'EOF'
 # Remove \revwhy{...} and unwrap \rev{...} (brace-matched) outside the preamble, so latexdiff marks
 # word-level changes instead of one unbreakable coloured block.
@@ -38,10 +38,12 @@ for p in sys.argv[1:]:
     open(p, "w").write(head + sep + body)
 EOF
 cd "$work"
-latexdiff "old.tex" "new.tex" > diff.tex 2> latexdiff.err
+# tables are diffed as whole blocks (PICTUREENV): word-level markup inside a tabular whose body moved to an
+# \input breaks the alignment (misplaced \noalign), and the table bodies are generated, not hand-edited
+latexdiff --config="PICTUREENV=(?:picture|DIFnomarkup|tabular)[\w\d*@]*" "old.tex" "new.tex" > diff.tex 2> latexdiff.err
 for pass in 1 2 3; do
   pdflatex -interaction=nonstopmode diff > /dev/null || true
-  [ "$pass" = 1 ] && bibtex diff > /dev/null
+  if [ "$pass" = 1 ]; then bibtex diff > /dev/null || true; fi   # a plain [ ] && ... would end the script under set -e
 done
 if grep -q "^!" diff.log; then grep -A3 "^!" diff.log | head -30; echo "[FAIL] latexdiff build has errors"; exit 1; fi
 mkdir -p "$root/artifacts/amendments"

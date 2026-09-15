@@ -1,29 +1,5 @@
 [
   {
-    "cell": "Figure 6 / MATR",
-    "artifact": "artifacts/s3_fit_profiles/profiles/MATR.json",
-    "key": "generated units seed 0 (first 25) + S3 split units",
-    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
-    "seeds": "generation 0",
-    "artifact_commit": "96a40f606be7667a5f5ec17508f80ba67c889f31"
-  },
-  {
-    "cell": "Figure 6 / HUST",
-    "artifact": "artifacts/s3_fit_profiles/profiles/HUST.json",
-    "key": "generated units seed 0 (first 25) + S3 split units",
-    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
-    "seeds": "generation 0",
-    "artifact_commit": "14a0dd70565aaa0b0927538ffc1d1e39b9618cb6"
-  },
-  {
-    "cell": "Figure 6 / NASA PCoE",
-    "artifact": "artifacts/s3_fit_profiles/profiles/NASA_PCoE.json",
-    "key": "generated units seed 0 (first 25) + S3 split units",
-    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
-    "seeds": "generation 0",
-    "artifact_commit": "387b4f059e61c5f0c935ae1e1fcff768217e021d"
-  },
-  {
     "cell": "Table 1 / MATR / discriminative_error",
     "artifact": "artifacts/s5_fidelity/tables/fidelity.json",
     "key": "MATR",
@@ -576,6 +552,30 @@
     "artifact_commit": "d85c7e540c5d63c3a8a54b5edef436a64a937ba2"
   },
   {
+    "cell": "Figure 6 / MATR",
+    "artifact": "artifacts/s3_fit_profiles/profiles/MATR.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "96a40f606be7667a5f5ec17508f80ba67c889f31"
+  },
+  {
+    "cell": "Figure 6 / HUST",
+    "artifact": "artifacts/s3_fit_profiles/profiles/HUST.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "14a0dd70565aaa0b0927538ffc1d1e39b9618cb6"
+  },
+  {
+    "cell": "Figure 6 / NASA PCoE",
+    "artifact": "artifacts/s3_fit_profiles/profiles/NASA_PCoE.json",
+    "key": "generated units seed 0 (first 25) + S3 split units",
+    "script": "scripts/s4_generate_units.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "387b4f059e61c5f0c935ae1e1fcff768217e021d"
+  },
+  {
     "cell": "Table 4 / Rank agreement, graded field / MATR / added_noise",
     "artifact": "artifacts/s7_responsiveness/tables/part1_degradation.json",
     "key": "MATR.recency.operators.added_noise",
@@ -797,7 +797,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Variance ratio of the two terms of Eq.~\\ref{eq:target} / NASA PCoE",
@@ -805,7 +805,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Association of $y$ with RUL (Spearman) / MATR",
@@ -821,7 +821,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Association of $y$ with RUL (Spearman) / NASA PCoE",
@@ -829,7 +829,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Model error on $y$ (NRMSE; members passing) / MATR",
@@ -845,7 +845,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Model error on $y$ (NRMSE; members passing) / NASA PCoE",
@@ -853,7 +853,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Correlation of graded and sparse fields / MATR",
@@ -869,7 +869,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Correlation of graded and sparse fields / NASA PCoE",
@@ -877,7 +877,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Error change, mean term removed / MATR",
@@ -893,7 +893,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Error change, mean term removed / NASA PCoE",
@@ -901,7 +901,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Error change, pattern term removed / MATR",
@@ -917,7 +917,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Error change, pattern term removed / NASA PCoE",
@@ -925,7 +925,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Permutation importance, null channel (flat) / MATR",
@@ -941,7 +941,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Permutation importance, null channel (flat) / NASA PCoE",
@@ -949,7 +949,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Permutation importance, null channel (permuted) / MATR",
@@ -965,7 +965,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Permutation importance, null channel (permuted) / NASA PCoE",
@@ -973,7 +973,7 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Redundant channels: $R^2$ from others, conditional importance / MATR",
@@ -989,7 +989,7 @@
     "key": "HUST.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "uncommitted"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   },
   {
     "cell": "Table 3 / Redundant channels: $R^2$ from others, conditional importance / NASA PCoE",
@@ -997,6 +997,270 @@
     "key": "NASA_PCoE.recency",
     "script": "scripts/s6_usability.py",
     "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
-    "artifact_commit": "0bdb0c380c94882ec2421fe33989553516ba8441"
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 5 / Noise variance / MATR / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "MATR.noise_variance_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Noise variance / HUST / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "HUST.noise_variance_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Noise variance / NASA PCoE / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.noise_variance_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Noise variance / NASA PCoE / Retrieval (paired)",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.noise_variance_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Transition sharpness / MATR / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "MATR.transition_sharpness_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Transition sharpness / HUST / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "HUST.transition_sharpness_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Transition sharpness / NASA PCoE / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.transition_sharpness_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Transition sharpness / NASA PCoE / Retrieval (paired)",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.transition_sharpness_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Sequence length / MATR / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "MATR.window_length_L",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Sequence length / HUST / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "HUST.window_length_L",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Sequence length / NASA PCoE / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.window_length_L",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Sequence length / NASA PCoE / Retrieval (paired)",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.window_length_L",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Pattern amplitude / NASA PCoE / Rank agreement",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.pattern_amplitude_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 5 / Pattern amplitude / NASA PCoE / Retrieval (paired)",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "NASA_PCoE.pattern_amplitude_multiplier",
+    "script": "scripts/s7_responsiveness.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Figure 8",
+    "artifact": "artifacts/s7_responsiveness/tables/part2_generator_settings.json",
+    "key": "all profiles, recency",
+    "script": "scripts/s7_responsiveness.py; scripts/s9_write_paper.py",
+    "seeds": "generation 0; model_init 0; evaluation 20260915",
+    "artifact_commit": "2a8a4b0cd5d0191f2fc9c5d0f877c7b9d52bbe64"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / MATR / IG",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / MATR / Feature occlusion",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / MATR / exact attribution",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.reference_exact(_timeshap_windows)",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / MATR / ensemble range",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.identifiability_floor",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP average event",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.secondary_average_event",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / IG",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / Feature occlusion",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / exact attribution",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.reference_exact(_timeshap_windows)",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / ensemble range",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.identifiability_floor",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP average event",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.secondary_average_event",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / TimeSHAP",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / IG",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / Feature occlusion",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / exact attribution",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.scores.reference_exact(_timeshap_windows)",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / ensemble range",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.identifiability_floor",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
+  },
+  {
+    "cell": "Table 6 / NASA PCoE / TimeSHAP average event",
+    "artifact": "artifacts/s8_reference_methods/tables/reference_values.json",
+    "key": "NASA_PCoE.weightings.recency.secondary_average_event",
+    "script": "scripts/s8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0-1 (TimeSHAP trained), 0 (reference); evaluation 20260915",
+    "artifact_commit": "ba687a3dbcd58597f82a291e864d9beb24a29673"
   }
 ]

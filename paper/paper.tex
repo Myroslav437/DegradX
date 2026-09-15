@@ -70,6 +70,8 @@
 \input{tables/table_fidelity_notes}
 \input{tables/table_properties_notes}
 \input{tables/table_usability_notes}
+\input{tables/table_reference_notes}
+\input{tables/table_range_notes}
 \begin{document}
 \maketitle
 
@@ -392,6 +394,12 @@ Rank agreement against the graded field resolves the smallest magnitude on the g
 
 Retrieval of the sparse set, scored on the paired maps, responds more strongly. The smallest added noise lowers it by 0.33 and the smallest permuted fraction by 0.72, it resolves mass shifted in either direction at the smallest fraction, and it resolves smoothing at one position. Plain retrieval on a single map scores the undegraded ground truth at 0.084, against 0.050 for a permuted map, so its resolutions lie within a range barely above chance and it cannot serve as the measure of whether a method has recovered the patterns. Under final-position weighting both fields collapse into the last position, where rank agreement falls to 0.23--0.26 at the smallest added noise because the remaining cells are tied at zero, and neither mass shifted toward the end nor smoothing changes retrieval at any magnitude.
 
+The second part varies the generator settings. For each value of each setting, 150 units are generated with that setting alone changed, a model of the primary architecture is trained on them, and Integrated Gradients is scored on windows of held-out generated units, alongside the exact attribution of the reference model on the same windows. Read on the trained model alone, no examined value would be excluded: its rank agreement stays between 0.09 and 0.67 over all 57 setting values, neither saturating nor reaching chance. The reference model, which is the primary scoring target, separates the settings. Its rank agreement is at the saturation level where the transition in the degradation state is gentle, 0.99 and 0.96 in MATR and 1.00 and 0.99 in HUST at exponents 0.25 and 0.5; it falls with added noise, from 0.87 to 0.58 in MATR and from 0.95 to 0.75 in HUST across the noise grid; and it falls with a sharper transition, to 0.18 in MATR and 0.39 in HUST at exponent 4. A saturated value is one where the exact attribution recovers the order of the graded field almost completely, which by the declared rule is a task too easy to separate methods.
+
+Table~\ref{tab:res:range} reads the operating range from both probes together with the accuracy threshold of Section~\ref{sec:protocol}. Rank agreement is responsive over the whole examined range for noise variance in MATR and HUST and for sequence length in all three profiles, and over exponents 1 to 4 for the transition sharpness. In NASA PCoE the noise range ends at four times the fitted variance: at eight and sixteen times the trained model no longer reaches the accuracy threshold, with normalized errors of 0.334 and 0.361, and its scores are void there. Two isolated values fall outside their intervals because the ceiling crosses the saturation level at that value alone, HUST noise at half the fitted variance and HUST $L=48$; the table marks them rather than smoothing the interval. Paired retrieval has no operating range on any setting: on the reference model it is exactly 1 at every value by construction, and on the trained model it is saturated at 20 of the 23 values.
+
+Two readings follow for later use. Differences between settings smaller than the variation between equivalent runs cannot be read: three rows share the default settings and differ only in which units were drawn for their splits, and their rank agreement differs by up to 0.074 on the trained model and 0.049 on the reference model. The second concerns paired retrieval on trained models. It stays at or above 0.84 at every setting, although Section~\ref{sec:res:usability} shows that the trained model does not use the pattern term at the fitted amplitudes, and it does not rise with the pattern amplitude. The paired score compares the maps of a window and of its pattern-free counterpart, so it registers the model's sensitivity to the changed inputs rather than its use of the term the change belongs to, which is why it is reported as void on trained models in Table~\ref{tab:res:methods}.
+
 \begin{figure}[t]
   \centering
   \includegraphics[width=\linewidth]{img/fig_res_degradation.pdf}
@@ -415,22 +423,20 @@ Retrieval of the sparse set, scored on the paired maps, responds more strongly. 
 
 \begin{figure}[t]
   \centering
-  \fbox{\parbox[c][3.4cm][c]{0.9\linewidth}{\centering \texttt{[FIGURE]} Each score against the generator settings that control task difficulty, one panel per setting: noise variance, sharpness of the transition in the degradation state, sequence length, and amplitude of the inserted patterns. Saturation near the maximum of a score and values near chance are both marked.}}
-  \caption{Score response to the generator settings, from which the operating range of Table~\ref{tab:res:range} is read.}
+  \includegraphics[width=\linewidth]{img/fig_res_range.pdf}
+  \caption{Score response to the generator settings, from which the operating range of Table~\ref{tab:res:range} is read. One panel per setting: noise variance, sharpness of the transition in the degradation state, sequence length, and amplitude of the inserted patterns. Rank agreement is shown for the exact attribution of the reference model and for Integrated Gradients on the trained model, one line per profile; retrieval is shown where the profile carries inserted patterns. Horizontal lines mark chance (solid) and the saturation level of the normalized score (dotted).}
   \label{fig:res:range}
 \end{figure}
 
 \begin{table}[t]
-  \caption{Operating range of the benchmark: the interval of each generator setting over which the scores remain responsive, outside which later use is not supported by these measurements. \hl{Placeholder values.}}
+  \caption{Operating range of the benchmark: the interval of each generator setting over which the scores remain responsive, outside which later use is not supported by these measurements. \rev{One row per setting, profile and score, under recency weighting. A setting value is inside the range when the score is neither saturated nor at chance under the declared rule, on the reference model and on the trained model with Integrated Gradients; the last column names the probe and the failure for every value outside. Settings are stated as multiples of the fitted value, except the sequence length, which is the window length $L$ in positions.} \protect\TabRangeNotes}
   \centering
-  \begin{tabular}{lccc}
+  \scriptsize
+  \begin{tabular}{lllllp{4.4cm}}
     \toprule
-    Setting & Range examined & Responsive range & Failure mode outside it \\
+    Setting & Profile & Score & Range examined & Responsive range & Outside the range \\
     \midrule
-    Noise variance & -- & -- & -- \\
-    Transition sharpness & -- & -- & -- \\
-    Sequence length & -- & -- & -- \\
-    Pattern amplitude & -- & -- & -- \\
+\csname @@input\endcsname tables/table_range.tex
     \bottomrule
   \end{tabular}
   \label{tab:res:range}
@@ -441,18 +447,25 @@ Retrieval of the sparse set, scored on the paired maps, responds more strongly. 
 
 Table~\ref{tab:res:methods} reports the three methods of Section~\ref{sec:protocol} at their default configurations, on the trained architecture and on the reference model of Section~\ref{sec:target}. These are reference values for later work rather than an evaluation of the methods themselves, and are therefore reported in aggregate, without stratification by position within the trajectory and without a diagnosis of the causes of any differences observed. The difference between the two columns of each pair is the part of a score attributable to the model rather than to the attribution method, since the reference model reproduces the decomposable target up to $\varepsilon$.
 
+The values rest on 120 windows drawn from 45 test units in MATR and HUST and from 39 in NASA PCoE, of which TimeSHAP, the only method that samples, explains 40. On the reference model, Integrated Gradients and feature occlusion return the exact attribution $w(x - x^{0})$, with a largest absolute difference of $1.6\times10^{-6}$ over all windows, profiles and weightings, so their reference column is the ceiling of the measurement rather than a property of the method: 0.815, 0.870 and 0.733 in rank agreement. The ceiling lies below 1 because the graded field excludes the noise term that the window carries, and a faithful attribution of the reference model attributes that term as well. TimeSHAP reaches 0.755, 0.859 and 0.744 on the same model, against exact values of 0.750, 0.859 and 0.743 on the subset of windows it was run on, so its sampling error at the default configuration is at most 0.005 in this score, and its unit mean moves by at most 0.016 between the two sampling seeds.
+
+On the trained model the same methods score 0.551, 0.321 and 0.316 for Integrated Gradients, 0.461, 0.298 and 0.283 for feature occlusion, and 0.468, 0.333 and 0.286 for TimeSHAP. The distance to the ceiling, between 0.26 and 0.57, is what the trained model contributes to the score. The ensemble bounds what the remaining differences may be read as. Under recency weighting the ten equally accurate models span 0.440--0.551 in MATR, 0.212--0.544 in HUST and 0.245--0.339 in NASA PCoE for Integrated Gradients, and 0.378--0.470, 0.254--0.372 and 0.259--0.395 for feature occlusion. In every profile the largest difference between two methods, 0.089, 0.035 and 0.034, is smaller than the range spanned by those models, so these values do not order the methods on a trained model.
+
+Mass placed on channels with zero target weight is error by construction. It is exactly zero on the reference model, and on the trained model 0.11--0.14 in MATR, 0.01--0.03 in HUST and 0.24--0.26 in NASA PCoE, the profile whose zero-weight temperature channel carries information the other channels do not (Section~\ref{sec:res:usability}). Retrieval against the sparse set is void in MATR and HUST, which carry no inserted patterns, and void on the trained model in NASA PCoE, where the model does not use the pattern term; on the reference model it is 1 at every window, which is what the construction predicts rather than a measurement of the method.
+
+Two readings of these values are sensitive to declared choices. TimeSHAP run from the average event it uses by convention, scored against the attribution ground truth for that baseline, reaches 0.561 in MATR, 0.315 in HUST and 0.435 in NASA PCoE, against 0.468, 0.333 and 0.286 from the pristine baseline: the score moves by up to 0.15 and not in the same direction in every profile, so a reference value is quoted together with its baseline. The position weighting matters as much. Under uniform weighting the trained-model values move by up to 0.13 and the ordering of the three methods differs from the recency ordering in all three profiles; under final-position weighting every method falls to 0.14--0.18 on the trained model while the reference ceiling stays at 0.84--0.87, which is the tie-dominated regime of Section~\ref{sec:res:responsiveness} rather than a property of the methods.
+
 \begin{table}[t]
-  \caption{Reference values per attribution method, on the trained model and on the reference model, averaged over profiles that pass the usability checks of Table~\ref{tab:res:usability}. Rank agreement is measured against the graded field, retrieval against the sparse set, and mass on zero-weight channels is error by construction. \hl{Placeholder values.}}
+  \caption{Reference values per attribution method, on the trained model and on the reference model, \rev{per profile, under recency weighting, on windows of generated test units}. Rank agreement is measured against the graded field, retrieval against the sparse set, and mass on zero-weight channels is error by construction. \rev{Rank agreement and retrieval are unit means with 95\% bootstrap intervals over test units. The exact attribution $w(x - x^{0})$ of the reference model is the ceiling of its column, and is repeated on the subset of windows the TimeSHAP rows rest on. The ensemble range is the smallest and largest rank agreement over the ten equally accurate models of Section~\ref{sec:models}, and bounds what a difference between methods on a trained model can be attributed to the method. The last row runs TimeSHAP from the average event it uses by convention, scored against the attribution ground truth for that baseline.} \protect\TabReferenceNotes}
   \centering
-  \begin{tabular}{llcccccc}
+  \scriptsize
+  \begin{tabular}{lcccccc}
     \toprule
-    & & \multicolumn{2}{c}{Rank agreement} & \multicolumn{2}{c}{Retrieval} & \multicolumn{2}{c}{Zero-weight mass} \\
-    \cmidrule(r){3-4} \cmidrule(r){5-6} \cmidrule(r){7-8}
-    Method & Family & trained & ref. & trained & ref. & trained & ref. \\
+    & \multicolumn{2}{c}{Rank agreement} & \multicolumn{2}{c}{Retrieval (paired)} & \multicolumn{2}{c}{Zero-weight mass} \\
+    \cmidrule(r){2-3} \cmidrule(r){4-5} \cmidrule(r){6-7}
+    Method & trained & reference & trained & reference & trained & reference \\
     \midrule
-    TimeSHAP & perturbation & -- & -- & -- & -- & -- & -- \\
-    IG & gradient & -- & -- & -- & -- & -- & -- \\
-    Feature occlusion & occlusion & -- & -- & -- & -- & -- & -- \\
+\csname @@input\endcsname tables/table_reference.tex
     \bottomrule
   \end{tabular}
   \label{tab:res:methods}
@@ -460,8 +473,26 @@ Table~\ref{tab:res:methods} reports the three methods of Section~\ref{sec:protoc
 
 \section{Discussion and future work}
 
+The three research questions have different answers for the three profiles, and the differences concern what the benchmark can be used for rather than whether its construction holds. The construction holds in every profile: the attribution ground truth reproduces the decomposable target exactly, the reference model attains it, and the target is learnable. What varies is how much of each dataset a profile reproduces, whether the sparse set carries enough of the target to be used, and which failures of an attribution map the scores register.
+
+\paragraph{What resists calibration.}
+The profiles reproduce the course of degradation more closely than the dependence between the sequences and the RUL. In MATR and HUST the trajectory family, the drift, the position of the transition, the unit length, and the capacity noise are recovered from generated units, yet a model trained on the MATR profile predicts the RUL of measured cells with 3.42 times the error of one trained on measured cells. The property comparison places the shortfall in the per-unit structure of the channels other than capacity, which the generator does not express, since each channel is mapped from the degradation state through one function shared by the units of a profile. This bounds what the MATR profile stands for. Its attribution ground truth is exact for the sequences it generates, but those sequences lack the cell-specific offsets of the measured channels, and an attribution method evaluated on them has not been shown to behave the same way on a model that reads such offsets. A per-unit offset in the channel mappings is the smallest extension that could close this gap, and the transfer ratio is the measurement that would show whether it does. HUST, whose cells share one charging protocol, transfers at 1.46. NASA PCoE supplies measured regeneration parameters, but its held-out split is too small for any fidelity measure, so no claim is made that the profile reproduces its dataset.
+
+\paragraph{The sparse set at measured amplitudes.}
+Of the three datasets, only NASA PCoE shows capacity-residual runs more often than its fitted noise produces them, and at the amplitudes fitted from it the pattern term carries 0.04\% of the variance of the mean term. A trained model does not use a term of that size, and retraining without it leaves the error unchanged. Scores against the sparse set are therefore reported on the reference model only, where the result for any method with the efficiency property is known in advance, and the benchmark does not yet evaluate whether a method recovers localized effects that a trained model has learned. The amplitude at which the pattern term becomes learnable lies inside the range measured in NASA PCoE, at four times the fitted amplitudes, but the generator retains the fitted values: a default chosen so that a usability check passes would fit the benchmark to the check. A dataset with more frequent or larger regeneration events, or with more units, would allow the sparse set to be calibrated at a learnable amplitude without that choice.
+
+\paragraph{What the scores do not register.}
+Rank agreement against the graded field is insensitive to two failures an attribution method can plausibly have. Smoothing a correct map over eight positions leaves the score above 0.96 in every profile, and moving any fraction of the mass short of the whole toward the end of the window changes it by less than 0.001. Under recency weighting the graded field is smooth along the window and increases toward its end, so neither operation reorders it. A method that blurs its attribution over time, or concentrates it on the most recent positions, is therefore not penalized by rank agreement, and Table~\ref{tab:res:resolution} should be consulted before a difference in rank agreement is interpreted. Paired retrieval resolves both failures, whereas plain retrieval scores the correct map barely above a permuted one and is not informative on its own. Under final-position weighting both fields collapse into one position and rank agreement is dominated by ties, so scores under that weighting are not comparable in magnitude with those under the other two.
+
+\paragraph{Where the benchmark is informative.}
+Section~\ref{sec:res:responsiveness} marks two boundaries. A transition in the degradation state gentler than the fitted one makes the task too easy: at exponents 0.25 and 0.5 the exact attribution of the reference model recovers the order of the graded field almost completely in MATR and HUST, leaving no room in which methods could differ. Noise beyond four times the fitted variance makes the NASA PCoE model too inaccurate for its scores to be read at all. Between those boundaries, and over the whole examined range of sequence length, the scores stay responsive, so the benchmark is informative at and around the settings its profiles were fitted to. Paired retrieval has no responsive range on any setting, and the reason is structural rather than a matter of settings: on the reference model it is 1 by construction, and on a trained model it reports sensitivity to the changed inputs. The graded field is therefore what the benchmark currently adjudicates, and retrieval of the sparse set needs either a larger pattern amplitude, which costs fidelity, or a score that separates a model's use of a term from its response to an input.
+
 \paragraph{\rev{What the benchmark can adjudicate.}}
 \rev{The attribution ground truth is a property of the function that defines the decomposable target, not of the data alone. For the reference model that function is the model, so channel- and position-level ground truth is identifiable and a score measures the attribution method. For a trained model it is not: the channels share one degradation state, several functions of a window reproduce the target equally well, and a faithful attribution of the function a model actually learned can differ from $\phi^{\star}$. Scores on trained models therefore carry the model's own choice among equivalent functions, and the ensemble spread reported with them marks how much of a difference between methods that choice can account for.}
+The measurements bear this out. On the reference model the three methods agree with the exact attribution and with each other: Integrated Gradients and occlusion to $1.6\times10^{-6}$, TimeSHAP to 0.005 in rank agreement. On the trained model they differ by at most 0.089, while ten equally accurate models span 0.094 to 0.332 in the same score, so no ordering of the methods on a trained model survives a change of model. This is what the reference model is for: it is where the benchmark adjudicates, and the trained columns say what a method returns on one model that fits the target, which is what a practitioner will have.
+
+\paragraph{Limitations.}
+Several choices are declared rather than measured, and they bound the claims. The target gives the three weighted channels equal shares, so nothing here shows how the scores behave when one channel carries most of the target; the EOL threshold is fixed at 0.8 of nominal capacity; attribution is scored on windows of 24 positions; and the models are one architecture, with the ensemble that bounds identifiability varying initialization and size only. Two declared rules were completed after the first fits exposed cases they did not cover, the identifiability requirement in the selection of the trajectory family and the treatment of records that end at the EOL threshold; both are stated in Section~\ref{sec:calibration} as applied, and the evidence that prompted them is released with the code. The declared band for the variance ratio of the two terms of the target was fixed before any data were fitted, and it fails in the only profile where it applies; it is reported as failed rather than adjusted.
 
 \subsection{Future work}
 \paragraph{Learned component models.}

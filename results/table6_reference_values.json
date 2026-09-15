@@ -1,0 +1,3566 @@
+{
+  "weighting_in_table": "recency",
+  "values": {
+    "MATR": {
+      "windows": 120,
+      "units": 45,
+      "timeshap_windows": 40,
+      "baseline": {
+        "capacity": 1.0746564020979057,
+        "charge_time": 29.33692023358584,
+        "mean_discharge_voltage": 2.7830866524978757,
+        "internal_resistance": 0.016169184684427042,
+        "temperature_mean": 33.10833726921993,
+        "null_flat": 0.0,
+        "null_permuted": 26.435732499999965
+      },
+      "timeshap_background_event": {
+        "capacity": 1.0746564020979057,
+        "charge_time": 29.33692023358584,
+        "mean_discharge_voltage": 2.7830866524978757,
+        "internal_resistance": 0.016169184684427042,
+        "temperature_mean": 33.10833726921993,
+        "null_flat": 0.0,
+        "null_permuted": 26.435732499999965
+      },
+      "weightings": {
+        "recency": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8152077222431915,
+                "ci_low": 0.7539312189825444,
+                "ci_high": 0.8645530785168264,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.5505451381540883,
+                "ci_low": 0.5078799371901183,
+                "ci_high": 0.5862758106207615,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.11270084170003734,
+                "ci_low": 0.09344346308309445,
+                "ci_high": 0.1352524700815665,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.4610522147490788,
+                "ci_low": 0.4221141576755982,
+                "ci_high": 0.4955970593180806,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.11810882566841667,
+                "ci_low": 0.09722285391461502,
+                "ci_high": 0.14272950015025312,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.4675555787490524,
+                "ci_low": 0.3132569386974213,
+                "ci_high": 0.5326893349110714,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.13552884088683073,
+                "ci_low": 0.10301590989269303,
+                "ci_high": 0.18535793917713983,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.4731956421383348,
+                  0.469411205841941
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.13097176675212535,
+                  0.12912509680774048
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8152077222431915,
+                "ci_low": 0.7539312189825444,
+                "ci_high": 0.8645530785168264,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8152077222431915,
+                "ci_low": 0.7539312189825444,
+                "ci_high": 0.8645530785168264,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7548236213446535,
+                "ci_low": 0.5312906582574812,
+                "ci_high": 0.8474117523162068,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 1.0586626114465313e-07,
+                "ci_low": 0.0,
+                "ci_high": 5.293313057232657e-07,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.7639153800968204
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  7.939969585848985e-08
+                ]
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.7496648371586322,
+                "ci_low": 0.5274488509823005,
+                "ci_high": 0.8424032690606982,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 30
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.3383211470027163,
+            "trained/feature_occlusion": 0.4126916630011692,
+            "trained/timeshap": 595.0101236789997,
+            "reference/integrated_gradients": 0.14245818700146629,
+            "reference/feature_occlusion": 0.2663704520018655,
+            "reference/timeshap": 286.8442414059973
+          },
+          "secondary_average_event": {
+            "background_event": {
+              "capacity": 1.0490533433762335,
+              "charge_time": 26.816229352529774,
+              "mean_discharge_voltage": 2.7631148153705687,
+              "internal_resistance": 0.016240358301009658,
+              "temperature_mean": 34.5065873512803,
+              "null_flat": -0.024422506844693048,
+              "null_permuted": 26.43414666667037
+            },
+            "scores": {
+              "rank": {
+                "mean": 0.5614854431932168,
+                "ci_low": 0.4848754500571639,
+                "ci_high": 0.6101570068485064,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.06984746108298727,
+                "ci_low": 0.05225955710197831,
+                "ci_high": 0.09787567106117395,
+                "units": 30
+              }
+            }
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.5505451381540883,
+                  "zero_mass": 0.11340066436290121
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.525296964505647,
+                  "zero_mass": 0.10693655789752181
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.5423196815733256,
+                  "zero_mass": 0.12980121787792692
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.5064687855917313,
+                  "zero_mass": 0.12724374317719292
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.5334957322320315,
+                  "zero_mass": 0.11941719229798764
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.5416248206944013,
+                  "zero_mass": 0.12824849361010518
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.4452627394993789,
+                  "zero_mass": 0.11462574409476171
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.4947622860299274,
+                  "zero_mass": 0.12498783405559759
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.5031757598795857,
+                  "zero_mass": 0.14098885866114869
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.43995686711852067,
+                  "zero_mass": 0.1457940661542428
+                }
+              ],
+              "rank_min": 0.43995686711852067,
+              "rank_median": 0.5158828750486891,
+              "rank_max": 0.5505451381540883,
+              "rank_iqr": 0.042726894086466904
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.4610522147490788,
+                  "zero_mass": 0.1189683495943124
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.44738171342836275,
+                  "zero_mass": 0.11409623115323483
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.46985776226060916,
+                  "zero_mass": 0.12506416939819853
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.377935894897598,
+                  "zero_mass": 0.1239677157291832
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.4070139568488311,
+                  "zero_mass": 0.12258458591531962
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.4395952514211459,
+                  "zero_mass": 0.13504041051492094
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.4117243817128617,
+                  "zero_mass": 0.11398479169389854
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.4497736912897717,
+                  "zero_mass": 0.12348871300928295
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.42118687424291773,
+                  "zero_mass": 0.13142677877719203
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.4178303381016804,
+                  "zero_mass": 0.1283307909887905
+                }
+              ],
+              "rank_min": 0.377935894897598,
+              "rank_median": 0.4303910628320318,
+              "rank_max": 0.46985776226060916,
+              "rank_iqr": 0.03592482601435304
+            }
+          }
+        },
+        "uniform": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8102412569071719,
+                "ci_low": 0.7554457484210538,
+                "ci_high": 0.8542250642869725,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.5718953845470307,
+                "ci_low": 0.5268113853341381,
+                "ci_high": 0.6146407208326983,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.11715899611029915,
+                "ci_low": 0.09527892889727327,
+                "ci_high": 0.14407544251552043,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.48512261931952255,
+                "ci_low": 0.4250904781818883,
+                "ci_high": 0.5325318196527968,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.12349793552248567,
+                "ci_low": 0.10058924644517005,
+                "ci_high": 0.15397578577079804,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.47022515612918436,
+                "ci_low": 0.38311054038393516,
+                "ci_high": 0.5345290651683025,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.14749253392776301,
+                "ci_low": 0.11059274662739454,
+                "ci_high": 0.2129556139320891,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.47367285479183907,
+                  0.479046210871411
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.1413348448407476,
+                  0.14035396002578351
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8102412569071719,
+                "ci_low": 0.7554457484210538,
+                "ci_high": 0.8542250642869725,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8102412569071719,
+                "ci_low": 0.7554457484210538,
+                "ci_high": 0.8542250642869725,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7423824139622824,
+                "ci_low": 0.5152581751318133,
+                "ci_high": 0.82749774310336,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.7538548766651679
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.739612929830601,
+                "ci_low": 0.5116008472875228,
+                "ci_high": 0.8255640891092363,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 30
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.17792050600110088,
+            "trained/feature_occlusion": 0.3904228850005893,
+            "trained/timeshap": 592.8452573779978,
+            "reference/integrated_gradients": 0.14091040499988594,
+            "reference/feature_occlusion": 0.28152366200083634,
+            "reference/timeshap": 289.75445588300136
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.5718953845470307,
+                  "zero_mass": 0.11779430480285859
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.5948888003853863,
+                  "zero_mass": 0.11338501640129835
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.6000508836174961,
+                  "zero_mass": 0.12171845959189037
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.5964943096671331,
+                  "zero_mass": 0.12086159413059552
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.5905362119962221,
+                  "zero_mass": 0.1152332702302374
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.5789879439975191,
+                  "zero_mass": 0.11722010666271672
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.5574055128239754,
+                  "zero_mass": 0.10560495106037707
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.5424591208170683,
+                  "zero_mass": 0.12390965496500334
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.5446330301088331,
+                  "zero_mass": 0.11958641811118771
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.5861810972031934,
+                  "zero_mass": 0.11057524087373168
+                }
+              ],
+              "rank_min": 0.5424591208170683,
+              "rank_median": 0.5825845206003563,
+              "rank_max": 0.6000508836174961,
+              "rank_iqr": 0.03277267253335603
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.48512261931952255,
+                  "zero_mass": 0.12391818546845267
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.48661403401915554,
+                  "zero_mass": 0.11904508121466885
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.5152014893360454,
+                  "zero_mass": 0.12339336085133254
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.4409442088557943,
+                  "zero_mass": 0.11917085961128275
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.5342786583003076,
+                  "zero_mass": 0.12029843240355452
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.5227085189369929,
+                  "zero_mass": 0.11837915795234343
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.4883992693831529,
+                  "zero_mass": 0.1085771025546516
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.464127239677916,
+                  "zero_mass": 0.11660973217027883
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.48538262497411505,
+                  "zero_mass": 0.11906413966789842
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.48386570803649626,
+                  "zero_mass": 0.11315886140801013
+                }
+              ],
+              "rank_min": 0.4409442088557943,
+              "rank_median": 0.4859983294966353,
+              "rank_max": 0.5342786583003076,
+              "rank_iqr": 0.024320998490569457
+            }
+          }
+        },
+        "final_position": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8495709891293438,
+                "ci_low": 0.774959875660999,
+                "ci_high": 0.9049532741876029,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.14932958442438757,
+                "ci_low": 0.13750685589800046,
+                "ci_high": 0.15934286333935682,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.10945289881417046,
+                "ci_low": 0.08892632920335446,
+                "ci_high": 0.1356317162987686,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.16065344255046773,
+                "ci_low": 0.1482402909274918,
+                "ci_high": 0.1720824828563651,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.11179397619432874,
+                "ci_low": 0.09109161534828741,
+                "ci_high": 0.14083323463725264,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.13959428178100175,
+                "ci_low": 0.1038225225062652,
+                "ci_high": 0.16023013416525325,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.13339113407037242,
+                "ci_low": 0.0997550991347161,
+                "ci_high": 0.19897269000372028,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.14067347209651584,
+                  0.14025985595740162
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.12771581438916613,
+                  0.12659781393580358
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8495709891293438,
+                "ci_low": 0.774959875660999,
+                "ci_high": 0.9049532741876029,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8495709891293438,
+                "ci_low": 0.774959875660999,
+                "ci_high": 0.9049532741876029,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7871174612825006,
+                "ci_low": 0.5727984322101684,
+                "ci_high": 0.8887760195558934,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 30
+              },
+              "seed_spread": {
+                "rank": [
+                  0.7878241710920982
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.7871174612825006,
+                "ci_low": 0.5727984322101684,
+                "ci_high": 0.8887760195558934,
+                "units": 30
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 30
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.17055706000246573,
+            "trained/feature_occlusion": 0.3939123500022106,
+            "trained/timeshap": 591.2095960549996,
+            "reference/integrated_gradients": 0.13579354399917065,
+            "reference/feature_occlusion": 0.26047256399760954,
+            "reference/timeshap": 277.5663010139979
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.14932958442438757,
+                  "zero_mass": 0.11094992053695023
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.15371615353182197,
+                  "zero_mass": 0.1062239535114107
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.15802869848939313,
+                  "zero_mass": 0.12174124062294141
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.14861094664161045,
+                  "zero_mass": 0.10320917069911957
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.1552465792737602,
+                  "zero_mass": 0.10821745675057173
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.1590366529711385,
+                  "zero_mass": 0.10069717943357924
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.14855390752933875,
+                  "zero_mass": 0.09927418590911354
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.16136054979975184,
+                  "zero_mass": 0.1203378387222377
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.16103289107219654,
+                  "zero_mass": 0.1178097216024374
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.15222993956094283,
+                  "zero_mass": 0.13453012876367818
+                }
+              ],
+              "rank_min": 0.14855390752933875,
+              "rank_median": 0.1544813664027911,
+              "rank_max": 0.16136054979975184,
+              "rank_iqr": 0.008729991142175764
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.16065344255046773,
+                  "zero_mass": 0.11360788624733686
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.12824475893228457,
+                  "zero_mass": 0.1129296875714014
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.14294327989274583,
+                  "zero_mass": 0.11757106544294706
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.16034235273692424,
+                  "zero_mass": 0.10176063859835267
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.16265706166379487,
+                  "zero_mass": 0.10972030781364689
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.15974508161373827,
+                  "zero_mass": 0.11074446516577155
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.1488765251413911,
+                  "zero_mass": 0.10804931401119879
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.14913635049304652,
+                  "zero_mass": 0.11808694909171512
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.16422308895257054,
+                  "zero_mass": 0.11324209944965939
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.14147740679143284,
+                  "zero_mass": 0.1351109709047402
+                }
+              ],
+              "rank_min": 0.12824475893228457,
+              "rank_median": 0.15444071605339238,
+              "rank_max": 0.16422308895257054,
+              "rank_iqr": 0.016149078892174706
+            }
+          }
+        }
+      }
+    },
+    "HUST": {
+      "windows": 120,
+      "units": 45,
+      "timeshap_windows": 40,
+      "baseline": {
+        "capacity": 1.1921709858326897,
+        "charge_time": 34.39557438794727,
+        "mean_discharge_voltage": 3.1013467206867307,
+        "null_flat": 0.0,
+        "null_permuted": 29.716666666666665
+      },
+      "timeshap_background_event": {
+        "capacity": 1.1921709858326897,
+        "charge_time": 34.39557438794727,
+        "mean_discharge_voltage": 3.1013467206867307,
+        "null_flat": 0.0,
+        "null_permuted": 29.716666666666665
+      },
+      "weightings": {
+        "recency": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8701092826343239,
+                "ci_low": 0.806141491435351,
+                "ci_high": 0.913679804744068,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.858646900102012,
+                "ci_low": 0.711474161438697,
+                "ci_high": 0.9334837754742289,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.3205170655682675,
+                "ci_low": 0.2877651135094013,
+                "ci_high": 0.34706466018188203,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.013687158495304174,
+                "ci_low": 0.008608694878686056,
+                "ci_high": 0.02595490805186312,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.29838615535958013,
+                "ci_low": 0.2614788669369072,
+                "ci_high": 0.33014809911575327,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.014480156692917696,
+                "ci_low": 0.009505490795089512,
+                "ci_high": 0.026633012570796505,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.33291041865899335,
+                "ci_low": 0.31647891865807193,
+                "ci_high": 0.34918528889084244,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.027075113585136333,
+                "ci_low": 0.019525255478135065,
+                "ci_high": 0.04601700655174645,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.33553645988328845,
+                  0.33479372479857206
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.028120463568861925,
+                  0.02666577967934306
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8701092826343239,
+                "ci_low": 0.806141491435351,
+                "ci_high": 0.913679804744068,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8701092618368027,
+                "ci_low": 0.8061414714016559,
+                "ci_high": 0.9136797806107594,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 3.976866975318882e-08,
+                "ci_low": 0.0,
+                "ci_high": 1.9884334876594412e-07,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.8591213174399265,
+                "ci_low": 0.714831808693638,
+                "ci_high": 0.9341519353053029,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.8622495286243325
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.33534168700134614,
+            "trained/feature_occlusion": 0.33511858800193295,
+            "trained/timeshap": 498.2413982569997,
+            "reference/integrated_gradients": 0.13943494400155032,
+            "reference/feature_occlusion": 0.22608775299886474,
+            "reference/timeshap": 227.92380123600014
+          },
+          "secondary_average_event": {
+            "background_event": {
+              "capacity": 1.109663193040264,
+              "charge_time": 29.52080275859413,
+              "mean_discharge_voltage": 3.0840034060083035,
+              "null_flat": 0.007482620335956045,
+              "null_permuted": 29.716666666666665
+            },
+            "scores": {
+              "rank": {
+                "mean": 0.3150489376722435,
+                "ci_low": 0.29505921526112106,
+                "ci_high": 0.33411007832385364,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.012163645870774616,
+                "ci_low": 0.008771452018545088,
+                "ci_high": 0.019727687845409188,
+                "units": 29
+              }
+            }
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.3205170655682675,
+                  "zero_mass": 0.014064911932412846
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.3994607820995204,
+                  "zero_mass": 0.010831881374300186
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.41973902145950953,
+                  "zero_mass": 0.011225520334361742
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.5437764373599332,
+                  "zero_mass": 0.014890123220781485
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.40308201147267747,
+                  "zero_mass": 0.020758938805374782
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.37665019623446877,
+                  "zero_mass": 0.014218040709238267
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.21189171341690974,
+                  "zero_mass": 0.01410309677060771
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.2741380174374062,
+                  "zero_mass": 0.015325716926842385
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.3487560295120445,
+                  "zero_mass": 0.021667277211721132
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.31677680301230865,
+                  "zero_mass": 0.01233014845007953
+                }
+              ],
+              "rank_min": 0.21189171341690974,
+              "rank_median": 0.36270311287325663,
+              "rank_max": 0.5437764373599332,
+              "rank_iqr": 0.08446483547808986
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.29838615535958013,
+                  "zero_mass": 0.0148160003280888
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.3179708662945784,
+                  "zero_mass": 0.015056867267897662
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.26714372251574986,
+                  "zero_mass": 0.01353134545206558
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.3364137916581094,
+                  "zero_mass": 0.015366663517973696
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.33700470924021575,
+                  "zero_mass": 0.02034567346951614
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.36254517990499363,
+                  "zero_mass": 0.01527817652434654
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.25389438374451223,
+                  "zero_mass": 0.014458226568725271
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.25619867744751895,
+                  "zero_mass": 0.01657024711409273
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.3718207999143798,
+                  "zero_mass": 0.01975555665315672
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.3258152113401118,
+                  "zero_mass": 0.014683777075454903
+                }
+              ],
+              "rank_min": 0.25389438374451223,
+              "rank_median": 0.3218930388173451,
+              "rank_max": 0.3718207999143798,
+              "rank_iqr": 0.06190264911798171
+            }
+          }
+        },
+        "uniform": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.81237255906899,
+                "ci_low": 0.7461032536408818,
+                "ci_high": 0.8530168421331686,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.7946382529265641,
+                "ci_low": 0.6417554788786247,
+                "ci_high": 0.872014004639291,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.44757807173239694,
+                "ci_low": 0.4212005064202473,
+                "ci_high": 0.470327602926171,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.018027564092685848,
+                "ci_low": 0.011986975135871686,
+                "ci_high": 0.032327158626045474,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.3250454335780217,
+                "ci_low": 0.2837255308633149,
+                "ci_high": 0.36766091001026885,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.017636205777267204,
+                "ci_low": 0.011443980439244668,
+                "ci_high": 0.032203257690340686,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.3630440165661778,
+                "ci_low": 0.3142008824007221,
+                "ci_high": 0.4197249966650113,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.021069573652528796,
+                "ci_low": 0.013390366737365995,
+                "ci_high": 0.04235003427054758,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.37452670086241846,
+                  0.34450185542660067
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.02279990619080415,
+                  0.023609652736311625
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.81237255906899,
+                "ci_low": 0.7461032536408818,
+                "ci_high": 0.8530168421331686,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8123756423464141,
+                "ci_low": 0.7461048807978172,
+                "ci_high": 0.8530188771017957,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 2.169184780440345e-08,
+                "ci_low": 0.0,
+                "ci_high": 1.0845923902201724e-07,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7944753503780683,
+                "ci_low": 0.6418630808152279,
+                "ci_high": 0.8725192851948301,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.7948680863029359
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.1421049310010858,
+            "trained/feature_occlusion": 0.21914973300226848,
+            "trained/timeshap": 455.61416869000095,
+            "reference/integrated_gradients": 0.13582094500088715,
+            "reference/feature_occlusion": 0.17962210099722142,
+            "reference/timeshap": 223.22977612899922
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.44757807173239694,
+                  "zero_mass": 0.018549573876468155
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.24885056192965385,
+                  "zero_mass": 0.012648282070100929
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.35302555175605055,
+                  "zero_mass": 0.011447164716082625
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.3521031293232161,
+                  "zero_mass": 0.017839764951592466
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.4299876831949113,
+                  "zero_mass": 0.019212246987687347
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.18495661602726424,
+                  "zero_mass": 0.015061726029428731
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.28302907911558833,
+                  "zero_mass": 0.016814538359176366
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.24726342774180807,
+                  "zero_mass": 0.017129726597825842
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.36252311746418675,
+                  "zero_mass": 0.01724520140220799
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.34710581764507625,
+                  "zero_mass": 0.016485996998623402
+                }
+              ],
+              "rank_min": 0.18495661602726424,
+              "rank_median": 0.34960447348414614,
+              "rank_max": 0.44757807173239694,
+              "rank_iqr": 0.10275353481101523
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.3250454335780217,
+                  "zero_mass": 0.018123000096238684
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.25566864367679903,
+                  "zero_mass": 0.013605156938137953
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.13926719691186532,
+                  "zero_mass": 0.015580462601307469
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.26775454812418437,
+                  "zero_mass": 0.018148297702039903
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.3802576344329228,
+                  "zero_mass": 0.02099869470888128
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.2980981093584218,
+                  "zero_mass": 0.016142180678919735
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.3131490079276253,
+                  "zero_mass": 0.01739240066575197
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.26705622157198555,
+                  "zero_mass": 0.017233949373379194
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.35830495491454734,
+                  "zero_mass": 0.01795842850745733
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.33230848341477637,
+                  "zero_mass": 0.016326505443430506
+                }
+              ],
+              "rank_min": 0.13926719691186532,
+              "rank_median": 0.30562355864302354,
+              "rank_max": 0.3802576344329228,
+              "rank_iqr": 0.06326191774555245
+            }
+          }
+        },
+        "final_position": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8696437076805568,
+                "ci_low": 0.8068061306124986,
+                "ci_high": 0.9156226996644068,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.8782883535853899,
+                "ci_low": 0.7620346840205299,
+                "ci_high": 0.9471753189476373,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.16028856510649597,
+                "ci_low": 0.147973048813067,
+                "ci_high": 0.17156613210834273,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.009271800561152677,
+                "ci_low": 0.005854941431370035,
+                "ci_high": 0.019232996538325966,
+                "units": 45
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.15451348532071546,
+                "ci_low": 0.13995907725515858,
+                "ci_high": 0.1681480446479443,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.011186890364452091,
+                "ci_low": 0.007407751453663996,
+                "ci_high": 0.021844311509519404,
+                "units": 45
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.18344057724142496,
+                "ci_low": 0.16579598912665625,
+                "ci_high": 0.19550178890832923,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.021810036971717902,
+                "ci_low": 0.01703506065602979,
+                "ci_high": 0.033500925754794485,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.18446362060234822,
+                  0.1792282284830417
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.0226244563624809,
+                  0.021033050347744664
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8696437076805568,
+                "ci_low": 0.8068061306124986,
+                "ci_high": 0.9156226996644068,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8696437076805568,
+                "ci_low": 0.8068061306124986,
+                "ci_high": 0.9156226996644068,
+                "units": 45
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 45
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.8782883535853899,
+                "ci_low": 0.7620346840205299,
+                "ci_high": 0.9471753189476373,
+                "units": 29
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 29
+              },
+              "seed_spread": {
+                "rank": [
+                  0.8777877134575778
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.14128578300005756,
+            "trained/feature_occlusion": 0.21579918599672965,
+            "trained/timeshap": 455.43206805700174,
+            "reference/integrated_gradients": 0.1319514100032393,
+            "reference/feature_occlusion": 0.17104853999990155,
+            "reference/timeshap": 217.41764530100045
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "no inserted patterns (D05)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.16028856510649597,
+                  "zero_mass": 0.009591441645413094
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.15203631864582917,
+                  "zero_mass": 0.013479613186670273
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.08323910560182199,
+                  "zero_mass": 0.013490790943615138
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.17079714618002517,
+                  "zero_mass": 0.01103788465091687
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.09464560259285568,
+                  "zero_mass": 0.01639882498930092
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.09198272662763571,
+                  "zero_mass": 0.015583964224545829
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.10762371813388719,
+                  "zero_mass": 0.013640291976116714
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.07799913779329964,
+                  "zero_mass": 0.01753061064858533
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.04919011481068356,
+                  "zero_mass": 0.015179294854169712
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.07235768388446079,
+                  "zero_mass": 0.01730312855409769
+                }
+              ],
+              "rank_min": 0.04919011481068356,
+              "rank_median": 0.09331416461024569,
+              "rank_max": 0.17079714618002517,
+              "rank_iqr": 0.06162403877241346
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.15451348532071546,
+                  "zero_mass": 0.011457255090014466
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.10514075688565876,
+                  "zero_mass": 0.013635021345301842
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.07813018423456675,
+                  "zero_mass": 0.016016460989097443
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.13125399550368996,
+                  "zero_mass": 0.015762619990467405
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.13018334963767228,
+                  "zero_mass": 0.018188093789164365
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.11616531383966919,
+                  "zero_mass": 0.01594476126532148
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.09606284630886847,
+                  "zero_mass": 0.015085444957124612
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.05208772218098718,
+                  "zero_mass": 0.017408429324859753
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.0693827355556453,
+                  "zero_mass": 0.015378779698706543
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.0529792828301166,
+                  "zero_mass": 0.017394424590747803
+                }
+              ],
+              "rank_min": 0.05208772218098718,
+              "rank_median": 0.10060180159726362,
+              "rank_max": 0.15451348532071546,
+              "rank_iqr": 0.055109242962795846
+            }
+          }
+        }
+      }
+    },
+    "NASA_PCoE": {
+      "windows": 120,
+      "units": 39,
+      "timeshap_windows": 40,
+      "baseline": {
+        "capacity": 1.818239968977594,
+        "charge_time": 166.45069561403508,
+        "mean_discharge_voltage": 3.487248745309283,
+        "temperature_mean": 33.78713610428294,
+        "null_flat": 0.0,
+        "null_permuted": 163.2653666666667
+      },
+      "timeshap_background_event": {
+        "capacity": 1.818239968977594,
+        "charge_time": 166.45069561403508,
+        "mean_discharge_voltage": 3.487248745309283,
+        "temperature_mean": 33.78713610428294,
+        "null_flat": 0.0,
+        "null_permuted": 163.2653666666667
+      },
+      "weightings": {
+        "recency": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.7333703786492158,
+                "ci_low": 0.6641098334492471,
+                "ci_high": 0.7881426463204161,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.056658062999340286,
+                "ci_low": 0.04207157741127021,
+                "ci_high": 0.08855036634406455,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.7429664048429977,
+                "ci_low": 0.6463062579724483,
+                "ci_high": 0.8196755608741751,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.03901924670039372,
+                "ci_low": 0.02971917875050258,
+                "ci_high": 0.052294602504765184,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 24
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.316464804965986,
+                "ci_low": 0.2760873848882346,
+                "ci_high": 0.3601582251179864,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 0.9513188861403148,
+                "ci_low": 0.8828522807270737,
+                "ci_high": 0.9873745963031677,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.184997147910563,
+                "ci_low": 0.1011926290088021,
+                "ci_high": 0.3352178890209436,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.254653368694469,
+                "ci_low": 0.20647886618951203,
+                "ci_high": 0.3059093413450702,
+                "units": 39
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.2827248300440409,
+                "ci_low": 0.2550492181682919,
+                "ci_high": 0.3084363454999599,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 0.7648325627257673,
+                "ci_low": 0.5842891897943353,
+                "ci_high": 0.8822810793723694,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.1711048947439966,
+                "ci_low": 0.1039611768540996,
+                "ci_high": 0.32605119288904716,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.23652172722240805,
+                "ci_low": 0.20576535835785076,
+                "ci_high": 0.2740842133666484,
+                "units": 39
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.2862292212703203,
+                "ci_low": 0.22584188454526138,
+                "ci_high": 0.3459002741470617,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 0.9699735449735449,
+                "ci_low": 0.8798941798941797,
+                "ci_high": 1.0,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.09509927495816141,
+                "ci_low": 0.06724522792045526,
+                "ci_high": 0.13686121676093407,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.25196526087411486,
+                "ci_low": 0.18927507542192062,
+                "ci_high": 0.3309701989026727,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.281318539123984,
+                  0.2969941866112968
+                ],
+                "retrieval": [
+                  0.9699735449735449,
+                  0.9699735449735449
+                ],
+                "retrieval_plain": [
+                  0.09509927495816144,
+                  0.09706866101098573
+                ],
+                "zero_mass": [
+                  0.2805237091718974,
+                  0.2819628724105291
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.7333703786492158,
+                "ci_low": 0.6641098334492471,
+                "ci_high": 0.7881426463204161,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.056658062999340286,
+                "ci_low": 0.04207157741127021,
+                "ci_high": 0.08855036634406455,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.7333703786492158,
+                "ci_low": 0.6641098334492471,
+                "ci_high": 0.7881426463204161,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.056658062999340286,
+                "ci_low": 0.04207157741127021,
+                "ci_high": 0.08855036634406455,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7444285210854881,
+                "ci_low": 0.6464588682205955,
+                "ci_high": 0.8210420065105308,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.03901924670039372,
+                "ci_low": 0.02971917875050258,
+                "ci_high": 0.052294602504765184,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 6.979031883043196e-12,
+                "ci_low": 0.0,
+                "ci_high": 3.4490820116690314e-11,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.7295729727187187
+                ],
+                "retrieval": [
+                  1.0
+                ],
+                "retrieval_plain": [
+                  0.03901924670039372
+                ],
+                "zero_mass": [
+                  1.2562257389477753e-11
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.45663866699760547,
+            "trained/feature_occlusion": 0.6441609719986445,
+            "trained/timeshap": 1047.375297671002,
+            "reference/integrated_gradients": 0.26012085500042303,
+            "reference/feature_occlusion": 0.43390956400253344,
+            "reference/timeshap": 507.2331306220003
+          },
+          "secondary_average_event": {
+            "background_event": {
+              "capacity": 1.7281183766440864,
+              "charge_time": 163.3418928996989,
+              "mean_discharge_voltage": 3.47354114501762,
+              "temperature_mean": 30.680908326555194,
+              "null_flat": 0.005453848999111249,
+              "null_permuted": 163.1304833333333
+            },
+            "scores": {
+              "rank": {
+                "mean": 0.43488513397216016,
+                "ci_low": 0.39756766336185634,
+                "ci_high": 0.4664577074829086,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 0.9632263161674927,
+                "ci_low": 0.8529052646699705,
+                "ci_high": 1.0,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.21970795695277842,
+                "ci_low": 0.08574869804680169,
+                "ci_high": 0.6021842355175688,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.13585215034131987,
+                "ci_low": 0.12451924871790034,
+                "ci_high": 0.1475399296581148,
+                "units": 24
+              }
+            }
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "pattern term not used by the trained model (S6 ablation; D21)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.316464804965986,
+                  "zero_mass": 0.2635255264739195
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.25939742985693015,
+                  "zero_mass": 0.29323344693208736
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.2578943010254834,
+                  "zero_mass": 0.2780334153523048
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.33933382390921063,
+                  "zero_mass": 0.29230241719633343
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.29428456721342783,
+                  "zero_mass": 0.26915411005417506
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.31115329863066765,
+                  "zero_mass": 0.25511895871410767
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.2570221798013671,
+                  "zero_mass": 0.2705883054683606
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.25175346294937906,
+                  "zero_mass": 0.2748748645186424
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.2579383561392194,
+                  "zero_mass": 0.274714358150959
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.24532805207517297,
+                  "zero_mass": 0.2809692518164714
+                }
+              ],
+              "rank_min": 0.24532805207517297,
+              "rank_median": 0.2586678929980748,
+              "rank_max": 0.33933382390921063,
+              "rank_iqr": 0.04969590566896154
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.2827248300440409,
+                  "zero_mass": 0.24374334377547105
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.39505067168528923,
+                  "zero_mass": 0.22603388832261165
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.3510770192025717,
+                  "zero_mass": 0.21709079494078953
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.2591450469741636,
+                  "zero_mass": 0.27329754680395124
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.3604081158676824,
+                  "zero_mass": 0.2019637685579558
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.31965622632270296,
+                  "zero_mass": 0.21371143634120623
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.334094324021381,
+                  "zero_mass": 0.20353435228268305
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.3866471406122105,
+                  "zero_mass": 0.20929202791303397
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.3893880672583184,
+                  "zero_mass": 0.19499831547339758
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.35602413913200104,
+                  "zero_mass": 0.19694689130410553
+                }
+              ],
+              "rank_min": 0.2591450469741636,
+              "rank_median": 0.3535505791672864,
+              "rank_max": 0.39505067168528923,
+              "rank_iqr": 0.05682163367870602
+            }
+          }
+        },
+        "uniform": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.690948747383116,
+                "ci_low": 0.6216103092106555,
+                "ci_high": 0.7448982973900049,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.0434154665009458,
+                "ci_low": 0.03610165992239135,
+                "ci_high": 0.05515487822851531,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.7024017911968498,
+                "ci_low": 0.6020476459805655,
+                "ci_high": 0.773923057347085,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.039591647082720054,
+                "ci_low": 0.03308199802794765,
+                "ci_high": 0.05534785643238822,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 24
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.1914192429545744,
+                "ci_low": 0.15954160802836742,
+                "ci_high": 0.22664209989813267,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 0.9067440826369398,
+                "ci_low": 0.6929398202053711,
+                "ci_high": 0.9815881869453297,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.15758032765642424,
+                "ci_low": 0.0773192873203161,
+                "ci_high": 0.37241891933973786,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.33527638774333346,
+                "ci_low": 0.2797768861000476,
+                "ci_high": 0.39018868792325645,
+                "units": 39
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.25780133864358246,
+                "ci_low": 0.2166099329539528,
+                "ci_high": 0.2938914426495959,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 0.8256028296770658,
+                "ci_low": 0.6057298495489585,
+                "ci_high": 0.9328698686909754,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.15929991380419598,
+                "ci_low": 0.08047826916243955,
+                "ci_high": 0.37125195627199276,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.2561637594595424,
+                "ci_low": 0.21733215925120922,
+                "ci_high": 0.3027864607020162,
+                "units": 39
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.15530810064974107,
+                "ci_low": 0.11000967879264927,
+                "ci_high": 0.20907014582428574,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 0.9566893424036281,
+                "ci_low": 0.8700680272108843,
+                "ci_high": 1.0,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.09675784185910667,
+                "ci_low": 0.06516905691993083,
+                "ci_high": 0.12206207267759268,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.32582024572132323,
+                "ci_low": 0.2515644362344264,
+                "ci_high": 0.40752861827989745,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.14926522922596602,
+                  0.15066366281803828
+                ],
+                "retrieval": [
+                  0.956689342403628,
+                  0.956689342403628
+                ],
+                "retrieval_plain": [
+                  0.09675784185910664,
+                  0.09968781668402783
+                ],
+                "zero_mass": [
+                  0.3527796327026852,
+                  0.35540041489695573
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.690948747383116,
+                "ci_low": 0.6216103092106555,
+                "ci_high": 0.7448982973900049,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.0434154665009458,
+                "ci_low": 0.03610165992239135,
+                "ci_high": 0.05515487822851531,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.690948747383116,
+                "ci_low": 0.6216103092106555,
+                "ci_high": 0.7448982973900049,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 14
+              },
+              "retrieval_plain": {
+                "mean": 0.0434154665009458,
+                "ci_low": 0.03610165992239135,
+                "ci_high": 0.05515487822851531,
+                "units": 14
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.7036419676151323,
+                "ci_low": 0.6022592769815334,
+                "ci_high": 0.7746089295693693,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 6
+              },
+              "retrieval_plain": {
+                "mean": 0.039591647082720054,
+                "ci_low": 0.03308199802794765,
+                "ci_high": 0.05534785643238822,
+                "units": 6
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.6869913565481105
+                ],
+                "retrieval": [
+                  1.0
+                ],
+                "retrieval_plain": [
+                  0.03959164708272006
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.27553215000079945,
+            "trained/feature_occlusion": 0.481412969998928,
+            "trained/timeshap": 952.7635166389991,
+            "reference/integrated_gradients": 0.23758722999991733,
+            "reference/feature_occlusion": 0.38234587800252484,
+            "reference/timeshap": 460.704731668
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "pattern term not used by the trained model (S6 ablation; D21)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.1914192429545744,
+                  "zero_mass": 0.34249161270757517
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.12058025013929868,
+                  "zero_mass": 0.3504636874422431
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.13148437525427584,
+                  "zero_mass": 0.34943972434848547
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.2689369488580914,
+                  "zero_mass": 0.3389521575222413
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.20124038020840918,
+                  "zero_mass": 0.3114954287807147
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.23903628068016267,
+                  "zero_mass": 0.32022948569307724
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.15884414655475276,
+                  "zero_mass": 0.30209356267005205
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.2036904470477799,
+                  "zero_mass": 0.3197361582890153
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.18416662768795491,
+                  "zero_mass": 0.3209493960253894
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.21038218233910394,
+                  "zero_mass": 0.3505183792983492
+                }
+              ],
+              "rank_min": 0.12058025013929868,
+              "rank_median": 0.1963298115814918,
+              "rank_max": 0.2689369488580914,
+              "rank_iqr": 0.04353448167821963
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.25780133864358246,
+                  "zero_mass": 0.2668926591674487
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.2788977505441776,
+                  "zero_mass": 0.2567914933587114
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.28157835180907365,
+                  "zero_mass": 0.2522572258487344
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.19777367038038093,
+                  "zero_mass": 0.28638059590011833
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.26023526051169243,
+                  "zero_mass": 0.24318557996302842
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.19683183290658915,
+                  "zero_mass": 0.2687865005806088
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.2514710177213556,
+                  "zero_mass": 0.26928966244061786
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.22163065169306145,
+                  "zero_mass": 0.275728410979112
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.2023039652692525,
+                  "zero_mass": 0.2694614347691337
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.2357478082302049,
+                  "zero_mass": 0.27097337835778795
+                }
+              ],
+              "rank_min": 0.19683183290658915,
+              "rank_median": 0.24360941297578026,
+              "rank_max": 0.28157835180907365,
+              "rank_iqr": 0.052491143169460186
+            }
+          }
+        },
+        "final_position": {
+          "gate_pass_primary": true,
+          "patterns_used_by_trained_model": false,
+          "scores": {
+            "reference_exact": {
+              "rank": {
+                "mean": 0.8443209814188146,
+                "ci_low": 0.7737775999759055,
+                "ci_high": 0.8942286431472135,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "retrieval_plain": {
+                "mean": 0.5,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference_exact_timeshap_windows": {
+              "rank": {
+                "mean": 0.9118260742686218,
+                "ci_low": 0.8070637253068023,
+                "ci_high": 0.9717413299692466,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 24
+              }
+            },
+            "trained/integrated_gradients": {
+              "rank": {
+                "mean": 0.15256875003781944,
+                "ci_low": 0.1365135828447836,
+                "ci_high": 0.16353244442176318,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "retrieval_plain": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "zero_mass": {
+                "mean": 0.28445426578450406,
+                "ci_low": 0.2423213238926562,
+                "ci_high": 0.3366610490973491,
+                "units": 39
+              }
+            },
+            "trained/feature_occlusion": {
+              "rank": {
+                "mean": 0.15502233648758,
+                "ci_low": 0.13756706510463332,
+                "ci_high": 0.1668174833047262,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "retrieval_plain": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "zero_mass": {
+                "mean": 0.2989296748692918,
+                "ci_low": 0.26310651444163624,
+                "ci_high": 0.3411799219395396,
+                "units": 39
+              }
+            },
+            "trained/timeshap": {
+              "rank": {
+                "mean": 0.18056691907149255,
+                "ci_low": 0.15487454917978974,
+                "ci_high": 0.19515120143618497,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.2742751275791509,
+                "ci_low": 0.21293171716003528,
+                "ci_high": 0.3531779225284516,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.18078550179642158,
+                  0.17674411007881682
+                ],
+                "retrieval": [
+                  null,
+                  null
+                ],
+                "retrieval_plain": [
+                  null,
+                  null
+                ],
+                "zero_mass": [
+                  0.29596518612654005,
+                  0.29869055885543777
+                ]
+              }
+            },
+            "reference/integrated_gradients": {
+              "rank": {
+                "mean": 0.8443209814188146,
+                "ci_low": 0.7737775999759055,
+                "ci_high": 0.8942286431472135,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "retrieval_plain": {
+                "mean": 0.5,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/feature_occlusion": {
+              "rank": {
+                "mean": 0.8443209814188146,
+                "ci_low": 0.7737775999759055,
+                "ci_high": 0.8942286431472135,
+                "units": 39
+              },
+              "retrieval": {
+                "mean": 1.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "retrieval_plain": {
+                "mean": 0.5,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 1
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 39
+              }
+            },
+            "reference/timeshap": {
+              "rank": {
+                "mean": 0.9118260742686218,
+                "ci_low": 0.8070637253068023,
+                "ci_high": 0.9717413299692466,
+                "units": 24
+              },
+              "retrieval": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "retrieval_plain": {
+                "mean": null,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 0
+              },
+              "zero_mass": {
+                "mean": 0.0,
+                "ci_low": null,
+                "ci_high": null,
+                "units": 24
+              },
+              "seed_spread": {
+                "rank": [
+                  0.9163558765594221
+                ],
+                "retrieval": [
+                  null
+                ],
+                "retrieval_plain": [
+                  null
+                ],
+                "zero_mass": [
+                  0.0
+                ]
+              }
+            }
+          },
+          "timing_s": {
+            "trained/integrated_gradients": 0.23986460599917336,
+            "trained/feature_occlusion": 0.44311703099810984,
+            "trained/timeshap": 946.7731592749988,
+            "reference/integrated_gradients": 0.20621803199901478,
+            "reference/feature_occlusion": 0.344775125002343,
+            "reference/timeshap": 451.1964724829995
+          },
+          "void": {
+            "trained_all": null,
+            "trained_retrieval": "pattern term not used by the trained model (S6 ablation; D21)"
+          },
+          "identifiability_floor": {
+            "integrated_gradients": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.15256875003781944,
+                  "zero_mass": 0.2910692622885108
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.1258019488586897,
+                  "zero_mass": 0.2636202386269967
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.16363763349369453,
+                  "zero_mass": 0.24038319615647197
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.14403536846127404,
+                  "zero_mass": 0.34847508373980723
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.15088296253424774,
+                  "zero_mass": 0.2740290708839893
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.17178208330633607,
+                  "zero_mass": 0.29199302699416874
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.15339298686652647,
+                  "zero_mass": 0.2909036627660195
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.1698446095716116,
+                  "zero_mass": 0.2899686567485332
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.1603189920822632,
+                  "zero_mass": 0.3312597433725993
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.15637396400314685,
+                  "zero_mass": 0.27527754151572786
+                }
+              ],
+              "rank_min": 0.1258019488586897,
+              "rank_median": 0.15488347543483666,
+              "rank_max": 0.17178208330633607,
+              "rank_iqr": 0.011503563730696026
+            },
+            "feature_occlusion": {
+              "members": [
+                {
+                  "member": "A0",
+                  "rank": 0.15502233648758,
+                  "zero_mass": 0.3030137562503417
+                },
+                {
+                  "member": "A1",
+                  "rank": 0.14815968500071675,
+                  "zero_mass": 0.2515425616254409
+                },
+                {
+                  "member": "A2",
+                  "rank": 0.151500555081965,
+                  "zero_mass": 0.27044712025672196
+                },
+                {
+                  "member": "A3",
+                  "rank": 0.1671255649019057,
+                  "zero_mass": 0.28656699632604915
+                },
+                {
+                  "member": "A4",
+                  "rank": 0.15910758835252276,
+                  "zero_mass": 0.3024439089000225
+                },
+                {
+                  "member": "B0",
+                  "rank": 0.16794775277964766,
+                  "zero_mass": 0.2704183976786832
+                },
+                {
+                  "member": "B1",
+                  "rank": 0.1665392461684273,
+                  "zero_mass": 0.27218066484977804
+                },
+                {
+                  "member": "B2",
+                  "rank": 0.15857491908057947,
+                  "zero_mass": 0.29775833220531545
+                },
+                {
+                  "member": "B3",
+                  "rank": 0.1658326517746166,
+                  "zero_mass": 0.2850169251052042
+                },
+                {
+                  "member": "B4",
+                  "rank": 0.16931225081294907,
+                  "zero_mass": 0.24650413524359466
+                }
+              ],
+              "rank_min": 0.14815968500071675,
+              "rank_median": 0.16247012006356967,
+              "rank_max": 0.16931225081294907,
+              "rank_iqr": 0.011068503082706238
+            }
+          }
+        }
+      }
+    }
+  }
+}
