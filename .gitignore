@@ -28,3 +28,6 @@ paper/*.synctex.gz
 
 # local toolchain (tectonic etc.), fetched by scripts/s0_setup_env.sh
 .tools/
+
+paper/paper_clean.pdf
+paper/*.stdout

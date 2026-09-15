@@ -9,19 +9,11 @@
 # Research reports behind the rationales: docs/S0_RESEARCH/*.md
 
 meta:
-  revision: r2
+  revision: r1
   paper_commit: 6221c50
   status: >-
-    r1 was frozen at S0 before any data-consuming code ran (tag declarations-frozen). r2 resolves
-    the four OPEN items by review comments C1-C4 and is frozen before S1 (tag declarations-frozen-r2).
-    No data had been ingested or fitted when r2 was written.
-  # Supersession record (brief v2 §1: a frozen declaration is superseded with a dated record, never
-  # rewritten silently). r1 is kept verbatim in configs/declarations_history/declarations_r1.yaml.
-  supersession_log:
-    - {date: 2026-09-15, comment: C1, keys: [declared_by_design.target.weights_a_b, declared_by_design.target.decomposable_target, declared_by_design.target.reference_point, declared_by_design.channels.roles, declared_by_design.inserted_patterns_generation.carrying_channels],
-       r1: "weights a (graded) and b (patterns) OPEN; channel roles OPEN (draft only)",
-       r2: "one weight per cell w_{u,c} = kappa_c * pi_u about a declared reference point x0_c = phi_c(0); roles fixed",
-       reason: "a linear map of the observed window cannot reproduce Eq. 4 as written in r1 (pattern channels also carry the mean component)"}
+    Draft frozen at S0 before any data-consuming code ran. Items marked OPEN are the four
+    issues raised to the human at S0 (channel roles, redundancy, rho anchor, attribution baseline).
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -154,7 +146,7 @@ declared_by_design:
     affects_fitted_parameters: true
 
   inserted_patterns_generation:
-    carrying_channels: {value: [capacity], source: "paper l.173 (capacity regeneration), l.243 (detected on trajectory residuals); roles fixed by C1 (r2)"}
+    carrying_channels: {value: [capacity], source: "paper l.173 (capacity regeneration), l.243 (detected on trajectory residuals)", status: OPEN}
     shape: {value: raised_cosine, detail: "p_j = A * sin^2(pi*(j+1)/(D+1)), j=0..D-1; extremum at the centre", source: UNDERSPECIFIED-IN-PAPER, rationale: "finite support of exactly D positions so the sparse set is unambiguous; symmetric like paper Fig. 2"}
     occurrence: {value: "Poisson over positions of the unit at the resampled per-unit rate per type; amplitude and duration resampled from detected patterns of that type", source: UNDERSPECIFIED-IN-PAPER}
     affects_fitted_parameters: false
@@ -176,12 +168,8 @@ declared_by_design:
       temperature_mean:       {derivation: "time-weighted mean cell temperature over the cycle [degC] (where recorded)"}
     availability_rule: "a profile uses a candidate iff it is available in every unit of the dataset (S2 audit)"
     roles:
-      # r2 (C1). Roles differ only in the channel factor kappa_c of w_{u,c} = kappa_c * pi_u and in
-      # whether the channel carries inserted patterns; the graded/sparse split is a split of phi*.
-      weighted_pattern_carrying: [capacity]                       # kappa != 0, carries patterns
-      weighted_graded:           [charge_time, mean_discharge_voltage]  # kappa != 0, no patterns
-      zero_weight_redundant:     [internal_resistance, temperature_mean] # kappa = 0, carry z where available
-      source: "paper l.238 (which channels enter the target is declared); C1 (r2)"
+      status: OPEN   # S0 decision 1 (exactness of reference model) and 2 (redundancy)
+      draft: {pattern_carrying: [capacity], graded: [charge_time, mean_discharge_voltage], zero_weight: [internal_resistance, temperature_mean]}
     affects_fitted_parameters: true
 
   target:
@@ -191,41 +179,7 @@ declared_by_design:
       recency: {value: "pi_u proportional to 2^(-(t-u)/h), h = L/4 = 6, normalised to sum 1", source: "paper l.205 ('decay rate declared per profile'); value UNDERSPECIFIED-IN-PAPER", rationale: "same h in every profile for comparability (paper l.203 argument)"}
       uniform: {value: "pi_u = 1/L", source: "paper l.205"}
       final_position: {value: "pi_u = 1 at u = t, else 0", source: "paper l.205"}
-    # r2 (C1): supersedes r1 `weights_a_b: OPEN`.
-    decomposable_target:
-      value: "y = sum_{(u,c) in W} w_{u,c} (m_{u,c} - x0_c) + sum_{(u,c) in W} w_{u,c} sum_k p_{k,u,c}  (noise-free observation minus x0, weighted)"
-      ground_truth: "phi*_{u,c} = w_{u,c} (m_{u,c} - x0_c)  [graded field]  +  w_{u,c} sum_k p_{k,u,c}  [sparse field]"
-      source: "paper Eq. 4-5 as amended by C1"
-    weights:
-      value: "w_{u,c} = kappa_c * pi_u; pi_u from target.position_profiles (sums to 1 over the window); kappa_c = beta_c / (phi_c(1) - phi_c(0)) on weighted channels, 0 otherwise"
-      beta:
-        value: {capacity: 0.3333333333333333, charge_time: 0.3333333333333333, mean_discharge_voltage: 0.3333333333333333}
-        rationale: >-
-          kappa_c is declared in units of the degradation state: a channel's full change between the
-          pristine level and EOL contributes the share beta_c. Equal shares give every weighted channel
-          the same stake; for capacity (affine phi) the graded contribution is exactly beta * pi_u * z_u,
-          so y is a weighted degradation state over the window, comparable across profiles. The rule is
-          declared; its value per profile follows from the fitted mapping (unit conversion, not a fit of y).
-        source: UNDERSPECIFIED-IN-PAPER
-      guard:
-        value: "a weighted channel whose |phi_c(1) - phi_c(0)| is below its fitted noise std is demoted to zero_weight_redundant and the remaining beta renormalised to sum 1; the demotion is reported"
-        rationale: "kappa_c would otherwise amplify a channel that does not change with degradation"
-        source: UNDERSPECIFIED-IN-PAPER
-      affects_fitted_parameters: false
-    reference_point:
-      value: "x0_c = phi_c(0): the pristine (beginning-of-life) level of channel c from the profile's fitted mapping; identical for every unit and position of the profile; null channels: see channels.null"
-      rationale: "the input at which the decomposable target is zero, so a pristine unit without patterns has y = 0 (C1)"
-      source: "C1 (r2)"
-      affects_fitted_parameters: false
-    reference_model:
-      value: "g(x) = sum_{(u,c) in W} w_{u,c} (x_{u,c} - x0_c); affine, weights known; g(x) - y = sum w eps; exact at eps = 0; intercept does not affect attributions from x0"
-      source: "paper l.218 as amended by C1"
-    s4_acceptance_checks:
-      - "sum(phi*) == y per window to numerical tolerance"
-      - "g(x) - y == sum(w * eps) per window; mean over units ~ 0"
-      - "pristine unit (z = 0, no patterns): y == 0"
-      - "final-position weighting: graded and sparse fields both zero outside the last position"
-      - "graded/sparse correlation below usability.graded_sparse_correlation_bound under each of the three weightings, reported per weighting"
+    weights_a_b: {status: OPEN, source: "paper l.189-200"}
     attribution_baseline: {status: OPEN, source: "paper l.218; S0 decision 4"}
 
   usability:
