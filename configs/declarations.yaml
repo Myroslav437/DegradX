@@ -26,6 +26,10 @@ meta:
        r1: "permutation importance ~0 gated on all zero-weight channels (tolerance OPEN); no null channels; no identifiability diagnostic",
        r2: "two declared null channels per profile carry the gated leakage test; redundant zero-weight channels reported (predictability, conditional importance), not gated; reference model primary; ensemble identifiability floor",
        reason: "every channel is phi_c(z), so a zero-weight channel still carries the state: the r1 test cannot separate leakage from benign redundancy, and phi* is not identifiable for a trained model"}
+    - {date: 2026-09-15, comment: C3, keys: [declared_by_design.eol.anchor, declared_by_design.eol.q1_reference, declared_by_design.eol.denominator_guard, declared_by_design.eol.rho_sensitivity_grid, declared_by_design.eol.definitions_reported],
+       r1: "z_t = (q1 - q_t) / ((1 - rho) q1), q1 = first position of smoothed capacity (status OPEN)",
+       r2: "z_t = (q1 - q_t) / (q1 - rho * q_nom), q_nom per profile from primary documentation, q1 = max smoothed capacity over first k=20 positions, guard q1 - rho*q_nom >= 0.05 q_nom; r1 definition kept as a sensitivity point",
+       reason: "MATR/HUST cells were cycled to 80% of nominal capacity; rho applied to a higher observed initial capacity puts EOL below where cycling stopped, and early capacity rise makes a first-position anchor give z < 0"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -57,16 +61,42 @@ declared_by_design:
       source: "paper l.148-158 (Eq. 3); numeric value UNDERSPECIFIED-IN-PAPER"
       rationale: "80% is the common convention cited in the paper (l.158; Severson 2019 uses 80% of nominal)."
       affects_fitted_parameters: true
+    # r2 (C3): supersedes r1 `anchor: first_position_smoothed_capacity` (status OPEN).
     anchor:
-      value: first_position_smoothed_capacity      # Eq. 3 as written: z = (q1 - q_t)/((1-rho) q1)
-      source: "paper l.148-152"
-      status: OPEN   # S0 decision 3: MATR/HUST were cycled to 80% of NOMINAL capacity; anchoring at q1 may exclude many units
+      value: nominal_capacity_endpoint_unit_origin
+      equation: "z_t = (q1 - q_t) / (q1 - rho * q_nom);  T = min{t : z_t >= 1}  (equivalently the first t with q_t <= rho * q_nom)"
+      q_nom: "declared per profile in configs/profiles/<profile>.yaml from the dataset's own primary documentation"
+      source: "paper Eq. 3 as amended by C3"
+      affects_fitted_parameters: true
+    q1_reference:
+      value: "q1 = max of the smoothed capacity over the first k positions of the unit"
+      k: 20
+      rationale: >-
+        Absorbs an early capacity rise without reaching far into life: longer than the Savitzky-Golay window (11), so no
+        single smoothed excursion sets q1 alone, and under half the earliest EOL position documented for a usable NASA
+        cell (B0018 crosses 1.6 Ah at discharge 45; datasets.md §3.4). Under C3, T does not depend on q1 (q_t <= rho q_nom),
+        so k moves only the origin of z.
+      material_difference: "|q1(k) - q_t=1| > 0.01 * q_nom counts as a material difference; S2 reports how often it occurs"
+      sensitivity_k: [1, 10, 20, 50]
+      source: "C3 (r2); k UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: true
+    denominator_guard:
+      value: "exclude a unit if q1 - rho * q_nom < 0.05 * q_nom; count and reason reported"
+      rationale: "a unit starting within 5% of nominal capacity of the EOL threshold (or below it) has too small a permitted fall to define z; same 5% in every profile"
+      source: "C3 (r2); value UNDERSPECIFIED-IN-PAPER"
       affects_fitted_parameters: true
     rho_sensitivity_grid:
       value: [0.70, 0.75, 0.80, 0.85, 0.90]
       source: "paper l.158 ('range these conventions span'); grid UNDERSPECIFIED-IN-PAPER"
       rationale: "70% NASA rated-capacity rule; 76% Pan 2022; 80% convention; 90% BatteryLife for cells not reaching 80%."
       affects_fitted_parameters: true
+    definitions_reported:
+      value:
+        nominal_anchor_r2: "z = (q1 - q_t)/(q1 - rho q_nom), q1 = max over first k"
+        first_position_anchor_r1: "z = (q1 - q_t)/((1 - rho) q1), q1 = first smoothed value (paper as given)"
+      use: "S2 measures attainment per profile under both definitions at every rho on the grid; S4 rho-sensitivity reports both"
+      source: "C3 (r2)"
+      affects_fitted_parameters: false
 
   smoothing:
     filter: {value: savitzky_golay, source: "paper l.236", affects_fitted_parameters: true}
@@ -118,7 +148,7 @@ declared_by_design:
   trajectory_families:
     source: "paper l.236 (families named, equations cited not written); equations UNDERSPECIFIED-IN-PAPER"
     affects_fitted_parameters: true
-    fit_quantity: {value: capacity_over_q1, rationale: "dimensionless so one bound set serves 1.1 Ah and 2 Ah cells"}
+    fit_quantity: {value: capacity_over_q1, rationale: "dimensionless so one bound set serves 1.1 Ah and 2 Ah cells", r2_note: "q1 is the robust early-life reference of eol.q1_reference (C3)"}
     fit_range: {value: "positions 1..T of the unit (T from Eq. 3 on smoothed capacity)"}
     candidates:
       two_term_exponential:
@@ -149,6 +179,15 @@ declared_by_design:
     value: "isotonic regression (sklearn, increasing='auto') on pooled (z, x_c) of fitting-split units, then PCHIP through the isotonic fit on a 101-point z grid"
     source: "paper l.236 ('smooth monotone functions of the fitted degradation state'); method UNDERSPECIFIED-IN-PAPER"
     rationale: "Isotonic gives monotonicity without a shape assumption; PCHIP makes it C1-smooth while preserving monotonicity."
+    # r2 (C1 x C3): capacity uses one affine mapping per profile so that x0 is identical across units.
+    capacity:
+      value: "phi_cap(z) = q1_bar - z * (q1_bar - rho * q_nom), q1_bar = median over fitting-split units of the robust q1"
+      rationale: >-
+        Eq. 3 makes capacity affine in z per unit with the unit's own q1; C1 needs x0 = phi_cap(0) shared by all units, and
+        paper §3.1 already states that units at the same state share expected values in every channel. The unit's own q1 is
+        still used to compute its measured z and is resampled jointly with theta to convert a fitted trajectory into z.
+      cost: "generated units do not vary in initial capacity; the property table reports measured vs generated q1 spread"
+      source: "C1, C3 (r2)"
     affects_fitted_parameters: true
 
   noise:

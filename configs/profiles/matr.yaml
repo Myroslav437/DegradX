@@ -1,0 +1,16 @@
+# MATR profile: dataset-level facts declared from the dataset's own primary documentation (C3, r2).
+# Values here are declared, never fitted. Fitted profile parameters are written by S3 to artifacts/, not here.
+dataset: MATR
+batteryml_name: MATR
+nominal_capacity_Ah:
+  value: 1.1
+  source: >-
+    Severson et al. 2019, Nature Energy 4:383, Methods: "A123 Systems, model APR18650M1A, 1.1 Ah nominal capacity"
+    (docs/S0_RESEARCH/datasets.md §1.2); Attia et al. 2020 use the same cell model. BatteryML preprocess_MATR.py
+    writes nominal_capacity_in_Ah=1.1 (consistent, not the source).
+stopping_convention:
+  value: "cycled until discharge capacity fell to 80% of nominal capacity (0.88 Ah)"
+  source: >-
+    Severson 2019 Introduction: "cycle life ... defined as the number of cycles until 80% of nominal capacity";
+    Severson loader LoadData.m threshold 0.88 Ah; Attia 2020 Methods: cycle life = cycles until 80% of nominal.
+cell: {chemistry: LFP/graphite, format: cylindrical 18650, ambient_C: 30}

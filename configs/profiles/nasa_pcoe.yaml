@@ -1,0 +1,12 @@
+# NASA PCoE profile: dataset-level facts declared from the dataset's own primary documentation (C3, r2).
+dataset: NASA_PCoE
+batteryml_name: null   # not supported by BatteryML; converted by degradx.data.nasa (brief §2.2)
+nominal_capacity_Ah:
+  value: 2.0
+  source: >-
+    NASA Prognostics Data Repository, "5. Battery Data Set", 1_README.txt: "30% fade in rated capacity (from 2Ahr to
+    1.4Ahr)"; the repository gives rated capacity, which is used as nominal (docs/S0_RESEARCH/datasets.md §3.2).
+stopping_convention:
+  value: "differs by experiment group: 30% fade of rated capacity (1.4 Ah) for B0005-B0018 and the 4 degC groups; 20% fade (1.6 Ah) for B0033-B0040; not stated for B0025-B0032; software crash for B0049-B0052"
+  source: "NASA READMEs 1_README.txt, 3_README_*.txt, 4_README_*.txt, 5_README_*.txt, 6_README_*.txt"
+cell: {chemistry: UNVERIFIED (not stated in any README), format: cylindrical 18650, ambient_C: "24, 43, 4 by group"}

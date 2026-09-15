@@ -1,0 +1,13 @@
+# HUST profile: dataset-level facts declared from the dataset's own primary documentation (C3, r2).
+dataset: HUST
+batteryml_name: HUST
+nominal_capacity_Ah:
+  value: 1.1
+  source: >-
+    Ma et al. 2022, Energy Environ. Sci. 15:4083, "Experimental data": "LFP/graphite A123 APR18650M1A, 1.1 Ah nominal
+    capacity"; Mendeley Data nsc7hnsg4s v2 description "(1.1 Ah nominal capacity and 3.3 V nominal voltage)"
+    (docs/S0_RESEARCH/datasets.md §2.1).
+stopping_convention:
+  value: "collected until the maximum capacity first reached 80% of nominal capacity"
+  source: "Ma et al. 2022 Methods (hust.txt l.796-798)"
+cell: {chemistry: LFP/graphite, format: cylindrical 18650, ambient_C: 30}
