@@ -50,6 +50,7 @@ meta:
     - {date: 2026-09-15, comment: D01, keys: [declared_by_design.scoring], r2: "scores unspecified (rank agreement, retrieval, zero-weight mass named only)", new: "Spearman on pattern-free map vs graded field; AP on paired difference vs sparse set; plain AP secondary", reason: "plain retrieval scores the ground truth itself at chance (0.064 vs 0.048); paired 1.000"}
     - {date: 2026-09-15, comment: D02b, keys: [declared_by_design.minimum_counts.held_out_units_per_measure], r2: "5 held-out units for every measure (provisional)", new: "transfer 20 reaching; covariance 12; discriminator 8 (distance-to-0.5 readability); representation distance by unit bootstrap", reason: "resampling over MATR held-out units; a 5-unit split leaves the discriminator one test unit"}
     - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
+    - {date: 2026-09-16, comment: D20, keys: [declared_by_design.responsiveness.operating_range.probes], r2: "probe unspecified (the paper does not say on which model the operating-range score is computed)", new: "both the reference model and IG on the trained model, with the accuracy gate applied to the trained probe", reason: "on the trained probe alone all 57 examined setting values are responsive, including two whose trained scores are void under the gate"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -414,6 +415,11 @@ declared_by_design:
       saturation: ">= 0.95"
       near_chance: "<= 0.05 or 95% CI includes s_chance"
       source: "paper l.283; thresholds UNDERSPECIFIED-IN-PAPER"
+      # D20 (2026-09-16): the probe was OPEN in r2; the paper does not say on which model the score is computed.
+      probes:
+        value: "both the reference model (exact attribution w(x - x0); the declared primary scoring target) and Integrated Gradients on the primary trained model; a setting value is inside the operating range only where the score is responsive on both and the trained model passes usability.accuracy_gate"
+        rationale: "on the trained probe alone every examined value is responsive, so the range excludes nothing, including two values whose trained scores are void under the accuracy gate"
+        source: "D20 (docs/DECISIONS/D20_operating_range_probe.md)"
     generator_settings:
       noise_variance_multiplier: [0.25, 0.5, 1, 2, 4, 8, 16]
       transition_sharpness_multiplier: [0.25, 0.5, 1, 2, 4]
