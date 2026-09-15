@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "degradx"
+version = "0.0.1"
+description = "DegradX: a dataset-calibrated synthetic benchmark for attribution evaluation on degrading systems"
+readme = { text = "See paper/paper.tex.", content-type = "text/plain" }
+requires-python = ">=3.12,<3.13"
+authors = [{ name = "Myroslav Mishchuk" }]
+# Exact, tested versions live in requirements-lock.txt; bounds here are the verified floor.
+# PyTorch must come from the CUDA wheel index, which pyproject cannot express:
+#   pip install --index-url https://download.pytorch.org/whl/cu130 torch==2.14.0
+# (the cu130 build lists sm_75 in torch.cuda.get_arch_list(), verified on GTX 1660 Ti).
+dependencies = [
+    # BatteryML pins numpy>=1.24,<2.0 (requirements.txt @ 2861ae3); we honour that pin.
+    "numpy>=1.26.4,<2",
+    "scipy>=1.17",
+    "pandas>=3.0",
+    "scikit-learn>=1.9",
+    # statsmodels 0.14.5 fails at import under pandas 3.0 (deprecate_kwarg TypeError); 0.15 imports cleanly.
+    "statsmodels>=0.15",
+    "csaps>=1.3.3",
+    "h5py>=3.16",
+    "matplotlib>=3.11",
+    "pyyaml>=6.0",
+    "omegaconf>=2.3",
+    "typer>=0.27",
+    "tqdm>=4.67",
+    "torch>=2.14",
+    "captum>=0.9",
+    # TimeSHAP 1.0.4 imports shap.explainers._kernel.Kernel, renamed KernelExplainer in shap 0.43.
+    # degradx must alias Kernel = KernelExplainer before importing timeshap.explainer; the alias was
+    # validated against exact Shapley values and against shap 0.42.1 only for shap 0.49.1, hence the cap.
+    "shap>=0.49.1,<0.50",
+    "timeshap==1.0.4",
+    "batteryml @ git+https://github.com/microsoft/BatteryML.git@2861ae3b8c79938c7fc8e6fe9986b799ca71c7dd",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0"]
+viz = ["umap-learn>=0.5.12"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["degradx*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

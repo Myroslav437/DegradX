@@ -1,0 +1,5 @@
+# Reference model (paper §3.2.1 "Reference model"): the map applying the target weights to the
+# observed window, whose attributions have an analytic solution. Its exact form is fixed by the
+# weights section of configs/declarations.yaml; nothing here is trained.
+type: known_weight_map
+weights_from: declarations.declared_by_design.target

@@ -1,0 +1,40 @@
+# RUNBOOK
+
+Copy-pasteable commands for every stage, from the repository root. Every stage script takes
+`--config --out-dir --seed --device {cuda,cpu} --dry-run --force`, skips completed work unless
+`--force`, writes `artifacts/s{N}_*/logs/{run,timing}.json`, and exits non-zero on a failed check.
+
+## S0 — environment and toolchain
+
+```bash
+bash scripts/s0_setup_env.sh        # venv (.venv), locked deps, editable degradx, TinyTeX (.tools/.TinyTeX)
+source .venv/bin/activate
+export PATH="$PWD/.tools/.TinyTeX/bin/x86_64-linux:$PATH"   # pdflatex, bibtex, latexdiff
+pytest -q
+```
+
+- PyTorch comes from `https://download.pytorch.org/whl/cu130` (sm_75 verified on GTX 1660 Ti).
+- CPU fallback: pass `--device cpu` to any stage.
+
+## Paper build
+
+```bash
+cd paper && pdflatex paper && bibtex paper && pdflatex paper && pdflatex paper
+```
+
+The preamble switch `\reviewtrue` / `\reviewfalse` toggles highlighting of amended spans.
+
+## S1 … S9
+
+Filled in as each stage lands; see `scripts/run_all.sh` for the chained invocation.
+
+## Git LFS policy
+
+- Tracked by LFS (see `.gitattributes`): the compiled `paper/paper.pdf`, model checkpoints (`*.pt`,
+  `*.ckpt`), generated-unit archives (`*.npz` under `data/generated/` and `results/`), and every figure
+  under `artifacts/` (PNG and PDF).
+- Size threshold: any other committed file larger than **1 MB** is added to `.gitattributes` before
+  it is committed. Downloaded datasets are never committed (`data/` is ignored); `s1_fetch_data.py`
+  and its checksums reproduce them.
+- After every commit: `git push`, then `git rev-parse HEAD` must equal `git rev-parse @{u}`; when LFS
+  files changed, `git lfs push --all origin main`.

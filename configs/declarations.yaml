@@ -1,0 +1,240 @@
+# DegradX — frozen pre-declarations (brief R7)
+#
+# Every constant the paper declares by design lives here, and nothing it says is estimated from
+# data. The split reproduces paper §3.3 (paper/paper.tex l.238) exactly; items the paper needs
+# but does not list are added under `declared_by_design` with source UNDERSPECIFIED-IN-PAPER.
+#
+# Per entry:  value | source (paper line or UNDERSPECIFIED-IN-PAPER) | rationale |
+#             affects_fitted_parameters (true => blocks progress past S3 until confirmed)
+# Research reports behind the rationales: docs/S0_RESEARCH/*.md
+
+meta:
+  revision: r1
+  paper_commit: 6221c50
+  status: >-
+    Draft frozen at S0 before any data-consuming code ran. Items marked OPEN are the four
+    issues raised to the human at S0 (channel roles, redundancy, rho anchor, attribution baseline).
+
+# ---------------------------------------------------------------------------------------------
+# Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
+estimated_from_data:
+  - {id: E1, item: distribution of theta,                      paper: "l.236, l.238"}
+  - {id: E2, item: choice of trajectory family,                paper: "l.236, l.238"}
+  - {id: E3, item: channel mappings phi_c,                     paper: "l.236, l.238"}
+  - {id: E4, item: covariance among channels,                  paper: "l.236, l.238"}
+  - {id: E5, item: noise variance and autocorrelation,         paper: "l.236, l.238"}
+  - {id: E6, item: rate, amplitude and duration of inserted patterns, paper: "l.236, l.238, l.243"}
+  - {id: E7, item: unit-length distribution,                   paper: "l.236, l.238"}
+
+# ---------------------------------------------------------------------------------------------
+declared_by_design:
+
+  datasets:
+    matr_batches:
+      value: [20170512, 20170630, 20180412, 20190124]
+      source: "paper l.83, l.253 cite severson2019 (first three batches); BatteryML's MATR bundle adds 20190124 (Attia 2020)"
+      rationale: "all four enter the audit; the Severson subset is reported alongside so the cited dataset is recoverable"
+      status: CONFIRM
+      affects_fitted_parameters: true
+    nasa_pcoe_cells: {value: all_34_in_repository, source: "paper l.253", rationale: "the S2 audit decides which reach EOL; no pre-selection by literature", affects_fitted_parameters: true}
+
+  # ---- paper l.238 list: rho, smoothing, detection thresholds, channels, weights, L, protocol settings
+  eol:
+    rho:
+      value: 0.80
+      source: "paper l.148-158 (Eq. 3); numeric value UNDERSPECIFIED-IN-PAPER"
+      rationale: "80% is the common convention cited in the paper (l.158; Severson 2019 uses 80% of nominal)."
+      affects_fitted_parameters: true
+    anchor:
+      value: first_position_smoothed_capacity      # Eq. 3 as written: z = (q1 - q_t)/((1-rho) q1)
+      source: "paper l.148-152"
+      status: OPEN   # S0 decision 3: MATR/HUST were cycled to 80% of NOMINAL capacity; anchoring at q1 may exclude many units
+      affects_fitted_parameters: true
+    rho_sensitivity_grid:
+      value: [0.70, 0.75, 0.80, 0.85, 0.90]
+      source: "paper l.158 ('range these conventions span'); grid UNDERSPECIFIED-IN-PAPER"
+      rationale: "70% NASA rated-capacity rule; 76% Pan 2022; 80% convention; 90% BatteryLife for cells not reaching 80%."
+      affects_fitted_parameters: true
+
+  smoothing:
+    filter: {value: savitzky_golay, source: "paper l.236", affects_fitted_parameters: true}
+    window_length:
+      value: 11
+      source: UNDERSPECIFIED-IN-PAPER
+      rationale: "Fixed in cycles for every profile (a fraction of length would tie q_t to experiment duration). Half-width 5 >= longest NASA regeneration Qin 2016 tabulates; 3 dB cutoff 0.197 x Nyquist (Schafer 2011 Table 1)."
+      affects_fitted_parameters: true
+    polyorder: {value: 2, source: UNDERSPECIFIED-IN-PAPER, rationale: "N=2 and N=3 give the same cutoff at W=11; lower order is less edge-sensitive.", affects_fitted_parameters: true}
+    mode: {value: interp, source: UNDERSPECIFIED-IN-PAPER, rationale: "scipy default; edge values from a local polynomial fit, needed for q1.", affects_fitted_parameters: true}
+    window_sensitivity_grid: {value: [7, 11, 21], source: UNDERSPECIFIED-IN-PAPER, affects_fitted_parameters: false}
+
+  pattern_detection:
+    residual:
+      value: raw_capacity_minus_fitted_trajectory
+      source: "paper l.236 (step five uses the step-two residuals), l.243"
+      rationale: "Residuals of the smoothed series would retain only 37-71% of a regeneration peak at W=11 (domain research §2)."
+      affects_fitted_parameters: true
+    residual_scale:
+      value: mad_normal_per_unit          # 1.4826 * median(|r - median(r)|)
+      source: UNDERSPECIFIED-IN-PAPER
+      rationale: "Robust to the patterns being detected, so steps four and five are not circular."
+      affects_fitted_parameters: true
+    multiple_k:
+      value: 2.5
+      source: "paper l.243-245 (declared before fitting); value UNDERSPECIFIED-IN-PAPER"
+      rationale: "Monte Carlo under AR(1) noise: k=2.0, m=2 gives ~1 false run per 1000 positions at phi=0 and many more under autocorrelation; k=2.5 an order of magnitude fewer."
+      affects_fitted_parameters: true
+    min_run_length:
+      value: 2
+      source: "paper l.243-245; value UNDERSPECIFIED-IN-PAPER"
+      rationale: "A single-position excursion cannot be distinguished from an outlier; Qin 2016 regeneration regions span 3-5 cycles."
+      affects_fitted_parameters: true
+    sweep:
+      multiple_k: [2.0, 2.5, 3.0, 3.5, 4.0]
+      min_run_length: [2, 3]
+      source: "paper l.245 ('declared range of the multiple'); grid UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: false
+    types:
+      value: {positive: regeneration, negative: measurement_condition_dip}
+      source: "paper l.173, l.243 ('the sign of the run gives the type')"
+      affects_fitted_parameters: true
+    enable_rule:
+      value: "a type is enabled in a profile iff at least one run of that sign is detected in the fitting split at the declared k and m"
+      source: "paper l.175, l.245"
+      affects_fitted_parameters: true
+    record_per_pattern: {value: [extremum_position, signed_amplitude, duration], source: "paper l.243", affects_fitted_parameters: true}
+
+  trajectory_families:
+    source: "paper l.236 (families named, equations cited not written); equations UNDERSPECIFIED-IN-PAPER"
+    affects_fitted_parameters: true
+    fit_quantity: {value: capacity_over_q1, rationale: "dimensionless so one bound set serves 1.1 Ah and 2 Ah cells"}
+    fit_range: {value: "positions 1..T of the unit (T from Eq. 3 on smoothed capacity)"}
+    candidates:
+      two_term_exponential:
+        equation: "y(n) = a*exp(b*n) + c*exp(d*n)"
+        citation: he2011
+        bounds: {a: [-2, 2], b: [-20, 20], c: [-2, 2], d: [-20, 20]}   # n in thousands of cycles
+        note: "no sign constraints (a knee needs them free); poorly identifiable (Wang 2013 via Johnen 2019) — multistart"
+      rollover:
+        equation: "y(n) = y0 + [m_o*n + (m_f - m_o)*delta*ln((exp(n/delta) + exp(N_k/delta)) / (1 + exp(N_k/delta)))]/q1"
+        citation: saxena2022
+        parameters: [y0, m_o, N_k, delta, m_f]
+        bounds_note: "m_o, m_f <= 0; N_k in [0, 1.5*T]; delta in [5, 500] cycles (free: the paper lists width as a parameter and varies sharpness)"
+      power_law:
+        equation: "y(n) = y0 - a*n^b"
+        bounds: {a: [0, .inf], b: [0, 5]}
+    solver: {value: "scipy.optimize.least_squares(method='trf', loss='linear') with multistart", rationale: "plain NLS as the paper says; robust loss would change the residuals patterns are detected from"}
+    selection:
+      value: "5 contiguous-block folds per unit; RMSE on held-out blocks; family with lowest median CV-RMSE across fitting-split units"
+      source: "paper l.236 ('cross-validated fit error across units'); protocol UNDERSPECIFIED-IN-PAPER"
+
+  theta_distribution:
+    value: empirical_resampling_of_unit_vectors
+    source: "paper l.236 ('empirical distribution of the fitted parameters over units')"
+    rationale: "Literal reading. Noise parameters and pattern rate are resampled jointly by unit index with theta to keep their dependence."
+    affects_fitted_parameters: false
+
+  channel_mappings:
+    value: "isotonic regression (sklearn, increasing='auto') on pooled (z, x_c) of fitting-split units, then PCHIP through the isotonic fit on a 101-point z grid"
+    source: "paper l.236 ('smooth monotone functions of the fitted degradation state'); method UNDERSPECIFIED-IN-PAPER"
+    rationale: "Isotonic gives monotonicity without a shape assumption; PCHIP makes it C1-smooth while preserving monotonicity."
+    affects_fitted_parameters: true
+
+  noise:
+    value: "per channel AR(1): marginal variance and lag-1 autocorrelation (statsmodels acf) of fit residuals with detected-pattern positions masked"
+    source: "paper l.178, l.236 (variance and autocorrelation); AR(1) form UNDERSPECIFIED-IN-PAPER"
+    cross_channel: {value: "independent per channel in generation; residual cross-channel covariance recorded and compared at S5", source: "paper l.178 ('added per channel'), l.236"}
+    affects_fitted_parameters: true
+
+  inserted_patterns_generation:
+    carrying_channels: {value: [capacity], source: "paper l.173 (capacity regeneration), l.243 (detected on trajectory residuals)", status: OPEN}
+    shape: {value: raised_cosine, detail: "p_j = A * sin^2(pi*(j+1)/(D+1)), j=0..D-1; extremum at the centre", source: UNDERSPECIFIED-IN-PAPER, rationale: "finite support of exactly D positions so the sparse set is unambiguous; symmetric like paper Fig. 2"}
+    occurrence: {value: "Poisson over positions of the unit at the resampled per-unit rate per type; amplitude and duration resampled from detected patterns of that type", source: UNDERSPECIFIED-IN-PAPER}
+    affects_fitted_parameters: false
+
+  audit:
+    monotonicity_tolerance:
+      value: 0.01
+      definition: "unit is monotone within tolerance iff max_t (q_t - min_{s<=t} q_s) <= 0.01 * q1 on smoothed capacity"
+      source: "paper l.255; tolerance UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: false
+
+  channels:
+    source: "paper l.238 (number of channels and which enter the target are declared); l.253 (MATR reference set)"
+    candidates:
+      capacity:               {derivation: "max discharge capacity of the cycle [Ah]"}
+      charge_time:            {derivation: "duration of the positive-current segment of the cycle [min]"}
+      mean_discharge_voltage: {derivation: "time-weighted mean voltage over the negative-current segment [V]"}
+      internal_resistance:    {derivation: "per-cycle IR as recorded [ohm] (MATR only)"}
+      temperature_mean:       {derivation: "time-weighted mean cell temperature over the cycle [degC] (where recorded)"}
+    availability_rule: "a profile uses a candidate iff it is available in every unit of the dataset (S2 audit)"
+    roles:
+      status: OPEN   # S0 decision 1 (exactness of reference model) and 2 (redundancy)
+      draft: {pattern_carrying: [capacity], graded: [charge_time, mean_discharge_voltage], zero_weight: [internal_resistance, temperature_mean]}
+    affects_fitted_parameters: true
+
+  target:
+    window_length_L: {value: 24, source: "paper l.187; value UNDERSPECIFIED-IN-PAPER", rationale: "TimeGAN/Diffusion-TS evaluation convention; fits the shortest units"}
+    position_profiles:
+      default: recency
+      recency: {value: "pi_u proportional to 2^(-(t-u)/h), h = L/4 = 6, normalised to sum 1", source: "paper l.205 ('decay rate declared per profile'); value UNDERSPECIFIED-IN-PAPER", rationale: "same h in every profile for comparability (paper l.203 argument)"}
+      uniform: {value: "pi_u = 1/L", source: "paper l.205"}
+      final_position: {value: "pi_u = 1 at u = t, else 0", source: "paper l.205"}
+    weights_a_b: {status: OPEN, source: "paper l.189-200"}
+    attribution_baseline: {status: OPEN, source: "paper l.218; S0 decision 4"}
+
+  usability:
+    accuracy_gate: {value: "NRMSE = RMSE / std(y_test) <= 0.30 on held-out generated units (R^2 >= 0.91)", source: "paper l.277; value UNDERSPECIFIED-IN-PAPER"}
+    graded_sparse_correlation_bound: {value: 0.30, definition: "|Pearson r| over (window, position) of channel-summed |graded| vs |sparse|", source: "paper l.277; UNDERSPECIFIED-IN-PAPER"}
+    term_ablation: {value: "retrain with one term of Eq. 4 removed from the training target; error on the full y must increase (bootstrap 95% CI > 0)", source: "paper l.277; sign convention UNDERSPECIFIED-IN-PAPER"}
+    permutation_importance_tolerance: {value: "increase in NMSE <= 0.02 (upper 95% bootstrap bound) when a channel is permuted across windows", source: "paper l.277; UNDERSPECIFIED-IN-PAPER", status: OPEN}
+    variance_ratio_band: {value: [0.05, 0.50], definition: "Var(pattern term) / Var(mean term) over windows", source: "Table 3 row 1; UNDERSPECIFIED-IN-PAPER"}
+
+  responsiveness:
+    operators:
+      added_noise: {grid: [0, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0], unit: "multiple of the std of the window's phi* cells"}
+      shift_to_start: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of each channel's mass moved to the first position"}
+      shift_to_end: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of each channel's mass moved to the last position"}
+      smoothing: {grid: [0, 0.5, 1, 2, 4, 8], unit: "Gaussian sigma in positions (scipy.ndimage.gaussian_filter1d)"}
+      permuted_fraction: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of cells whose values are permuted among themselves"}
+      source: "paper l.281; grids UNDERSPECIFIED-IN-PAPER"
+    reliability_criterion: {value: "paired bootstrap over units: upper bound of 95% CI of mean(score_degraded - score_undegraded) < 0, at this and every larger magnitude on the grid", source: "Table 4 caption; UNDERSPECIFIED-IN-PAPER"}
+    operating_range:
+      normalised_score: "(s - s_chance) / (s_max - s_chance), s_chance from a randomly permuted map, s_max from the undegraded ground truth"
+      saturation: ">= 0.95"
+      near_chance: "<= 0.05 or 95% CI includes s_chance"
+      source: "paper l.283; thresholds UNDERSPECIFIED-IN-PAPER"
+    generator_settings:
+      noise_variance_multiplier: [0.25, 0.5, 1, 2, 4, 8, 16]
+      transition_sharpness_multiplier: [0.25, 0.5, 1, 2, 4]
+      window_length_L: [8, 16, 24, 48, 96]
+      pattern_amplitude_multiplier: [0.25, 0.5, 1, 2, 4, 8]
+      source: "paper l.283; grids UNDERSPECIFIED-IN-PAPER"
+
+  statistics:
+    seeds: {generation: [0, 1, 2], model_init: [0, 1, 2, 3, 4], attribution_sampling: [0, 1, 2], source: "paper l.291 (separate seeds); counts UNDERSPECIFIED-IN-PAPER"}
+    bootstrap: {n_resamples: 10000, method: BCa, confidence: 0.95, resample_over: units, package: scipy.stats.bootstrap, source: "paper l.266, l.296; values UNDERSPECIFIED-IN-PAPER"}
+    splits:
+      measured: {fitting: 0.7, held_out: 0.3, level: unit, source: "paper l.234, l.247; fractions UNDERSPECIFIED-IN-PAPER", affects_fitted_parameters: true}
+      model_validation_from_training_units: 0.2
+      generated: {train: 0.7, validation: 0.15, test: 0.15, level: unit}
+    generated_units: {tstr: "same number of units as the measured fitting split", attribution_and_usability: 300}
+
+  fidelity:
+    window_length: "same L as the target"
+    discriminator: {value: "2-layer GRU, hidden 16, 2000 iterations, batch 128, Adam 1e-3, unit-level 80/20 split, classes balanced; report 1 - accuracy and |accuracy - 0.5|", source: "paper l.262 (Yoon 2019); UNDERSPECIFIED-IN-PAPER"}
+    representation_distance: {value: "Frechet distance between TS2Vec (official code, output_dims 320) embeddings; encoder trained on measured fitting-split windows; measured-fitting vs measured-held-out baseline reported", source: "paper l.262 (Jeha 2022); encoder UNDERSPECIFIED-IN-PAPER"}
+    covariance_agreement: {value: "relative Frobenius distance and mean |delta rho| between cross-channel correlation matrices of windows, with measured-vs-measured baseline", source: "paper l.262; UNDERSPECIFIED-IN-PAPER"}
+    tstr: {error: RMSE_cycles, ratio: "RMSE(profile-trained) / RMSE(measured-fitting-trained) on held-out measured units", interval: "bootstrap over held-out units", inputs: "channels plus elapsed position t", source: "paper l.266; UNDERSPECIFIED-IN-PAPER"}
+
+  attribution:
+    methods:
+      timeshap: {nsamples: 32000, pruning: off, granularity: "cell level with top_x_events=L, top_x_feats=C", l1_reg: auto, source: "timeshap 1.0.4 (no local default for nsamples; 32000 is the global/paper value)"}
+      integrated_gradients: {n_steps: 50, method: gausslegendre, internal_batch_size: null, cudnn: "disabled inside attribution (eval-mode RNN backward)", source: "captum 0.9.0 defaults"}
+      feature_occlusion: {implementation: "captum FeatureAblation, one cell at a time", source: "benchmark code bases occlude single cells (FIT, Dynamask, tint)"}
+      baseline: {status: OPEN}
+    windows_scored_per_profile: 120
+    excluded: "methods optimising a mask per instance (paper l.289)"
+
+  models:
+    lstm_config: configs/models/lstm.yaml
+    reference_config: configs/models/reference.yaml

@@ -1,0 +1,19 @@
+# Trained architecture (paper §3.6): recurrent network with LSTM units.
+# Declared by design; not tuned on scores. Values UNDERSPECIFIED-IN-PAPER unless noted.
+architecture:
+  type: lstm
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.0          # 0 keeps captum IG reproducible (cuDNN RNN backward needs train mode or cudnn off; S0 research)
+  head: linear_on_last_hidden_state
+inputs:
+  normalisation: "per-channel z-score, statistics from training units only (paper l.248)"
+  elapsed_position: {decomposable_target: false, transfer_target: true}   # t allowed (l.248); t/T never
+training:
+  optimizer: adam
+  learning_rate: 1.0e-3
+  batch_size: 256
+  max_epochs: 100
+  early_stopping: {monitor: validation_loss, patience: 10}
+  loss: mse
+  target_scaling: "standardised with training-unit statistics"

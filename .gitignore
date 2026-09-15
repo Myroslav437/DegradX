@@ -25,3 +25,6 @@ paper/*.out
 paper/*.fls
 paper/*.fdb_latexmk
 paper/*.synctex.gz
+
+# local toolchain (tectonic etc.), fetched by scripts/s0_setup_env.sh
+.tools/
