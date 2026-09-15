@@ -22,6 +22,10 @@ meta:
        r1: "weights a (graded) and b (patterns) OPEN; channel roles OPEN (draft only)",
        r2: "one weight per cell w_{u,c} = kappa_c * pi_u about a declared reference point x0_c = phi_c(0); roles fixed",
        reason: "a linear map of the observed window cannot reproduce Eq. 4 as written in r1 (pattern channels also carry the mean component)"}
+    - {date: 2026-09-15, comment: C2, keys: [declared_by_design.channels.null, declared_by_design.usability.permutation_importance_tolerance, declared_by_design.usability.redundant_channels, declared_by_design.usability.identifiability_floor, declared_by_design.attribution.primary_scoring_target],
+       r1: "permutation importance ~0 gated on all zero-weight channels (tolerance OPEN); no null channels; no identifiability diagnostic",
+       r2: "two declared null channels per profile carry the gated leakage test; redundant zero-weight channels reported (predictability, conditional importance), not gated; reference model primary; ensemble identifiability floor",
+       reason: "every channel is phi_c(z), so a zero-weight channel still carries the state: the r1 test cannot separate leakage from benign redundancy, and phi* is not identifiable for a trained model"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -181,7 +185,21 @@ declared_by_design:
       weighted_pattern_carrying: [capacity]                       # kappa != 0, carries patterns
       weighted_graded:           [charge_time, mean_discharge_voltage]  # kappa != 0, no patterns
       zero_weight_redundant:     [internal_resistance, temperature_mean] # kappa = 0, carry z where available
-      source: "paper l.238 (which channels enter the target is declared); C1 (r2)"
+      zero_weight_null:          [null_flat, null_permuted]              # kappa = 0, no z dependence (C2)
+      source: "paper l.238 (which channels enter the target is declared); C1, C2 (r2)"
+    null:
+      # r2 (C2). Present in every profile, generated only (no measured counterpart is fitted), zero target weight.
+      null_flat:
+        value: "constant mapping phi(z) = 0 plus AR(1) noise with unit marginal variance and lag-1 autocorrelation equal to the profile's fitted capacity-noise lag-1 autocorrelation"
+        reference_point: 0.0
+        rationale: "no degradation-state dependence by construction; realistic serial dependence so it is not separable by smoothness alone"
+      null_permuted:
+        value: "each position drawn i.i.d. (with replacement) from the pooled measured values of the profile's charge_time channel over fitting-split units and positions, so unit identity and order are destroyed"
+        reference_point: "median of the pooled values (TimeSHAP calc_avg_event convention for a numerical channel)"
+        rationale: "a real marginal (heavy tails, offsets) with no dependence on the generated unit's state or position"
+      measured_side: "null channels have no measured counterpart and are excluded from fidelity measurements"
+      source: "C2 (r2)"
+      affects_fitted_parameters: false
     affects_fitted_parameters: true
 
   target:
@@ -232,7 +250,29 @@ declared_by_design:
     accuracy_gate: {value: "NRMSE = RMSE / std(y_test) <= 0.30 on held-out generated units (R^2 >= 0.91)", source: "paper l.277; value UNDERSPECIFIED-IN-PAPER"}
     graded_sparse_correlation_bound: {value: 0.30, definition: "|Pearson r| over (window, position) of channel-summed |graded| vs |sparse|", source: "paper l.277; UNDERSPECIFIED-IN-PAPER"}
     term_ablation: {value: "retrain with one term of Eq. 4 removed from the training target; error on the full y must increase (bootstrap 95% CI > 0)", source: "paper l.277; sign convention UNDERSPECIFIED-IN-PAPER"}
-    permutation_importance_tolerance: {value: "increase in NMSE <= 0.02 (upper 95% bootstrap bound) when a channel is permuted across windows", source: "paper l.277; UNDERSPECIFIED-IN-PAPER", status: OPEN}
+    # r2 (C2): supersedes r1 (gated on all zero-weight channels, status OPEN). Gate applies to null channels only.
+    permutation_importance_tolerance:
+      value: "on each null channel: upper bound of the 95% bootstrap CI (over test units) of the increase in NMSE when the channel is permuted across test windows <= 0.02"
+      applies_to: channels.roles.zero_weight_null
+      failure: "construction-level leakage: open an investigation; the profile is corrected before use (paper l.277)"
+      source: "paper l.277 as amended by C2; value UNDERSPECIFIED-IN-PAPER"
+    redundant_channels:
+      value: >-
+        reported, not gated, for each zero_weight_redundant channel: (i) predictability, R^2 on test windows of a
+        ridge regression (sklearn RidgeCV) predicting the channel's window from the remaining channels' windows;
+        (ii) conditional permutation importance, increase in NMSE when the channel is replaced by its ridge
+        prediction plus residuals permuted across test windows (model-X style conditional resampling), 95% CI over units.
+      reading: "~0 under benign redundancy; positive only when the channel carries information the other channels do not"
+      source: "C2 (r2); estimator UNDERSPECIFIED-IN-PAPER"
+    identifiability_floor:
+      value: >-
+        ensemble of LSTMs: model_init seeds [0,1,2,3,4] x configurations {A: hidden 64 x 2 layers, B: hidden 128 x 1 layer},
+        all trained on the same generated training units and all required to pass the accuracy gate; each attribution method is
+        run on every member at the primary baseline and scored; reported per method and weighting as the spread (min, median,
+        max, IQR) of member scores beside the method scores
+      trained_at: S6
+      reported_at: S8
+      source: "C2 (r2)"
     variance_ratio_band: {value: [0.05, 0.50], definition: "Var(pattern term) / Var(mean term) over windows", source: "Table 3 row 1; UNDERSPECIFIED-IN-PAPER"}
 
   responsiveness:
@@ -279,6 +319,10 @@ declared_by_design:
       feature_occlusion: {implementation: "captum FeatureAblation, one cell at a time", source: "benchmark code bases occlude single cells (FIT, Dynamask, tint)"}
       baseline: {status: OPEN}
     windows_scored_per_profile: 120
+    primary_scoring_target:
+      value: reference_model
+      rationale: "its function is known, so phi* is its faithful attribution and its column measures the method; the trained column also reflects which of the observationally equivalent functions the model learned (C2)"
+      source: "C2 (r2)"
     excluded: "methods optimising a mask per instance (paper l.289)"
 
   models:
