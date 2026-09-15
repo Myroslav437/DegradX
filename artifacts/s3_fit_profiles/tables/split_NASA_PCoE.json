@@ -1,0 +1,92 @@
+[
+  {
+    "cell_id": "NASA_B0005",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0006",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0007",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0018",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0025",
+    "split": "held_out",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0026",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0027",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0028",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0029",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0030",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0031",
+    "split": "held_out",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0032",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "NASA_B0036",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0038",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0039",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0040",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0042",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "NASA_B0043",
+    "split": "fitting",
+    "reaches_eol": true
+  }
+]

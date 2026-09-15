@@ -1,0 +1,58 @@
+[
+  {
+    "cell_id": "NASA_B0005",
+    "type": "positive",
+    "extremum": 48,
+    "amplitude_Ah": 0.0367337013,
+    "duration": 2,
+    "z_at_extremum": 0.3465834893
+  },
+  {
+    "cell_id": "NASA_B0006",
+    "type": "positive",
+    "extremum": 48,
+    "amplitude_Ah": 0.0906519213,
+    "duration": 2,
+    "z_at_extremum": 0.6120822759
+  },
+  {
+    "cell_id": "NASA_B0018",
+    "type": "positive",
+    "extremum": 46,
+    "amplitude_Ah": 0.0799108434,
+    "duration": 2,
+    "z_at_extremum": 0.7344880598
+  },
+  {
+    "cell_id": "NASA_B0036",
+    "type": "negative",
+    "extremum": 152,
+    "amplitude_Ah": -0.031993358,
+    "duration": 2,
+    "z_at_extremum": 0.8058824074
+  },
+  {
+    "cell_id": "NASA_B0036",
+    "type": "positive",
+    "extremum": 154,
+    "amplitude_Ah": 0.0429573598,
+    "duration": 3,
+    "z_at_extremum": 0.6997232411
+  },
+  {
+    "cell_id": "NASA_B0036",
+    "type": "positive",
+    "extremum": 159,
+    "amplitude_Ah": 0.0374861376,
+    "duration": 3,
+    "z_at_extremum": 0.6849152191
+  },
+  {
+    "cell_id": "NASA_B0040",
+    "type": "positive",
+    "extremum": 27,
+    "amplitude_Ah": 0.0282797641,
+    "duration": 3,
+    "z_at_extremum": 0.230517696
+  }
+]
