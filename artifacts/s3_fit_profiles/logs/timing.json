@@ -1,0 +1,16 @@
+{
+  "stage": "s3_fit_profiles",
+  "device": "cuda",
+  "wall_clock_s": 58.229,
+  "sections_s": {
+    "MATR_split": 0.336,
+    "MATR_fit": 23.803,
+    "MATR_figures": 3.559,
+    "HUST_split": 0.167,
+    "HUST_fit": 19.861,
+    "HUST_figures": 3.39,
+    "NASA_PCoE_split": 0.063,
+    "NASA_PCoE_fit": 2.65,
+    "NASA_PCoE_figures": 3.395
+  }
+}

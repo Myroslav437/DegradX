@@ -1,0 +1,191 @@
+[
+  {
+    "name": "MATR: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: capacity mapping affine in z per unit (Eq. 3)",
+    "expected": "< 1e-9 Ah",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_charge_time monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_mean_discharge_voltage monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_internal_resistance monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_temperature_mean monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.022",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: theta from >= 5 units reaching EOL (D02 minimum; else theta statistics void)",
+    "expected": ">= 5",
+    "observed": "90",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: D05 enable rule evaluated for both types",
+    "expected": "evaluated",
+    "observed": "evaluated",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: capacity mapping affine in z per unit (Eq. 3)",
+    "expected": "< 1e-9 Ah",
+    "observed": "1.11e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: phi_charge_time monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: phi_mean_discharge_voltage monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.000",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: theta from >= 5 units reaching EOL (D02 minimum; else theta statistics void)",
+    "expected": ">= 5",
+    "observed": "54",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: D05 enable rule evaluated for both types",
+    "expected": "evaluated",
+    "observed": "evaluated",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: capacity mapping affine in z per unit (Eq. 3)",
+    "expected": "< 1e-9 Ah",
+    "observed": "2.91e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: phi_charge_time monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: phi_mean_discharge_voltage monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: phi_temperature_mean monotone on [0, 1]",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.125",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: theta from >= 5 units reaching EOL (D02 minimum; else theta statistics void)",
+    "expected": ">= 5",
+    "observed": "8",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "NASA_PCoE: D05 enable rule evaluated for both types",
+    "expected": "evaluated",
+    "observed": "evaluated",
+    "passed": true,
+    "severity": "error"
+  }
+]
