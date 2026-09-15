@@ -1,0 +1,20 @@
+[
+  {
+    "family": "power_law",
+    "median_cv_rmse": 0.0100320927,
+    "median_in_sample_rmse": 0.0042083178,
+    "selected": false
+  },
+  {
+    "family": "two_term_exponential",
+    "median_cv_rmse": 0.0084082724,
+    "median_in_sample_rmse": 0.0019760989,
+    "selected": false
+  },
+  {
+    "family": "rollover",
+    "median_cv_rmse": 0.0027137866,
+    "median_in_sample_rmse": 0.0007830922,
+    "selected": true
+  }
+]
