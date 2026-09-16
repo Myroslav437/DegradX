@@ -1,0 +1,844 @@
+<title>DegradX Experiment Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#F4F6F7; --surface:#FFFFFF; --surface-2:#EDF0F2; --line:#DDE2E6; --line-soft:#E9EDEF;
+    --ink:#13181C; --ink-2:#55626C; --ink-3:#7E8A94;
+    --accent:#A8501C; --accent-soft:#F3E7DE; --slate:#2E4859; --void:#8A939B;
+    --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+    --wrap:1000px; --read:70ch;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+      --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+      --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+    --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+    --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+  }
+
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.62;
+       -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--wrap); margin:0 auto; padding-inline:20px;}
+  p,li{max-width:var(--read);}
+  h1,h2,h3{font-family:var(--serif); text-wrap:balance; margin:0;}
+  a{color:var(--accent);}
+
+  /* header ------------------------------------------------------------------ */
+  header.top{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--ground);
+             border-bottom:1px solid var(--line);}
+  .topbar{display:flex; align-items:center; gap:18px; justify-content:space-between; padding-block:10px;}
+  .topbar .mark{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); white-space:nowrap;}
+  nav.jump{display:flex; gap:2px; overflow-x:auto; scrollbar-width:none;}
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump a{font-family:var(--mono); font-size:12px; color:var(--ink-2); text-decoration:none;
+             padding:4px 7px; border-radius:3px;}
+  nav.jump a:hover{background:var(--surface-2); color:var(--ink);}
+  nav.jump a:focus-visible{outline:2px solid var(--accent); outline-offset:1px;}
+
+  .masthead{padding-block:52px 34px; border-bottom:2px solid var(--ink); margin-bottom:8px;}
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+  h1{font-size:clamp(32px,5.2vw,50px); line-height:1.08; font-weight:600; letter-spacing:-.015em;}
+  .standfirst{font-family:var(--serif); font-size:19px; line-height:1.55; color:var(--ink-2); margin:16px 0 0; max-width:64ch;}
+  .facts{display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:24px;}
+  .fact{font-family:var(--mono); font-size:12px; color:var(--ink-2); border:1px solid var(--line);
+        border-radius:2px; padding:4px 9px; background:var(--surface);}
+  .fact b{color:var(--ink); font-weight:500;}
+
+  /* summary ----------------------------------------------------------------- */
+  .summary{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:1px;
+           background:var(--line); border:1px solid var(--line); margin:34px 0 10px;}
+  .q{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column; gap:7px;}
+  .q .tag{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);}
+  .q .num{font-family:var(--serif); font-size:30px; line-height:1; font-weight:600; font-variant-numeric:tabular-nums;}
+  .q .num small{font-size:15px; color:var(--ink-2); font-weight:400;}
+  .q p{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.5;}
+
+  /* stages ------------------------------------------------------------------ */
+  section.stage{display:grid; grid-template-columns:64px minmax(0,1fr); padding-top:46px; scroll-margin-top:64px;}
+  .close{scroll-margin-top:64px;}
+  .spine{position:relative;}
+  .spine::before{content:""; position:absolute; left:15px; top:6px; bottom:-46px; width:1px; background:var(--line);}
+  section.stage:last-of-type .spine::before{bottom:auto; height:36px;}
+  .badge{position:relative; width:31px; height:31px; border-radius:50%; background:var(--surface);
+         border:1px solid var(--ink); color:var(--ink); font-family:var(--mono); font-size:12px;
+         display:grid; place-items:center;}
+  .stage-head h2{font-size:26px; font-weight:600; letter-spacing:-.01em;}
+  .run{font-family:var(--mono); font-size:12px; color:var(--ink-3); margin:6px 0 0;}
+  .run span{white-space:nowrap;}
+  .run span + span::before{content:"·"; margin:0 8px; color:var(--line);}
+  .stage-body{padding-bottom:6px;}
+  .stage-body > p{margin:15px 0 0;}
+  h3{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+     color:var(--ink-3); font-weight:500; margin:26px 0 10px;}
+
+  /* figures ----------------------------------------------------------------- */
+  figure{margin:20px 0 0;}
+  .plate{background:#FFFFFF; border:1px solid var(--line); padding:12px;}
+  .plate img{display:block; width:100%; max-width:100%; height:auto;}
+  figcaption{font-size:13px; color:var(--ink-2); margin-top:9px; max-width:var(--read);}
+  figcaption b{font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase;
+               color:var(--ink-3); font-weight:500; margin-right:7px;}
+
+  /* tables ------------------------------------------------------------------ */
+  .tablewrap{overflow-x:auto; margin-top:18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
+  table{border-collapse:collapse; width:100%; font-size:14px; font-variant-numeric:tabular-nums;}
+  th,td{text-align:right; padding:8px 12px; border-bottom:1px solid var(--line-soft); white-space:nowrap;}
+  th:first-child,td:first-child{text-align:left; white-space:normal; min-width:180px;}
+  thead th{font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--ink-3); font-weight:500;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-family:var(--mono); font-size:13.5px;}
+  .void{font-family:var(--mono); font-size:11.5px; color:var(--void); border:1px solid var(--line);
+        border-radius:2px; padding:1px 6px;}
+
+  /* decisions --------------------------------------------------------------- */
+  .decision{border-left:3px solid var(--accent); background:var(--surface); padding:16px 18px;
+            margin-top:20px; max-width:var(--read);}
+  .decision h4{margin:0 0 10px; font-family:var(--sans); font-size:15px; font-weight:600; line-height:1.4;}
+  .decision h4 .id{font-family:var(--mono); font-size:12px; color:var(--accent); margin-right:9px;
+                   letter-spacing:.04em;}
+  .decision dl{display:grid; grid-template-columns:auto 1fr; gap:7px 14px; margin:0;}
+  .decision dt{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+               color:var(--ink-3); padding-top:3px;}
+  .decision dd{margin:0; font-size:14.5px; line-height:1.55; color:var(--ink);}
+  .decision + .decision{margin-top:12px;}
+
+  .takeaway{display:flex; gap:12px; margin-top:24px; padding-top:14px; border-top:1px solid var(--line);
+            max-width:var(--read);}
+  .takeaway::before{content:"▪"; color:var(--accent); font-size:11px; line-height:1.9;}
+  .takeaway p{margin:0; font-family:var(--serif); font-size:17px; line-height:1.5;}
+
+  /* closing ----------------------------------------------------------------- */
+  .close{margin-top:56px; border-top:2px solid var(--ink); padding-top:30px;}
+  .close h2{font-size:26px; font-weight:600;}
+  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:26px; margin-top:22px;}
+  .cols h3{margin-top:0;}
+  .cols ul{margin:0; padding-left:18px;}
+  .cols li{font-size:14.5px; margin-bottom:7px; color:var(--ink);}
+  footer{margin:44px 0 20px; padding-top:16px; border-top:1px solid var(--line);
+         font-family:var(--mono); font-size:12px; color:var(--ink-3);}
+  footer p{max-width:none;}
+
+  @media (max-width:720px){
+    section.stage{grid-template-columns:1fr; gap:0;}
+    .spine{display:flex; align-items:center; gap:10px; margin-bottom:8px;}
+    .spine::before{display:none;}
+    th:first-child,td:first-child{min-width:140px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important;}}
+</style>
+
+<header class="top">
+  <div class="wrap topbar">
+    <span class="mark">DegradX · experiment log</span>
+    <nav class="jump" aria-label="Stages">
+      <a href="#s0">S0</a><a href="#s1">S1</a><a href="#s2">S2</a><a href="#s3">S3</a><a href="#s4">S4</a>
+      <a href="#s5">S5</a><a href="#s6">S6</a><a href="#s7">S7</a><a href="#s8">S8</a><a href="#s9">S9</a>
+      <a href="#close">Close</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="masthead">
+    <p class="eyebrow">15–16 September 2026 · stages S1–S9</p>
+    <h1>DegradX Experiment Log</h1>
+    <p class="standfirst">What was run, in the order it was run: three measured battery datasets turned into fitted
+      profiles, a generator with exact attribution ground truth, and reference values for three published attribution
+      methods — with every methodological change made along the way.</p>
+    <div class="facts">
+      <span class="fact"><b>3</b> profiles: MATR, HUST, NASA PCoE</span>
+      <span class="fact"><b>9</b> stages</span>
+      <span class="fact"><b>22</b> decision records</span>
+      <span class="fact"><b>6</b> paper amendment rounds</span>
+      <span class="fact"><b>159</b> provenance rows</span>
+    </div>
+  </div>
+
+  <section class="summary" aria-label="Where the research questions landed">
+    <div class="q">
+      <span class="tag">RQ1 · fidelity</span>
+      <span class="num">1.46 <small>/ 3.42</small></span>
+      <p>Transfer ratio for HUST and MATR. Degradation shape is reproduced; the sequence-to-RUL dependence of MATR is
+        not. NASA PCoE is void on every fidelity measure.</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ2 · usability</span>
+      <span class="num">0.012–0.131</span>
+      <p>Model error on the decomposable target, all profiles inside the 0.30 gate. The graded field is learnable; the
+        sparse set is not used by a trained model at fitted amplitudes.</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ3 · responsiveness</span>
+      <span class="num">0.05</span>
+      <p>Smallest degradation the scores resolve, for noise, shifted mass and permutation. Smoothing and shift-to-end
+        are not registered by rank agreement.</p>
+    </div>
+    <div class="q">
+      <span class="tag">Reference values</span>
+      <span class="num">0.73–0.87 <small>vs</small> 0.28–0.55</span>
+      <p>Rank agreement on the reference model against the trained model. The model costs more than the choice of
+        method; no ordering of methods survives a change of model.</p>
+    </div>
+  </section>
+
+  <p style="margin-top:22px; color:var(--ink-2); font-size:14.5px;">Each stage below records what ran, what came out,
+    which methodological problems were settled against the paper as written, and what the stage licenses. A measurement
+    whose unit or event count falls below its declared minimum is reported as <span class="void">void</span> rather than
+    as a poor result — that convention is used throughout.</p>
+
+  <!-- S0 ------------------------------------------------------------------- -->
+  <section class="stage" id="s0">
+    <div class="spine"><span class="badge">S0</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Declarations, before any data was fitted</h2>
+        <p class="run"><span>15 Sep</span><span>configs/declarations.yaml r2</span><span>4 corrections, paper rounds 1–2</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Every constant that the paper leaves open was written down first — weights, thresholds, window length, seeds,
+          minimum counts — so that later fits could not be tuned to a result. Reading the methodology closely at this
+          point exposed four places where the paper as written could not be implemented as stated. All four were fixed
+          before a single profile was fitted.</p>
+
+        <div class="decision">
+          <h4><span class="id">C1</span>The decomposable target could not be reproduced by any map of the window</h4>
+          <dl>
+            <dt>Problem</dt><dd>With separate weights on the mean component and on the inserted patterns, a channel that
+              carries both returns the wrong sum, and a pattern-carrying channel with zero graded weight still carries
+              its mean component.</dd>
+            <dt>Decided</dt><dd>One weight per cell about a declared reference point: <em>y</em> = Σ w (m − x⁰) + Σ w p,
+              with w = κ<sub>c</sub>·π<sub>u</sub> and x⁰ the pristine level.</dd>
+            <dt>Cost</dt><dd>The sparse set now carries the position profile too, so under final-position weighting most
+              inserted patterns have no ground-truth contribution. Buys an exact reference model.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">C2</span>Zero-weight channels still carry the degradation state</h4>
+          <dl>
+            <dt>Problem</dt><dd>The declared leakage test — permutation importance near zero on every zero-weight
+              channel — cannot pass, because every channel is a function of one state, and it cannot separate leakage
+              from benign redundancy.</dd>
+            <dt>Decided</dt><dd>Two constructed null channels per profile carry the gate; redundant channels are
+              reported instead. The reference model becomes the primary scoring target, and an ensemble of ten equally
+              accurate models bounds what a trained-model score can mean.</dd>
+            <dt>Cost</dt><dd>Ten models per profile and weighting to train and attribute; two generated-only channels
+              with no measured counterpart.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">C3</span>The degradation state put EOL below where cycling stopped</h4>
+          <dl>
+            <dt>Problem</dt><dd>Taking ρ against the first observed capacity puts the threshold below the stopping rule
+              of MATR and HUST, and early capacity rise makes the state negative at the start.</dd>
+            <dt>Decided</dt><dd>ρ is taken against documented nominal capacity and the early-life reference q₁ is the
+              maximum over the first 20 positions: z = (q₁ − q<sub>t</sub>) / (q₁ − ρ·q<sub>nom</sub>).</dd>
+            <dt>Cost</dt><dd>Nominal capacity has to be verified per dataset; the state needs the first 20 positions
+              before it is defined.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">C4</span>Attribution baselines were unstated</h4>
+          <dl>
+            <dt>Problem</dt><dd>Shapley- and path-based attributions sum to the difference between the model output on
+              the window and on a baseline; scoring them against the ground truth presumes the output is zero there.</dd>
+            <dt>Decided</dt><dd>The declared baseline is the pristine window, where the target is zero by construction.
+              Ground truth for any other baseline is supplied, so methods keep their defaults; TimeSHAP is also run from
+              its conventional average event as a sensitivity readout.</dd>
+            <dt>Cost</dt><dd>One extra TimeSHAP pass per profile.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>The paper's construction needed four repairs to be implementable at all; each is
+          recorded with its cost, and none of them was chosen after seeing a result.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S1 ------------------------------------------------------------------- -->
+  <section class="stage" id="s1">
+    <div class="spine"><span class="badge">S1</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Data acquisition and ingestion</h2>
+        <p class="run"><span>15 Sep</span><span>BatteryML @2861ae3b</span><span>~12 min ingestion, CPU</span></p>
+      </div>
+      <div class="stage-body">
+        <p>MATR and HUST were downloaded and ingested through BatteryML, one MATR batch per process; NASA PCoE, which
+          BatteryML does not cover, went through a converter validated against the raw arrays (maximum difference 0).
+          Per-cycle channels — capacity, charge time, mean discharge voltage, internal resistance, mean temperature —
+          were derived into one cycle table per dataset, with SHA-256 checksums for every raw file.</p>
+
+        <figure>
+          <div class="plate"><img src="img/s1-capacity.png" alt="Raw discharge-capacity trajectories for MATR, HUST and NASA PCoE"></div>
+          <figcaption><b>S1</b>Raw capacity of every ingested unit, before any cleaning. MATR and HUST fall smoothly
+            toward the 80 %-of-nominal line; NASA PCoE is short, noisy, and full of the collapses and recoveries that
+            later become the one profile with inserted patterns.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D11</span>Which capacity series is the capacity channel</h4>
+          <dl>
+            <dt>Investigated</dt><dd>Cycler-reported capacity against capacity integrated from current and time; they
+              differ systematically on HUST.</dd>
+            <dt>Decided</dt><dd>The cycler-reported per-cycle capacity, on all three datasets, with the integrated
+              series kept as a diagnostic.</dd>
+            <dt>Cost</dt><dd>HUST's source field had to be attached outside BatteryML, which drops it.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>Ingestion is reproducible from checksums and one command; nothing here is a
+          measurement yet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 ------------------------------------------------------------------- -->
+  <section class="stage" id="s2">
+    <div class="spine"><span class="badge">S2</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Property audit of the measured datasets</h2>
+        <p class="run"><span>15 Sep</span><span>~2 min, 12 workers</span><span>7 decisions</span></p>
+      </div>
+      <div class="stage-body">
+        <p>The audit asked what each dataset actually contains before anything was fitted to it: how many units reach
+          EOL under the declared threshold, how noisy the capacity residual is, and how often capacity recovers. It is
+          also where the datasets stopped being interchangeable.</p>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Audit</th><th>MATR</th><th>HUST</th><th>NASA PCoE</th></tr></thead>
+            <tbody>
+              <tr><td>Units in scope</td><td class="num">135</td><td class="num">77</td><td class="num">34</td></tr>
+              <tr><td>Reach EOL (ρ = 0.8 of nominal)</td><td class="num">128</td><td class="num">77</td><td class="num">11</td></tr>
+              <tr><td>Excluded by the denominator guard</td><td class="num">0</td><td class="num">0</td><td class="num">14</td></tr>
+              <tr><td>Positive residual runs per 100 cycles</td><td class="num">0.11</td><td class="num">0.054</td><td class="num">1.03</td></tr>
+              <tr><td>Median amplitude [mAh]</td><td class="num">2.95</td><td class="num">2.29</td><td class="num">74.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <div class="plate"><img src="img/s2-eol.png" alt="Fraction of units reaching EOL against the EOL fraction rho, under two definitions"></div>
+          <figcaption><b>S2</b>EOL attainment against ρ under the amended definition (black) and the paper's original
+            first-position one (grey). The amendment is what makes MATR attainment 128 of 135 rather than 46; on NASA
+            PCoE the two definitions disagree in the opposite direction, because its cells start far below nominal.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s2-residuals.png" alt="Capacity residual traces with detection threshold for six example units"></div>
+          <figcaption><b>S2</b>Capacity residual of six units with the detection threshold (dashed) and detected runs
+            (bold). MATR and HUST runs are a few mAh and look like noise excursions; NASA PCoE runs are ~100 mAh and
+            stand clear of the threshold. This picture is what the pattern-enable rule later formalises.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D14</span>Which MATR cells the profile stands for</h4>
+          <dl>
+            <dt>Investigated</dt><dd>All four BatteryML batches (180 cells) against the three batches of the source
+              publication (135); the fourth batch is a different protocol family and a different cycler configuration.</dd>
+            <dt>Decided</dt><dd>The three published batches, so the profile matches the dataset the paper cites.</dd>
+            <dt>Cost</dt><dd>45 fewer units; the scope is stated wherever MATR counts appear.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D12 · D13 · D15 · D16 · D17</span>Five rules the paper leaves implicit</h4>
+          <dl>
+            <dt>Investigated</dt><dd>Isolated glitch cycles inflating noise estimates; records that stop within a
+              hair of the threshold; an EOL search that started before the early-life reference; a residual fitted over
+              positions the trajectory model does not cover.</dd>
+            <dt>Decided</dt><dd>A single-reading glitch rule for capacity and for the other channels (5 % isolated
+              excursions), EOL credited for records ending within 0.01·q<sub>nom</sub> of the threshold, the EOL search
+              starting at q₁, and the residual fitted from q₁ to EOL with runs capped at the smoothing window.</dd>
+            <dt>Cost</dt><dd>Each is an added rule in §3.3 of the paper; without them MATR noise variance was inflated
+              25× and one NASA unit had T = 1.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>MATR and HUST are long, smooth and well-populated; NASA PCoE is the only dataset with
+          real capacity regeneration and the only one too small to support fidelity measurement. That asymmetry decides
+          everything downstream.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 ------------------------------------------------------------------- -->
+  <section class="stage" id="s3">
+    <div class="spine"><span class="badge">S3</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Fitting the generator to each dataset</h2>
+        <p class="run"><span>15 Sep</span><span>58 s, CPU</span><span>fitting split 95 / 54 / 13 units</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Each profile takes its trajectory family, its per-unit parameters, its channel mappings, its noise and its
+          pattern parameters from the fitting split only; held-out units were never touched until S5. Families were
+          compared by five-fold contiguous cross-validation.</p>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Fitted</th><th>MATR</th><th>HUST</th><th>NASA PCoE</th></tr></thead>
+            <tbody>
+              <tr><td>Trajectory family</td><td>two-term exp.</td><td>rollover</td><td>power law</td></tr>
+              <tr><td>CV RMSE of the selected family</td><td class="num">0.0061</td><td class="num">0.0027</td><td class="num">0.0090</td></tr>
+              <tr><td>Detected runs vs noise-only rate</td><td class="num">0.85×</td><td class="num">0.47×</td><td class="num">6.8×</td></tr>
+              <tr><td>Inserted patterns enabled</td><td>no</td><td>no</td><td>yes (positive)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <div class="plate"><img src="img/s3-families.png" alt="Candidate trajectory families fitted to three MATR cells with residuals"></div>
+          <figcaption><b>S3</b>Candidate families on three MATR cells, with residuals below. The families are within
+            1–2 mAh of one another on most units, which is why selection needed a rule rather than a ranking.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s3-mappings.png" alt="Fitted monotone channel mappings over measured readings for MATR"></div>
+          <figcaption><b>S3</b>The fitted mappings φ<sub>c</sub> (black) over the measured readings (grey) for MATR.
+            Each channel is a function of one degradation state — the property that later makes the attribution ground
+            truth non-identifiable for a trained model.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D04</span>Family selection when the fit errors are indistinguishable</h4>
+          <dl>
+            <dt>Investigated</dt><dd>On NASA PCoE, rollover had the lowest CV error but held its transition width at
+              the optimiser's bound in 6 of 8 units — a fit that cannot be identified from the data.</dd>
+            <dt>Decided</dt><dd>A family is eligible only if its parameters are determined in at least 80 % of units;
+              among eligible families the simpler one wins within a 5 % margin.</dd>
+            <dt>Cost</dt><dd>The NASA profile has no knee. The rule was added after the first fit, which is recorded;
+              its evidence is the reproduction of EOL (p90 error 26 % vs 9.6 %).</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D05</span>When a pattern type is real rather than noise</h4>
+          <dl>
+            <dt>Investigated</dt><dd>The declared detector fires on all three datasets, but the question is whether it
+              fires more often than it would on pure noise with the same fitted variance and autocorrelation.</dd>
+            <dt>Decided</dt><dd>A pattern type is enabled only above twice the noise-only rate. MATR and HUST come in
+              below their own noise rate (0.85×, 0.47×); NASA PCoE is 6.8× above it.</dd>
+            <dt>Cost</dt><dd>Only one profile carries inserted patterns, so every sparse-set measurement in the
+              programme rests on NASA PCoE.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>The profiles are fitted, but two of the three cannot exercise the sparse half of the
+          benchmark at all — a consequence of the data, made explicit by a rule rather than by a choice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 ------------------------------------------------------------------- -->
+  <section class="stage" id="s4">
+    <div class="spine"><span class="badge">S4</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Generator and attribution ground truth</h2>
+        <p class="run"><span>15 Sep</span><span>3 generation seeds × 300 units</span><span>162 checks pass</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Each profile generates units whose every value is recorded by component: mean component, inserted patterns,
+          noise. The decomposable target and its ground truth follow from those components, so the answer key is exact
+          rather than estimated. The checks verify it: the ground truth sums to the target to 2.2 × 10⁻¹⁶ on every
+          window, and the reference model reproduces the target exactly at zero noise.</p>
+
+        <figure>
+          <div class="plate"><img src="img/s4-generated.png" alt="Generated and measured capacity trajectories for the three profiles"></div>
+          <figcaption><b>S4</b>Generated units (black) against every measured unit of each profile (grey), with the
+            pristine level z = 0 and the EOL threshold z = 1 marked. Generated MATR and HUST units sit inside the
+            measured band; generated NASA units are far smoother than the cells they stand for.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s4-weights.png" alt="Position profiles: recency, uniform and final position"></div>
+          <figcaption><b>S4</b>The three position profiles that weight positions within a window. Recency is the
+            default; final position is the stress case in which the whole target collapses into one cell.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D01</span>Retrieval of the sparse set scored nothing</h4>
+          <dl>
+            <dt>Investigated</dt><dd>Ranking the cells of one attribution map by magnitude recovers the inserted
+              patterns barely above chance (AP 0.064 against 0.048) — even for the exact ground truth, because the mean
+              component dominates every cell.</dd>
+            <dt>Decided</dt><dd>Each window ships with its pattern-free counterpart; retrieval is scored on the
+              difference of the two maps, and single-map retrieval is kept as a secondary series.</dd>
+            <dt>Cost</dt><dd>Two attribution runs per window on the profile with patterns.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D18</span>Generated units failed their own state check</h4>
+          <dl>
+            <dt>Investigated</dt><dd>The state of a generated NASA unit started at 0.087 instead of 0, because its
+              first position is drawn from a trajectory whose early-life reference differs from the profile's.</dd>
+            <dt>Decided</dt><dd>A generated unit's state is anchored at its own trajectory's early-life reference, the
+              same rule the measured side uses. The check was not relaxed.</dd>
+            <dt>Cost</dt><dd>Regeneration of all units and one extra sensitivity refit.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>From here the benchmark has what it promises: sequences with a known decomposition, a
+          target that is exactly decomposable, and a model that attains it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 ------------------------------------------------------------------- -->
+  <section class="stage" id="s5">
+    <div class="spine"><span class="badge">S5</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ1 — how closely each profile reproduces its dataset</h2>
+        <p class="run"><span>15 Sep</span><span>13 min, GPU</span><span>held-out units 40 / 23 / 5</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Four measures on held-out measured units: a discriminator's error, a distance in a learned representation
+          space, agreement of cross-channel covariance, and the transfer ratio — the error of a model trained on the
+          profile divided by that of the same architecture trained on measured cells, both evaluated on the same
+          held-out cells.</p>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Fidelity</th><th>MATR</th><th>HUST</th><th>NASA PCoE</th></tr></thead>
+            <tbody>
+              <tr><td>Transfer ratio [95 % CI]</td><td class="num">3.42 [2.28, 4.96]</td><td class="num">1.46 [1.11, 1.76]</td><td><span class="void">void</span> 3 &lt; 20 units</td></tr>
+              <tr><td>Discriminative error (0.5 = indistinguishable)</td><td class="num">0.05–0.09</td><td class="num">0.12–0.20</td><td><span class="void">void</span></td></tr>
+              <tr><td>Representation distance (measured baseline)</td><td><span class="void">void</span></td><td class="num">2.95 (0.16)</td><td><span class="void">void</span></td></tr>
+              <tr><td>Covariance agreement (measured baseline)</td><td class="num">0.69 (0.28)</td><td class="num">0.42 (0.04)</td><td><span class="void">void</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <div class="plate"><img src="img/s5-tstr.png" alt="Transfer error ratio per profile with bootstrap intervals"></div>
+          <figcaption><b>S5</b>Transfer ratio with its interval over held-out units (black) and its range over the
+            fifteen seed pairs (grey bar). The HUST and MATR intervals do not overlap under any seed.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s5-properties.png" alt="Measured versus generated unit length, drift and per-channel noise variance for MATR"></div>
+          <figcaption><b>S5</b>Where MATR matches and where it does not: unit length and drift line up with the
+            held-out cells, and per-channel noise variances sit on the diagonal — the shortfall is not in these
+            marginals but in the per-cell structure the transfer measurement exposes.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D02b</span>One minimum count for every measure was too coarse</h4>
+          <dl>
+            <dt>Investigated</dt><dd>With five held-out units the discriminator gets a single test unit and the
+              bootstrap interval of the representation distance is wider than the value itself.</dd>
+            <dt>Decided</dt><dd>A minimum per measure — 20 units reaching EOL for transfer, 12 for covariance, 8 for
+              the discriminator, and a readability test on the interval for the representation distance.</dd>
+            <dt>Cost</dt><dd>NASA PCoE goes void on every fidelity column, and MATR's representation distance with it.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D19</span>Could NASA PCoE be rescued by cross-fitting?</h4>
+          <dl>
+            <dt>Investigated</dt><dd>Refitting the profile over five folds of all 18 units that define a state, to pool
+              10 held-out units reaching EOL.</dd>
+            <dt>Decided</dt><dd>No. The pooled ratio is 1.22 [1.06, 3.07] — an interval wider than its value — and the
+              folds select three different trajectory families. NASA PCoE is reported as void on fidelity.</dd>
+            <dt>Cost</dt><dd>The one profile with inserted patterns has no evidence that it reproduces its dataset;
+              this is stated wherever its results appear.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>A profile can match a dataset in drift, length, family and noise and still fail the
+          test that matters — MATR's charge time is set by per-cell protocol offsets the generator's shared mappings
+          cannot express.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 ------------------------------------------------------------------- -->
+  <section class="stage" id="s6">
+    <div class="spine"><span class="badge">S6</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ2 — is the attribution ground truth usable</h2>
+        <p class="run"><span>15 Sep</span><span>2.4 h + 4 min, GPU</span><span>90 models trained</span></p>
+      </div>
+      <div class="stage-body">
+        <p>A model has to be able to learn the target before attribution on it means anything, and the two kinds of
+          contribution have to be separable. Ten models per profile and weighting (two sizes × five initialisations)
+          were trained, then probed by permutation and by retraining with each term of the target removed.</p>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Usability (recency)</th><th>MATR</th><th>HUST</th><th>NASA PCoE</th></tr></thead>
+            <tbody>
+              <tr><td>Model error on the target, gate ≤ 0.30</td><td class="num">0.036</td><td class="num">0.012</td><td class="num">0.131</td></tr>
+              <tr><td>Members passing the gate</td><td class="num">10/10</td><td class="num">10/10</td><td class="num">10/10</td></tr>
+              <tr><td>Null-channel importance, upper bound (≤ 0.02)</td><td class="num">0.000</td><td class="num">0.000</td><td class="num">0.004</td></tr>
+              <tr><td>Capacity importance vs other weighted channels</td><td class="num">2.00 vs ≤ 0.001</td><td class="num">1.98 vs ≤ 0.000</td><td class="num">1.87 vs ≤ 0.010</td></tr>
+              <tr><td>Variance ratio, patterns to mean (band 0.05–0.50)</td><td><span class="void">void</span></td><td><span class="void">void</span></td><td class="num">0.0004</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <div class="plate"><img src="img/s6-importance.png" alt="Permutation importance per channel for MATR under recency weighting"></div>
+          <figcaption><b>S6</b>Permutation importance per channel (MATR). The model rests almost entirely on capacity,
+            although charge time and mean discharge voltage carry two thirds of the target weights; the two null
+            channels sit at zero, so nothing leaks through a channel intended to be irrelevant.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D21</span>The inserted patterns are too small to be learned</h4>
+          <dl>
+            <dt>Investigated</dt><dd>At the amplitudes fitted from NASA PCoE the pattern term carries 0.04 % of the
+              variance of the mean term, and retraining without it leaves the error unchanged: −0.0000 [−0.0004,
+              0.0003]. A harness swept amplitude multipliers ×1 to ×16.</dd>
+            <dt>Decided</dt><dd>Keep the fitted amplitudes. Sparse-set scores on trained models are declared void, and
+              the amplitude at which the term becomes learnable (×4, still inside the measured range) is reported as a
+              generator setting rather than made the default.</dd>
+            <dt>Cost</dt><dd>The benchmark cannot currently evaluate whether a method recovers regeneration that a
+              trained model actually uses. Choosing ×4 instead would have fitted the benchmark to its own check.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>The graded field is learnable everywhere and leak-free; the sparse set is real in the
+          data but negligible in the target, which is a finding about the datasets, not a defect of the construction.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 ------------------------------------------------------------------- -->
+  <section class="stage" id="s7">
+    <div class="spine"><span class="badge">S7</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ3 — do the scores distinguish better maps from worse</h2>
+        <p class="run"><span>15–16 Sep</span><span>3 min + 32 min</span><span>57 generator-setting values</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Part one degrades the ground-truth map itself in controlled amounts — noise, mass shifted to either end,
+          smoothing, permutation — and asks what the scores register. Part two varies the generator settings that
+          control difficulty and asks where the scores stop being informative.</p>
+
+        <figure>
+          <div class="plate"><img src="img/s7-degradation.png" alt="Score response to controlled degradation of a correct attribution map"></div>
+          <figcaption><b>S7</b>Score against degradation magnitude. Both scores fall with noise and permutation and
+            reach chance when the map is fully permuted. Two operators barely move rank agreement: smoothing (0.997 /
+            0.999 / 0.967 even at a width of eight positions) and mass shifted toward the end of the window.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s7-range.png" alt="Score response to generator settings with saturation and chance levels"></div>
+          <figcaption><b>S7</b>Score against each generator setting, for the exact attribution of the reference model
+            (grey) and Integrated Gradients on the trained model (black). Gentle transitions saturate the reference
+            model; paired retrieval (squares) sits at its ceiling everywhere.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D08</span>Two scores did not respond — was that a bug?</h4>
+          <dl>
+            <dt>Investigated</dt><dd>Whether the flat response to smoothing and to shift-to-end came from the
+              implementation or from the construction of the field.</dd>
+            <dt>Decided</dt><dd>From the construction: under recency weighting the graded field already increases
+              toward the end of the window and varies smoothly along it, so neither operation reorders its cells. The
+              resolution table now reports the size of the change beside the magnitude that is resolved.</dd>
+            <dt>Cost</dt><dd>A known blind spot, stated in the Results and the Discussion rather than patched.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D20</span>On which model is the operating range read?</h4>
+          <dl>
+            <dt>Investigated</dt><dd>The paper fixes the saturation rule but not the probe. On the trained model alone,
+              all 57 examined setting values count as responsive — including two where the model is below the accuracy
+              gate and its scores are void.</dd>
+            <dt>Decided</dt><dd>Both probes, plus the gate: a setting is inside the range only where the score is
+              neither saturated nor at chance on the reference model and on the trained model, and the model is accurate
+              enough to be scored. This excludes 8 of 57 values instead of none.</dd>
+            <dt>Cost</dt><dd>Range boundaries near the saturation level are ragged and are marked, not smoothed; paired
+              retrieval turns out to have no operating range at all.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>The scores work where they are meant to, and the two places where they do not are now
+          documented: rank agreement ignores blur and end-loading, and paired retrieval is saturated everywhere.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S8 ------------------------------------------------------------------- -->
+  <section class="stage" id="s8">
+    <div class="spine"><span class="badge">S8</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Reference values for published methods</h2>
+        <p class="run"><span>16 Sep</span><span>49 + 40 + 82 min, GPU</span><span>120 windows per profile</span></p>
+      </div>
+      <div class="stage-body">
+        <p>TimeSHAP, Integrated Gradients and feature occlusion were run at their defaults on the primary trained model
+          and on the reference model, from the declared pristine baseline. The exact attribution of the reference model
+          gives the ceiling each score can reach; the ensemble of ten models gives the range a trained-model score can
+          take without any method changing.</p>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Rank agreement (recency)</th><th>MATR</th><th>HUST</th><th>NASA PCoE</th></tr></thead>
+            <tbody>
+              <tr><td>Exact attribution of the reference model</td><td class="num">0.815</td><td class="num">0.870</td><td class="num">0.733</td></tr>
+              <tr><td>Integrated Gradients, trained model</td><td class="num">0.551</td><td class="num">0.321</td><td class="num">0.316</td></tr>
+              <tr><td>TimeSHAP, trained model</td><td class="num">0.468</td><td class="num">0.333</td><td class="num">0.286</td></tr>
+              <tr><td>Feature occlusion, trained model</td><td class="num">0.461</td><td class="num">0.298</td><td class="num">0.283</td></tr>
+              <tr><td>Ensemble range of ten equally accurate models</td><td class="num">0.440–0.551</td><td class="num">0.212–0.544</td><td class="num">0.245–0.339</td></tr>
+              <tr><td>Mass on zero-weight channels (error by construction)</td><td class="num">0.11–0.14</td><td class="num">0.01–0.03</td><td class="num">0.24–0.26</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <div class="plate"><img src="img/s8-maps.png" alt="Attribution maps of one MATR window: ground truth, reference model and three methods on the trained model"></div>
+          <figcaption><b>S8 · example</b>One scored window, positions across, channels down. The ground truth spreads
+            over the three weighted channels and rises toward the end of the window; the reference model reproduces it
+            plus the noise term it legitimately attributes; the trained model concentrates on capacity and puts mass on
+            channels whose target weight is zero. This is the gap the reference column measures away.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s8-sparse.png" alt="Sparse set and paired attribution differences for one NASA PCoE window"></div>
+          <figcaption><b>S8 · example</b>The sparse set on a NASA PCoE window, and what retrieval scores. The paired
+            difference localises the inserted pattern on both models (AP 1.00), while a single map ranks it barely above
+            chance (0.42) — and the trained model's success here is sensitivity to the changed input, not use of the
+            pattern term, which is why that column is reported as void.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="plate"><img src="img/s8-scores.png" alt="Reference values per method with ensemble ranges, three weightings"></div>
+          <figcaption><b>S8</b>Reference values per method and weighting for MATR, with the exact-attribution ceiling
+            (dashed) and the ensemble range (grey bar). Under final-position weighting every method collapses to
+            0.14–0.18 while the ceiling stays at 0.85 — the tie-dominated regime identified at S7.</figcaption>
+        </figure>
+
+        <div class="decision">
+          <h4><span class="id">D23</span>TimeSHAP at its default configuration exceeded the compute budget</h4>
+          <dl>
+            <dt>Investigated</dt><dd>At 5–7 s per window explanation, the declared design needs about 14 GPU-hours for
+              TimeSHAP alone — more than twice the planned budget for the whole stage.</dd>
+            <dt>Decided</dt><dd>Reduce replicates only: a stratified 40 of the 120 windows, two sampling seeds on
+              trained models and one on the reference model, where seed-to-seed variation is 3 × 10⁻⁷. Profiles,
+              weightings, method configurations and the seed separation were left untouched.</dd>
+            <dt>Cost</dt><dd>TimeSHAP rows rest on a third of the windows and have wider intervals; the exact ceiling is
+              recomputed on the same subset so the comparison stays like-for-like.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>The distance from the ceiling to a trained model (0.26–0.57) dwarfs the distance
+          between methods (≤ 0.089), and the ensemble spans more than that difference — so these are reference values
+          for a method on a model, not a ranking of methods.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S9 ------------------------------------------------------------------- -->
+  <section class="stage" id="s9">
+    <div class="spine"><span class="badge">S9</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Results, paper and provenance</h2>
+        <p class="run"><span>16 Sep</span><span>6 tables, 3 figures</span><span>159 provenance rows</span></p>
+      </div>
+      <div class="stage-body">
+        <p>Every table body and results figure is generated from stage artifacts by one script, with a provenance row
+          naming the artifact, the key inside it and the seeds. Results §4 and Discussion §5 were written from those
+          artifacts; the Conclusion was left untouched. Both the review build, with amended spans highlighted, and the
+          clean build compile without warnings.</p>
+
+        <div class="decision">
+          <h4><span class="id">D24</span>Averaging the reference values over profiles hid the measurement</h4>
+          <dl>
+            <dt>Investigated</dt><dd>The declared table reported each method averaged over profiles. The averaged
+              ordering of the three methods matches the profile's own ordering in only 4 of 9 profile × weighting
+              combinations, the ensemble range is per profile (0.094 to 0.332), and retrieval exists in one profile
+              only.</dd>
+            <dt>Decided</dt><dd>Report per profile, with the exact ceiling, the ensemble range and the average-event
+              background as rows of the same block.</dd>
+            <dt>Cost</dt><dd>The table is three times longer, and later work must quote reference values per profile —
+              which is what the measurement supports.</dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D10</span>Two citations did not support the claims made from them</h4>
+          <dl>
+            <dt>Investigated</dt><dd>The detection-family paragraph described one cited method as decomposition-based;
+              the full text shows it predicts regeneration from rest time. A second citation was used for a claim about
+              temperature as a model input that no accessible version of it makes.</dd>
+            <dt>Decided</dt><dd>The first was re-described from the source; the claim resting on the second was
+              removed.</dd>
+            <dt>Cost</dt><dd>Temperature's role now rests on dataset evidence alone.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>Nothing in the Results was typed by hand: each number traces to an artifact, and each
+          methodological change traces to a record with its cost.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- close ----------------------------------------------------------------- -->
+  <section class="close" id="close">
+    <h2>What the programme establishes, and where it stops</h2>
+    <p>The construction holds in all three profiles: the ground truth is exact, the reference model attains it, and the
+      target is learnable. What differs between profiles is how much of a dataset each reproduces and which half of the
+      benchmark it can exercise.</p>
+
+    <div class="cols">
+      <div>
+        <h3>Established</h3>
+        <ul>
+          <li>Exact, per-cell attribution ground truth on generated sequences calibrated to three measured datasets.</li>
+          <li>Reference values for TimeSHAP, IG and occlusion on a known function and on a trained model.</li>
+          <li>Score resolutions, blind spots, and the generator settings over which the scores stay informative.</li>
+          <li>HUST transfers at 1.46; a model learns nearly as much from the profile as from the cells.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Void or unsupported</h3>
+        <ul>
+          <li>NASA PCoE fidelity: 3 held-out units reaching EOL against a minimum of 20.</li>
+          <li>Sparse-set scores on trained models: the pattern term is not used at fitted amplitudes.</li>
+          <li>MATR representation distance: interval wider than the value.</li>
+          <li>Paired retrieval as a discriminating score: saturated at every setting examined.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Open for the author</h3>
+        <ul>
+          <li>The Conclusion section, left untouched by design.</li>
+          <li>The repository and DOI footnote in §1 — the only remaining placeholder.</li>
+          <li>Whether to keep MATR as a headline profile given its transfer ratio of 3.42.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>Generated from the committed artifacts of the DegradX repository: stage reviews under <code>artifacts/</code>,
+        decision records under <code>docs/DECISIONS/</code>, amendment rounds in <code>docs/AMENDMENTS.md</code>, and
+        cell-level provenance in <code>docs/RESULTS_PROVENANCE.md</code>. Figures are the stage artifacts themselves;
+        the two attribution examples are illustrations drawn from the saved maps of stage 8.</p>
+    </footer>
+  </section>
+</main>
