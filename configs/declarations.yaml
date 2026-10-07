@@ -812,8 +812,23 @@ declared_by_design:
 
     # ---- X9: observation-level target pilot (HUST, recency) — declared and committed before V9 runs
     observation_target:
-      status: pending
-      to_declare_before_V9: "y_obs definition, the ensemble, the accuracy reading relative to SD(sum w eps) with its threshold, the channel-usage gate, and the comparison of the ensemble range of the X5 scores with the largest method gap"
+      status: "declared 2026-10-07, before V9 ran (exploratory pilot; nothing from V9 enters the paper tables)"
+      question: "does defining y on the observed window restore position-level identifiability?"
+      profile_weighting: {profile: HUST, weighting: recency, units: "V4 generation seed 0, the declared generated train/validation/test split"}
+      target: "y_obs = sum_{(u,c) in W} w_{u,c} (x_{u,c} - x0_c) on the observed window (noise, offsets and any patterns included); the reference model g is then the data-generating function and phi*_obs = w (x - x0)"
+      ensemble: "ten LSTM members as V6 (configurations A 64x2, B 128x1; model seeds 0-4), trained on y_obs; member A/seed 0 primary"
+      accuracy:
+        usual: "NRMSE = RMSE / SD(y_obs) on test windows, against the declared gate 0.30"
+        noise_scale: "RMSE relative to SD(sum w eps) on the test windows"
+        reading: "the model reads the cell-level values (not only the state) iff RMSE(y_obs) <= 0.5 SD(sum w eps)"
+        rationale: "y_obs - y = sum w eps exactly; a model that recovers only the state-level function (as on the standard y) has RMSE ~ SD(sum w eps) on y_obs; RMSE at half that scale means three quarters of the noise contribution's variance is recovered from the observed cells"
+      attribution: "IG and feature occlusion (declared configurations, pristine baseline) on the 120 V8 windows of HUST, on every member; TimeSHAP optional (only if time remains)"
+      scores: "rank agreement, channel allocation error and temporal profile error of each map against phi*_obs (the full observation-level ground truth; HUST has no patterns)"
+      channel_usage_gate: "X4 as declared (v2.channel_usage_gate), on every member against y_obs"
+      comparison:
+        value: "per score: ensemble range (max - min over the ten members, per method) against the largest gap between methods on the primary model"
+        reading: "position-level identifiability is restored for a score iff the ensemble range of every method falls below the largest method gap; reported beside the V6/V8 ensemble range on the standard y for the same windows"
+      outputs: "one D-record and one figure; nothing in the paper tables"
 
     # ---- V5: fidelity v2
     fidelity:
