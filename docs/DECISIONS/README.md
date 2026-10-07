@@ -37,3 +37,12 @@ Carried over from S0 `REVIEW.md` "Decisions needed" (brief v2 makes these the ag
 | D23 | S8 budget: TimeSHAP on 40 of 120 windows, seeds 0-1 trained / 0 reference | S8 | taken |
 | D10 | held citations: pan2022 verified and re-described; olivares2013 temperature-input claim removed | S9 | taken (paper round 5) |
 | D24 | Table 6 per profile, not averaged over profiles | S9 | taken (paper round 6) |
+
+## v2 (brief "DegradX v2", 2026-10-07; branch `v2`, v1 frozen at tag `v1-results`)
+
+Declarations r3 (`configs/declarations.yaml` → `declared_by_design.v2`, supersession log dated 2026-10-07) were committed
+before any v2 stage ran. Records from D25 on follow the same five-step protocol.
+
+| id | decision | stage | status |
+|---|---|---|---|
+| D25 | v2 scope: final-position weighting, setting sweep, representation distance, NASA PCoE, cross-fitting dropped | V0 | taken |

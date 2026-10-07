@@ -33,3 +33,9 @@ Format per entry:
 - **What was done:** capacity = MATR `summary.QDischarge` (identical to max Qd), HUST `dq`, NASA `Capacity`.
 - **Why:** docs/DECISIONS/D11_capacity_source.md (HUST integrated capacity reads +18 mAh and never reaches the documented stopping threshold).
 - **Cost to the claim:** none to the methodology; the integrated series remains in the cycle tables.
+
+### T4 — S6–S8 (v1), recorded at v2 V0 (2026-10-07) — tooling — bootstrap intervals with 2 000 instead of 10 000 resamples
+- **Paper says / declared:** `declared_by_design.statistics.bootstrap.n_resamples: 10000` (BCa over units).
+- **What was done:** v1 S6 (`s6_usability.py`: permutation importance, conditional importance, term ablation), S7 (`s7_responsiveness.py`: resolution and operating-range intervals) and S8 (`s8_reference_methods.py`: unit-mean intervals) used `n_resamples=2000`. S5 used 10 000.
+- **Why:** run-time choice in v1, not recorded at the time; found by the v2 pre-registration review.
+- **Cost to the claim:** none to any point estimate. The interval endpoints carry more Monte Carlo error (for BCa at 2 000 resamples, a few per cent of the interval width). Whether any v1 reading sits within that distance of its threshold has not been re-checked; v1 intervals are cited with this caveat. Every v2 interval uses 10 000 (declarations r3 `v2.statistics.bootstrap_n_resamples`).
