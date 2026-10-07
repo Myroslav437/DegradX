@@ -39,3 +39,16 @@ Format per entry:
 - **What was done:** v1 S6 (`s6_usability.py`: permutation importance, conditional importance, term ablation), S7 (`s7_responsiveness.py`: resolution and operating-range intervals) and S8 (`s8_reference_methods.py`: unit-mean intervals) used `n_resamples=2000`. S5 used 10 000.
 - **Why:** run-time choice in v1, not recorded at the time; found by the v2 pre-registration review.
 - **Cost to the claim:** none to any point estimate. The interval endpoints carry more Monte Carlo error (for BCa at 2 000 resamples, a few per cent of the interval width). Whether any v1 reading sits within that distance of its threshold has not been re-checked; v1 intervals are cited with this caveat. Every v2 interval uses 10 000 (declarations r3 `v2.statistics.bootstrap_n_resamples`).
+
+### T5 — V2 (v2) — tooling — ISU-ILCC cycle timestamps step back in 16 cells
+- **Paper says / declared:** D28 rest events and calibration anchors are placed from cycle and RPT timestamps
+  (`declared_by_design.v2.third_profile.candidate_rules`).
+- **What was done:** 16 in-scope cells (G41C1, G55C1–C4, G56C1–C3, G61C2–C4, G62C1, G62C3, G63C3, G63C4, G64C4) carry one
+  or two backward steps of 3–53 min in the cycle start times. The steps fall at the same wall-clock moments across
+  cells (Unix ≈ 1.66816e9 and 1.67858e9), so they are logger clock adjustments. The order of cycles in the files is
+  chronological. The converter keeps file order. Block-start rest events are found in index order, and anchors and RPT
+  overlaps are separated from RPTs by hours, not minutes, so the declared rules place every event as they would on
+  monotone times. The ingest check reports the cells at warning level.
+- **Why:** a property of the released timestamps.
+- **Cost to the claim:** none found. There are 18 steps, and no rest event of either source lies within 3 cycles of any
+  of them (checked). Pause detection ignores negative gaps.
