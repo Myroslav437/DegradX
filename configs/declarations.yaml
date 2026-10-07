@@ -79,6 +79,10 @@ meta:
        r2: "single departing readings masked (D17, runs of 1)",
        r3: "runs of up to three departing readings masked (max_run_v2: 3), all v2 profiles, before any v2 refit",
        reason: "held-out MATR charge-time residual variance 53.0 min2 came from one paused cycle (1 301.6 min) in MATR_b1c2 whose recovery reading also departed, so D17's neighbour clause kept it; set after the data were seen"}
+    - {date: 2026-10-07, comment: "D28 (pre-data, V2; documentation only, before any download)", keys: [declared_by_design.v2.third_profile.candidate_rules, declared_by_design.v2.readings.X6_ii_regeneration_at_scale, declared_by_design.v2.third_profile.candidates_in_order],
+       r3: "candidate rules not yet declared; X6(ii) read on the pooled D05 outcome; Tongji note 'one cell type meeting eligibility'",
+       new: "ISU-ILCC (c-iii) with the declared extraction, scope (authors' validated cells, mean DoD >= 50%, 145 cells), strata, controls and the stratified X6(ii) reading; Tongji note superseded by its documentation_finding (entered at v0 commit 9c25b6c from the documentation sweep, no data seen)",
+       reason: "options (a), (b) and Tongji fail E3/E4 on documentation; (c-iii) meets E1-E4 with noise and pattern estimation on measured residuals; reviewed by three lenses and a judge before commit"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -721,6 +725,51 @@ declared_by_design:
         - {name: ISU-ILCC, source: "figshare DOI 10.25380/iastate.22582234, CC BY 4.0; Li et al. arXiv:2307.08382", first_risk: "partial-DoD aging cycles are not full-capacity measurements: D-record between (a) full-DoD subset, (b) RPT capacity as the position axis, (c) another declared extraction; RPT cycles are never positions of an aging-cycle series (they are rest events); under (b) every position is an RPT and the mechanism diagnostic is void"}
         - {name: Tongji, source: "Zhu et al. Nat. Commun. 13:2261 (2022); Zenodo 10.5281/zenodo.6379165", note: "one cell type meeting eligibility; uniform rests, purpose 1 only",
            documentation_finding: "ineligible on documentation, recorded before any download (D28): the largest single cell type (NCA, Samsung INR18650-35E) has 66 cells, so E3 (>= 67 reaching EOL) cannot hold; NCM has 55, NCM+NCA 9"}
+      candidate_rules:
+        # D28 (2026-10-07, V2, documentation only, BEFORE any measurement download)
+        chosen: "ISU-ILCC, option (c-iii): aging-cycle positions, measured aging discharge capacity calibrated multiplicatively to the C/5 RPT capacity"
+        source: "figshare 10.25380/iastate.22582234 v2 (CC BY 4.0); README_V2.0.pdf; scope list feature_extraction/valid_cells_paper.csv (github tingkai-li/early-prediction-varying-usage-data @ 7702efd, sha256 0447237d9f510e3ad1c0d45fc4bb5da40c85ac5acc1f96fc7393848eabf5085b)"
+        scope:
+          rule: "cells on the authors' valid_cells_paper.csv whose README v2 Table A1 mean DoD >= 50% (loosest threshold with nominal amplification 1/mean DoD <= 2); fixed from documentation, never moved by measured DoD"
+          groups: [3, 5, 8, 9, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 35, 36, 37, 38, 39, 41, 45, 46, 48, 51, 52, 53, 55, 56, 60, 61, 62, 63, 64]
+          n_cells: 145
+          cells: [G3C1, G3C2, G3C3, G3C4, G5C1, G5C2, G5C3, G5C4, G8C1, G8C2, G8C3, G8C4, G9C1, G9C2, G9C4, G14C1, G16C1, G16C2, G16C3, G16C4, G17C1, G17C2, G17C3, G17C4, G19C1, G19C2, G19C3, G19C4, G20C1, G20C2, G20C3, G20C4, G21C1, G21C2, G21C3, G21C4, G22C1, G22C2, G22C3, G22C4, G23C1, G23C2, G23C3, G23C4, G24C1, G24C2, G24C3, G24C4, G25C1, G25C2, G25C3, G25C4, G27C1, G27C2, G27C3, G27C4, G28C1, G28C2, G28C3, G28C4, G29C1, G29C2, G29C3, G29C4, G35C1, G35C2, G35C3, G35C4, G36C2, G36C3, G36C4, G37C2, G37C3, G37C4, G38C1, G38C2, G38C3, G38C4, G39C1, G39C2, G39C3, G39C4, G41C1, G41C2, G41C3, G41C4, G52C1, G52C2, G52C3, G52C4, G53C1, G53C2, G53C3, G53C4, G55C1, G55C2, G55C3, G55C4, G56C1, G56C2, G56C3, G56C4, G30C1, G30C2, G30C3, G30C4, G31C1, G31C2, G31C3, G31C4, G45C1, G45C2, G45C3, G45C4, G46C1, G46C2, G46C3, G46C4, G48C1, G48C2, G48C3, G48C4, G51C1, G51C2, G51C3, G51C4, G60C1, G60C2, G60C3, G60C4, G61C2, G61C3, G61C4, G62C1, G62C2, G62C3, G62C4, G63C1, G63C2, G63C3, G63C4, G64C1, G64C2, G64C3, G64C4]
+          side_table: "the 10 released in-range cells outside the list (G9C3, G11C1-C4, G14C2-C4, G36C1, G37C1) are converted and reported outside the profile"
+        strata:
+          S_full: {rule: "Table A1 mean DoD >= 95.8%", groups: [5, 9, 16, 20, 21, 22, 23, 24, 35, 36, 37, 38, 39], n_cells: 49}
+          S_partial: {rule: "50% <= Table A1 mean DoD < 95.8%", n_cells: 96}
+        fields: {cycling: [capacity_discharge, capacity_charge, QV_discharge, QV_charge, time_series_charge, time_series_discharge, start_stop_time], rpt: [capacity_discharge_C_5, start_stop_time], encoding: "double-encoded JSON (json.loads(json.load(f)))"}
+        cycle_predicates:
+          degenerate: "fewer than 10 samples; capacity_discharge non-finite, <= 0 or an empty list; or a missing charge or discharge start time"
+          incomplete: "last discharge voltage more than 0.02 V above the unit's median last-discharge voltage, or last charge current above 2 x C/20 = 0.025 A"
+          non_aging: "overlaps an RPT start-stop interval, or median discharge current departs by more than 10% from the group's discharge C-rate x 0.25 A"
+          handling: "masked (degenerate, incomplete) or excluded from positions (non-aging), counted; no halt"
+        order: "1 masks on raw aging capacity; 2 anchors from unmasked cycles; 3 f; 4 calibrated = raw x f; 5 D12 on the calibrated series, D17/D27 on the channels; D12 counts per stratum"
+        anchors:
+          rpt: "for every RPT w with finite C/5 and >= 5 unmasked aging cycles before its start: f_w = C5_w / median raw capacity of the last 5 such cycles, knot at the last of them"
+          week0: "f_0 = week-0 C/5 / median raw capacity of the first 5 unmasked aging cycles, knot at the last of those"
+          interpolation: "PCHIP over knots, constant beyond the first and last knot"
+          minimum: "a unit with fewer than 2 anchors is reported with its C/5 EOL status and cycle count, and counts against E4 if it reached EOL with T < 44"
+          causality: "non-causal (uses the next RPT, at most one RPT interval ahead), like the centred SG and rolling-median rules"
+        channels:
+          charge_time_min: "charge step duration from time_series_charge start/stop; missing by protocol at every RPT-following rest event (charge starts from the RPT's discharged state), counted separately"
+          mean_discharge_voltage_V: "time-weighted mean voltage over the discharge samples (trapezoid over sample times)"
+        rest_events:
+          sources: ["first unmasked aging cycle of each Cycling start_stop_time block after the first", "first cycle after a pause: gap from a cycle's discharge stop to the next charge start exceeding the unit's median gap by more than 30 min"]
+          cross_check: "RPT stop times (mismatches counted)"
+          position_1: "not a rest event"
+          known_losses: "G20-G29 week-4 RPT losses placed from block starts; G25C1 week-23/24 hole: recorded cycles only, no imputation, first cycle after the hole a rest event, cell flagged"
+        x6_ii_controls:
+          recovery_index: "per RPT: ln(median raw Q of the first 5 cycles after / median of the last 5 before); regressed on 1/mean DoD and discharge C-rate"
+          overshoot: "median calibrated capacity over r..r+4 minus that RPT's C/5"
+          placebo_window: "mechanism diagnostic also on -11 <= s - r <= -1; post-minus-pre contrast reported"
+          operator_null: "per fitting unit: SG(11,2)-smoothed raw aging capacity + AR(1) noise at the unit's raw-residual variance and phi (seed stream generation/D28-null/<cell>); identical extraction with the measured f_w at the same knots, cleaning and D05 detection; positive-run rate vs the D05 AR(1) reference and the null mechanism ratio; if the operator alone reaches noise_factor x the reference, X6(ii) is void with that reason"
+          additive_sensitivity: "Q_age(n) + g(n), g PCHIP through (C5_w - anchor median): capacity noise variance and phi, pattern rate and amplitude rows, D05 outcome; a different D05 outcome is reported as extraction-dependent"
+          amplitudes: "pattern amplitudes reported calibrated and in raw aging units, with per-unit f (min, p05, median, p95, max)"
+        cross_checks: ["(q1 - week-0 C/5)/q_nom per unit and the count above 0.01, with and without the week-0 anchor", "EOL agreement: T within the RPT interval where C/5 first drops below 0.200 Ah or the preceding one (count outside reported)"]
+        q_nom: "0.25 Ah (configs/profiles/isu_ilcc.yaml)"
+        after_ingestion: "E3, E4, E5 re-checked under these rules; any failure -> stop and report (brief §6)"
+        e2_reading: "a declared extraction may construct per-position values whose level is tied, at anchor positions, to full-capacity measurements of one procedure; under the strict reading only (b) passes E2 and fails E4 -> brief §6; flagged for the authors"
       none_eligible: "stop and report (brief §6); XJTU (55 cells) is not a candidate"
       ingestion: "from the primary release only; SHA-256 of every raw file recorded; converter validated against the raw arrays; one cell at a time; BatteryLife (arXiv:2502.18807) only as a cross-check"
       audit: "S2-style: EOL attainment, monotonicity, channel availability, detection sweep, D05 enable rule; minimum counts D02/D02b unchanged"
@@ -757,6 +806,7 @@ declared_by_design:
       X3_isolation: "the v2 profiles carry X2 and X3 together; one extra set per profile (generation seed 0) from the v2 profile with independent per-channel noise (X3 off) is measured for covariance agreement and the discriminator, so X3's own share is reported"
       X6_i_construction_holds: "the construction holds on the third profile iff every V3 and V4 check passes, the transfer ratio is readable (D02b: >= 20 held-out units reaching EOL) and the accuracy gate and null-channel leakage test pass at V6"
       X6_ii_regeneration_at_scale: "regeneration is present at scale iff the D05 enable rule enables the positive type on the third profile's fitting split at the declared k, m and maximum duration; the mechanism diagnostic is reported beside it"
+      X6_ii_superseded_D28: "for ISU-ILCC: present at scale iff D05 enables the positive type on the pooled fitting split AND on the S_full fitting split AND the operator-null check stays below the enable level; otherwise 'not shown' and the type is reported as post-RPT recovery of partial-window discharge capacity, not separable from voltage-cutoff kinetics (third_profile.candidate_rules)"
       X7_values_hold: "TimeSHAP's values hold without the D23 reductions iff, on each v2 profile and weighting, the mean over the 40 windows that D23's seeded selection rule picks lies inside the full 120-window 95% interval; seed spread over the three seeds reported"
       X7_floor: "TimeSHAP's identifiability floor is read as in v1 S8 for IG and occlusion: if the ten-member range exceeds the largest gap between the three methods on the primary trained model, no ordering of the methods on a trained model is supported, TimeSHAP included"
 

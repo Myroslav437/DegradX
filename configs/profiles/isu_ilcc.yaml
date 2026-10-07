@@ -1,0 +1,13 @@
+# ISU-ILCC profile (v2 third profile, decision D28): dataset-level facts declared from the dataset's own primary
+# documentation (C3). Values here are declared, never fitted.
+dataset: ISU_ILCC
+nominal_capacity_Ah:
+  value: 0.25
+  source: >-
+    README_V2.0.pdf §3.1 (figshare 10.25380/iastate.22582234 v2): "The rated capacity is 250 mAh, and the operating voltage
+    window is between 3.0 V and 4.2 V"; Li et al., Cell Rep. Phys. Sci. 5:101891 (2024): "The rated capacity is 250 mAh".
+stopping_convention:
+  value: "cycled until the C/5 RPT discharge capacity fell below 200 mAh (80% of rated)"
+  source: "README_V2.0 §3; Li et al. 2024 (EOL = 200 mAh, 80% of the rated capacity)"
+cell: {chemistry: NMC/graphite, format: "502030 Li-polymer pouch", ambient_C: 30, manufacturer: "Shenzhen Honghaosheng Electronics"}
+extraction: "decision D28 (declarations declared_by_design.v2.third_profile.candidate_rules)"
