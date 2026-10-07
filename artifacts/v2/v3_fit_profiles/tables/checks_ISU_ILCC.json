@@ -1,0 +1,79 @@
+[
+  {
+    "name": "ISU_ILCC: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: capacity affine in z per unit with the unit's own q1 (Eq. 3; X2 capacity mapping)",
+    "expected": "< 1e-9 Ah",
+    "observed": "4.16e-17",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: phi_charge_time monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: phi_mean_discharge_voltage monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: backfit of charge_time converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "7 it., last change \u03b4 9.76e-04 / \u03c6 1.04e-03 (tol 1.46e-03)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "ISU_ILCC: median offset of charge_time over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: backfit of mean_discharge_voltage converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "8 it., last change \u03b4 1.34e-06 / \u03c6 1.19e-06 (tol 4.99e-06)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "ISU_ILCC: median offset of mean_discharge_voltage over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU_ILCC: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.020",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "ISU_ILCC: theta from >= 5 units reaching EOL (D02)",
+    "expected": ">= 5",
+    "observed": "102",
+    "passed": true,
+    "severity": "warn"
+  }
+]

@@ -18,6 +18,7 @@ Outputs in ``artifacts/v2/v4_generate_units``.
 
 from __future__ import annotations
 
+import json
 import pickle
 import sys
 from copy import deepcopy
@@ -110,7 +111,7 @@ def main() -> int:
     tol_corr = 0.05
     stop_share = 0.5
     rule = CleaningRule("D12", **dd["capacity_series"]["cleaning_rule"]["params"])
-    summary = {}
+    summary = json.loads((ctx.out_dir / "tables" / "summary.json").read_text()) if (ctx.out_dir / "tables" / "summary.json").exists() else {}
     with RunRecord("v2/v4_generate_units", out, {"config": ctx.config, "datasets": args.datasets},
                    {"generation": gen_seeds, "split": f"derive_seed({args.seed}, 'split', <profile>, 'generated', <g>)"}, ctx.device) as rec:
         for ds in args.datasets:
@@ -270,7 +271,7 @@ def main() -> int:
                 save_figure(viz.overlay_measured_generated(ds, P, units0, df, msplit, decl, q_nom), out / "figures" / f"{ds.lower()}_generated_vs_measured")
             write_json(summary, out / "tables" / "summary.json")
         code = ct.finalize(out)
-        (out / "logs" / "checks.md").write_text(ct.markdown() + "\n")
+        (out / "logs" / ("checks.md" if set(args.datasets) == {"MATR", "HUST"} else f"checks_{'_'.join(args.datasets)}.md")).write_text(ct.markdown() + "\n")
     return code
 
 

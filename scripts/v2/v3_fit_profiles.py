@@ -62,7 +62,7 @@ def main() -> int:
     k = float(dd["pattern_detection"]["multiple_k"]["value"])
     m = int(dd["pattern_detection"]["min_run_length"]["value"])
     sweep_k = dd["pattern_detection"]["sweep"]["multiple_k"]
-    summary = {}
+    summary = json.loads((ctx.out_dir / "tables" / "summary.json").read_text()) if (ctx.out_dir / "tables" / "summary.json").exists() else {}
     seeds = {"split": f"derive_seed({args.seed}, 'split', <dataset>)", "D05_noise": f"derive_seed({args.seed}, 'generation', 'D05', <dataset>)"}
     with RunRecord("v2/v3_fit_profiles", out, {"config": ctx.config, "datasets": args.datasets, "channel_rule": crule.__dict__, "offsets": offs},
                    seeds, ctx.device) as rec:
@@ -156,7 +156,7 @@ def main() -> int:
                            "units": {"fitting_passing_guard": len(prof["units"]["fitting_passing_guard"]), "fitting_reaching_eol": len(prof["units"]["fitting_reaching_eol"])}}
             write_json(summary, out / "tables" / "summary.json")
         code = ct.finalize(out)
-        (out / "logs" / "checks.md").write_text(ct.markdown() + "\n")
+        (out / "logs" / ("checks.md" if set(args.datasets) == {"MATR", "HUST"} else f"checks_{'_'.join(args.datasets)}.md")).write_text(ct.markdown() + "\n")
     return code
 
 

@@ -1,0 +1,512 @@
+[
+  {
+    "cell_id": "G14C1",
+    "charge_time": -11.3528176142,
+    "mean_discharge_voltage": 0.1546932445
+  },
+  {
+    "cell_id": "G16C1",
+    "charge_time": 73.5847862477,
+    "mean_discharge_voltage": -0.0389042657
+  },
+  {
+    "cell_id": "G16C2",
+    "charge_time": 79.815315437,
+    "mean_discharge_voltage": -0.0353028366
+  },
+  {
+    "cell_id": "G17C1",
+    "charge_time": 0.1634305042,
+    "mean_discharge_voltage": 0.1253727937
+  },
+  {
+    "cell_id": "G17C3",
+    "charge_time": 4.4393255072,
+    "mean_discharge_voltage": 0.1242761945
+  },
+  {
+    "cell_id": "G17C4",
+    "charge_time": 2.471129499,
+    "mean_discharge_voltage": 0.1202899683
+  },
+  {
+    "cell_id": "G19C3",
+    "charge_time": -13.4429732354,
+    "mean_discharge_voltage": 0.1367719024
+  },
+  {
+    "cell_id": "G19C4",
+    "charge_time": -9.3516312047,
+    "mean_discharge_voltage": 0.1454996433
+  },
+  {
+    "cell_id": "G20C3",
+    "charge_time": 34.0032361625,
+    "mean_discharge_voltage": 0.0082038937
+  },
+  {
+    "cell_id": "G20C4",
+    "charge_time": 39.2532071525,
+    "mean_discharge_voltage": -0.0265767272
+  },
+  {
+    "cell_id": "G21C1",
+    "charge_time": 17.4450592555,
+    "mean_discharge_voltage": -0.0116651797
+  },
+  {
+    "cell_id": "G21C2",
+    "charge_time": 18.9163760459,
+    "mean_discharge_voltage": -0.0359219476
+  },
+  {
+    "cell_id": "G21C4",
+    "charge_time": 16.9379724288,
+    "mean_discharge_voltage": -0.0242031383
+  },
+  {
+    "cell_id": "G22C1",
+    "charge_time": 9.4353355067,
+    "mean_discharge_voltage": -0.0202284829
+  },
+  {
+    "cell_id": "G22C2",
+    "charge_time": 10.0453038433,
+    "mean_discharge_voltage": -0.0083359298
+  },
+  {
+    "cell_id": "G22C3",
+    "charge_time": 10.5960684188,
+    "mean_discharge_voltage": -0.0116762387
+  },
+  {
+    "cell_id": "G23C2",
+    "charge_time": 5.1432592234,
+    "mean_discharge_voltage": 0.0007265465
+  },
+  {
+    "cell_id": "G24C2",
+    "charge_time": 1.2931786711,
+    "mean_discharge_voltage": 0.0034318908
+  },
+  {
+    "cell_id": "G24C3",
+    "charge_time": 6.2302078835,
+    "mean_discharge_voltage": -0.0183016255
+  },
+  {
+    "cell_id": "G24C4",
+    "charge_time": 3.9508480785,
+    "mean_discharge_voltage": 0.0058859703
+  },
+  {
+    "cell_id": "G25C1",
+    "charge_time": -19.138811669,
+    "mean_discharge_voltage": 0.1680327297
+  },
+  {
+    "cell_id": "G25C2",
+    "charge_time": -14.6019542153,
+    "mean_discharge_voltage": 0.1490046796
+  },
+  {
+    "cell_id": "G25C4",
+    "charge_time": -16.5598708656,
+    "mean_discharge_voltage": 0.1753885805
+  },
+  {
+    "cell_id": "G27C1",
+    "charge_time": 4.095790915,
+    "mean_discharge_voltage": -0.0416852363
+  },
+  {
+    "cell_id": "G27C3",
+    "charge_time": 6.3813737936,
+    "mean_discharge_voltage": -0.0089784444
+  },
+  {
+    "cell_id": "G27C4",
+    "charge_time": 8.6068114841,
+    "mean_discharge_voltage": -0.0271888499
+  },
+  {
+    "cell_id": "G28C1",
+    "charge_time": -12.7349645381,
+    "mean_discharge_voltage": -0.0027089211
+  },
+  {
+    "cell_id": "G28C3",
+    "charge_time": -10.722449253,
+    "mean_discharge_voltage": -0.0202435471
+  },
+  {
+    "cell_id": "G29C1",
+    "charge_time": -20.0571396289,
+    "mean_discharge_voltage": 0.0646806434
+  },
+  {
+    "cell_id": "G29C2",
+    "charge_time": -20.314576458,
+    "mean_discharge_voltage": 0.0514492654
+  },
+  {
+    "cell_id": "G29C3",
+    "charge_time": -20.1885314645,
+    "mean_discharge_voltage": 0.0682791018
+  },
+  {
+    "cell_id": "G29C4",
+    "charge_time": -21.2158493523,
+    "mean_discharge_voltage": 0.0616397891
+  },
+  {
+    "cell_id": "G30C3",
+    "charge_time": 17.4456798155,
+    "mean_discharge_voltage": 0.0252711238
+  },
+  {
+    "cell_id": "G30C4",
+    "charge_time": 20.5777888241,
+    "mean_discharge_voltage": 0.0435409561
+  },
+  {
+    "cell_id": "G31C1",
+    "charge_time": -6.3431238052,
+    "mean_discharge_voltage": 0.0677600486
+  },
+  {
+    "cell_id": "G31C2",
+    "charge_time": -9.6284877106,
+    "mean_discharge_voltage": 0.0954747946
+  },
+  {
+    "cell_id": "G31C3",
+    "charge_time": -9.4261497024,
+    "mean_discharge_voltage": 0.0982158532
+  },
+  {
+    "cell_id": "G31C4",
+    "charge_time": -9.7508945406,
+    "mean_discharge_voltage": 0.0964929479
+  },
+  {
+    "cell_id": "G35C1",
+    "charge_time": 7.7703727865,
+    "mean_discharge_voltage": -0.0379982779
+  },
+  {
+    "cell_id": "G35C2",
+    "charge_time": 5.500310533,
+    "mean_discharge_voltage": 0.005998967
+  },
+  {
+    "cell_id": "G35C3",
+    "charge_time": 6.2051530243,
+    "mean_discharge_voltage": -0.0019159471
+  },
+  {
+    "cell_id": "G36C2",
+    "charge_time": -0.204209085,
+    "mean_discharge_voltage": -0.0105817228
+  },
+  {
+    "cell_id": "G36C3",
+    "charge_time": 1.4267502208,
+    "mean_discharge_voltage": -0.0046588615
+  },
+  {
+    "cell_id": "G37C2",
+    "charge_time": 47.0729433377,
+    "mean_discharge_voltage": -0.043044627
+  },
+  {
+    "cell_id": "G37C4",
+    "charge_time": 47.681972684,
+    "mean_discharge_voltage": -0.0330069213
+  },
+  {
+    "cell_id": "G38C1",
+    "charge_time": -0.1634305042,
+    "mean_discharge_voltage": 0.0187548821
+  },
+  {
+    "cell_id": "G38C2",
+    "charge_time": 2.8692496606,
+    "mean_discharge_voltage": -0.0039277494
+  },
+  {
+    "cell_id": "G38C3",
+    "charge_time": 9.4694157453,
+    "mean_discharge_voltage": -0.0562916722
+  },
+  {
+    "cell_id": "G39C1",
+    "charge_time": 5.3180181451,
+    "mean_discharge_voltage": -0.023297223
+  },
+  {
+    "cell_id": "G39C2",
+    "charge_time": 7.5234404793,
+    "mean_discharge_voltage": -0.0252742974
+  },
+  {
+    "cell_id": "G39C4",
+    "charge_time": 9.2442900927,
+    "mean_discharge_voltage": -0.0024153694
+  },
+  {
+    "cell_id": "G3C1",
+    "charge_time": 30.7752003481,
+    "mean_discharge_voltage": 0.1271434992
+  },
+  {
+    "cell_id": "G3C3",
+    "charge_time": 34.9465285024,
+    "mean_discharge_voltage": 0.1284279724
+  },
+  {
+    "cell_id": "G3C4",
+    "charge_time": 40.3013821153,
+    "mean_discharge_voltage": 0.1207559516
+  },
+  {
+    "cell_id": "G41C1",
+    "charge_time": -15.380452926,
+    "mean_discharge_voltage": 0.0052665467
+  },
+  {
+    "cell_id": "G41C2",
+    "charge_time": -18.7663644278,
+    "mean_discharge_voltage": 0.017110089
+  },
+  {
+    "cell_id": "G41C3",
+    "charge_time": -14.4708757517,
+    "mean_discharge_voltage": 0.0053799494
+  },
+  {
+    "cell_id": "G41C4",
+    "charge_time": -15.9935068262,
+    "mean_discharge_voltage": 0.0069147994
+  },
+  {
+    "cell_id": "G45C1",
+    "charge_time": 1.7841130757,
+    "mean_discharge_voltage": -0.0396009897
+  },
+  {
+    "cell_id": "G45C2",
+    "charge_time": 3.7773581439,
+    "mean_discharge_voltage": -0.034461537
+  },
+  {
+    "cell_id": "G45C3",
+    "charge_time": 2.8485606827,
+    "mean_discharge_voltage": -0.0527534858
+  },
+  {
+    "cell_id": "G45C4",
+    "charge_time": 2.5330960268,
+    "mean_discharge_voltage": -0.0431075083
+  },
+  {
+    "cell_id": "G46C1",
+    "charge_time": -4.8030993691,
+    "mean_discharge_voltage": -0.046868267
+  },
+  {
+    "cell_id": "G46C2",
+    "charge_time": -3.9967915841,
+    "mean_discharge_voltage": -0.0380585533
+  },
+  {
+    "cell_id": "G46C3",
+    "charge_time": -3.508248307,
+    "mean_discharge_voltage": -0.043705836
+  },
+  {
+    "cell_id": "G46C4",
+    "charge_time": -4.8709901606,
+    "mean_discharge_voltage": -0.0394409351
+  },
+  {
+    "cell_id": "G48C1",
+    "charge_time": -22.5412436928,
+    "mean_discharge_voltage": 0.0065158821
+  },
+  {
+    "cell_id": "G48C2",
+    "charge_time": -23.7527906373,
+    "mean_discharge_voltage": -0.0188173817
+  },
+  {
+    "cell_id": "G48C3",
+    "charge_time": -23.3134595141,
+    "mean_discharge_voltage": 0.0142413238
+  },
+  {
+    "cell_id": "G48C4",
+    "charge_time": -22.0349645381,
+    "mean_discharge_voltage": 0.005208292
+  },
+  {
+    "cell_id": "G51C1",
+    "charge_time": -21.4875740826,
+    "mean_discharge_voltage": 0.0127187659
+  },
+  {
+    "cell_id": "G51C2",
+    "charge_time": -22.0158797612,
+    "mean_discharge_voltage": -0.0007265465
+  },
+  {
+    "cell_id": "G51C3",
+    "charge_time": -23.1473089035,
+    "mean_discharge_voltage": 0.0359303093
+  },
+  {
+    "cell_id": "G51C4",
+    "charge_time": -22.4529991784,
+    "mean_discharge_voltage": 0.0216023909
+  },
+  {
+    "cell_id": "G52C2",
+    "charge_time": 7.9242425336,
+    "mean_discharge_voltage": 0.0280530263
+  },
+  {
+    "cell_id": "G52C3",
+    "charge_time": -0.7446873861,
+    "mean_discharge_voltage": 0.0314566774
+  },
+  {
+    "cell_id": "G52C4",
+    "charge_time": -1.9720930445,
+    "mean_discharge_voltage": 0.0344677011
+  },
+  {
+    "cell_id": "G53C2",
+    "charge_time": 3.0365404859,
+    "mean_discharge_voltage": 0.0238929231
+  },
+  {
+    "cell_id": "G55C1",
+    "charge_time": -6.1196658451,
+    "mean_discharge_voltage": -0.0284719807
+  },
+  {
+    "cell_id": "G55C3",
+    "charge_time": -5.9614477909,
+    "mean_discharge_voltage": -0.0181834574
+  },
+  {
+    "cell_id": "G56C1",
+    "charge_time": -16.1801778023,
+    "mean_discharge_voltage": 0.1381458734
+  },
+  {
+    "cell_id": "G56C2",
+    "charge_time": -18.5184469803,
+    "mean_discharge_voltage": 0.1353794024
+  },
+  {
+    "cell_id": "G56C3",
+    "charge_time": -19.7435571394,
+    "mean_discharge_voltage": 0.1305939208
+  },
+  {
+    "cell_id": "G56C4",
+    "charge_time": -18.7650427189,
+    "mean_discharge_voltage": 0.1370726404
+  },
+  {
+    "cell_id": "G5C1",
+    "charge_time": 26.1078158808,
+    "mean_discharge_voltage": -0.0286544402
+  },
+  {
+    "cell_id": "G5C3",
+    "charge_time": 29.497853414,
+    "mean_discharge_voltage": -0.0576390423
+  },
+  {
+    "cell_id": "G5C4",
+    "charge_time": 25.2909254798,
+    "mean_discharge_voltage": -0.0269308433
+  },
+  {
+    "cell_id": "G60C2",
+    "charge_time": 25.1039011124,
+    "mean_discharge_voltage": -0.0559473411
+  },
+  {
+    "cell_id": "G60C3",
+    "charge_time": 32.0464981027,
+    "mean_discharge_voltage": -0.0196941726
+  },
+  {
+    "cell_id": "G61C2",
+    "charge_time": -23.5364166569,
+    "mean_discharge_voltage": 0.0459070729
+  },
+  {
+    "cell_id": "G62C1",
+    "charge_time": -15.4977008758,
+    "mean_discharge_voltage": -0.0563973184
+  },
+  {
+    "cell_id": "G62C4",
+    "charge_time": -15.6564016993,
+    "mean_discharge_voltage": -0.046423332
+  },
+  {
+    "cell_id": "G63C2",
+    "charge_time": -9.1449752132,
+    "mean_discharge_voltage": -0.024517002
+  },
+  {
+    "cell_id": "G63C3",
+    "charge_time": -9.4549948589,
+    "mean_discharge_voltage": -0.0225135267
+  },
+  {
+    "cell_id": "G63C4",
+    "charge_time": -9.706321983,
+    "mean_discharge_voltage": -0.0222383986
+  },
+  {
+    "cell_id": "G64C1",
+    "charge_time": 5.4973427863,
+    "mean_discharge_voltage": -0.1040803099
+  },
+  {
+    "cell_id": "G64C3",
+    "charge_time": 5.6624575817,
+    "mean_discharge_voltage": -0.091982471
+  },
+  {
+    "cell_id": "G64C4",
+    "charge_time": 9.3470008216,
+    "mean_discharge_voltage": -0.0965241997
+  },
+  {
+    "cell_id": "G8C1",
+    "charge_time": -9.2557825863,
+    "mean_discharge_voltage": 0.1338768042
+  },
+  {
+    "cell_id": "G8C3",
+    "charge_time": -10.1600566142,
+    "mean_discharge_voltage": 0.1387450133
+  },
+  {
+    "cell_id": "G8C4",
+    "charge_time": -5.8977367987,
+    "mean_discharge_voltage": 0.1382793097
+  },
+  {
+    "cell_id": "G9C2",
+    "charge_time": 0.8291242483,
+    "mean_discharge_voltage": 0.0123458621
+  }
+]

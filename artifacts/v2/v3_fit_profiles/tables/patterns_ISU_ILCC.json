@@ -1,0 +1,2970 @@
+[
+  {
+    "cell_id": "G16C1",
+    "type": "negative",
+    "extremum": 552,
+    "amplitude_Ah": -0.0067502363,
+    "duration": 2,
+    "z_at_extremum": 0.9960957082
+  },
+  {
+    "cell_id": "G16C2",
+    "type": "positive",
+    "extremum": 507,
+    "amplitude_Ah": 0.0099772232,
+    "duration": 2,
+    "z_at_extremum": 0.518627134
+  },
+  {
+    "cell_id": "G16C2",
+    "type": "positive",
+    "extremum": 513,
+    "amplitude_Ah": 0.0110543073,
+    "duration": 2,
+    "z_at_extremum": 0.525380688
+  },
+  {
+    "cell_id": "G17C1",
+    "type": "negative",
+    "extremum": 1155,
+    "amplitude_Ah": -0.0164769523,
+    "duration": 2,
+    "z_at_extremum": 0.9776033631
+  },
+  {
+    "cell_id": "G17C1",
+    "type": "negative",
+    "extremum": 1164,
+    "amplitude_Ah": -0.0166280601,
+    "duration": 3,
+    "z_at_extremum": 0.9992354562
+  },
+  {
+    "cell_id": "G17C3",
+    "type": "positive",
+    "extremum": 715,
+    "amplitude_Ah": 0.0118463132,
+    "duration": 9,
+    "z_at_extremum": 0.2447425547
+  },
+  {
+    "cell_id": "G17C3",
+    "type": "positive",
+    "extremum": 724,
+    "amplitude_Ah": 0.0099632934,
+    "duration": 3,
+    "z_at_extremum": 0.2741293556
+  },
+  {
+    "cell_id": "G17C4",
+    "type": "positive",
+    "extremum": 905,
+    "amplitude_Ah": 0.0132140753,
+    "duration": 4,
+    "z_at_extremum": 0.5080320688
+  },
+  {
+    "cell_id": "G19C3",
+    "type": "positive",
+    "extremum": 738,
+    "amplitude_Ah": 0.0107876666,
+    "duration": 3,
+    "z_at_extremum": 0.6249391265
+  },
+  {
+    "cell_id": "G19C3",
+    "type": "positive",
+    "extremum": 925,
+    "amplitude_Ah": 0.0089044123,
+    "duration": 4,
+    "z_at_extremum": 0.8325934764
+  },
+  {
+    "cell_id": "G20C3",
+    "type": "negative",
+    "extremum": 1,
+    "amplitude_Ah": -0.0069997109,
+    "duration": 10,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G20C3",
+    "type": "positive",
+    "extremum": 47,
+    "amplitude_Ah": 0.0035002277,
+    "duration": 5,
+    "z_at_extremum": 0.0792390349
+  },
+  {
+    "cell_id": "G20C3",
+    "type": "negative",
+    "extremum": 655,
+    "amplitude_Ah": -0.0039416669,
+    "duration": 4,
+    "z_at_extremum": 1.0007776497
+  },
+  {
+    "cell_id": "G21C1",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0106048445,
+    "duration": 5,
+    "z_at_extremum": 0.0012628704
+  },
+  {
+    "cell_id": "G22C2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0109394111,
+    "duration": 8,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G22C3",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0112341946,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G22C3",
+    "type": "negative",
+    "extremum": 537,
+    "amplitude_Ah": -0.0088876383,
+    "duration": 2,
+    "z_at_extremum": 0.9970728772
+  },
+  {
+    "cell_id": "G24C2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0173880922,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G24C2",
+    "type": "negative",
+    "extremum": 624,
+    "amplitude_Ah": -0.011137256,
+    "duration": 11,
+    "z_at_extremum": 1.0012538757
+  },
+  {
+    "cell_id": "G25C1",
+    "type": "positive",
+    "extremum": 640,
+    "amplitude_Ah": 0.0097209093,
+    "duration": 2,
+    "z_at_extremum": 0.2261015801
+  },
+  {
+    "cell_id": "G25C1",
+    "type": "positive",
+    "extremum": 752,
+    "amplitude_Ah": 0.0102500886,
+    "duration": 4,
+    "z_at_extremum": 0.2960904485
+  },
+  {
+    "cell_id": "G25C1",
+    "type": "positive",
+    "extremum": 868,
+    "amplitude_Ah": 0.012287355,
+    "duration": 8,
+    "z_at_extremum": 0.3621881247
+  },
+  {
+    "cell_id": "G25C1",
+    "type": "positive",
+    "extremum": 1106,
+    "amplitude_Ah": 0.0144652814,
+    "duration": 6,
+    "z_at_extremum": 0.5789274774
+  },
+  {
+    "cell_id": "G25C1",
+    "type": "positive",
+    "extremum": 1236,
+    "amplitude_Ah": 0.0143084801,
+    "duration": 7,
+    "z_at_extremum": 0.7399086475
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0103010793,
+    "duration": 4,
+    "z_at_extremum": 0.005104294
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "positive",
+    "extremum": 17,
+    "amplitude_Ah": 0.0085758174,
+    "duration": 2,
+    "z_at_extremum": 0.0248006827
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "positive",
+    "extremum": 56,
+    "amplitude_Ah": 0.0159951926,
+    "duration": 11,
+    "z_at_extremum": -0.0535321822
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "negative",
+    "extremum": 164,
+    "amplitude_Ah": -0.0120264751,
+    "duration": 5,
+    "z_at_extremum": 0.2277220511
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "positive",
+    "extremum": 953,
+    "amplitude_Ah": 0.0115046374,
+    "duration": 6,
+    "z_at_extremum": 0.3001369299
+  },
+  {
+    "cell_id": "G25C2",
+    "type": "positive",
+    "extremum": 1307,
+    "amplitude_Ah": 0.0257643492,
+    "duration": 3,
+    "z_at_extremum": 0.6233043047
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 55,
+    "amplitude_Ah": 0.0099047963,
+    "duration": 4,
+    "z_at_extremum": 0.0867489474
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 1946,
+    "amplitude_Ah": 0.0101258967,
+    "duration": 4,
+    "z_at_extremum": 0.5696133781
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2067,
+    "amplitude_Ah": 0.0103253861,
+    "duration": 4,
+    "z_at_extremum": 0.5977691227
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2188,
+    "amplitude_Ah": 0.0117326887,
+    "duration": 8,
+    "z_at_extremum": 0.6180393216
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2311,
+    "amplitude_Ah": 0.0117951968,
+    "duration": 8,
+    "z_at_extremum": 0.650582402
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2436,
+    "amplitude_Ah": 0.0114715435,
+    "duration": 9,
+    "z_at_extremum": 0.6883761311
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2824,
+    "amplitude_Ah": 0.0100706197,
+    "duration": 4,
+    "z_at_extremum": 0.8266085028
+  },
+  {
+    "cell_id": "G25C4",
+    "type": "positive",
+    "extremum": 2957,
+    "amplitude_Ah": 0.010754714,
+    "duration": 6,
+    "z_at_extremum": 0.8582511128
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 60,
+    "amplitude_Ah": 0.0106759474,
+    "duration": 4,
+    "z_at_extremum": 0.0513160318
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 729,
+    "amplitude_Ah": 0.0085110818,
+    "duration": 2,
+    "z_at_extremum": 0.3057971179
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 859,
+    "amplitude_Ah": 0.0079659736,
+    "duration": 2,
+    "z_at_extremum": 0.3488577364
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 994,
+    "amplitude_Ah": 0.0098596459,
+    "duration": 3,
+    "z_at_extremum": 0.3753876819
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 1131,
+    "amplitude_Ah": 0.011648052,
+    "duration": 9,
+    "z_at_extremum": 0.4116507814
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 1272,
+    "amplitude_Ah": 0.0141037745,
+    "duration": 9,
+    "z_at_extremum": 0.4560450691
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 1419,
+    "amplitude_Ah": 0.0125469661,
+    "duration": 2,
+    "z_at_extremum": 0.5317184737
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 1766,
+    "amplitude_Ah": 0.0198633753,
+    "duration": 7,
+    "z_at_extremum": 0.6206218196
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "negative",
+    "extremum": 1858,
+    "amplitude_Ah": -0.0083650789,
+    "duration": 5,
+    "z_at_extremum": 0.872962521
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "negative",
+    "extremum": 1861,
+    "amplitude_Ah": -0.0081764559,
+    "duration": 2,
+    "z_at_extremum": 0.8709469019
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "negative",
+    "extremum": 1919,
+    "amplitude_Ah": -0.0079841676,
+    "duration": 2,
+    "z_at_extremum": 0.8967177184
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "positive",
+    "extremum": 2018,
+    "amplitude_Ah": 0.013740619,
+    "duration": 2,
+    "z_at_extremum": 0.7501938903
+  },
+  {
+    "cell_id": "G27C1",
+    "type": "negative",
+    "extremum": 2031,
+    "amplitude_Ah": -0.0138971592,
+    "duration": 4,
+    "z_at_extremum": 1.0122384009
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 59,
+    "amplitude_Ah": 0.0097466732,
+    "duration": 6,
+    "z_at_extremum": -0.0052218743
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 226,
+    "amplitude_Ah": 0.0063310461,
+    "duration": 2,
+    "z_at_extremum": 0.1487868388
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 340,
+    "amplitude_Ah": 0.0069983282,
+    "duration": 2,
+    "z_at_extremum": 0.2225162486
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 466,
+    "amplitude_Ah": 0.0071608917,
+    "duration": 2,
+    "z_at_extremum": 0.3150584736
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 591,
+    "amplitude_Ah": 0.0066248112,
+    "duration": 2,
+    "z_at_extremum": 0.3823127212
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 858,
+    "amplitude_Ah": 0.0098779406,
+    "duration": 5,
+    "z_at_extremum": 0.5061110191
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "positive",
+    "extremum": 1004,
+    "amplitude_Ah": 0.013223406,
+    "duration": 10,
+    "z_at_extremum": 0.5545221673
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "negative",
+    "extremum": 1090,
+    "amplitude_Ah": -0.0069435754,
+    "duration": 3,
+    "z_at_extremum": 0.7375256339
+  },
+  {
+    "cell_id": "G27C3",
+    "type": "negative",
+    "extremum": 1098,
+    "amplitude_Ah": -0.0068333032,
+    "duration": 2,
+    "z_at_extremum": 0.7382290257
+  },
+  {
+    "cell_id": "G27C4",
+    "type": "positive",
+    "extremum": 58,
+    "amplitude_Ah": 0.0094034686,
+    "duration": 10,
+    "z_at_extremum": 0.0306826335
+  },
+  {
+    "cell_id": "G27C4",
+    "type": "positive",
+    "extremum": 815,
+    "amplitude_Ah": 0.0080954929,
+    "duration": 2,
+    "z_at_extremum": 0.3206512309
+  },
+  {
+    "cell_id": "G27C4",
+    "type": "negative",
+    "extremum": 1474,
+    "amplitude_Ah": -0.008592934,
+    "duration": 2,
+    "z_at_extremum": 0.9992855632
+  },
+  {
+    "cell_id": "G28C1",
+    "type": "positive",
+    "extremum": 713,
+    "amplitude_Ah": 0.0059873109,
+    "duration": 3,
+    "z_at_extremum": 0.636186605
+  },
+  {
+    "cell_id": "G28C1",
+    "type": "positive",
+    "extremum": 857,
+    "amplitude_Ah": 0.0071145878,
+    "duration": 3,
+    "z_at_extremum": 0.7355662656
+  },
+  {
+    "cell_id": "G28C3",
+    "type": "positive",
+    "extremum": 697,
+    "amplitude_Ah": 0.0084886985,
+    "duration": 9,
+    "z_at_extremum": 0.4924260636
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "positive",
+    "extremum": 1426,
+    "amplitude_Ah": 0.0179718469,
+    "duration": 11,
+    "z_at_extremum": 0.4980363162
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1841,
+    "amplitude_Ah": -0.0116068784,
+    "duration": 3,
+    "z_at_extremum": 0.9187658809
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1845,
+    "amplitude_Ah": -0.0121619884,
+    "duration": 3,
+    "z_at_extremum": 0.9225308468
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1849,
+    "amplitude_Ah": -0.0127292298,
+    "duration": 3,
+    "z_at_extremum": 0.9257032914
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1853,
+    "amplitude_Ah": -0.0120237551,
+    "duration": 3,
+    "z_at_extremum": 0.9257728246
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1857,
+    "amplitude_Ah": -0.0117426003,
+    "duration": 3,
+    "z_at_extremum": 0.9281216062
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1861,
+    "amplitude_Ah": -0.0128333335,
+    "duration": 2,
+    "z_at_extremum": 0.9312701724
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1865,
+    "amplitude_Ah": -0.0116771638,
+    "duration": 3,
+    "z_at_extremum": 0.9356880712
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1869,
+    "amplitude_Ah": -0.0121309863,
+    "duration": 2,
+    "z_at_extremum": 0.935954976
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1872,
+    "amplitude_Ah": -0.0112557053,
+    "duration": 4,
+    "z_at_extremum": 0.9366095295
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1877,
+    "amplitude_Ah": -0.0117337838,
+    "duration": 2,
+    "z_at_extremum": 0.9402553346
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1880,
+    "amplitude_Ah": -0.0116874056,
+    "duration": 3,
+    "z_at_extremum": 0.9422050012
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1884,
+    "amplitude_Ah": -0.0128896779,
+    "duration": 2,
+    "z_at_extremum": 0.9427156881
+  },
+  {
+    "cell_id": "G29C1",
+    "type": "negative",
+    "extremum": 1888,
+    "amplitude_Ah": -0.0113326134,
+    "duration": 3,
+    "z_at_extremum": 0.8064112351
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2579,
+    "amplitude_Ah": -0.007746342,
+    "duration": 8,
+    "z_at_extremum": 0.6975086058
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2590,
+    "amplitude_Ah": -0.0081527069,
+    "duration": 9,
+    "z_at_extremum": 0.7050331675
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2601,
+    "amplitude_Ah": -0.0081421293,
+    "duration": 5,
+    "z_at_extremum": 0.7026724765
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2612,
+    "amplitude_Ah": -0.0071242568,
+    "duration": 3,
+    "z_at_extremum": 0.6945301575
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2766,
+    "amplitude_Ah": -0.0072417087,
+    "duration": 2,
+    "z_at_extremum": 0.7103465859
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2772,
+    "amplitude_Ah": -0.0072624735,
+    "duration": 2,
+    "z_at_extremum": 0.7097661909
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2785,
+    "amplitude_Ah": -0.0074616233,
+    "duration": 2,
+    "z_at_extremum": 0.7136114666
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2794,
+    "amplitude_Ah": -0.0080541815,
+    "duration": 5,
+    "z_at_extremum": 0.7209125806
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2806,
+    "amplitude_Ah": -0.0076526116,
+    "duration": 2,
+    "z_at_extremum": 0.7193264723
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2809,
+    "amplitude_Ah": -0.0076871936,
+    "duration": 2,
+    "z_at_extremum": 0.721145264
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2817,
+    "amplitude_Ah": -0.0089430307,
+    "duration": 10,
+    "z_at_extremum": 0.7294200225
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2823,
+    "amplitude_Ah": -0.0070032397,
+    "duration": 2,
+    "z_at_extremum": 0.7163188978
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2831,
+    "amplitude_Ah": -0.0073046591,
+    "duration": 2,
+    "z_at_extremum": 0.7206047654
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2836,
+    "amplitude_Ah": -0.0078454511,
+    "duration": 4,
+    "z_at_extremum": 0.7235880845
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2839,
+    "amplitude_Ah": -0.0080322762,
+    "duration": 10,
+    "z_at_extremum": 0.7255833101
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2851,
+    "amplitude_Ah": -0.0085899586,
+    "duration": 4,
+    "z_at_extremum": 0.7259482609
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 2856,
+    "amplitude_Ah": -0.007881868,
+    "duration": 2,
+    "z_at_extremum": 0.7200644356
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "positive",
+    "extremum": 3152,
+    "amplitude_Ah": 0.0278140903,
+    "duration": 9,
+    "z_at_extremum": 0.5458098447
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "negative",
+    "extremum": 3180,
+    "amplitude_Ah": -0.0120452394,
+    "duration": 2,
+    "z_at_extremum": 0.4901155078
+  },
+  {
+    "cell_id": "G29C2",
+    "type": "positive",
+    "extremum": 3288,
+    "amplitude_Ah": 0.0066625328,
+    "duration": 2,
+    "z_at_extremum": 0.6055312352
+  },
+  {
+    "cell_id": "G29C3",
+    "type": "positive",
+    "extremum": 1825,
+    "amplitude_Ah": 0.0135696753,
+    "duration": 7,
+    "z_at_extremum": 0.5062255853
+  },
+  {
+    "cell_id": "G29C3",
+    "type": "positive",
+    "extremum": 2024,
+    "amplitude_Ah": 0.0145566485,
+    "duration": 9,
+    "z_at_extremum": 0.546955593
+  },
+  {
+    "cell_id": "G29C3",
+    "type": "positive",
+    "extremum": 2448,
+    "amplitude_Ah": 0.0235737646,
+    "duration": 7,
+    "z_at_extremum": 0.6546410556
+  },
+  {
+    "cell_id": "G29C3",
+    "type": "negative",
+    "extremum": 2644,
+    "amplitude_Ah": -0.0111488895,
+    "duration": 3,
+    "z_at_extremum": 0.953627428
+  },
+  {
+    "cell_id": "G29C4",
+    "type": "positive",
+    "extremum": 1452,
+    "amplitude_Ah": 0.0154419677,
+    "duration": 9,
+    "z_at_extremum": 0.3920348707
+  },
+  {
+    "cell_id": "G29C4",
+    "type": "positive",
+    "extremum": 2108,
+    "amplitude_Ah": 0.0415724144,
+    "duration": 8,
+    "z_at_extremum": 0.6327237568
+  },
+  {
+    "cell_id": "G29C4",
+    "type": "negative",
+    "extremum": 2170,
+    "amplitude_Ah": -0.0127297791,
+    "duration": 5,
+    "z_at_extremum": 1.0004925239
+  },
+  {
+    "cell_id": "G30C3",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0086639003,
+    "duration": 2,
+    "z_at_extremum": 0.0019726766
+  },
+  {
+    "cell_id": "G30C4",
+    "type": "positive",
+    "extremum": 555,
+    "amplitude_Ah": 0.0096967316,
+    "duration": 2,
+    "z_at_extremum": 0.5408253821
+  },
+  {
+    "cell_id": "G31C1",
+    "type": "positive",
+    "extremum": 1023,
+    "amplitude_Ah": 0.0109711885,
+    "duration": 3,
+    "z_at_extremum": 0.4766887796
+  },
+  {
+    "cell_id": "G31C1",
+    "type": "positive",
+    "extremum": 1152,
+    "amplitude_Ah": 0.0192782048,
+    "duration": 10,
+    "z_at_extremum": 0.5003478391
+  },
+  {
+    "cell_id": "G31C1",
+    "type": "positive",
+    "extremum": 1284,
+    "amplitude_Ah": 0.0188846506,
+    "duration": 4,
+    "z_at_extremum": 0.6048961239
+  },
+  {
+    "cell_id": "G31C2",
+    "type": "positive",
+    "extremum": 894,
+    "amplitude_Ah": 0.0249420893,
+    "duration": 9,
+    "z_at_extremum": 0.4337075019
+  },
+  {
+    "cell_id": "G31C2",
+    "type": "positive",
+    "extremum": 1087,
+    "amplitude_Ah": 0.0207900377,
+    "duration": 5,
+    "z_at_extremum": 0.753272011
+  },
+  {
+    "cell_id": "G31C3",
+    "type": "positive",
+    "extremum": 909,
+    "amplitude_Ah": 0.0119807282,
+    "duration": 4,
+    "z_at_extremum": 0.4723713082
+  },
+  {
+    "cell_id": "G31C3",
+    "type": "negative",
+    "extremum": 1174,
+    "amplitude_Ah": -0.0140801891,
+    "duration": 4,
+    "z_at_extremum": 1.0034753079
+  },
+  {
+    "cell_id": "G31C4",
+    "type": "positive",
+    "extremum": 772,
+    "amplitude_Ah": 0.0119878571,
+    "duration": 4,
+    "z_at_extremum": 0.3768525379
+  },
+  {
+    "cell_id": "G31C4",
+    "type": "positive",
+    "extremum": 899,
+    "amplitude_Ah": 0.0375399521,
+    "duration": 11,
+    "z_at_extremum": 0.4279369673
+  },
+  {
+    "cell_id": "G31C4",
+    "type": "negative",
+    "extremum": 1018,
+    "amplitude_Ah": -0.01050054,
+    "duration": 3,
+    "z_at_extremum": 0.9283448498
+  },
+  {
+    "cell_id": "G35C1",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0192933696,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G36C2",
+    "type": "positive",
+    "extremum": 27,
+    "amplitude_Ah": 0.0079893764,
+    "duration": 2,
+    "z_at_extremum": 0.2644108241
+  },
+  {
+    "cell_id": "G37C4",
+    "type": "negative",
+    "extremum": 512,
+    "amplitude_Ah": -0.0130591838,
+    "duration": 5,
+    "z_at_extremum": 1.0041758054
+  },
+  {
+    "cell_id": "G39C1",
+    "type": "positive",
+    "extremum": 16,
+    "amplitude_Ah": 0.0067492714,
+    "duration": 2,
+    "z_at_extremum": 0.0892246751
+  },
+  {
+    "cell_id": "G39C4",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0145655335,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "negative",
+    "extremum": 966,
+    "amplitude_Ah": -0.0064863181,
+    "duration": 2,
+    "z_at_extremum": 0.570357671
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "negative",
+    "extremum": 1011,
+    "amplitude_Ah": -0.0075822776,
+    "duration": 2,
+    "z_at_extremum": 0.5815722901
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "negative",
+    "extremum": 1028,
+    "amplitude_Ah": -0.00598007,
+    "duration": 3,
+    "z_at_extremum": 0.5692039046
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "positive",
+    "extremum": 1185,
+    "amplitude_Ah": 0.0064159103,
+    "duration": 2,
+    "z_at_extremum": 0.5236804107
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "positive",
+    "extremum": 1254,
+    "amplitude_Ah": 0.0078838969,
+    "duration": 4,
+    "z_at_extremum": 0.547703623
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "positive",
+    "extremum": 1287,
+    "amplitude_Ah": 0.0059872199,
+    "duration": 5,
+    "z_at_extremum": 0.556686396
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "positive",
+    "extremum": 1338,
+    "amplitude_Ah": 0.0058802768,
+    "duration": 2,
+    "z_at_extremum": 0.5813351256
+  },
+  {
+    "cell_id": "G3C1",
+    "type": "positive",
+    "extremum": 1502,
+    "amplitude_Ah": 0.0054330353,
+    "duration": 2,
+    "z_at_extremum": 0.6472371168
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "negative",
+    "extremum": 969,
+    "amplitude_Ah": -0.0057065908,
+    "duration": 4,
+    "z_at_extremum": 0.6648428456
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "negative",
+    "extremum": 975,
+    "amplitude_Ah": -0.0078046449,
+    "duration": 11,
+    "z_at_extremum": 0.6881086178
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "negative",
+    "extremum": 994,
+    "amplitude_Ah": -0.0087426072,
+    "duration": 10,
+    "z_at_extremum": 0.7075833955
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "negative",
+    "extremum": 1001,
+    "amplitude_Ah": -0.0062275677,
+    "duration": 7,
+    "z_at_extremum": 0.6897826943
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "positive",
+    "extremum": 1020,
+    "amplitude_Ah": 0.0056991115,
+    "duration": 2,
+    "z_at_extremum": 0.6123612813
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "positive",
+    "extremum": 1261,
+    "amplitude_Ah": 0.0054862934,
+    "duration": 2,
+    "z_at_extremum": 0.7334406209
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "positive",
+    "extremum": 1272,
+    "amplitude_Ah": 0.0052371266,
+    "duration": 2,
+    "z_at_extremum": 0.7412867506
+  },
+  {
+    "cell_id": "G3C3",
+    "type": "positive",
+    "extremum": 1280,
+    "amplitude_Ah": 0.0055898046,
+    "duration": 3,
+    "z_at_extremum": 0.7409304721
+  },
+  {
+    "cell_id": "G3C4",
+    "type": "negative",
+    "extremum": 543,
+    "amplitude_Ah": -0.0070107083,
+    "duration": 7,
+    "z_at_extremum": 0.5292180521
+  },
+  {
+    "cell_id": "G3C4",
+    "type": "positive",
+    "extremum": 738,
+    "amplitude_Ah": 0.0064120996,
+    "duration": 4,
+    "z_at_extremum": 0.5984552349
+  },
+  {
+    "cell_id": "G3C4",
+    "type": "positive",
+    "extremum": 757,
+    "amplitude_Ah": 0.0083061723,
+    "duration": 11,
+    "z_at_extremum": 0.5937746338
+  },
+  {
+    "cell_id": "G3C4",
+    "type": "negative",
+    "extremum": 901,
+    "amplitude_Ah": -0.0057690206,
+    "duration": 3,
+    "z_at_extremum": 0.8874416143
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 113,
+    "amplitude_Ah": -0.0027832222,
+    "duration": 5,
+    "z_at_extremum": 0.2644164842
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 118,
+    "amplitude_Ah": -0.0028483882,
+    "duration": 3,
+    "z_at_extremum": 0.2677078731
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 120,
+    "amplitude_Ah": -0.0033836067,
+    "duration": 6,
+    "z_at_extremum": 0.2703769929
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 130,
+    "amplitude_Ah": -0.0030496091,
+    "duration": 3,
+    "z_at_extremum": 0.2712362211
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 134,
+    "amplitude_Ah": -0.0029878272,
+    "duration": 3,
+    "z_at_extremum": 0.2713529812
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 140,
+    "amplitude_Ah": -0.0026449142,
+    "duration": 3,
+    "z_at_extremum": 0.2603688351
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 168,
+    "amplitude_Ah": -0.0031689444,
+    "duration": 4,
+    "z_at_extremum": 0.2851317239
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 179,
+    "amplitude_Ah": -0.0033356942,
+    "duration": 9,
+    "z_at_extremum": 0.2879746556
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 224,
+    "amplitude_Ah": -0.0032742417,
+    "duration": 4,
+    "z_at_extremum": 0.3031993367
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 228,
+    "amplitude_Ah": -0.0026784221,
+    "duration": 2,
+    "z_at_extremum": 0.3013497216
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 233,
+    "amplitude_Ah": -0.0025979136,
+    "duration": 2,
+    "z_at_extremum": 0.3029390187
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 239,
+    "amplitude_Ah": -0.0030244362,
+    "duration": 7,
+    "z_at_extremum": 0.3084762911
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "negative",
+    "extremum": 249,
+    "amplitude_Ah": -0.0027204953,
+    "duration": 4,
+    "z_at_extremum": 0.307605132
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 595,
+    "amplitude_Ah": 0.0033596776,
+    "duration": 9,
+    "z_at_extremum": 0.351899947
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 772,
+    "amplitude_Ah": 0.0036768462,
+    "duration": 10,
+    "z_at_extremum": 0.4072099106
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 914,
+    "amplitude_Ah": 0.0041763711,
+    "duration": 6,
+    "z_at_extremum": 0.4650798304
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1080,
+    "amplitude_Ah": 0.0035072973,
+    "duration": 6,
+    "z_at_extremum": 0.5123972249
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1247,
+    "amplitude_Ah": 0.0042412636,
+    "duration": 6,
+    "z_at_extremum": 0.5615535659
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1254,
+    "amplitude_Ah": 0.0030334329,
+    "duration": 3,
+    "z_at_extremum": 0.5680246748
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1417,
+    "amplitude_Ah": 0.004331517,
+    "duration": 6,
+    "z_at_extremum": 0.6202949625
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1427,
+    "amplitude_Ah": 0.0034667436,
+    "duration": 4,
+    "z_at_extremum": 0.6209174549
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1595,
+    "amplitude_Ah": 0.0044759729,
+    "duration": 6,
+    "z_at_extremum": 0.6786632468
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1602,
+    "amplitude_Ah": 0.002866731,
+    "duration": 2,
+    "z_at_extremum": 0.6787644509
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 1958,
+    "amplitude_Ah": 0.0067731549,
+    "duration": 6,
+    "z_at_extremum": 0.7819338659
+  },
+  {
+    "cell_id": "G41C1",
+    "type": "positive",
+    "extremum": 2159,
+    "amplitude_Ah": 0.0028393707,
+    "duration": 2,
+    "z_at_extremum": 0.8558733502
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "negative",
+    "extremum": 192,
+    "amplitude_Ah": -0.0043341896,
+    "duration": 3,
+    "z_at_extremum": 0.384190122
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 466,
+    "amplitude_Ah": 0.0064218581,
+    "duration": 2,
+    "z_at_extremum": 0.3716794383
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 654,
+    "amplitude_Ah": 0.004541198,
+    "duration": 2,
+    "z_at_extremum": 0.4118070683
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 973,
+    "amplitude_Ah": 0.0051183442,
+    "duration": 3,
+    "z_at_extremum": 0.5414490086
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 1340,
+    "amplitude_Ah": 0.0066009258,
+    "duration": 8,
+    "z_at_extremum": 0.6734642808
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 1533,
+    "amplitude_Ah": 0.0080454119,
+    "duration": 8,
+    "z_at_extremum": 0.738570347
+  },
+  {
+    "cell_id": "G41C2",
+    "type": "positive",
+    "extremum": 1737,
+    "amplitude_Ah": 0.0100371165,
+    "duration": 10,
+    "z_at_extremum": 0.8160468941
+  },
+  {
+    "cell_id": "G41C3",
+    "type": "positive",
+    "extremum": 1387,
+    "amplitude_Ah": 0.0061901296,
+    "duration": 2,
+    "z_at_extremum": 0.6315903566
+  },
+  {
+    "cell_id": "G41C3",
+    "type": "positive",
+    "extremum": 1753,
+    "amplitude_Ah": 0.0083920687,
+    "duration": 6,
+    "z_at_extremum": 0.7839042645
+  },
+  {
+    "cell_id": "G41C4",
+    "type": "positive",
+    "extremum": 909,
+    "amplitude_Ah": 0.0070297006,
+    "duration": 5,
+    "z_at_extremum": 0.4527408708
+  },
+  {
+    "cell_id": "G41C4",
+    "type": "positive",
+    "extremum": 1436,
+    "amplitude_Ah": 0.0070747631,
+    "duration": 2,
+    "z_at_extremum": 0.7042376472
+  },
+  {
+    "cell_id": "G41C4",
+    "type": "positive",
+    "extremum": 1638,
+    "amplitude_Ah": 0.0102843828,
+    "duration": 10,
+    "z_at_extremum": 0.7786150886
+  },
+  {
+    "cell_id": "G45C1",
+    "type": "positive",
+    "extremum": 665,
+    "amplitude_Ah": 0.0124446077,
+    "duration": 3,
+    "z_at_extremum": 0.5061930005
+  },
+  {
+    "cell_id": "G45C1",
+    "type": "negative",
+    "extremum": 865,
+    "amplitude_Ah": -0.0103560662,
+    "duration": 2,
+    "z_at_extremum": 0.9817835933
+  },
+  {
+    "cell_id": "G45C1",
+    "type": "negative",
+    "extremum": 869,
+    "amplitude_Ah": -0.0104880668,
+    "duration": 4,
+    "z_at_extremum": 0.9889294929
+  },
+  {
+    "cell_id": "G45C1",
+    "type": "negative",
+    "extremum": 875,
+    "amplitude_Ah": -0.0102119746,
+    "duration": 2,
+    "z_at_extremum": 1.0002601189
+  },
+  {
+    "cell_id": "G45C2",
+    "type": "positive",
+    "extremum": 528,
+    "amplitude_Ah": 0.0113838106,
+    "duration": 6,
+    "z_at_extremum": 0.3996274605
+  },
+  {
+    "cell_id": "G45C2",
+    "type": "negative",
+    "extremum": 651,
+    "amplitude_Ah": -0.0131351035,
+    "duration": 10,
+    "z_at_extremum": 0.5963344734
+  },
+  {
+    "cell_id": "G45C2",
+    "type": "positive",
+    "extremum": 652,
+    "amplitude_Ah": 0.0197500119,
+    "duration": 6,
+    "z_at_extremum": 0.5328192516
+  },
+  {
+    "cell_id": "G45C3",
+    "type": "positive",
+    "extremum": 642,
+    "amplitude_Ah": 0.0363654637,
+    "duration": 6,
+    "z_at_extremum": 0.3421549627
+  },
+  {
+    "cell_id": "G45C4",
+    "type": "positive",
+    "extremum": 771,
+    "amplitude_Ah": 0.0158868421,
+    "duration": 3,
+    "z_at_extremum": 0.5259769355
+  },
+  {
+    "cell_id": "G45C4",
+    "type": "negative",
+    "extremum": 909,
+    "amplitude_Ah": -0.0116030572,
+    "duration": 2,
+    "z_at_extremum": 0.9819215032
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0099499063,
+    "duration": 2,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "positive",
+    "extremum": 750,
+    "amplitude_Ah": 0.0124153017,
+    "duration": 4,
+    "z_at_extremum": 0.4009344229
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "positive",
+    "extremum": 901,
+    "amplitude_Ah": 0.0167052794,
+    "duration": 4,
+    "z_at_extremum": 0.528920663
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "positive",
+    "extremum": 945,
+    "amplitude_Ah": 0.0100870509,
+    "duration": 2,
+    "z_at_extremum": 0.5510203152
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "positive",
+    "extremum": 973,
+    "amplitude_Ah": 0.0095177136,
+    "duration": 3,
+    "z_at_extremum": 0.583158625
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "negative",
+    "extremum": 1144,
+    "amplitude_Ah": -0.0100767219,
+    "duration": 2,
+    "z_at_extremum": 0.9807261621
+  },
+  {
+    "cell_id": "G46C1",
+    "type": "negative",
+    "extremum": 1151,
+    "amplitude_Ah": -0.0108637094,
+    "duration": 10,
+    "z_at_extremum": 0.9961702806
+  },
+  {
+    "cell_id": "G46C2",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0122956645,
+    "duration": 5,
+    "z_at_extremum": 0.000270758
+  },
+  {
+    "cell_id": "G46C2",
+    "type": "positive",
+    "extremum": 885,
+    "amplitude_Ah": 0.0171891772,
+    "duration": 6,
+    "z_at_extremum": 0.4806802348
+  },
+  {
+    "cell_id": "G46C2",
+    "type": "positive",
+    "extremum": 1040,
+    "amplitude_Ah": 0.0228393413,
+    "duration": 6,
+    "z_at_extremum": 0.655358611
+  },
+  {
+    "cell_id": "G46C3",
+    "type": "positive",
+    "extremum": 620,
+    "amplitude_Ah": 0.0284732403,
+    "duration": 9,
+    "z_at_extremum": 0.3925628607
+  },
+  {
+    "cell_id": "G46C3",
+    "type": "negative",
+    "extremum": 659,
+    "amplitude_Ah": -0.012410851,
+    "duration": 2,
+    "z_at_extremum": 0.8200406587
+  },
+  {
+    "cell_id": "G46C4",
+    "type": "positive",
+    "extremum": 616,
+    "amplitude_Ah": 0.0123892119,
+    "duration": 5,
+    "z_at_extremum": 0.331982166
+  },
+  {
+    "cell_id": "G46C4",
+    "type": "positive",
+    "extremum": 756,
+    "amplitude_Ah": 0.0188336904,
+    "duration": 7,
+    "z_at_extremum": 0.4247726344
+  },
+  {
+    "cell_id": "G46C4",
+    "type": "negative",
+    "extremum": 822,
+    "amplitude_Ah": -0.0110551733,
+    "duration": 2,
+    "z_at_extremum": 0.7563914078
+  },
+  {
+    "cell_id": "G46C4",
+    "type": "negative",
+    "extremum": 917,
+    "amplitude_Ah": -0.0117613969,
+    "duration": 3,
+    "z_at_extremum": 0.8728003243
+  },
+  {
+    "cell_id": "G48C1",
+    "type": "positive",
+    "extremum": 6,
+    "amplitude_Ah": 0.0156292637,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G48C1",
+    "type": "positive",
+    "extremum": 1150,
+    "amplitude_Ah": 0.0180540226,
+    "duration": 11,
+    "z_at_extremum": 0.4935866561
+  },
+  {
+    "cell_id": "G48C1",
+    "type": "positive",
+    "extremum": 1380,
+    "amplitude_Ah": 0.0222185439,
+    "duration": 7,
+    "z_at_extremum": 0.6143089662
+  },
+  {
+    "cell_id": "G48C1",
+    "type": "positive",
+    "extremum": 1630,
+    "amplitude_Ah": 0.0204622384,
+    "duration": 3,
+    "z_at_extremum": 0.8000447219
+  },
+  {
+    "cell_id": "G48C2",
+    "type": "positive",
+    "extremum": 6,
+    "amplitude_Ah": 0.0128495465,
+    "duration": 10,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G48C2",
+    "type": "positive",
+    "extremum": 755,
+    "amplitude_Ah": 0.0135194988,
+    "duration": 2,
+    "z_at_extremum": 0.2501249346
+  },
+  {
+    "cell_id": "G48C3",
+    "type": "positive",
+    "extremum": 1152,
+    "amplitude_Ah": 0.0071386217,
+    "duration": 3,
+    "z_at_extremum": 0.4073528394
+  },
+  {
+    "cell_id": "G48C3",
+    "type": "positive",
+    "extremum": 1878,
+    "amplitude_Ah": 0.0150643194,
+    "duration": 10,
+    "z_at_extremum": 0.6720707823
+  },
+  {
+    "cell_id": "G48C3",
+    "type": "positive",
+    "extremum": 2042,
+    "amplitude_Ah": 0.0279394137,
+    "duration": 11,
+    "z_at_extremum": 0.7439226978
+  },
+  {
+    "cell_id": "G48C4",
+    "type": "negative",
+    "extremum": 1287,
+    "amplitude_Ah": -0.0088375719,
+    "duration": 3,
+    "z_at_extremum": 0.8970597957
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "negative",
+    "extremum": 173,
+    "amplitude_Ah": -0.0087600587,
+    "duration": 6,
+    "z_at_extremum": 0.3423403953
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "positive",
+    "extremum": 917,
+    "amplitude_Ah": 0.0074693018,
+    "duration": 3,
+    "z_at_extremum": 0.3820069221
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "positive",
+    "extremum": 943,
+    "amplitude_Ah": 0.0071239185,
+    "duration": 2,
+    "z_at_extremum": 0.3896861817
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "positive",
+    "extremum": 1178,
+    "amplitude_Ah": 0.0074399183,
+    "duration": 7,
+    "z_at_extremum": 0.4835839945
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "positive",
+    "extremum": 1310,
+    "amplitude_Ah": 0.0123322664,
+    "duration": 3,
+    "z_at_extremum": 0.5742493512
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "negative",
+    "extremum": 1412,
+    "amplitude_Ah": -0.0072071312,
+    "duration": 2,
+    "z_at_extremum": 0.7636174441
+  },
+  {
+    "cell_id": "G51C1",
+    "type": "negative",
+    "extremum": 1427,
+    "amplitude_Ah": -0.0069696034,
+    "duration": 2,
+    "z_at_extremum": 0.7674349552
+  },
+  {
+    "cell_id": "G51C2",
+    "type": "positive",
+    "extremum": 85,
+    "amplitude_Ah": 0.0143993322,
+    "duration": 10,
+    "z_at_extremum": 0.0150484085
+  },
+  {
+    "cell_id": "G51C2",
+    "type": "positive",
+    "extremum": 1281,
+    "amplitude_Ah": 0.0132212477,
+    "duration": 2,
+    "z_at_extremum": 0.3685610146
+  },
+  {
+    "cell_id": "G51C2",
+    "type": "positive",
+    "extremum": 1774,
+    "amplitude_Ah": 0.0235213116,
+    "duration": 11,
+    "z_at_extremum": 0.4248759924
+  },
+  {
+    "cell_id": "G51C2",
+    "type": "negative",
+    "extremum": 2146,
+    "amplitude_Ah": -0.0122365769,
+    "duration": 3,
+    "z_at_extremum": 0.9804754196
+  },
+  {
+    "cell_id": "G51C3",
+    "type": "positive",
+    "extremum": 85,
+    "amplitude_Ah": 0.0114197674,
+    "duration": 5,
+    "z_at_extremum": 0.0534206882
+  },
+  {
+    "cell_id": "G51C3",
+    "type": "positive",
+    "extremum": 881,
+    "amplitude_Ah": 0.0123126973,
+    "duration": 3,
+    "z_at_extremum": 0.2849011586
+  },
+  {
+    "cell_id": "G51C3",
+    "type": "positive",
+    "extremum": 1321,
+    "amplitude_Ah": 0.0111229677,
+    "duration": 7,
+    "z_at_extremum": 0.4715441236
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "positive",
+    "extremum": 86,
+    "amplitude_Ah": 0.0103560956,
+    "duration": 5,
+    "z_at_extremum": 0.0440271194
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "positive",
+    "extremum": 1068,
+    "amplitude_Ah": 0.0102838157,
+    "duration": 3,
+    "z_at_extremum": 0.3143103197
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "positive",
+    "extremum": 1535,
+    "amplitude_Ah": 0.0099074925,
+    "duration": 2,
+    "z_at_extremum": 0.455171012
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "positive",
+    "extremum": 1765,
+    "amplitude_Ah": 0.0254750987,
+    "duration": 9,
+    "z_at_extremum": 0.4683022985
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "negative",
+    "extremum": 1816,
+    "amplitude_Ah": -0.0096411518,
+    "duration": 2,
+    "z_at_extremum": 0.8059013455
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "negative",
+    "extremum": 1820,
+    "amplitude_Ah": -0.0100174197,
+    "duration": 4,
+    "z_at_extremum": 0.8170670908
+  },
+  {
+    "cell_id": "G51C4",
+    "type": "negative",
+    "extremum": 1825,
+    "amplitude_Ah": -0.0110704948,
+    "duration": 7,
+    "z_at_extremum": 0.8255233037
+  },
+  {
+    "cell_id": "G52C2",
+    "type": "negative",
+    "extremum": 199,
+    "amplitude_Ah": -0.0038446432,
+    "duration": 2,
+    "z_at_extremum": 0.2220724416
+  },
+  {
+    "cell_id": "G52C2",
+    "type": "positive",
+    "extremum": 643,
+    "amplitude_Ah": 0.0042463614,
+    "duration": 2,
+    "z_at_extremum": 0.5147049357
+  },
+  {
+    "cell_id": "G52C2",
+    "type": "positive",
+    "extremum": 820,
+    "amplitude_Ah": 0.0047660003,
+    "duration": 3,
+    "z_at_extremum": 0.7058739644
+  },
+  {
+    "cell_id": "G52C2",
+    "type": "positive",
+    "extremum": 826,
+    "amplitude_Ah": 0.0040090143,
+    "duration": 2,
+    "z_at_extremum": 0.7119824453
+  },
+  {
+    "cell_id": "G52C2",
+    "type": "positive",
+    "extremum": 912,
+    "amplitude_Ah": 0.0075783553,
+    "duration": 6,
+    "z_at_extremum": 0.7877118356
+  },
+  {
+    "cell_id": "G52C3",
+    "type": "positive",
+    "extremum": 870,
+    "amplitude_Ah": 0.0099890702,
+    "duration": 6,
+    "z_at_extremum": 0.538093863
+  },
+  {
+    "cell_id": "G52C3",
+    "type": "positive",
+    "extremum": 1079,
+    "amplitude_Ah": 0.008582708,
+    "duration": 3,
+    "z_at_extremum": 0.7725973074
+  },
+  {
+    "cell_id": "G52C4",
+    "type": "positive",
+    "extremum": 41,
+    "amplitude_Ah": 0.0072373013,
+    "duration": 2,
+    "z_at_extremum": 0.1478994843
+  },
+  {
+    "cell_id": "G52C4",
+    "type": "positive",
+    "extremum": 891,
+    "amplitude_Ah": 0.0085095306,
+    "duration": 6,
+    "z_at_extremum": 0.4809963434
+  },
+  {
+    "cell_id": "G52C4",
+    "type": "positive",
+    "extremum": 988,
+    "amplitude_Ah": 0.0070781494,
+    "duration": 3,
+    "z_at_extremum": 0.5660864591
+  },
+  {
+    "cell_id": "G52C4",
+    "type": "positive",
+    "extremum": 1312,
+    "amplitude_Ah": 0.007888681,
+    "duration": 2,
+    "z_at_extremum": 0.8104320358
+  },
+  {
+    "cell_id": "G53C2",
+    "type": "positive",
+    "extremum": 2,
+    "amplitude_Ah": 0.0133021233,
+    "duration": 3,
+    "z_at_extremum": 0.0592973037
+  },
+  {
+    "cell_id": "G53C2",
+    "type": "negative",
+    "extremum": 316,
+    "amplitude_Ah": -0.012481574,
+    "duration": 8,
+    "z_at_extremum": 1.0041137577
+  },
+  {
+    "cell_id": "G55C1",
+    "type": "positive",
+    "extremum": 69,
+    "amplitude_Ah": 0.0110817668,
+    "duration": 2,
+    "z_at_extremum": -0.0030139644
+  },
+  {
+    "cell_id": "G55C1",
+    "type": "negative",
+    "extremum": 1382,
+    "amplitude_Ah": -0.0111334817,
+    "duration": 2,
+    "z_at_extremum": 0.8420850549
+  },
+  {
+    "cell_id": "G55C1",
+    "type": "negative",
+    "extremum": 1553,
+    "amplitude_Ah": -0.0134519115,
+    "duration": 2,
+    "z_at_extremum": 1.0025975696
+  },
+  {
+    "cell_id": "G55C3",
+    "type": "positive",
+    "extremum": 1027,
+    "amplitude_Ah": 0.0091593405,
+    "duration": 11,
+    "z_at_extremum": 0.5289016136
+  },
+  {
+    "cell_id": "G55C3",
+    "type": "negative",
+    "extremum": 1568,
+    "amplitude_Ah": -0.005613866,
+    "duration": 2,
+    "z_at_extremum": 0.8579159622
+  },
+  {
+    "cell_id": "G55C3",
+    "type": "negative",
+    "extremum": 1570,
+    "amplitude_Ah": -0.006299433,
+    "duration": 2,
+    "z_at_extremum": 0.8617738161
+  },
+  {
+    "cell_id": "G55C3",
+    "type": "negative",
+    "extremum": 1574,
+    "amplitude_Ah": -0.0064283339,
+    "duration": 2,
+    "z_at_extremum": 0.8632530289
+  },
+  {
+    "cell_id": "G55C3",
+    "type": "negative",
+    "extremum": 1584,
+    "amplitude_Ah": -0.0160057189,
+    "duration": 8,
+    "z_at_extremum": 0.9913122172
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 65,
+    "amplitude_Ah": 0.0075832037,
+    "duration": 10,
+    "z_at_extremum": 0.1163813065
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "negative",
+    "extremum": 234,
+    "amplitude_Ah": -0.0039571547,
+    "duration": 2,
+    "z_at_extremum": 0.2696872474
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "negative",
+    "extremum": 250,
+    "amplitude_Ah": -0.0041165506,
+    "duration": 2,
+    "z_at_extremum": 0.2776214826
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "negative",
+    "extremum": 253,
+    "amplitude_Ah": -0.0042614946,
+    "duration": 2,
+    "z_at_extremum": 0.2790062614
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "negative",
+    "extremum": 378,
+    "amplitude_Ah": -0.0039508709,
+    "duration": 2,
+    "z_at_extremum": 0.3013814494
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "negative",
+    "extremum": 460,
+    "amplitude_Ah": -0.0044996789,
+    "duration": 3,
+    "z_at_extremum": 0.3235041779
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 654,
+    "amplitude_Ah": 0.0058293541,
+    "duration": 3,
+    "z_at_extremum": 0.2913313228
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 660,
+    "amplitude_Ah": 0.0049577119,
+    "duration": 4,
+    "z_at_extremum": 0.2742388363
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 789,
+    "amplitude_Ah": 0.0049094533,
+    "duration": 4,
+    "z_at_extremum": 0.3047955816
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 920,
+    "amplitude_Ah": 0.0062340434,
+    "duration": 6,
+    "z_at_extremum": 0.3551412835
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1056,
+    "amplitude_Ah": 0.007181997,
+    "duration": 9,
+    "z_at_extremum": 0.3868234605
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1070,
+    "amplitude_Ah": 0.0046641511,
+    "duration": 4,
+    "z_at_extremum": 0.3918545091
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1193,
+    "amplitude_Ah": 0.0058443989,
+    "duration": 5,
+    "z_at_extremum": 0.4389677584
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1334,
+    "amplitude_Ah": 0.0064913969,
+    "duration": 7,
+    "z_at_extremum": 0.4579250975
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1474,
+    "amplitude_Ah": 0.0065126605,
+    "duration": 10,
+    "z_at_extremum": 0.5255647655
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1633,
+    "amplitude_Ah": 0.0074904475,
+    "duration": 10,
+    "z_at_extremum": 0.5402223496
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1780,
+    "amplitude_Ah": 0.008474236,
+    "duration": 8,
+    "z_at_extremum": 0.6161482872
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 1927,
+    "amplitude_Ah": 0.006138278,
+    "duration": 6,
+    "z_at_extremum": 0.6809357954
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2077,
+    "amplitude_Ah": 0.0079255274,
+    "duration": 7,
+    "z_at_extremum": 0.7274087547
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2228,
+    "amplitude_Ah": 0.0089281027,
+    "duration": 7,
+    "z_at_extremum": 0.774559889
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2382,
+    "amplitude_Ah": 0.0086512102,
+    "duration": 9,
+    "z_at_extremum": 0.8336436581
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2392,
+    "amplitude_Ah": 0.0047133547,
+    "duration": 2,
+    "z_at_extremum": 0.8351341507
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2538,
+    "amplitude_Ah": 0.0108026963,
+    "duration": 11,
+    "z_at_extremum": 0.8737705166
+  },
+  {
+    "cell_id": "G56C1",
+    "type": "positive",
+    "extremum": 2551,
+    "amplitude_Ah": 0.0047436035,
+    "duration": 4,
+    "z_at_extremum": 0.8945222442
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 65,
+    "amplitude_Ah": 0.0044548699,
+    "duration": 2,
+    "z_at_extremum": 0.1237060265
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "negative",
+    "extremum": 214,
+    "amplitude_Ah": -0.0038836932,
+    "duration": 3,
+    "z_at_extremum": 0.2315919903
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "negative",
+    "extremum": 219,
+    "amplitude_Ah": -0.003878235,
+    "duration": 4,
+    "z_at_extremum": 0.2322237542
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "negative",
+    "extremum": 226,
+    "amplitude_Ah": -0.0034402152,
+    "duration": 3,
+    "z_at_extremum": 0.2348607913
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "negative",
+    "extremum": 257,
+    "amplitude_Ah": -0.0039753749,
+    "duration": 5,
+    "z_at_extremum": 0.2455090238
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 404,
+    "amplitude_Ah": 0.0033389797,
+    "duration": 2,
+    "z_at_extremum": 0.2317275133
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 410,
+    "amplitude_Ah": 0.0035882263,
+    "duration": 3,
+    "z_at_extremum": 0.212557922
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "negative",
+    "extremum": 512,
+    "amplitude_Ah": -0.0031668763,
+    "duration": 2,
+    "z_at_extremum": 0.3115872099
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 538,
+    "amplitude_Ah": 0.0040289585,
+    "duration": 3,
+    "z_at_extremum": 0.2624019601
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 676,
+    "amplitude_Ah": 0.0041293543,
+    "duration": 6,
+    "z_at_extremum": 0.2976131782
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 689,
+    "amplitude_Ah": 0.0034235644,
+    "duration": 3,
+    "z_at_extremum": 0.2856934022
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 815,
+    "amplitude_Ah": 0.0048926983,
+    "duration": 5,
+    "z_at_extremum": 0.3318051989
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 956,
+    "amplitude_Ah": 0.0047160547,
+    "duration": 5,
+    "z_at_extremum": 0.3806675836
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 1116,
+    "amplitude_Ah": 0.0045331568,
+    "duration": 4,
+    "z_at_extremum": 0.4154421142
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 1558,
+    "amplitude_Ah": 0.0035936811,
+    "duration": 2,
+    "z_at_extremum": 0.5730959489
+  },
+  {
+    "cell_id": "G56C2",
+    "type": "positive",
+    "extremum": 2339,
+    "amplitude_Ah": 0.0112377996,
+    "duration": 11,
+    "z_at_extremum": 0.8286241884
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 37,
+    "amplitude_Ah": 0.0072628967,
+    "duration": 4,
+    "z_at_extremum": 0.0625797974
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 42,
+    "amplitude_Ah": 0.007653574,
+    "duration": 2,
+    "z_at_extremum": 0.0631640773
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 827,
+    "amplitude_Ah": 0.0069648266,
+    "duration": 2,
+    "z_at_extremum": 0.317753028
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 971,
+    "amplitude_Ah": 0.0072812825,
+    "duration": 4,
+    "z_at_extremum": 0.3317645732
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1117,
+    "amplitude_Ah": 0.0070781072,
+    "duration": 3,
+    "z_at_extremum": 0.3936860719
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1261,
+    "amplitude_Ah": 0.0082440301,
+    "duration": 3,
+    "z_at_extremum": 0.4935562087
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1413,
+    "amplitude_Ah": 0.0083022051,
+    "duration": 7,
+    "z_at_extremum": 0.5718415642
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1569,
+    "amplitude_Ah": 0.0083314961,
+    "duration": 5,
+    "z_at_extremum": 0.661432321
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1747,
+    "amplitude_Ah": 0.010964329,
+    "duration": 7,
+    "z_at_extremum": 0.7425920399
+  },
+  {
+    "cell_id": "G56C3",
+    "type": "positive",
+    "extremum": 1920,
+    "amplitude_Ah": 0.0121412171,
+    "duration": 8,
+    "z_at_extremum": 0.8454227123
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 65,
+    "amplitude_Ah": 0.004423967,
+    "duration": 2,
+    "z_at_extremum": 0.2422338323
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "negative",
+    "extremum": 218,
+    "amplitude_Ah": -0.0052685794,
+    "duration": 2,
+    "z_at_extremum": 0.3624531361
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "negative",
+    "extremum": 227,
+    "amplitude_Ah": -0.0041010806,
+    "duration": 3,
+    "z_at_extremum": 0.3602463589
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "negative",
+    "extremum": 267,
+    "amplitude_Ah": -0.0045166836,
+    "duration": 4,
+    "z_at_extremum": 0.3780671567
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 554,
+    "amplitude_Ah": 0.0048322666,
+    "duration": 4,
+    "z_at_extremum": 0.3739358432
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 695,
+    "amplitude_Ah": 0.0056404039,
+    "duration": 4,
+    "z_at_extremum": 0.4026485349
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 837,
+    "amplitude_Ah": 0.0067911789,
+    "duration": 7,
+    "z_at_extremum": 0.4339903038
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 982,
+    "amplitude_Ah": 0.0057232038,
+    "duration": 4,
+    "z_at_extremum": 0.4864886242
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1129,
+    "amplitude_Ah": 0.0057367143,
+    "duration": 5,
+    "z_at_extremum": 0.5391817521
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1280,
+    "amplitude_Ah": 0.0058122673,
+    "duration": 4,
+    "z_at_extremum": 0.591295817
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1285,
+    "amplitude_Ah": 0.0040753919,
+    "duration": 2,
+    "z_at_extremum": 0.5839667261
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1434,
+    "amplitude_Ah": 0.0071391601,
+    "duration": 5,
+    "z_at_extremum": 0.6402110465
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1441,
+    "amplitude_Ah": 0.0042958859,
+    "duration": 2,
+    "z_at_extremum": 0.6412854471
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1590,
+    "amplitude_Ah": 0.0086047018,
+    "duration": 9,
+    "z_at_extremum": 0.6918515281
+  },
+  {
+    "cell_id": "G56C4",
+    "type": "positive",
+    "extremum": 1932,
+    "amplitude_Ah": 0.0106316367,
+    "duration": 8,
+    "z_at_extremum": 0.8091304751
+  },
+  {
+    "cell_id": "G5C3",
+    "type": "positive",
+    "extremum": 21,
+    "amplitude_Ah": 0.0055862711,
+    "duration": 3,
+    "z_at_extremum": 0.0025061168
+  },
+  {
+    "cell_id": "G5C3",
+    "type": "positive",
+    "extremum": 654,
+    "amplitude_Ah": 0.0054301946,
+    "duration": 2,
+    "z_at_extremum": 0.6860284461
+  },
+  {
+    "cell_id": "G5C3",
+    "type": "negative",
+    "extremum": 724,
+    "amplitude_Ah": -0.0144294004,
+    "duration": 11,
+    "z_at_extremum": 1.0046342156
+  },
+  {
+    "cell_id": "G5C4",
+    "type": "negative",
+    "extremum": 345,
+    "amplitude_Ah": -0.0222855637,
+    "duration": 6,
+    "z_at_extremum": 0.9932749484
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0102836026,
+    "duration": 2,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "positive",
+    "extremum": 74,
+    "amplitude_Ah": 0.010453677,
+    "duration": 3,
+    "z_at_extremum": 0.0623274866
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "positive",
+    "extremum": 473,
+    "amplitude_Ah": 0.0100033834,
+    "duration": 2,
+    "z_at_extremum": 0.4255238207
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "positive",
+    "extremum": 631,
+    "amplitude_Ah": 0.0073431326,
+    "duration": 3,
+    "z_at_extremum": 0.5697877284
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "negative",
+    "extremum": 742,
+    "amplitude_Ah": -0.0078034897,
+    "duration": 2,
+    "z_at_extremum": 0.8659604165
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "positive",
+    "extremum": 777,
+    "amplitude_Ah": 0.008923884,
+    "duration": 2,
+    "z_at_extremum": 0.7581871089
+  },
+  {
+    "cell_id": "G60C2",
+    "type": "negative",
+    "extremum": 828,
+    "amplitude_Ah": -0.0111430596,
+    "duration": 4,
+    "z_at_extremum": 1.0174264719
+  },
+  {
+    "cell_id": "G60C3",
+    "type": "positive",
+    "extremum": 446,
+    "amplitude_Ah": 0.0068624952,
+    "duration": 4,
+    "z_at_extremum": 0.5150746816
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 62,
+    "amplitude_Ah": 0.0044642596,
+    "duration": 6,
+    "z_at_extremum": 0.1089879505
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 112,
+    "amplitude_Ah": 0.0041450743,
+    "duration": 2,
+    "z_at_extremum": 0.1215268392
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "negative",
+    "extremum": 233,
+    "amplitude_Ah": -0.004400751,
+    "duration": 5,
+    "z_at_extremum": 0.2460821562
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "negative",
+    "extremum": 237,
+    "amplitude_Ah": -0.0043426725,
+    "duration": 4,
+    "z_at_extremum": 0.2462076261
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 548,
+    "amplitude_Ah": 0.0048473943,
+    "duration": 5,
+    "z_at_extremum": 0.2608826402
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 743,
+    "amplitude_Ah": 0.005670689,
+    "duration": 4,
+    "z_at_extremum": 0.3132248813
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 940,
+    "amplitude_Ah": 0.0079374012,
+    "duration": 9,
+    "z_at_extremum": 0.3560799975
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 1143,
+    "amplitude_Ah": 0.0085873659,
+    "duration": 10,
+    "z_at_extremum": 0.4203406125
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 1354,
+    "amplitude_Ah": 0.00988094,
+    "duration": 11,
+    "z_at_extremum": 0.4835092183
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "positive",
+    "extremum": 1797,
+    "amplitude_Ah": 0.0142571246,
+    "duration": 11,
+    "z_at_extremum": 0.6016445793
+  },
+  {
+    "cell_id": "G61C2",
+    "type": "negative",
+    "extremum": 2417,
+    "amplitude_Ah": -0.0088907483,
+    "duration": 5,
+    "z_at_extremum": 0.981186567
+  },
+  {
+    "cell_id": "G62C1",
+    "type": "positive",
+    "extremum": 79,
+    "amplitude_Ah": 0.011152416,
+    "duration": 10,
+    "z_at_extremum": 0.0537672081
+  },
+  {
+    "cell_id": "G62C4",
+    "type": "positive",
+    "extremum": 640,
+    "amplitude_Ah": 0.0237205415,
+    "duration": 10,
+    "z_at_extremum": 0.2937468088
+  },
+  {
+    "cell_id": "G63C2",
+    "type": "positive",
+    "extremum": 522,
+    "amplitude_Ah": 0.0095889101,
+    "duration": 10,
+    "z_at_extremum": 0.5711411414
+  },
+  {
+    "cell_id": "G63C2",
+    "type": "positive",
+    "extremum": 668,
+    "amplitude_Ah": 0.0092355793,
+    "duration": 5,
+    "z_at_extremum": 0.7134723455
+  },
+  {
+    "cell_id": "G63C2",
+    "type": "positive",
+    "extremum": 827,
+    "amplitude_Ah": 0.0119144557,
+    "duration": 6,
+    "z_at_extremum": 0.8551396715
+  },
+  {
+    "cell_id": "G63C3",
+    "type": "positive",
+    "extremum": 517,
+    "amplitude_Ah": 0.0070316367,
+    "duration": 7,
+    "z_at_extremum": 0.4568880367
+  },
+  {
+    "cell_id": "G63C3",
+    "type": "positive",
+    "extremum": 796,
+    "amplitude_Ah": 0.0058412777,
+    "duration": 4,
+    "z_at_extremum": 0.6238034035
+  },
+  {
+    "cell_id": "G63C3",
+    "type": "positive",
+    "extremum": 944,
+    "amplitude_Ah": 0.0065570212,
+    "duration": 4,
+    "z_at_extremum": 0.6946322011
+  },
+  {
+    "cell_id": "G63C3",
+    "type": "positive",
+    "extremum": 1097,
+    "amplitude_Ah": 0.0054545297,
+    "duration": 5,
+    "z_at_extremum": 0.7956606118
+  },
+  {
+    "cell_id": "G63C4",
+    "type": "positive",
+    "extremum": 506,
+    "amplitude_Ah": 0.0067573259,
+    "duration": 2,
+    "z_at_extremum": 0.3907197916
+  },
+  {
+    "cell_id": "G63C4",
+    "type": "positive",
+    "extremum": 639,
+    "amplitude_Ah": 0.0093049764,
+    "duration": 10,
+    "z_at_extremum": 0.412720203
+  },
+  {
+    "cell_id": "G63C4",
+    "type": "positive",
+    "extremum": 774,
+    "amplitude_Ah": 0.0072252025,
+    "duration": 3,
+    "z_at_extremum": 0.4996618704
+  },
+  {
+    "cell_id": "G63C4",
+    "type": "positive",
+    "extremum": 1534,
+    "amplitude_Ah": 0.0078395494,
+    "duration": 7,
+    "z_at_extremum": 0.7836115825
+  },
+  {
+    "cell_id": "G63C4",
+    "type": "positive",
+    "extremum": 1694,
+    "amplitude_Ah": 0.0093139895,
+    "duration": 8,
+    "z_at_extremum": 0.8595836995
+  },
+  {
+    "cell_id": "G64C3",
+    "type": "positive",
+    "extremum": 580,
+    "amplitude_Ah": 0.0071283303,
+    "duration": 6,
+    "z_at_extremum": 0.5873921545
+  },
+  {
+    "cell_id": "G64C3",
+    "type": "positive",
+    "extremum": 688,
+    "amplitude_Ah": 0.0088916028,
+    "duration": 4,
+    "z_at_extremum": 0.6896402193
+  },
+  {
+    "cell_id": "G64C4",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0119126221,
+    "duration": 6,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "G8C1",
+    "type": "negative",
+    "extremum": 133,
+    "amplitude_Ah": -0.0067211993,
+    "duration": 3,
+    "z_at_extremum": 0.4086028208
+  },
+  {
+    "cell_id": "G8C3",
+    "type": "positive",
+    "extremum": 26,
+    "amplitude_Ah": 0.0059851377,
+    "duration": 3,
+    "z_at_extremum": 0.1191880191
+  },
+  {
+    "cell_id": "G8C3",
+    "type": "positive",
+    "extremum": 28,
+    "amplitude_Ah": 0.0061029478,
+    "duration": 3,
+    "z_at_extremum": 0.1194634032
+  },
+  {
+    "cell_id": "G8C3",
+    "type": "negative",
+    "extremum": 187,
+    "amplitude_Ah": -0.0066003562,
+    "duration": 2,
+    "z_at_extremum": 0.3470261247
+  },
+  {
+    "cell_id": "G8C3",
+    "type": "negative",
+    "extremum": 265,
+    "amplitude_Ah": -0.0058140082,
+    "duration": 2,
+    "z_at_extremum": 0.3855015829
+  },
+  {
+    "cell_id": "G8C3",
+    "type": "positive",
+    "extremum": 1721,
+    "amplitude_Ah": 0.0064438887,
+    "duration": 3,
+    "z_at_extremum": 0.9606230325
+  },
+  {
+    "cell_id": "G9C2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0248831509,
+    "duration": 7,
+    "z_at_extremum": 0.0
+  }
+]

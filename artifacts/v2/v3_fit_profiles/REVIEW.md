@@ -81,3 +81,18 @@ Mappings and reference point:
 ## Decisions needed
 
 None. The pre-data decisions are D25 and r3; the post-data decision is D27.
+
+## Addendum — third profile (ISU-ILCC), run 2026-10-07 after its V2 audit
+
+- **Run.** `python scripts/v2/v3_fit_profiles.py --datasets ISU_ILCC --profile-config ISU_ILCC=isu_ilcc`. The checks
+  are in `logs/checks_ISU_ILCC.md` (all pass) and the run record in `logs/run_ISU_ILCC.json`. `tables/summary.json`
+  merges all three profiles.
+- **Fit.**
+  - Family: power law. 102 fitting units, all reaching EOL; θ at a bound in 2 %.
+  - Backfit converges in 7–8 iterations.
+  - Patterns are not enabled (positive ratio 1.66, the V2 audit's value).
+- **Offsets.** They absorb the test condition: charge-time between-unit variance 376.7 → 2.3 min²; mean discharge V
+  4.5e-3 → 4.2e-6 V². The within-unit AR(1) charge-time variance halves (21.9 → 11.9 min²).
+- **Within-unit correlation (ρ̄).** Small: capacity–mean discharge V −0.17; others |ρ̄| ≤ 0.04.
+- **Consequence.** V4 measures an offset share of Var(y) of 0.76–0.82, above the stop level. See
+  `artifacts/v2/STOP_REPORT_third_profile_offsets.md`.

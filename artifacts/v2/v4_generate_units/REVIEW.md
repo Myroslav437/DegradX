@@ -76,3 +76,22 @@ The 6 warnings are all declared readings, not construction errors:
 ## Decisions needed
 
 None.
+
+## Addendum — third profile (ISU-ILCC): **stop and report** (brief §6)
+
+- **Run.** `python scripts/v2/v4_generate_units.py --datasets ISU_ILCC --profile-config ISU_ILCC=isu_ilcc`. The checks
+  are in `logs/checks_ISU_ILCC.md` and `tables/checks_ISU_ILCC.*`.
+- **Construction checks pass:**
+  - Σϕ* = y; g(x) − y = Σwε; pristine y = 0; E[ε] = 0;
+  - z and T as declared; pattern invariance;
+  - X3 construction 0.019 ≤ 0.05.
+- **Fails, as a declared stop case: the offset share Var(y_offset) / Var(y) = 0.773 / 0.765 / 0.823** for generation
+  seeds 0 / 1 / 2 (recency; uniform the same to 0.001). Above 0.5.
+  - The offsets are 99.2 % (charge time) and 97.6 % (mean discharge V) explained by the test condition, so the target
+    would mostly encode the protocol a cell ran under.
+  - The state, the options and the recommendation (report ISU-ILCC as the X6 outcome and continue v2 with MATR and
+    HUST) are in `artifacts/v2/STOP_REPORT_third_profile_offsets.md`.
+  - **The third profile is parked pending the authors' decision.**
+- **Also reported, not stop cases:**
+  - Generated q₁ IQR 11.0–13.7 mAh against 2.7 mAh measured (power-law back-extrapolation to the first position).
+  - Estimator check 0.231.

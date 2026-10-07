@@ -1,0 +1,42 @@
+[
+  {
+    "k": 2.0,
+    "positive": 329,
+    "negative": 235,
+    "positive_amp_median_Ah": 0.7411554697,
+    "positions": 119349,
+    "residual_scale_Ah": 0.3276844691
+  },
+  {
+    "k": 2.5,
+    "positive": 248,
+    "negative": 123,
+    "positive_amp_median_Ah": 0.9026694234,
+    "positions": 119349,
+    "residual_scale_Ah": 0.3276844691
+  },
+  {
+    "k": 3.0,
+    "positive": 190,
+    "negative": 60,
+    "positive_amp_median_Ah": 0.9464568065,
+    "positions": 119349,
+    "residual_scale_Ah": 0.3276844691
+  },
+  {
+    "k": 3.5,
+    "positive": 150,
+    "negative": 40,
+    "positive_amp_median_Ah": 0.9145708177,
+    "positions": 119349,
+    "residual_scale_Ah": 0.3276844691
+  },
+  {
+    "k": 4.0,
+    "positive": 131,
+    "negative": 29,
+    "positive_amp_median_Ah": 0.9753443164,
+    "positions": 119349,
+    "residual_scale_Ah": 0.3276844691
+  }
+]

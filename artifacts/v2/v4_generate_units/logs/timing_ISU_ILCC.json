@@ -1,0 +1,16 @@
+{
+  "stage": "v2/v4_generate_units",
+  "device": "cpu",
+  "wall_clock_s": 278.541,
+  "sections_s": {
+    "ISU_ILCC_generate_seed0": 1.278,
+    "ISU_ILCC_checks_seed0": 4.466,
+    "ISU_ILCC_generate_seed1": 1.3,
+    "ISU_ILCC_checks_seed1": 3.966,
+    "ISU_ILCC_generate_seed2": 1.258,
+    "ISU_ILCC_checks_seed2": 3.857,
+    "ISU_ILCC_x3_off_set": 0.965,
+    "ISU_ILCC_estimator_check": 252.509,
+    "ISU_ILCC_figures": 4.155
+  }
+}

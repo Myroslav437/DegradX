@@ -1,0 +1,10 @@
+{
+  "stage": "v2/v3_fit_profiles",
+  "device": "cpu",
+  "wall_clock_s": 87.24,
+  "sections_s": {
+    "ISU_ILCC_split": 0.596,
+    "ISU_ILCC_fit": 82.004,
+    "ISU_ILCC_figures": 2.061
+  }
+}
