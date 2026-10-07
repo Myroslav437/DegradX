@@ -1,0 +1,31 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[PASS] MATR [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.091
+[PASS] MATR [recency]: all 10 ensemble members pass the gate: expected 10/10; observed 10/10
+[PASS] MATR [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0002, 0.0001]
+[PASS] MATR [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0001, 0.0000]
+[PASS] MATR [recency]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0763 [0.0659, 0.0925]
+[PASS] MATR [recency]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0525 [0.0369, 0.0920]
+[PASS] MATR [recency]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0488 [0.0378, 0.0791]
+[PASS] MATR [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.090
+[PASS] MATR [uniform]: all 10 ensemble members pass the gate: expected 10/10; observed 10/10
+[PASS] MATR [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0002, 0.0001]
+[PASS] MATR [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0001, 0.0000]
+[PASS] MATR [uniform]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0760 [0.0655, 0.0918]
+[PASS] MATR [uniform]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0532 [0.0380, 0.0895]
+[PASS] MATR [uniform]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0496 [0.0393, 0.0774]
+[PASS] HUST [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.095
+[PASS] HUST [recency]: all 10 ensemble members pass the gate: expected 10/10; observed 10/10
+[PASS] HUST [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0001, 0.0000]
+[PASS] HUST [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [recency]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0685 [0.0573, 0.0843]
+[PASS] HUST [recency]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0145 [0.0118, 0.0184]
+[PASS] HUST [recency]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.6305 [0.5447, 0.7438]
+[PASS] HUST [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3): expected <= 0.3; observed 0.095
+[PASS] HUST [uniform]: all 10 ensemble members pass the gate: expected 10/10; observed 10/10
+[PASS] HUST [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed -0.0000 [-0.0001, 0.0000]
+[PASS] HUST [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test): expected <= 0.02; observed 0.0000 [-0.0000, 0.0000]
+[PASS] HUST [uniform]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0679 [0.0569, 0.0833]
+[PASS] HUST [uniform]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.0146 [0.0118, 0.0185]
+[PASS] HUST [uniform]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not): expected > 0; observed 0.6340 [0.5473, 0.7452]
