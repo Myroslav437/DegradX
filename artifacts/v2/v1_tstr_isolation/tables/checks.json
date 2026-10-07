@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MATR: the full input set reproduces v1's TSTR ratio (S5, same seeds and units)",
+    "expected": "3.420196",
+    "observed": "3.420196",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: held-out units reaching EOL >= 20 (D02b transfer minimum)",
+    "expected": ">= 20",
+    "observed": "38",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: every scored window ends at or after k = 20",
+    "expected": "0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: the full input set reproduces v1's TSTR ratio (S5, same seeds and units)",
+    "expected": "1.461294",
+    "observed": "1.461294",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: held-out units reaching EOL >= 20 (D02b transfer minimum)",
+    "expected": ">= 20",
+    "observed": "23",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: every scored window ends at or after k = 20",
+    "expected": "0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  }
+]

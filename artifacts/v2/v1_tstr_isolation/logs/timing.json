@@ -1,0 +1,19 @@
+{
+  "stage": "v2/v1_tstr_isolation",
+  "device": "cuda",
+  "wall_clock_s": 4198.014,
+  "sections_s": {
+    "MATR_full": 222.703,
+    "MATR_capacity_only": 360.519,
+    "MATR_capacity_relative": 279.366,
+    "MATR_capacity_state": 323.245,
+    "MATR_full_centred": 231.224,
+    "MATR_full_D27": 221.929,
+    "HUST_full": 249.263,
+    "HUST_capacity_only": 328.324,
+    "HUST_capacity_relative": 325.262,
+    "HUST_capacity_state": 408.517,
+    "HUST_full_centred": 687.334,
+    "HUST_full_D27": 553.37
+  }
+}

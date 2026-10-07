@@ -1,0 +1,21 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[v1] MATR full: ratio 3.420 [2.276, 4.958]
+[v1] MATR capacity_only: ratio 1.096 [0.865, 1.497]
+[v1] MATR capacity_relative: ratio 1.106 [0.971, 1.239]
+[v1] MATR capacity_state: ratio 1.109 [0.946, 1.299]
+[v1] MATR full_centred: ratio 2.035 [1.415, 2.762]
+[v1] MATR full_D27: ratio 3.506 [2.299, 4.994]
+[v1] HUST full: ratio 1.461 [1.111, 1.764]
+[v1] HUST capacity_only: ratio 1.280 [1.079, 1.529]
+[v1] HUST capacity_relative: ratio 1.164 [0.920, 1.451]
+[v1] HUST capacity_state: ratio 1.137 [0.899, 1.396]
+[v1] HUST full_centred: ratio 1.222 [1.049, 1.455]
+[v1] HUST full_D27: ratio 1.461 [1.111, 1.764]
+[PASS] MATR: the full input set reproduces v1's TSTR ratio (S5, same seeds and units): expected 3.420196; observed 3.420196
+[PASS] MATR: held-out units reaching EOL >= 20 (D02b transfer minimum): expected >= 20; observed 38
+[PASS] MATR: every scored window ends at or after k = 20: expected 0; observed 0
+[PASS] HUST: the full input set reproduces v1's TSTR ratio (S5, same seeds and units): expected 1.461294; observed 1.461294
+[PASS] HUST: held-out units reaching EOL >= 20 (D02b transfer minimum): expected >= 20; observed 23
+[PASS] HUST: every scored window ends at or after k = 20: expected 0; observed 0

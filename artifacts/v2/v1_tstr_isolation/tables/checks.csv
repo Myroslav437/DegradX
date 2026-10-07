@@ -1,0 +1,7 @@
+name,expected,observed,passed,severity
+"MATR: the full input set reproduces v1's TSTR ratio (S5, same seeds and units)",3.420196,3.420196,True,warn
+MATR: held-out units reaching EOL >= 20 (D02b transfer minimum),>= 20,38,True,warn
+MATR: every scored window ends at or after k = 20,0,0,True,error
+"HUST: the full input set reproduces v1's TSTR ratio (S5, same seeds and units)",1.461294,1.461294,True,warn
+HUST: held-out units reaching EOL >= 20 (D02b transfer minimum),>= 20,23,True,warn
+HUST: every scored window ends at or after k = 20,0,0,True,error
