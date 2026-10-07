@@ -13,6 +13,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+
 from pathlib import Path
 
 import numpy as np
@@ -308,18 +309,24 @@ def write_provenance_md(entries):
 
 def main() -> int:
     p = stage_parser(__doc__, "v2/v10_write_paper")
-    p.add_argument("--tables", nargs="*", default=["fidelity", "properties", "usability", "scores", "isolation", "reference"])
+    p.add_argument("--tables", nargs="*", default=["fidelity", "properties", "usability", "scores", "isolation", "reference", "figure_fidelity", "figure_degradation",
+                                                    "figure_floor"])
     p.add_argument("--tables-dir", default=None, help="write LaTeX bodies here instead of paper/tables (testing)")
     p.add_argument("--no-provenance", action="store_true")
     args = p.parse_args()
-    global TABLES
-    if args.tables_dir:
+    global TABLES, PAPER
+    if args.dry_run:
+        print(f"plan: v2 tables/figures {args.tables}")
+        return 0
+    if args.tables_dir:  # testing: tables and figures go to a scratch directory, never into paper/
         TABLES = Path(args.tables_dir)
         TABLES.mkdir(parents=True, exist_ok=True)
+        PAPER = TABLES
+        (PAPER / "img").mkdir(parents=True, exist_ok=True)
     StageContext.from_args(args)
     RESULTS_V2.mkdir(parents=True, exist_ok=True)
     fns = {"fidelity": table_fidelity, "properties": table_properties, "usability": table_usability, "scores": table_scores, "isolation": table_isolation,
-           "reference": table_reference}
+           "reference": table_reference, "figure_fidelity": figure_fidelity, "figure_degradation": figure_degradation, "figure_floor": figure_floor}
     for t in args.tables:
         fns[t]()
         print(f"[v10] {t} done", flush=True)
@@ -331,6 +338,148 @@ def main() -> int:
     write_json(allp, RESULTS_V2 / "provenance.json")
     write_provenance_md(allp)
     return 0
+
+
+
+# ---------------------------------------------------------------------------------------------------------------- Figures
+def figure_fidelity():
+    """Figure 6 (v2): measured (grey) and generated (black) capacity trajectories per v2 profile, z = 0 and z = 1 marked."""
+    import pickle
+
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    import pandas as pd
+    from matplotlib.lines import Line2D
+
+    import _common as C
+    from degradx import DATA_V2
+    from degradx.data.audit import CleaningRule, clean_capacity
+    from degradx.utils.config import load_declarations
+    from degradx.viz import style
+
+    dd = load_declarations()["declared_by_design"]
+    rule = CleaningRule("D12", **dd["capacity_series"]["cleaning_rule"]["params"])
+    profs = [d for d in ("MATR", "HUST") if (ARTIFACTS_V2 / "v5_fidelity" / "tables" / f"properties_{d}.json").exists()]
+    style.apply()
+    fig, axes = plt.subplots(1, len(profs), figsize=(style.TEXTWIDTH_IN * len(profs) / 3 + 0.6, 2.0), squeeze=False)
+    for ax, ds in zip(axes[0], profs):
+        q_nom = C.q_nom_of(ds)
+        prof = C.v2_profile(ds)
+        split = C.v2_split(ds)
+        df = C.load_scope(ds, dd)
+        for cid in split["cell_id"]:
+            d = clean_capacity(df[df["cell_id"] == cid], "capacity_cycler_Ah", rule, q_nom)
+            ax.plot(d["position"], d["capacity_cycler_Ah"], color=style.MEASURED_BUNDLE, lw=style.LW_THIN, zorder=1)
+        units, _ = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
+        for u in units[:25]:
+            ax.plot(np.arange(1, u.T + 1), u.x[:, 0], color=style.GENERATED, lw=0.5, zorder=2)
+        q1 = prof["estimated_from_data"]["E3_channel_mappings"]["capacity"]["phi0"]
+        rho = prof["declared_used"]["rho"]
+        ax.set_ylim(0.9 * rho * q_nom, 1.08 * q1)
+        for val, lab in ((q1, r"$z=0$ (median $q_1$)"), (rho * q_nom, r"$z=1$")):
+            ax.axhline(val, color=style.REFERENCE, lw=style.LW_THIN, ls="--", zorder=0)
+            ax.text(1.01, val, lab, transform=ax.get_yaxis_transform(), ha="left", va="center", fontsize=6, color=style.GREY, clip_on=False)
+        ax.set_title(f"{NAME[ds]} ({len(split)} measured units)", fontsize=8.5)
+        ax.set_xlabel(r"position $t$ (cycle)")
+        style.despine(ax)
+        prov(f"Figure 6 / {NAME[ds]}", ARTIFACTS_V2 / "v3_fit_profiles" / "profiles" / f"{ds}.json", "V4 generated units seed 0 (first 25) + V3 split units",
+             "scripts/v2/v4_generate_units.py; scripts/v2/v10_write_paper.py", "generation 0")
+    axes[0][0].set_ylabel("capacity [Ah]")
+    axes[0][0].legend(handles=[Line2D([], [], color=style.MEASURED_BUNDLE, lw=1, label="measured"), Line2D([], [], color=style.GENERATED, lw=1, label="generated")],
+                      frameon=False, fontsize=6.5, loc="lower left", ncol=2, handlelength=1.5, columnspacing=1.0)
+    fig.tight_layout(w_pad=2.2)
+    fig.savefig(PAPER / "img" / "fig_res_fidelity.pdf")
+    fig.savefig(RESULTS_V2 / "fig_res_fidelity.png", dpi=200)
+    plt.close(fig)
+
+
+def figure_degradation(kind="recency"):
+    """Figure 7 (v2): rank agreement and the temporal profile error against each operator's magnitude (X5)."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    from degradx.viz import style
+
+    src = ARTIFACTS_V2 / "v7_scores" / "tables" / "degradation.json"
+    R = json.loads(src.read_text())
+    profs = [d for d in ("MATR", "HUST", "ISU_ILCC") if d in R]
+    style.apply()
+    fig, axes = plt.subplots(2, len(OPS), figsize=(style.TEXTWIDTH_IN, 3.3), sharey="row")
+    ls = {"MATR": "-", "HUST": "--", "ISU_ILCC": ":"}
+    xlab = {"added_noise": "noise SD [× map SD]", "shift_to_start": "fraction to start", "shift_to_end": "fraction to end", "smoothing": "Gaussian σ [positions]",
+            "permuted_fraction": "fraction permuted"}
+    for j, (op, title) in enumerate(OPS):
+        for ds in profs:
+            s = R[ds][kind]["operators"][op]
+            x = np.arange(len(s["grid"]))
+            axes[0][j].plot(x, s["rank"]["mean"], color="black", ls=ls[ds], lw=1.0, marker="o", ms=2, label=f"{NAME[ds]}")
+            axes[1][j].plot(x, s["temporal"]["mean"], color=style.MEASURED, ls=ls[ds], lw=1.0, marker="s", ms=2, label=f"{NAME[ds]}")
+            for i, k in ((0, "rank"), (1, "temporal")):
+                m = s[k]["registers"]["registering_magnitude"]
+                if m is not None and ds == profs[0]:
+                    axes[i][j].axvline(s["grid"].index(m), color=style.GREY, lw=style.LW_THIN, ls=":")
+        for i, k in ((0, "rank"), (1, "temporal")):
+            axes[i][j].axhline(R[profs[0]][kind]["chance"][k], color=style.REFERENCE, lw=style.LW_THIN, ls="--")
+            axes[i][j].set_xticks(x, [f"{g:g}" for g in s["grid"]], fontsize=5.5, rotation=60)
+            style.despine(axes[i][j])
+        axes[0][j].set_title(title, fontsize=7.5)
+        axes[1][j].set_xlabel(xlab[op], fontsize=6.5)
+    axes[0][0].set_ylabel("rank agreement (↑)", fontsize=7)
+    axes[1][0].set_ylabel("temporal profile error\n[positions] (↓)", fontsize=7)
+    axes[0][0].legend(frameon=False, fontsize=5.5, loc="lower left")
+    fig.tight_layout()
+    fig.savefig(PAPER / "img" / "fig_res_degradation.pdf")
+    fig.savefig(RESULTS_V2 / "fig_res_degradation.png", dpi=200)
+    plt.close(fig)
+    prov("Figure 7", src, f"{{{','.join(profs)}}}.{kind}.operators.<op>.{{rank,temporal}}", "scripts/v2/v7_scores.py; scripts/v2/v10_write_paper.py", "generation 0; evaluation 20260915")
+
+
+def figure_floor(kind="recency"):
+    """Figure 8 (v2): for each method, the primary trained model's score and the ten-member ensemble range, against the
+    exact attribution of the reference model, for rank agreement, channel allocation error and temporal profile error."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    from degradx.viz import style
+
+    src = ARTIFACTS_V2 / "v8_reference_methods" / "tables" / "reference_values.json"
+    R = json.loads(src.read_text())
+    profs = [d for d in ("MATR", "HUST", "ISU_ILCC") if d in R]
+    keys = [("rank", "rank agreement (↑)"), ("allocation", "channel allocation error (↓)"), ("temporal", "temporal profile error [pos.] (↓)")]
+    style.apply()
+    fig, axes = plt.subplots(len(profs), 3, figsize=(style.TEXTWIDTH_IN, 1.75 * len(profs)), squeeze=False)
+    for i, ds in enumerate(profs):
+        r = R[ds]["weightings"][kind]
+        for j, (k, lab) in enumerate(keys):
+            ax = axes[i][j]
+            for m, (key, mlab) in enumerate(METHODS):
+                fl = r["identifiability_floor"].get(key)
+                if fl:
+                    vals = [x[k] for x in fl["members"]]
+                    ax.plot([m, m], [min(vals), max(vals)], color=style.FILL, lw=5, solid_capstyle="butt", zorder=1)
+                    ax.scatter([m] * len(vals), vals, s=5, color=style.MEASURED_BUNDLE, zorder=2)
+                t = r["scores"][f"trained/{key}"][k]
+                ax.errorbar([m], [t["mean"]], yerr=[[t["mean"] - t["ci_low"]], [t["ci_high"] - t["mean"]]] if t.get("ci_low") is not None else None,
+                            fmt="o", ms=3.5, color="black", lw=0.8, capsize=1.5, zorder=3)
+            ax.axhline(r["scores"]["reference_exact"][k]["mean"], color=style.REFERENCE, lw=style.LW_THIN, ls="--")
+            ax.set_xticks(range(len(METHODS)), [lab_ for _, lab_ in METHODS], fontsize=6.5)
+            if i == 0:
+                ax.set_title(lab, fontsize=7.5)
+            if j == 0:
+                ax.set_ylabel(NAME[ds], fontsize=8)
+            style.despine(ax)
+    fig.tight_layout()
+    fig.savefig(PAPER / "img" / "fig_res_floor.pdf")
+    fig.savefig(RESULTS_V2 / "fig_res_floor.png", dpi=200)
+    plt.close(fig)
+    prov("Figure 8", src, f"{{{','.join(profs)}}}.weightings.{kind}.{{scores,identifiability_floor}}", "scripts/v2/v8_reference_methods.py; scripts/v2/v10_write_paper.py",
+         "generation 0; model_init A/B 0-4; attribution_sampling 0,1,2; evaluation 20260915")
 
 
 if __name__ == "__main__":
