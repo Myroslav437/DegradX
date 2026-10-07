@@ -10,7 +10,7 @@ import numpy as np  # noqa: E402
 
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
 
 
 def training_curves(ds, kind, members):

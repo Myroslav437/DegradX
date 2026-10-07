@@ -82,3 +82,29 @@ def op_permuted_fraction(amap, mag, rng):
 
 OPERATORS = {"added_noise": op_added_noise, "shift_to_start": op_shift_to_start, "shift_to_end": op_shift_to_end,
              "smoothing": op_smoothing, "permuted_fraction": op_permuted_fraction}
+
+
+# ---- v2 X5 decomposed scores (declarations r3 declared_by_design.v2.scoring); 0 is perfect -------------------------
+def channel_allocation_error(amap: np.ndarray, phi: np.ndarray) -> float:
+    """Total-variation distance between the per-channel shares of |A| and |phi| over all channels; NaN if either map has
+    no mass."""
+    a, f = np.abs(amap).sum(axis=0), np.abs(phi).sum(axis=0)
+    if a.sum() <= 0 or f.sum() <= 0:
+        return float("nan")
+    return float(0.5 * np.abs(a / a.sum() - f / f.sum()).sum())
+
+
+def temporal_profile_error(amap: np.ndarray, phi: np.ndarray, weighted: np.ndarray) -> tuple[float, int]:
+    """phi-mass-weighted mean over weighted channels of the 1-Wasserstein distance over positions (unit spacing) between
+    |A_{.,c}| and |phi_{.,c}|, each normalised to unit mass: W1_c = sum_u |F_A,c(u) - F_phi,c(u)|. Channels with zero
+    attributed or zero phi mass are excluded and counted; returns (score, n_excluded), score NaN if all are excluded."""
+    num, den, excluded = 0.0, 0.0, 0
+    for c in np.asarray(weighted, int):
+        a, f = np.abs(amap[:, c]), np.abs(phi[:, c])
+        if a.sum() <= 0 or f.sum() <= 0:
+            excluded += 1
+            continue
+        w1 = float(np.abs(np.cumsum(a / a.sum()) - np.cumsum(f / f.sum())).sum())
+        num += f.sum() * w1
+        den += f.sum()
+    return (num / den if den > 0 else float("nan")), excluded

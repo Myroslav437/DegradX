@@ -10,7 +10,7 @@ import numpy as np  # noqa: E402
 
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
 
 
 def tstr_ratios(results: dict):
@@ -28,7 +28,7 @@ def tstr_ratios(results: dict):
         ax.plot([lo, hi], [i - 0.18, i - 0.18], color=style.MEASURED_BUNDLE, lw=3, solid_capstyle="butt")
         ax.text(ax.get_xlim()[1] if False else t["ratio"], i + 0.22, f"{t['ratio']:.2f}" + (" (void)" if void else ""), fontsize=6.5, ha="center")
     ax.axvline(1.0, color=style.REFERENCE, lw=style.LW_THIN, ls="--")
-    ax.set_yticks(range(len(names)), [f"{LABEL[d]} ({results[d]['tstr']['held_out_units']} units)" for d in names])
+    ax.set_yticks(range(len(names)), [f"{LABEL.get(d, d)} ({results[d]['tstr']['held_out_units']} units)" for d in names])
     ax.set_xlabel("TSTR error ratio (RMSE generated-trained / measured-trained)")
     ax.set_xscale("log")
     from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
@@ -52,7 +52,7 @@ def discriminator(results: dict):
         errs = [s["discriminative_error"] for s in results[ds]["per_generation_seed"]]
         ax.scatter(errs, [i] * len(errs), color="black", s=10)
     ax.axvline(0.5, color=style.REFERENCE, lw=style.LW_THIN, ls="--")
-    ax.set_yticks(range(len(names)), [LABEL[d] for d in names])
+    ax.set_yticks(range(len(names)), [LABEL.get(d, d) for d in names])
     ax.set_xlim(-0.02, 0.6)
     ax.set_xlabel("discriminative error (0.5 = indistinguishable)")
     ax.invert_yaxis()
@@ -94,7 +94,7 @@ def property_distributions(ds, meas_prof, gen_prof, q_nom, rho):
     ax.set_xlabel("log10 noise variance, measured")
     ax.set_ylabel("log10, generated")
     style.despine(ax)
-    fig.suptitle(f"{LABEL[ds]}: measured held-out vs generated properties (same S3 estimators)", fontsize=8)
+    fig.suptitle(f"{LABEL.get(ds, ds)}: measured held-out vs generated properties (same S3 estimators)", fontsize=8)
     fig.tight_layout()
     return fig
 
@@ -115,7 +115,7 @@ def window_embedding(ds, rep_meas, rep_gen, seed):
     ax.set_xticks([])
     ax.set_yticks([])
     ax.legend(frameon=False, fontsize=6, markerscale=3)
-    ax.set_title(f"{LABEL[ds]}: t-SNE of window representations (illustration)", fontsize=7)
+    ax.set_title(f"{LABEL.get(ds, ds)}: t-SNE of window representations (illustration)", fontsize=7)
     style.despine(ax)
     fig.tight_layout()
     return fig

@@ -11,7 +11,7 @@ import pandas as pd  # noqa: E402
 
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
 
 
 def _q(x, qs=(0.0, 0.25, 0.5, 0.75, 1.0)):

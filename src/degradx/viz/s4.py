@@ -14,7 +14,7 @@ from degradx.generator.generate import generate_unit  # noqa: E402
 from degradx.targets.decomposable import WEIGHTINGS, unit_targets  # noqa: E402
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
 
 
 def figure2_layout(P, units, spec):

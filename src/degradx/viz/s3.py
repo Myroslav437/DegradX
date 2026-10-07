@@ -13,7 +13,7 @@ import pandas as pd  # noqa: E402
 from degradx.fitting.families import FAMILIES  # noqa: E402
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
 FAM_LABEL = {"power_law": "power law", "two_term_exponential": "two-term exp.", "rollover": "rollover"}
 LS = {"power_law": ":", "two_term_exponential": "--", "rollover": "-"}
 
