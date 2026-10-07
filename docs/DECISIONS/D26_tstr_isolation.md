@@ -66,8 +66,7 @@ generation seed and each model seed is left out in turn.
 ## Protocol
 
 - **Options:** (a) report the readings as declared; (b) re-specify the ablation after seeing it.
-- **Chosen: (a).** The readings, the leave-one-out rule and the HUST reading were declared before V1 ran (r3 commit
-  `9c25b6c`, script commit `ac2726e` → `0e1c76a`). Nothing was changed after the results were seen.
+- **Chosen: (a).** The readings, the leave-one-out rule and the HUST reading were declared before V1 ran (r3 `9c25b6c`; D27 `ac2726e`; V1 script `a8a9b9a`; all before V1 ran). Nothing was changed after the results were seen.
 
 **Cost.**
 - **The interval is conditional on the trained models.** The leave-one-seed-out rule bounds this, but the readings rest
