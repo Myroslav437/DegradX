@@ -1,0 +1,226 @@
+[
+  {
+    "name": "MATR: measured split identical to v1 (same units held out)",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: capacity affine in z per unit with the unit's own q1 (Eq. 3; X2 capacity mapping)",
+    "expected": "< 1e-9 Ah",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_charge_time monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_mean_discharge_voltage monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_internal_resistance monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: phi_temperature_mean monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: backfit of charge_time converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "6 it., last change \u03b4 8.28e-05 / \u03c6 3.38e-04 (tol 7.80e-04)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: median offset of charge_time over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: backfit of mean_discharge_voltage converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "6 it., last change \u03b4 2.95e-06 / \u03c6 1.19e-05 (tol 2.12e-05)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: median offset of mean_discharge_voltage over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: backfit of internal_resistance converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "6 it., last change \u03b4 7.48e-09 / \u03c6 3.35e-08 (tol 3.09e-07)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: median offset of internal_resistance over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: backfit of temperature_mean converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "6 it., last change \u03b4 4.89e-06 / \u03c6 3.55e-05 (tol 1.47e-04)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: median offset of temperature_mean over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.022",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: theta from >= 5 units reaching EOL (D02)",
+    "expected": ">= 5",
+    "observed": "90",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: trajectory family unchanged from v1 (capacity cleaning unchanged)",
+    "expected": "two_term_exponential",
+    "observed": "two_term_exponential",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: measured split identical to v1 (same units held out)",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: capacity affine in z per unit with the unit's own q1 (Eq. 3; X2 capacity mapping)",
+    "expected": "< 1e-9 Ah",
+    "observed": "1.11e-16",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: phi_charge_time monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: phi_mean_discharge_voltage monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: backfit of charge_time converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "5 it., last change \u03b4 3.18e-06 / \u03c6 2.29e-05 (tol 1.28e-03)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: median offset of charge_time over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: backfit of mean_discharge_voltage converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "4 it., last change \u03b4 6.78e-07 / \u03c6 3.49e-06 (tol 5.57e-06)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: median offset of mean_discharge_voltage over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.000",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: theta from >= 5 units reaching EOL (D02)",
+    "expected": ">= 5",
+    "observed": "54",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: trajectory family unchanged from v1 (capacity cleaning unchanged)",
+    "expected": "rollover",
+    "observed": "rollover",
+    "passed": true,
+    "severity": "warn"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "stage": "v2/v4_generate_units",
+  "device": "cpu",
+  "wall_clock_s": 259.286,
+  "sections_s": {
+    "MATR_generate_seed0": 0.05,
+    "MATR_checks_seed0": 3.391,
+    "MATR_generate_seed1": 0.05,
+    "MATR_checks_seed1": 2.788,
+    "MATR_generate_seed2": 0.046,
+    "MATR_checks_seed2": 2.839,
+    "MATR_x3_off_set": 0.0,
+    "MATR_estimator_check": 116.865,
+    "MATR_figures": 1.573,
+    "HUST_generate_seed0": 0.084,
+    "HUST_checks_seed0": 6.018,
+    "HUST_generate_seed1": 0.067,
+    "HUST_checks_seed1": 5.719,
+    "HUST_generate_seed2": 0.062,
+    "HUST_checks_seed2": 5.562,
+    "HUST_x3_off_set": 0.0,
+    "HUST_estimator_check": 110.782,
+    "HUST_figures": 1.026
+  }
+}

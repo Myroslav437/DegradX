@@ -1,0 +1,34 @@
+[
+  {
+    "channel": "charge_time",
+    "variance_before": 0.8132020383,
+    "lag1_before": 0.9092255469,
+    "variance_after": 0.6940595301,
+    "lag1_after": 0.8879532981,
+    "variance_ratio": 0.8534896586
+  },
+  {
+    "channel": "mean_discharge_voltage",
+    "variance_before": 0.0005355053,
+    "lag1_before": 0.9658934962,
+    "variance_after": 0.0004093737,
+    "lag1_after": 0.9562999398,
+    "variance_ratio": 0.7644624389
+  },
+  {
+    "channel": "internal_resistance",
+    "variance_before": 9.03e-08,
+    "lag1_before": 0.9629372858,
+    "variance_after": 8.06e-08,
+    "lag1_after": 0.9593504382,
+    "variance_ratio": 0.8933547735
+  },
+  {
+    "channel": "temperature_mean",
+    "variance_before": 0.4939272099,
+    "lag1_before": 0.9445283178,
+    "variance_after": 0.4861343318,
+    "lag1_after": 0.9309507041,
+    "variance_ratio": 0.9842226182
+  }
+]

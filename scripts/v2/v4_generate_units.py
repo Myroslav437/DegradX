@@ -210,10 +210,10 @@ def main() -> int:
                     res["noise_pooled_correlation_generated"] = r_gen_pool.tolist()
                     # generated q1 spread (S3 estimator on generated capacity)
                     q1g = np.array([unit_state(u.x[:, 0], gen_spec).q1 for u in units])
-                    q1m = prof["v2"]["q1_fitting_units"]
+                    q1m = prof["v2"]["q1_fitting_units_reaching_eol"]  # declared comparator: the population generation resamples
                     iqr_g = float(np.subtract(*np.percentile(q1g, [75, 25])))
                     res["q1_generated"] = C.summarise(q1g) | {"iqr": iqr_g}
-                    ct.require(f"{ds} seed {gs}: generated q1 shows the measured spread (IQR within 20% of the fitting split's)",
+                    ct.require(f"{ds} seed {gs}: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL)",
                                abs(iqr_g - q1m["iqr"]) <= 0.2 * q1m["iqr"], f"{q1m['iqr'] * 1000:.1f} mAh +- 20%", f"{iqr_g * 1000:.1f} mAh", severity="warn")
                 summary[ds]["seeds"][gs] = res
                 write_json(summary, out / "tables" / "summary.json")

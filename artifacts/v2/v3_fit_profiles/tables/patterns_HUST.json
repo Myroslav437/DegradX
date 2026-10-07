@@ -1,0 +1,1498 @@
+[
+  {
+    "cell_id": "HUST_1-1",
+    "type": "positive",
+    "extremum": 36,
+    "amplitude_Ah": 0.0022127076,
+    "duration": 2,
+    "z_at_extremum": 0.0273729065
+  },
+  {
+    "cell_id": "HUST_1-2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0098362916,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_1-7",
+    "type": "positive",
+    "extremum": 30,
+    "amplitude_Ah": 0.0023037409,
+    "duration": 5,
+    "z_at_extremum": 0.0260295611
+  },
+  {
+    "cell_id": "HUST_10-1",
+    "type": "positive",
+    "extremum": 28,
+    "amplitude_Ah": 0.0021401658,
+    "duration": 2,
+    "z_at_extremum": 0.0236368458
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "positive",
+    "extremum": 52,
+    "amplitude_Ah": 0.001450367,
+    "duration": 4,
+    "z_at_extremum": 0.0332488097
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 136,
+    "amplitude_Ah": -0.0013249874,
+    "duration": 2,
+    "z_at_extremum": 0.0598010762
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 141,
+    "amplitude_Ah": -0.0015790817,
+    "duration": 6,
+    "z_at_extremum": 0.0619043055
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 150,
+    "amplitude_Ah": -0.0015932978,
+    "duration": 6,
+    "z_at_extremum": 0.0639793381
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 161,
+    "amplitude_Ah": -0.0014491275,
+    "duration": 4,
+    "z_at_extremum": 0.0658776412
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 166,
+    "amplitude_Ah": -0.0016718267,
+    "duration": 7,
+    "z_at_extremum": 0.0679364505
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 174,
+    "amplitude_Ah": -0.0017163006,
+    "duration": 8,
+    "z_at_extremum": 0.0698824784
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 185,
+    "amplitude_Ah": -0.0015842963,
+    "duration": 6,
+    "z_at_extremum": 0.0719687225
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 192,
+    "amplitude_Ah": -0.0017080706,
+    "duration": 7,
+    "z_at_extremum": 0.0739351385
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 200,
+    "amplitude_Ah": -0.0017597673,
+    "duration": 8,
+    "z_at_extremum": 0.0759091168
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 209,
+    "amplitude_Ah": -0.0017593577,
+    "duration": 9,
+    "z_at_extremum": 0.0779618347
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 221,
+    "amplitude_Ah": -0.0015590056,
+    "duration": 5,
+    "z_at_extremum": 0.0800467572
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 231,
+    "amplitude_Ah": -0.0015078396,
+    "duration": 4,
+    "z_at_extremum": 0.0822190419
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 241,
+    "amplitude_Ah": -0.0014209781,
+    "duration": 3,
+    "z_at_extremum": 0.0841479703
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 251,
+    "amplitude_Ah": -0.0013338004,
+    "duration": 2,
+    "z_at_extremum": 0.0861726347
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "type": "negative",
+    "extremum": 1834,
+    "amplitude_Ah": -0.0015008031,
+    "duration": 2,
+    "z_at_extremum": 0.9807466591
+  },
+  {
+    "cell_id": "HUST_10-4",
+    "type": "positive",
+    "extremum": 74,
+    "amplitude_Ah": 0.0020516188,
+    "duration": 6,
+    "z_at_extremum": 0.000783101
+  },
+  {
+    "cell_id": "HUST_10-4",
+    "type": "positive",
+    "extremum": 78,
+    "amplitude_Ah": 0.0017527126,
+    "duration": 2,
+    "z_at_extremum": 0.0030158832
+  },
+  {
+    "cell_id": "HUST_10-4",
+    "type": "positive",
+    "extremum": 1805,
+    "amplitude_Ah": 0.0019155463,
+    "duration": 2,
+    "z_at_extremum": 0.9920107381
+  },
+  {
+    "cell_id": "HUST_10-4",
+    "type": "positive",
+    "extremum": 1808,
+    "amplitude_Ah": 0.0019706534,
+    "duration": 2,
+    "z_at_extremum": 0.9955833882
+  },
+  {
+    "cell_id": "HUST_10-5",
+    "type": "positive",
+    "extremum": 88,
+    "amplitude_Ah": 0.0021791095,
+    "duration": 3,
+    "z_at_extremum": 0.0049655483
+  },
+  {
+    "cell_id": "HUST_10-7",
+    "type": "positive",
+    "extremum": 79,
+    "amplitude_Ah": 0.0017720851,
+    "duration": 5,
+    "z_at_extremum": 0.0056945314
+  },
+  {
+    "cell_id": "HUST_10-7",
+    "type": "positive",
+    "extremum": 85,
+    "amplitude_Ah": 0.0016513157,
+    "duration": 4,
+    "z_at_extremum": 0.0074768527
+  },
+  {
+    "cell_id": "HUST_10-7",
+    "type": "negative",
+    "extremum": 171,
+    "amplitude_Ah": -0.0014937181,
+    "duration": 2,
+    "z_at_extremum": 0.0386986894
+  },
+  {
+    "cell_id": "HUST_10-7",
+    "type": "negative",
+    "extremum": 205,
+    "amplitude_Ah": -0.0016882672,
+    "duration": 4,
+    "z_at_extremum": 0.0484967124
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "positive",
+    "extremum": 41,
+    "amplitude_Ah": 0.0017265183,
+    "duration": 3,
+    "z_at_extremum": 0.0321437094
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 119,
+    "amplitude_Ah": -0.0016313829,
+    "duration": 2,
+    "z_at_extremum": 0.0622648518
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 131,
+    "amplitude_Ah": -0.0018669635,
+    "duration": 4,
+    "z_at_extremum": 0.0664111441
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 139,
+    "amplitude_Ah": -0.0018148391,
+    "duration": 4,
+    "z_at_extremum": 0.0682407357
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 145,
+    "amplitude_Ah": -0.0019366401,
+    "duration": 5,
+    "z_at_extremum": 0.0702614103
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 166,
+    "amplitude_Ah": -0.0020355199,
+    "duration": 7,
+    "z_at_extremum": 0.0762538061
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 174,
+    "amplitude_Ah": -0.0019972333,
+    "duration": 6,
+    "z_at_extremum": 0.078278408
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 183,
+    "amplitude_Ah": -0.0018616373,
+    "duration": 4,
+    "z_at_extremum": 0.080272125
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 192,
+    "amplitude_Ah": -0.0017177953,
+    "duration": 3,
+    "z_at_extremum": 0.0822423514
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 199,
+    "amplitude_Ah": -0.0017463798,
+    "duration": 3,
+    "z_at_extremum": 0.0842294609
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 1383,
+    "amplitude_Ah": -0.0017474688,
+    "duration": 2,
+    "z_at_extremum": 0.97405163
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 1390,
+    "amplitude_Ah": -0.0019210244,
+    "duration": 2,
+    "z_at_extremum": 0.9840876388
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "type": "negative",
+    "extremum": 1399,
+    "amplitude_Ah": -0.0024739335,
+    "duration": 9,
+    "z_at_extremum": 0.9979544826
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 176,
+    "amplitude_Ah": -0.0021242386,
+    "duration": 3,
+    "z_at_extremum": 0.0780408696
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 183,
+    "amplitude_Ah": -0.0022480573,
+    "duration": 5,
+    "z_at_extremum": 0.0797043161
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 191,
+    "amplitude_Ah": -0.0023414373,
+    "duration": 7,
+    "z_at_extremum": 0.0814948313
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 201,
+    "amplitude_Ah": -0.0023506114,
+    "duration": 7,
+    "z_at_extremum": 0.0833563397
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 267,
+    "amplitude_Ah": -0.0021071426,
+    "duration": 3,
+    "z_at_extremum": 0.0949529199
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 278,
+    "amplitude_Ah": -0.0020294451,
+    "duration": 2,
+    "z_at_extremum": 0.0968034162
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 284,
+    "amplitude_Ah": -0.002162044,
+    "duration": 4,
+    "z_at_extremum": 0.0983200334
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 294,
+    "amplitude_Ah": -0.0021915885,
+    "duration": 5,
+    "z_at_extremum": 0.1002537915
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 305,
+    "amplitude_Ah": -0.0020848916,
+    "duration": 2,
+    "z_at_extremum": 0.101996075
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 312,
+    "amplitude_Ah": -0.0022044003,
+    "duration": 5,
+    "z_at_extremum": 0.1036286279
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "type": "negative",
+    "extremum": 334,
+    "amplitude_Ah": -0.0020321724,
+    "duration": 2,
+    "z_at_extremum": 0.1072205141
+  },
+  {
+    "cell_id": "HUST_2-3",
+    "type": "negative",
+    "extremum": 20,
+    "amplitude_Ah": -0.005804415,
+    "duration": 6,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 115,
+    "amplitude_Ah": -0.0017949449,
+    "duration": 3,
+    "z_at_extremum": 0.0600587326
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 124,
+    "amplitude_Ah": -0.0017351991,
+    "duration": 2,
+    "z_at_extremum": 0.0620409357
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 135,
+    "amplitude_Ah": -0.0020659672,
+    "duration": 7,
+    "z_at_extremum": 0.0660959741
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 142,
+    "amplitude_Ah": -0.0018307836,
+    "duration": 2,
+    "z_at_extremum": 0.0669865799
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 145,
+    "amplitude_Ah": -0.0019200441,
+    "duration": 5,
+    "z_at_extremum": 0.0682346435
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 153,
+    "amplitude_Ah": -0.0019117939,
+    "duration": 4,
+    "z_at_extremum": 0.0699873872
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 158,
+    "amplitude_Ah": -0.0017820415,
+    "duration": 3,
+    "z_at_extremum": 0.0712371707
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 162,
+    "amplitude_Ah": -0.0020626774,
+    "duration": 7,
+    "z_at_extremum": 0.0729831846
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 171,
+    "amplitude_Ah": -0.0019633061,
+    "duration": 5,
+    "z_at_extremum": 0.0749070966
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 178,
+    "amplitude_Ah": -0.0020115679,
+    "duration": 6,
+    "z_at_extremum": 0.0768842422
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 185,
+    "amplitude_Ah": -0.0020507557,
+    "duration": 6,
+    "z_at_extremum": 0.0788432438
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 194,
+    "amplitude_Ah": -0.0019452838,
+    "duration": 5,
+    "z_at_extremum": 0.0808254672
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 202,
+    "amplitude_Ah": -0.0018981473,
+    "duration": 4,
+    "z_at_extremum": 0.0828061728
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "type": "negative",
+    "extremum": 211,
+    "amplitude_Ah": -0.0017817476,
+    "duration": 3,
+    "z_at_extremum": 0.0848058193
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "type": "positive",
+    "extremum": 46,
+    "amplitude_Ah": 0.0009829699,
+    "duration": 3,
+    "z_at_extremum": -0.0098603469
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "type": "positive",
+    "extremum": 50,
+    "amplitude_Ah": 0.0013795409,
+    "duration": 7,
+    "z_at_extremum": -0.0090867486
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "type": "positive",
+    "extremum": 87,
+    "amplitude_Ah": 0.0011570822,
+    "duration": 4,
+    "z_at_extremum": 0.0056147769
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "type": "positive",
+    "extremum": 94,
+    "amplitude_Ah": 0.0012599966,
+    "duration": 10,
+    "z_at_extremum": 0.0075316788
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "type": "positive",
+    "extremum": 102,
+    "amplitude_Ah": 0.0009193095,
+    "duration": 2,
+    "z_at_extremum": 0.0118445499
+  },
+  {
+    "cell_id": "HUST_2-8",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0072091536,
+    "duration": 11,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_3-3",
+    "type": "positive",
+    "extremum": 48,
+    "amplitude_Ah": 0.0025879458,
+    "duration": 6,
+    "z_at_extremum": -0.0037955695
+  },
+  {
+    "cell_id": "HUST_3-3",
+    "type": "positive",
+    "extremum": 58,
+    "amplitude_Ah": 0.0028549564,
+    "duration": 11,
+    "z_at_extremum": -0.001232751
+  },
+  {
+    "cell_id": "HUST_3-3",
+    "type": "positive",
+    "extremum": 66,
+    "amplitude_Ah": 0.0024649677,
+    "duration": 4,
+    "z_at_extremum": 0.0020838162
+  },
+  {
+    "cell_id": "HUST_3-3",
+    "type": "positive",
+    "extremum": 77,
+    "amplitude_Ah": 0.0022873144,
+    "duration": 2,
+    "z_at_extremum": 0.0063946628
+  },
+  {
+    "cell_id": "HUST_3-4",
+    "type": "positive",
+    "extremum": 41,
+    "amplitude_Ah": 0.0028203844,
+    "duration": 4,
+    "z_at_extremum": 0.0333022996
+  },
+  {
+    "cell_id": "HUST_3-5",
+    "type": "positive",
+    "extremum": 2652,
+    "amplitude_Ah": 0.0045221415,
+    "duration": 2,
+    "z_at_extremum": 0.9968605553
+  },
+  {
+    "cell_id": "HUST_3-5",
+    "type": "positive",
+    "extremum": 2657,
+    "amplitude_Ah": 0.0044172572,
+    "duration": 2,
+    "z_at_extremum": 0.9997140988
+  },
+  {
+    "cell_id": "HUST_3-8",
+    "type": "positive",
+    "extremum": 94,
+    "amplitude_Ah": 0.0024749318,
+    "duration": 2,
+    "z_at_extremum": 0.0174389558
+  },
+  {
+    "cell_id": "HUST_3-8",
+    "type": "negative",
+    "extremum": 353,
+    "amplitude_Ah": -0.002441777,
+    "duration": 2,
+    "z_at_extremum": 0.0894129517
+  },
+  {
+    "cell_id": "HUST_4-2",
+    "type": "positive",
+    "extremum": 35,
+    "amplitude_Ah": 0.0017294652,
+    "duration": 2,
+    "z_at_extremum": -0.005294351
+  },
+  {
+    "cell_id": "HUST_4-2",
+    "type": "positive",
+    "extremum": 69,
+    "amplitude_Ah": 0.0019129008,
+    "duration": 5,
+    "z_at_extremum": 0.0033308734
+  },
+  {
+    "cell_id": "HUST_4-2",
+    "type": "positive",
+    "extremum": 73,
+    "amplitude_Ah": 0.002204953,
+    "duration": 3,
+    "z_at_extremum": 0.0044349741
+  },
+  {
+    "cell_id": "HUST_4-3",
+    "type": "positive",
+    "extremum": 30,
+    "amplitude_Ah": 0.0020150561,
+    "duration": 2,
+    "z_at_extremum": 0.0271661303
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "positive",
+    "extremum": 44,
+    "amplitude_Ah": 0.0016569396,
+    "duration": 4,
+    "z_at_extremum": 0.0317536793
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 125,
+    "amplitude_Ah": -0.0015975027,
+    "duration": 2,
+    "z_at_extremum": 0.0593169955
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 133,
+    "amplitude_Ah": -0.0017472199,
+    "duration": 4,
+    "z_at_extremum": 0.0615848569
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 141,
+    "amplitude_Ah": -0.0017843939,
+    "duration": 5,
+    "z_at_extremum": 0.0636064983
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 148,
+    "amplitude_Ah": -0.0018832046,
+    "duration": 7,
+    "z_at_extremum": 0.0655221302
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 174,
+    "amplitude_Ah": -0.0019279281,
+    "duration": 8,
+    "z_at_extremum": 0.0716479536
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 202,
+    "amplitude_Ah": -0.0019035423,
+    "duration": 7,
+    "z_at_extremum": 0.0780139031
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 213,
+    "amplitude_Ah": -0.001763801,
+    "duration": 5,
+    "z_at_extremum": 0.0801516175
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "type": "negative",
+    "extremum": 223,
+    "amplitude_Ah": -0.0016992254,
+    "duration": 4,
+    "z_at_extremum": 0.0822585346
+  },
+  {
+    "cell_id": "HUST_5-1",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0085532219,
+    "duration": 7,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_5-2",
+    "type": "negative",
+    "extremum": 20,
+    "amplitude_Ah": -0.0057227558,
+    "duration": 10,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_5-2",
+    "type": "positive",
+    "extremum": 55,
+    "amplitude_Ah": 0.002437445,
+    "duration": 5,
+    "z_at_extremum": -0.0180127933
+  },
+  {
+    "cell_id": "HUST_5-2",
+    "type": "positive",
+    "extremum": 76,
+    "amplitude_Ah": 0.0021711756,
+    "duration": 2,
+    "z_at_extremum": -0.0122553867
+  },
+  {
+    "cell_id": "HUST_5-4",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0063578959,
+    "duration": 2,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_5-5",
+    "type": "positive",
+    "extremum": 88,
+    "amplitude_Ah": 0.0017729672,
+    "duration": 5,
+    "z_at_extremum": -0.0026601951
+  },
+  {
+    "cell_id": "HUST_5-5",
+    "type": "positive",
+    "extremum": 95,
+    "amplitude_Ah": 0.0017778581,
+    "duration": 5,
+    "z_at_extremum": -0.0007737499
+  },
+  {
+    "cell_id": "HUST_6-2",
+    "type": "positive",
+    "extremum": 43,
+    "amplitude_Ah": 0.0016611053,
+    "duration": 2,
+    "z_at_extremum": -0.0200281003
+  },
+  {
+    "cell_id": "HUST_6-2",
+    "type": "positive",
+    "extremum": 108,
+    "amplitude_Ah": 0.0013952988,
+    "duration": 4,
+    "z_at_extremum": -0.0026534877
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "positive",
+    "extremum": 34,
+    "amplitude_Ah": 0.0012850939,
+    "duration": 2,
+    "z_at_extremum": 0.028182633
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 86,
+    "amplitude_Ah": -0.0011449861,
+    "duration": 2,
+    "z_at_extremum": 0.04543813
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 91,
+    "amplitude_Ah": -0.0014265565,
+    "duration": 7,
+    "z_at_extremum": 0.0475973972
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 101,
+    "amplitude_Ah": -0.0014027552,
+    "duration": 6,
+    "z_at_extremum": 0.0496726991
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 202,
+    "amplitude_Ah": -0.0014368049,
+    "duration": 7,
+    "z_at_extremum": 0.0713906737
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 211,
+    "amplitude_Ah": -0.0014499686,
+    "duration": 3,
+    "z_at_extremum": 0.0733573934
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "type": "negative",
+    "extremum": 218,
+    "amplitude_Ah": -0.001282968,
+    "duration": 4,
+    "z_at_extremum": 0.0745202795
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "positive",
+    "extremum": 74,
+    "amplitude_Ah": 0.0024193652,
+    "duration": 2,
+    "z_at_extremum": 0.0491889402
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 214,
+    "amplitude_Ah": -0.0024271048,
+    "duration": 3,
+    "z_at_extremum": 0.0959354191
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 222,
+    "amplitude_Ah": -0.0024231346,
+    "duration": 2,
+    "z_at_extremum": 0.0978107717
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 229,
+    "amplitude_Ah": -0.002493434,
+    "duration": 3,
+    "z_at_extremum": 0.0996937704
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 236,
+    "amplitude_Ah": -0.002554243,
+    "duration": 4,
+    "z_at_extremum": 0.1015603246
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 242,
+    "amplitude_Ah": -0.0026745445,
+    "duration": 6,
+    "z_at_extremum": 0.1033787294
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 251,
+    "amplitude_Ah": -0.0026162943,
+    "duration": 6,
+    "z_at_extremum": 0.1053396066
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 294,
+    "amplitude_Ah": -0.002403649,
+    "duration": 2,
+    "z_at_extremum": 0.1151212598
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 301,
+    "amplitude_Ah": -0.0024705924,
+    "duration": 3,
+    "z_at_extremum": 0.1168602789
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 310,
+    "amplitude_Ah": -0.0023996039,
+    "duration": 2,
+    "z_at_extremum": 0.1187961564
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 317,
+    "amplitude_Ah": -0.0024456066,
+    "duration": 2,
+    "z_at_extremum": 0.1204556412
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 322,
+    "amplitude_Ah": -0.0026500475,
+    "duration": 5,
+    "z_at_extremum": 0.1224059001
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 332,
+    "amplitude_Ah": -0.0025057679,
+    "duration": 3,
+    "z_at_extremum": 0.124382891
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 348,
+    "amplitude_Ah": -0.0024586314,
+    "duration": 3,
+    "z_at_extremum": 0.1280466669
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 356,
+    "amplitude_Ah": -0.0024497094,
+    "duration": 3,
+    "z_at_extremum": 0.1299302719
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 365,
+    "amplitude_Ah": -0.0023738779,
+    "duration": 2,
+    "z_at_extremum": 0.1318626932
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "type": "negative",
+    "extremum": 372,
+    "amplitude_Ah": -0.0024089111,
+    "duration": 2,
+    "z_at_extremum": 0.1336808867
+  },
+  {
+    "cell_id": "HUST_7-1",
+    "type": "positive",
+    "extremum": 33,
+    "amplitude_Ah": 0.0020792515,
+    "duration": 3,
+    "z_at_extremum": 0.0273850114
+  },
+  {
+    "cell_id": "HUST_7-4",
+    "type": "positive",
+    "extremum": 20,
+    "amplitude_Ah": 0.0025709342,
+    "duration": 2,
+    "z_at_extremum": 0.0183349258
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 170,
+    "amplitude_Ah": -0.0013304286,
+    "duration": 2,
+    "z_at_extremum": 0.0418949495
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 178,
+    "amplitude_Ah": -0.0013573041,
+    "duration": 2,
+    "z_at_extremum": 0.0440040499
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 184,
+    "amplitude_Ah": -0.0015268133,
+    "duration": 5,
+    "z_at_extremum": 0.0458814887
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 192,
+    "amplitude_Ah": -0.0014805724,
+    "duration": 4,
+    "z_at_extremum": 0.047737611
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 200,
+    "amplitude_Ah": -0.0014702721,
+    "duration": 5,
+    "z_at_extremum": 0.0496461318
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 243,
+    "amplitude_Ah": -0.0013028726,
+    "duration": 2,
+    "z_at_extremum": 0.0595087142
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 260,
+    "amplitude_Ah": -0.0017500211,
+    "duration": 4,
+    "z_at_extremum": 0.0645448183
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 263,
+    "amplitude_Ah": -0.0015455811,
+    "duration": 5,
+    "z_at_extremum": 0.0653565042
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 280,
+    "amplitude_Ah": -0.0014251812,
+    "duration": 3,
+    "z_at_extremum": 0.0689690016
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 286,
+    "amplitude_Ah": -0.0015988799,
+    "duration": 5,
+    "z_at_extremum": 0.0709028925
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 296,
+    "amplitude_Ah": -0.0014462838,
+    "duration": 4,
+    "z_at_extremum": 0.0729577628
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 302,
+    "amplitude_Ah": -0.0015067822,
+    "duration": 4,
+    "z_at_extremum": 0.0745820001
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 310,
+    "amplitude_Ah": -0.0014722839,
+    "duration": 4,
+    "z_at_extremum": 0.0765048156
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 325,
+    "amplitude_Ah": -0.0015108318,
+    "duration": 4,
+    "z_at_extremum": 0.0803903345
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 335,
+    "amplitude_Ah": -0.00131968,
+    "duration": 2,
+    "z_at_extremum": 0.0821560233
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 343,
+    "amplitude_Ah": -0.001318324,
+    "duration": 2,
+    "z_at_extremum": 0.0841128712
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 349,
+    "amplitude_Ah": -0.0013940404,
+    "duration": 3,
+    "z_at_extremum": 0.085876755
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "type": "negative",
+    "extremum": 366,
+    "amplitude_Ah": -0.0012943132,
+    "duration": 2,
+    "z_at_extremum": 0.0899232115
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "positive",
+    "extremum": 45,
+    "amplitude_Ah": 0.0016386425,
+    "duration": 4,
+    "z_at_extremum": 0.0294352991
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 123,
+    "amplitude_Ah": -0.0014748676,
+    "duration": 2,
+    "z_at_extremum": 0.0564895037
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 139,
+    "amplitude_Ah": -0.0015980092,
+    "duration": 3,
+    "z_at_extremum": 0.0605240012
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 146,
+    "amplitude_Ah": -0.0017056583,
+    "duration": 5,
+    "z_at_extremum": 0.0625030315
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 155,
+    "amplitude_Ah": -0.0017353778,
+    "duration": 5,
+    "z_at_extremum": 0.0646883612
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 162,
+    "amplitude_Ah": -0.0018544495,
+    "duration": 6,
+    "z_at_extremum": 0.0666855684
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 171,
+    "amplitude_Ah": -0.0018360213,
+    "duration": 7,
+    "z_at_extremum": 0.068716218
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 182,
+    "amplitude_Ah": -0.0017634012,
+    "duration": 5,
+    "z_at_extremum": 0.070947542
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 193,
+    "amplitude_Ah": -0.001631486,
+    "duration": 4,
+    "z_at_extremum": 0.0732169487
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 202,
+    "amplitude_Ah": -0.0015942254,
+    "duration": 3,
+    "z_at_extremum": 0.0751378207
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "type": "negative",
+    "extremum": 211,
+    "amplitude_Ah": -0.0015865405,
+    "duration": 2,
+    "z_at_extremum": 0.0771213066
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "positive",
+    "extremum": 52,
+    "amplitude_Ah": 0.0014700088,
+    "duration": 2,
+    "z_at_extremum": 0.0309408982
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 125,
+    "amplitude_Ah": -0.0014408505,
+    "duration": 3,
+    "z_at_extremum": 0.0539268829
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 135,
+    "amplitude_Ah": -0.0014647619,
+    "duration": 3,
+    "z_at_extremum": 0.0561227814
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 142,
+    "amplitude_Ah": -0.0016260526,
+    "duration": 6,
+    "z_at_extremum": 0.0580663668
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 150,
+    "amplitude_Ah": -0.0017432195,
+    "duration": 8,
+    "z_at_extremum": 0.0601410974
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 201,
+    "amplitude_Ah": -0.0017438453,
+    "duration": 8,
+    "z_at_extremum": 0.070627595
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 212,
+    "amplitude_Ah": -0.0016825353,
+    "duration": 6,
+    "z_at_extremum": 0.0726941682
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "type": "negative",
+    "extremum": 221,
+    "amplitude_Ah": -0.0017143925,
+    "duration": 8,
+    "z_at_extremum": 0.0747337497
+  },
+  {
+    "cell_id": "HUST_8-2",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0060261823,
+    "duration": 7,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_8-2",
+    "type": "positive",
+    "extremum": 10,
+    "amplitude_Ah": 0.0030931517,
+    "duration": 2,
+    "z_at_extremum": 0.0115812149
+  },
+  {
+    "cell_id": "HUST_8-3",
+    "type": "positive",
+    "extremum": 26,
+    "amplitude_Ah": 0.0023493391,
+    "duration": 3,
+    "z_at_extremum": -0.0055372494
+  },
+  {
+    "cell_id": "HUST_8-3",
+    "type": "negative",
+    "extremum": 342,
+    "amplitude_Ah": -0.0019889959,
+    "duration": 2,
+    "z_at_extremum": 0.0705209236
+  },
+  {
+    "cell_id": "HUST_8-7",
+    "type": "positive",
+    "extremum": 1,
+    "amplitude_Ah": 0.0052880398,
+    "duration": 4,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_8-8",
+    "type": "negative",
+    "extremum": 20,
+    "amplitude_Ah": -0.002895355,
+    "duration": 3,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "HUST_8-8",
+    "type": "positive",
+    "extremum": 43,
+    "amplitude_Ah": 0.0020818502,
+    "duration": 2,
+    "z_at_extremum": -0.0085069994
+  },
+  {
+    "cell_id": "HUST_8-8",
+    "type": "positive",
+    "extremum": 49,
+    "amplitude_Ah": 0.0025657767,
+    "duration": 6,
+    "z_at_extremum": -0.0085351721
+  },
+  {
+    "cell_id": "HUST_8-8",
+    "type": "positive",
+    "extremum": 72,
+    "amplitude_Ah": 0.002073617,
+    "duration": 2,
+    "z_at_extremum": -0.000727436
+  },
+  {
+    "cell_id": "HUST_9-2",
+    "type": "positive",
+    "extremum": 25,
+    "amplitude_Ah": 0.0024599231,
+    "duration": 2,
+    "z_at_extremum": -0.002986451
+  },
+  {
+    "cell_id": "HUST_9-2",
+    "type": "positive",
+    "extremum": 86,
+    "amplitude_Ah": 0.0022298062,
+    "duration": 2,
+    "z_at_extremum": 0.0103798297
+  },
+  {
+    "cell_id": "HUST_9-3",
+    "type": "positive",
+    "extremum": 73,
+    "amplitude_Ah": 0.002586566,
+    "duration": 2,
+    "z_at_extremum": 0.0073972217
+  },
+  {
+    "cell_id": "HUST_9-4",
+    "type": "positive",
+    "extremum": 27,
+    "amplitude_Ah": 0.0025039656,
+    "duration": 2,
+    "z_at_extremum": -0.0025615233
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "type": "positive",
+    "extremum": 98,
+    "amplitude_Ah": 0.0021095043,
+    "duration": 2,
+    "z_at_extremum": 0.0202034727
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "type": "negative",
+    "extremum": 318,
+    "amplitude_Ah": -0.0020888668,
+    "duration": 2,
+    "z_at_extremum": 0.0801432944
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "type": "negative",
+    "extremum": 335,
+    "amplitude_Ah": -0.0020923239,
+    "duration": 2,
+    "z_at_extremum": 0.0839808352
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "type": "negative",
+    "extremum": 344,
+    "amplitude_Ah": -0.0020817635,
+    "duration": 2,
+    "z_at_extremum": 0.0859226556
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "type": "negative",
+    "extremum": 360,
+    "amplitude_Ah": -0.0021136145,
+    "duration": 2,
+    "z_at_extremum": 0.0896812581
+  },
+  {
+    "cell_id": "HUST_9-7",
+    "type": "positive",
+    "extremum": 82,
+    "amplitude_Ah": 0.0024255898,
+    "duration": 6,
+    "z_at_extremum": 0.0120384946
+  }
+]

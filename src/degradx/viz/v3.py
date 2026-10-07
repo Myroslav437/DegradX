@@ -43,7 +43,7 @@ def offsets_mappings(ds, units, mappings, mappings_r2, delta, channels, n_units:
         axes[r][1].set_xlabel(f"offset δ ({CH.get(c, c)})")
         style.despine(axes[r][1])
     axes[0][0].legend(frameon=False, fontsize=6)
-    fig.suptitle(f"{LABEL.get(ds, ds)}: per-unit offsets (coloured: units at five T quantiles, curves φ(z) + δ_i)", fontsize=8)
+    fig.suptitle(f"{LABEL.get(ds, ds)}: per-unit offsets (coloured: six units spanning the range of T, curves φ(z) + δ_i)", fontsize=8)
     fig.tight_layout()
     return fig
 

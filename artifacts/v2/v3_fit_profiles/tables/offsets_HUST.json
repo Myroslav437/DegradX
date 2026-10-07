@@ -1,0 +1,272 @@
+[
+  {
+    "cell_id": "HUST_1-1",
+    "charge_time": -0.0619149487,
+    "mean_discharge_voltage": 0.0577317383
+  },
+  {
+    "cell_id": "HUST_1-2",
+    "charge_time": 2.5486635253,
+    "mean_discharge_voltage": 0.0284318069
+  },
+  {
+    "cell_id": "HUST_1-6",
+    "charge_time": 3.3501262238,
+    "mean_discharge_voltage": 0.0332111391
+  },
+  {
+    "cell_id": "HUST_1-7",
+    "charge_time": 0.2992548849,
+    "mean_discharge_voltage": 0.0009650757
+  },
+  {
+    "cell_id": "HUST_10-1",
+    "charge_time": -1.3915090765,
+    "mean_discharge_voltage": 0.0037432305
+  },
+  {
+    "cell_id": "HUST_10-2",
+    "charge_time": -1.4309818245,
+    "mean_discharge_voltage": -0.0137858484
+  },
+  {
+    "cell_id": "HUST_10-3",
+    "charge_time": -1.8085385874,
+    "mean_discharge_voltage": 0.0086009443
+  },
+  {
+    "cell_id": "HUST_10-4",
+    "charge_time": 0.5753155702,
+    "mean_discharge_voltage": 0.0457387016
+  },
+  {
+    "cell_id": "HUST_10-5",
+    "charge_time": -0.0128073891,
+    "mean_discharge_voltage": 0.0210201337
+  },
+  {
+    "cell_id": "HUST_10-7",
+    "charge_time": 0.205767606,
+    "mean_discharge_voltage": 0.0256683212
+  },
+  {
+    "cell_id": "HUST_10-8",
+    "charge_time": -0.5032823771,
+    "mean_discharge_voltage": 0.0701278188
+  },
+  {
+    "cell_id": "HUST_2-2",
+    "charge_time": 1.5734329696,
+    "mean_discharge_voltage": -0.0246896478
+  },
+  {
+    "cell_id": "HUST_2-3",
+    "charge_time": 0.2253061304,
+    "mean_discharge_voltage": 0.0048993908
+  },
+  {
+    "cell_id": "HUST_2-4",
+    "charge_time": -0.0205042602,
+    "mean_discharge_voltage": -0.0129856931
+  },
+  {
+    "cell_id": "HUST_2-5",
+    "charge_time": 0.6421059472,
+    "mean_discharge_voltage": -0.0603802875
+  },
+  {
+    "cell_id": "HUST_2-8",
+    "charge_time": -0.7477368834,
+    "mean_discharge_voltage": 0.0310576391
+  },
+  {
+    "cell_id": "HUST_3-1",
+    "charge_time": -0.5743934631,
+    "mean_discharge_voltage": -0.0284194814
+  },
+  {
+    "cell_id": "HUST_3-2",
+    "charge_time": -1.0005421334,
+    "mean_discharge_voltage": -0.0460600771
+  },
+  {
+    "cell_id": "HUST_3-3",
+    "charge_time": -1.4508389432,
+    "mean_discharge_voltage": -0.0516904382
+  },
+  {
+    "cell_id": "HUST_3-4",
+    "charge_time": -1.7734693854,
+    "mean_discharge_voltage": -0.0346754084
+  },
+  {
+    "cell_id": "HUST_3-5",
+    "charge_time": 1.8921491497,
+    "mean_discharge_voltage": 0.0188701909
+  },
+  {
+    "cell_id": "HUST_3-7",
+    "charge_time": -1.6072006743,
+    "mean_discharge_voltage": -0.0241104606
+  },
+  {
+    "cell_id": "HUST_3-8",
+    "charge_time": -0.7249497013,
+    "mean_discharge_voltage": -0.0532837682
+  },
+  {
+    "cell_id": "HUST_4-1",
+    "charge_time": -2.4236721422,
+    "mean_discharge_voltage": -0.0182552368
+  },
+  {
+    "cell_id": "HUST_4-2",
+    "charge_time": 0.8201517461,
+    "mean_discharge_voltage": 0.0529600934
+  },
+  {
+    "cell_id": "HUST_4-3",
+    "charge_time": -0.792390225,
+    "mean_discharge_voltage": 0.045795427
+  },
+  {
+    "cell_id": "HUST_4-4",
+    "charge_time": -0.7292146127,
+    "mean_discharge_voltage": 0.042137371
+  },
+  {
+    "cell_id": "HUST_4-8",
+    "charge_time": 0.6851895644,
+    "mean_discharge_voltage": -0.0060554355
+  },
+  {
+    "cell_id": "HUST_5-1",
+    "charge_time": 2.5132328407,
+    "mean_discharge_voltage": -0.0207333337
+  },
+  {
+    "cell_id": "HUST_5-2",
+    "charge_time": -0.152781758,
+    "mean_discharge_voltage": -0.0244212765
+  },
+  {
+    "cell_id": "HUST_5-3",
+    "charge_time": 1.3317272464,
+    "mean_discharge_voltage": -0.0235396303
+  },
+  {
+    "cell_id": "HUST_5-4",
+    "charge_time": 2.4647755673,
+    "mean_discharge_voltage": 0.0275692579
+  },
+  {
+    "cell_id": "HUST_5-5",
+    "charge_time": 1.2975698994,
+    "mean_discharge_voltage": -0.0315623935
+  },
+  {
+    "cell_id": "HUST_5-6",
+    "charge_time": 2.0051557449,
+    "mean_discharge_voltage": -0.0378796702
+  },
+  {
+    "cell_id": "HUST_6-1",
+    "charge_time": 0.9713551353,
+    "mean_discharge_voltage": 0.0222667636
+  },
+  {
+    "cell_id": "HUST_6-2",
+    "charge_time": 1.3882452409,
+    "mean_discharge_voltage": -0.0354669538
+  },
+  {
+    "cell_id": "HUST_6-5",
+    "charge_time": 1.3646375756,
+    "mean_discharge_voltage": -0.0543218722
+  },
+  {
+    "cell_id": "HUST_6-8",
+    "charge_time": 0.5286958045,
+    "mean_discharge_voltage": -0.0275658173
+  },
+  {
+    "cell_id": "HUST_7-1",
+    "charge_time": -1.6879681632,
+    "mean_discharge_voltage": -0.0119467516
+  },
+  {
+    "cell_id": "HUST_7-4",
+    "charge_time": -0.1488552049,
+    "mean_discharge_voltage": 0.0572255773
+  },
+  {
+    "cell_id": "HUST_7-5",
+    "charge_time": 0.1822913671,
+    "mean_discharge_voltage": 0.0402207131
+  },
+  {
+    "cell_id": "HUST_7-6",
+    "charge_time": -0.8249125512,
+    "mean_discharge_voltage": 0.0505103386
+  },
+  {
+    "cell_id": "HUST_7-7",
+    "charge_time": -1.0120491192,
+    "mean_discharge_voltage": 0.0526305161
+  },
+  {
+    "cell_id": "HUST_8-2",
+    "charge_time": 1.466360639,
+    "mean_discharge_voltage": 0.0038534098
+  },
+  {
+    "cell_id": "HUST_8-3",
+    "charge_time": -0.1131428321,
+    "mean_discharge_voltage": -0.0045115814
+  },
+  {
+    "cell_id": "HUST_8-4",
+    "charge_time": -0.3209503937,
+    "mean_discharge_voltage": 0.0130912292
+  },
+  {
+    "cell_id": "HUST_8-5",
+    "charge_time": 0.0128073891,
+    "mean_discharge_voltage": 0.0385218697
+  },
+  {
+    "cell_id": "HUST_8-7",
+    "charge_time": 1.0536504017,
+    "mean_discharge_voltage": -0.0013034963
+  },
+  {
+    "cell_id": "HUST_8-8",
+    "charge_time": 0.0305239237,
+    "mean_discharge_voltage": -0.0212255222
+  },
+  {
+    "cell_id": "HUST_9-2",
+    "charge_time": 0.8471067837,
+    "mean_discharge_voltage": 0.0271541217
+  },
+  {
+    "cell_id": "HUST_9-3",
+    "charge_time": 0.1948331777,
+    "mean_discharge_voltage": -0.0009650757
+  },
+  {
+    "cell_id": "HUST_9-4",
+    "charge_time": -0.197866906,
+    "mean_discharge_voltage": -0.0098634898
+  },
+  {
+    "cell_id": "HUST_9-5",
+    "charge_time": -0.8289873597,
+    "mean_discharge_voltage": -0.0170783745
+  },
+  {
+    "cell_id": "HUST_9-7",
+    "charge_time": -0.2481797483,
+    "mean_discharge_voltage": 0.0292260509
+  }
+]

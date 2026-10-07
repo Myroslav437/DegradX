@@ -1,0 +1,13 @@
+{
+  "stage": "v2/v3_fit_profiles",
+  "device": "cpu",
+  "wall_clock_s": 63.429,
+  "sections_s": {
+    "MATR_split": 0.363,
+    "MATR_fit": 30.854,
+    "MATR_figures": 2.498,
+    "HUST_split": 0.187,
+    "HUST_fit": 26.752,
+    "HUST_figures": 1.724
+  }
+}

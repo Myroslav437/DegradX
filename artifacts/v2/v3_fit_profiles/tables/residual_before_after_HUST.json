@@ -1,0 +1,18 @@
+[
+  {
+    "channel": "charge_time",
+    "variance_before": 1.3970634021,
+    "lag1_before": 0.9931597265,
+    "variance_after": 1.3927395048,
+    "lag1_after": 0.9934008853,
+    "variance_ratio": 0.99690501
+  },
+  {
+    "channel": "mean_discharge_voltage",
+    "variance_before": 2.78684e-05,
+    "lag1_before": 0.9805603988,
+    "variance_after": 2.50545e-05,
+    "lag1_after": 0.9779724118,
+    "variance_ratio": 0.8990279472
+  }
+]

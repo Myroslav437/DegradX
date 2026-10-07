@@ -1,0 +1,667 @@
+[
+  {
+    "cell_id": "MATR_b1c1",
+    "charge_time": 2.885020588,
+    "mean_discharge_voltage": 0.0266647379,
+    "internal_resistance": 0.0005522679,
+    "temperature_mean": -2.360524463
+  },
+  {
+    "cell_id": "MATR_b1c11",
+    "charge_time": 0.9316119743,
+    "mean_discharge_voltage": -0.0204597727,
+    "internal_resistance": -9.43498e-05,
+    "temperature_mean": -0.5584788144
+  },
+  {
+    "cell_id": "MATR_b1c12",
+    "charge_time": 0.4331245398,
+    "mean_discharge_voltage": 0.0156725816,
+    "internal_resistance": 0.0001696636,
+    "temperature_mean": 0.2190645051
+  },
+  {
+    "cell_id": "MATR_b1c13",
+    "charge_time": 0.4612200427,
+    "mean_discharge_voltage": -0.0090382927,
+    "internal_resistance": 0.000758311,
+    "temperature_mean": -1.1332092427
+  },
+  {
+    "cell_id": "MATR_b1c18",
+    "charge_time": 0.2750652354,
+    "mean_discharge_voltage": -0.018368406,
+    "internal_resistance": -0.000505941,
+    "temperature_mean": -1.3013327494
+  },
+  {
+    "cell_id": "MATR_b1c19",
+    "charge_time": 0.4233380581,
+    "mean_discharge_voltage": -0.0193276936,
+    "internal_resistance": 4.94824e-05,
+    "temperature_mean": -0.3483259411
+  },
+  {
+    "cell_id": "MATR_b1c20",
+    "charge_time": -1.0834305204,
+    "mean_discharge_voltage": 0.0104072407,
+    "internal_resistance": -0.0011808454,
+    "temperature_mean": -1.5308650481
+  },
+  {
+    "cell_id": "MATR_b1c21",
+    "charge_time": -1.0128946629,
+    "mean_discharge_voltage": -0.0009331589,
+    "internal_resistance": -0.001286003,
+    "temperature_mean": -0.4917479907
+  },
+  {
+    "cell_id": "MATR_b1c22",
+    "charge_time": 0.772191301,
+    "mean_discharge_voltage": -0.0037098304,
+    "internal_resistance": 0.00031765,
+    "temperature_mean": -0.3840881038
+  },
+  {
+    "cell_id": "MATR_b1c23",
+    "charge_time": 0.7130026734,
+    "mean_discharge_voltage": 0.0123687788,
+    "internal_resistance": 0.0005618476,
+    "temperature_mean": -1.2218649204
+  },
+  {
+    "cell_id": "MATR_b1c25",
+    "charge_time": 0.9383665013,
+    "mean_discharge_voltage": -0.0083895186,
+    "internal_resistance": 0.000397172,
+    "temperature_mean": 0.7328125838
+  },
+  {
+    "cell_id": "MATR_b1c27",
+    "charge_time": 0.502159311,
+    "mean_discharge_voltage": -0.0120687914,
+    "internal_resistance": -9.81318e-05,
+    "temperature_mean": 0.7650568332
+  },
+  {
+    "cell_id": "MATR_b1c28",
+    "charge_time": 0.3740770718,
+    "mean_discharge_voltage": -0.0062393609,
+    "internal_resistance": 0.0004751225,
+    "temperature_mean": 0.7730506218
+  },
+  {
+    "cell_id": "MATR_b1c29",
+    "charge_time": 0.1990311323,
+    "mean_discharge_voltage": 0.0081221349,
+    "internal_resistance": 0.000339128,
+    "temperature_mean": -0.5371077724
+  },
+  {
+    "cell_id": "MATR_b1c30",
+    "charge_time": 0.0563650685,
+    "mean_discharge_voltage": -0.0127519406,
+    "internal_resistance": -0.0002356125,
+    "temperature_mean": 0.3320088673
+  },
+  {
+    "cell_id": "MATR_b1c31",
+    "charge_time": 0.2172226816,
+    "mean_discharge_voltage": 0.0161121301,
+    "internal_resistance": 0.0006318925,
+    "temperature_mean": -3.2200740611
+  },
+  {
+    "cell_id": "MATR_b1c32",
+    "charge_time": -0.2225787901,
+    "mean_discharge_voltage": -0.0206117481,
+    "internal_resistance": -0.000101645,
+    "temperature_mean": -0.2383687454
+  },
+  {
+    "cell_id": "MATR_b1c33",
+    "charge_time": 0.1749188342,
+    "mean_discharge_voltage": -0.0146798103,
+    "internal_resistance": 0.0001392205,
+    "temperature_mean": 0.386034117
+  },
+  {
+    "cell_id": "MATR_b1c34",
+    "charge_time": 0.897836777,
+    "mean_discharge_voltage": 0.0,
+    "internal_resistance": 0.0005069572,
+    "temperature_mean": -0.5709276262
+  },
+  {
+    "cell_id": "MATR_b1c35",
+    "charge_time": 0.9353037102,
+    "mean_discharge_voltage": -0.030245006,
+    "internal_resistance": 0.00074036,
+    "temperature_mean": -1.0933402528
+  },
+  {
+    "cell_id": "MATR_b1c37",
+    "charge_time": 1.4817202684,
+    "mean_discharge_voltage": -0.020821555,
+    "internal_resistance": 0.0003118393,
+    "temperature_mean": -0.3328572045
+  },
+  {
+    "cell_id": "MATR_b1c38",
+    "charge_time": -0.5275546924,
+    "mean_discharge_voltage": -0.0422619713,
+    "internal_resistance": 0.0,
+    "temperature_mean": 0.6132437915
+  },
+  {
+    "cell_id": "MATR_b1c39",
+    "charge_time": -0.1166102268,
+    "mean_discharge_voltage": -0.0296335636,
+    "internal_resistance": 0.00050687,
+    "temperature_mean": 0.3260517224
+  },
+  {
+    "cell_id": "MATR_b1c4",
+    "charge_time": 1.6145558041,
+    "mean_discharge_voltage": 0.041862128,
+    "internal_resistance": 0.0003033065,
+    "temperature_mean": -2.5198926476
+  },
+  {
+    "cell_id": "MATR_b1c40",
+    "charge_time": 1.6125538521,
+    "mean_discharge_voltage": -0.0100871883,
+    "internal_resistance": 0.0005531952,
+    "temperature_mean": 0.1312576884
+  },
+  {
+    "cell_id": "MATR_b1c42",
+    "charge_time": 0.6303219455,
+    "mean_discharge_voltage": -0.0151342776,
+    "internal_resistance": 0.000535155,
+    "temperature_mean": 0.4698394282
+  },
+  {
+    "cell_id": "MATR_b1c43",
+    "charge_time": 0.5239631886,
+    "mean_discharge_voltage": -0.025721529,
+    "internal_resistance": -0.0001540135,
+    "temperature_mean": 0.1311475991
+  },
+  {
+    "cell_id": "MATR_b1c5",
+    "charge_time": 0.6338644385,
+    "mean_discharge_voltage": 0.0143164569,
+    "internal_resistance": -0.0002290104,
+    "temperature_mean": -2.2442992187
+  },
+  {
+    "cell_id": "MATR_b1c9",
+    "charge_time": 0.9114464252,
+    "mean_discharge_voltage": 0.012299818,
+    "internal_resistance": 0.000681413,
+    "temperature_mean": -0.7161176046
+  },
+  {
+    "cell_id": "MATR_b2c0",
+    "charge_time": 2.5228269101,
+    "mean_discharge_voltage": -0.0483110025,
+    "internal_resistance": 0.0011941641,
+    "temperature_mean": -3.9561908351
+  },
+  {
+    "cell_id": "MATR_b2c10",
+    "charge_time": 0.7736077634,
+    "mean_discharge_voltage": 0.0210751482,
+    "internal_resistance": 0.001237558,
+    "temperature_mean": 0.0177299293
+  },
+  {
+    "cell_id": "MATR_b2c11",
+    "charge_time": 0.592494119,
+    "mean_discharge_voltage": -0.0036245056,
+    "internal_resistance": 0.0007506181,
+    "temperature_mean": -0.2421048481
+  },
+  {
+    "cell_id": "MATR_b2c17",
+    "charge_time": 0.883702488,
+    "mean_discharge_voltage": -0.0344760315,
+    "internal_resistance": 0.001216837,
+    "temperature_mean": -2.2791171875
+  },
+  {
+    "cell_id": "MATR_b2c18",
+    "charge_time": 1.5845605321,
+    "mean_discharge_voltage": -0.0322710179,
+    "internal_resistance": 0.0009565964,
+    "temperature_mean": -0.9129454535
+  },
+  {
+    "cell_id": "MATR_b2c19",
+    "charge_time": 1.3985808674,
+    "mean_discharge_voltage": -0.0192794721,
+    "internal_resistance": 0.000553723,
+    "temperature_mean": -1.8103830327
+  },
+  {
+    "cell_id": "MATR_b2c2",
+    "charge_time": 0.7742249559,
+    "mean_discharge_voltage": -0.039954318,
+    "internal_resistance": 0.001273569,
+    "temperature_mean": -0.8024370324
+  },
+  {
+    "cell_id": "MATR_b2c20",
+    "charge_time": 0.7004209348,
+    "mean_discharge_voltage": -0.0105443833,
+    "internal_resistance": 0.00092318,
+    "temperature_mean": -0.9722300025
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "charge_time": 1.2638555908,
+    "mean_discharge_voltage": -0.0317351453,
+    "internal_resistance": 0.0010104083,
+    "temperature_mean": -2.8623496106
+  },
+  {
+    "cell_id": "MATR_b2c22",
+    "charge_time": 0.8339248137,
+    "mean_discharge_voltage": -0.0301837929,
+    "internal_resistance": 0.000708471,
+    "temperature_mean": -1.8942112033
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "charge_time": 0.5234239601,
+    "mean_discharge_voltage": -0.0271655808,
+    "internal_resistance": 0.0008465415,
+    "temperature_mean": -4.0008965308
+  },
+  {
+    "cell_id": "MATR_b2c25",
+    "charge_time": 1.0796263124,
+    "mean_discharge_voltage": -0.0396675132,
+    "internal_resistance": 0.0007690717,
+    "temperature_mean": -4.7443348561
+  },
+  {
+    "cell_id": "MATR_b2c27",
+    "charge_time": 0.6561945604,
+    "mean_discharge_voltage": -0.0343971877,
+    "internal_resistance": 0.0009310536,
+    "temperature_mean": -1.6070483936
+  },
+  {
+    "cell_id": "MATR_b2c28",
+    "charge_time": 0.1770366121,
+    "mean_discharge_voltage": -0.011966921,
+    "internal_resistance": 0.00064769,
+    "temperature_mean": -0.3316051018
+  },
+  {
+    "cell_id": "MATR_b2c29",
+    "charge_time": -0.0530850933,
+    "mean_discharge_voltage": -0.0365888349,
+    "internal_resistance": 0.0008885454,
+    "temperature_mean": 0.3131425121
+  },
+  {
+    "cell_id": "MATR_b2c30",
+    "charge_time": 0.494909426,
+    "mean_discharge_voltage": -0.0399357011,
+    "internal_resistance": 0.0010589739,
+    "temperature_mean": -1.1691699912
+  },
+  {
+    "cell_id": "MATR_b2c32",
+    "charge_time": 0.00367735,
+    "mean_discharge_voltage": -0.0324318508,
+    "internal_resistance": 0.0013260259,
+    "temperature_mean": 0.0
+  },
+  {
+    "cell_id": "MATR_b2c34",
+    "charge_time": 0.0632008485,
+    "mean_discharge_voltage": 0.0059291812,
+    "internal_resistance": 0.0012470325,
+    "temperature_mean": 0.084005212
+  },
+  {
+    "cell_id": "MATR_b2c35",
+    "charge_time": 0.6162979265,
+    "mean_discharge_voltage": -0.0412134528,
+    "internal_resistance": 0.0006687259,
+    "temperature_mean": 0.2173860341
+  },
+  {
+    "cell_id": "MATR_b2c36",
+    "charge_time": 0.2376591532,
+    "mean_discharge_voltage": -0.0442451157,
+    "internal_resistance": 0.0040080059,
+    "temperature_mean": 0.238487061
+  },
+  {
+    "cell_id": "MATR_b2c37",
+    "charge_time": -0.0583706733,
+    "mean_discharge_voltage": -0.0523637483,
+    "internal_resistance": 0.0023147127,
+    "temperature_mean": -1.3815301072
+  },
+  {
+    "cell_id": "MATR_b2c38",
+    "charge_time": 0.1272533517,
+    "mean_discharge_voltage": -0.0501891772,
+    "internal_resistance": 0.001399476,
+    "temperature_mean": -1.1834311641
+  },
+  {
+    "cell_id": "MATR_b2c39",
+    "charge_time": -0.0662853988,
+    "mean_discharge_voltage": -0.0521647135,
+    "internal_resistance": 0.0018891089,
+    "temperature_mean": -1.1749388093
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "charge_time": 0.1115108001,
+    "mean_discharge_voltage": -0.0120015814,
+    "internal_resistance": 0.001380451,
+    "temperature_mean": -0.3545716259
+  },
+  {
+    "cell_id": "MATR_b2c42",
+    "charge_time": 0.269752966,
+    "mean_discharge_voltage": -0.0448758342,
+    "internal_resistance": 0.0009403887,
+    "temperature_mean": -0.0848287123
+  },
+  {
+    "cell_id": "MATR_b2c44",
+    "charge_time": 0.0,
+    "mean_discharge_voltage": -0.0589638915,
+    "internal_resistance": 0.001564681,
+    "temperature_mean": -0.139999876
+  },
+  {
+    "cell_id": "MATR_b2c45",
+    "charge_time": 0.4784421923,
+    "mean_discharge_voltage": -0.0173515956,
+    "internal_resistance": 0.000573864,
+    "temperature_mean": -0.825450387
+  },
+  {
+    "cell_id": "MATR_b2c47",
+    "charge_time": -0.8496520403,
+    "mean_discharge_voltage": 0.0293958706,
+    "internal_resistance": 0.0004271135,
+    "temperature_mean": -1.4887825186
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "charge_time": -0.124497436,
+    "mean_discharge_voltage": 0.0370955067,
+    "internal_resistance": -0.0002798258,
+    "temperature_mean": -1.3076858376
+  },
+  {
+    "cell_id": "MATR_b3c1",
+    "charge_time": -5.091394914,
+    "mean_discharge_voltage": 0.0891395223,
+    "internal_resistance": -0.001441913,
+    "temperature_mean": 1.9101512812
+  },
+  {
+    "cell_id": "MATR_b3c10",
+    "charge_time": -3.4602916174,
+    "mean_discharge_voltage": 0.0380685573,
+    "internal_resistance": -0.001166551,
+    "temperature_mean": -0.5272291933
+  },
+  {
+    "cell_id": "MATR_b3c11",
+    "charge_time": -3.3968724109,
+    "mean_discharge_voltage": 0.0074996409,
+    "internal_resistance": -0.0010926836,
+    "temperature_mean": 1.3022278055
+  },
+  {
+    "cell_id": "MATR_b3c12",
+    "charge_time": -3.5061290603,
+    "mean_discharge_voltage": -0.0036168003,
+    "internal_resistance": -0.0004303232,
+    "temperature_mean": 0.293846389
+  },
+  {
+    "cell_id": "MATR_b3c13",
+    "charge_time": -3.429316754,
+    "mean_discharge_voltage": 0.0209129773,
+    "internal_resistance": -0.0016087544,
+    "temperature_mean": 1.2392530797
+  },
+  {
+    "cell_id": "MATR_b3c14",
+    "charge_time": -3.1890831155,
+    "mean_discharge_voltage": -0.001644744,
+    "internal_resistance": -0.001044223,
+    "temperature_mean": 0.2389270563
+  },
+  {
+    "cell_id": "MATR_b3c16",
+    "charge_time": -4.9082673521,
+    "mean_discharge_voltage": 0.1275197491,
+    "internal_resistance": -0.0012526703,
+    "temperature_mean": 1.8509811078
+  },
+  {
+    "cell_id": "MATR_b3c17",
+    "charge_time": -6.0169501638,
+    "mean_discharge_voltage": 0.1264371193,
+    "internal_resistance": -0.0010374939,
+    "temperature_mean": 2.0212668711
+  },
+  {
+    "cell_id": "MATR_b3c18",
+    "charge_time": -5.5217089961,
+    "mean_discharge_voltage": 0.1172723565,
+    "internal_resistance": -0.0015201974,
+    "temperature_mean": 2.4391252892
+  },
+  {
+    "cell_id": "MATR_b3c2",
+    "charge_time": -6.1139589868,
+    "mean_discharge_voltage": 0.1145198074,
+    "internal_resistance": -0.0019073394,
+    "temperature_mean": 4.4415150621
+  },
+  {
+    "cell_id": "MATR_b3c20",
+    "charge_time": -3.8709699784,
+    "mean_discharge_voltage": 0.0167425423,
+    "internal_resistance": -0.001194791,
+    "temperature_mean": 0.2130947907
+  },
+  {
+    "cell_id": "MATR_b3c22",
+    "charge_time": -5.7974249303,
+    "mean_discharge_voltage": 0.0623112647,
+    "internal_resistance": -0.0007766525,
+    "temperature_mean": 1.8608056006
+  },
+  {
+    "cell_id": "MATR_b3c23",
+    "charge_time": -4.5648234766,
+    "mean_discharge_voltage": 0.1430920295,
+    "internal_resistance": -0.0012732315,
+    "temperature_mean": 1.1409669319
+  },
+  {
+    "cell_id": "MATR_b3c24",
+    "charge_time": -5.1696617611,
+    "mean_discharge_voltage": 0.0300958625,
+    "internal_resistance": -0.0009422292,
+    "temperature_mean": 1.9215175965
+  },
+  {
+    "cell_id": "MATR_b3c25",
+    "charge_time": -4.7916152835,
+    "mean_discharge_voltage": 0.0385572839,
+    "internal_resistance": -0.0008022935,
+    "temperature_mean": 2.937323039
+  },
+  {
+    "cell_id": "MATR_b3c26",
+    "charge_time": -4.394206832,
+    "mean_discharge_voltage": 0.0546129014,
+    "internal_resistance": -0.000866081,
+    "temperature_mean": 3.1632191287
+  },
+  {
+    "cell_id": "MATR_b3c27",
+    "charge_time": -4.5026820767,
+    "mean_discharge_voltage": 0.0354569958,
+    "internal_resistance": -0.0015890387,
+    "temperature_mean": 2.5615936108
+  },
+  {
+    "cell_id": "MATR_b3c28",
+    "charge_time": -4.1810408381,
+    "mean_discharge_voltage": 0.0431744025,
+    "internal_resistance": -0.0028086859,
+    "temperature_mean": 3.0128872215
+  },
+  {
+    "cell_id": "MATR_b3c29",
+    "charge_time": -3.662604376,
+    "mean_discharge_voltage": 0.0293077537,
+    "internal_resistance": -0.0019166797,
+    "temperature_mean": -1.8838774665
+  },
+  {
+    "cell_id": "MATR_b3c3",
+    "charge_time": -5.7294586325,
+    "mean_discharge_voltage": 0.0942135852,
+    "internal_resistance": -0.0014804489,
+    "temperature_mean": 3.4298025041
+  },
+  {
+    "cell_id": "MATR_b3c30",
+    "charge_time": -4.1515284889,
+    "mean_discharge_voltage": 0.0302583597,
+    "internal_resistance": -0.0009105645,
+    "temperature_mean": -0.8196136986
+  },
+  {
+    "cell_id": "MATR_b3c31",
+    "charge_time": -3.6228339435,
+    "mean_discharge_voltage": -0.0050332783,
+    "internal_resistance": -0.0005212005,
+    "temperature_mean": 1.156658628
+  },
+  {
+    "cell_id": "MATR_b3c32",
+    "charge_time": -5.3781689803,
+    "mean_discharge_voltage": 0.1821540835,
+    "internal_resistance": -0.0012686126,
+    "temperature_mean": 2.7203577498
+  },
+  {
+    "cell_id": "MATR_b3c34",
+    "charge_time": -5.884226275,
+    "mean_discharge_voltage": 0.1199440565,
+    "internal_resistance": -0.0011407303,
+    "temperature_mean": 2.9020053261
+  },
+  {
+    "cell_id": "MATR_b3c35",
+    "charge_time": -5.9507057823,
+    "mean_discharge_voltage": 0.1131121707,
+    "internal_resistance": -0.0011550027,
+    "temperature_mean": 2.7558079265
+  },
+  {
+    "cell_id": "MATR_b3c36",
+    "charge_time": -5.5511039552,
+    "mean_discharge_voltage": 0.0996762359,
+    "internal_resistance": -0.0013650899,
+    "temperature_mean": 3.1037412014
+  },
+  {
+    "cell_id": "MATR_b3c38",
+    "charge_time": -6.1031333098,
+    "mean_discharge_voltage": 0.1394102905,
+    "internal_resistance": -0.000614783,
+    "temperature_mean": 1.7992130371
+  },
+  {
+    "cell_id": "MATR_b3c39",
+    "charge_time": -6.6712899808,
+    "mean_discharge_voltage": 0.130149585,
+    "internal_resistance": -0.0009396406,
+    "temperature_mean": 0.7297933572
+  },
+  {
+    "cell_id": "MATR_b3c4",
+    "charge_time": -4.7703449414,
+    "mean_discharge_voltage": 0.090475307,
+    "internal_resistance": -0.00137331,
+    "temperature_mean": -1.0042566977
+  },
+  {
+    "cell_id": "MATR_b3c42",
+    "charge_time": -3.8129444569,
+    "mean_discharge_voltage": 0.0460553212,
+    "internal_resistance": -0.000585363,
+    "temperature_mean": 0.3321795751
+  },
+  {
+    "cell_id": "MATR_b3c43",
+    "charge_time": -4.131869511,
+    "mean_discharge_voltage": 0.0200638598,
+    "internal_resistance": -0.0007377371,
+    "temperature_mean": 1.3234314104
+  },
+  {
+    "cell_id": "MATR_b3c44",
+    "charge_time": -3.7646727783,
+    "mean_discharge_voltage": 0.0088406036,
+    "internal_resistance": -0.000900326,
+    "temperature_mean": 0.4624343154
+  },
+  {
+    "cell_id": "MATR_b3c45",
+    "charge_time": -4.5249044521,
+    "mean_discharge_voltage": 0.1191268365,
+    "internal_resistance": -0.000891433,
+    "temperature_mean": -0.339278702
+  },
+  {
+    "cell_id": "MATR_b3c5",
+    "charge_time": -5.3774543887,
+    "mean_discharge_voltage": 0.0574268088,
+    "internal_resistance": -0.0014608334,
+    "temperature_mean": 3.1090623682
+  },
+  {
+    "cell_id": "MATR_b3c6",
+    "charge_time": -4.8572994326,
+    "mean_discharge_voltage": 0.0879809982,
+    "internal_resistance": -0.002683776,
+    "temperature_mean": 1.0555943147
+  },
+  {
+    "cell_id": "MATR_b3c7",
+    "charge_time": -3.8066712681,
+    "mean_discharge_voltage": 0.0638809321,
+    "internal_resistance": -0.0010045631,
+    "temperature_mean": -0.3211753632
+  },
+  {
+    "cell_id": "MATR_b3c8",
+    "charge_time": -3.8604254724,
+    "mean_discharge_voltage": 0.0209902723,
+    "internal_resistance": -0.001392413,
+    "temperature_mean": 0.3159541367
+  }
+]

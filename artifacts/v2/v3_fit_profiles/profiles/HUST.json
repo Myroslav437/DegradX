@@ -1,0 +1,3715 @@
+{
+  "dataset": "HUST",
+  "declared_used": {
+    "q_nom_Ah": 1.1,
+    "rho": 0.8,
+    "k_q1": 20,
+    "sg_window": 11,
+    "sg_polyorder": 2,
+    "detection_k": 2.5,
+    "detection_m": 2,
+    "detection_max_duration": 11,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "cleaning_rule": {
+      "name": "D12",
+      "drop_degenerate": true,
+      "capacity_low_frac": null,
+      "capacity_high_frac": null,
+      "isolated_excursion_frac": 0.05,
+      "drop_recovered_collapse": true
+    },
+    "channel_rule": {
+      "frac": 0.05,
+      "max_run": 3
+    },
+    "channels_available": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ]
+  },
+  "units": {
+    "fitting": [
+      "HUST_1-1",
+      "HUST_1-2",
+      "HUST_1-6",
+      "HUST_1-7",
+      "HUST_10-1",
+      "HUST_10-2",
+      "HUST_10-3",
+      "HUST_10-4",
+      "HUST_10-5",
+      "HUST_10-7",
+      "HUST_10-8",
+      "HUST_2-2",
+      "HUST_2-3",
+      "HUST_2-4",
+      "HUST_2-5",
+      "HUST_2-8",
+      "HUST_3-1",
+      "HUST_3-2",
+      "HUST_3-3",
+      "HUST_3-4",
+      "HUST_3-5",
+      "HUST_3-7",
+      "HUST_3-8",
+      "HUST_4-1",
+      "HUST_4-2",
+      "HUST_4-3",
+      "HUST_4-4",
+      "HUST_4-8",
+      "HUST_5-1",
+      "HUST_5-2",
+      "HUST_5-3",
+      "HUST_5-4",
+      "HUST_5-5",
+      "HUST_5-6",
+      "HUST_6-1",
+      "HUST_6-2",
+      "HUST_6-5",
+      "HUST_6-8",
+      "HUST_7-1",
+      "HUST_7-4",
+      "HUST_7-5",
+      "HUST_7-6",
+      "HUST_7-7",
+      "HUST_8-2",
+      "HUST_8-3",
+      "HUST_8-4",
+      "HUST_8-5",
+      "HUST_8-7",
+      "HUST_8-8",
+      "HUST_9-2",
+      "HUST_9-3",
+      "HUST_9-4",
+      "HUST_9-5",
+      "HUST_9-7"
+    ],
+    "fitting_passing_guard": [
+      "HUST_1-1",
+      "HUST_1-2",
+      "HUST_1-6",
+      "HUST_1-7",
+      "HUST_10-1",
+      "HUST_10-2",
+      "HUST_10-3",
+      "HUST_10-4",
+      "HUST_10-5",
+      "HUST_10-7",
+      "HUST_10-8",
+      "HUST_2-2",
+      "HUST_2-3",
+      "HUST_2-4",
+      "HUST_2-5",
+      "HUST_2-8",
+      "HUST_3-1",
+      "HUST_3-2",
+      "HUST_3-3",
+      "HUST_3-4",
+      "HUST_3-5",
+      "HUST_3-7",
+      "HUST_3-8",
+      "HUST_4-1",
+      "HUST_4-2",
+      "HUST_4-3",
+      "HUST_4-4",
+      "HUST_4-8",
+      "HUST_5-1",
+      "HUST_5-2",
+      "HUST_5-3",
+      "HUST_5-4",
+      "HUST_5-5",
+      "HUST_5-6",
+      "HUST_6-1",
+      "HUST_6-2",
+      "HUST_6-5",
+      "HUST_6-8",
+      "HUST_7-1",
+      "HUST_7-4",
+      "HUST_7-5",
+      "HUST_7-6",
+      "HUST_7-7",
+      "HUST_8-2",
+      "HUST_8-3",
+      "HUST_8-4",
+      "HUST_8-5",
+      "HUST_8-7",
+      "HUST_8-8",
+      "HUST_9-2",
+      "HUST_9-3",
+      "HUST_9-4",
+      "HUST_9-5",
+      "HUST_9-7"
+    ],
+    "fitting_reaching_eol": [
+      "HUST_1-1",
+      "HUST_1-2",
+      "HUST_1-6",
+      "HUST_1-7",
+      "HUST_10-1",
+      "HUST_10-2",
+      "HUST_10-3",
+      "HUST_10-4",
+      "HUST_10-5",
+      "HUST_10-7",
+      "HUST_10-8",
+      "HUST_2-2",
+      "HUST_2-3",
+      "HUST_2-4",
+      "HUST_2-5",
+      "HUST_2-8",
+      "HUST_3-1",
+      "HUST_3-2",
+      "HUST_3-3",
+      "HUST_3-4",
+      "HUST_3-5",
+      "HUST_3-7",
+      "HUST_3-8",
+      "HUST_4-1",
+      "HUST_4-2",
+      "HUST_4-3",
+      "HUST_4-4",
+      "HUST_4-8",
+      "HUST_5-1",
+      "HUST_5-2",
+      "HUST_5-3",
+      "HUST_5-4",
+      "HUST_5-5",
+      "HUST_5-6",
+      "HUST_6-1",
+      "HUST_6-2",
+      "HUST_6-5",
+      "HUST_6-8",
+      "HUST_7-1",
+      "HUST_7-4",
+      "HUST_7-5",
+      "HUST_7-6",
+      "HUST_7-7",
+      "HUST_8-2",
+      "HUST_8-3",
+      "HUST_8-4",
+      "HUST_8-5",
+      "HUST_8-7",
+      "HUST_8-8",
+      "HUST_9-2",
+      "HUST_9-3",
+      "HUST_9-4",
+      "HUST_9-5",
+      "HUST_9-7"
+    ]
+  },
+  "estimated_from_data": {
+    "E1_theta_distribution": {
+      "family": "rollover",
+      "param_names": [
+        "y0",
+        "m_o",
+        "N_k",
+        "delta",
+        "m_f"
+      ],
+      "n_units": 54,
+      "per_unit": [
+        {
+          "cell_id": "HUST_1-1",
+          "family_params": [
+            0.9935036380592535,
+            -0.05508177872948324,
+            0.9629278730347945,
+            0.1741528865305092,
+            -0.35079813364414675
+          ],
+          "q1": 1.1740283473193478,
+          "T": 1504,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1504,
+          "noise": {
+            "capacity": {
+              "variance": 8.977333055202708e-07,
+              "phi": 0.9347301512137512,
+              "n_used": 1502
+            },
+            "charge_time": {
+              "variance": 4.336080656051129,
+              "phi": 0.9964447918377048,
+              "n_used": 1502
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.229519529437289e-06,
+              "phi": 0.993918266952916,
+              "n_used": 1502
+            }
+          },
+          "offsets": {
+            "charge_time": -0.06191494870109704,
+            "mean_discharge_voltage": 0.05773173830642331
+          }
+        },
+        {
+          "cell_id": "HUST_1-2",
+          "family_params": [
+            0.9921211474225805,
+            -0.05346709618145411,
+            1.6942359498539092,
+            0.23738670329761932,
+            -0.17708571509569487
+          ],
+          "q1": 1.2053069067599071,
+          "T": 2678,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 2678,
+          "noise": {
+            "capacity": {
+              "variance": 2.428423482963539e-06,
+              "phi": 0.9850011451110638,
+              "n_used": 2667
+            },
+            "charge_time": {
+              "variance": 0.8477356649295797,
+              "phi": 0.9980119121047739,
+              "n_used": 2667
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.778161419480705e-05,
+              "phi": 0.9958277090581463,
+              "n_used": 2667
+            }
+          },
+          "offsets": {
+            "charge_time": 2.5486635253032768,
+            "mean_discharge_voltage": 0.02843180685269875
+          }
+        },
+        {
+          "cell_id": "HUST_1-6",
+          "family_params": [
+            0.9893248216324144,
+            -0.12826154494051226,
+            0.7285437700064794,
+            0.11773413621147281,
+            -0.39521471437084793
+          ],
+          "q1": 1.2031721841491843,
+          "T": 1143,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1143,
+          "noise": {
+            "capacity": {
+              "variance": 1.7735335090489402e-06,
+              "phi": 0.9293866702263717,
+              "n_used": 1143
+            },
+            "charge_time": {
+              "variance": 0.2863284957566114,
+              "phi": 0.9923365116618225,
+              "n_used": 1142
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.0122202893103911e-05,
+              "phi": 0.9791587089012256,
+              "n_used": 1143
+            }
+          },
+          "offsets": {
+            "charge_time": 3.350126223831384,
+            "mean_discharge_voltage": 0.033211139108244137
+          }
+        },
+        {
+          "cell_id": "HUST_1-7",
+          "family_params": [
+            0.993251538215504,
+            -0.05722154845321791,
+            1.096513081348666,
+            0.18191156490738478,
+            -0.3234054567292462
+          ],
+          "q1": 1.1857813594405595,
+          "T": 1678,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1678,
+          "noise": {
+            "capacity": {
+              "variance": 8.382194833948556e-07,
+              "phi": 0.9306842389676981,
+              "n_used": 1673
+            },
+            "charge_time": {
+              "variance": 1.5934123849510344,
+              "phi": 0.9962075749630191,
+              "n_used": 1673
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.0496808286545834e-05,
+              "phi": 0.9907686883243696,
+              "n_used": 1673
+            }
+          },
+          "offsets": {
+            "charge_time": 0.2992548849133767,
+            "mean_discharge_voltage": 0.0009650756694838947
+          }
+        },
+        {
+          "cell_id": "HUST_10-1",
+          "family_params": [
+            0.994007331751302,
+            -0.053346998337014895,
+            1.1920264774554419,
+            0.1958606675344697,
+            -0.3499044177448854
+          ],
+          "q1": 1.174714499300699,
+          "T": 1702,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1702,
+          "noise": {
+            "capacity": {
+              "variance": 8.203068927632973e-07,
+              "phi": 0.9395192599660772,
+              "n_used": 1700
+            },
+            "charge_time": {
+              "variance": 0.17888912761719292,
+              "phi": 0.9865719747518583,
+              "n_used": 1700
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.378229339590493e-06,
+              "phi": 0.9752840231637435,
+              "n_used": 1700
+            }
+          },
+          "offsets": {
+            "charge_time": -1.391509076526865,
+            "mean_discharge_voltage": 0.0037432304925917315
+          }
+        },
+        {
+          "cell_id": "HUST_10-2",
+          "family_params": [
+            0.9998893334499639,
+            -0.07564090909039452,
+            1.5092818448306449,
+            0.25542808425032315,
+            -0.55865208848922
+          ],
+          "q1": 1.1999069484071525,
+          "T": 1697,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1678,
+          "noise": {
+            "capacity": {
+              "variance": 8.774426886515279e-07,
+              "phi": 0.9592278683498618,
+              "n_used": 1678
+            },
+            "charge_time": {
+              "variance": 2.8522707958638662,
+              "phi": 0.9993915499095258,
+              "n_used": 1678
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.4220169445091924e-05,
+              "phi": 0.9817357016528239,
+              "n_used": 1678
+            }
+          },
+          "offsets": {
+            "charge_time": -1.430981824468275,
+            "mean_discharge_voltage": -0.013785848369892051
+          }
+        },
+        {
+          "cell_id": "HUST_10-3",
+          "family_params": [
+            0.9934161508270785,
+            -0.05666911407976227,
+            1.3153494821188119,
+            0.21569959749323886,
+            -0.31539536441437066
+          ],
+          "q1": 1.181921724320124,
+          "T": 1848,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 15,
+          "fit_positions": 1848,
+          "noise": {
+            "capacity": {
+              "variance": 6.161503292171932e-07,
+              "phi": 0.8974517470133965,
+              "n_used": 1765
+            },
+            "charge_time": {
+              "variance": 0.38701972199314927,
+              "phi": 0.9854983630242634,
+              "n_used": 1765
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.368467792396529e-06,
+              "phi": 0.6985832611547205,
+              "n_used": 1765
+            }
+          },
+          "offsets": {
+            "charge_time": -1.8085385873661286,
+            "mean_discharge_voltage": 0.008600944263284394
+          }
+        },
+        {
+          "cell_id": "HUST_10-4",
+          "family_params": [
+            1.0030521185136483,
+            -0.06470204898644669,
+            1.3582983740409218,
+            0.19791613154260135,
+            -0.3856082751906609
+          ],
+          "q1": 1.1956806434602472,
+          "T": 1811,
+          "t1": 20,
+          "n_positive": 4,
+          "n_negative": 0,
+          "fit_positions": 1792,
+          "noise": {
+            "capacity": {
+              "variance": 4.398621194932238e-07,
+              "phi": 0.9003412870925567,
+              "n_used": 1780
+            },
+            "charge_time": {
+              "variance": 0.5120059642150488,
+              "phi": 0.9836457821152347,
+              "n_used": 1780
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.219392525487901e-05,
+              "phi": 0.9936681425791497,
+              "n_used": 1780
+            }
+          },
+          "offsets": {
+            "charge_time": 0.5753155702278869,
+            "mean_discharge_voltage": 0.045738701591937936
+          }
+        },
+        {
+          "cell_id": "HUST_10-5",
+          "family_params": [
+            1.0023741203103937,
+            -0.059485056505406364,
+            1.5777517049796213,
+            0.2637154479242287,
+            -0.35678348315190417
+          ],
+          "q1": 1.1973988891996932,
+          "T": 2030,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 2011,
+          "noise": {
+            "capacity": {
+              "variance": 6.903657996205694e-07,
+              "phi": 0.9490898586881481,
+              "n_used": 2008
+            },
+            "charge_time": {
+              "variance": 1.0727280317634245,
+              "phi": 0.9985107924796304,
+              "n_used": 2008
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.267075653981642e-05,
+              "phi": 0.9950625629684952,
+              "n_used": 2008
+            }
+          },
+          "offsets": {
+            "charge_time": -0.012807389067133634,
+            "mean_discharge_voltage": 0.021020133678710806
+          }
+        },
+        {
+          "cell_id": "HUST_10-7",
+          "family_params": [
+            1.002699205402901,
+            -0.0684855575066385,
+            1.2691483604301084,
+            0.2165488590608475,
+            -0.34086739685004874
+          ],
+          "q1": 1.1974141228179267,
+          "T": 1783,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 2,
+          "fit_positions": 1764,
+          "noise": {
+            "capacity": {
+              "variance": 4.542211394902682e-07,
+              "phi": 0.9118492961533713,
+              "n_used": 1749
+            },
+            "charge_time": {
+              "variance": 0.6752656267350238,
+              "phi": 0.9939701869452934,
+              "n_used": 1749
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.427943903365627e-05,
+              "phi": 0.9916453355499026,
+              "n_used": 1749
+            }
+          },
+          "offsets": {
+            "charge_time": 0.20576760600108823,
+            "mean_discharge_voltage": 0.02566832117952278
+          }
+        },
+        {
+          "cell_id": "HUST_10-8",
+          "family_params": [
+            0.9933033977585259,
+            -0.06835557489764456,
+            0.8618197200091312,
+            0.13090342232912106,
+            -0.3530769870408041
+          ],
+          "q1": 1.1863510301476308,
+          "T": 1400,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 12,
+          "fit_positions": 1400,
+          "noise": {
+            "capacity": {
+              "variance": 7.428550297879173e-07,
+              "phi": 0.8914752119792857,
+              "n_used": 1346
+            },
+            "charge_time": {
+              "variance": 1.2611262646243047,
+              "phi": 0.9892177249197874,
+              "n_used": 1346
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.3513390134622566e-05,
+              "phi": 0.9739678608198125,
+              "n_used": 1346
+            }
+          },
+          "offsets": {
+            "charge_time": -0.5032823770748847,
+            "mean_discharge_voltage": 0.07012781884983199
+          }
+        },
+        {
+          "cell_id": "HUST_2-2",
+          "family_params": [
+            0.9889016688777975,
+            -0.05201248233008469,
+            1.9153646005949163,
+            0.22519154914598358,
+            -0.2240303565718614
+          ],
+          "q1": 1.2212242557886563,
+          "T": 2651,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 11,
+          "fit_positions": 2651,
+          "noise": {
+            "capacity": {
+              "variance": 1.8190924658781309e-06,
+              "phi": 0.9556007257178685,
+              "n_used": 2606
+            },
+            "charge_time": {
+              "variance": 0.5095190913381945,
+              "phi": 0.9951118061641889,
+              "n_used": 2606
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.6053978914601943e-05,
+              "phi": 0.980652844402238,
+              "n_used": 2606
+            }
+          },
+          "offsets": {
+            "charge_time": 1.573432969570285,
+            "mean_discharge_voltage": -0.024689647788606717
+          }
+        },
+        {
+          "cell_id": "HUST_2-3",
+          "family_params": [
+            1.0065893123544267,
+            -0.07117166713736528,
+            1.1019180328112552,
+            0.10092098049711408,
+            -0.2899946475237933
+          ],
+          "q1": 1.1844303394457434,
+          "T": 1751,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 1732,
+          "noise": {
+            "capacity": {
+              "variance": 1.8652838723533812e-06,
+              "phi": 0.9770742025925396,
+              "n_used": 1726
+            },
+            "charge_time": {
+              "variance": 0.5163023195620741,
+              "phi": 0.9962558566815245,
+              "n_used": 1726
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.5353999287922124e-05,
+              "phi": 0.9905081144042572,
+              "n_used": 1726
+            }
+          },
+          "offsets": {
+            "charge_time": 0.2253061303884527,
+            "mean_discharge_voltage": 0.004899390754798061
+          }
+        },
+        {
+          "cell_id": "HUST_2-4",
+          "family_params": [
+            0.9932916812121708,
+            -0.060315115373505056,
+            0.9700168153497398,
+            0.20987278673296064,
+            -0.3545885207542935
+          ],
+          "q1": 1.1839517055167053,
+          "T": 1499,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 14,
+          "fit_positions": 1499,
+          "noise": {
+            "capacity": {
+              "variance": 7.551243448804288e-07,
+              "phi": 0.8892754613280487,
+              "n_used": 1437
+            },
+            "charge_time": {
+              "variance": 1.896032790639018,
+              "phi": 0.9886830326460404,
+              "n_used": 1437
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.599846764196207e-05,
+              "phi": 0.9805412331968875,
+              "n_used": 1437
+            }
+          },
+          "offsets": {
+            "charge_time": -0.020504260156523735,
+            "mean_discharge_voltage": -0.012985693075151072
+          }
+        },
+        {
+          "cell_id": "HUST_2-5",
+          "family_params": [
+            1.0060109832081532,
+            -0.09245707776893815,
+            0.7820391823148849,
+            0.1451433252624857,
+            -0.3073084116129178
+          ],
+          "q1": 1.177056308987313,
+          "T": 1386,
+          "t1": 20,
+          "n_positive": 5,
+          "n_negative": 0,
+          "fit_positions": 1367,
+          "noise": {
+            "capacity": {
+              "variance": 1.8384294997977644e-07,
+              "phi": 0.7320737628652164,
+              "n_used": 1341
+            },
+            "charge_time": {
+              "variance": 0.470773475497805,
+              "phi": 0.9914457421341608,
+              "n_used": 1341
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.4433891035741498e-05,
+              "phi": 0.9832491862841675,
+              "n_used": 1341
+            }
+          },
+          "offsets": {
+            "charge_time": 0.6421059471946515,
+            "mean_discharge_voltage": -0.06038028745787116
+          }
+        },
+        {
+          "cell_id": "HUST_2-8",
+          "family_params": [
+            0.994157561913349,
+            -0.06033496469611713,
+            1.0382188295265655,
+            0.17874397198078595,
+            -0.41236437369634554
+          ],
+          "q1": 1.1785668376068377,
+          "T": 1481,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1481,
+          "noise": {
+            "capacity": {
+              "variance": 1.1138491607838198e-06,
+              "phi": 0.9638734146517575,
+              "n_used": 1470
+            },
+            "charge_time": {
+              "variance": 0.2541917335772948,
+              "phi": 0.9812915023265962,
+              "n_used": 1470
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.2151373186459004e-05,
+              "phi": 0.9829215510913127,
+              "n_used": 1470
+            }
+          },
+          "offsets": {
+            "charge_time": -0.7477368833862874,
+            "mean_discharge_voltage": 0.031057639128307724
+          }
+        },
+        {
+          "cell_id": "HUST_3-1",
+          "family_params": [
+            1.0024174008785567,
+            -0.06380532647227957,
+            1.601562111951224,
+            0.2935730028084434,
+            -0.4142410948575983
+          ],
+          "q1": 1.1977781796425837,
+          "T": 1938,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1919,
+          "noise": {
+            "capacity": {
+              "variance": 1.061020718801703e-06,
+              "phi": 0.9661802634136882,
+              "n_used": 1919
+            },
+            "charge_time": {
+              "variance": 1.835122748717525,
+              "phi": 0.999563248681181,
+              "n_used": 1919
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.6324166121160408e-05,
+              "phi": 0.9893537571800654,
+              "n_used": 1919
+            }
+          },
+          "offsets": {
+            "charge_time": -0.5743934630779775,
+            "mean_discharge_voltage": -0.02841948137948558
+          }
+        },
+        {
+          "cell_id": "HUST_3-2",
+          "family_params": [
+            1.0002572252456903,
+            -0.05417651052800128,
+            1.7140447754661754,
+            0.39639435087956215,
+            -0.2743388415537151
+          ],
+          "q1": 1.199377555037559,
+          "T": 2283,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 2264,
+          "noise": {
+            "capacity": {
+              "variance": 1.2871649285024127e-06,
+              "phi": 0.9750803473363575,
+              "n_used": 2264
+            },
+            "charge_time": {
+              "variance": 2.250364242207907,
+              "phi": 0.99917430489875,
+              "n_used": 2264
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.461214220606369e-05,
+              "phi": 0.9834064551403524,
+              "n_used": 2264
+            }
+          },
+          "offsets": {
+            "charge_time": -1.0005421334231022,
+            "mean_discharge_voltage": -0.04606007705305504
+          }
+        },
+        {
+          "cell_id": "HUST_3-3",
+          "family_params": [
+            1.0029363730846232,
+            -0.08131103966205899,
+            1.3224953108077055,
+            0.19550612946977236,
+            -0.44060251536081824
+          ],
+          "q1": 1.1889586590520629,
+          "T": 1649,
+          "t1": 20,
+          "n_positive": 4,
+          "n_negative": 0,
+          "fit_positions": 1630,
+          "noise": {
+            "capacity": {
+              "variance": 5.160657933268628e-07,
+              "phi": 0.9109584549044418,
+              "n_used": 1607
+            },
+            "charge_time": {
+              "variance": 2.0995032149003197,
+              "phi": 0.9964656493751136,
+              "n_used": 1607
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.795318515796729e-05,
+              "phi": 0.9906304150341422,
+              "n_used": 1607
+            }
+          },
+          "offsets": {
+            "charge_time": -1.4508389431621582,
+            "mean_discharge_voltage": -0.05169043821277319
+          }
+        },
+        {
+          "cell_id": "HUST_3-4",
+          "family_params": [
+            0.9917655161811353,
+            -0.055329629492993984,
+            1.1707800015236176,
+            0.23854296856013624,
+            -0.28460608421053574
+          ],
+          "q1": 1.1735509308469312,
+          "T": 1766,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1766,
+          "noise": {
+            "capacity": {
+              "variance": 1.4862339182996727e-06,
+              "phi": 0.9529094897378474,
+              "n_used": 1762
+            },
+            "charge_time": {
+              "variance": 0.05879526515640385,
+              "phi": 0.9665308400092008,
+              "n_used": 1762
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.549769378613622e-05,
+              "phi": 0.9942856103254316,
+              "n_used": 1762
+            }
+          },
+          "offsets": {
+            "charge_time": -1.7734693854066075,
+            "mean_discharge_voltage": -0.03467540836251004
+          }
+        },
+        {
+          "cell_id": "HUST_3-5",
+          "family_params": [
+            0.990844984216238,
+            -0.05570301381645363,
+            1.5396330799388178,
+            0.14671018481168838,
+            -0.1722856486140247
+          ],
+          "q1": 1.2291144727272725,
+          "T": 2657,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 2657,
+          "noise": {
+            "capacity": {
+              "variance": 2.224020879809551e-06,
+              "phi": 0.9700873211868954,
+              "n_used": 2653
+            },
+            "charge_time": {
+              "variance": 0.4973989916544816,
+              "phi": 0.9981465892286158,
+              "n_used": 2653
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.357526256555468e-06,
+              "phi": 0.9718456497069028,
+              "n_used": 2653
+            }
+          },
+          "offsets": {
+            "charge_time": 1.8921491497063814,
+            "mean_discharge_voltage": 0.01887019094405451
+          }
+        },
+        {
+          "cell_id": "HUST_3-7",
+          "family_params": [
+            0.9940217062394517,
+            -0.047131913935385135,
+            1.3785665244396679,
+            0.16531434267612874,
+            -0.16402601760131677
+          ],
+          "q1": 1.170896992385392,
+          "T": 2479,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 2479,
+          "noise": {
+            "capacity": {
+              "variance": 1.7958921025660918e-06,
+              "phi": 0.9772466652263685,
+              "n_used": 2479
+            },
+            "charge_time": {
+              "variance": 0.4612969626506814,
+              "phi": 0.9982103742599069,
+              "n_used": 2479
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.2801944803069929e-05,
+              "phi": 0.9864037280173058,
+              "n_used": 2479
+            }
+          },
+          "offsets": {
+            "charge_time": -1.6072006742998743,
+            "mean_discharge_voltage": -0.024110460641628695
+          }
+        },
+        {
+          "cell_id": "HUST_3-8",
+          "family_params": [
+            0.9991602648446484,
+            -0.0608469057867706,
+            1.947621853225383,
+            0.3212102687645726,
+            -0.3351918226476845
+          ],
+          "q1": 1.2128649951825992,
+          "T": 2342,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 2323,
+          "noise": {
+            "capacity": {
+              "variance": 1.3115701413184317e-06,
+              "phi": 0.9719898507360367,
+              "n_used": 2319
+            },
+            "charge_time": {
+              "variance": 3.4221756448538754,
+              "phi": 0.9976815668338387,
+              "n_used": 2319
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.958851349133119e-05,
+              "phi": 0.9933100278752839,
+              "n_used": 2319
+            }
+          },
+          "offsets": {
+            "charge_time": -0.7249497012541672,
+            "mean_discharge_voltage": -0.05328376817731595
+          }
+        },
+        {
+          "cell_id": "HUST_4-1",
+          "family_params": [
+            0.9936926562025978,
+            -0.05969053911936778,
+            2.294052903922151,
+            0.3884188931274085,
+            -0.5602264676348949
+          ],
+          "q1": 1.1820940974358976,
+          "T": 2217,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 2217,
+          "noise": {
+            "capacity": {
+              "variance": 1.0739542493967997e-06,
+              "phi": 0.9604395835453307,
+              "n_used": 2217
+            },
+            "charge_time": {
+              "variance": 1.5633091288845757,
+              "phi": 0.9992935301066108,
+              "n_used": 2216
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.365765606712932e-05,
+              "phi": 0.9769286396842235,
+              "n_used": 2217
+            }
+          },
+          "offsets": {
+            "charge_time": -2.423672142206258,
+            "mean_discharge_voltage": -0.018255236803904396
+          }
+        },
+        {
+          "cell_id": "HUST_4-2",
+          "family_params": [
+            1.002309041576896,
+            -0.06606294808500116,
+            1.3052844538378758,
+            0.2060779594642005,
+            -0.3666971174391962
+          ],
+          "q1": 1.1953833126133167,
+          "T": 1782,
+          "t1": 20,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1763,
+          "noise": {
+            "capacity": {
+              "variance": 4.0613231940627146e-07,
+              "phi": 0.8794147123754055,
+              "n_used": 1753
+            },
+            "charge_time": {
+              "variance": 0.5555807089813715,
+              "phi": 0.9872859799262231,
+              "n_used": 1753
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.3823532022359515e-05,
+              "phi": 0.9916161011245969,
+              "n_used": 1753
+            }
+          },
+          "offsets": {
+            "charge_time": 0.8201517460891781,
+            "mean_discharge_voltage": 0.0529600933559764
+          }
+        },
+        {
+          "cell_id": "HUST_4-3",
+          "family_params": [
+            0.9937191025543178,
+            -0.06601621919221545,
+            0.7851673528991167,
+            0.13750485168432147,
+            -0.5253856208565426
+          ],
+          "q1": 1.1755608912198914,
+          "T": 1142,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1142,
+          "noise": {
+            "capacity": {
+              "variance": 9.09026753633587e-07,
+              "phi": 0.9321536724670635,
+              "n_used": 1140
+            },
+            "charge_time": {
+              "variance": 3.757348075916951,
+              "phi": 0.99533215151858,
+              "n_used": 1140
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.836811170842183e-06,
+              "phi": 0.9697358044624386,
+              "n_used": 1140
+            }
+          },
+          "offsets": {
+            "charge_time": -0.7923902250081563,
+            "mean_discharge_voltage": 0.04579542698374217
+          }
+        },
+        {
+          "cell_id": "HUST_4-4",
+          "family_params": [
+            0.9933568028470147,
+            -0.05367430583895007,
+            0.9895298634316436,
+            0.18150176601859344,
+            -0.36939914453169903
+          ],
+          "q1": 1.1713454265734264,
+          "T": 1491,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 8,
+          "fit_positions": 1491,
+          "noise": {
+            "capacity": {
+              "variance": 7.879232288249011e-07,
+              "phi": 0.9123530704977323,
+              "n_used": 1445
+            },
+            "charge_time": {
+              "variance": 1.672232587148662,
+              "phi": 0.9906326046515188,
+              "n_used": 1445
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.3946523939375318e-05,
+              "phi": 0.9871779873034783,
+              "n_used": 1445
+            }
+          },
+          "offsets": {
+            "charge_time": -0.7292146126581605,
+            "mean_discharge_voltage": 0.04213737097888348
+          }
+        },
+        {
+          "cell_id": "HUST_4-8",
+          "family_params": [
+            1.0044423019100646,
+            -0.06719309730778977,
+            1.2123594818057366,
+            0.19594141737339593,
+            -0.3769895689396656
+          ],
+          "q1": 1.1990569747733786,
+          "T": 1706,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1687,
+          "noise": {
+            "capacity": {
+              "variance": 7.913640948415073e-07,
+              "phi": 0.9468344754378363,
+              "n_used": 1687
+            },
+            "charge_time": {
+              "variance": 0.7928905241963659,
+              "phi": 0.9964087836551927,
+              "n_used": 1687
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.965668798162056e-06,
+              "phi": 0.9773004026593027,
+              "n_used": 1687
+            }
+          },
+          "offsets": {
+            "charge_time": 0.6851895644107033,
+            "mean_discharge_voltage": -0.0060554355086557266
+          }
+        },
+        {
+          "cell_id": "HUST_5-1",
+          "family_params": [
+            0.9931674138723938,
+            -0.05771254011534344,
+            1.6066418476009068,
+            0.26510361317906983,
+            -0.19033020993696856
+          ],
+          "q1": 1.2056354057498062,
+          "T": 2507,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 2507,
+          "noise": {
+            "capacity": {
+              "variance": 1.882501590946024e-06,
+              "phi": 0.9812724053601037,
+              "n_used": 2500
+            },
+            "charge_time": {
+              "variance": 1.1082910083318132,
+              "phi": 0.9979598154488376,
+              "n_used": 2500
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.0108243617622627e-05,
+              "phi": 0.9946769397346994,
+              "n_used": 2500
+            }
+          },
+          "offsets": {
+            "charge_time": 2.5132328407391613,
+            "mean_discharge_voltage": -0.020733333707348756
+          }
+        },
+        {
+          "cell_id": "HUST_5-2",
+          "family_params": [
+            1.0062959152880424,
+            -0.06301560525369718,
+            1.316682889156996,
+            0.20416760916462576,
+            -0.2963133808141765
+          ],
+          "q1": 1.1866618963481002,
+          "T": 1926,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 1907,
+          "noise": {
+            "capacity": {
+              "variance": 5.080100249760832e-07,
+              "phi": 0.9240983274830478,
+              "n_used": 1890
+            },
+            "charge_time": {
+              "variance": 0.6242055493820654,
+              "phi": 0.9965276656361972,
+              "n_used": 1890
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.234172973213729e-06,
+              "phi": 0.9661738474351268,
+              "n_used": 1890
+            }
+          },
+          "offsets": {
+            "charge_time": -0.15278175801735738,
+            "mean_discharge_voltage": -0.024421276465456998
+          }
+        },
+        {
+          "cell_id": "HUST_5-3",
+          "family_params": [
+            0.9925800097697719,
+            -0.05463037140142937,
+            1.8553285431272875,
+            0.2476369033362223,
+            -0.19019086574736227
+          ],
+          "q1": 1.2017634859362858,
+          "T": 2689,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 2689,
+          "noise": {
+            "capacity": {
+              "variance": 1.62851893043103e-06,
+              "phi": 0.9708657778340818,
+              "n_used": 2689
+            },
+            "charge_time": {
+              "variance": 0.6424371868807643,
+              "phi": 0.9973850972855022,
+              "n_used": 2689
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.3580289237973607e-05,
+              "phi": 0.9923797056089358,
+              "n_used": 2689
+            }
+          },
+          "offsets": {
+            "charge_time": 1.3317272464093124,
+            "mean_discharge_voltage": -0.023539630342426676
+          }
+        },
+        {
+          "cell_id": "HUST_5-4",
+          "family_params": [
+            0.9949463296171215,
+            -0.05064171606781082,
+            1.1682324811968972,
+            0.16045785845627697,
+            -0.24359393519800784
+          ],
+          "q1": 1.179970822843823,
+          "T": 1962,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1962,
+          "noise": {
+            "capacity": {
+              "variance": 2.0223540073746148e-06,
+              "phi": 0.9802432138350357,
+              "n_used": 1960
+            },
+            "charge_time": {
+              "variance": 5.716396197929524,
+              "phi": 0.9977730194507871,
+              "n_used": 1960
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.46992616537165e-05,
+              "phi": 0.9931230754322155,
+              "n_used": 1960
+            }
+          },
+          "offsets": {
+            "charge_time": 2.464775567273093,
+            "mean_discharge_voltage": 0.0275692578736777
+          }
+        },
+        {
+          "cell_id": "HUST_5-5",
+          "family_params": [
+            1.0060438807560377,
+            -0.07397393137142816,
+            0.9143343449040602,
+            0.17477974026690746,
+            -0.29272291441919246
+          ],
+          "q1": 1.1865113972028012,
+          "T": 1583,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1564,
+          "noise": {
+            "capacity": {
+              "variance": 4.238236191301712e-07,
+              "phi": 0.8775866048217925,
+              "n_used": 1554
+            },
+            "charge_time": {
+              "variance": 0.6617874881257528,
+              "phi": 0.9900345916263668,
+              "n_used": 1554
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.390355026115242e-06,
+              "phi": 0.9721711110612691,
+              "n_used": 1554
+            }
+          },
+          "offsets": {
+            "charge_time": 1.2975698994035065,
+            "mean_discharge_voltage": -0.03156239347194356
+          }
+        },
+        {
+          "cell_id": "HUST_5-6",
+          "family_params": [
+            0.9933106583735336,
+            -0.05890870567994806,
+            1.5378683502305843,
+            0.21424125775409536,
+            -0.1875784635620628
+          ],
+          "q1": 1.2032417255633254,
+          "T": 2460,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 2460,
+          "noise": {
+            "capacity": {
+              "variance": 1.4938967702872953e-06,
+              "phi": 0.9671720603765771,
+              "n_used": 2460
+            },
+            "charge_time": {
+              "variance": 1.1127370950458322,
+              "phi": 0.9978347483078098,
+              "n_used": 2460
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.6598595035087544e-05,
+              "phi": 0.9960433822524594,
+              "n_used": 2460
+            }
+          },
+          "offsets": {
+            "charge_time": 2.0051557449474187,
+            "mean_discharge_voltage": -0.03787967016357352
+          }
+        },
+        {
+          "cell_id": "HUST_6-1",
+          "family_params": [
+            0.9939052136403139,
+            -0.05751637817346877,
+            1.0109902367147392,
+            0.20956828112457082,
+            -0.3108487030637938
+          ],
+          "q1": 1.17404611981352,
+          "T": 1609,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1609,
+          "noise": {
+            "capacity": {
+              "variance": 1.0542545836120765e-06,
+              "phi": 0.9483604917739514,
+              "n_used": 1609
+            },
+            "charge_time": {
+              "variance": 4.680027936163467,
+              "phi": 0.9976778215178527,
+              "n_used": 1609
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.843417107047597e-05,
+              "phi": 0.9891651795906325,
+              "n_used": 1609
+            }
+          },
+          "offsets": {
+            "charge_time": 0.971355135334357,
+            "mean_discharge_voltage": 0.022266763595218286
+          }
+        },
+        {
+          "cell_id": "HUST_6-2",
+          "family_params": [
+            1.0069946401105665,
+            -0.06668808959265224,
+            1.1394069032976535,
+            0.18123215291735537,
+            -0.25441257330795697
+          ],
+          "q1": 1.1987315846153885,
+          "T": 1908,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1889,
+          "noise": {
+            "capacity": {
+              "variance": 4.196433373312275e-07,
+              "phi": 0.8829089124025141,
+              "n_used": 1883
+            },
+            "charge_time": {
+              "variance": 0.32218000018435894,
+              "phi": 0.9880364126862669,
+              "n_used": 1883
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.958361777930527e-06,
+              "phi": 0.9739016048057787,
+              "n_used": 1883
+            }
+          },
+          "offsets": {
+            "charge_time": 1.3882452409083976,
+            "mean_discharge_voltage": -0.03546695384808585
+          }
+        },
+        {
+          "cell_id": "HUST_6-5",
+          "family_params": [
+            0.9937660574597919,
+            -0.05466950304693305,
+            1.459436934517739,
+            0.24647199995863334,
+            -0.23580460297570988
+          ],
+          "q1": 1.1853468556332556,
+          "T": 2178,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 6,
+          "fit_positions": 2178,
+          "noise": {
+            "capacity": {
+              "variance": 4.136522509944093e-07,
+              "phi": 0.8822531293984112,
+              "n_used": 2147
+            },
+            "charge_time": {
+              "variance": 1.7873362294011093,
+              "phi": 0.989932086122322,
+              "n_used": 2147
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.033759318312908e-05,
+              "phi": 0.9793487808033576,
+              "n_used": 2147
+            }
+          },
+          "offsets": {
+            "charge_time": 1.3646375755522024,
+            "mean_discharge_voltage": -0.054321872229036616
+          }
+        },
+        {
+          "cell_id": "HUST_6-8",
+          "family_params": [
+            0.9897148836035308,
+            -0.06469870226687205,
+            1.343507933645403,
+            0.10741332082594687,
+            -0.1579457480886597
+          ],
+          "q1": 1.2062976310800315,
+          "T": 2450,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 16,
+          "fit_positions": 2450,
+          "noise": {
+            "capacity": {
+              "variance": 1.8934479350407574e-06,
+              "phi": 0.9480487800923629,
+              "n_used": 2397
+            },
+            "charge_time": {
+              "variance": 0.5636625208624355,
+              "phi": 0.9910899672194442,
+              "n_used": 2396
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.629483544616713e-06,
+              "phi": 0.8984157080083024,
+              "n_used": 2397
+            }
+          },
+          "offsets": {
+            "charge_time": 0.5286958044503018,
+            "mean_discharge_voltage": -0.027565817286980154
+          }
+        },
+        {
+          "cell_id": "HUST_7-1",
+          "family_params": [
+            0.9935174718564027,
+            -0.059883360624944,
+            1.0877567391576064,
+            0.22111200226249472,
+            -0.2990635158562099
+          ],
+          "q1": 1.1825962915306916,
+          "T": 1690,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1690,
+          "noise": {
+            "capacity": {
+              "variance": 8.496462249266561e-07,
+              "phi": 0.9358850197860528,
+              "n_used": 1687
+            },
+            "charge_time": {
+              "variance": 0.06309578648530315,
+              "phi": 0.9737231763458061,
+              "n_used": 1687
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.170457314471895e-05,
+              "phi": 0.9899044076442868,
+              "n_used": 1687
+            }
+          },
+          "offsets": {
+            "charge_time": -1.6879681631859489,
+            "mean_discharge_voltage": -0.011946751590903526
+          }
+        },
+        {
+          "cell_id": "HUST_7-4",
+          "family_params": [
+            0.9944092877419444,
+            -0.047970061657197006,
+            1.0014624825903766,
+            0.183137331710494,
+            -0.4814396945167931
+          ],
+          "q1": 1.172528566122766,
+          "T": 1393,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1393,
+          "noise": {
+            "capacity": {
+              "variance": 9.134681208549163e-07,
+              "phi": 0.9396436964447232,
+              "n_used": 1391
+            },
+            "charge_time": {
+              "variance": 4.530193949123995,
+              "phi": 0.9958992906139501,
+              "n_used": 1391
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.5024653240575389e-05,
+              "phi": 0.9924053195307029,
+              "n_used": 1391
+            }
+          },
+          "offsets": {
+            "charge_time": -0.1488552048815306,
+            "mean_discharge_voltage": 0.057225577315972664
+          }
+        },
+        {
+          "cell_id": "HUST_7-5",
+          "family_params": [
+            1.0006164422876582,
+            -0.06268812822971145,
+            1.486958481224667,
+            0.23866617495344986,
+            -0.4064340229202867
+          ],
+          "q1": 1.1975136004144047,
+          "T": 1873,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 18,
+          "fit_positions": 1854,
+          "noise": {
+            "capacity": {
+              "variance": 4.394576246821655e-07,
+              "phi": 0.8970243634231465,
+              "n_used": 1792
+            },
+            "charge_time": {
+              "variance": 0.4027233055331237,
+              "phi": 0.9720709584532595,
+              "n_used": 1792
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.71015426576398e-05,
+              "phi": 0.9767765217444548,
+              "n_used": 1792
+            }
+          },
+          "offsets": {
+            "charge_time": 0.18229136705413485,
+            "mean_discharge_voltage": 0.040220713082033344
+          }
+        },
+        {
+          "cell_id": "HUST_7-6",
+          "family_params": [
+            0.9939593323886452,
+            -0.056503658762969124,
+            0.966116228726054,
+            0.1485520188074406,
+            -0.41192945516431584
+          ],
+          "q1": 1.174396781973582,
+          "T": 1419,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 10,
+          "fit_positions": 1419,
+          "noise": {
+            "capacity": {
+              "variance": 6.296392242598997e-07,
+              "phi": 0.8941430139180202,
+              "n_used": 1373
+            },
+            "charge_time": {
+              "variance": 1.898004311016165,
+              "phi": 0.9886140340582223,
+              "n_used": 1373
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.0824588682845037e-05,
+              "phi": 0.990097450472642,
+              "n_used": 1373
+            }
+          },
+          "offsets": {
+            "charge_time": -0.8249125511664515,
+            "mean_discharge_voltage": 0.05051033860600551
+          }
+        },
+        {
+          "cell_id": "HUST_7-7",
+          "family_params": [
+            0.9938289567264592,
+            -0.049022659821065,
+            1.1793023469861545,
+            0.21215508555838788,
+            -0.3581248875113531
+          ],
+          "q1": 1.174172407770008,
+          "T": 1685,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 7,
+          "fit_positions": 1685,
+          "noise": {
+            "capacity": {
+              "variance": 6.461190043728925e-07,
+              "phi": 0.9112357715739408,
+              "n_used": 1641
+            },
+            "charge_time": {
+              "variance": 0.5904650813166602,
+              "phi": 0.9850706453192041,
+              "n_used": 1639
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.798808099271044e-05,
+              "phi": 0.9920848932537816,
+              "n_used": 1641
+            }
+          },
+          "offsets": {
+            "charge_time": -1.012049119170654,
+            "mean_discharge_voltage": 0.05263051606064373
+          }
+        },
+        {
+          "cell_id": "HUST_8-2",
+          "family_params": [
+            0.9952537235087376,
+            -0.06783458497654703,
+            1.3467153948864068,
+            0.12048027712336869,
+            -0.2482114272350471
+          ],
+          "q1": 1.2005362913752917,
+          "T": 2041,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 2041,
+          "noise": {
+            "capacity": {
+              "variance": 1.1225421724078107e-06,
+              "phi": 0.9666763170979338,
+              "n_used": 2032
+            },
+            "charge_time": {
+              "variance": 0.5150996763465657,
+              "phi": 0.993356483746346,
+              "n_used": 2032
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.2999193644022493e-05,
+              "phi": 0.9933957571775177,
+              "n_used": 2032
+            }
+          },
+          "offsets": {
+            "charge_time": 1.4663606390446793,
+            "mean_discharge_voltage": 0.0038534098320224253
+          }
+        },
+        {
+          "cell_id": "HUST_8-3",
+          "family_params": [
+            1.0010372162972616,
+            -0.051190690382196154,
+            1.7511083245042087,
+            0.32846937637560225,
+            -0.29927505021435696
+          ],
+          "q1": 1.19608527588708,
+          "T": 2290,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 2271,
+          "noise": {
+            "capacity": {
+              "variance": 8.172198182945002e-07,
+              "phi": 0.9592286894847222,
+              "n_used": 2266
+            },
+            "charge_time": {
+              "variance": 0.4941367971777727,
+              "phi": 0.9957118759798105,
+              "n_used": 2266
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.8755832125775113e-05,
+              "phi": 0.9902380128435428,
+              "n_used": 2266
+            }
+          },
+          "offsets": {
+            "charge_time": -0.11314283206359388,
+            "mean_discharge_voltage": -0.004511581397125042
+          }
+        },
+        {
+          "cell_id": "HUST_8-4",
+          "family_params": [
+            0.9943354176235265,
+            -0.04677544607626588,
+            1.291609652136566,
+            0.21714928349148022,
+            -0.3124884735200151
+          ],
+          "q1": 1.17896295959596,
+          "T": 1885,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1885,
+          "noise": {
+            "capacity": {
+              "variance": 8.212762420103553e-07,
+              "phi": 0.9442084800460534,
+              "n_used": 1885
+            },
+            "charge_time": {
+              "variance": 0.6261830975989074,
+              "phi": 0.9961241198937683,
+              "n_used": 1885
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.0336621185234483e-05,
+              "phi": 0.9894300696040913,
+              "n_used": 1885
+            }
+          },
+          "offsets": {
+            "charge_time": -0.32095039371133804,
+            "mean_discharge_voltage": 0.013091229203438637
+          }
+        },
+        {
+          "cell_id": "HUST_8-5",
+          "family_params": [
+            0.9945853784394297,
+            -0.05094286737607251,
+            0.8755382720387367,
+            0.16304148298443563,
+            -0.41826958675565673
+          ],
+          "q1": 1.171830412898213,
+          "T": 1348,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1348,
+          "noise": {
+            "capacity": {
+              "variance": 8.166377371537496e-07,
+              "phi": 0.9360029198251151,
+              "n_used": 1348
+            },
+            "charge_time": {
+              "variance": 5.980499284389465,
+              "phi": 0.9968915184398318,
+              "n_used": 1348
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.879911958245328e-05,
+              "phi": 0.9889824902854548,
+              "n_used": 1348
+            }
+          },
+          "offsets": {
+            "charge_time": 0.012807389067133634,
+            "mean_discharge_voltage": 0.038521869738828096
+          }
+        },
+        {
+          "cell_id": "HUST_8-7",
+          "family_params": [
+            0.9956447137786977,
+            -0.04425114567274509,
+            1.2314208304467125,
+            0.2009108264757733,
+            -0.2441521460356825
+          ],
+          "q1": 1.1807953165501168,
+          "T": 2047,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 2047,
+          "noise": {
+            "capacity": {
+              "variance": 1.9102635360257655e-06,
+              "phi": 0.9796760756156643,
+              "n_used": 2043
+            },
+            "charge_time": {
+              "variance": 2.9156536484348132,
+              "phi": 0.9976587312364723,
+              "n_used": 2043
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.6291806605171504e-05,
+              "phi": 0.9947332809961364,
+              "n_used": 2043
+            }
+          },
+          "offsets": {
+            "charge_time": 1.0536504017192891,
+            "mean_discharge_voltage": -0.0013034963496547647
+          }
+        },
+        {
+          "cell_id": "HUST_8-8",
+          "family_params": [
+            1.0038104811157014,
+            -0.07021471140592374,
+            1.208938103761635,
+            0.21633390941509698,
+            -0.38084345979448525
+          ],
+          "q1": 1.20080077601658,
+          "T": 1679,
+          "t1": 20,
+          "n_positive": 3,
+          "n_negative": 1,
+          "fit_positions": 1660,
+          "noise": {
+            "capacity": {
+              "variance": 4.662456300255613e-07,
+              "phi": 0.9112678083837094,
+              "n_used": 1647
+            },
+            "charge_time": {
+              "variance": 1.2058020662004387,
+              "phi": 0.9981936625906332,
+              "n_used": 1647
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.080383663825319e-06,
+              "phi": 0.9629837525619785,
+              "n_used": 1647
+            }
+          },
+          "offsets": {
+            "charge_time": 0.03052392374622226,
+            "mean_discharge_voltage": -0.021225522218269566
+          }
+        },
+        {
+          "cell_id": "HUST_9-2",
+          "family_params": [
+            1.0005744168902682,
+            -0.05647718002042027,
+            1.481178423206901,
+            0.27649054331464046,
+            -0.2719469200686824
+          ],
+          "q1": 1.2036551231287271,
+          "T": 2143,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 2124,
+          "noise": {
+            "capacity": {
+              "variance": 8.0339648735474e-07,
+              "phi": 0.9540162876659493,
+              "n_used": 2120
+            },
+            "charge_time": {
+              "variance": 0.6189142060112968,
+              "phi": 0.9925368284254833,
+              "n_used": 2120
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.239703048623908e-05,
+              "phi": 0.9934270287405836,
+              "n_used": 2120
+            }
+          },
+          "offsets": {
+            "charge_time": 0.8471067837215331,
+            "mean_discharge_voltage": 0.02715412174640819
+          }
+        },
+        {
+          "cell_id": "HUST_9-3",
+          "family_params": [
+            1.0003558880544703,
+            -0.057074295890116096,
+            1.5276888319063515,
+            0.3037607282740502,
+            -0.4161647856951443
+          ],
+          "q1": 1.2056246012432053,
+          "T": 1905,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1886,
+          "noise": {
+            "capacity": {
+              "variance": 9.709418930530974e-07,
+              "phi": 0.9619438299067623,
+              "n_used": 1884
+            },
+            "charge_time": {
+              "variance": 1.090074812420723,
+              "phi": 0.9987910461969732,
+              "n_used": 1884
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.100374553525721e-06,
+              "phi": 0.9736547475829895,
+              "n_used": 1884
+            }
+          },
+          "offsets": {
+            "charge_time": 0.19483317767255048,
+            "mean_discharge_voltage": -0.0009650756694838947
+          }
+        },
+        {
+          "cell_id": "HUST_9-4",
+          "family_params": [
+            1.0004713106995593,
+            -0.06259993787385006,
+            1.5765290341077658,
+            0.2676493894800253,
+            -0.39093085937278615
+          ],
+          "q1": 1.2069192724682765,
+          "T": 1975,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1956,
+          "noise": {
+            "capacity": {
+              "variance": 8.233279044778035e-07,
+              "phi": 0.9584811540040105,
+              "n_used": 1954
+            },
+            "charge_time": {
+              "variance": 1.6746177477607047,
+              "phi": 0.9994361210452232,
+              "n_used": 1954
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.361510757772131e-06,
+              "phi": 0.9602841685469358,
+              "n_used": 1954
+            }
+          },
+          "offsets": {
+            "charge_time": -0.19786690597880696,
+            "mean_discharge_voltage": -0.0098634898161305
+          }
+        },
+        {
+          "cell_id": "HUST_9-5",
+          "family_params": [
+            0.9987275005056309,
+            -0.05672946054410741,
+            1.5461448913997506,
+            0.2697651753285529,
+            -0.273496029600654
+          ],
+          "q1": 1.197905511991716,
+          "T": 2168,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 4,
+          "fit_positions": 2149,
+          "noise": {
+            "capacity": {
+              "variance": 1.1131034876257018e-06,
+              "phi": 0.9630438255592461,
+              "n_used": 2139
+            },
+            "charge_time": {
+              "variance": 1.6480821465621305,
+              "phi": 0.9951806202323024,
+              "n_used": 2139
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.498414878524235e-06,
+              "phi": 0.965496299620103,
+              "n_used": 2139
+            }
+          },
+          "offsets": {
+            "charge_time": -0.8289873596658941,
+            "mean_discharge_voltage": -0.017078374509245542
+          }
+        },
+        {
+          "cell_id": "HUST_9-7",
+          "family_params": [
+            0.9999084333425503,
+            -0.0593798022987432,
+            1.565738787178613,
+            0.28055075621953773,
+            -0.3566407779880662
+          ],
+          "q1": 1.1996065325045364,
+          "T": 2012,
+          "t1": 20,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1993,
+          "noise": {
+            "capacity": {
+              "variance": 8.619201031776781e-07,
+              "phi": 0.9580129705821299,
+              "n_used": 1987
+            },
+            "charge_time": {
+              "variance": 1.1209015969181304,
+              "phi": 0.997822413665822,
+              "n_used": 1987
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.2195028421456713e-05,
+              "phi": 0.9927964436181687,
+              "n_used": 1987
+            }
+          },
+          "offsets": {
+            "charge_time": -0.24817974832904977,
+            "mean_discharge_voltage": 0.029226050933219838
+          }
+        }
+      ]
+    },
+    "E2_family_choice": {
+      "selected": "rollover",
+      "lowest_cv": "rollover",
+      "lowest_cv_eligible": "rollover",
+      "margin": 0.05,
+      "margin_changed_choice": false,
+      "identifiability_changed_choice": false,
+      "max_frac_units_at_bound": 0.2,
+      "frac_units_at_bound": {
+        "power_law": 0.0,
+        "two_term_exponential": 0.037037037037037035,
+        "rollover": 0.0
+      },
+      "eligible": [
+        "power_law",
+        "two_term_exponential",
+        "rollover"
+      ],
+      "median_cv_rmse": {
+        "power_law": 0.010032092697963133,
+        "two_term_exponential": 0.00840827244891506,
+        "rollover": 0.0027137866335751972
+      },
+      "median_in_sample_rmse": {
+        "power_law": 0.004208317839187185,
+        "two_term_exponential": 0.001976098851238231,
+        "rollover": 0.0007830921905490437
+      },
+      "units_in_selection": 54
+    },
+    "E3_channel_mappings": {
+      "capacity": {
+        "channel": "capacity",
+        "kind": "affine_capacity",
+        "increasing": false,
+        "grid": [
+          0.0,
+          1.0
+        ],
+        "values": [
+          1.1921709858326897,
+          -0.31217098583268954
+        ],
+        "phi0": 1.1921709858326897,
+        "phi1": 0.8800000000000001,
+        "delta": -0.31217098583268954
+      },
+      "charge_time": {
+        "channel": "charge_time",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          34.373670441070566,
+          33.673182081807965,
+          33.18390818753877,
+          32.9021710584183,
+          32.75840389823126,
+          32.563150311284694,
+          32.32275722023968,
+          32.06388906662822,
+          31.977147047110506,
+          31.91532613014592,
+          31.823840891781337,
+          31.68042368834356,
+          31.56516435957517,
+          31.454329009191056,
+          31.290000592226825,
+          31.159996016649792,
+          31.04035875945013,
+          30.911774364555765,
+          30.72756422417325,
+          30.605282395301927,
+          30.4626284483143,
+          30.302083590793643,
+          30.153855409404304,
+          29.97218558311453,
+          29.823505204644533,
+          29.650175343336652,
+          29.50043235726874,
+          29.35645836880098,
+          29.19100537019147,
+          29.0602481247148,
+          28.931905370229337,
+          28.757439060212892,
+          28.65881726738808,
+          28.519466279774026,
+          28.368370596239487,
+          28.219304838508815,
+          28.085908900803705,
+          27.948287151811716,
+          27.79232820036647,
+          27.684116553878628,
+          27.497161564951295,
+          27.360358328372968,
+          27.234408290886353,
+          27.062924554122006,
+          26.929270870717446,
+          26.78363745036547,
+          26.673717850484476,
+          26.514529025636506,
+          26.384960859212,
+          26.238892813201034,
+          26.180574369609356,
+          26.047844963698,
+          25.97806571682454,
+          25.800459717072897,
+          25.699812605926933,
+          25.643565284282317,
+          25.542385620852617,
+          25.455003246325283,
+          25.33159630626061,
+          25.300309997409542,
+          25.18248018593635,
+          25.15592506247087,
+          25.066867618581632,
+          25.00002739453008,
+          24.860480819990315,
+          24.845114456146703,
+          24.78575953613283,
+          24.730264948162805,
+          24.625463256730956,
+          24.587031224396874,
+          24.473127915268343,
+          24.436516207832994,
+          24.33395993360655,
+          24.30377862682198,
+          24.214833479228393,
+          24.14808002363063,
+          24.050815983733848,
+          23.942334602957416,
+          23.93118319277812,
+          23.87548831566833,
+          23.78365641038633,
+          23.728697031339884,
+          23.692766027544952,
+          23.594922304004143,
+          23.52962875876752,
+          23.477352806219773,
+          23.404453546339802,
+          23.333389164860783,
+          23.273584181786152,
+          23.231879928723366,
+          23.13194749878362,
+          23.111165705299094,
+          23.086644606260933,
+          22.98991864148791,
+          22.918450502253727,
+          22.89430608784539,
+          22.863649711053842,
+          22.814150650735062,
+          22.759871382115104,
+          22.72203758030901,
+          21.549552277665587
+        ],
+        "phi0": 34.373670441070566,
+        "phi1": 21.549552277665583,
+        "delta": -12.824118163404982
+      },
+      "mean_discharge_voltage": {
+        "channel": "mean_discharge_voltage",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.0992366240668368,
+          3.097492700886165,
+          3.0965517693525375,
+          3.095645411950897,
+          3.0946947576522863,
+          3.094208266880507,
+          3.093236084659626,
+          3.092450885678054,
+          3.091647604479328,
+          3.090925119888645,
+          3.090194152000225,
+          3.0895834699861755,
+          3.0887951744119158,
+          3.0883012622424095,
+          3.0876444766412217,
+          3.0870380131297845,
+          3.0861881626411045,
+          3.085695028499129,
+          3.0851023069284724,
+          3.084571450423563,
+          3.083988173707464,
+          3.0831899107462126,
+          3.0825888727914044,
+          3.0820583357996325,
+          3.08126554056391,
+          3.0805965632671524,
+          3.080114282934316,
+          3.0796204164029635,
+          3.0789927369668297,
+          3.0785690857933785,
+          3.0778067017141315,
+          3.0772098488501536,
+          3.0766872358699127,
+          3.0760122917435813,
+          3.0753645320608496,
+          3.074874916842067,
+          3.0745105060184734,
+          3.073637279753975,
+          3.0730405446396505,
+          3.0727538063656943,
+          3.072163561480361,
+          3.0715595209114124,
+          3.071028701055747,
+          3.070635468380638,
+          3.069898168988125,
+          3.069506339067218,
+          3.068924261871541,
+          3.0684683071213716,
+          3.067764097867799,
+          3.067377397551646,
+          3.066681214914728,
+          3.0663552475558973,
+          3.065740302123341,
+          3.06539686476677,
+          3.0648586936739277,
+          3.0642484143377464,
+          3.063769302710455,
+          3.0633624757360463,
+          3.0625129783330745,
+          3.062105007167991,
+          3.0614570826778973,
+          3.061144568374279,
+          3.06057329288653,
+          3.0601350419186737,
+          3.059394007231233,
+          3.058929847737648,
+          3.058701919678218,
+          3.0580303757101532,
+          3.0577086886842,
+          3.056947129238078,
+          3.0563795679318067,
+          3.056021363050738,
+          3.0554203719167994,
+          3.054944275777591,
+          3.0544071148646585,
+          3.05386287586024,
+          3.053342678342378,
+          3.0527266332860514,
+          3.052441197385256,
+          3.051810786091782,
+          3.051345295734443,
+          3.050817953727309,
+          3.0503699413053575,
+          3.0498770562108137,
+          3.0492218359986354,
+          3.048738365130673,
+          3.0481118979759407,
+          3.047854231798956,
+          3.0471293506861934,
+          3.045921205800991,
+          3.0458648308886214,
+          3.0449379963048546,
+          3.043543927115945
+        ],
+        "phi0": 3.0992366240668368,
+        "phi1": 3.0435439271159455,
+        "delta": -0.055692696950891296
+      }
+    },
+    "E4_channel_covariance": {
+      "channels": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "covariance": [
+        [
+          1.0919044953895799e-06,
+          -5.6686308406448165e-05,
+          -2.3434719641571715e-07
+        ],
+        [
+          -5.6686308406448165e-05,
+          1.5053494892603245,
+          -0.0013074714356289515
+        ],
+        [
+          -2.3434719641571715e-07,
+          -0.0013074714356289515,
+          2.695164528126543e-05
+        ]
+      ],
+      "correlation": [
+        [
+          1.0,
+          -0.04421475048182335,
+          -0.04319910947725263
+        ],
+        [
+          -0.04421475048182335,
+          0.9999999999999998,
+          -0.20526783358395792
+        ],
+        [
+          -0.043199109477252626,
+          -0.20526783358395795,
+          1.0
+        ]
+      ],
+      "n_positions": 101109
+    },
+    "E5_noise": {
+      "capacity": {
+        "variance": 1.0963455638666938e-06,
+        "phi": 0.9405291037805732,
+        "n_used": 101114
+      },
+      "charge_time": {
+        "variance": 1.3927395048496134,
+        "phi": 0.9934008852788464,
+        "n_used": 101109
+      },
+      "mean_discharge_voltage": {
+        "variance": 2.5054481579235322e-05,
+        "phi": 0.9779724117629024,
+        "n_used": 101114
+      }
+    },
+    "E6_patterns": {
+      "positive": {
+        "enabled": false,
+        "events": 59,
+        "measured_rate_per_100": 0.057910131328399526,
+        "noise_only_rate_per_100": 0.12236628849270664,
+        "ratio_to_noise": 0.4732523315181789,
+        "noise_factor": 2.0,
+        "noise_segment_length": 1851,
+        "units_with_event": 38,
+        "amplitude_Ah": [
+          0.002212707554009353,
+          0.009836291554817933,
+          0.002303740895861584,
+          0.0021401657781591516,
+          0.0014503670023051029,
+          0.002051618830024246,
+          0.0017527125557539687,
+          0.0019155462642795747,
+          0.0019706534459043757,
+          0.0021791095428617103,
+          0.0017720850872868664,
+          0.001651315663377191,
+          0.0017265183077749676,
+          0.0009829698698518312,
+          0.0013795408550254502,
+          0.0011570821925778957,
+          0.001259996593784362,
+          0.0009193095251153297,
+          0.007209153615675437,
+          0.002587945766058041,
+          0.0028549564428608154,
+          0.0024649677048748475,
+          0.002287314389183785,
+          0.0028203843659617266,
+          0.00452214148296068,
+          0.004417257245636062,
+          0.0024749318239436643,
+          0.0017294652196062391,
+          0.001912900798562051,
+          0.00220495295449178,
+          0.0020150561476392375,
+          0.0016569396177228697,
+          0.008553221863183726,
+          0.0024374450487661924,
+          0.0021711756396795012,
+          0.006357895922237033,
+          0.0017729672324724591,
+          0.0017778581437335448,
+          0.0016611052859548457,
+          0.0013952987917493689,
+          0.0012850938763828176,
+          0.0024193651619990727,
+          0.002079251512211675,
+          0.002570934228722101,
+          0.0016386424794071614,
+          0.0014700087614262576,
+          0.00602618227788592,
+          0.0030931517323620765,
+          0.0023493391027337314,
+          0.005288039795914494,
+          0.0020818502404350175,
+          0.0025657766897773915,
+          0.002073617031783428,
+          0.0024599231451188893,
+          0.002229806246708469,
+          0.0025865660417470357,
+          0.0025039656472240174,
+          0.002109504322305046,
+          0.002425589786375261
+        ],
+        "duration": [
+          2,
+          11,
+          5,
+          2,
+          4,
+          6,
+          2,
+          2,
+          2,
+          3,
+          5,
+          4,
+          3,
+          3,
+          7,
+          4,
+          10,
+          2,
+          11,
+          6,
+          11,
+          4,
+          2,
+          4,
+          2,
+          2,
+          2,
+          2,
+          5,
+          3,
+          2,
+          4,
+          7,
+          5,
+          2,
+          2,
+          5,
+          5,
+          2,
+          4,
+          2,
+          2,
+          3,
+          2,
+          4,
+          2,
+          7,
+          2,
+          3,
+          4,
+          2,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          6
+        ],
+        "rate_per_position_by_unit": {
+          "HUST_1-1": 0.0006648936170212766,
+          "HUST_1-2": 0.0003734129947722181,
+          "HUST_1-6": 0.0,
+          "HUST_1-7": 0.0005959475566150178,
+          "HUST_10-1": 0.0005875440658049354,
+          "HUST_10-2": 0.0,
+          "HUST_10-3": 0.0005411255411255411,
+          "HUST_10-4": 0.002232142857142857,
+          "HUST_10-5": 0.0004972650422675286,
+          "HUST_10-7": 0.0011337868480725624,
+          "HUST_10-8": 0.0007142857142857143,
+          "HUST_2-2": 0.0,
+          "HUST_2-3": 0.0,
+          "HUST_2-4": 0.0,
+          "HUST_2-5": 0.0036576444769568397,
+          "HUST_2-8": 0.0006752194463200541,
+          "HUST_3-1": 0.0,
+          "HUST_3-2": 0.0,
+          "HUST_3-3": 0.00245398773006135,
+          "HUST_3-4": 0.0005662514156285391,
+          "HUST_3-5": 0.0007527286413248024,
+          "HUST_3-7": 0.0,
+          "HUST_3-8": 0.00043047783039173483,
+          "HUST_4-1": 0.0,
+          "HUST_4-2": 0.0017016449234259785,
+          "HUST_4-3": 0.0008756567425569177,
+          "HUST_4-4": 0.0006706908115358819,
+          "HUST_4-8": 0.0,
+          "HUST_5-1": 0.00039888312724371757,
+          "HUST_5-2": 0.001048767697954903,
+          "HUST_5-3": 0.0,
+          "HUST_5-4": 0.0005096839959225281,
+          "HUST_5-5": 0.0012787723785166241,
+          "HUST_5-6": 0.0,
+          "HUST_6-1": 0.0,
+          "HUST_6-2": 0.0010587612493382743,
+          "HUST_6-5": 0.0004591368227731864,
+          "HUST_6-8": 0.00040816326530612246,
+          "HUST_7-1": 0.000591715976331361,
+          "HUST_7-4": 0.0007178750897343862,
+          "HUST_7-5": 0.0,
+          "HUST_7-6": 0.0007047216349541931,
+          "HUST_7-7": 0.0005934718100890207,
+          "HUST_8-2": 0.0009799118079372856,
+          "HUST_8-3": 0.00044033465433729633,
+          "HUST_8-4": 0.0,
+          "HUST_8-5": 0.0,
+          "HUST_8-7": 0.0004885197850512946,
+          "HUST_8-8": 0.0018072289156626507,
+          "HUST_9-2": 0.0009416195856873823,
+          "HUST_9-3": 0.0005302226935312832,
+          "HUST_9-4": 0.0005112474437627812,
+          "HUST_9-5": 0.00046533271288971617,
+          "HUST_9-7": 0.0005017561465127947
+        }
+      },
+      "negative": {
+        "enabled": false,
+        "events": 128,
+        "measured_rate_per_100": 0.12563553915313794,
+        "noise_only_rate_per_100": 0.12857914640734738,
+        "ratio_to_noise": 0.9771066511447828,
+        "noise_factor": 2.0,
+        "noise_segment_length": 1851,
+        "units_with_event": 17,
+        "amplitude_Ah": [
+          -0.0013249873556480179,
+          -0.0015790817275605222,
+          -0.0015932977501397325,
+          -0.0014491275278637914,
+          -0.0016718266819356334,
+          -0.0017163005793005978,
+          -0.001584296345494421,
+          -0.0017080706342816544,
+          -0.0017597673199397676,
+          -0.0017593577018638962,
+          -0.0015590056104266491,
+          -0.0015078396352891927,
+          -0.001420978134436287,
+          -0.0013338003752997936,
+          -0.001500803131428364,
+          -0.0014937180612520297,
+          -0.0016882671904728766,
+          -0.0016313829082749906,
+          -0.0018669634807477206,
+          -0.0018148390549488098,
+          -0.0019366401046742817,
+          -0.0020355199388274884,
+          -0.0019972332931079504,
+          -0.0018616372865048714,
+          -0.0017177952535362652,
+          -0.0017463798078384714,
+          -0.0017474687501083427,
+          -0.0019210244499627775,
+          -0.002473933465604684,
+          -0.002124238602377494,
+          -0.0022480573270324453,
+          -0.0023414373094066366,
+          -0.002350611415199392,
+          -0.002107142576461815,
+          -0.002029445092279737,
+          -0.0021620439673276435,
+          -0.0021915885468791786,
+          -0.0020848915690733264,
+          -0.002204400278222474,
+          -0.002032172362476326,
+          -0.005804414967448343,
+          -0.0017949449048397113,
+          -0.001735199122400812,
+          -0.0020659671526796694,
+          -0.0018307835673130443,
+          -0.001920044092065116,
+          -0.0019117939076715837,
+          -0.001782041483784784,
+          -0.00206267740101964,
+          -0.0019633060868742844,
+          -0.002011567947330083,
+          -0.0020507556635271924,
+          -0.0019452838288590232,
+          -0.001898147280912135,
+          -0.0017817476029855178,
+          -0.0024417770116984343,
+          -0.0015975027444464723,
+          -0.0017472199463158475,
+          -0.0017843938679772138,
+          -0.0018832046145857127,
+          -0.0019279281177766799,
+          -0.0019035423176566489,
+          -0.0017638009559345746,
+          -0.0016992253518678842,
+          -0.005722755827750424,
+          -0.0011449860754646894,
+          -0.0014265564874401913,
+          -0.0014027552125634368,
+          -0.0014368048802181716,
+          -0.0014499686405727704,
+          -0.0012829680137625592,
+          -0.0024271047948279736,
+          -0.0024231345586341684,
+          -0.002493434000550844,
+          -0.0025542429534096273,
+          -0.002674544510299325,
+          -0.0026162943343256365,
+          -0.002403648989811766,
+          -0.0024705924093387827,
+          -0.0023996039267011925,
+          -0.002445606552023575,
+          -0.0026500474884597544,
+          -0.0025057678931615455,
+          -0.0024586313614695845,
+          -0.0024497093858620125,
+          -0.0023738778773741325,
+          -0.0024089111218912715,
+          -0.001330428550887582,
+          -0.0013573040632276585,
+          -0.001526813305567893,
+          -0.0014805723940583778,
+          -0.001470272055918655,
+          -0.001302872636603193,
+          -0.0017500210646538054,
+          -0.0015455810835825227,
+          -0.0014251812414226939,
+          -0.00159887988515576,
+          -0.0014462838057965235,
+          -0.0015067822468022361,
+          -0.0014722839410182054,
+          -0.001510831796836337,
+          -0.0013196800016452772,
+          -0.0013183240133433061,
+          -0.0013940403812463884,
+          -0.0012943131986716363,
+          -0.0014748675664561814,
+          -0.0015980091958522047,
+          -0.001705658317741141,
+          -0.0017353778061193206,
+          -0.0018544494865691795,
+          -0.001836021292539641,
+          -0.0017634012097215756,
+          -0.0016314859701364558,
+          -0.0015942254008266838,
+          -0.0015865405020088841,
+          -0.0014408504516740864,
+          -0.001464761890206515,
+          -0.0016260526484031027,
+          -0.001743219491661575,
+          -0.0017438453434674899,
+          -0.001682535259794328,
+          -0.001714392457980422,
+          -0.001988995939682645,
+          -0.002895354984262801,
+          -0.0020888668017234155,
+          -0.002092323864690713,
+          -0.0020817634958711717,
+          -0.0021136145026934205
+        ],
+        "duration": [
+          2,
+          6,
+          6,
+          4,
+          7,
+          8,
+          6,
+          7,
+          8,
+          9,
+          5,
+          4,
+          3,
+          2,
+          2,
+          2,
+          4,
+          2,
+          4,
+          4,
+          5,
+          7,
+          6,
+          4,
+          3,
+          3,
+          2,
+          2,
+          9,
+          3,
+          5,
+          7,
+          7,
+          3,
+          2,
+          4,
+          5,
+          2,
+          5,
+          2,
+          6,
+          3,
+          2,
+          7,
+          2,
+          5,
+          4,
+          3,
+          7,
+          5,
+          6,
+          6,
+          5,
+          4,
+          3,
+          2,
+          2,
+          4,
+          5,
+          7,
+          8,
+          7,
+          5,
+          4,
+          10,
+          2,
+          7,
+          6,
+          7,
+          3,
+          4,
+          3,
+          2,
+          3,
+          4,
+          6,
+          6,
+          2,
+          3,
+          2,
+          2,
+          5,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          5,
+          4,
+          5,
+          2,
+          4,
+          5,
+          3,
+          5,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          5,
+          5,
+          6,
+          7,
+          5,
+          4,
+          3,
+          2,
+          3,
+          3,
+          6,
+          8,
+          8,
+          6,
+          8,
+          2,
+          3,
+          2,
+          2,
+          2,
+          2
+        ],
+        "rate_per_position_by_unit": {
+          "HUST_1-1": 0.0,
+          "HUST_1-2": 0.0,
+          "HUST_1-6": 0.0,
+          "HUST_1-7": 0.0,
+          "HUST_10-1": 0.0,
+          "HUST_10-2": 0.0,
+          "HUST_10-3": 0.008116883116883116,
+          "HUST_10-4": 0.0,
+          "HUST_10-5": 0.0,
+          "HUST_10-7": 0.0011337868480725624,
+          "HUST_10-8": 0.008571428571428572,
+          "HUST_2-2": 0.004149377593360996,
+          "HUST_2-3": 0.0005773672055427252,
+          "HUST_2-4": 0.009339559706470981,
+          "HUST_2-5": 0.0,
+          "HUST_2-8": 0.0,
+          "HUST_3-1": 0.0,
+          "HUST_3-2": 0.0,
+          "HUST_3-3": 0.0,
+          "HUST_3-4": 0.0,
+          "HUST_3-5": 0.0,
+          "HUST_3-7": 0.0,
+          "HUST_3-8": 0.00043047783039173483,
+          "HUST_4-1": 0.0,
+          "HUST_4-2": 0.0,
+          "HUST_4-3": 0.0,
+          "HUST_4-4": 0.0053655264922870555,
+          "HUST_4-8": 0.0,
+          "HUST_5-1": 0.0,
+          "HUST_5-2": 0.0005243838489774515,
+          "HUST_5-3": 0.0,
+          "HUST_5-4": 0.0,
+          "HUST_5-5": 0.0,
+          "HUST_5-6": 0.0,
+          "HUST_6-1": 0.0,
+          "HUST_6-2": 0.0,
+          "HUST_6-5": 0.0027548209366391185,
+          "HUST_6-8": 0.006530612244897959,
+          "HUST_7-1": 0.0,
+          "HUST_7-4": 0.0,
+          "HUST_7-5": 0.009708737864077669,
+          "HUST_7-6": 0.007047216349541931,
+          "HUST_7-7": 0.004154302670623145,
+          "HUST_8-2": 0.0,
+          "HUST_8-3": 0.00044033465433729633,
+          "HUST_8-4": 0.0,
+          "HUST_8-5": 0.0,
+          "HUST_8-7": 0.0,
+          "HUST_8-8": 0.0006024096385542169,
+          "HUST_9-2": 0.0,
+          "HUST_9-3": 0.0,
+          "HUST_9-4": 0.0,
+          "HUST_9-5": 0.0018613308515588647,
+          "HUST_9-7": 0.0
+        }
+      }
+    },
+    "E7_length_distribution": [
+      1504,
+      2678,
+      1143,
+      1678,
+      1702,
+      1697,
+      1848,
+      1811,
+      2030,
+      1783,
+      1400,
+      2651,
+      1751,
+      1499,
+      1386,
+      1481,
+      1938,
+      2283,
+      1649,
+      1766,
+      2657,
+      2479,
+      2342,
+      2217,
+      1782,
+      1142,
+      1491,
+      1706,
+      2507,
+      1926,
+      2689,
+      1962,
+      1583,
+      2460,
+      1609,
+      1908,
+      2178,
+      2450,
+      1690,
+      1393,
+      1873,
+      1419,
+      1685,
+      2041,
+      2290,
+      1885,
+      1348,
+      2047,
+      1679,
+      2143,
+      1905,
+      1975,
+      2168,
+      2012
+    ]
+  },
+  "derived": {
+    "channel_roles": {
+      "weighted": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "demoted_by_guard": [],
+      "zero_weight_redundant": []
+    },
+    "reference_point_x0": {
+      "capacity": 1.1921709858326897,
+      "charge_time": 34.373670441070566,
+      "mean_discharge_voltage": 3.0992366240668368
+    },
+    "null_permuted_source_values": {
+      "channel": "charge_time",
+      "n": 102291,
+      "median": 29.73333333333333
+    },
+    "capacity_affinity_max_abs_error_Ah": 1.1102230246251565e-16
+  },
+  "v2": {
+    "per_unit_offsets": true,
+    "correlated_noise": true,
+    "offsets_declared": {
+      "tol_frac": 0.0001,
+      "max_iter": 200,
+      "min_readings": 10,
+      "declared": "max_i |delta_{c,i}^(k) - delta_{c,i}^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)| and max over the 101-point grid |phi_c^(k) - phi_c^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)|"
+    },
+    "backfit": {
+      "charge_time": {
+        "iterations": 5,
+        "converged": true,
+        "last_change_delta": 3.1814240610827937e-06,
+        "last_change_phi": 2.2859442307066047e-05,
+        "tolerance": 0.0012824118163404982,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 1.6833993631354067,
+        "delta_p05_p95": [
+          -1.7178935909631794,
+          2.4817356129862165
+        ],
+        "phi0_r2": 34.37657142857144,
+        "phi1_r2": 21.52666666666666
+      },
+      "mean_discharge_voltage": {
+        "iterations": 4,
+        "converged": true,
+        "last_change_delta": 6.777333489971227e-07,
+        "last_change_phi": 3.4855178219217464e-06,
+        "tolerance": 5.56926969508913e-06,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 0.052995242979917756,
+        "delta_p05_p95": [
+          -0.05224810370036316,
+          0.05445301274197507
+        ],
+        "phi0_r2": 3.1013467206867307,
+        "phi1_r2": 3.041612990676191
+      }
+    },
+    "within_unit_correlation": [
+      [
+        1.0,
+        -0.05288312137418301,
+        -0.05202640623876863
+      ],
+      [
+        -0.05288312137418301,
+        1.0,
+        -0.30055142077472136
+      ],
+      [
+        -0.05202640623876863,
+        -0.30055142077472136,
+        1.0
+      ]
+    ],
+    "q1_fitting_units_reaching_eol": {
+      "median": 1.1921709858326897,
+      "iqr": 0.021164030225331087,
+      "p05_p95": [
+        1.1722842124941726,
+        1.2090002754182894
+      ],
+      "n": 54
+    },
+    "residual_before_after": {
+      "charge_time": {
+        "before_r2": {
+          "variance": 1.3970634020565038,
+          "phi": 0.9931597264797924,
+          "n_used": 101109
+        },
+        "after_offsets": {
+          "variance": 1.3927395048496134,
+          "phi": 0.9934008852788464,
+          "n_used": 101109
+        },
+        "variance_ratio_after_to_before": 0.9969050100371067,
+        "between_unit_variance_of_means": {
+          "before_r2": 1.7086001008240257,
+          "after_offsets": 0.13036026780908821
+        },
+        "global_centred_variance": {
+          "before_r2": 3.2026095818768066,
+          "after_offsets": 1.5053346008775965
+        },
+        "offset_variance": 1.5541381139745605,
+        "offset_sampling_noise_term": 0.6416051592956289,
+        "offset_variance_noise_corrected": 0.9125329546789316
+      },
+      "mean_discharge_voltage": {
+        "before_r2": {
+          "variance": 2.7868412385597497e-05,
+          "phi": 0.9805603988308937,
+          "n_used": 101114
+        },
+        "after_offsets": {
+          "variance": 2.5054481579235322e-05,
+          "phi": 0.9779724117629024,
+          "n_used": 101114
+        },
+        "variance_ratio_after_to_before": 0.8990279472175305,
+        "between_unit_variance_of_means": {
+          "before_r2": 0.0011549920447398974,
+          "after_offsets": 1.8561594324428306e-06
+        },
+        "global_centred_variance": {
+          "before_r2": 0.001101243806600589,
+          "after_offsets": 2.6952584495750095e-05
+        },
+        "offset_variance": 0.001128468071965495,
+        "offset_sampling_noise_term": 2.9457345660202126e-06,
+        "offset_variance_noise_corrected": 0.0011255223373994748
+      }
+    },
+    "correlation_r2_residuals": [
+      [
+        1.0,
+        -0.02718237545441275,
+        -0.003143632716456495
+      ],
+      [
+        -0.027182375454412752,
+        1.0,
+        0.10774613830869383
+      ],
+      [
+        -0.003143632716456495,
+        0.10774613830869381,
+        1.0
+      ]
+    ],
+    "q1_fitting_units": {
+      "median": 1.1921709858326897,
+      "iqr": 0.021164030225331087,
+      "p05_p95": [
+        1.1722842124941726,
+        1.2090002754182894
+      ],
+      "n": 54
+    },
+    "offsets_all_fitting_units": {
+      "HUST_1-1": {
+        "charge_time": -0.06191494870109704,
+        "mean_discharge_voltage": 0.05773173830642331
+      },
+      "HUST_1-2": {
+        "charge_time": 2.5486635253032768,
+        "mean_discharge_voltage": 0.02843180685269875
+      },
+      "HUST_1-6": {
+        "charge_time": 3.350126223831384,
+        "mean_discharge_voltage": 0.033211139108244137
+      },
+      "HUST_1-7": {
+        "charge_time": 0.2992548849133767,
+        "mean_discharge_voltage": 0.0009650756694838947
+      },
+      "HUST_10-1": {
+        "charge_time": -1.391509076526865,
+        "mean_discharge_voltage": 0.0037432304925917315
+      },
+      "HUST_10-2": {
+        "charge_time": -1.430981824468275,
+        "mean_discharge_voltage": -0.013785848369892051
+      },
+      "HUST_10-3": {
+        "charge_time": -1.8085385873661286,
+        "mean_discharge_voltage": 0.008600944263284394
+      },
+      "HUST_10-4": {
+        "charge_time": 0.5753155702278869,
+        "mean_discharge_voltage": 0.045738701591937936
+      },
+      "HUST_10-5": {
+        "charge_time": -0.012807389067133634,
+        "mean_discharge_voltage": 0.021020133678710806
+      },
+      "HUST_10-7": {
+        "charge_time": 0.20576760600108823,
+        "mean_discharge_voltage": 0.02566832117952278
+      },
+      "HUST_10-8": {
+        "charge_time": -0.5032823770748847,
+        "mean_discharge_voltage": 0.07012781884983199
+      },
+      "HUST_2-2": {
+        "charge_time": 1.573432969570285,
+        "mean_discharge_voltage": -0.024689647788606717
+      },
+      "HUST_2-3": {
+        "charge_time": 0.2253061303884527,
+        "mean_discharge_voltage": 0.004899390754798061
+      },
+      "HUST_2-4": {
+        "charge_time": -0.020504260156523735,
+        "mean_discharge_voltage": -0.012985693075151072
+      },
+      "HUST_2-5": {
+        "charge_time": 0.6421059471946515,
+        "mean_discharge_voltage": -0.06038028745787116
+      },
+      "HUST_2-8": {
+        "charge_time": -0.7477368833862874,
+        "mean_discharge_voltage": 0.031057639128307724
+      },
+      "HUST_3-1": {
+        "charge_time": -0.5743934630779775,
+        "mean_discharge_voltage": -0.02841948137948558
+      },
+      "HUST_3-2": {
+        "charge_time": -1.0005421334231022,
+        "mean_discharge_voltage": -0.04606007705305504
+      },
+      "HUST_3-3": {
+        "charge_time": -1.4508389431621582,
+        "mean_discharge_voltage": -0.05169043821277319
+      },
+      "HUST_3-4": {
+        "charge_time": -1.7734693854066075,
+        "mean_discharge_voltage": -0.03467540836251004
+      },
+      "HUST_3-5": {
+        "charge_time": 1.8921491497063814,
+        "mean_discharge_voltage": 0.01887019094405451
+      },
+      "HUST_3-7": {
+        "charge_time": -1.6072006742998743,
+        "mean_discharge_voltage": -0.024110460641628695
+      },
+      "HUST_3-8": {
+        "charge_time": -0.7249497012541672,
+        "mean_discharge_voltage": -0.05328376817731595
+      },
+      "HUST_4-1": {
+        "charge_time": -2.423672142206258,
+        "mean_discharge_voltage": -0.018255236803904396
+      },
+      "HUST_4-2": {
+        "charge_time": 0.8201517460891781,
+        "mean_discharge_voltage": 0.0529600933559764
+      },
+      "HUST_4-3": {
+        "charge_time": -0.7923902250081563,
+        "mean_discharge_voltage": 0.04579542698374217
+      },
+      "HUST_4-4": {
+        "charge_time": -0.7292146126581605,
+        "mean_discharge_voltage": 0.04213737097888348
+      },
+      "HUST_4-8": {
+        "charge_time": 0.6851895644107033,
+        "mean_discharge_voltage": -0.0060554355086557266
+      },
+      "HUST_5-1": {
+        "charge_time": 2.5132328407391613,
+        "mean_discharge_voltage": -0.020733333707348756
+      },
+      "HUST_5-2": {
+        "charge_time": -0.15278175801735738,
+        "mean_discharge_voltage": -0.024421276465456998
+      },
+      "HUST_5-3": {
+        "charge_time": 1.3317272464093124,
+        "mean_discharge_voltage": -0.023539630342426676
+      },
+      "HUST_5-4": {
+        "charge_time": 2.464775567273093,
+        "mean_discharge_voltage": 0.0275692578736777
+      },
+      "HUST_5-5": {
+        "charge_time": 1.2975698994035065,
+        "mean_discharge_voltage": -0.03156239347194356
+      },
+      "HUST_5-6": {
+        "charge_time": 2.0051557449474187,
+        "mean_discharge_voltage": -0.03787967016357352
+      },
+      "HUST_6-1": {
+        "charge_time": 0.971355135334357,
+        "mean_discharge_voltage": 0.022266763595218286
+      },
+      "HUST_6-2": {
+        "charge_time": 1.3882452409083976,
+        "mean_discharge_voltage": -0.03546695384808585
+      },
+      "HUST_6-5": {
+        "charge_time": 1.3646375755522024,
+        "mean_discharge_voltage": -0.054321872229036616
+      },
+      "HUST_6-8": {
+        "charge_time": 0.5286958044503018,
+        "mean_discharge_voltage": -0.027565817286980154
+      },
+      "HUST_7-1": {
+        "charge_time": -1.6879681631859489,
+        "mean_discharge_voltage": -0.011946751590903526
+      },
+      "HUST_7-4": {
+        "charge_time": -0.1488552048815306,
+        "mean_discharge_voltage": 0.057225577315972664
+      },
+      "HUST_7-5": {
+        "charge_time": 0.18229136705413485,
+        "mean_discharge_voltage": 0.040220713082033344
+      },
+      "HUST_7-6": {
+        "charge_time": -0.8249125511664515,
+        "mean_discharge_voltage": 0.05051033860600551
+      },
+      "HUST_7-7": {
+        "charge_time": -1.012049119170654,
+        "mean_discharge_voltage": 0.05263051606064373
+      },
+      "HUST_8-2": {
+        "charge_time": 1.4663606390446793,
+        "mean_discharge_voltage": 0.0038534098320224253
+      },
+      "HUST_8-3": {
+        "charge_time": -0.11314283206359388,
+        "mean_discharge_voltage": -0.004511581397125042
+      },
+      "HUST_8-4": {
+        "charge_time": -0.32095039371133804,
+        "mean_discharge_voltage": 0.013091229203438637
+      },
+      "HUST_8-5": {
+        "charge_time": 0.012807389067133634,
+        "mean_discharge_voltage": 0.038521869738828096
+      },
+      "HUST_8-7": {
+        "charge_time": 1.0536504017192891,
+        "mean_discharge_voltage": -0.0013034963496547647
+      },
+      "HUST_8-8": {
+        "charge_time": 0.03052392374622226,
+        "mean_discharge_voltage": -0.021225522218269566
+      },
+      "HUST_9-2": {
+        "charge_time": 0.8471067837215331,
+        "mean_discharge_voltage": 0.02715412174640819
+      },
+      "HUST_9-3": {
+        "charge_time": 0.19483317767255048,
+        "mean_discharge_voltage": -0.0009650756694838947
+      },
+      "HUST_9-4": {
+        "charge_time": -0.19786690597880696,
+        "mean_discharge_voltage": -0.0098634898161305
+      },
+      "HUST_9-5": {
+        "charge_time": -0.8289873596658941,
+        "mean_discharge_voltage": -0.017078374509245542
+      },
+      "HUST_9-7": {
+        "charge_time": -0.24817974832904977,
+        "mean_discharge_voltage": 0.029226050933219838
+      }
+    }
+  }
+}

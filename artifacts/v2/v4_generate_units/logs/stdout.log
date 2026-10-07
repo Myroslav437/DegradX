@@ -1,0 +1,108 @@
+[skip] MATR seed 0 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/MATR/seed0.pkl); use --force to recompute
+[skip] MATR seed 1 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/MATR/seed1.pkl); use --force to recompute
+[skip] MATR seed 2 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/MATR/seed2.pkl); use --force to recompute
+[skip] MATR X3-off set: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/MATR/seed0_x3off.pkl); use --force to recompute
+[skip] HUST seed 0 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/HUST/seed0.pkl); use --force to recompute
+[skip] HUST seed 1 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/HUST/seed1.pkl); use --force to recompute
+[skip] HUST seed 2 units: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/HUST/seed2.pkl); use --force to recompute
+[skip] HUST X3-off set: outputs exist (/home/mmishchuk/projects/DegradX/data/v2/generated/HUST/seed0_x3off.pkl); use --force to recompute
+[PASS] MATR seed 0 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 249438 windows
+[PASS] MATR seed 0 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 5.16e-16
+[PASS] MATR seed 0 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 4.370e-04, SE 6.904e-04
+[PASS] MATR seed 0 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.111 (Var(y_offset)/Var(y_state) 0.120)
+[PASS] MATR seed 0 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 249438 windows
+[PASS] MATR seed 0 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 4.72e-16
+[PASS] MATR seed 0 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 4.217e-04, SE 6.897e-04
+[PASS] MATR seed 0 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.116 (Var(y_offset)/Var(y_state) 0.126)
+[PASS] MATR seed 0: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] MATR seed 0: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed +0.023 noise SD (SE 0.018)
+[PASS] MATR seed 0: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed +0.008 noise SD (SE 0.016)
+[PASS] MATR seed 0: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed -0.023 noise SD (SE 0.024)
+[PASS] MATR seed 0: E[eps_internal_resistance] ~ 0: expected |mean| <= 3 SE over units; observed +0.001 noise SD (SE 0.018)
+[PASS] MATR seed 0: E[eps_temperature_mean] ~ 0: expected |mean| <= 3 SE over units; observed +0.004 noise SD (SE 0.017)
+[PASS] MATR seed 0: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] MATR seed 0: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[PASS] MATR seed 0: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 10.8 mAh +- 20%; observed 12.4 mAh
+[PASS] MATR seed 1 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 238319 windows
+[PASS] MATR seed 1 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 4.30e-16
+[PASS] MATR seed 1 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -9.854e-04, SE 8.906e-04
+[PASS] MATR seed 1 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.112 (Var(y_offset)/Var(y_state) 0.120)
+[PASS] MATR seed 1 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 238319 windows
+[PASS] MATR seed 1 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 4.93e-16
+[PASS] MATR seed 1 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -1.017e-03, SE 8.943e-04
+[PASS] MATR seed 1 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.117 (Var(y_offset)/Var(y_state) 0.126)
+[PASS] MATR seed 1: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] MATR seed 1: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed -0.046 noise SD (SE 0.018)
+[PASS] MATR seed 1: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed +0.027 noise SD (SE 0.023)
+[PASS] MATR seed 1: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed +0.006 noise SD (SE 0.028)
+[PASS] MATR seed 1: E[eps_internal_resistance] ~ 0: expected |mean| <= 3 SE over units; observed +0.010 noise SD (SE 0.017)
+[PASS] MATR seed 1: E[eps_temperature_mean] ~ 0: expected |mean| <= 3 SE over units; observed -0.019 noise SD (SE 0.019)
+[PASS] MATR seed 1: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] MATR seed 1: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[PASS] MATR seed 1: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 10.8 mAh +- 20%; observed 10.0 mAh
+[PASS] MATR seed 2 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 243588 windows
+[PASS] MATR seed 2 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 4.84e-16
+[PASS] MATR seed 2 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -1.618e-04, SE 6.734e-04
+[PASS] MATR seed 2 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.104 (Var(y_offset)/Var(y_state) 0.114)
+[PASS] MATR seed 2 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 243588 windows
+[PASS] MATR seed 2 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 5.27e-16
+[PASS] MATR seed 2 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -1.624e-04, SE 6.747e-04
+[PASS] MATR seed 2 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.109 (Var(y_offset)/Var(y_state) 0.119)
+[PASS] MATR seed 2: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] MATR seed 2: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed -0.002 noise SD (SE 0.020)
+[PASS] MATR seed 2: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed +0.005 noise SD (SE 0.014)
+[PASS] MATR seed 2: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed -0.001 noise SD (SE 0.023)
+[PASS] MATR seed 2: E[eps_internal_resistance] ~ 0: expected |mean| <= 3 SE over units; observed +0.017 noise SD (SE 0.019)
+[PASS] MATR seed 2: E[eps_temperature_mean] ~ 0: expected |mean| <= 3 SE over units; observed -0.004 noise SD (SE 0.019)
+[PASS] MATR seed 2: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] MATR seed 2: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[PASS] MATR seed 2: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 10.8 mAh +- 20%; observed 10.6 mAh
+[WARN] MATR: X3 construction - within-unit correlation of generated noise (mean over seeds) within 0.05 of the fitted rho_bar: expected <= 0.05; observed max |delta r| 0.087 (pooled comparison 0.080; implied-by-construction gap 0.127)
+[WARN] MATR: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported): expected <= 0.05; observed max |delta r| 0.168
+[PASS] HUST seed 0 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562769 windows
+[PASS] HUST seed 0 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 9.37e-16
+[PASS] HUST seed 0 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -8.495e-04, SE 1.058e-03
+[PASS] HUST seed 0 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.319 (Var(y_offset)/Var(y_state) 0.493)
+[PASS] HUST seed 0 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562769 windows
+[PASS] HUST seed 0 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 8.19e-16
+[PASS] HUST seed 0 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean -8.422e-04, SE 1.058e-03
+[PASS] HUST seed 0 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.320 (Var(y_offset)/Var(y_state) 0.497)
+[PASS] HUST seed 0: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] HUST seed 0: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed -0.014 noise SD (SE 0.009)
+[PASS] HUST seed 0: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed +0.020 noise SD (SE 0.033)
+[PASS] HUST seed 0: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed +0.008 noise SD (SE 0.019)
+[PASS] HUST seed 0: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] HUST seed 0: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[WARN] HUST seed 0: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 21.2 mAh +- 20%; observed 26.9 mAh
+[PASS] HUST seed 1 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562851 windows
+[PASS] HUST seed 1 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 9.33e-16
+[PASS] HUST seed 1 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 4.391e-04, SE 1.081e-03
+[PASS] HUST seed 1 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.344 (Var(y_offset)/Var(y_state) 0.550)
+[PASS] HUST seed 1 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562851 windows
+[PASS] HUST seed 1 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 8.60e-16
+[PASS] HUST seed 1 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 4.335e-04, SE 1.081e-03
+[PASS] HUST seed 1 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.345 (Var(y_offset)/Var(y_state) 0.555)
+[PASS] HUST seed 1: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] HUST seed 1: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed -0.007 noise SD (SE 0.010)
+[PASS] HUST seed 1: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed -0.020 noise SD (SE 0.036)
+[PASS] HUST seed 1: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed +0.007 noise SD (SE 0.016)
+[PASS] HUST seed 1: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] HUST seed 1: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[WARN] HUST seed 1: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 21.2 mAh +- 20%; observed 27.0 mAh
+[PASS] HUST seed 2 [recency]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562398 windows
+[PASS] HUST seed 2 [recency]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 9.26e-16
+[PASS] HUST seed 2 [recency]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 1.423e-03, SE 1.068e-03
+[PASS] HUST seed 2 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.312 (Var(y_offset)/Var(y_state) 0.474)
+[PASS] HUST seed 2 [uniform]: sum(phi*) == y on every window: expected < 1e-9 (relative); observed 0.00e+00 over 562398 windows
+[PASS] HUST seed 2 [uniform]: g(x) - y == sum(w eps) on every window: expected < 1e-9; observed 8.74e-16
+[PASS] HUST seed 2 [uniform]: mean over units of g(x) - y ~ 0: expected |mean| <= 3 SE; observed mean 1.419e-03, SE 1.069e-03
+[PASS] HUST seed 2 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule): expected <= 0.5; observed 0.313 (Var(y_offset)/Var(y_state) 0.478)
+[PASS] HUST seed 2: unit at z = 0 with zero offsets, no patterns, no noise has y = 0: expected 0; observed 0.00e+00
+[PASS] HUST seed 2: E[eps_capacity] ~ 0: expected |mean| <= 3 SE over units; observed -0.004 noise SD (SE 0.009)
+[PASS] HUST seed 2: E[eps_charge_time] ~ 0: expected |mean| <= 3 SE over units; observed -0.027 noise SD (SE 0.034)
+[PASS] HUST seed 2: E[eps_mean_discharge_voltage] ~ 0: expected |mean| <= 3 SE over units; observed -0.020 noise SD (SE 0.018)
+[PASS] HUST seed 2: z starts at the pristine level and T is the first crossing of z = 1: expected z_1 <= 0.05; z_T >= 1 > z_{T-1}; observed max z_1 0.000; first crossing True
+[PASS] HUST seed 2: disabling patterns leaves z, T, R, mean and noise unchanged: expected identical; observed True
+[WARN] HUST seed 2: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL): expected 21.2 mAh +- 20%; observed 27.1 mAh
+[PASS] HUST: X3 construction - within-unit correlation of generated noise (mean over seeds) within 0.05 of the fitted rho_bar: expected <= 0.05; observed max |delta r| 0.008 (pooled comparison 0.033; implied-by-construction gap 0.014)
+[WARN] HUST: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported): expected <= 0.05; observed max |delta r| 0.068
