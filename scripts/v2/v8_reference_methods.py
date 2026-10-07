@@ -165,6 +165,13 @@ def unit_mean_ci(values, unit_ids, seed, n_resamples):
     return {"mean": float(means.mean()), "ci_low": float(ci.low), "ci_high": float(ci.high), "units": int(len(means))}
 
 
+def unit_mean(values, unit_ids) -> float:
+    """Mean over units of the per-unit mean (the aggregation of declarations scoring), without an interval."""
+    v, u = np.asarray(values, float), np.asarray(unit_ids)
+    uu = np.unique(u[np.isfinite(v)])
+    return float(np.mean([np.nanmean(v[u == k]) for k in uu])) if len(uu) else float("nan")
+
+
 def score_maps(A, Apf, rows, zero_ch, weighted_idx, graded_key="graded"):
     out = {"rank": [], "allocation": [], "temporal": [], "zero_mass": [], "retrieval": [], "temporal_excluded": 0}
     for i, w in enumerate(rows):
@@ -263,12 +270,13 @@ def main() -> int:
                 import shutil
 
                 shutil.rmtree(bench_dir, ignore_errors=True)
-                jobs_b = pool[:max(2 * w, 4)]
+                jobs_b = pool[:max(4 * w, 8)]  # four windows per worker so pool start-up does not dominate
                 t0 = time.perf_counter()
                 r_ = PT.run_jobs(jobs_b, model_specs=specs, backgrounds=bgs, windows=wins, checkpoint_dir=bench_dir, workers=w, device=dev, chunk=ch,
                                  nsamples=nsamples, l1_reg=l1, label=f"bench w{w} {dev} chunk{ch}", log_every=10 ** 6)
                 rows_b.append({"workers": w, "device": dev, "chunk": ch, "windows": len(jobs_b), "wall_s": time.perf_counter() - t0,
-                               "windows_per_hour": r_["windows_per_hour"], "mean_window_s": r_["mean_window_s"]})
+                               "windows_per_hour": r_["windows_per_hour"], "mean_window_s": r_["mean_window_s"],
+                               "ideal_windows_per_hour": w * 3600.0 / r_["mean_window_s"] if r_["mean_window_s"] else None})
                 print(f"[v8] bench {rows_b[-1]}", flush=True)
                 feas["benchmark"] = rows_b
                 write_json(feas, feas_f)
@@ -407,13 +415,13 @@ def main() -> int:
                             Apf = fn(mm, Xpf, baseline, ctx.device)
                             A = fn(mm, X, baseline, ctx.device) if S.has_patterns else Apf
                             sc_ = score_maps(A, Apf, rows, S.zero_ch, S.weighted_idx)
-                            floor[meth].append({"member": mem, **{k: unit_mean_ci(sc_[k], S.unit_ids, args.seed, 1)["mean"] for k in ("rank", "allocation", "temporal", "zero_mass")}})
+                            floor[meth].append({"member": mem, **{k: unit_mean(sc_[k], S.unit_ids) for k in ("rank", "allocation", "temporal", "zero_mass")}})
                         if kind == weightings[0]:
                             inp = "xpf" if S.has_patterns else "x"
                             key = f"{ds}/{kind}/trained/{mem}/pristine/{inp}" if not (mem == "A0" and inp == "x") else f"{ds}/{kind}/trained/A0/pristine/x"
                             Apf = ts_maps[key][ts_seeds[0]]
                             sc_ = score_maps(Apf, Apf, rows, S.zero_ch, S.weighted_idx)
-                            floor["timeshap"].append({"member": mem, **{k: unit_mean_ci(sc_[k], S.unit_ids, args.seed, 1)["mean"] for k in ("rank", "allocation", "temporal", "zero_mass")}})
+                            floor["timeshap"].append({"member": mem, **{k: unit_mean(sc_[k], S.unit_ids) for k in ("rank", "allocation", "temporal", "zero_mass")}})
                     r["identifiability_floor"] = {}
                     for meth, v in floor.items():
                         if not v:
