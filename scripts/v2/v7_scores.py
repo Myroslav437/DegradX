@@ -143,7 +143,7 @@ def v1_windows(ds, kind, seed):
     W = []
     for ui, e in picks:
         tg = unit_targets(eligible[ui], spec, kind, ends=np.array([e]))
-        W.append({"unit": ui, "graded": tg["graded"][0], "x": tg["x"][0]})
+        W.append({"unit": ui, "graded": tg["graded"][0], "x": tg["x"][0], "xpf": tg["x_pattern_free"][0]})
     return spec, W
 
 
@@ -164,7 +164,8 @@ def part_b(ds, kind, seed, n_boot):
     uid = [w["unit"] for w in W]
     out = {}
     exact = np.stack([spec.weights(kind) * (w["x"] - spec.x0) for w in W])
-    maps = {"reference_exact": {"A": exact, "Apf": exact, "idx": np.arange(len(W))}}
+    exact_pf = np.stack([spec.weights(kind) * (w["xpf"] - spec.x0) for w in W])  # the counterpart map (D01) on a profile with patterns
+    maps = {"reference_exact": {"A": exact, "Apf": exact_pf, "idx": np.arange(len(W))}}
     for f in sorted((DATA_DIR / "attributions").glob(f"{ds}_{kind}_*.npz")):
         name = f.stem[len(f"{ds}_{kind}_"):]
         z = np.load(f)

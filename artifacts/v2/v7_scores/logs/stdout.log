@@ -1,0 +1,82 @@
+[v7] MATR recency added_noise        rank       resolved 0.05 (change -0.13129525723842106); registers 0.05
+[v7] MATR recency added_noise        allocation resolved 0.05 (change 0.04833157973297712); registers 0.1
+[v7] MATR recency added_noise        temporal   resolved 0.05 (change 0.08021087888925081); registers 0.5
+[v7] MATR recency shift_to_start     rank       resolved 0.05 (change -0.006556728436309917); registers 1.0
+[v7] MATR recency shift_to_start     allocation resolved 0.05 (change 1.2206888216592449e-05); registers None
+[v7] MATR recency shift_to_start     temporal   resolved 0.05 (change 0.8269963166075226); registers 0.05
+[v7] MATR recency shift_to_end       rank       resolved 0.05 (change -6.699121695294222e-05); registers 1.0
+[v7] MATR recency shift_to_end       allocation resolved 0.05 (change 9.121952538717048e-06); registers None
+[v7] MATR recency shift_to_end       temporal   resolved 0.05 (change 0.3227046989047181); registers 0.1
+[v7] MATR recency smoothing          rank       resolved 0.5 (change -2.2059770422893582e-05); registers None
+[v7] MATR recency smoothing          allocation resolved 0.5 (change 6.438660045208277e-07); registers None
+[v7] MATR recency smoothing          temporal   resolved 0.5 (change 0.011923805079920694); registers 8
+[v7] MATR recency permuted_fraction  rank       resolved 0.05 (change -0.04038930517925638); registers 0.2
+[v7] MATR recency permuted_fraction  allocation resolved 0.05 (change 0.030062229165993323); registers 0.1
+[v7] MATR recency permuted_fraction  temporal   resolved 0.05 (change 0.25710678523616853); registers 0.2
+[v7] MATR uniform added_noise        rank       resolved 0.05 (change -0.11861253273606703); registers 0.05
+[v7] MATR uniform added_noise        allocation resolved 0.05 (change 0.0366270315051076); registers 0.1
+[v7] MATR uniform added_noise        temporal   resolved 0.05 (change 0.053142963511015405); registers 0.5
+[v7] MATR uniform shift_to_start     rank       resolved 0.05 (change -0.005817074725979365); registers 1.0
+[v7] MATR uniform shift_to_start     allocation resolved 0.05 (change 6.204966182961508e-05); registers None
+[v7] MATR uniform shift_to_start     temporal   resolved 0.05 (change 0.582448247865713); registers 0.05
+[v7] MATR uniform shift_to_end       rank       resolved 0.05 (change -0.001829860118070734); registers 1.0
+[v7] MATR uniform shift_to_end       allocation resolved 0.05 (change 5.0894227718354425e-05); registers None
+[v7] MATR uniform shift_to_end       temporal   resolved 0.05 (change 0.5662354194673659); registers 0.05
+[v7] MATR uniform smoothing          rank       resolved 0.5 (change -5.2360036311813494e-05); registers None
+[v7] MATR uniform smoothing          allocation resolved 0.5 (change 2.0653380271180437e-06); registers None
+[v7] MATR uniform smoothing          temporal   resolved 0.5 (change 0.0004452149154706534); registers None
+[v7] MATR uniform permuted_fraction  rank       resolved 0.05 (change -0.043067327678313214); registers 0.2
+[v7] MATR uniform permuted_fraction  allocation resolved 0.05 (change 0.03068889252299854); registers 0.1
+[v7] MATR uniform permuted_fraction  temporal   resolved 0.05 (change 0.2558727182085254); registers 0.1
+[v7] HUST recency added_noise        rank       resolved 0.05 (change -0.04728377155146028); registers 0.2
+[v7] HUST recency added_noise        allocation resolved 0.05 (change 0.02602582428630134); registers 0.1
+[v7] HUST recency added_noise        temporal   resolved 0.05 (change 0.08481175413900806); registers 0.5
+[v7] HUST recency shift_to_start     rank       resolved 0.05 (change -0.01711044994154985); registers 1.0
+[v7] HUST recency shift_to_start     allocation resolved 0.05 (change 3.456434717549764e-06); registers None
+[v7] HUST recency shift_to_start     temporal   resolved 0.05 (change 0.823131514425194); registers 0.05
+[v7] HUST recency shift_to_end       rank       resolved 0.05 (change -0.00010730402752829388); registers 1.0
+[v7] HUST recency shift_to_end       allocation resolved 0.05 (change 1.913640851118843e-06); registers None
+[v7] HUST recency shift_to_end       temporal   resolved 0.05 (change 0.32679688250331085); registers 0.1
+[v7] HUST recency smoothing          rank       resolved 0.5 (change -3.3058478055705523e-06); registers None
+[v7] HUST recency smoothing          allocation resolved 0.5 (change 1.773797625903763e-07); registers None
+[v7] HUST recency smoothing          temporal   resolved 0.5 (change 0.011687938496821516); registers 8
+[v7] HUST recency permuted_fraction  rank       resolved 0.05 (change -0.04156509016473169); registers 0.2
+[v7] HUST recency permuted_fraction  allocation resolved 0.05 (change 0.024454398421477654); registers 0.1
+[v7] HUST recency permuted_fraction  temporal   resolved 0.05 (change 0.2546785419396198); registers 0.2
+[v7] HUST uniform added_noise        rank       resolved 0.05 (change -0.06035578824046306); registers 0.2
+[v7] HUST uniform added_noise        allocation resolved 0.05 (change 0.018954250596426452); registers 0.2
+[v7] HUST uniform added_noise        temporal   resolved 0.05 (change 0.05385263999911164); registers 0.2
+[v7] HUST uniform shift_to_start     rank       resolved 0.05 (change -0.015172951401449617); registers 1.0
+[v7] HUST uniform shift_to_start     allocation resolved 0.05 (change 5.958545204628085e-06); registers None
+[v7] HUST uniform shift_to_start     temporal   resolved 0.05 (change 0.5770801895747492); registers 0.05
+[v7] HUST uniform shift_to_end       rank       resolved 0.05 (change -0.0047078798259326225); registers 1.0
+[v7] HUST uniform shift_to_end       allocation resolved 0.05 (change 7.972083385880653e-06); registers None
+[v7] HUST uniform shift_to_end       temporal   resolved 0.05 (change 0.5727853550864929); registers 0.05
+[v7] HUST uniform smoothing          rank       resolved 0.5 (change -7.44466585159821e-06); registers None
+[v7] HUST uniform smoothing          allocation resolved 0.5 (change 2.405906253853546e-07); registers None
+[v7] HUST uniform smoothing          temporal   resolved 0.5 (change 0.00014085475443721107); registers None
+[v7] HUST uniform permuted_fraction  rank       resolved 0.05 (change -0.04237703459696666); registers 0.2
+[v7] HUST uniform permuted_fraction  allocation resolved 0.05 (change 0.02191235230424705); registers 0.1
+[v7] HUST uniform permuted_fraction  temporal   resolved 0.05 (change 0.202343304438268); registers 0.05
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[PASS] MATR [recency]: undegraded ground truth scores perfect on rank: expected 1.0; observed 1
+[PASS] MATR [recency]: undegraded ground truth scores perfect on allocation: expected 0.0; observed 0
+[PASS] MATR [recency]: undegraded ground truth scores perfect on temporal: expected 0.0; observed 0
+[PASS] MATR [uniform]: undegraded ground truth scores perfect on rank: expected 1.0; observed 1
+[PASS] MATR [uniform]: undegraded ground truth scores perfect on allocation: expected 0.0; observed 0
+[PASS] MATR [uniform]: undegraded ground truth scores perfect on temporal: expected 0.0; observed 0
+[PASS] HUST [recency]: undegraded ground truth scores perfect on rank: expected 1.0; observed 1
+[PASS] HUST [recency]: undegraded ground truth scores perfect on allocation: expected 0.0; observed 0
+[PASS] HUST [recency]: undegraded ground truth scores perfect on temporal: expected 0.0; observed 0
+[PASS] HUST [uniform]: undegraded ground truth scores perfect on rank: expected 1.0; observed 1
+[PASS] HUST [uniform]: undegraded ground truth scores perfect on allocation: expected 0.0; observed 0
+[PASS] HUST [uniform]: undegraded ground truth scores perfect on temporal: expected 0.0; observed 0
+[PASS] MATR [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 1.09e-06
+[PASS] MATR [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 5.78e-07
+[PASS] HUST [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 1.03e-06
+[PASS] HUST [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 6.17e-07
+[PASS] NASA_PCoE [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 2.49e-06
+[PASS] NASA_PCoE [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 4.07e-06

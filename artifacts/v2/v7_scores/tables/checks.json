@@ -1,0 +1,128 @@
+[
+  {
+    "name": "MATR [recency]: undegraded ground truth scores perfect on rank",
+    "expected": "1.0",
+    "observed": "1",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: undegraded ground truth scores perfect on allocation",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: undegraded ground truth scores perfect on temporal",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: undegraded ground truth scores perfect on rank",
+    "expected": "1.0",
+    "observed": "1",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: undegraded ground truth scores perfect on allocation",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: undegraded ground truth scores perfect on temporal",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: undegraded ground truth scores perfect on rank",
+    "expected": "1.0",
+    "observed": "1",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: undegraded ground truth scores perfect on allocation",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: undegraded ground truth scores perfect on temporal",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: undegraded ground truth scores perfect on rank",
+    "expected": "1.0",
+    "observed": "1",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: undegraded ground truth scores perfect on allocation",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: undegraded ground truth scores perfect on temporal",
+    "expected": "0.0",
+    "observed": "0",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "1.09e-06",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "5.78e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "1.03e-06",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "6.17e-07",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "2.49e-06",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "NASA_PCoE [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error)",
+    "expected": "|diff| < 1e-3",
+    "observed": "4.07e-06",
+    "passed": true,
+    "severity": "error"
+  }
+]

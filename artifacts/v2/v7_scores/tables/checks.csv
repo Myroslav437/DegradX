@@ -1,0 +1,19 @@
+name,expected,observed,passed,severity
+MATR [recency]: undegraded ground truth scores perfect on rank,1.0,1,True,error
+MATR [recency]: undegraded ground truth scores perfect on allocation,0.0,0,True,error
+MATR [recency]: undegraded ground truth scores perfect on temporal,0.0,0,True,error
+MATR [uniform]: undegraded ground truth scores perfect on rank,1.0,1,True,error
+MATR [uniform]: undegraded ground truth scores perfect on allocation,0.0,0,True,error
+MATR [uniform]: undegraded ground truth scores perfect on temporal,0.0,0,True,error
+HUST [recency]: undegraded ground truth scores perfect on rank,1.0,1,True,error
+HUST [recency]: undegraded ground truth scores perfect on allocation,0.0,0,True,error
+HUST [recency]: undegraded ground truth scores perfect on temporal,0.0,0,True,error
+HUST [uniform]: undegraded ground truth scores perfect on rank,1.0,1,True,error
+HUST [uniform]: undegraded ground truth scores perfect on allocation,0.0,0,True,error
+HUST [uniform]: undegraded ground truth scores perfect on temporal,0.0,0,True,error
+MATR [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,1.09e-06,True,error
+MATR [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,5.78e-07,True,error
+HUST [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,1.03e-06,True,error
+HUST [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,6.17e-07,True,error
+NASA_PCoE [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,2.49e-06,True,error
+NASA_PCoE [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error),|diff| < 1e-3,4.07e-06,True,error

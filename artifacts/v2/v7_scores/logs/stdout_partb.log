@@ -1,0 +1,10 @@
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[PASS] MATR [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 1.09e-06
+[PASS] MATR [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 5.78e-07
+[PASS] HUST [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 1.03e-06
+[PASS] HUST [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 6.17e-07
+[PASS] NASA_PCoE [recency] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 2.49e-06
+[PASS] NASA_PCoE [uniform] v1 maps: IG on the reference model scores as the exact attribution (temporal error): expected |diff| < 1e-3; observed 4.07e-06
