@@ -41,8 +41,12 @@ CHANNEL_COLUMNS = {
 class ChannelRule:
     """Glitch rule for non-capacity channels (decision D17): a single-position departure beyond ``frac`` of the unit's
     channel median from the centred 11-position rolling median, with neither neighbour departing, is set to NaN.
-    IR recorded as exactly 0 is missing. ``frac=None`` disables the excursion clause."""
+    IR recorded as exactly 0 is missing. ``frac=None`` disables the excursion clause.
+
+    ``max_run`` (v2, decision D27): a run of up to ``max_run`` consecutive departing positions whose neighbours before and
+    after the run do not depart is set to NaN; ``max_run=1`` is D17 exactly (the v1 rule)."""
     frac: float | None = None
+    max_run: int = 1
 
 
 def clean_channel(x: np.ndarray, rule: ChannelRule, name: str) -> np.ndarray:
@@ -55,10 +59,22 @@ def clean_channel(x: np.ndarray, rule: ChannelRule, name: str) -> np.ndarray:
     roll = pd.Series(x).rolling(11, center=True, min_periods=3).median().to_numpy()
     big = np.abs(x - roll) > rule.frac * abs(med_unit)
     big &= np.isfinite(x)
-    prev_big = np.append(False, big[:-1])
-    next_big = np.append(big[1:], False)
-    x[big & ~prev_big & ~next_big] = np.nan
+    if rule.max_run == 1:
+        prev_big = np.append(False, big[:-1])
+        next_big = np.append(big[1:], False)
+        x[big & ~prev_big & ~next_big] = np.nan
+        return x
+    for s, e in departure_runs(big):
+        if e - s + 1 <= rule.max_run:
+            x[s:e + 1] = np.nan
     return x
+
+
+def departure_runs(flag: np.ndarray) -> list[tuple[int, int]]:
+    """Maximal runs [s, e] (inclusive, 0-based) of consecutive True positions."""
+    f = np.concatenate([[False], np.asarray(flag, bool), [False]])
+    d = np.diff(f.astype(int))
+    return list(zip(np.flatnonzero(d == 1), np.flatnonzero(d == -1) - 1))
 
 
 @dataclass

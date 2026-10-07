@@ -46,3 +46,4 @@ before any v2 stage ran. Records from D25 on follow the same five-step protocol.
 | id | decision | stage | status |
 |---|---|---|---|
 | D25 | v2 scope: final-position weighting, setting sweep, representation distance, NASA PCoE, cross-fitting dropped | V0 | taken |
+| D27 | non-capacity glitch rule extended to runs of up to three departing positions (one paused cycle in held-out MATR_b1c2 set the 53.5 min² held-out charge-time variance) | V1 | taken (post-data; paper round 7) |

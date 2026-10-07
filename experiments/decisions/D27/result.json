@@ -1,0 +1,534 @@
+{
+ "MATR": {
+  "D17_max_run_1": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 0.8260786380411432,
+     "lag1": 0.9057807139766697,
+     "positions": 79568,
+     "masked": 379,
+     "masked_frac": 0.004763221395535894,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.07024539212245334,
+     "top_unit_max_abs_residual": 9.57430383677857
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005383776497803135,
+     "lag1": 0.966947430928722,
+     "positions": 79568,
+     "masked": 4,
+     "masked_frac": 5.027146591594611e-05,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.0639092229459418,
+     "top_unit_max_abs_residual": 0.12553372700653018
+    },
+    "internal_resistance": {
+     "pooled_variance": 9.119259677277319e-08,
+     "lag1": 0.9641080035032046,
+     "positions": 79568,
+     "masked": 50,
+     "masked_frac": 0.0006283933239493263,
+     "top_unit": "MATR_b1c18",
+     "top_unit_share_of_sum_sq": 0.07169548733540783,
+     "top_unit_max_abs_residual": 0.00348335210522512
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.504173793545427,
+     "lag1": 0.9440974015418062,
+     "positions": 79568,
+     "masked": 51,
+     "masked_frac": 0.0006409611904283129,
+     "top_unit": "MATR_b3c5",
+     "top_unit_share_of_sum_sq": 0.13836437250792588,
+     "top_unit_max_abs_residual": 5.057820629131822
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 53.003597562728594,
+     "lag1": 0.7662751580902255,
+     "positions": 31642,
+     "masked": 274,
+     "masked_frac": 0.008659376777700525,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.9803851448304834,
+     "top_unit_max_abs_residual": 1275.06177678813
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.000608057239813792,
+     "lag1": 0.9734125686783399,
+     "positions": 31642,
+     "masked": 4,
+     "masked_frac": 0.00012641425952847481,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.12491494795195177,
+     "top_unit_max_abs_residual": 0.08867668459152357
+    },
+    "internal_resistance": {
+     "pooled_variance": 1.0744364470272943e-07,
+     "lag1": 0.9476566108533111,
+     "positions": 31642,
+     "masked": 37,
+     "masked_frac": 0.001169331900638392,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.09119896324053074,
+     "top_unit_max_abs_residual": 0.0016920796491006747
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.6316712179253102,
+     "lag1": 0.9299750677970815,
+     "positions": 31642,
+     "masked": 38,
+     "masked_frac": 0.0012009354655205108,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.1621615346912786,
+     "top_unit_max_abs_residual": 6.470969458851056
+    }
+   }
+  },
+  "max_run_2": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 0.8233454333086132,
+     "lag1": 0.9068409102884579,
+     "positions": 79568,
+     "masked": 411,
+     "masked_frac": 0.005165393122863462,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.06888444594377942,
+     "top_unit_max_abs_residual": 9.58364518807342
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005383776497803135,
+     "lag1": 0.966947430928722,
+     "positions": 79568,
+     "masked": 4,
+     "masked_frac": 5.027146591594611e-05,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.0639092229459418,
+     "top_unit_max_abs_residual": 0.12553372700653018
+    },
+    "internal_resistance": {
+     "pooled_variance": 9.085735584873907e-08,
+     "lag1": 0.964010634411294,
+     "positions": 79568,
+     "masked": 56,
+     "masked_frac": 0.0007038005228232455,
+     "top_unit": "MATR_b1c18",
+     "top_unit_share_of_sum_sq": 0.07146948776387979,
+     "top_unit_max_abs_residual": 0.003487313663491447
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.497342030441965,
+     "lag1": 0.9455789169655999,
+     "positions": 79568,
+     "masked": 93,
+     "masked_frac": 0.001168811582545747,
+     "top_unit": "MATR_b3c5",
+     "top_unit_share_of_sum_sq": 0.14033914705739353,
+     "top_unit_max_abs_residual": 5.057820629131822
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.0950545825315066,
+     "lag1": 0.8327744690900587,
+     "positions": 31642,
+     "masked": 320,
+     "masked_frac": 0.010113140762277985,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.10851592773021435,
+     "top_unit_max_abs_residual": 4.292921969951476
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005920905342956822,
+     "lag1": 0.9773797125849516,
+     "positions": 31642,
+     "masked": 6,
+     "masked_frac": 0.00018962138929271222,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.12829159714449978,
+     "top_unit_max_abs_residual": 0.08867668459152357
+    },
+    "internal_resistance": {
+     "pooled_variance": 1.0681661209374907e-07,
+     "lag1": 0.9490781232068477,
+     "positions": 31642,
+     "masked": 45,
+     "masked_frac": 0.0014221604196953416,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.09175754354156496,
+     "top_unit_max_abs_residual": 0.0016920796491006747
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.622076311529529,
+     "lag1": 0.9321403503270392,
+     "positions": 31642,
+     "masked": 62,
+     "masked_frac": 0.0019594210226913595,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.1633949592232983,
+     "top_unit_max_abs_residual": 6.47417845856129
+    }
+   }
+  },
+  "max_run_3": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 0.82269728106149,
+     "lag1": 0.909268760017032,
+     "positions": 79568,
+     "masked": 420,
+     "masked_frac": 0.005278503921174341,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.06875608925810649,
+     "top_unit_max_abs_residual": 9.584523250202135
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005383776497803135,
+     "lag1": 0.966947430928722,
+     "positions": 79568,
+     "masked": 4,
+     "masked_frac": 5.027146591594611e-05,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.0639092229459418,
+     "top_unit_max_abs_residual": 0.12553372700653018
+    },
+    "internal_resistance": {
+     "pooled_variance": 9.085735584873907e-08,
+     "lag1": 0.964010634411294,
+     "positions": 79568,
+     "masked": 56,
+     "masked_frac": 0.0007038005228232455,
+     "top_unit": "MATR_b1c18",
+     "top_unit_share_of_sum_sq": 0.07146948776387979,
+     "top_unit_max_abs_residual": 0.003487313663491447
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.49678624140042416,
+     "lag1": 0.9456707853027918,
+     "positions": 79568,
+     "masked": 99,
+     "masked_frac": 0.0012442187814196662,
+     "top_unit": "MATR_b3c5",
+     "top_unit_share_of_sum_sq": 0.14050676176284144,
+     "top_unit_max_abs_residual": 5.057820629131822
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.0725303158680755,
+     "lag1": 0.8548731288044022,
+     "positions": 31642,
+     "masked": 332,
+     "masked_frac": 0.010492383540863409,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.11055485144004466,
+     "top_unit_max_abs_residual": 4.293234464780594
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005920905342956822,
+     "lag1": 0.9773797125849516,
+     "positions": 31642,
+     "masked": 6,
+     "masked_frac": 0.00018962138929271222,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.12829159714449978,
+     "top_unit_max_abs_residual": 0.08867668459152357
+    },
+    "internal_resistance": {
+     "pooled_variance": 1.0617243608650775e-07,
+     "lag1": 0.952691827800653,
+     "positions": 31642,
+     "masked": 48,
+     "masked_frac": 0.0015169711143416978,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.09232302629272736,
+     "top_unit_max_abs_residual": 0.0016920796491006747
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.6213000286783297,
+     "lag1": 0.9322007259366681,
+     "positions": 31642,
+     "masked": 65,
+     "masked_frac": 0.002054231717337716,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.16227008199799176,
+     "top_unit_max_abs_residual": 6.477807184224968
+    }
+   }
+  },
+  "max_run_5": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 0.8194006864726713,
+     "lag1": 0.9092667648374422,
+     "positions": 79568,
+     "masked": 425,
+     "masked_frac": 0.005341343253569274,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.0649504598123877,
+     "top_unit_max_abs_residual": 4.749473417234888
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005383776497803135,
+     "lag1": 0.966947430928722,
+     "positions": 79568,
+     "masked": 4,
+     "masked_frac": 5.027146591594611e-05,
+     "top_unit": "MATR_b1c1",
+     "top_unit_share_of_sum_sq": 0.0639092229459418,
+     "top_unit_max_abs_residual": 0.12553372700653018
+    },
+    "internal_resistance": {
+     "pooled_variance": 9.085735584873907e-08,
+     "lag1": 0.964010634411294,
+     "positions": 79568,
+     "masked": 56,
+     "masked_frac": 0.0007038005228232455,
+     "top_unit": "MATR_b1c18",
+     "top_unit_share_of_sum_sq": 0.07146948776387979,
+     "top_unit_max_abs_residual": 0.003487313663491447
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.49625726184688246,
+     "lag1": 0.9457148096406517,
+     "positions": 79568,
+     "masked": 103,
+     "masked_frac": 0.0012944902473356124,
+     "top_unit": "MATR_b3c5",
+     "top_unit_share_of_sum_sq": 0.14066361345755152,
+     "top_unit_max_abs_residual": 5.057820629131822
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.0725303158680755,
+     "lag1": 0.8548731288044022,
+     "positions": 31642,
+     "masked": 332,
+     "masked_frac": 0.010492383540863409,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.11055485144004466,
+     "top_unit_max_abs_residual": 4.293234464780594
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 0.0005920905342956822,
+     "lag1": 0.9773797125849516,
+     "positions": 31642,
+     "masked": 6,
+     "masked_frac": 0.00018962138929271222,
+     "top_unit": "MATR_b1c0",
+     "top_unit_share_of_sum_sq": 0.12829159714449978,
+     "top_unit_max_abs_residual": 0.08867668459152357
+    },
+    "internal_resistance": {
+     "pooled_variance": 1.0617243608650775e-07,
+     "lag1": 0.952691827800653,
+     "positions": 31642,
+     "masked": 48,
+     "masked_frac": 0.0015169711143416978,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.09232302629272736,
+     "top_unit_max_abs_residual": 0.0016920796491006747
+    },
+    "temperature_mean": {
+     "pooled_variance": 0.6170220451582492,
+     "lag1": 0.932739590448962,
+     "positions": 31642,
+     "masked": 78,
+     "masked_frac": 0.0024650780608052587,
+     "top_unit": "MATR_b1c2",
+     "top_unit_share_of_sum_sq": 0.16346244128900178,
+     "top_unit_max_abs_residual": 6.477807184224968
+    }
+   }
+  }
+ },
+ "HUST": {
+  "D17_max_run_1": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 1.3974903520399031,
+     "lag1": 0.9951369751256645,
+     "positions": 101882,
+     "masked": 4,
+     "masked_frac": 3.9261105985355606e-05,
+     "top_unit": "HUST_5-4",
+     "top_unit_share_of_sum_sq": 0.07593709689926835,
+     "top_unit_max_abs_residual": 4.74344568970848
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 2.8193867321200495e-05,
+     "lag1": 0.9838590945009764,
+     "positions": 101882,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_10-7",
+     "top_unit_share_of_sum_sq": 0.054734123554897464,
+     "top_unit_max_abs_residual": 0.024584380230901027
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.472402202761006,
+     "lag1": 0.9960343203239792,
+     "positions": 43555,
+     "masked": 1,
+     "masked_frac": 2.2959476523935255e-05,
+     "top_unit": "HUST_7-3",
+     "top_unit_share_of_sum_sq": 0.1302923068365624,
+     "top_unit_max_abs_residual": 6.178371179498535
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 4.273561488912217e-05,
+     "lag1": 0.9870729742729746,
+     "positions": 43555,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_1-5",
+     "top_unit_share_of_sum_sq": 0.20935017722944393,
+     "top_unit_max_abs_residual": 0.02828509156409009
+    }
+   }
+  },
+  "max_run_2": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 1.3973234106109782,
+     "lag1": 0.9954466652233867,
+     "positions": 101882,
+     "masked": 6,
+     "masked_frac": 5.889165897803341e-05,
+     "top_unit": "HUST_5-4",
+     "top_unit_share_of_sum_sq": 0.07594766023130077,
+     "top_unit_max_abs_residual": 4.74344568970848
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 2.8193867321200495e-05,
+     "lag1": 0.9838590945009764,
+     "positions": 101882,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_10-7",
+     "top_unit_share_of_sum_sq": 0.054734123554897464,
+     "top_unit_max_abs_residual": 0.024584380230901027
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.472402202761006,
+     "lag1": 0.9960343203239792,
+     "positions": 43555,
+     "masked": 1,
+     "masked_frac": 2.2959476523935255e-05,
+     "top_unit": "HUST_7-3",
+     "top_unit_share_of_sum_sq": 0.1302923068365624,
+     "top_unit_max_abs_residual": 6.178371179498535
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 4.273561488912217e-05,
+     "lag1": 0.9870729742729746,
+     "positions": 43555,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_1-5",
+     "top_unit_share_of_sum_sq": 0.20935017722944393,
+     "top_unit_max_abs_residual": 0.02828509156409009
+    }
+   }
+  },
+  "max_run_3": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 1.3973234106109782,
+     "lag1": 0.9954466652233867,
+     "positions": 101882,
+     "masked": 6,
+     "masked_frac": 5.889165897803341e-05,
+     "top_unit": "HUST_5-4",
+     "top_unit_share_of_sum_sq": 0.07594766023130077,
+     "top_unit_max_abs_residual": 4.74344568970848
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 2.8193867321200495e-05,
+     "lag1": 0.9838590945009764,
+     "positions": 101882,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_10-7",
+     "top_unit_share_of_sum_sq": 0.054734123554897464,
+     "top_unit_max_abs_residual": 0.024584380230901027
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.472402202761006,
+     "lag1": 0.9960343203239792,
+     "positions": 43555,
+     "masked": 1,
+     "masked_frac": 2.2959476523935255e-05,
+     "top_unit": "HUST_7-3",
+     "top_unit_share_of_sum_sq": 0.1302923068365624,
+     "top_unit_max_abs_residual": 6.178371179498535
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 4.273561488912217e-05,
+     "lag1": 0.9870729742729746,
+     "positions": 43555,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_1-5",
+     "top_unit_share_of_sum_sq": 0.20935017722944393,
+     "top_unit_max_abs_residual": 0.02828509156409009
+    }
+   }
+  },
+  "max_run_5": {
+   "fitting": {
+    "charge_time": {
+     "pooled_variance": 1.3973234106109782,
+     "lag1": 0.9954466652233867,
+     "positions": 101882,
+     "masked": 6,
+     "masked_frac": 5.889165897803341e-05,
+     "top_unit": "HUST_5-4",
+     "top_unit_share_of_sum_sq": 0.07594766023130077,
+     "top_unit_max_abs_residual": 4.74344568970848
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 2.8193867321200495e-05,
+     "lag1": 0.9838590945009764,
+     "positions": 101882,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_10-7",
+     "top_unit_share_of_sum_sq": 0.054734123554897464,
+     "top_unit_max_abs_residual": 0.024584380230901027
+    }
+   },
+   "held_out": {
+    "charge_time": {
+     "pooled_variance": 1.472402202761006,
+     "lag1": 0.9960343203239792,
+     "positions": 43555,
+     "masked": 1,
+     "masked_frac": 2.2959476523935255e-05,
+     "top_unit": "HUST_7-3",
+     "top_unit_share_of_sum_sq": 0.1302923068365624,
+     "top_unit_max_abs_residual": 6.178371179498535
+    },
+    "mean_discharge_voltage": {
+     "pooled_variance": 4.273561488912217e-05,
+     "lag1": 0.9870729742729746,
+     "positions": 43555,
+     "masked": 0,
+     "masked_frac": 0.0,
+     "top_unit": "HUST_1-5",
+     "top_unit_share_of_sum_sq": 0.20935017722944393,
+     "top_unit_max_abs_residual": 0.02828509156409009
+    }
+   }
+  }
+ }
+}

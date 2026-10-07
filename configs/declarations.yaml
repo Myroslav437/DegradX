@@ -75,6 +75,10 @@ meta:
        v1_as_run: "TimeSHAP reduced at run time by D23 to 40 of 120 windows, seeds 0-1 trained / 0 reference, no ensemble floor (the r2 declaration itself was the full scale); NASA PCoE third profile",
        r3: "TimeSHAP at the full declared scale incl. the ten-member ensemble floor (declared_by_design.v2.timeshap_full_scale); third profile chosen by declared eligibility (declared_by_design.v2.third_profile)",
        reason: "D23's reductions left TimeSHAP's identifiability floor unmeasured; NASA PCoE gave no usable result"}
+    - {date: 2026-10-07, comment: "D27 (post-data, V1)", keys: [declared_by_design.channel_series.cleaning_rule],
+       r2: "single departing readings masked (D17, runs of 1)",
+       r3: "runs of up to three departing readings masked (max_run_v2: 3), all v2 profiles, before any v2 refit",
+       reason: "held-out MATR charge-time residual variance 53.0 min2 came from one paused cycle (1 301.6 min) in MATR_b1c2 whose recovery reading also departed, so D17's neighbour clause kept it; set after the data were seen"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -293,6 +297,9 @@ declared_by_design:
       value: "non-capacity channels: IR = 0 is missing; a single position departing > 0.05 of the unit's channel median from the centred 11-position rolling median, neither neighbour departing, is missing (capacity positions kept)"
       frac: 0.05
       source: "docs/DECISIONS/D17_channel_glitch_rule.md (2026-09-15, S3)"
+      max_run_v2: 3
+      value_v2: "v2 stages, every profile, before any v2 refit: a reading or a run of up to three consecutive readings departing > 0.05 of the unit's channel median from the centred 11-position rolling median, the readings on either side of the run not departing, is missing (D17 with the run length extended)"
+      v2_source: "docs/DECISIONS/D27_channel_excursion_rule.md (2026-10-07, V1; set AFTER inspecting the held-out MATR cells, in particular MATR_b1c2)"
       affects_fitted_parameters: true
 
   minimum_counts:
@@ -563,6 +570,7 @@ declared_by_design:
         capacity_only: "capacity + elapsed position"
         capacity_relative: "capacity / q1_i + elapsed position; q1_i = the unit's own early-life reference (max of the SG(11,2)-smoothed capacity over its first k = 20 positions, the S3 estimator) computed on the measured or generated series alike (the brief's input set (ii))"
         capacity_state: "reported variant: (q1_i - q_t) / (q1_i - rho q_nom) on raw capacity + elapsed position; maps every unit to 0 at q1 and 1 at the threshold, whereas capacity / q1 moves the initial spread to EOL (rho q_nom / q1_i at z = 1)"
+        full_D27: "sensitivity, not a reading: the full input set with the measured fitting and held-out series cleaned with D27 (max_run_v2); generated side unchanged; contrasts sensitivity_D27_per_cell_structure (full_D27 vs capacity_only) and sensitivity_full_vs_full_D27"
         full_centred: "reported variant: all channels + elapsed position, each non-capacity channel centred per unit by its own median over positions 1..k (no look-ahead: every window ends at t >= 24 > k); removes constant per-cell offsets and nothing else"
       windows: >-
         all windows of length L = 24 of held-out measured units reaching EOL, as in S5. Every window ends at t >= L = 24 >= k = 20,
@@ -593,7 +601,7 @@ declared_by_design:
         reference_point: "x0 unchanged in kind: x0_cap = q1_bar (median q1 over fitting-split units passing the guard), x0_c = phi_c(0) of the backfitted mapping; null channels as r2. A unit at z = 0 with zero offsets (delta = 0, q1_i = q1_bar), no patterns and no noise has y = 0"
         kappa: "kappa_c = beta_c / (phi_c(1) - phi_c(0)) from the backfitted shared mapping; capacity from the profile-level affine mapping (q1_bar - rho q_nom); the r2 weight guard applies to the backfitted mapping"
       estimation:
-        units_positions: "fitting-split units passing the guard (censored ones included, D02), positions t1..T (t1..N if censored), as the r2 mapping fit; masked readings (D12/D17) excluded"
+        units_positions: "fitting-split units passing the guard (censored ones included, D02), positions t1..T (t1..N if censored), as the r2 mapping fit; masked readings (D12/D17, and D27 once recorded at V1) excluded"
         backfitting: >-
           iteration 0: delta = 0, phi_c = the r2 isotonic + PCHIP fit. Iteration k: (1) phi_c = isotonic (increasing='auto') + PCHIP on pooled
           (z, x_c - delta_{c,i}); (2) delta_{c,i} = median over the unit's positions of (x_c - phi_c(z)); (3) centre:
@@ -701,7 +709,7 @@ declared_by_design:
         E4: "every unit that reaches EOL has T >= k + L = 44 positions"
         E5: "capacity plus at least two channels that change with degradation are available in every unit (channels.availability_rule)"
         E6: "the licence permits releasing fitted parameters"
-        evaluated: "E3-E5 on the ingested data after D12/D17 cleaning and the S2 rules; E1, E2, E6 from the primary documentation before download"
+        evaluated: "E3-E5 on the ingested data after D12/D17/D27 cleaning and the S2 rules; E1, E2, E6 from the primary documentation before download"
         E4_scope: "dataset-level, read literally: any unit reaching EOL with T < 44 makes the candidate (under the chosen extraction) ineligible; units are not excluded to pass it"
         E5_operational: >-
           the weighted channels are the r2 roles (capacity, charge_time, mean_discharge_voltage), each derived from the cycles that
