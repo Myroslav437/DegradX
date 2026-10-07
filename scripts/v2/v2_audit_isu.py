@@ -284,8 +284,8 @@ def audit(ctx, dd, decl, out, ct) -> dict:
     # ---- additive sensitivity (capacity noise, patterns, D05)
     df_add = df.copy()
     df_add["capacity_cycler_Ah"] = df_add["capacity_additive_Ah"]
-    p_add, _ = fit_profile(df_add, split, dataset=f"{DS}_additive", q_nom=q_nom, spec=spec, rule=rule, channels=["capacity"], crule=crule, decl=decl,
-                           workers=ctx.args.workers, k=k, m=m, sweep_k=[k], base_seed=seed)
+    p_add, _ = fit_profile(df_add, split, dataset=f"{DS}_additive", q_nom=q_nom, spec=spec, rule=rule, channels=channels, crule=crule, decl=decl,
+                           workers=ctx.args.workers, k=k, m=m, sweep_k=[k], base_seed=seed, offsets=C.offsets_params(dd))
     e6a = p_add["estimated_from_data"]["E6_patterns"]
     summary["additive_sensitivity"] = {"capacity_noise": p_add["estimated_from_data"]["E5_noise"]["capacity"],
                                        "d05": {t: {kk: v[kk] for kk in ("enabled", "events", "measured_rate_per_100", "noise_only_rate_per_100", "ratio_to_noise")} for t, v in e6a.items()},

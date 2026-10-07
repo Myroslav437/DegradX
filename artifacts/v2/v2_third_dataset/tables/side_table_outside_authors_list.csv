@@ -1,0 +1,11 @@
+cell_id,excluded,c5_reaches_200mAh,cycles,T,guard_excluded
+G11C1,,False,62,,False
+G11C2,,True,184,156.0,False
+G11C3,,True,179,168.0,False
+G11C4,,True,184,144.0,False
+G14C2,,True,253,218.0,False
+G14C3,,True,170,108.0,False
+G14C4,,False,170,170.0,False
+G36C1,,True,842,578.0,False
+G37C1,,True,968,748.0,False
+G9C3,,False,391,391.0,False

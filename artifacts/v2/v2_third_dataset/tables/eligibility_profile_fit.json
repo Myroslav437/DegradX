@@ -1,0 +1,6126 @@
+{
+  "dataset": "ISU_ILCC",
+  "declared_used": {
+    "q_nom_Ah": 0.25,
+    "rho": 0.8,
+    "k_q1": 20,
+    "sg_window": 11,
+    "sg_polyorder": 2,
+    "detection_k": 2.5,
+    "detection_m": 2,
+    "detection_max_duration": 11,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "cleaning_rule": {
+      "name": "D12",
+      "drop_degenerate": true,
+      "capacity_low_frac": null,
+      "capacity_high_frac": null,
+      "isolated_excursion_frac": 0.05,
+      "drop_recovered_collapse": true
+    },
+    "channel_rule": {
+      "frac": 0.05,
+      "max_run": 3
+    }
+  },
+  "units": {
+    "fitting": [
+      "G14C1",
+      "G16C1",
+      "G16C2",
+      "G17C1",
+      "G17C3",
+      "G17C4",
+      "G19C3",
+      "G19C4",
+      "G20C3",
+      "G20C4",
+      "G21C1",
+      "G21C2",
+      "G21C4",
+      "G22C1",
+      "G22C2",
+      "G22C3",
+      "G23C2",
+      "G24C2",
+      "G24C3",
+      "G24C4",
+      "G25C1",
+      "G25C2",
+      "G25C4",
+      "G27C1",
+      "G27C3",
+      "G27C4",
+      "G28C1",
+      "G28C3",
+      "G29C1",
+      "G29C2",
+      "G29C3",
+      "G29C4",
+      "G30C3",
+      "G30C4",
+      "G31C1",
+      "G31C2",
+      "G31C3",
+      "G31C4",
+      "G35C1",
+      "G35C2",
+      "G35C3",
+      "G36C2",
+      "G36C3",
+      "G37C2",
+      "G37C4",
+      "G38C1",
+      "G38C2",
+      "G38C3",
+      "G39C1",
+      "G39C2",
+      "G39C4",
+      "G3C1",
+      "G3C3",
+      "G3C4",
+      "G41C1",
+      "G41C2",
+      "G41C3",
+      "G41C4",
+      "G45C1",
+      "G45C2",
+      "G45C3",
+      "G45C4",
+      "G46C1",
+      "G46C2",
+      "G46C3",
+      "G46C4",
+      "G48C1",
+      "G48C2",
+      "G48C3",
+      "G48C4",
+      "G51C1",
+      "G51C2",
+      "G51C3",
+      "G51C4",
+      "G52C2",
+      "G52C3",
+      "G52C4",
+      "G53C2",
+      "G55C1",
+      "G55C3",
+      "G56C1",
+      "G56C2",
+      "G56C3",
+      "G56C4",
+      "G5C1",
+      "G5C3",
+      "G5C4",
+      "G60C2",
+      "G60C3",
+      "G61C2",
+      "G62C1",
+      "G62C4",
+      "G63C2",
+      "G63C3",
+      "G63C4",
+      "G64C1",
+      "G64C3",
+      "G64C4",
+      "G8C1",
+      "G8C3",
+      "G8C4",
+      "G9C2"
+    ],
+    "fitting_passing_guard": [
+      "G14C1",
+      "G16C1",
+      "G16C2",
+      "G17C1",
+      "G17C3",
+      "G17C4",
+      "G19C3",
+      "G19C4",
+      "G20C3",
+      "G20C4",
+      "G21C1",
+      "G21C2",
+      "G21C4",
+      "G22C1",
+      "G22C2",
+      "G22C3",
+      "G23C2",
+      "G24C2",
+      "G24C3",
+      "G24C4",
+      "G25C1",
+      "G25C2",
+      "G25C4",
+      "G27C1",
+      "G27C3",
+      "G27C4",
+      "G28C1",
+      "G28C3",
+      "G29C1",
+      "G29C2",
+      "G29C3",
+      "G29C4",
+      "G30C3",
+      "G30C4",
+      "G31C1",
+      "G31C2",
+      "G31C3",
+      "G31C4",
+      "G35C1",
+      "G35C2",
+      "G35C3",
+      "G36C2",
+      "G36C3",
+      "G37C2",
+      "G37C4",
+      "G38C1",
+      "G38C2",
+      "G38C3",
+      "G39C1",
+      "G39C2",
+      "G39C4",
+      "G3C1",
+      "G3C3",
+      "G3C4",
+      "G41C1",
+      "G41C2",
+      "G41C3",
+      "G41C4",
+      "G45C1",
+      "G45C2",
+      "G45C3",
+      "G45C4",
+      "G46C1",
+      "G46C2",
+      "G46C3",
+      "G46C4",
+      "G48C1",
+      "G48C2",
+      "G48C3",
+      "G48C4",
+      "G51C1",
+      "G51C2",
+      "G51C3",
+      "G51C4",
+      "G52C2",
+      "G52C3",
+      "G52C4",
+      "G53C2",
+      "G55C1",
+      "G55C3",
+      "G56C1",
+      "G56C2",
+      "G56C3",
+      "G56C4",
+      "G5C1",
+      "G5C3",
+      "G5C4",
+      "G60C2",
+      "G60C3",
+      "G61C2",
+      "G62C1",
+      "G62C4",
+      "G63C2",
+      "G63C3",
+      "G63C4",
+      "G64C1",
+      "G64C3",
+      "G64C4",
+      "G8C1",
+      "G8C3",
+      "G8C4",
+      "G9C2"
+    ],
+    "fitting_reaching_eol": [
+      "G14C1",
+      "G16C1",
+      "G16C2",
+      "G17C1",
+      "G17C3",
+      "G17C4",
+      "G19C3",
+      "G19C4",
+      "G20C3",
+      "G20C4",
+      "G21C1",
+      "G21C2",
+      "G21C4",
+      "G22C1",
+      "G22C2",
+      "G22C3",
+      "G23C2",
+      "G24C2",
+      "G24C3",
+      "G24C4",
+      "G25C1",
+      "G25C2",
+      "G25C4",
+      "G27C1",
+      "G27C3",
+      "G27C4",
+      "G28C1",
+      "G28C3",
+      "G29C1",
+      "G29C2",
+      "G29C3",
+      "G29C4",
+      "G30C3",
+      "G30C4",
+      "G31C1",
+      "G31C2",
+      "G31C3",
+      "G31C4",
+      "G35C1",
+      "G35C2",
+      "G35C3",
+      "G36C2",
+      "G36C3",
+      "G37C2",
+      "G37C4",
+      "G38C1",
+      "G38C2",
+      "G38C3",
+      "G39C1",
+      "G39C2",
+      "G39C4",
+      "G3C1",
+      "G3C3",
+      "G3C4",
+      "G41C1",
+      "G41C2",
+      "G41C3",
+      "G41C4",
+      "G45C1",
+      "G45C2",
+      "G45C3",
+      "G45C4",
+      "G46C1",
+      "G46C2",
+      "G46C3",
+      "G46C4",
+      "G48C1",
+      "G48C2",
+      "G48C3",
+      "G48C4",
+      "G51C1",
+      "G51C2",
+      "G51C3",
+      "G51C4",
+      "G52C2",
+      "G52C3",
+      "G52C4",
+      "G53C2",
+      "G55C1",
+      "G55C3",
+      "G56C1",
+      "G56C2",
+      "G56C3",
+      "G56C4",
+      "G5C1",
+      "G5C3",
+      "G5C4",
+      "G60C2",
+      "G60C3",
+      "G61C2",
+      "G62C1",
+      "G62C4",
+      "G63C2",
+      "G63C3",
+      "G63C4",
+      "G64C1",
+      "G64C3",
+      "G64C4",
+      "G8C1",
+      "G8C3",
+      "G8C4",
+      "G9C2"
+    ]
+  },
+  "estimated_from_data": {
+    "E1_theta_distribution": {
+      "family": "power_law",
+      "param_names": [
+        "y0",
+        "a",
+        "b"
+      ],
+      "n_units": 102,
+      "per_unit": [
+        {
+          "cell_id": "G14C1",
+          "family_params": [
+            1.499999999999903,
+            0.8468384055119926,
+            0.07635285697123864
+          ],
+          "q1": 0.28905687314018647,
+          "T": 417,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 417,
+          "noise": {
+            "capacity": {
+              "variance": 1.3750946996922563e-05,
+              "phi": 0.9742129019890371,
+              "n_used": 417
+            },
+            "charge_time": {
+              "variance": 13.173899493371898,
+              "phi": 0.9684277921124899,
+              "n_used": 410
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.092694619625464e-05,
+              "phi": 0.9596759234515646,
+              "n_used": 417
+            }
+          },
+          "offsets": {
+            "charge_time": -11.352817614227524,
+            "mean_discharge_voltage": 0.1546932445069369
+          }
+        },
+        {
+          "cell_id": "G16C1",
+          "family_params": [
+            0.9844158991515878,
+            0.7282992954519942,
+            1.7869566104282173
+          ],
+          "q1": 0.2824037081910239,
+          "T": 555,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 536,
+          "noise": {
+            "capacity": {
+              "variance": 5.480672430848484e-06,
+              "phi": 0.9211646169618204,
+              "n_used": 534
+            },
+            "charge_time": {
+              "variance": 13.291508042426745,
+              "phi": 0.9351203340418831,
+              "n_used": 522
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00016462471205298568,
+              "phi": 0.9915072293611613,
+              "n_used": 534
+            }
+          },
+          "offsets": {
+            "charge_time": 73.58478624770028,
+            "mean_discharge_voltage": -0.0389042657133476
+          }
+        },
+        {
+          "cell_id": "G16C2",
+          "family_params": [
+            0.9917007642862189,
+            0.5441586348092757,
+            1.6673945970886543
+          ],
+          "q1": 0.2861691585756813,
+          "T": 583,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 583,
+          "noise": {
+            "capacity": {
+              "variance": 1.4556672574237952e-05,
+              "phi": 0.9307167940597902,
+              "n_used": 579
+            },
+            "charge_time": {
+              "variance": 17.039903786099565,
+              "phi": 0.9185545289693055,
+              "n_used": 565
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002677898770589611,
+              "phi": 0.9878571744403978,
+              "n_used": 579
+            }
+          },
+          "offsets": {
+            "charge_time": 79.8153154370045,
+            "mean_discharge_voltage": -0.03530283664245104
+          }
+        },
+        {
+          "cell_id": "G17C1",
+          "family_params": [
+            0.9644150380571442,
+            0.1505197852986429,
+            1.8028054518192136
+          ],
+          "q1": 0.2824934790544523,
+          "T": 1165,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 2,
+          "fit_positions": 1165,
+          "noise": {
+            "capacity": {
+              "variance": 2.653006474389588e-05,
+              "phi": 0.9667423605922585,
+              "n_used": 1160
+            },
+            "charge_time": {
+              "variance": 1.6140962921575606,
+              "phi": 0.8342962402775466,
+              "n_used": 1145
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.568794731825197e-05,
+              "phi": 0.9840542222067713,
+              "n_used": 1160
+            }
+          },
+          "offsets": {
+            "charge_time": 0.16343050418584504,
+            "mean_discharge_voltage": 0.12537279374174037
+          }
+        },
+        {
+          "cell_id": "G17C3",
+          "family_params": [
+            0.9731062007037654,
+            0.13114638333353487,
+            1.3128116359513071
+          ],
+          "q1": 0.28626329164568454,
+          "T": 1266,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1266,
+          "noise": {
+            "capacity": {
+              "variance": 1.6782409832516315e-05,
+              "phi": 0.9292290728109327,
+              "n_used": 1254
+            },
+            "charge_time": {
+              "variance": 1.5436834477682952,
+              "phi": 0.6086642697372073,
+              "n_used": 1236
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.6365743485429255e-05,
+              "phi": 0.9867827393225809,
+              "n_used": 1254
+            }
+          },
+          "offsets": {
+            "charge_time": 4.439325507246048,
+            "mean_discharge_voltage": 0.12427619449618188
+          }
+        },
+        {
+          "cell_id": "G17C4",
+          "family_params": [
+            0.9721654905418049,
+            0.18661587083495038,
+            1.7091537218898933
+          ],
+          "q1": 0.28359247896842765,
+          "T": 1006,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1006,
+          "noise": {
+            "capacity": {
+              "variance": 2.0175257077317895e-05,
+              "phi": 0.9458789659079012,
+              "n_used": 1002
+            },
+            "charge_time": {
+              "variance": 1.2551398869331538,
+              "phi": 0.7060269824591517,
+              "n_used": 988
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.113723657727532e-05,
+              "phi": 0.9870779011345586,
+              "n_used": 1002
+            }
+          },
+          "offsets": {
+            "charge_time": 2.4711294989707415,
+            "mean_discharge_voltage": 0.12028996833046257
+          }
+        },
+        {
+          "cell_id": "G19C3",
+          "family_params": [
+            0.8760111905848135,
+            0.1838848073606632,
+            2.207294678967898
+          ],
+          "q1": 0.2851862193878433,
+          "T": 978,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 978,
+          "noise": {
+            "capacity": {
+              "variance": 2.555818549948655e-05,
+              "phi": 0.9592185070066158,
+              "n_used": 971
+            },
+            "charge_time": {
+              "variance": 17.007278466092874,
+              "phi": 0.9715944883180635,
+              "n_used": 958
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.8993906150932216e-05,
+              "phi": 0.9681449604234296,
+              "n_used": 971
+            }
+          },
+          "offsets": {
+            "charge_time": -13.442973235375804,
+            "mean_discharge_voltage": 0.13677190239234172
+          }
+        },
+        {
+          "cell_id": "G19C4",
+          "family_params": [
+            1.0542044282213126,
+            0.4582103791255164,
+            0.30797778207571835
+          ],
+          "q1": 0.28804174416330713,
+          "T": 335,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 335,
+          "noise": {
+            "capacity": {
+              "variance": 1.1185148870311327e-05,
+              "phi": 0.950259892072658,
+              "n_used": 335
+            },
+            "charge_time": {
+              "variance": 16.31501371248773,
+              "phi": 0.9596051755359774,
+              "n_used": 329
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.907777657624888e-05,
+              "phi": 0.9751658222765681,
+              "n_used": 335
+            }
+          },
+          "offsets": {
+            "charge_time": -9.351631204735972,
+            "mean_discharge_voltage": 0.14549964325982767
+          }
+        },
+        {
+          "cell_id": "G20C3",
+          "family_params": [
+            1.0315010935192364,
+            0.39317797003652893,
+            0.5927917058625642
+          ],
+          "q1": 0.2810254206333541,
+          "T": 655,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 655,
+          "noise": {
+            "capacity": {
+              "variance": 1.4499814210781078e-06,
+              "phi": 0.9790333400232968,
+              "n_used": 636
+            },
+            "charge_time": {
+              "variance": 1.1660408847637722,
+              "phi": 0.9648847601137427,
+              "n_used": 623
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.25716546115639e-05,
+              "phi": 0.4743036198966642,
+              "n_used": 636
+            }
+          },
+          "offsets": {
+            "charge_time": 34.00323616248082,
+            "mean_discharge_voltage": 0.00820389368033414
+          }
+        },
+        {
+          "cell_id": "G20C4",
+          "family_params": [
+            0.9970410275969919,
+            0.38835475350641746,
+            1.109953114775373
+          ],
+          "q1": 0.28635288219616,
+          "T": 655,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 655,
+          "noise": {
+            "capacity": {
+              "variance": 3.6804251676700643e-06,
+              "phi": 0.9286243550029264,
+              "n_used": 655
+            },
+            "charge_time": {
+              "variance": 0.741417299494909,
+              "phi": 0.8879281145457887,
+              "n_used": 639
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.407731548514986e-05,
+              "phi": 0.9969551517792193,
+              "n_used": 655
+            }
+          },
+          "offsets": {
+            "charge_time": 39.25320715253157,
+            "mean_discharge_voltage": -0.026576727239754128
+          }
+        },
+        {
+          "cell_id": "G21C1",
+          "family_params": [
+            0.9627918330298024,
+            0.8646025326955896,
+            1.9995082690382007
+          ],
+          "q1": 0.28640498298813866,
+          "T": 490,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 490,
+          "noise": {
+            "capacity": {
+              "variance": 1.8398154468940893e-05,
+              "phi": 0.9783416245708814,
+              "n_used": 485
+            },
+            "charge_time": {
+              "variance": 11.871785761671388,
+              "phi": 0.9700249257522077,
+              "n_used": 475
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.402217550513376e-05,
+              "phi": 0.993711762090702,
+              "n_used": 485
+            }
+          },
+          "offsets": {
+            "charge_time": 17.445059255478718,
+            "mean_discharge_voltage": -0.01166517971632497
+          }
+        },
+        {
+          "cell_id": "G21C2",
+          "family_params": [
+            0.98433870811065,
+            0.3138234225108673,
+            1.1806272189451443
+          ],
+          "q1": 0.28626759734362905,
+          "T": 782,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 782,
+          "noise": {
+            "capacity": {
+              "variance": 5.8337578886162915e-06,
+              "phi": 0.9630307738609462,
+              "n_used": 782
+            },
+            "charge_time": {
+              "variance": 21.707907235124285,
+              "phi": 0.9612163046752407,
+              "n_used": 765
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003488505896246563,
+              "phi": 0.9978491855100754,
+              "n_used": 782
+            }
+          },
+          "offsets": {
+            "charge_time": 18.916376045856133,
+            "mean_discharge_voltage": -0.03592194760204648
+          }
+        },
+        {
+          "cell_id": "G21C4",
+          "family_params": [
+            0.976189718929055,
+            0.548611157129852,
+            1.6924348611273679
+          ],
+          "q1": 0.2852928002551168,
+          "T": 551,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 551,
+          "noise": {
+            "capacity": {
+              "variance": 1.3043981319683598e-05,
+              "phi": 0.9622213429712371,
+              "n_used": 551
+            },
+            "charge_time": {
+              "variance": 12.978094871030425,
+              "phi": 0.9690667018131516,
+              "n_used": 540
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00012517262143929878,
+              "phi": 0.867296189276092,
+              "n_used": 551
+            }
+          },
+          "offsets": {
+            "charge_time": 16.937972428759977,
+            "mean_discharge_voltage": -0.024203138348724007
+          }
+        },
+        {
+          "cell_id": "G22C1",
+          "family_params": [
+            0.9674773495487985,
+            1.2462909744356907,
+            2.6904579172982745
+          ],
+          "q1": 0.2867094726124211,
+          "T": 506,
+          "t1": 2,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 505,
+          "noise": {
+            "capacity": {
+              "variance": 2.530823514475618e-05,
+              "phi": 0.97866263951812,
+              "n_used": 505
+            },
+            "charge_time": {
+              "variance": 27.218952495501597,
+              "phi": 0.9531817491530686,
+              "n_used": 494
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.265848929771888e-05,
+              "phi": 0.9967404980341272,
+              "n_used": 505
+            }
+          },
+          "offsets": {
+            "charge_time": 9.43533550668671,
+            "mean_discharge_voltage": -0.02022848293212398
+          }
+        },
+        {
+          "cell_id": "G22C2",
+          "family_params": [
+            0.9616769476041374,
+            16.528501970811956,
+            3.6588761365977596
+          ],
+          "q1": 0.28719205112206064,
+          "T": 322,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 322,
+          "noise": {
+            "capacity": {
+              "variance": 8.594368453422435e-06,
+              "phi": 0.9834638935427837,
+              "n_used": 314
+            },
+            "charge_time": {
+              "variance": 35.39427434496537,
+              "phi": 0.9584862947969358,
+              "n_used": 307
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.438537053418001e-05,
+              "phi": 0.980439769973043,
+              "n_used": 314
+            }
+          },
+          "offsets": {
+            "charge_time": 10.045303843258013,
+            "mean_discharge_voltage": -0.00833592978017661
+          }
+        },
+        {
+          "cell_id": "G22C3",
+          "family_params": [
+            0.9600151287212119,
+            0.7017120550709518,
+            1.8094965873484774
+          ],
+          "q1": 0.2836848244751641,
+          "T": 538,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 538,
+          "noise": {
+            "capacity": {
+              "variance": 5.0221630301783495e-06,
+              "phi": 0.9791758830550024,
+              "n_used": 525
+            },
+            "charge_time": {
+              "variance": 35.404774956641496,
+              "phi": 0.9788102035172369,
+              "n_used": 515
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.8251046914266042e-05,
+              "phi": 0.5830426659316272,
+              "n_used": 525
+            }
+          },
+          "offsets": {
+            "charge_time": 10.596068418806633,
+            "mean_discharge_voltage": -0.011676238732185151
+          }
+        },
+        {
+          "cell_id": "G23C2",
+          "family_params": [
+            0.9353820680482664,
+            0.47865106601850216,
+            1.7027999246692884
+          ],
+          "q1": 0.2810163355636138,
+          "T": 599,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 599,
+          "noise": {
+            "capacity": {
+              "variance": 1.45399191311682e-05,
+              "phi": 0.9769729720017685,
+              "n_used": 599
+            },
+            "charge_time": {
+              "variance": 33.25580355892141,
+              "phi": 0.9749188407638556,
+              "n_used": 588
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.1736636509375019e-05,
+              "phi": 0.7333128876197035,
+              "n_used": 599
+            }
+          },
+          "offsets": {
+            "charge_time": 5.143259223386435,
+            "mean_discharge_voltage": 0.0007265465206618416
+          }
+        },
+        {
+          "cell_id": "G24C2",
+          "family_params": [
+            0.9378098124062084,
+            0.3478322419467126,
+            1.2643253065170372
+          ],
+          "q1": 0.2828821437472758,
+          "T": 624,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 624,
+          "noise": {
+            "capacity": {
+              "variance": 9.307589481014368e-06,
+              "phi": 0.9830104063161922,
+              "n_used": 602
+            },
+            "charge_time": {
+              "variance": 17.923336576620795,
+              "phi": 0.9731576415921335,
+              "n_used": 591
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.4532508471797682e-05,
+              "phi": 0.2518846365249548,
+              "n_used": 602
+            }
+          },
+          "offsets": {
+            "charge_time": 1.2931786711060784,
+            "mean_discharge_voltage": 0.0034318907951886857
+          }
+        },
+        {
+          "cell_id": "G24C3",
+          "family_params": [
+            0.9330622527349868,
+            4.561707511605452,
+            3.6451265651690727
+          ],
+          "q1": 0.28420794224217133,
+          "T": 443,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 443,
+          "noise": {
+            "capacity": {
+              "variance": 8.123624696561344e-06,
+              "phi": 0.9483210091045762,
+              "n_used": 443
+            },
+            "charge_time": {
+              "variance": 59.60750932057695,
+              "phi": 0.961149518643793,
+              "n_used": 432
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.973076524951967e-05,
+              "phi": 0.9946868711676121,
+              "n_used": 443
+            }
+          },
+          "offsets": {
+            "charge_time": 6.230207883491799,
+            "mean_discharge_voltage": -0.018301625458212012
+          }
+        },
+        {
+          "cell_id": "G24C4",
+          "family_params": [
+            0.9190949463766704,
+            0.7266829827503537,
+            1.6904501012438677
+          ],
+          "q1": 0.28226393483671486,
+          "T": 460,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 460,
+          "noise": {
+            "capacity": {
+              "variance": 1.99794646906561e-05,
+              "phi": 0.9685198161151196,
+              "n_used": 460
+            },
+            "charge_time": {
+              "variance": 52.232555261046,
+              "phi": 0.9683291888068711,
+              "n_used": 450
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.988038066864314e-05,
+              "phi": 0.9764137603836407,
+              "n_used": 460
+            }
+          },
+          "offsets": {
+            "charge_time": 3.9508480785061355,
+            "mean_discharge_voltage": 0.0058859702675611025
+          }
+        },
+        {
+          "cell_id": "G25C1",
+          "family_params": [
+            0.9621040441385592,
+            0.13714474251769762,
+            2.1318316711140755
+          ],
+          "q1": 0.2860143641729934,
+          "T": 1303,
+          "t1": 5,
+          "n_positive": 5,
+          "n_negative": 0,
+          "fit_positions": 1299,
+          "noise": {
+            "capacity": {
+              "variance": 1.3643155187626158e-05,
+              "phi": 0.9611422659371728,
+              "n_used": 1272
+            },
+            "charge_time": {
+              "variance": 5.184564556883084,
+              "phi": 0.9807225863930383,
+              "n_used": 1265
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.575589071025461e-05,
+              "phi": 0.8702150175386618,
+              "n_used": 1272
+            }
+          },
+          "offsets": {
+            "charge_time": -19.138811668992318,
+            "mean_discharge_voltage": 0.16803272966842764
+          }
+        },
+        {
+          "cell_id": "G25C2",
+          "family_params": [
+            0.96686635474848,
+            0.09461917341232387,
+            2.5832025323600356
+          ],
+          "q1": 0.28535528993619974,
+          "T": 1393,
+          "t1": 1,
+          "n_positive": 5,
+          "n_negative": 1,
+          "fit_positions": 1393,
+          "noise": {
+            "capacity": {
+              "variance": 2.317594729642249e-05,
+              "phi": 0.9557195409183592,
+              "n_used": 1362
+            },
+            "charge_time": {
+              "variance": 4.567242728939255,
+              "phi": 0.9761589502675562,
+              "n_used": 1352
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.311900616114211e-05,
+              "phi": 0.9801479201789313,
+              "n_used": 1362
+            }
+          },
+          "offsets": {
+            "charge_time": -14.6019542152733,
+            "mean_discharge_voltage": 0.14900467963099162
+          }
+        },
+        {
+          "cell_id": "G25C4",
+          "family_params": [
+            0.9475178892356859,
+            0.06560566692453164,
+            1.0916167236897367
+          ],
+          "q1": 0.28244117957613474,
+          "T": 3087,
+          "t1": 3,
+          "n_positive": 8,
+          "n_negative": 0,
+          "fit_positions": 3085,
+          "noise": {
+            "capacity": {
+              "variance": 1.2377423810795908e-05,
+              "phi": 0.9700344650963288,
+              "n_used": 3038
+            },
+            "charge_time": {
+              "variance": 3.889334631796729,
+              "phi": 0.9861207217395257,
+              "n_used": 3018
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.5883400713800176e-05,
+              "phi": 0.9918996014715128,
+              "n_used": 3038
+            }
+          },
+          "offsets": {
+            "charge_time": -16.55987086558048,
+            "mean_discharge_voltage": 0.17538858050534056
+          }
+        },
+        {
+          "cell_id": "G27C1",
+          "family_params": [
+            0.9609507892961666,
+            0.09647797697922587,
+            1.1872050485115992
+          ],
+          "q1": 0.28879660456235823,
+          "T": 2031,
+          "t1": 11,
+          "n_positive": 9,
+          "n_negative": 4,
+          "fit_positions": 2021,
+          "noise": {
+            "capacity": {
+              "variance": 1.7856998271608467e-05,
+              "phi": 0.9596613348617251,
+              "n_used": 1968
+            },
+            "charge_time": {
+              "variance": 102.97578508204505,
+              "phi": 0.9805990338274327,
+              "n_used": 1942
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.844210081448982e-05,
+              "phi": 0.9811130633693836,
+              "n_used": 1968
+            }
+          },
+          "offsets": {
+            "charge_time": 4.095790915007088,
+            "mean_discharge_voltage": -0.04168523631320609
+          }
+        },
+        {
+          "cell_id": "G27C3",
+          "family_params": [
+            0.9978332308564617,
+            0.18321154549001897,
+            0.7742507684460442
+          ],
+          "q1": 0.2846955484767156,
+          "T": 1340,
+          "t1": 5,
+          "n_positive": 7,
+          "n_negative": 2,
+          "fit_positions": 1336,
+          "noise": {
+            "capacity": {
+              "variance": 1.1808467556408191e-05,
+              "phi": 0.9335216982324779,
+              "n_used": 1302
+            },
+            "charge_time": {
+              "variance": 39.90606685041623,
+              "phi": 0.9838383846519401,
+              "n_used": 1289
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.586590749814805e-05,
+              "phi": 0.9786305685267735,
+              "n_used": 1302
+            }
+          },
+          "offsets": {
+            "charge_time": 6.381373793639744,
+            "mean_discharge_voltage": -0.008978444427878651
+          }
+        },
+        {
+          "cell_id": "G27C4",
+          "family_params": [
+            0.9624375637889813,
+            0.10859164737612884,
+            1.9529580688946326
+          ],
+          "q1": 0.2843296810581503,
+          "T": 1475,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 1470,
+          "noise": {
+            "capacity": {
+              "variance": 2.577165273420776e-05,
+              "phi": 0.9423984500091004,
+              "n_used": 1456
+            },
+            "charge_time": {
+              "variance": 88.88532915764402,
+              "phi": 0.9926112915407771,
+              "n_used": 1432
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00010831375671956988,
+              "phi": 0.9954613468723961,
+              "n_used": 1455
+            }
+          },
+          "offsets": {
+            "charge_time": 8.606811484092878,
+            "mean_discharge_voltage": -0.02718884992816406
+          }
+        },
+        {
+          "cell_id": "G28C1",
+          "family_params": [
+            0.8348252215528258,
+            0.11385269176923066,
+            3.2653390998484606
+          ],
+          "q1": 0.2868334432033466,
+          "T": 1055,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1055,
+          "noise": {
+            "capacity": {
+              "variance": 2.290566678138409e-05,
+              "phi": 0.9461100200787737,
+              "n_used": 1049
+            },
+            "charge_time": {
+              "variance": 3.050345984824514,
+              "phi": 0.9855335262007076,
+              "n_used": 1039
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.6225863147307947e-05,
+              "phi": 0.9564888232308014,
+              "n_used": 1049
+            }
+          },
+          "offsets": {
+            "charge_time": -12.734964538069304,
+            "mean_discharge_voltage": -0.002708921146332255
+          }
+        },
+        {
+          "cell_id": "G28C3",
+          "family_params": [
+            0.8580527776295624,
+            0.08835477877724562,
+            2.4065142387937533
+          ],
+          "q1": 0.2868224654465625,
+          "T": 1311,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1311,
+          "noise": {
+            "capacity": {
+              "variance": 1.67618499683667e-05,
+              "phi": 0.9486022938679811,
+              "n_used": 1302
+            },
+            "charge_time": {
+              "variance": 2.395884035072749,
+              "phi": 0.9705927553861334,
+              "n_used": 1289
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.3442100930586748e-05,
+              "phi": 0.9313334557871169,
+              "n_used": 1302
+            }
+          },
+          "offsets": {
+            "charge_time": -10.722449252996944,
+            "mean_discharge_voltage": -0.020243547097291703
+          }
+        },
+        {
+          "cell_id": "G29C1",
+          "family_params": [
+            0.9668044461764339,
+            0.09253994600291068,
+            1.326899824918869
+          ],
+          "q1": 0.28688201991630224,
+          "T": 2132,
+          "t1": 6,
+          "n_positive": 1,
+          "n_negative": 13,
+          "fit_positions": 2127,
+          "noise": {
+            "capacity": {
+              "variance": 2.9728133519676083e-05,
+              "phi": 0.938107670497811,
+              "n_used": 2080
+            },
+            "charge_time": {
+              "variance": 4.838146889233178,
+              "phi": 0.9785446190330429,
+              "n_used": 2064
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.034514970686601e-05,
+              "phi": 0.9870580579247884,
+              "n_used": 2080
+            }
+          },
+          "offsets": {
+            "charge_time": -20.05713962888911,
+            "mean_discharge_voltage": 0.06468064343218449
+          }
+        },
+        {
+          "cell_id": "G29C2",
+          "family_params": [
+            1.0440674998492965,
+            0.1641899533821712,
+            0.3405108853512811
+          ],
+          "q1": 0.2846925481653868,
+          "T": 3363,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 18,
+          "fit_positions": 3358,
+          "noise": {
+            "capacity": {
+              "variance": 4.68593953517864e-05,
+              "phi": 0.9721174107376852,
+              "n_used": 3271
+            },
+            "charge_time": {
+              "variance": 3.420632813655043,
+              "phi": 0.98154659564999,
+              "n_used": 3250
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0002539939892737188,
+              "phi": 0.9870590879229477,
+              "n_used": 3271
+            }
+          },
+          "offsets": {
+            "charge_time": -20.31457645796091,
+            "mean_discharge_voltage": 0.051449265362560004
+          }
+        },
+        {
+          "cell_id": "G29C3",
+          "family_params": [
+            0.968841018357516,
+            0.08364370848869912,
+            0.9737851153219615
+          ],
+          "q1": 0.2849355582105952,
+          "T": 2679,
+          "t1": 6,
+          "n_positive": 3,
+          "n_negative": 1,
+          "fit_positions": 2674,
+          "noise": {
+            "capacity": {
+              "variance": 1.857917473818158e-05,
+              "phi": 0.9787177383744766,
+              "n_used": 2648
+            },
+            "charge_time": {
+              "variance": 0.9803558372276078,
+              "phi": 0.9728288514387385,
+              "n_used": 2635
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.005296221378934e-05,
+              "phi": 0.9867166009860847,
+              "n_used": 2648
+            }
+          },
+          "offsets": {
+            "charge_time": -20.188531464503292,
+            "mean_discharge_voltage": 0.0682791018239961
+          }
+        },
+        {
+          "cell_id": "G29C4",
+          "family_params": [
+            0.9615519190350719,
+            0.06233129225600579,
+            1.6173912740258
+          ],
+          "q1": 0.2864325464414486,
+          "T": 2170,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 2165,
+          "noise": {
+            "capacity": {
+              "variance": 2.2778504564740593e-05,
+              "phi": 0.9705051255716739,
+              "n_used": 2143
+            },
+            "charge_time": {
+              "variance": 1.1336585442715026,
+              "phi": 0.9787935245631806,
+              "n_used": 2130
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.0035577889509433e-05,
+              "phi": 0.9847128029804102,
+              "n_used": 2143
+            }
+          },
+          "offsets": {
+            "charge_time": -21.21584935228538,
+            "mean_discharge_voltage": 0.061639789140719436
+          }
+        },
+        {
+          "cell_id": "G30C3",
+          "family_params": [
+            0.9692911040851829,
+            0.1638237699233356,
+            1.6317644224068497
+          ],
+          "q1": 0.2833834148263814,
+          "T": 1252,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1252,
+          "noise": {
+            "capacity": {
+              "variance": 9.539003201770601e-06,
+              "phi": 0.9897155336670174,
+              "n_used": 1250
+            },
+            "charge_time": {
+              "variance": 1.7943590247981323,
+              "phi": 0.9757646647977518,
+              "n_used": 1233
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.6482551833795956e-05,
+              "phi": 0.9962596583587047,
+              "n_used": 1250
+            }
+          },
+          "offsets": {
+            "charge_time": 17.445679815484226,
+            "mean_discharge_voltage": 0.025271123834031073
+          }
+        },
+        {
+          "cell_id": "G30C4",
+          "family_params": [
+            0.9860816221875834,
+            0.3745236571012168,
+            1.3517260988046065
+          ],
+          "q1": 0.2820713600714427,
+          "T": 632,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 632,
+          "noise": {
+            "capacity": {
+              "variance": 1.418722429643964e-05,
+              "phi": 0.9635143116428926,
+              "n_used": 630
+            },
+            "charge_time": {
+              "variance": 1.8396806664527436,
+              "phi": 0.9576822681316679,
+              "n_used": 620
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.022294238383915e-05,
+              "phi": 0.983641304341002,
+              "n_used": 630
+            }
+          },
+          "offsets": {
+            "charge_time": 20.577788824133727,
+            "mean_discharge_voltage": 0.043540956050873714
+          }
+        },
+        {
+          "cell_id": "G31C1",
+          "family_params": [
+            0.9633883307104546,
+            0.1274925333626428,
+            1.2891144750423693
+          ],
+          "q1": 0.2833739907940301,
+          "T": 1507,
+          "t1": 6,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1502,
+          "noise": {
+            "capacity": {
+              "variance": 1.5096864645793499e-05,
+              "phi": 0.9784700930510205,
+              "n_used": 1485
+            },
+            "charge_time": {
+              "variance": 2.1532607028691446,
+              "phi": 0.977954131744661,
+              "n_used": 1473
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.9755180351914575e-05,
+              "phi": 0.9919278119804719,
+              "n_used": 1485
+            }
+          },
+          "offsets": {
+            "charge_time": -6.343123805183923,
+            "mean_discharge_voltage": 0.06776004862921003
+          }
+        },
+        {
+          "cell_id": "G31C2",
+          "family_params": [
+            0.9660676780566798,
+            0.1912158683987181,
+            2.416789320964094
+          ],
+          "q1": 0.28512964903614724,
+          "T": 1130,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1125,
+          "noise": {
+            "capacity": {
+              "variance": 2.101468013680495e-05,
+              "phi": 0.9828404368055874,
+              "n_used": 1111
+            },
+            "charge_time": {
+              "variance": 0.9587112410329016,
+              "phi": 0.9732220321837038,
+              "n_used": 1099
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.4387698490921685e-06,
+              "phi": 0.863108334079247,
+              "n_used": 1111
+            }
+          },
+          "offsets": {
+            "charge_time": -9.628487710601517,
+            "mean_discharge_voltage": 0.09547479463830388
+          }
+        },
+        {
+          "cell_id": "G31C3",
+          "family_params": [
+            0.9627320207305222,
+            0.15397106601641,
+            1.7341152860381401
+          ],
+          "q1": 0.28211929683549375,
+          "T": 1174,
+          "t1": 6,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 1169,
+          "noise": {
+            "capacity": {
+              "variance": 2.062469417920677e-05,
+              "phi": 0.9877928569718195,
+              "n_used": 1161
+            },
+            "charge_time": {
+              "variance": 1.8132784047094466,
+              "phi": 0.9773831324679016,
+              "n_used": 1148
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.23046037761251e-05,
+              "phi": 0.987034760573888,
+              "n_used": 1161
+            }
+          },
+          "offsets": {
+            "charge_time": -9.426149702364382,
+            "mean_discharge_voltage": 0.09821585316707804
+          }
+        },
+        {
+          "cell_id": "G31C4",
+          "family_params": [
+            0.965557358594382,
+            0.19606713441056195,
+            2.4898060082890825
+          ],
+          "q1": 0.28396278248523144,
+          "T": 1035,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 1030,
+          "noise": {
+            "capacity": {
+              "variance": 1.7776080315446826e-05,
+              "phi": 0.9758739401563189,
+              "n_used": 1012
+            },
+            "charge_time": {
+              "variance": 0.8447339820511834,
+              "phi": 0.9573887285502719,
+              "n_used": 1004
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.108356171525711e-06,
+              "phi": 0.9487741399251916,
+              "n_used": 1012
+            }
+          },
+          "offsets": {
+            "charge_time": -9.750894540603733,
+            "mean_discharge_voltage": 0.09649294790742857
+          }
+        },
+        {
+          "cell_id": "G35C1",
+          "family_params": [
+            0.9296201862658944,
+            0.4292619572171788,
+            1.8414446060731025
+          ],
+          "q1": 0.2881482801391834,
+          "T": 733,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 733,
+          "noise": {
+            "capacity": {
+              "variance": 6.590872940410234e-06,
+              "phi": 0.8733810876138683,
+              "n_used": 722
+            },
+            "charge_time": {
+              "variance": 85.1333407154313,
+              "phi": 0.9340115509777733,
+              "n_used": 689
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.000484706914248514,
+              "phi": 0.9679759030537568,
+              "n_used": 721
+            }
+          },
+          "offsets": {
+            "charge_time": 7.770372786453047,
+            "mean_discharge_voltage": -0.03799827792462196
+          }
+        },
+        {
+          "cell_id": "G35C2",
+          "family_params": [
+            0.9306267577941061,
+            2.0359073996267254,
+            2.2881742583854754
+          ],
+          "q1": 0.280698740949512,
+          "T": 369,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 369,
+          "noise": {
+            "capacity": {
+              "variance": 1.2473817728174291e-05,
+              "phi": 0.939397825297131,
+              "n_used": 369
+            },
+            "charge_time": {
+              "variance": 56.770389268863156,
+              "phi": 0.9647631352968121,
+              "n_used": 359
+            },
+            "mean_discharge_voltage": {
+              "variance": 8.231682742009791e-06,
+              "phi": 0.9412321115692464,
+              "n_used": 368
+            }
+          },
+          "offsets": {
+            "charge_time": 5.500310533042972,
+            "mean_discharge_voltage": 0.00599896702714231
+          }
+        },
+        {
+          "cell_id": "G35C3",
+          "family_params": [
+            0.9021563915730378,
+            1.976216742763996,
+            3.589437225974552
+          ],
+          "q1": 0.2842833916684314,
+          "T": 529,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 529,
+          "noise": {
+            "capacity": {
+              "variance": 1.4951968406263162e-05,
+              "phi": 0.934617548549711,
+              "n_used": 529
+            },
+            "charge_time": {
+              "variance": 59.700662894887884,
+              "phi": 0.9655760497119495,
+              "n_used": 516
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00011616339093799508,
+              "phi": 0.5618688211410336,
+              "n_used": 529
+            }
+          },
+          "offsets": {
+            "charge_time": 6.20515302427763,
+            "mean_discharge_voltage": -0.0019159470830087955
+          }
+        },
+        {
+          "cell_id": "G36C2",
+          "family_params": [
+            0.8976652915137656,
+            0.6823676910674933,
+            3.1892065260174562
+          ],
+          "q1": 0.28253334761231774,
+          "T": 644,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 644,
+          "noise": {
+            "capacity": {
+              "variance": 1.9415158284881993e-05,
+              "phi": 0.9440021311151747,
+              "n_used": 642
+            },
+            "charge_time": {
+              "variance": 32.86664555301467,
+              "phi": 0.954636240248231,
+              "n_used": 629
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00016248466043311917,
+              "phi": 0.8656034846083792,
+              "n_used": 642
+            }
+          },
+          "offsets": {
+            "charge_time": -0.20420908499290924,
+            "mean_discharge_voltage": -0.010581722836103369
+          }
+        },
+        {
+          "cell_id": "G36C3",
+          "family_params": [
+            0.8851745311001455,
+            0.689231333574271,
+            2.637594718651938
+          ],
+          "q1": 0.286534414094491,
+          "T": 628,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 628,
+          "noise": {
+            "capacity": {
+              "variance": 1.7890959816478703e-05,
+              "phi": 0.9412996553354185,
+              "n_used": 628
+            },
+            "charge_time": {
+              "variance": 104.60386891547856,
+              "phi": 0.9662985726442498,
+              "n_used": 613
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0003021271647812581,
+              "phi": 0.9900964441146592,
+              "n_used": 627
+            }
+          },
+          "offsets": {
+            "charge_time": 1.4267502207771958,
+            "mean_discharge_voltage": -0.004658861527095937
+          }
+        },
+        {
+          "cell_id": "G37C2",
+          "family_params": [
+            0.9871135043993755,
+            0.3813245680607821,
+            1.4230216491858327
+          ],
+          "q1": 0.28641448734369335,
+          "T": 689,
+          "t1": 10,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 680,
+          "noise": {
+            "capacity": {
+              "variance": 9.34628668843632e-06,
+              "phi": 0.9258400944242595,
+              "n_used": 680
+            },
+            "charge_time": {
+              "variance": 2.6640314474695135,
+              "phi": 0.7267326812672013,
+              "n_used": 664
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00035182962093390966,
+              "phi": 0.8848031735798133,
+              "n_used": 680
+            }
+          },
+          "offsets": {
+            "charge_time": 47.07294333774438,
+            "mean_discharge_voltage": -0.0430446269680973
+          }
+        },
+        {
+          "cell_id": "G37C4",
+          "family_params": [
+            0.9769516864177643,
+            1.427384485291824,
+            2.7140414479334547
+          ],
+          "q1": 0.2859152398701462,
+          "T": 512,
+          "t1": 20,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 493,
+          "noise": {
+            "capacity": {
+              "variance": 9.503221551493536e-06,
+              "phi": 0.9464977653137787,
+              "n_used": 488
+            },
+            "charge_time": {
+              "variance": 1.8790768764975272,
+              "phi": 0.654721287306266,
+              "n_used": 476
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00023369907412439022,
+              "phi": 0.7786057841414972,
+              "n_used": 488
+            }
+          },
+          "offsets": {
+            "charge_time": 47.68197268403903,
+            "mean_discharge_voltage": -0.033006921263415645
+          }
+        },
+        {
+          "cell_id": "G38C1",
+          "family_params": [
+            0.8830363399600571,
+            0.5607112362531556,
+            1.6862634243476662
+          ],
+          "q1": 0.28302565111596056,
+          "T": 461,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 461,
+          "noise": {
+            "capacity": {
+              "variance": 2.3012603008863822e-05,
+              "phi": 0.9387509491492051,
+              "n_used": 461
+            },
+            "charge_time": {
+              "variance": 19.817006010192614,
+              "phi": 0.9666389780880713,
+              "n_used": 449
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.4085821855285896e-05,
+              "phi": 0.9071378298886775,
+              "n_used": 461
+            }
+          },
+          "offsets": {
+            "charge_time": -0.16343050418584504,
+            "mean_discharge_voltage": 0.018754882134512485
+          }
+        },
+        {
+          "cell_id": "G38C2",
+          "family_params": [
+            0.9496325955523442,
+            1.7577375506688173,
+            2.232519632906302
+          ],
+          "q1": 0.2863334979303206,
+          "T": 418,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 418,
+          "noise": {
+            "capacity": {
+              "variance": 6.246370284977668e-06,
+              "phi": 0.9200519432151024,
+              "n_used": 418
+            },
+            "charge_time": {
+              "variance": 53.970833275112604,
+              "phi": 0.963472068565877,
+              "n_used": 407
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.3709668318156291e-05,
+              "phi": 0.9722248867794568,
+              "n_used": 417
+            }
+          },
+          "offsets": {
+            "charge_time": 2.869249660600831,
+            "mean_discharge_voltage": -0.003927749423227489
+          }
+        },
+        {
+          "cell_id": "G38C3",
+          "family_params": [
+            0.974087379321414,
+            0.5218644266292707,
+            1.9126524551445712
+          ],
+          "q1": 0.2850493177162513,
+          "T": 620,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 620,
+          "noise": {
+            "capacity": {
+              "variance": 1.3572607763700423e-05,
+              "phi": 0.9551826581390785,
+              "n_used": 620
+            },
+            "charge_time": {
+              "variance": 27.628281542382283,
+              "phi": 0.9565381674377911,
+              "n_used": 607
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00014835607183244788,
+              "phi": 0.9686367708651035,
+              "n_used": 620
+            }
+          },
+          "offsets": {
+            "charge_time": 9.469415745296311,
+            "mean_discharge_voltage": -0.056291672165213136
+          }
+        },
+        {
+          "cell_id": "G39C1",
+          "family_params": [
+            0.9502068609136086,
+            1.2157103871132793,
+            2.7157225576598534
+          ],
+          "q1": 0.2847904718414847,
+          "T": 564,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 564,
+          "noise": {
+            "capacity": {
+              "variance": 7.859011465909672e-06,
+              "phi": 0.9286518639008003,
+              "n_used": 562
+            },
+            "charge_time": {
+              "variance": 36.6720148113451,
+              "phi": 0.9623053718004073,
+              "n_used": 550
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00015208035089901188,
+              "phi": 0.5790437149844052,
+              "n_used": 562
+            }
+          },
+          "offsets": {
+            "charge_time": 5.318018145099343,
+            "mean_discharge_voltage": -0.02329722298615078
+          }
+        },
+        {
+          "cell_id": "G39C2",
+          "family_params": [
+            0.9563435236356204,
+            1.4327150327225318,
+            2.9514313170118958
+          ],
+          "q1": 0.2846311229762718,
+          "T": 550,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 550,
+          "noise": {
+            "capacity": {
+              "variance": 8.256412042880203e-06,
+              "phi": 0.9381305400252489,
+              "n_used": 550
+            },
+            "charge_time": {
+              "variance": 38.686242289104065,
+              "phi": 0.9513757931069999,
+              "n_used": 537
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00015245816875659952,
+              "phi": 0.9959183373459684,
+              "n_used": 550
+            }
+          },
+          "offsets": {
+            "charge_time": 7.523440479294893,
+            "mean_discharge_voltage": -0.025274297398985235
+          }
+        },
+        {
+          "cell_id": "G39C4",
+          "family_params": [
+            0.9480217174830355,
+            0.4865314459347664,
+            1.5192639735089897
+          ],
+          "q1": 0.28359308319542975,
+          "T": 585,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 585,
+          "noise": {
+            "capacity": {
+              "variance": 7.732100834256423e-06,
+              "phi": 0.9424641086578165,
+              "n_used": 574
+            },
+            "charge_time": {
+              "variance": 27.478980478523813,
+              "phi": 0.9565068068001313,
+              "n_used": 563
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.335433819943055e-05,
+              "phi": 0.12050959666706619,
+              "n_used": 574
+            }
+          },
+          "offsets": {
+            "charge_time": 9.24429009265903,
+            "mean_discharge_voltage": -0.002415369417507307
+          }
+        },
+        {
+          "cell_id": "G3C1",
+          "family_params": [
+            1.0012504728394285,
+            0.1514175059121733,
+            0.784194168647201
+          ],
+          "q1": 0.28283798093117996,
+          "T": 1567,
+          "t1": 13,
+          "n_positive": 5,
+          "n_negative": 3,
+          "fit_positions": 1555,
+          "noise": {
+            "capacity": {
+              "variance": 1.7366448821254077e-05,
+              "phi": 0.9492931884496677,
+              "n_used": 1533
+            },
+            "charge_time": {
+              "variance": 18.862692736432404,
+              "phi": 0.9658980078477412,
+              "n_used": 1511
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.197385036347217e-05,
+              "phi": 0.9914746951104074,
+              "n_used": 1533
+            }
+          },
+          "offsets": {
+            "charge_time": 30.775200348135726,
+            "mean_discharge_voltage": 0.12714349923213897
+          }
+        },
+        {
+          "cell_id": "G3C3",
+          "family_params": [
+            0.9957417870852576,
+            0.18455627469368407,
+            0.9759327229856444
+          ],
+          "q1": 0.2856303899779568,
+          "T": 1423,
+          "t1": 1,
+          "n_positive": 4,
+          "n_negative": 4,
+          "fit_positions": 1423,
+          "noise": {
+            "capacity": {
+              "variance": 8.799910413809158e-06,
+              "phi": 0.9322086118168078,
+              "n_used": 1382
+            },
+            "charge_time": {
+              "variance": 19.97189697966843,
+              "phi": 0.9624154579792733,
+              "n_used": 1360
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00012052757573536106,
+              "phi": 0.9893756187901904,
+              "n_used": 1382
+            }
+          },
+          "offsets": {
+            "charge_time": 34.94652850242595,
+            "mean_discharge_voltage": 0.1284279723500017
+          }
+        },
+        {
+          "cell_id": "G3C4",
+          "family_params": [
+            0.9947250402113528,
+            0.27593708434569814,
+            1.205592054417687
+          ],
+          "q1": 0.28465976212189453,
+          "T": 927,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 2,
+          "fit_positions": 927,
+          "noise": {
+            "capacity": {
+              "variance": 6.006257999020328e-06,
+              "phi": 0.9027366700343633,
+              "n_used": 902
+            },
+            "charge_time": {
+              "variance": 19.71001003785423,
+              "phi": 0.9473238652865318,
+              "n_used": 887
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.413376217982234e-05,
+              "phi": 0.9889464058168225,
+              "n_used": 902
+            }
+          },
+          "offsets": {
+            "charge_time": 40.301382115273164,
+            "mean_discharge_voltage": 0.12075595155045127
+          }
+        },
+        {
+          "cell_id": "G41C1",
+          "family_params": [
+            0.9424740359684749,
+            0.09460191646776756,
+            0.9869662791351081
+          ],
+          "q1": 0.28296962042264867,
+          "T": 2515,
+          "t1": 4,
+          "n_positive": 12,
+          "n_negative": 13,
+          "fit_positions": 2512,
+          "noise": {
+            "capacity": {
+              "variance": 2.738852685547007e-06,
+              "phi": 0.9097275599265741,
+              "n_used": 2391
+            },
+            "charge_time": {
+              "variance": 0.3593853549132036,
+              "phi": 0.6029714523180584,
+              "n_used": 2355
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.3536085686364172e-05,
+              "phi": 0.915781154448024,
+              "n_used": 2390
+            }
+          },
+          "offsets": {
+            "charge_time": -15.38045292604391,
+            "mean_discharge_voltage": 0.005266546695969598
+          }
+        },
+        {
+          "cell_id": "G41C2",
+          "family_params": [
+            0.9128027394082487,
+            0.08083665396898215,
+            1.287953093788481
+          ],
+          "q1": 0.2813952946422478,
+          "T": 2041,
+          "t1": 5,
+          "n_positive": 6,
+          "n_negative": 1,
+          "fit_positions": 2037,
+          "noise": {
+            "capacity": {
+              "variance": 7.398342192018203e-06,
+              "phi": 0.9512413234362577,
+              "n_used": 2001
+            },
+            "charge_time": {
+              "variance": 1.2511415956700407,
+              "phi": 0.9109517268646082,
+              "n_used": 1982
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.997430446956178e-05,
+              "phi": 0.9870527810955969,
+              "n_used": 2001
+            }
+          },
+          "offsets": {
+            "charge_time": -18.766364427794933,
+            "mean_discharge_voltage": 0.01711008902966915
+          }
+        },
+        {
+          "cell_id": "G41C3",
+          "family_params": [
+            0.9240799890913757,
+            0.08411553970931246,
+            1.258969588696658
+          ],
+          "q1": 0.28391488282326593,
+          "T": 2150,
+          "t1": 2,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 2149,
+          "noise": {
+            "capacity": {
+              "variance": 7.2302522878925265e-06,
+              "phi": 0.9573031975449139,
+              "n_used": 2141
+            },
+            "charge_time": {
+              "variance": 2.1238527530429994,
+              "phi": 0.888898963509982,
+              "n_used": 2074
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.4150745374743207e-05,
+              "phi": 0.9837608514531401,
+              "n_used": 2141
+            }
+          },
+          "offsets": {
+            "charge_time": -14.470875751659575,
+            "mean_discharge_voltage": 0.005379949447742227
+          }
+        },
+        {
+          "cell_id": "G41C4",
+          "family_params": [
+            0.9269277848542914,
+            0.08755273980680466,
+            1.3635365489168756
+          ],
+          "q1": 0.2833051123295591,
+          "T": 1998,
+          "t1": 3,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1996,
+          "noise": {
+            "capacity": {
+              "variance": 9.08606131579021e-06,
+              "phi": 0.9632501654508033,
+              "n_used": 1979
+            },
+            "charge_time": {
+              "variance": 3.817497207815843,
+              "phi": 0.9421232787546933,
+              "n_used": 1912
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.798256175353165e-05,
+              "phi": 0.9863777845251016,
+              "n_used": 1979
+            }
+          },
+          "offsets": {
+            "charge_time": -15.993506826152183,
+            "mean_discharge_voltage": 0.006914799438643593
+          }
+        },
+        {
+          "cell_id": "G45C1",
+          "family_params": [
+            0.9655672529595072,
+            0.2708793422454779,
+            1.561729206660242
+          ],
+          "q1": 0.2819715717795984,
+          "T": 875,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 3,
+          "fit_positions": 875,
+          "noise": {
+            "capacity": {
+              "variance": 2.1722531804670995e-05,
+              "phi": 0.9747430959851143,
+              "n_used": 864
+            },
+            "charge_time": {
+              "variance": 6.841997379706562,
+              "phi": 0.9440277869341561,
+              "n_used": 842
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.412902392567505e-05,
+              "phi": 0.8972757522947591,
+              "n_used": 864
+            }
+          },
+          "offsets": {
+            "charge_time": 1.7841130757217218,
+            "mean_discharge_voltage": -0.03960098965708703
+          }
+        },
+        {
+          "cell_id": "G45C2",
+          "family_params": [
+            0.9800726536098526,
+            0.2491261366103828,
+            1.0605303640646009
+          ],
+          "q1": 0.2851130285307548,
+          "T": 686,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 686,
+          "noise": {
+            "capacity": {
+              "variance": 2.3613457877747357e-05,
+              "phi": 0.952454014760036,
+              "n_used": 664
+            },
+            "charge_time": {
+              "variance": 3.2976051519983396,
+              "phi": 0.9625299750675156,
+              "n_used": 649
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.5205181073184674e-05,
+              "phi": 0.9422458332220232,
+              "n_used": 664
+            }
+          },
+          "offsets": {
+            "charge_time": 3.7773581439005657,
+            "mean_discharge_voltage": -0.03446153699130794
+          }
+        },
+        {
+          "cell_id": "G45C3",
+          "family_params": [
+            0.9597009517779715,
+            1.128605630700335,
+            4.999999999999999
+          ],
+          "q1": 0.28364884437937316,
+          "T": 709,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 709,
+          "noise": {
+            "capacity": {
+              "variance": 5.673631881457346e-05,
+              "phi": 0.9875984424423371,
+              "n_used": 703
+            },
+            "charge_time": {
+              "variance": 4.482433946256421,
+              "phi": 0.9568433969120668,
+              "n_used": 683
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.469450451825397e-05,
+              "phi": 0.9747915479523871,
+              "n_used": 703
+            }
+          },
+          "offsets": {
+            "charge_time": 2.848560682667122,
+            "mean_discharge_voltage": -0.05275348576504735
+          }
+        },
+        {
+          "cell_id": "G45C4",
+          "family_params": [
+            0.9633629433489364,
+            0.25257704092863015,
+            1.749764970133113
+          ],
+          "q1": 0.2844701320128041,
+          "T": 987,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 987,
+          "noise": {
+            "capacity": {
+              "variance": 1.728291676327774e-05,
+              "phi": 0.9641016998242948,
+              "n_used": 982
+            },
+            "charge_time": {
+              "variance": 10.881223288052016,
+              "phi": 0.9628535037753762,
+              "n_used": 939
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.136388451969574e-05,
+              "phi": 0.8584985365389975,
+              "n_used": 982
+            }
+          },
+          "offsets": {
+            "charge_time": 2.5330960268030527,
+            "mean_discharge_voltage": -0.04310750832642096
+          }
+        },
+        {
+          "cell_id": "G46C1",
+          "family_params": [
+            0.9677830324237673,
+            0.18111290516863926,
+            1.6808021162691564
+          ],
+          "q1": 0.284780549393778,
+          "T": 1156,
+          "t1": 2,
+          "n_positive": 5,
+          "n_negative": 2,
+          "fit_positions": 1155,
+          "noise": {
+            "capacity": {
+              "variance": 1.3354640415104945e-05,
+              "phi": 0.9622513153990474,
+              "n_used": 1128
+            },
+            "charge_time": {
+              "variance": 17.534507100474432,
+              "phi": 0.9767810266266382,
+              "n_used": 1113
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.0296786639254196e-05,
+              "phi": 0.9766590028201629,
+              "n_used": 1128
+            }
+          },
+          "offsets": {
+            "charge_time": -4.803099369100378,
+            "mean_discharge_voltage": -0.046868267046837
+          }
+        },
+        {
+          "cell_id": "G46C2",
+          "family_params": [
+            0.9570456987829369,
+            0.17686668310410217,
+            1.9397553519707267
+          ],
+          "q1": 0.28227798585596586,
+          "T": 1196,
+          "t1": 1,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1196,
+          "noise": {
+            "capacity": {
+              "variance": 1.7496773854808447e-05,
+              "phi": 0.9759417744660833,
+              "n_used": 1179
+            },
+            "charge_time": {
+              "variance": 18.289001009873214,
+              "phi": 0.9908396329297856,
+              "n_used": 1166
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.6790350644313205e-05,
+              "phi": 0.9737447076136492,
+              "n_used": 1179
+            }
+          },
+          "offsets": {
+            "charge_time": -3.9967915841418726,
+            "mean_discharge_voltage": -0.0380585532768023
+          }
+        },
+        {
+          "cell_id": "G46C3",
+          "family_params": [
+            0.9664522808510584,
+            0.4238933487703619,
+            2.2666692805567816
+          ],
+          "q1": 0.2824215550962989,
+          "T": 681,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 681,
+          "noise": {
+            "capacity": {
+              "variance": 2.6073057893042247e-05,
+              "phi": 0.9633393151620462,
+              "n_used": 670
+            },
+            "charge_time": {
+              "variance": 1.794154158343102,
+              "phi": 0.9468617569499037,
+              "n_used": 655
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.2605255221256827e-05,
+              "phi": 0.9091453337199009,
+              "n_used": 670
+            }
+          },
+          "offsets": {
+            "charge_time": -3.5082483069524226,
+            "mean_discharge_voltage": -0.043705836049225955
+          }
+        },
+        {
+          "cell_id": "G46C4",
+          "family_params": [
+            0.966791532983832,
+            0.21589746603685558,
+            1.6960947045440842
+          ],
+          "q1": 0.28486422366255376,
+          "T": 1108,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 2,
+          "fit_positions": 1108,
+          "noise": {
+            "capacity": {
+              "variance": 1.8160953106346165e-05,
+              "phi": 0.9639043657176868,
+              "n_used": 1091
+            },
+            "charge_time": {
+              "variance": 21.806511775130538,
+              "phi": 0.9902672419140496,
+              "n_used": 1080
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.5544777484855124e-05,
+              "phi": 0.9482259647372885,
+              "n_used": 1091
+            }
+          },
+          "offsets": {
+            "charge_time": -4.870990160550187,
+            "mean_discharge_voltage": -0.039440935097756036
+          }
+        },
+        {
+          "cell_id": "G48C1",
+          "family_params": [
+            0.9414598708227602,
+            0.10140993769582872,
+            1.4882693916807201
+          ],
+          "q1": 0.28327382372763094,
+          "T": 1830,
+          "t1": 6,
+          "n_positive": 4,
+          "n_negative": 0,
+          "fit_positions": 1825,
+          "noise": {
+            "capacity": {
+              "variance": 2.017805478012739e-05,
+              "phi": 0.9783957865308851,
+              "n_used": 1793
+            },
+            "charge_time": {
+              "variance": 2.366428420501191,
+              "phi": 0.9891444327505412,
+              "n_used": 1785
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.940736899186262e-05,
+              "phi": 0.990745633491139,
+              "n_used": 1793
+            }
+          },
+          "offsets": {
+            "charge_time": -22.541243692776767,
+            "mean_discharge_voltage": 0.006515882098199199
+          }
+        },
+        {
+          "cell_id": "G48C2",
+          "family_params": [
+            0.9519584873373707,
+            0.08290760655579117,
+            2.195716965922978
+          ],
+          "q1": 0.28349180923762846,
+          "T": 1526,
+          "t1": 6,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1521,
+          "noise": {
+            "capacity": {
+              "variance": 4.204397564071093e-05,
+              "phi": 0.9403139333048359,
+              "n_used": 1509
+            },
+            "charge_time": {
+              "variance": 0.7612720720610194,
+              "phi": 0.9314057928212182,
+              "n_used": 1487
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00013329694246524206,
+              "phi": 0.9968457034678939,
+              "n_used": 1509
+            }
+          },
+          "offsets": {
+            "charge_time": -23.75279063730865,
+            "mean_discharge_voltage": -0.01881738166910818
+          }
+        },
+        {
+          "cell_id": "G48C3",
+          "family_params": [
+            0.9562061533334539,
+            0.08181023627599678,
+            1.3815837654932417
+          ],
+          "q1": 0.2836325692922333,
+          "T": 2106,
+          "t1": 6,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 2101,
+          "noise": {
+            "capacity": {
+              "variance": 1.5002655328959233e-05,
+              "phi": 0.9557518004569537,
+              "n_used": 2077
+            },
+            "charge_time": {
+              "variance": 0.3592886892738679,
+              "phi": 0.9506810623012272,
+              "n_used": 2060
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.5422045372434495e-05,
+              "phi": 0.9816843676328886,
+              "n_used": 2077
+            }
+          },
+          "offsets": {
+            "charge_time": -23.31345951413511,
+            "mean_discharge_voltage": 0.014241323827223873
+          }
+        },
+        {
+          "cell_id": "G48C4",
+          "family_params": [
+            0.9720545559795984,
+            0.15765060865494712,
+            0.8697694806097241
+          ],
+          "q1": 0.2786824027458687,
+          "T": 1379,
+          "t1": 5,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 1375,
+          "noise": {
+            "capacity": {
+              "variance": 3.418682975163711e-05,
+              "phi": 0.9696330355587233,
+              "n_used": 1372
+            },
+            "charge_time": {
+              "variance": 1.4350609238990382,
+              "phi": 0.9717677284186242,
+              "n_used": 1356
+            },
+            "mean_discharge_voltage": {
+              "variance": 8.897331498691501e-05,
+              "phi": 0.9948495887706219,
+              "n_used": 1372
+            }
+          },
+          "offsets": {
+            "charge_time": -22.03496453806931,
+            "mean_discharge_voltage": 0.0052082920481510975
+          }
+        },
+        {
+          "cell_id": "G51C1",
+          "family_params": [
+            0.9256795269897512,
+            0.07163528283087486,
+            1.6417965811774287
+          ],
+          "q1": 0.2836633036201023,
+          "T": 1858,
+          "t1": 6,
+          "n_positive": 4,
+          "n_negative": 3,
+          "fit_positions": 1853,
+          "noise": {
+            "capacity": {
+              "variance": 2.915719580779657e-05,
+              "phi": 0.9540164450497304,
+              "n_used": 1828
+            },
+            "charge_time": {
+              "variance": 1.1178795671869446,
+              "phi": 0.9727912410701458,
+              "n_used": 1808
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.43239889130362e-05,
+              "phi": 0.9791977895692556,
+              "n_used": 1828
+            }
+          },
+          "offsets": {
+            "charge_time": -21.487574082639846,
+            "mean_discharge_voltage": 0.012718765864481618
+          }
+        },
+        {
+          "cell_id": "G51C2",
+          "family_params": [
+            0.9617365487818081,
+            0.06279033889225202,
+            1.5692329971842345
+          ],
+          "q1": 0.2832915690528407,
+          "T": 2199,
+          "t1": 5,
+          "n_positive": 3,
+          "n_negative": 1,
+          "fit_positions": 2195,
+          "noise": {
+            "capacity": {
+              "variance": 4.5235601257438494e-05,
+              "phi": 0.9630115205315154,
+              "n_used": 2169
+            },
+            "charge_time": {
+              "variance": 2.324342966657409,
+              "phi": 0.9818688044396675,
+              "n_used": 2147
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.652544588895589e-05,
+              "phi": 0.9908867642945979,
+              "n_used": 2169
+            }
+          },
+          "offsets": {
+            "charge_time": -22.01587976123124,
+            "mean_discharge_voltage": -0.0007265465206618416
+          }
+        },
+        {
+          "cell_id": "G51C3",
+          "family_params": [
+            0.950482799258287,
+            0.07165084022138458,
+            2.117979858475216
+          ],
+          "q1": 0.28521570392572737,
+          "T": 1758,
+          "t1": 6,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 1753,
+          "noise": {
+            "capacity": {
+              "variance": 2.831280628234934e-05,
+              "phi": 0.9537409720027988,
+              "n_used": 1738
+            },
+            "charge_time": {
+              "variance": 0.7167884742316586,
+              "phi": 0.9361411621788576,
+              "n_used": 1713
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.277407667181427e-05,
+              "phi": 0.9910639087355426,
+              "n_used": 1738
+            }
+          },
+          "offsets": {
+            "charge_time": -23.14730890349928,
+            "mean_discharge_voltage": 0.03593030929487684
+          }
+        },
+        {
+          "cell_id": "G51C4",
+          "family_params": [
+            0.9574298081824264,
+            0.05873365098490356,
+            1.7159651418459079
+          ],
+          "q1": 0.2827982470999676,
+          "T": 1925,
+          "t1": 6,
+          "n_positive": 4,
+          "n_negative": 3,
+          "fit_positions": 1920,
+          "noise": {
+            "capacity": {
+              "variance": 4.128862373288121e-05,
+              "phi": 0.9617856276768864,
+              "n_used": 1888
+            },
+            "charge_time": {
+              "variance": 1.000702195756179,
+              "phi": 0.9731964450142586,
+              "n_used": 1872
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.882627395790255e-05,
+              "phi": 0.9893259472845766,
+              "n_used": 1888
+            }
+          },
+          "offsets": {
+            "charge_time": -22.45299917843058,
+            "mean_discharge_voltage": 0.021602390880894884
+          }
+        },
+        {
+          "cell_id": "G52C2",
+          "family_params": [
+            0.9695161223418647,
+            0.25386610639795787,
+            1.4751133029864432
+          ],
+          "q1": 0.2841918634343847,
+          "T": 1005,
+          "t1": 1,
+          "n_positive": 4,
+          "n_negative": 1,
+          "fit_positions": 1005,
+          "noise": {
+            "capacity": {
+              "variance": 2.6004810537506873e-06,
+              "phi": 0.8693504606808692,
+              "n_used": 990
+            },
+            "charge_time": {
+              "variance": 7.471223637319815,
+              "phi": 0.8574078407208986,
+              "n_used": 969
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.582960544718022e-05,
+              "phi": 0.9859863674140761,
+              "n_used": 990
+            }
+          },
+          "offsets": {
+            "charge_time": 7.924242533576178,
+            "mean_discharge_voltage": 0.02805302631642448
+          }
+        },
+        {
+          "cell_id": "G52C3",
+          "family_params": [
+            0.9461726327198626,
+            0.1712125558139548,
+            1.7456206801239693
+          ],
+          "q1": 0.28560540375206905,
+          "T": 1162,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 1162,
+          "noise": {
+            "capacity": {
+              "variance": 1.0712640972353583e-05,
+              "phi": 0.9570688035264698,
+              "n_used": 1153
+            },
+            "charge_time": {
+              "variance": 1.8311596870385956,
+              "phi": 0.792618240595057,
+              "n_used": 1140
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.454135145707779e-05,
+              "phi": 0.9903929185264158,
+              "n_used": 1153
+            }
+          },
+          "offsets": {
+            "charge_time": -0.7446873861433456,
+            "mean_discharge_voltage": 0.031456677393414845
+          }
+        },
+        {
+          "cell_id": "G52C4",
+          "family_params": [
+            0.937339432508613,
+            0.1256374515495825,
+            1.6023588666699997
+          ],
+          "q1": 0.28432775100307267,
+          "T": 1415,
+          "t1": 1,
+          "n_positive": 4,
+          "n_negative": 0,
+          "fit_positions": 1415,
+          "noise": {
+            "capacity": {
+              "variance": 9.166074266000373e-06,
+              "phi": 0.933772263602431,
+              "n_used": 1402
+            },
+            "charge_time": {
+              "variance": 1.2428861377564326,
+              "phi": 0.752054725783618,
+              "n_used": 1386
+            },
+            "mean_discharge_voltage": {
+              "variance": 9.42516484347525e-05,
+              "phi": 0.9888172980467662,
+              "n_used": 1402
+            }
+          },
+          "offsets": {
+            "charge_time": -1.9720930445106841,
+            "mean_discharge_voltage": 0.0344677010808887
+          }
+        },
+        {
+          "cell_id": "G53C2",
+          "family_params": [
+            1.0849471876191659,
+            0.4439194918335889,
+            0.17873119095132317
+          ],
+          "q1": 0.2929607776993991,
+          "T": 316,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 1,
+          "fit_positions": 316,
+          "noise": {
+            "capacity": {
+              "variance": 1.4560445447596574e-05,
+              "phi": 0.9691792775595224,
+              "n_used": 305
+            },
+            "charge_time": {
+              "variance": 13.293160370273881,
+              "phi": 0.9507446854298217,
+              "n_used": 301
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.506551869821685e-05,
+              "phi": 0.9163451928937769,
+              "n_used": 305
+            }
+          },
+          "offsets": {
+            "charge_time": 3.036540485864892,
+            "mean_discharge_voltage": 0.023892923060059745
+          }
+        },
+        {
+          "cell_id": "G55C1",
+          "family_params": [
+            0.9659175805737215,
+            0.10118342673339624,
+            1.723443239179089
+          ],
+          "q1": 0.28358947698838144,
+          "T": 1553,
+          "t1": 6,
+          "n_positive": 1,
+          "n_negative": 2,
+          "fit_positions": 1548,
+          "noise": {
+            "capacity": {
+              "variance": 2.6917447903033212e-05,
+              "phi": 0.9649413332772334,
+              "n_used": 1542
+            },
+            "charge_time": {
+              "variance": 14.82944896200091,
+              "phi": 0.685588520514165,
+              "n_used": 1078
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.691311955017584e-05,
+              "phi": 0.9900749344216871,
+              "n_used": 1542
+            }
+          },
+          "offsets": {
+            "charge_time": -6.119665845097243,
+            "mean_discharge_voltage": -0.02847198071747692
+          }
+        },
+        {
+          "cell_id": "G55C3",
+          "family_params": [
+            0.9925039866603254,
+            0.15925629262313337,
+            0.6951534031567985
+          ],
+          "q1": 0.2793369115249725,
+          "T": 1585,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 4,
+          "fit_positions": 1585,
+          "noise": {
+            "capacity": {
+              "variance": 6.825658044217003e-06,
+              "phi": 0.9272452541060784,
+              "n_used": 1560
+            },
+            "charge_time": {
+              "variance": 13.848385121271198,
+              "phi": 0.6942984130166536,
+              "n_used": 1127
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.480202554902193e-05,
+              "phi": 0.9717612892838174,
+              "n_used": 1560
+            }
+          },
+          "offsets": {
+            "charge_time": -5.961447790943209,
+            "mean_discharge_voltage": -0.018183457353811328
+          }
+        },
+        {
+          "cell_id": "G56C1",
+          "family_params": [
+            0.94383112690427,
+            0.0672613843491672,
+            1.2726608313541192
+          ],
+          "q1": 0.2832320434817122,
+          "T": 2658,
+          "t1": 6,
+          "n_positive": 19,
+          "n_negative": 5,
+          "fit_positions": 2653,
+          "noise": {
+            "capacity": {
+              "variance": 4.207526425819453e-06,
+              "phi": 0.9164660087974682,
+              "n_used": 2516
+            },
+            "charge_time": {
+              "variance": 3.2086668240240934,
+              "phi": 0.875962724223388,
+              "n_used": 2503
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.012535188379377e-05,
+              "phi": 0.9868419231347406,
+              "n_used": 2515
+            }
+          },
+          "offsets": {
+            "charge_time": -16.180177802281904,
+            "mean_discharge_voltage": 0.1381458734197183
+          }
+        },
+        {
+          "cell_id": "G56C2",
+          "family_params": [
+            0.9565328596347836,
+            0.08002251947210273,
+            1.1823324121615868
+          ],
+          "q1": 0.28248877205580053,
+          "T": 2537,
+          "t1": 6,
+          "n_positive": 11,
+          "n_negative": 5,
+          "fit_positions": 2532,
+          "noise": {
+            "capacity": {
+              "variance": 4.535780369987413e-06,
+              "phi": 0.8967637179799977,
+              "n_used": 2469
+            },
+            "charge_time": {
+              "variance": 3.717892561594536,
+              "phi": 0.9362040982766965,
+              "n_used": 2450
+            },
+            "mean_discharge_voltage": {
+              "variance": 6.773039216759831e-05,
+              "phi": 0.9881452716876158,
+              "n_used": 2469
+            }
+          },
+          "offsets": {
+            "charge_time": -18.518446980302286,
+            "mean_discharge_voltage": 0.1353794024118078
+          }
+        },
+        {
+          "cell_id": "G56C3",
+          "family_params": [
+            0.9583185436044276,
+            0.08250175198361376,
+            1.5522108089328788
+          ],
+          "q1": 0.28265598930412106,
+          "T": 1990,
+          "t1": 6,
+          "n_positive": 10,
+          "n_negative": 0,
+          "fit_positions": 1985,
+          "noise": {
+            "capacity": {
+              "variance": 8.021398124954075e-06,
+              "phi": 0.9494628308707284,
+              "n_used": 1940
+            },
+            "charge_time": {
+              "variance": 3.6365175686484217,
+              "phi": 0.9276366469426166,
+              "n_used": 1932
+            },
+            "mean_discharge_voltage": {
+              "variance": 3.552330227721916e-05,
+              "phi": 0.9872747071838619,
+              "n_used": 1940
+            }
+          },
+          "offsets": {
+            "charge_time": -19.743557139360142,
+            "mean_discharge_voltage": 0.13059392078844878
+          }
+        },
+        {
+          "cell_id": "G56C4",
+          "family_params": [
+            0.9185884751758504,
+            0.07597061622886574,
+            1.2825610564261123
+          ],
+          "q1": 0.28377797650376385,
+          "T": 2193,
+          "t1": 6,
+          "n_positive": 12,
+          "n_negative": 3,
+          "fit_positions": 2188,
+          "noise": {
+            "capacity": {
+              "variance": 7.340105703475777e-06,
+              "phi": 0.9441314537215989,
+              "n_used": 2123
+            },
+            "charge_time": {
+              "variance": 0.9102547154640446,
+              "phi": 0.8739590941383741,
+              "n_used": 2115
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.3041203042800044e-05,
+              "phi": 0.9889475740999305,
+              "n_used": 2123
+            }
+          },
+          "offsets": {
+            "charge_time": -18.76504271894966,
+            "mean_discharge_voltage": 0.13707264036978373
+          }
+        },
+        {
+          "cell_id": "G5C1",
+          "family_params": [
+            0.9763031911150646,
+            0.8127701919120209,
+            2.2968095163343696
+          ],
+          "q1": 0.28199095927064166,
+          "T": 548,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 548,
+          "noise": {
+            "capacity": {
+              "variance": 1.4703573236839994e-05,
+              "phi": 0.9585933293191854,
+              "n_used": 548
+            },
+            "charge_time": {
+              "variance": 10.1590066220829,
+              "phi": 0.9346647182992914,
+              "n_used": 537
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00020961797960464734,
+              "phi": 0.9968406599465167,
+              "n_used": 548
+            }
+          },
+          "offsets": {
+            "charge_time": 26.10781588076123,
+            "mean_discharge_voltage": -0.02865444017853558
+          }
+        },
+        {
+          "cell_id": "G5C3",
+          "family_params": [
+            0.9839562331592234,
+            0.34445124806806565,
+            1.2858923010041758
+          ],
+          "q1": 0.2830733288628509,
+          "T": 724,
+          "t1": 20,
+          "n_positive": 2,
+          "n_negative": 1,
+          "fit_positions": 705,
+          "noise": {
+            "capacity": {
+              "variance": 3.6895127784859606e-06,
+              "phi": 0.9203138408813436,
+              "n_used": 689
+            },
+            "charge_time": {
+              "variance": 5.387531670396564,
+              "phi": 0.8818408543614286,
+              "n_used": 676
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00021144896887642168,
+              "phi": 0.9917730922441872,
+              "n_used": 689
+            }
+          },
+          "offsets": {
+            "charge_time": 29.49785341397554,
+            "mean_discharge_voltage": -0.05763904232755612
+          }
+        },
+        {
+          "cell_id": "G5C4",
+          "family_params": [
+            0.9789781910170237,
+            10.0449772432961,
+            3.6478125540098256
+          ],
+          "q1": 0.28716238588951953,
+          "T": 346,
+          "t1": 7,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 340,
+          "noise": {
+            "capacity": {
+              "variance": 1.6355096921140552e-05,
+              "phi": 0.9600062941333536,
+              "n_used": 334
+            },
+            "charge_time": {
+              "variance": 9.738035847739898,
+              "phi": 0.8920128606798328,
+              "n_used": 327
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00013805742298075166,
+              "phi": 0.9926249802572237,
+              "n_used": 334
+            }
+          },
+          "offsets": {
+            "charge_time": 25.290925479798325,
+            "mean_discharge_voltage": -0.02693084333029394
+          }
+        },
+        {
+          "cell_id": "G60C2",
+          "family_params": [
+            0.9669899247596959,
+            0.2995653997983216,
+            1.3369065408946226
+          ],
+          "q1": 0.28529193774454437,
+          "T": 828,
+          "t1": 1,
+          "n_positive": 5,
+          "n_negative": 2,
+          "fit_positions": 828,
+          "noise": {
+            "capacity": {
+              "variance": 8.94155058524642e-06,
+              "phi": 0.8674999952457393,
+              "n_used": 810
+            },
+            "charge_time": {
+              "variance": 72.09104987494527,
+              "phi": 0.9713731523655458,
+              "n_used": 795
+            },
+            "mean_discharge_voltage": {
+              "variance": 5.3892167630662543e-05,
+              "phi": 0.9626793579430593,
+              "n_used": 810
+            }
+          },
+          "offsets": {
+            "charge_time": 25.103901112363637,
+            "mean_discharge_voltage": -0.055947341131755035
+          }
+        },
+        {
+          "cell_id": "G60C3",
+          "family_params": [
+            0.9896383945437457,
+            0.4005646947537535,
+            1.1764798084906067
+          ],
+          "q1": 0.2810458237306087,
+          "T": 547,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 547,
+          "noise": {
+            "capacity": {
+              "variance": 1.2926148668995247e-05,
+              "phi": 0.9496238839798933,
+              "n_used": 543
+            },
+            "charge_time": {
+              "variance": 13.518001472491699,
+              "phi": 0.9644294443088745,
+              "n_used": 527
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.6497195460413348e-05,
+              "phi": 0.9637832188577378,
+              "n_used": 543
+            }
+          },
+          "offsets": {
+            "charge_time": 32.04649810271894,
+            "mean_discharge_voltage": -0.01969417262417128
+          }
+        },
+        {
+          "cell_id": "G61C2",
+          "family_params": [
+            0.9566717727824601,
+            0.08313881289467329,
+            1.1590311664379904
+          ],
+          "q1": 0.28459224697244234,
+          "T": 2570,
+          "t1": 6,
+          "n_positive": 8,
+          "n_negative": 3,
+          "fit_positions": 2565,
+          "noise": {
+            "capacity": {
+              "variance": 6.883534559476619e-06,
+              "phi": 0.922771728623187,
+              "n_used": 2493
+            },
+            "charge_time": {
+              "variance": 0.9368789932333937,
+              "phi": 0.8425841512119232,
+              "n_used": 2324
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.345629111768371e-06,
+              "phi": 0.961349283544884,
+              "n_used": 2493
+            }
+          },
+          "offsets": {
+            "charge_time": -23.536416656922512,
+            "mean_discharge_voltage": 0.045907072906187896
+          }
+        },
+        {
+          "cell_id": "G62C1",
+          "family_params": [
+            0.9933688874709854,
+            0.17011104081408004,
+            0.6991926811699685
+          ],
+          "q1": 0.27952461399685713,
+          "T": 786,
+          "t1": 2,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 785,
+          "noise": {
+            "capacity": {
+              "variance": 4.087186911471318e-05,
+              "phi": 0.9426920980530338,
+              "n_used": 775
+            },
+            "charge_time": {
+              "variance": 0.5672016301319743,
+              "phi": 0.730634342084778,
+              "n_used": 629
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00012063354305858429,
+              "phi": 0.9600160700613478,
+              "n_used": 775
+            }
+          },
+          "offsets": {
+            "charge_time": -15.497700875773225,
+            "mean_discharge_voltage": -0.0563973184114448
+          }
+        },
+        {
+          "cell_id": "G62C4",
+          "family_params": [
+            0.9796579213033668,
+            0.21330821389255147,
+            1.3756838046114386
+          ],
+          "q1": 0.28478749105490986,
+          "T": 1090,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 1090,
+          "noise": {
+            "capacity": {
+              "variance": 3.233322034085253e-05,
+              "phi": 0.9593166552330885,
+              "n_used": 1080
+            },
+            "charge_time": {
+              "variance": 8.701909328860616,
+              "phi": 0.7468185383054091,
+              "n_used": 855
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00017714495697438934,
+              "phi": 0.9961214746588285,
+              "n_used": 1080
+            }
+          },
+          "offsets": {
+            "charge_time": -15.656401699278975,
+            "mean_discharge_voltage": -0.046423331959055236
+          }
+        },
+        {
+          "cell_id": "G63C2",
+          "family_params": [
+            0.9302875752615386,
+            0.2478480673669602,
+            1.1018004749842536
+          ],
+          "q1": 0.2851546710650752,
+          "T": 939,
+          "t1": 1,
+          "n_positive": 3,
+          "n_negative": 0,
+          "fit_positions": 939,
+          "noise": {
+            "capacity": {
+              "variance": 8.34529833167921e-06,
+              "phi": 0.9434677426488981,
+              "n_used": 918
+            },
+            "charge_time": {
+              "variance": 1.3797418562875878,
+              "phi": 0.8220545301453663,
+              "n_used": 908
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.826195581240915e-05,
+              "phi": 0.9656295487742761,
+              "n_used": 918
+            }
+          },
+          "offsets": {
+            "charge_time": -9.144975213152309,
+            "mean_discharge_voltage": -0.024517002009921907
+          }
+        },
+        {
+          "cell_id": "G63C3",
+          "family_params": [
+            0.8982763356991241,
+            0.13225655002984463,
+            1.4181983251468058
+          ],
+          "q1": 0.2863419122578302,
+          "T": 1336,
+          "t1": 1,
+          "n_positive": 4,
+          "n_negative": 0,
+          "fit_positions": 1336,
+          "noise": {
+            "capacity": {
+              "variance": 1.036143575815512e-05,
+              "phi": 0.9476160072475106,
+              "n_used": 1316
+            },
+            "charge_time": {
+              "variance": 0.7051518383210003,
+              "phi": 0.7098790273391157,
+              "n_used": 1304
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.730198553849709e-05,
+              "phi": 0.9363808127752452,
+              "n_used": 1316
+            }
+          },
+          "offsets": {
+            "charge_time": -9.454994858863165,
+            "mean_discharge_voltage": -0.022513526657854
+          }
+        },
+        {
+          "cell_id": "G63C4",
+          "family_params": [
+            0.9191959912216378,
+            0.11140696315118528,
+            1.114464231969566
+          ],
+          "q1": 0.2854126965158264,
+          "T": 1859,
+          "t1": 1,
+          "n_positive": 5,
+          "n_negative": 0,
+          "fit_positions": 1859,
+          "noise": {
+            "capacity": {
+              "variance": 8.095518054707078e-06,
+              "phi": 0.9535855324365374,
+              "n_used": 1829
+            },
+            "charge_time": {
+              "variance": 1.6507281736278117,
+              "phi": 0.7539502601806266,
+              "n_used": 1814
+            },
+            "mean_discharge_voltage": {
+              "variance": 2.485564379139374e-05,
+              "phi": 0.9659252894739321,
+              "n_used": 1828
+            }
+          },
+          "offsets": {
+            "charge_time": -9.70632198304999,
+            "mean_discharge_voltage": -0.022238398589373487
+          }
+        },
+        {
+          "cell_id": "G64C1",
+          "family_params": [
+            0.9669957313871412,
+            0.8006926152777154,
+            2.7616394997556784
+          ],
+          "q1": 0.2838800655903483,
+          "T": 609,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 609,
+          "noise": {
+            "capacity": {
+              "variance": 2.8979537292378494e-05,
+              "phi": 0.9797448590068923,
+              "n_used": 609
+            },
+            "charge_time": {
+              "variance": 0.3600471974168867,
+              "phi": 0.5783042202590379,
+              "n_used": 600
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00015970757102789414,
+              "phi": 0.9894972218444359,
+              "n_used": 608
+            }
+          },
+          "offsets": {
+            "charge_time": 5.49734278633432,
+            "mean_discharge_voltage": -0.10408030990911699
+          }
+        },
+        {
+          "cell_id": "G64C3",
+          "family_params": [
+            0.9915309506795851,
+            0.2908270346542396,
+            0.8612815071815704
+          ],
+          "q1": 0.28262044744045295,
+          "T": 746,
+          "t1": 1,
+          "n_positive": 2,
+          "n_negative": 0,
+          "fit_positions": 746,
+          "noise": {
+            "capacity": {
+              "variance": 7.545945906574938e-06,
+              "phi": 0.956311043672836,
+              "n_used": 736
+            },
+            "charge_time": {
+              "variance": 0.54870717370146,
+              "phi": 0.7583681585231049,
+              "n_used": 728
+            },
+            "mean_discharge_voltage": {
+              "variance": 4.7197294450000897e-05,
+              "phi": 0.9783950631850312,
+              "n_used": 736
+            }
+          },
+          "offsets": {
+            "charge_time": 5.662457581673758,
+            "mean_discharge_voltage": -0.09198247103879087
+          }
+        },
+        {
+          "cell_id": "G64C4",
+          "family_params": [
+            0.957624040227957,
+            0.259907267020973,
+            1.0666462377126393
+          ],
+          "q1": 0.2835107671386204,
+          "T": 857,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 857,
+          "noise": {
+            "capacity": {
+              "variance": 1.0726529821991396e-05,
+              "phi": 0.9752071674548188,
+              "n_used": 851
+            },
+            "charge_time": {
+              "variance": 2.026492818018761,
+              "phi": 0.8754311113077632,
+              "n_used": 815
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.0001361446553385833,
+              "phi": 0.9916231410688504,
+              "n_used": 851
+            }
+          },
+          "offsets": {
+            "charge_time": 9.347000821569418,
+            "mean_discharge_voltage": -0.09652419971945303
+          }
+        },
+        {
+          "cell_id": "G8C1",
+          "family_params": [
+            0.9224107399105732,
+            0.24812019452225412,
+            1.3956092549941659
+          ],
+          "q1": 0.2784721655231459,
+          "T": 864,
+          "t1": 4,
+          "n_positive": 0,
+          "n_negative": 1,
+          "fit_positions": 861,
+          "noise": {
+            "capacity": {
+              "variance": 1.1469816877505996e-05,
+              "phi": 0.9495002601621797,
+              "n_used": 858
+            },
+            "charge_time": {
+              "variance": 16.10911061029477,
+              "phi": 0.9707575327374413,
+              "n_used": 848
+            },
+            "mean_discharge_voltage": {
+              "variance": 7.453805099393448e-05,
+              "phi": 0.9910467035902573,
+              "n_used": 858
+            }
+          },
+          "offsets": {
+            "charge_time": -9.255782586330275,
+            "mean_discharge_voltage": 0.13387680418569348
+          }
+        },
+        {
+          "cell_id": "G8C3",
+          "family_params": [
+            0.9508658178190661,
+            0.15025449796254303,
+            0.9131782056046508
+          ],
+          "q1": 0.28220378674906804,
+          "T": 1754,
+          "t1": 1,
+          "n_positive": 3,
+          "n_negative": 2,
+          "fit_positions": 1754,
+          "noise": {
+            "capacity": {
+              "variance": 5.5074642490115734e-06,
+              "phi": 0.9198710099388528,
+              "n_used": 1741
+            },
+            "charge_time": {
+              "variance": 7.0158003616439055,
+              "phi": 0.951214662455817,
+              "n_used": 1721
+            },
+            "mean_discharge_voltage": {
+              "variance": 0.00011445683809949999,
+              "phi": 0.988035853989481,
+              "n_used": 1741
+            }
+          },
+          "offsets": {
+            "charge_time": -10.160056614194035,
+            "mean_discharge_voltage": 0.13874501334306122
+          }
+        },
+        {
+          "cell_id": "G8C4",
+          "family_params": [
+            0.912898832995522,
+            0.1267950463275696,
+            1.2668223956178348
+          ],
+          "q1": 0.28535860877008484,
+          "T": 1541,
+          "t1": 1,
+          "n_positive": 0,
+          "n_negative": 0,
+          "fit_positions": 1541,
+          "noise": {
+            "capacity": {
+              "variance": 1.3092493506770525e-05,
+              "phi": 0.9522607263210522,
+              "n_used": 1541
+            },
+            "charge_time": {
+              "variance": 12.1078014194555,
+              "phi": 0.9478672342175517,
+              "n_used": 1516
+            },
+            "mean_discharge_voltage": {
+              "variance": 8.047547239680091e-05,
+              "phi": 0.992996210986553,
+              "n_used": 1541
+            }
+          },
+          "offsets": {
+            "charge_time": -5.897736798724248,
+            "mean_discharge_voltage": 0.13827930969141988
+          }
+        },
+        {
+          "cell_id": "G9C2",
+          "family_params": [
+            0.9129133683173266,
+            1.6656941176111995,
+            1.9324774120934698
+          ],
+          "q1": 0.2874323830252228,
+          "T": 323,
+          "t1": 1,
+          "n_positive": 1,
+          "n_negative": 0,
+          "fit_positions": 323,
+          "noise": {
+            "capacity": {
+              "variance": 2.148847698670719e-05,
+              "phi": 0.9656579202073592,
+              "n_used": 316
+            },
+            "charge_time": {
+              "variance": 40.058712787909165,
+              "phi": 0.9666271691766896,
+              "n_used": 311
+            },
+            "mean_discharge_voltage": {
+              "variance": 1.863818941423362e-05,
+              "phi": 0.9482043590238731,
+              "n_used": 316
+            }
+          },
+          "offsets": {
+            "charge_time": 0.8291242483404222,
+            "mean_discharge_voltage": 0.012345862090295867
+          }
+        }
+      ]
+    },
+    "E2_family_choice": {
+      "selected": "power_law",
+      "lowest_cv": "rollover",
+      "lowest_cv_eligible": "power_law",
+      "margin": 0.05,
+      "margin_changed_choice": false,
+      "identifiability_changed_choice": true,
+      "max_frac_units_at_bound": 0.2,
+      "frac_units_at_bound": {
+        "power_law": 0.0196078431372549,
+        "two_term_exponential": 0.3627450980392157,
+        "rollover": 0.4215686274509804
+      },
+      "eligible": [
+        "power_law"
+      ],
+      "median_cv_rmse": {
+        "power_law": 0.024929263794579985,
+        "two_term_exponential": 0.021210744398740024,
+        "rollover": 0.016010811821016026
+      },
+      "median_in_sample_rmse": {
+        "power_law": 0.013569758914953461,
+        "two_term_exponential": 0.010231446452965556,
+        "rollover": 0.009264608108491498
+      },
+      "units_in_selection": 102
+    },
+    "E3_channel_mappings": {
+      "capacity": {
+        "channel": "capacity",
+        "kind": "affine_capacity",
+        "increasing": false,
+        "grid": [
+          0.0,
+          1.0
+        ],
+        "values": [
+          0.2842456669553014,
+          -0.08424566695530139
+        ],
+        "phi0": 0.2842456669553014,
+        "phi1": 0.2,
+        "delta": -0.08424566695530139
+      },
+      "charge_time": {
+        "channel": "charge_time",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          68.24452104075192,
+          67.90077023362706,
+          67.10511224355662,
+          66.66340385385963,
+          65.97606865248999,
+          65.47903708024417,
+          65.05362222411367,
+          64.87027813777202,
+          64.42832939064772,
+          64.29785736734556,
+          63.79202655634842,
+          63.57191460835302,
+          63.441017648403225,
+          62.86554473667759,
+          62.86554473667759,
+          62.74103966641191,
+          62.344552965601736,
+          62.30155049966976,
+          62.26751954147626,
+          62.09966959179413,
+          61.86844228274471,
+          61.245063730345514,
+          61.024917628611,
+          60.76250650942937,
+          60.68105048353115,
+          60.4691999866538,
+          60.381904374023335,
+          60.34349015199341,
+          59.99848627945962,
+          59.830733881158025,
+          59.5275676742742,
+          59.48343671490233,
+          59.24745182882187,
+          59.12807095288573,
+          59.12807095288573,
+          59.12807095288573,
+          58.686476926363675,
+          58.49142993309312,
+          58.4136792571426,
+          58.17194947777579,
+          57.90973684695529,
+          57.7856052586261,
+          57.643505009130166,
+          57.44594752611473,
+          57.44594752611473,
+          57.44594752611473,
+          57.44594752611473,
+          57.32177963425175,
+          57.23543569792289,
+          57.05370434671648,
+          56.92891880301439,
+          56.8692662068225,
+          56.74380982825563,
+          56.430854360785425,
+          56.430854360785425,
+          56.26476759704089,
+          56.01546557748484,
+          55.95516894530766,
+          55.95516894530766,
+          55.95516894530766,
+          55.95516894530766,
+          55.95516894530766,
+          55.85740316174745,
+          55.61003631252446,
+          55.61003631252446,
+          55.61003631252446,
+          55.61003631252446,
+          55.61003631252446,
+          55.13656790350455,
+          55.13656790350455,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          55.071864621923595,
+          54.715641945357476,
+          54.65365841452022,
+          54.42879742571296,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.09406734323659,
+          54.040485968778235,
+          54.040485968778235,
+          54.040485968778235,
+          53.666405797389196
+        ],
+        "phi0": 68.24452104075192,
+        "phi1": 53.666405797389196,
+        "delta": -14.578115243362724
+      },
+      "mean_discharge_voltage": {
+        "channel": "mean_discharge_voltage",
+        "kind": "isotonic_pchip",
+        "increasing": false,
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.09,
+          0.1,
+          0.11,
+          0.12,
+          0.13,
+          0.14,
+          0.15,
+          0.16,
+          0.17,
+          0.18,
+          0.19,
+          0.2,
+          0.21,
+          0.22,
+          0.23,
+          0.24,
+          0.25,
+          0.26,
+          0.27,
+          0.28,
+          0.29,
+          0.3,
+          0.31,
+          0.32,
+          0.33,
+          0.34,
+          0.35000000000000003,
+          0.36,
+          0.37,
+          0.38,
+          0.39,
+          0.4,
+          0.41000000000000003,
+          0.42,
+          0.43,
+          0.44,
+          0.45,
+          0.46,
+          0.47000000000000003,
+          0.48,
+          0.49,
+          0.5,
+          0.51,
+          0.52,
+          0.53,
+          0.54,
+          0.55,
+          0.56,
+          0.5700000000000001,
+          0.58,
+          0.59,
+          0.6,
+          0.61,
+          0.62,
+          0.63,
+          0.64,
+          0.65,
+          0.66,
+          0.67,
+          0.68,
+          0.6900000000000001,
+          0.7000000000000001,
+          0.71,
+          0.72,
+          0.73,
+          0.74,
+          0.75,
+          0.76,
+          0.77,
+          0.78,
+          0.79,
+          0.8,
+          0.81,
+          0.8200000000000001,
+          0.8300000000000001,
+          0.84,
+          0.85,
+          0.86,
+          0.87,
+          0.88,
+          0.89,
+          0.9,
+          0.91,
+          0.92,
+          0.93,
+          0.9400000000000001,
+          0.9500000000000001,
+          0.96,
+          0.97,
+          0.98,
+          0.99,
+          1.0
+        ],
+        "values": [
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.731154961365796,
+          3.7306622515830536,
+          3.7306622515830536,
+          3.7299847192075166,
+          3.7299382150158524,
+          3.7287319607633997,
+          3.7287319607633997,
+          3.7285983077416636,
+          3.7284598899711803,
+          3.727821568997656,
+          3.727429663817928,
+          3.7273731377047294,
+          3.7262893450910552,
+          3.7262893450910552,
+          3.7261057794129644,
+          3.7250481277128102,
+          3.724226229929164,
+          3.723450827171848,
+          3.7228387226135244,
+          3.722679850101639,
+          3.7218051152345994,
+          3.7208952789381393,
+          3.7208952789381393,
+          3.7192233928383462,
+          3.7190002086989775,
+          3.7187867535560386,
+          3.717668519914939,
+          3.716969485866959,
+          3.7162986264110742,
+          3.715602109573839,
+          3.7147849878817882,
+          3.713917627198606,
+          3.7126818663214864,
+          3.7126818663214864,
+          3.711950217360659,
+          3.711088364724308,
+          3.7106434737130978,
+          3.7098786592135586,
+          3.709267827273535,
+          3.708133872003162,
+          3.7076386365053042,
+          3.7076386365053042,
+          3.7066431211830655,
+          3.7062855278195648,
+          3.705404682736441,
+          3.7033061755626937,
+          3.7023240631666257,
+          3.701683497097687,
+          3.701683497097687,
+          3.7015151154761288,
+          3.7009498506958476,
+          3.700540838263595,
+          3.700340657064989,
+          3.69704930468384,
+          3.6966362712099943,
+          3.6965751720326008,
+          3.695986958827495,
+          3.695986958827495,
+          3.695986958827495,
+          3.69544879256988,
+          3.6951769930893077,
+          3.694580411450382,
+          3.693958040881094,
+          3.6934397064182503,
+          3.693015419281713,
+          3.6918789996810046,
+          3.690925218692607,
+          3.690925218692607,
+          3.690925218692607,
+          3.6907114724818317,
+          3.689799638558686,
+          3.6882959839955025,
+          3.6882959839955025,
+          3.688177140841005,
+          3.6869360925014916,
+          3.6869360925014916,
+          3.686026563075492,
+          3.6858419970081657,
+          3.685345797156042,
+          3.6840533541878635,
+          3.6839885440132654,
+          3.6827087618384358,
+          3.6827087618384358,
+          3.682070479265257,
+          3.681279036597784
+        ],
+        "phi0": 3.731154961365796,
+        "phi1": 3.681279036597784,
+        "delta": -0.04987592476801206
+      }
+    },
+    "E4_channel_covariance": {
+      "channels": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "covariance": [
+        [
+          1.6080944275743537e-05,
+          0.000243986561065318,
+          -5.147918971147524e-06
+        ],
+        [
+          0.000243986561065318,
+          13.442480533012443,
+          0.001970138433859717
+        ],
+        [
+          -5.147918971147524e-06,
+          0.001970138433859717,
+          7.613325419256244e-05
+        ]
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.016594738919810354,
+          -0.1471257643920736
+        ],
+        [
+          0.016594738919810358,
+          0.9999999999999999,
+          0.0615842757826578
+        ],
+        [
+          -0.1471257643920736,
+          0.06158427578265781,
+          0.9999999999999998
+        ]
+      ],
+      "n_positions": 114576
+    },
+    "E5_noise": {
+      "capacity": {
+        "variance": 1.7027297730990637e-05,
+        "phi": 0.950696140605135,
+        "n_used": 117563
+      },
+      "charge_time": {
+        "variance": 11.911718421603021,
+        "phi": 0.9139236957981074,
+        "n_used": 114585
+      },
+      "mean_discharge_voltage": {
+        "variance": 7.319951374999701e-05,
+        "phi": 0.9558147979967174,
+        "n_used": 117554
+      }
+    },
+    "E6_patterns": {
+      "positive": {
+        "enabled": false,
+        "events": 248,
+        "measured_rate_per_100": 0.2077939488391189,
+        "noise_only_rate_per_100": 0.12487562189054727,
+        "ratio_to_noise": 1.66400731938896,
+        "noise_factor": 2.0,
+        "noise_segment_length": 1005,
+        "units_with_event": 76,
+        "amplitude_Ah": [
+          0.009977223233976991,
+          0.011054307293976011,
+          0.011846313231513078,
+          0.009963293420234305,
+          0.013214075343312981,
+          0.010787666644049043,
+          0.00890441228817513,
+          0.0035002277006701164,
+          0.010604844520000378,
+          0.010939411130257122,
+          0.011234194631957559,
+          0.01738809218832395,
+          0.009720909255620008,
+          0.01025008863696404,
+          0.01228735504560665,
+          0.014465281422220243,
+          0.014308480060893657,
+          0.010301079301221046,
+          0.008575817446282307,
+          0.01599519255116842,
+          0.01150463744325537,
+          0.025764349248933147,
+          0.009904796286968224,
+          0.01012589674666456,
+          0.010325386083714272,
+          0.011732688698788421,
+          0.01179519676673698,
+          0.011471543503944052,
+          0.01007061970524974,
+          0.010754713990928042,
+          0.010675947383867514,
+          0.008511081762209322,
+          0.007965973574107244,
+          0.00985964588312538,
+          0.011648051979353993,
+          0.014103774533179913,
+          0.012546966051370564,
+          0.019863375310236697,
+          0.013740619036640474,
+          0.009746673161624812,
+          0.006331046060238799,
+          0.0069983281608842806,
+          0.007160891733749017,
+          0.006624811185020626,
+          0.009877940594676636,
+          0.01322340602969157,
+          0.009403468600627567,
+          0.008095492923226706,
+          0.005987310867198695,
+          0.007114587842209923,
+          0.008488698462150697,
+          0.017971846940046447,
+          0.027814090268873975,
+          0.006662532763718759,
+          0.013569675280458987,
+          0.014556648501880962,
+          0.023573764592455065,
+          0.015441967665883695,
+          0.04157241436835787,
+          0.008663900309361051,
+          0.009696731578555492,
+          0.010971188515609232,
+          0.019278204819879376,
+          0.018884650558283925,
+          0.024942089273743723,
+          0.02079003774207092,
+          0.011980728219842151,
+          0.011987857110235306,
+          0.03753995209374108,
+          0.019293369595222123,
+          0.007989376402614995,
+          0.006749271426853719,
+          0.014565533497252705,
+          0.006415910320553428,
+          0.007883896873955123,
+          0.005987219870596837,
+          0.005880276777280411,
+          0.005433035345529441,
+          0.005699111492805077,
+          0.005486293435985605,
+          0.005237126631521048,
+          0.005589804596185306,
+          0.0064120996493816675,
+          0.008306172267960809,
+          0.0033596776374807554,
+          0.00367684615524439,
+          0.00417637107600542,
+          0.0035072972523962687,
+          0.004241263627903966,
+          0.0030334328919454125,
+          0.004331516954961072,
+          0.0034667436244994916,
+          0.004475972869271088,
+          0.0028667310383385723,
+          0.006773154949052257,
+          0.0028393707384474142,
+          0.0064218581108457014,
+          0.00454119802332638,
+          0.0051183442184734385,
+          0.006600925823051919,
+          0.008045411895403904,
+          0.010037116492287203,
+          0.006190129634023334,
+          0.008392068749500199,
+          0.007029700573754102,
+          0.007074763087938165,
+          0.010284382760704036,
+          0.012444607664400946,
+          0.011383810554862454,
+          0.019750011900852574,
+          0.036365463664029915,
+          0.015886842061112582,
+          0.00994990629759926,
+          0.012415301681539767,
+          0.016705279375079984,
+          0.010087050872582241,
+          0.00951771363924435,
+          0.012295664487540254,
+          0.01718917718944552,
+          0.02283934130040231,
+          0.028473240318265095,
+          0.012389211939611773,
+          0.018833690350982868,
+          0.015629263693649743,
+          0.01805402259539447,
+          0.02221854386826014,
+          0.02046223836579574,
+          0.012849546522767182,
+          0.013519498848928002,
+          0.007138621734117148,
+          0.015064319394977287,
+          0.02793941367771859,
+          0.007469301752237754,
+          0.007123918503290515,
+          0.007439918327045334,
+          0.01233226640271592,
+          0.014399332200571737,
+          0.013221247683658791,
+          0.02352131155962526,
+          0.011419767420575905,
+          0.012312697323421991,
+          0.011122967731910747,
+          0.010356095629328738,
+          0.010283815698336654,
+          0.00990749247149217,
+          0.025475098684304302,
+          0.004246361420122331,
+          0.004766000294552241,
+          0.004009014290358397,
+          0.0075783552816082135,
+          0.009989070206198158,
+          0.008582707989855278,
+          0.007237301313287329,
+          0.008509530578833552,
+          0.0070781494076293085,
+          0.007888681011552426,
+          0.013302123331355355,
+          0.011081766759057593,
+          0.00915934054478892,
+          0.007583203696938859,
+          0.005829354083870731,
+          0.004957711927921568,
+          0.004909453320564622,
+          0.006234043359107315,
+          0.00718199702273662,
+          0.004664151052300021,
+          0.005844398902280171,
+          0.006491396937219412,
+          0.006512660502207608,
+          0.007490447517698082,
+          0.008474236009457662,
+          0.006138277996420477,
+          0.007925527422973994,
+          0.008928102725076995,
+          0.008651210185356467,
+          0.004713354741437047,
+          0.01080269631107696,
+          0.004743603543725153,
+          0.00445486991587252,
+          0.0033389796982453944,
+          0.0035882262849439373,
+          0.004028958457988036,
+          0.004129354324534451,
+          0.003423564419844849,
+          0.0048926983024734395,
+          0.004716054694922466,
+          0.004533156777845154,
+          0.003593681083607711,
+          0.01123779962506921,
+          0.007262896651288686,
+          0.00765357404770522,
+          0.006964826647209048,
+          0.007281282460983153,
+          0.007078107180337226,
+          0.008244030068606136,
+          0.00830220507603258,
+          0.00833149606401992,
+          0.010964328952922424,
+          0.01214121711935943,
+          0.004423967033796544,
+          0.004832266584491578,
+          0.005640403850651936,
+          0.006791178900154159,
+          0.005723203798189323,
+          0.005736714296363832,
+          0.005812267342547742,
+          0.004075391866629848,
+          0.007139160054116228,
+          0.004295885897937956,
+          0.008604701782870459,
+          0.01063163668639464,
+          0.00558627113312735,
+          0.0054301946358581,
+          0.01028360260260453,
+          0.010453677031330388,
+          0.010003383445756056,
+          0.007343132593055647,
+          0.00892388398535118,
+          0.006862495152393907,
+          0.0044642595624484116,
+          0.00414507430913734,
+          0.00484739425314788,
+          0.005670688979818216,
+          0.007937401202815155,
+          0.008587365934419385,
+          0.009880939972892546,
+          0.014257124629027451,
+          0.011152415972156297,
+          0.02372054145130674,
+          0.009588910125462837,
+          0.009235579316387629,
+          0.011914455698811404,
+          0.0070316367491766295,
+          0.005841277747229908,
+          0.006557021244863063,
+          0.005454529716802709,
+          0.0067573259130781155,
+          0.00930497641547193,
+          0.00722520248094955,
+          0.00783954936229271,
+          0.009313989532839146,
+          0.007128330288619488,
+          0.008891602802746161,
+          0.011912622143201126,
+          0.00598513773882028,
+          0.00610294784634386,
+          0.006443888729652579,
+          0.02488315091997914
+        ],
+        "duration": [
+          2,
+          2,
+          9,
+          3,
+          4,
+          3,
+          4,
+          5,
+          5,
+          8,
+          11,
+          11,
+          2,
+          4,
+          8,
+          6,
+          7,
+          4,
+          2,
+          11,
+          6,
+          3,
+          4,
+          4,
+          4,
+          8,
+          8,
+          9,
+          4,
+          6,
+          4,
+          2,
+          2,
+          3,
+          9,
+          9,
+          2,
+          7,
+          2,
+          6,
+          2,
+          2,
+          2,
+          2,
+          5,
+          10,
+          10,
+          2,
+          3,
+          3,
+          9,
+          11,
+          9,
+          2,
+          7,
+          9,
+          7,
+          9,
+          8,
+          2,
+          2,
+          3,
+          10,
+          4,
+          9,
+          5,
+          4,
+          4,
+          11,
+          11,
+          2,
+          2,
+          11,
+          2,
+          4,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          11,
+          9,
+          10,
+          6,
+          6,
+          6,
+          3,
+          6,
+          4,
+          6,
+          2,
+          6,
+          2,
+          2,
+          2,
+          3,
+          8,
+          8,
+          10,
+          2,
+          6,
+          5,
+          2,
+          10,
+          3,
+          6,
+          6,
+          6,
+          3,
+          2,
+          4,
+          4,
+          2,
+          3,
+          5,
+          6,
+          6,
+          9,
+          5,
+          7,
+          11,
+          11,
+          7,
+          3,
+          10,
+          2,
+          3,
+          10,
+          11,
+          3,
+          2,
+          7,
+          3,
+          10,
+          2,
+          11,
+          5,
+          3,
+          7,
+          5,
+          3,
+          2,
+          9,
+          2,
+          3,
+          2,
+          6,
+          6,
+          3,
+          2,
+          6,
+          3,
+          2,
+          3,
+          2,
+          11,
+          10,
+          3,
+          4,
+          4,
+          6,
+          9,
+          4,
+          5,
+          7,
+          10,
+          10,
+          8,
+          6,
+          7,
+          7,
+          9,
+          2,
+          11,
+          4,
+          2,
+          2,
+          3,
+          3,
+          6,
+          3,
+          5,
+          5,
+          4,
+          2,
+          11,
+          4,
+          2,
+          2,
+          4,
+          3,
+          3,
+          7,
+          5,
+          7,
+          8,
+          2,
+          4,
+          4,
+          7,
+          4,
+          5,
+          4,
+          2,
+          5,
+          2,
+          9,
+          8,
+          3,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          4,
+          6,
+          2,
+          5,
+          4,
+          9,
+          10,
+          11,
+          11,
+          10,
+          10,
+          10,
+          5,
+          6,
+          7,
+          4,
+          4,
+          5,
+          2,
+          10,
+          3,
+          7,
+          8,
+          6,
+          4,
+          6,
+          3,
+          3,
+          3,
+          7
+        ],
+        "rate_per_position_by_unit": {
+          "G14C1": 0.0,
+          "G16C1": 0.0,
+          "G16C2": 0.003430531732418525,
+          "G17C1": 0.0,
+          "G17C3": 0.001579778830963665,
+          "G17C4": 0.0009940357852882703,
+          "G19C3": 0.002044989775051125,
+          "G19C4": 0.0,
+          "G20C3": 0.0015267175572519084,
+          "G20C4": 0.0,
+          "G21C1": 0.0020408163265306124,
+          "G21C2": 0.0,
+          "G21C4": 0.0,
+          "G22C1": 0.0,
+          "G22C2": 0.003105590062111801,
+          "G22C3": 0.0018587360594795538,
+          "G23C2": 0.0,
+          "G24C2": 0.0016025641025641025,
+          "G24C3": 0.0,
+          "G24C4": 0.0,
+          "G25C1": 0.003849114703618168,
+          "G25C2": 0.003589375448671931,
+          "G25C4": 0.002593192868719611,
+          "G27C1": 0.004453240969816922,
+          "G27C3": 0.005239520958083832,
+          "G27C4": 0.0013605442176870747,
+          "G28C1": 0.0018957345971563982,
+          "G28C3": 0.0007627765064836003,
+          "G29C1": 0.0004701457451810061,
+          "G29C2": 0.0005955926146515784,
+          "G29C3": 0.0011219147344801795,
+          "G29C4": 0.0009237875288683603,
+          "G30C3": 0.0007987220447284345,
+          "G30C4": 0.0015822784810126582,
+          "G31C1": 0.0019973368841544607,
+          "G31C2": 0.0017777777777777779,
+          "G31C3": 0.000855431993156544,
+          "G31C4": 0.001941747572815534,
+          "G35C1": 0.001364256480218281,
+          "G35C2": 0.0,
+          "G35C3": 0.0,
+          "G36C2": 0.0015527950310559005,
+          "G36C3": 0.0,
+          "G37C2": 0.0,
+          "G37C4": 0.0,
+          "G38C1": 0.0,
+          "G38C2": 0.0,
+          "G38C3": 0.0,
+          "G39C1": 0.0017730496453900709,
+          "G39C2": 0.0,
+          "G39C4": 0.0017094017094017094,
+          "G3C1": 0.003215434083601286,
+          "G3C3": 0.0028109627547434997,
+          "G3C4": 0.002157497303128371,
+          "G41C1": 0.004777070063694267,
+          "G41C2": 0.0029455081001472753,
+          "G41C3": 0.0009306654257794323,
+          "G41C4": 0.001503006012024048,
+          "G45C1": 0.001142857142857143,
+          "G45C2": 0.0029154518950437317,
+          "G45C3": 0.0014104372355430183,
+          "G45C4": 0.0010131712259371835,
+          "G46C1": 0.004329004329004329,
+          "G46C2": 0.002508361204013378,
+          "G46C3": 0.0014684287812041115,
+          "G46C4": 0.0018050541516245488,
+          "G48C1": 0.002191780821917808,
+          "G48C2": 0.0013149243918474688,
+          "G48C3": 0.0014278914802475012,
+          "G48C4": 0.0,
+          "G51C1": 0.0021586616297895305,
+          "G51C2": 0.001366742596810934,
+          "G51C3": 0.0017113519680547634,
+          "G51C4": 0.0020833333333333333,
+          "G52C2": 0.003980099502487562,
+          "G52C3": 0.0017211703958691911,
+          "G52C4": 0.0028268551236749115,
+          "G53C2": 0.0031645569620253164,
+          "G55C1": 0.0006459948320413437,
+          "G55C3": 0.0006309148264984228,
+          "G56C1": 0.007161703731624576,
+          "G56C2": 0.004344391785150079,
+          "G56C3": 0.005037783375314861,
+          "G56C4": 0.005484460694698354,
+          "G5C1": 0.0,
+          "G5C3": 0.0028368794326241137,
+          "G5C4": 0.0,
+          "G60C2": 0.006038647342995169,
+          "G60C3": 0.0018281535648994515,
+          "G61C2": 0.0031189083820662767,
+          "G62C1": 0.0012738853503184713,
+          "G62C4": 0.0009174311926605505,
+          "G63C2": 0.003194888178913738,
+          "G63C3": 0.0029940119760479044,
+          "G63C4": 0.0026896180742334587,
+          "G64C1": 0.0,
+          "G64C3": 0.002680965147453083,
+          "G64C4": 0.0011668611435239206,
+          "G8C1": 0.0,
+          "G8C3": 0.0017103762827822121,
+          "G8C4": 0.0,
+          "G9C2": 0.0030959752321981426
+        }
+      },
+      "negative": {
+        "enabled": false,
+        "events": 123,
+        "measured_rate_per_100": 0.10305909559359526,
+        "noise_only_rate_per_100": 0.12288557213930348,
+        "ratio_to_noise": 0.8386590370167064,
+        "noise_factor": 2.0,
+        "noise_segment_length": 1005,
+        "units_with_event": 44,
+        "amplitude_Ah": [
+          -0.006750236263283413,
+          -0.01647695230021316,
+          -0.016628060126682727,
+          -0.006999710869492254,
+          -0.003941666869473124,
+          -0.008887638349224104,
+          -0.011137255954696222,
+          -0.012026475130602132,
+          -0.008365078946501316,
+          -0.00817645591417572,
+          -0.007984167615053056,
+          -0.013897159233063837,
+          -0.006943575410731415,
+          -0.00683330321544955,
+          -0.008592933997237692,
+          -0.011606878424823098,
+          -0.01216198844779371,
+          -0.012729229776226732,
+          -0.012023755090197394,
+          -0.011742600253073093,
+          -0.012833333543788725,
+          -0.011677163800323779,
+          -0.012130986308492001,
+          -0.011255705266136654,
+          -0.01173378381920221,
+          -0.011687405646474198,
+          -0.012889677935945056,
+          -0.011332613365915395,
+          -0.007746341995404773,
+          -0.008152706946003833,
+          -0.008142129305265563,
+          -0.007124256823313094,
+          -0.007241708741430233,
+          -0.00726247352014744,
+          -0.007461623259279432,
+          -0.008054181458357247,
+          -0.007652611563970658,
+          -0.0076871936485305445,
+          -0.008943030657650028,
+          -0.007003239724924378,
+          -0.0073046591389454955,
+          -0.007845451090498435,
+          -0.008032276238501421,
+          -0.008589958589339027,
+          -0.007881868048933956,
+          -0.01204523941201158,
+          -0.011148889476556869,
+          -0.012729779083820917,
+          -0.01408018909509596,
+          -0.010500540025724966,
+          -0.013059183774543142,
+          -0.0064863181274846735,
+          -0.007582277566743793,
+          -0.00598006996909705,
+          -0.0057065908155213355,
+          -0.0078046449325541445,
+          -0.008742607172626364,
+          -0.006227567723719339,
+          -0.007010708313389201,
+          -0.0057690205543165,
+          -0.002783222232605271,
+          -0.002848388156026062,
+          -0.0033836066810236133,
+          -0.0030496090776233518,
+          -0.0029878271570381422,
+          -0.00264491421025193,
+          -0.003168944399707418,
+          -0.0033356941842594204,
+          -0.00327424169406375,
+          -0.0026784220613639675,
+          -0.002597913587097582,
+          -0.0030244361520328136,
+          -0.002720495282145666,
+          -0.004334189614092696,
+          -0.010356066192073276,
+          -0.010488066791927776,
+          -0.010211974626654957,
+          -0.01313510349103903,
+          -0.011603057226995995,
+          -0.010076721948869279,
+          -0.010863709383865815,
+          -0.01241085098564686,
+          -0.011055173329098063,
+          -0.011761396946739552,
+          -0.008837571905320649,
+          -0.008760058693226384,
+          -0.007207131178580262,
+          -0.006969603412776611,
+          -0.012236576887580236,
+          -0.00964115176760633,
+          -0.010017419705703481,
+          -0.0110704947973845,
+          -0.0038446432473996724,
+          -0.0124815740274543,
+          -0.011133481720369136,
+          -0.01345191147355674,
+          -0.0056138660424649425,
+          -0.00629943296790862,
+          -0.00642833386727411,
+          -0.01600571890110394,
+          -0.003957154660241011,
+          -0.0041165506334301495,
+          -0.004261494569491179,
+          -0.003950870932651396,
+          -0.00449967885424133,
+          -0.003883693222484741,
+          -0.0038782350163030707,
+          -0.003440215240107356,
+          -0.0039753749482412636,
+          -0.0031668762853783792,
+          -0.005268579380484004,
+          -0.004101080576050436,
+          -0.004516683638068392,
+          -0.014429400354602656,
+          -0.022285563709624572,
+          -0.0078034896551714234,
+          -0.01114305964736205,
+          -0.004400751033642418,
+          -0.0043426725241456614,
+          -0.008890748261649588,
+          -0.006721199320051426,
+          -0.006600356161694203,
+          -0.005814008182133739
+        ],
+        "duration": [
+          2,
+          2,
+          3,
+          10,
+          4,
+          2,
+          11,
+          5,
+          5,
+          2,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          2,
+          4,
+          2,
+          3,
+          2,
+          3,
+          8,
+          9,
+          5,
+          3,
+          2,
+          2,
+          2,
+          5,
+          2,
+          2,
+          10,
+          2,
+          2,
+          4,
+          10,
+          4,
+          2,
+          2,
+          3,
+          5,
+          4,
+          3,
+          5,
+          2,
+          2,
+          3,
+          4,
+          11,
+          10,
+          7,
+          7,
+          3,
+          5,
+          3,
+          6,
+          3,
+          3,
+          3,
+          4,
+          9,
+          4,
+          2,
+          2,
+          7,
+          4,
+          3,
+          2,
+          4,
+          2,
+          10,
+          2,
+          2,
+          10,
+          2,
+          2,
+          3,
+          3,
+          6,
+          2,
+          2,
+          3,
+          2,
+          4,
+          7,
+          2,
+          8,
+          2,
+          2,
+          2,
+          2,
+          2,
+          8,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          3,
+          5,
+          2,
+          2,
+          3,
+          4,
+          11,
+          6,
+          2,
+          4,
+          5,
+          4,
+          5,
+          3,
+          2,
+          2
+        ],
+        "rate_per_position_by_unit": {
+          "G14C1": 0.0,
+          "G16C1": 0.0018656716417910447,
+          "G16C2": 0.0,
+          "G17C1": 0.0017167381974248926,
+          "G17C3": 0.0,
+          "G17C4": 0.0,
+          "G19C3": 0.0,
+          "G19C4": 0.0,
+          "G20C3": 0.0030534351145038168,
+          "G20C4": 0.0,
+          "G21C1": 0.0,
+          "G21C2": 0.0,
+          "G21C4": 0.0,
+          "G22C1": 0.0,
+          "G22C2": 0.0,
+          "G22C3": 0.0018587360594795538,
+          "G23C2": 0.0,
+          "G24C2": 0.0016025641025641025,
+          "G24C3": 0.0,
+          "G24C4": 0.0,
+          "G25C1": 0.0,
+          "G25C2": 0.0007178750897343862,
+          "G25C4": 0.0,
+          "G27C1": 0.0019792182088075212,
+          "G27C3": 0.0014970059880239522,
+          "G27C4": 0.0006802721088435374,
+          "G28C1": 0.0,
+          "G28C3": 0.0,
+          "G29C1": 0.0061118946873530795,
+          "G29C2": 0.005360333531864205,
+          "G29C3": 0.00037397157816005983,
+          "G29C4": 0.00046189376443418013,
+          "G30C3": 0.0,
+          "G30C4": 0.0,
+          "G31C1": 0.0,
+          "G31C2": 0.0,
+          "G31C3": 0.000855431993156544,
+          "G31C4": 0.000970873786407767,
+          "G35C1": 0.0,
+          "G35C2": 0.0,
+          "G35C3": 0.0,
+          "G36C2": 0.0,
+          "G36C3": 0.0,
+          "G37C2": 0.0,
+          "G37C4": 0.002028397565922921,
+          "G38C1": 0.0,
+          "G38C2": 0.0,
+          "G38C3": 0.0,
+          "G39C1": 0.0,
+          "G39C2": 0.0,
+          "G39C4": 0.0,
+          "G3C1": 0.0019292604501607716,
+          "G3C3": 0.0028109627547434997,
+          "G3C4": 0.002157497303128371,
+          "G41C1": 0.0051751592356687895,
+          "G41C2": 0.0004909180166912126,
+          "G41C3": 0.0,
+          "G41C4": 0.0,
+          "G45C1": 0.0034285714285714284,
+          "G45C2": 0.0014577259475218659,
+          "G45C3": 0.0,
+          "G45C4": 0.0010131712259371835,
+          "G46C1": 0.0017316017316017316,
+          "G46C2": 0.0,
+          "G46C3": 0.0014684287812041115,
+          "G46C4": 0.0018050541516245488,
+          "G48C1": 0.0,
+          "G48C2": 0.0,
+          "G48C3": 0.0,
+          "G48C4": 0.0007272727272727272,
+          "G51C1": 0.0016189962223421479,
+          "G51C2": 0.00045558086560364467,
+          "G51C3": 0.0,
+          "G51C4": 0.0015625,
+          "G52C2": 0.0009950248756218905,
+          "G52C3": 0.0,
+          "G52C4": 0.0,
+          "G53C2": 0.0031645569620253164,
+          "G55C1": 0.0012919896640826874,
+          "G55C3": 0.002523659305993691,
+          "G56C1": 0.0018846588767433095,
+          "G56C2": 0.0019747235387045812,
+          "G56C3": 0.0,
+          "G56C4": 0.0013711151736745886,
+          "G5C1": 0.0,
+          "G5C3": 0.0014184397163120568,
+          "G5C4": 0.0029411764705882353,
+          "G60C2": 0.0024154589371980675,
+          "G60C3": 0.0,
+          "G61C2": 0.0011695906432748538,
+          "G62C1": 0.0,
+          "G62C4": 0.0,
+          "G63C2": 0.0,
+          "G63C3": 0.0,
+          "G63C4": 0.0,
+          "G64C1": 0.0,
+          "G64C3": 0.0,
+          "G64C4": 0.0,
+          "G8C1": 0.0011614401858304297,
+          "G8C3": 0.0011402508551881414,
+          "G8C4": 0.0,
+          "G9C2": 0.0
+        }
+      }
+    },
+    "E7_length_distribution": [
+      417,
+      555,
+      583,
+      1165,
+      1266,
+      1006,
+      978,
+      335,
+      655,
+      655,
+      490,
+      782,
+      551,
+      506,
+      322,
+      538,
+      599,
+      624,
+      443,
+      460,
+      1303,
+      1393,
+      3087,
+      2031,
+      1340,
+      1475,
+      1055,
+      1311,
+      2132,
+      3363,
+      2679,
+      2170,
+      1252,
+      632,
+      1507,
+      1130,
+      1174,
+      1035,
+      733,
+      369,
+      529,
+      644,
+      628,
+      689,
+      512,
+      461,
+      418,
+      620,
+      564,
+      550,
+      585,
+      1567,
+      1423,
+      927,
+      2515,
+      2041,
+      2150,
+      1998,
+      875,
+      686,
+      709,
+      987,
+      1156,
+      1196,
+      681,
+      1108,
+      1830,
+      1526,
+      2106,
+      1379,
+      1858,
+      2199,
+      1758,
+      1925,
+      1005,
+      1162,
+      1415,
+      316,
+      1553,
+      1585,
+      2658,
+      2537,
+      1990,
+      2193,
+      548,
+      724,
+      346,
+      828,
+      547,
+      2570,
+      786,
+      1090,
+      939,
+      1336,
+      1859,
+      609,
+      746,
+      857,
+      864,
+      1754,
+      1541,
+      323
+    ]
+  },
+  "derived": {
+    "channel_roles": {
+      "weighted": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "demoted_by_guard": [],
+      "zero_weight_redundant": []
+    },
+    "reference_point_x0": {
+      "capacity": 0.2842456669553014,
+      "charge_time": 68.24452104075192,
+      "mean_discharge_voltage": 3.731154961365796
+    },
+    "null_permuted_source_values": {
+      "channel": "charge_time",
+      "n": 302791,
+      "median": 30.35
+    },
+    "capacity_affinity_max_abs_error_Ah": 4.163336342344337e-17
+  },
+  "v2": {
+    "per_unit_offsets": true,
+    "correlated_noise": true,
+    "offsets_declared": {
+      "tol_frac": 0.0001,
+      "max_iter": 200,
+      "min_readings": 10,
+      "declared": "max_i |delta_{c,i}^(k) - delta_{c,i}^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)| and max over the 101-point grid |phi_c^(k) - phi_c^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)|"
+    },
+    "backfit": {
+      "charge_time": {
+        "iterations": 7,
+        "converged": true,
+        "last_change_delta": 0.0009758694811647928,
+        "last_change_phi": 0.0010380284356870106,
+        "tolerance": 0.0014578115243362726,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 22.650069369052336,
+        "delta_p05_p95": [
+          -22.432097446412516,
+          39.03787322002624
+        ],
+        "phi0_r2": 81.85015812776724,
+        "phi1_r2": 43.94792174054228
+      },
+      "mean_discharge_voltage": {
+        "iterations": 8,
+        "converged": true,
+        "last_change_delta": 1.3363972832802773e-06,
+        "last_change_phi": 1.189238465038045e-06,
+        "tolerance": 4.9875924768012065e-06,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 0.08621650647487611,
+        "delta_p05_p95": [
+          -0.056274455613540234,
+          0.13872172816047915
+        ],
+        "phi0_r2": 3.758809127442443,
+        "phi1_r2": 3.7090192083219624
+      }
+    },
+    "within_unit_correlation": [
+      [
+        1.0,
+        0.02316661879413377,
+        -0.17169464160706172
+      ],
+      [
+        0.02316661879413377,
+        1.0,
+        0.038699160869890184
+      ],
+      [
+        -0.17169464160706172,
+        0.038699160869890184,
+        1.0
+      ]
+    ],
+    "q1_fitting_units_reaching_eol": {
+      "median": 0.2842456669553014,
+      "iqr": 0.0027082053078044677,
+      "p05_p95": [
+        0.28101678981710076,
+        0.2874203664300647
+      ],
+      "n": 102
+    },
+    "residual_before_after": {
+      "charge_time": {
+        "before_r2": {
+          "variance": 21.866934113242245,
+          "phi": 0.9466701514146973,
+          "n_used": 114585
+        },
+        "after_offsets": {
+          "variance": 11.911718421603021,
+          "phi": 0.9139236957981074,
+          "n_used": 114585
+        },
+        "variance_ratio_after_to_before": 0.5447365579425003,
+        "between_unit_variance_of_means": {
+          "before_r2": 376.70487952066406,
+          "after_offsets": 2.328330857471525
+        },
+        "global_centred_variance": {
+          "before_r2": 332.8681807033735,
+          "after_offsets": 13.443322590310107
+        },
+        "offset_variance": 401.6700665287052,
+        "offset_sampling_noise_term": 1.5765497176291745,
+        "offset_variance_noise_corrected": 400.09351681107603
+      },
+      "mean_discharge_voltage": {
+        "before_r2": {
+          "variance": 9.79615584015368e-05,
+          "phi": 0.9510374444304663,
+          "n_used": 117554
+        },
+        "after_offsets": {
+          "variance": 7.319951374999701e-05,
+          "phi": 0.9558147979967174,
+          "n_used": 117554
+        },
+        "variance_ratio_after_to_before": 0.7472269219111226,
+        "between_unit_variance_of_means": {
+          "before_r2": 0.004465464601952336,
+          "after_offsets": 4.2040937269295895e-06
+        },
+        "global_centred_variance": {
+          "before_r2": 0.0048463304155187655,
+          "after_offsets": 7.765829916376679e-05
+        },
+        "offset_variance": 0.004559791412148573,
+        "offset_sampling_noise_term": 2.1609989781256148e-05,
+        "offset_variance_noise_corrected": 0.004538181422367317
+      }
+    },
+    "correlation_r2_residuals": [
+      [
+        1.0,
+        -0.0407755081480189,
+        -0.010561056966586426
+      ],
+      [
+        -0.0407755081480189,
+        1.0,
+        -0.22736132049424307
+      ],
+      [
+        -0.010561056966586426,
+        -0.22736132049424307,
+        1.0
+      ]
+    ],
+    "q1_fitting_units": {
+      "median": 0.2842456669553014,
+      "iqr": 0.0027082053078044677,
+      "p05_p95": [
+        0.28101678981710076,
+        0.2874203664300647
+      ],
+      "n": 102
+    },
+    "offsets_all_fitting_units": {
+      "G14C1": {
+        "charge_time": -11.352817614227524,
+        "mean_discharge_voltage": 0.1546932445069369
+      },
+      "G16C1": {
+        "charge_time": 73.58478624770028,
+        "mean_discharge_voltage": -0.0389042657133476
+      },
+      "G16C2": {
+        "charge_time": 79.8153154370045,
+        "mean_discharge_voltage": -0.03530283664245104
+      },
+      "G17C1": {
+        "charge_time": 0.16343050418584504,
+        "mean_discharge_voltage": 0.12537279374174037
+      },
+      "G17C3": {
+        "charge_time": 4.439325507246048,
+        "mean_discharge_voltage": 0.12427619449618188
+      },
+      "G17C4": {
+        "charge_time": 2.4711294989707415,
+        "mean_discharge_voltage": 0.12028996833046257
+      },
+      "G19C3": {
+        "charge_time": -13.442973235375804,
+        "mean_discharge_voltage": 0.13677190239234172
+      },
+      "G19C4": {
+        "charge_time": -9.351631204735972,
+        "mean_discharge_voltage": 0.14549964325982767
+      },
+      "G20C3": {
+        "charge_time": 34.00323616248082,
+        "mean_discharge_voltage": 0.00820389368033414
+      },
+      "G20C4": {
+        "charge_time": 39.25320715253157,
+        "mean_discharge_voltage": -0.026576727239754128
+      },
+      "G21C1": {
+        "charge_time": 17.445059255478718,
+        "mean_discharge_voltage": -0.01166517971632497
+      },
+      "G21C2": {
+        "charge_time": 18.916376045856133,
+        "mean_discharge_voltage": -0.03592194760204648
+      },
+      "G21C4": {
+        "charge_time": 16.937972428759977,
+        "mean_discharge_voltage": -0.024203138348724007
+      },
+      "G22C1": {
+        "charge_time": 9.43533550668671,
+        "mean_discharge_voltage": -0.02022848293212398
+      },
+      "G22C2": {
+        "charge_time": 10.045303843258013,
+        "mean_discharge_voltage": -0.00833592978017661
+      },
+      "G22C3": {
+        "charge_time": 10.596068418806633,
+        "mean_discharge_voltage": -0.011676238732185151
+      },
+      "G23C2": {
+        "charge_time": 5.143259223386435,
+        "mean_discharge_voltage": 0.0007265465206618416
+      },
+      "G24C2": {
+        "charge_time": 1.2931786711060784,
+        "mean_discharge_voltage": 0.0034318907951886857
+      },
+      "G24C3": {
+        "charge_time": 6.230207883491799,
+        "mean_discharge_voltage": -0.018301625458212012
+      },
+      "G24C4": {
+        "charge_time": 3.9508480785061355,
+        "mean_discharge_voltage": 0.0058859702675611025
+      },
+      "G25C1": {
+        "charge_time": -19.138811668992318,
+        "mean_discharge_voltage": 0.16803272966842764
+      },
+      "G25C2": {
+        "charge_time": -14.6019542152733,
+        "mean_discharge_voltage": 0.14900467963099162
+      },
+      "G25C4": {
+        "charge_time": -16.55987086558048,
+        "mean_discharge_voltage": 0.17538858050534056
+      },
+      "G27C1": {
+        "charge_time": 4.095790915007088,
+        "mean_discharge_voltage": -0.04168523631320609
+      },
+      "G27C3": {
+        "charge_time": 6.381373793639744,
+        "mean_discharge_voltage": -0.008978444427878651
+      },
+      "G27C4": {
+        "charge_time": 8.606811484092878,
+        "mean_discharge_voltage": -0.02718884992816406
+      },
+      "G28C1": {
+        "charge_time": -12.734964538069304,
+        "mean_discharge_voltage": -0.002708921146332255
+      },
+      "G28C3": {
+        "charge_time": -10.722449252996944,
+        "mean_discharge_voltage": -0.020243547097291703
+      },
+      "G29C1": {
+        "charge_time": -20.05713962888911,
+        "mean_discharge_voltage": 0.06468064343218449
+      },
+      "G29C2": {
+        "charge_time": -20.31457645796091,
+        "mean_discharge_voltage": 0.051449265362560004
+      },
+      "G29C3": {
+        "charge_time": -20.188531464503292,
+        "mean_discharge_voltage": 0.0682791018239961
+      },
+      "G29C4": {
+        "charge_time": -21.21584935228538,
+        "mean_discharge_voltage": 0.061639789140719436
+      },
+      "G30C3": {
+        "charge_time": 17.445679815484226,
+        "mean_discharge_voltage": 0.025271123834031073
+      },
+      "G30C4": {
+        "charge_time": 20.577788824133727,
+        "mean_discharge_voltage": 0.043540956050873714
+      },
+      "G31C1": {
+        "charge_time": -6.343123805183923,
+        "mean_discharge_voltage": 0.06776004862921003
+      },
+      "G31C2": {
+        "charge_time": -9.628487710601517,
+        "mean_discharge_voltage": 0.09547479463830388
+      },
+      "G31C3": {
+        "charge_time": -9.426149702364382,
+        "mean_discharge_voltage": 0.09821585316707804
+      },
+      "G31C4": {
+        "charge_time": -9.750894540603733,
+        "mean_discharge_voltage": 0.09649294790742857
+      },
+      "G35C1": {
+        "charge_time": 7.770372786453047,
+        "mean_discharge_voltage": -0.03799827792462196
+      },
+      "G35C2": {
+        "charge_time": 5.500310533042972,
+        "mean_discharge_voltage": 0.00599896702714231
+      },
+      "G35C3": {
+        "charge_time": 6.20515302427763,
+        "mean_discharge_voltage": -0.0019159470830087955
+      },
+      "G36C2": {
+        "charge_time": -0.20420908499290924,
+        "mean_discharge_voltage": -0.010581722836103369
+      },
+      "G36C3": {
+        "charge_time": 1.4267502207771958,
+        "mean_discharge_voltage": -0.004658861527095937
+      },
+      "G37C2": {
+        "charge_time": 47.07294333774438,
+        "mean_discharge_voltage": -0.0430446269680973
+      },
+      "G37C4": {
+        "charge_time": 47.68197268403903,
+        "mean_discharge_voltage": -0.033006921263415645
+      },
+      "G38C1": {
+        "charge_time": -0.16343050418584504,
+        "mean_discharge_voltage": 0.018754882134512485
+      },
+      "G38C2": {
+        "charge_time": 2.869249660600831,
+        "mean_discharge_voltage": -0.003927749423227489
+      },
+      "G38C3": {
+        "charge_time": 9.469415745296311,
+        "mean_discharge_voltage": -0.056291672165213136
+      },
+      "G39C1": {
+        "charge_time": 5.318018145099343,
+        "mean_discharge_voltage": -0.02329722298615078
+      },
+      "G39C2": {
+        "charge_time": 7.523440479294893,
+        "mean_discharge_voltage": -0.025274297398985235
+      },
+      "G39C4": {
+        "charge_time": 9.24429009265903,
+        "mean_discharge_voltage": -0.002415369417507307
+      },
+      "G3C1": {
+        "charge_time": 30.775200348135726,
+        "mean_discharge_voltage": 0.12714349923213897
+      },
+      "G3C3": {
+        "charge_time": 34.94652850242595,
+        "mean_discharge_voltage": 0.1284279723500017
+      },
+      "G3C4": {
+        "charge_time": 40.301382115273164,
+        "mean_discharge_voltage": 0.12075595155045127
+      },
+      "G41C1": {
+        "charge_time": -15.38045292604391,
+        "mean_discharge_voltage": 0.005266546695969598
+      },
+      "G41C2": {
+        "charge_time": -18.766364427794933,
+        "mean_discharge_voltage": 0.01711008902966915
+      },
+      "G41C3": {
+        "charge_time": -14.470875751659575,
+        "mean_discharge_voltage": 0.005379949447742227
+      },
+      "G41C4": {
+        "charge_time": -15.993506826152183,
+        "mean_discharge_voltage": 0.006914799438643593
+      },
+      "G45C1": {
+        "charge_time": 1.7841130757217218,
+        "mean_discharge_voltage": -0.03960098965708703
+      },
+      "G45C2": {
+        "charge_time": 3.7773581439005657,
+        "mean_discharge_voltage": -0.03446153699130794
+      },
+      "G45C3": {
+        "charge_time": 2.848560682667122,
+        "mean_discharge_voltage": -0.05275348576504735
+      },
+      "G45C4": {
+        "charge_time": 2.5330960268030527,
+        "mean_discharge_voltage": -0.04310750832642096
+      },
+      "G46C1": {
+        "charge_time": -4.803099369100378,
+        "mean_discharge_voltage": -0.046868267046837
+      },
+      "G46C2": {
+        "charge_time": -3.9967915841418726,
+        "mean_discharge_voltage": -0.0380585532768023
+      },
+      "G46C3": {
+        "charge_time": -3.5082483069524226,
+        "mean_discharge_voltage": -0.043705836049225955
+      },
+      "G46C4": {
+        "charge_time": -4.870990160550187,
+        "mean_discharge_voltage": -0.039440935097756036
+      },
+      "G48C1": {
+        "charge_time": -22.541243692776767,
+        "mean_discharge_voltage": 0.006515882098199199
+      },
+      "G48C2": {
+        "charge_time": -23.75279063730865,
+        "mean_discharge_voltage": -0.01881738166910818
+      },
+      "G48C3": {
+        "charge_time": -23.31345951413511,
+        "mean_discharge_voltage": 0.014241323827223873
+      },
+      "G48C4": {
+        "charge_time": -22.03496453806931,
+        "mean_discharge_voltage": 0.0052082920481510975
+      },
+      "G51C1": {
+        "charge_time": -21.487574082639846,
+        "mean_discharge_voltage": 0.012718765864481618
+      },
+      "G51C2": {
+        "charge_time": -22.01587976123124,
+        "mean_discharge_voltage": -0.0007265465206618416
+      },
+      "G51C3": {
+        "charge_time": -23.14730890349928,
+        "mean_discharge_voltage": 0.03593030929487684
+      },
+      "G51C4": {
+        "charge_time": -22.45299917843058,
+        "mean_discharge_voltage": 0.021602390880894884
+      },
+      "G52C2": {
+        "charge_time": 7.924242533576178,
+        "mean_discharge_voltage": 0.02805302631642448
+      },
+      "G52C3": {
+        "charge_time": -0.7446873861433456,
+        "mean_discharge_voltage": 0.031456677393414845
+      },
+      "G52C4": {
+        "charge_time": -1.9720930445106841,
+        "mean_discharge_voltage": 0.0344677010808887
+      },
+      "G53C2": {
+        "charge_time": 3.036540485864892,
+        "mean_discharge_voltage": 0.023892923060059745
+      },
+      "G55C1": {
+        "charge_time": -6.119665845097243,
+        "mean_discharge_voltage": -0.02847198071747692
+      },
+      "G55C3": {
+        "charge_time": -5.961447790943209,
+        "mean_discharge_voltage": -0.018183457353811328
+      },
+      "G56C1": {
+        "charge_time": -16.180177802281904,
+        "mean_discharge_voltage": 0.1381458734197183
+      },
+      "G56C2": {
+        "charge_time": -18.518446980302286,
+        "mean_discharge_voltage": 0.1353794024118078
+      },
+      "G56C3": {
+        "charge_time": -19.743557139360142,
+        "mean_discharge_voltage": 0.13059392078844878
+      },
+      "G56C4": {
+        "charge_time": -18.76504271894966,
+        "mean_discharge_voltage": 0.13707264036978373
+      },
+      "G5C1": {
+        "charge_time": 26.10781588076123,
+        "mean_discharge_voltage": -0.02865444017853558
+      },
+      "G5C3": {
+        "charge_time": 29.49785341397554,
+        "mean_discharge_voltage": -0.05763904232755612
+      },
+      "G5C4": {
+        "charge_time": 25.290925479798325,
+        "mean_discharge_voltage": -0.02693084333029394
+      },
+      "G60C2": {
+        "charge_time": 25.103901112363637,
+        "mean_discharge_voltage": -0.055947341131755035
+      },
+      "G60C3": {
+        "charge_time": 32.04649810271894,
+        "mean_discharge_voltage": -0.01969417262417128
+      },
+      "G61C2": {
+        "charge_time": -23.536416656922512,
+        "mean_discharge_voltage": 0.045907072906187896
+      },
+      "G62C1": {
+        "charge_time": -15.497700875773225,
+        "mean_discharge_voltage": -0.0563973184114448
+      },
+      "G62C4": {
+        "charge_time": -15.656401699278975,
+        "mean_discharge_voltage": -0.046423331959055236
+      },
+      "G63C2": {
+        "charge_time": -9.144975213152309,
+        "mean_discharge_voltage": -0.024517002009921907
+      },
+      "G63C3": {
+        "charge_time": -9.454994858863165,
+        "mean_discharge_voltage": -0.022513526657854
+      },
+      "G63C4": {
+        "charge_time": -9.70632198304999,
+        "mean_discharge_voltage": -0.022238398589373487
+      },
+      "G64C1": {
+        "charge_time": 5.49734278633432,
+        "mean_discharge_voltage": -0.10408030990911699
+      },
+      "G64C3": {
+        "charge_time": 5.662457581673758,
+        "mean_discharge_voltage": -0.09198247103879087
+      },
+      "G64C4": {
+        "charge_time": 9.347000821569418,
+        "mean_discharge_voltage": -0.09652419971945303
+      },
+      "G8C1": {
+        "charge_time": -9.255782586330275,
+        "mean_discharge_voltage": 0.13387680418569348
+      },
+      "G8C3": {
+        "charge_time": -10.160056614194035,
+        "mean_discharge_voltage": 0.13874501334306122
+      },
+      "G8C4": {
+        "charge_time": -5.897736798724248,
+        "mean_discharge_voltage": 0.13827930969141988
+      },
+      "G9C2": {
+        "charge_time": 0.8291242483404222,
+        "mean_discharge_voltage": 0.012345862090295867
+      }
+    }
+  }
+}

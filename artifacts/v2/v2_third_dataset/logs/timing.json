@@ -1,0 +1,8 @@
+{
+  "stage": "v2/v2_third_dataset",
+  "device": "cpu",
+  "wall_clock_s": 255.623,
+  "sections_s": {
+    "audit": 255.615
+  }
+}

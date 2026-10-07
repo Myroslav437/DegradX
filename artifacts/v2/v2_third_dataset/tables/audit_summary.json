@@ -1,0 +1,387 @@
+{
+  "eligibility": {
+    "E3": {
+      "units_reaching_eol_after_guard": 145,
+      "required": 67,
+      "passes": true,
+      "held_out_reaching_eol": 43
+    },
+    "E4": {
+      "units_reaching_eol_with_T_below_44": [],
+      "min_T": 265.0,
+      "passes": true
+    },
+    "E5": {
+      "availability": {
+        "charge_time_min": {
+          "units_with_channel": 145,
+          "units": 145,
+          "every_unit": true
+        },
+        "mean_discharge_voltage_V": {
+          "units_with_channel": 145,
+          "units": 145,
+          "every_unit": true
+        }
+      },
+      "weighted_after_guard": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "demoted": [],
+      "mappings_range": {
+        "capacity": -0.08424566695530139,
+        "charge_time": -14.578115243362724,
+        "mean_discharge_voltage": -0.04987592476801206
+      },
+      "noise_sd": {
+        "capacity": 0.004126414633915336,
+        "charge_time": 3.451335744549206,
+        "mean_discharge_voltage": 0.008555671437707097
+      },
+      "passes": true
+    },
+    "excluded_fewer_than_2_anchors": [],
+    "units": {
+      "in_table": 145,
+      "too_short": 0,
+      "guard_excluded": 0,
+      "passing_guard": 145,
+      "reaching_eol": 145,
+      "T_from_record_end": 0
+    },
+    "T_distribution": {
+      "n": 145,
+      "median": 875.0,
+      "q25": 564.0,
+      "q75": 1475.0,
+      "p05": 335.8,
+      "p95": 2280.599999999998
+    }
+  },
+  "eligible": true,
+  "d05": {
+    "pooled": {
+      "positive": {
+        "enabled": false,
+        "events": 248,
+        "measured_rate_per_100": 0.2077939488391189,
+        "noise_only_rate_per_100": 0.12487562189054727,
+        "ratio_to_noise": 1.66400731938896
+      },
+      "negative": {
+        "enabled": false,
+        "events": 123,
+        "measured_rate_per_100": 0.10305909559359526,
+        "noise_only_rate_per_100": 0.12288557213930348,
+        "ratio_to_noise": 0.8386590370167064
+      }
+    },
+    "strata": {
+      "S_full": {
+        "d05": {
+          "positive": {
+            "enabled": false,
+            "events": 25,
+            "measured_rate_per_100": 0.14764070158861395,
+            "noise_only_rate_per_100": 0.15636363636363637,
+            "ratio_to_noise": 0.9442137892295077
+          },
+          "negative": {
+            "enabled": false,
+            "events": 16,
+            "measured_rate_per_100": 0.09449004901671293,
+            "noise_only_rate_per_100": 0.17636363636363636,
+            "ratio_to_noise": 0.535768319166929
+          }
+        },
+        "capacity_noise": {
+          "variance": 3.2935421432603597e-06,
+          "phi": 0.8571856463449192,
+          "n_used": 16756
+        },
+        "family": "rollover",
+        "fitting_units": 31
+      },
+      "S_partial": {
+        "d05": {
+          "positive": {
+            "enabled": true,
+            "events": 234,
+            "measured_rate_per_100": 0.22847992501171693,
+            "noise_only_rate_per_100": 0.10890718562874252,
+            "ratio_to_noise": 2.097932507324081
+          },
+          "negative": {
+            "enabled": false,
+            "events": 115,
+            "measured_rate_per_100": 0.11228714263396344,
+            "noise_only_rate_per_100": 0.13285928143712575,
+            "ratio_to_noise": 0.8451584369519728
+          }
+        },
+        "capacity_noise": {
+          "variance": 1.7976386361312557e-05,
+          "phi": 0.951278079448715,
+          "n_used": 100763
+        },
+        "family": "power_law",
+        "fitting_units": 71
+      }
+    }
+  },
+  "mechanism_diagnostic": {
+    "pooled": {
+      "post_0_10": {
+        "ratio": 7.208824808496352,
+        "ci_low": 6.1690644914432,
+        "ci_high": 8.218783420540856,
+        "runs": 248,
+        "hits": 190,
+        "units": 102
+      },
+      "placebo_-11_-1": {
+        "ratio": 0.03771224572854286,
+        "ci_low": 0.0,
+        "ci_high": 0.12843684443809195,
+        "runs": 248,
+        "hits": 1,
+        "units": 102
+      }
+    },
+    "S_full": {
+      "post_0_10": {
+        "ratio": 0.9854698533405757,
+        "ci_low": 0.0,
+        "ci_high": 2.0437430907411183,
+        "runs": 14,
+        "hits": 3,
+        "units": 31
+      },
+      "placebo_-11_-1": {
+        "ratio": 0.3242627345844504,
+        "ci_low": 0.0,
+        "ci_high": 1.1298148362391989,
+        "runs": 14,
+        "hits": 1,
+        "units": 31
+      }
+    },
+    "S_partial": {
+      "post_0_10": {
+        "ratio": 9.091897906827922,
+        "ci_low": 7.957065505179857,
+        "ci_high": 10.181626161033813,
+        "runs": 234,
+        "hits": 187,
+        "units": 71
+      },
+      "placebo_-11_-1": {
+        "ratio": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "runs": 234,
+        "hits": 0,
+        "units": 71
+      }
+    }
+  },
+  "recovery_index": {
+    "regression": {
+      "coef": {
+        "intercept": -0.04011984456368111,
+        "inv_dod": 0.02988518220641142,
+        "c_dis": 0.020586202453090438
+      },
+      "ci_low": {
+        "intercept": -0.05623628448085999,
+        "inv_dod": 0.009714642137616922,
+        "c_dis": 0.013523575067467
+      },
+      "ci_high": {
+        "intercept": -0.020382928049270735,
+        "inv_dod": 0.04579742560868363,
+        "c_dis": 0.028944389789496483
+      },
+      "events": 2168,
+      "units": 145,
+      "resamples": 2000,
+      "note": "unit (cluster) bootstrap, percentile; 2000 resamples (descriptive regression, not a declared interval)"
+    },
+    "median_by_stratum": {
+      "S_full": -0.000823790438221236,
+      "S_partial": 0.017884667751250694
+    },
+    "overshoot_median_by_stratum_Ah": {
+      "S_full": -0.00023497011122285139,
+      "S_partial": 0.004360335329278708
+    }
+  },
+  "operator_null": {
+    "positive_rate_per_100": 0.21864240657435097,
+    "d05_reference_rate_per_100": 0.12487562189054727,
+    "ratio_to_reference": 1.7508814231651213,
+    "noise_factor": 2.0,
+    "reaches_enable_level": false,
+    "null_mechanism_ratio": {
+      "ratio": 6.1582595710019,
+      "ci_low": 5.121593630803624,
+      "ci_high": 7.177210012079352,
+      "runs": 261,
+      "hits": 171,
+      "units": 102
+    },
+    "units": 102
+  },
+  "additive_sensitivity": {
+    "capacity_noise": {
+      "variance": 1.074685865827845e-05,
+      "phi": 0.9672534517015605,
+      "n_used": 123534
+    },
+    "d05": {
+      "positive": {
+        "enabled": false,
+        "events": 193,
+        "measured_rate_per_100": 0.15459540859646595,
+        "noise_only_rate_per_100": 0.13346418056918546,
+        "ratio_to_noise": 1.1583288335279325
+      },
+      "negative": {
+        "enabled": false,
+        "events": 82,
+        "measured_rate_per_100": 0.06568302334150367,
+        "noise_only_rate_per_100": 0.1084396467124632,
+        "ratio_to_noise": 0.6057104143438211
+      }
+    },
+    "positive_amplitude_median_mAh": 6.392244209206466,
+    "d05_outcome_differs_from_primary": false
+  },
+  "primary_patterns": {
+    "positive_amplitude_median_mAh": 8.585036962137332,
+    "capacity_noise": {
+      "variance": 1.7027297730990637e-05,
+      "phi": 0.950696140605135,
+      "n_used": 117563
+    }
+  },
+  "x6_ii_reading": {
+    "pooled_enabled": false,
+    "s_full_enabled": false,
+    "operator_null_reaches_enable": false,
+    "present_at_scale": false,
+    "wording": "not shown; post-RPT recovery of partial-window discharge capacity, not separable from voltage-cutoff kinetics"
+  },
+  "cross_checks": {
+    "q1_vs_c5_week0_over_0.01": 19,
+    "q1_no_week0_vs_c5_week0_over_0.01": 80,
+    "q1_minus_c5_0_median": 0.002385368169164348,
+    "units": 145,
+    "eol_outside_interval": 4
+  },
+  "calibration_factor": {
+    "min_over_units": 0.9879592924882447,
+    "median_of_unit_medians": 1.55384180449729,
+    "p95_of_unit_p95": 28.2064324812995,
+    "max_over_units": 32.64095041266831
+  },
+  "rest_events": {
+    "rest_events_block": 2168,
+    "rest_events_pause": 2174,
+    "rest_events_rpt_crosscheck": 2131,
+    "rest_block_vs_rpt_mismatch": 37,
+    "charge_time_protocol_masked": 2168
+  },
+  "cycle_predicates": {
+    "cycles": 407249,
+    "degenerate": 39,
+    "incomplete": 238,
+    "non_aging": 235,
+    "non_aging_overlap_rpt": 0,
+    "non_aging_current": 235
+  },
+  "side_table": [
+    {
+      "cell_id": "G11C1",
+      "excluded": null,
+      "c5_reaches_200mAh": false,
+      "cycles": 62,
+      "T": null,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G11C2",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 184,
+      "T": 156,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G11C3",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 179,
+      "T": 168,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G11C4",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 184,
+      "T": 144,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G14C2",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 253,
+      "T": 218,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G14C3",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 170,
+      "T": 108,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G14C4",
+      "excluded": null,
+      "c5_reaches_200mAh": false,
+      "cycles": 170,
+      "T": 170,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G36C1",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 842,
+      "T": 578,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G37C1",
+      "excluded": null,
+      "c5_reaches_200mAh": true,
+      "cycles": 968,
+      "T": 748,
+      "guard_excluded": false
+    },
+    {
+      "cell_id": "G9C3",
+      "excluded": null,
+      "c5_reaches_200mAh": false,
+      "cycles": 391,
+      "T": 391,
+      "guard_excluded": false
+    }
+  ]
+}

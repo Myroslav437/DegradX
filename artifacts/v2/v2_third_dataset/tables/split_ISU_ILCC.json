@@ -1,0 +1,727 @@
+[
+  {
+    "cell_id": "G14C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G16C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G16C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G16C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G16C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G17C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G17C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G17C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G17C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G19C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G19C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G19C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G19C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G20C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G20C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G20C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G20C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G21C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G21C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G21C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G21C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G22C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G22C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G22C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G22C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G23C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G23C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G23C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G23C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G24C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G24C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G24C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G24C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G25C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G25C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G25C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G25C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G27C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G27C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G27C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G27C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G28C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G28C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G28C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G28C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G29C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G29C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G29C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G29C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G30C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G30C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G30C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G30C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G31C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G31C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G31C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G31C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G35C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G35C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G35C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G35C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G36C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G36C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G36C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G37C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G37C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G37C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G38C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G38C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G38C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G38C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G39C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G39C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G39C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G39C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G3C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G3C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G3C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G3C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G41C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G41C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G41C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G41C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G45C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G45C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G45C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G45C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G46C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G46C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G46C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G46C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G48C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G48C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G48C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G48C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G51C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G51C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G51C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G51C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G52C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G52C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G52C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G52C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G53C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G53C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G53C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G53C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G55C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G55C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G55C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G55C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G56C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G56C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G56C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G56C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G5C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G5C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G5C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G5C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G60C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G60C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G60C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G60C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G61C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G61C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G61C4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G62C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G62C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G62C3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G62C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G63C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G63C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G63C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G63C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G64C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G64C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G64C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G64C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G8C1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G8C2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G8C3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G8C4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G9C1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G9C2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "G9C4",
+    "split": "held_out",
+    "reaches_eol": true
+  }
+]

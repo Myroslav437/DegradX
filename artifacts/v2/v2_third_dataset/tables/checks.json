@@ -1,0 +1,23 @@
+[
+  {
+    "name": "ISU-ILCC E3: >= 67 units reach EOL after the guard",
+    "expected": ">= 67",
+    "observed": "145",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU-ILCC E4: every unit reaching EOL has T >= 44",
+    "expected": "all",
+    "observed": "all",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "ISU-ILCC E5: charge time and mean discharge V available in every unit and pass the weight guard",
+    "expected": "both",
+    "observed": "[\"capacity\", \"charge_time\", \"mean_discharge_voltage\"]",
+    "passed": true,
+    "severity": "error"
+  }
+]

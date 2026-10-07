@@ -1,0 +1,62 @@
+{
+ "article": 22582234,
+ "version": "v2",
+ "files": [
+  {
+   "name": "Valid_cells.csv",
+   "size": 1727,
+   "md5": "88e4a2a884c436831b6b5f1274409bad",
+   "sha256": "099876ba651b523f89aeaa417491f25f69fa48321e1f667cb581ad4e27bbc4c5",
+   "url": "https://ndownloader.figshare.com/files/43754763",
+   "status": "downloaded"
+  },
+  {
+   "name": "process_data.py",
+   "size": 9769,
+   "md5": "ccb61a35ffb6f2e17b2d55b336f170c8",
+   "sha256": "ce3e0e25314e7238bdeb0c88d5a0514347ef9fc64ccf897d17d60c580250064b",
+   "url": "https://ndownloader.figshare.com/files/43754835",
+   "status": "downloaded"
+  },
+  {
+   "name": "capacity_fade.zip",
+   "size": 140256,
+   "md5": "a25a6f717d51992f30abbb3d9046909f",
+   "sha256": "2dada0f57db9dbc002abe8ed839a61403003739086cbcc207be479689b5dc7af",
+   "url": "https://ndownloader.figshare.com/files/43755582",
+   "status": "downloaded"
+  },
+  {
+   "name": "README_V2.0.pdf",
+   "size": 640953,
+   "md5": "c03da9a1a3499989d2cdb655b41d4d0b",
+   "sha256": "46fb983297a4590c9fa3274172fbfe60a23e19242ecae21f2fee9fa424c85a57",
+   "url": "https://ndownloader.figshare.com/files/43754898",
+   "status": "downloaded"
+  },
+  {
+   "name": "Q_interpolated.zip",
+   "size": 47797453,
+   "md5": "e4402a8a8537956880c2349f2531b358",
+   "sha256": "cf405385ac75db12260bc7255d19d6c124174d8bb47e78114f22670460004fa1",
+   "url": "https://ndownloader.figshare.com/files/43755588",
+   "status": "downloaded"
+  },
+  {
+   "name": "RPT_json.zip",
+   "size": 929406930,
+   "md5": "36331bf80f21d00e19a9a45095f542e8",
+   "sha256": "3d72b176789b07d9547ad6fda4c2531f276a6fd039a36ed407051c1cf9563072",
+   "url": "https://ndownloader.figshare.com/files/43756491",
+   "status": "downloaded"
+  },
+  {
+   "name": "Cycling_json.zip",
+   "size": 10208088439,
+   "md5": "27ac156b31f7c35d4f27a78267c0dd56",
+   "sha256": "eb58c27fa94bcc7d76a6b8eb8f3330a122bc44dc936fc61f0be5817047313fec",
+   "url": "https://ndownloader.figshare.com/files/43777470",
+   "status": "downloaded"
+  }
+ ]
+}

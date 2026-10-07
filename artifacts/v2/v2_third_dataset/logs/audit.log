@@ -1,0 +1,5 @@
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/isotonic.py:90: UserWarning: Confidence interval of the Spearman correlation coefficient spans zero. Determination of ``increasing`` may be suspect.
+  warnings.warn(
+[PASS] ISU-ILCC E3: >= 67 units reach EOL after the guard: expected >= 67; observed 145
+[PASS] ISU-ILCC E4: every unit reaching EOL has T >= 44: expected all; observed all
+[PASS] ISU-ILCC E5: charge time and mean discharge V available in every unit and pass the weight guard: expected both; observed ["capacity", "charge_time", "mean_discharge_voltage"]
