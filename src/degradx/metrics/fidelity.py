@@ -189,3 +189,28 @@ def ratio_bootstrap(sse_a: np.ndarray, sse_b: np.ndarray, n: np.ndarray, *, seed
                     random_state=np.random.default_rng(seed))
     return {"ratio": point, "ci_low": float(res.confidence_interval.low), "ci_high": float(res.confidence_interval.high),
             "units": int(len(n)), "method": "BCa over held-out units"}
+
+
+def log_ratio_difference_bootstrap(pairs_1: tuple[np.ndarray, np.ndarray], pairs_2: tuple[np.ndarray, np.ndarray], n: np.ndarray, *,
+                                   seed: int, n_resamples: int = 10000, confidence: float = 0.95) -> dict:
+    """v2 X1 (declarations v2.tstr_isolation.tests): paired bootstrap over held-out units of
+    log(RMSE_a1 / RMSE_b1) - log(RMSE_a2 / RMSE_b2), each ratio from per-unit squared-error sums (S5 estimator); the same
+    resampled units enter both ratios. BCa via scipy.stats.bootstrap."""
+    from scipy.stats import bootstrap
+
+    (a1, b1), (a2, b2) = pairs_1, pairs_2
+
+    def stat(idx, axis=-1):
+        idx = np.asarray(idx, int)
+        nn = n[idx].sum(axis=axis)
+        r1 = np.sqrt(a1[idx].sum(axis=axis) / nn) / np.sqrt(b1[idx].sum(axis=axis) / nn)
+        r2 = np.sqrt(a2[idx].sum(axis=axis) / nn) / np.sqrt(b2[idx].sum(axis=axis) / nn)
+        return np.log(r1) - np.log(r2)
+
+    idx = np.arange(len(n))
+    point = float(stat(idx))
+    res = bootstrap((idx,), stat, vectorized=True, n_resamples=n_resamples, confidence_level=confidence, method="BCa",
+                    random_state=np.random.default_rng(seed))
+    lo, hi = float(res.confidence_interval.low), float(res.confidence_interval.high)
+    return {"log_ratio_difference": point, "ci_low": lo, "ci_high": hi, "ratio_of_ratios": float(np.exp(point)),
+            "above_zero": bool(lo > 0), "units": int(len(n)), "method": "paired BCa over held-out units"}
