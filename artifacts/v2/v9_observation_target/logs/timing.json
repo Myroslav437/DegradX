@@ -1,0 +1,10 @@
+{
+  "stage": "v2/v9_observation_target",
+  "device": "cuda",
+  "wall_clock_s": 1940.353,
+  "sections_s": {
+    "ensemble": 1903.806,
+    "x4": 20.632,
+    "attribution": 10.169
+  }
+}

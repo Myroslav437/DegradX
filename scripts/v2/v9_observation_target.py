@@ -54,9 +54,35 @@ def windows_obs(units, spec):
     return {"X": np.concatenate(Xs).astype(np.float32), "y": np.concatenate(ys), "noise": np.concatenate(ns), "unit": np.concatenate(us).astype(int)}
 
 
+def standard_y_comparison():
+    """The V8 ensemble range and IG-occlusion gap on the standard y for the same HUST windows (None before V8 is scored)."""
+    import json
+
+    v8f = ARTIFACTS_V2 / "v8_reference_methods" / "tables" / "reference_values.json"
+    r8 = json.loads(v8f.read_text()).get(DS, {}).get("weightings", {}).get(KIND) if v8f.exists() else None
+    if not r8:
+        return None
+    return {k: {"ensemble_range": {m: r8["identifiability_floor"][m][f"{k}_max"] - r8["identifiability_floor"][m][f"{k}_min"]
+                                   for m in ("integrated_gradients", "feature_occlusion")},
+                "largest_method_gap_IG_occlusion": abs(r8["scores"]["trained/integrated_gradients"][k]["mean"] - r8["scores"]["trained/feature_occlusion"][k]["mean"])}
+            for k in ("rank", "allocation", "temporal")}
+
+
 def main() -> int:
     p = stage_parser(__doc__, "v2/v9_observation_target")
+    p.add_argument("--compare-only", action="store_true", help="add the V8 standard-y comparison to an existing V9 result and redraw the figure")
     args = p.parse_args()
+    if args.compare_only:
+        import json
+
+        from degradx.viz import v9 as viz
+
+        f = ARTIFACTS_V2 / "v9_observation_target" / "tables" / "observation_target.json"
+        res = json.loads(f.read_text())
+        res["standard_y_for_comparison"] = standard_y_comparison()
+        write_json(res, f)
+        save_figure(viz.ensemble_vs_gap(res), ARTIFACTS_V2 / "v9_observation_target" / "figures" / "hust_yobs_ensemble_vs_method_gap")
+        return 0 if res["standard_y_for_comparison"] else 1
     ctx = StageContext.from_args(args)
     decl, dd = ctx.declarations, ctx.declarations["declared_by_design"]
     if args.dry_run:
@@ -142,17 +168,8 @@ def main() -> int:
             rngs = {meth: float(max(v[k]["mean"] for v in scores[meth].values()) - min(v[k]["mean"] for v in scores[meth].values())) for meth in scores}
             comp[k] = {"primary": prim, "largest_method_gap": gap, "ensemble_range": rngs, "restored": bool(all(r < gap for r in rngs.values()))}
         res["comparison"] = comp
-        # the same comparison on the standard y (V8, same windows), when available
-        v8f = ARTIFACTS_V2 / "v8_reference_methods" / "tables" / "reference_values.json"
-        if v8f.exists():
-            import json
-
-            r8 = json.loads(v8f.read_text()).get(DS, {}).get("weightings", {}).get(KIND)
-            if r8:
-                res["standard_y_for_comparison"] = {k: {"ensemble_range": {m: r8["identifiability_floor"][m][f"{k}_max"] - r8["identifiability_floor"][m][f"{k}_min"]
-                                                                           for m in ("integrated_gradients", "feature_occlusion")},
-                                                         "largest_method_gap_IG_occlusion": abs(r8["scores"]["trained/integrated_gradients"][k]["mean"] - r8["scores"]["trained/feature_occlusion"][k]["mean"])}
-                                                    for k in ("rank", "allocation", "temporal")}
+        # the same comparison on the standard y (V8, same windows); filled by --compare-only once V8 is scored
+        res["standard_y_for_comparison"] = standard_y_comparison()
         write_json(res, out / "tables" / "observation_target.json")
         from degradx.viz import v9 as viz
 

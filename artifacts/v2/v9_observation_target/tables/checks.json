@@ -1,0 +1,16 @@
+[
+  {
+    "name": "V9: IG on the reference model equals phi*_obs = w(x - x0) (correctness check)",
+    "expected": "< 1e-3 relative",
+    "observed": "7.50e-08",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "V9: primary model passes the accuracy gate on y_obs",
+    "expected": "<= 0.30",
+    "observed": "0.002",
+    "passed": true,
+    "severity": "warn"
+  }
+]

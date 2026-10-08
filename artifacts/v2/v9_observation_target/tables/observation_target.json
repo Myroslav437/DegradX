@@ -1,0 +1,659 @@
+{
+  "profile": "HUST",
+  "weighting": "recency",
+  "accuracy": {
+    "members": [
+      {
+        "member": "A0",
+        "rmse": 0.0006512632065917121,
+        "nrmse": 0.0018348924648772624,
+        "rmse_over_sd_noise": 0.01729279471203104,
+        "reads_cells": true,
+        "epochs": 23
+      },
+      {
+        "member": "A1",
+        "rmse": 0.0004175990556786139,
+        "nrmse": 0.0011765586522453795,
+        "rmse_over_sd_noise": 0.011088381269964084,
+        "reads_cells": true,
+        "epochs": 36
+      },
+      {
+        "member": "A2",
+        "rmse": 0.0005200520677239731,
+        "nrmse": 0.0014652134663102302,
+        "rmse_over_sd_noise": 0.013808785074443627,
+        "reads_cells": true,
+        "epochs": 28
+      },
+      {
+        "member": "A3",
+        "rmse": 0.0005684593231269517,
+        "nrmse": 0.0016015978148889742,
+        "rmse_over_sd_noise": 0.015094128268691286,
+        "reads_cells": true,
+        "epochs": 29
+      },
+      {
+        "member": "A4",
+        "rmse": 0.0006383654761260834,
+        "nrmse": 0.0017985539335340715,
+        "rmse_over_sd_noise": 0.01695032518061,
+        "reads_cells": true,
+        "epochs": 27
+      },
+      {
+        "member": "B0",
+        "rmse": 0.0006125501261748987,
+        "nrmse": 0.001725820834805074,
+        "rmse_over_sd_noise": 0.0162648580106445,
+        "reads_cells": true,
+        "epochs": 27
+      },
+      {
+        "member": "B1",
+        "rmse": 0.0006642137544904666,
+        "nrmse": 0.001871379805962929,
+        "rmse_over_sd_noise": 0.017636666688759926,
+        "reads_cells": true,
+        "epochs": 22
+      },
+      {
+        "member": "B2",
+        "rmse": 0.0006430197828455153,
+        "nrmse": 0.0018116671452774566,
+        "rmse_over_sd_noise": 0.017073909577534824,
+        "reads_cells": true,
+        "epochs": 20
+      },
+      {
+        "member": "B3",
+        "rmse": 0.0006234857067867717,
+        "nrmse": 0.001756631134328663,
+        "rmse_over_sd_noise": 0.01655522717116817,
+        "reads_cells": true,
+        "epochs": 20
+      },
+      {
+        "member": "B4",
+        "rmse": 0.0005004030537754077,
+        "nrmse": 0.0014098536252020964,
+        "rmse_over_sd_noise": 0.013287050757093508,
+        "reads_cells": true,
+        "epochs": 27
+      }
+    ],
+    "sd_noise_term": 0.037660957493389526,
+    "sd_y_obs": 0.3549326290547908,
+    "primary_reads_cells": true,
+    "members_reading_cells": 10
+  },
+  "channel_usage": {
+    "A0": {
+      "capacity": {
+        "nmse_increase": 0.03142782817495343,
+        "ci_low": 0.027317388547903408,
+        "ci_high": 0.03766498731021897,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.034389626165635574,
+        "ci_low": 0.029836341297754376,
+        "ci_high": 0.04112020743771586,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6061626424573707,
+        "ci_low": 0.5259530329094658,
+        "ci_high": 0.7076835491670417,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "A1": {
+      "capacity": {
+        "nmse_increase": 0.031436486436054095,
+        "ci_low": 0.02743473695100676,
+        "ci_high": 0.03760787942217809,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.03457185400621241,
+        "ci_low": 0.03010397536926581,
+        "ci_high": 0.041315122807853086,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.5994927736633453,
+        "ci_low": 0.5213024403504671,
+        "ci_high": 0.6991991885597092,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "A2": {
+      "capacity": {
+        "nmse_increase": 0.031158010762519704,
+        "ci_low": 0.027105716198284086,
+        "ci_high": 0.037418053835012496,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.03463951773952024,
+        "ci_low": 0.030152124746986222,
+        "ci_high": 0.04145707667840025,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6022044840312175,
+        "ci_low": 0.5226917078462245,
+        "ci_high": 0.7032361418764845,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "A3": {
+      "capacity": {
+        "nmse_increase": 0.03140644793289359,
+        "ci_low": 0.02727416072210311,
+        "ci_high": 0.0376528406637245,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.034586322775017116,
+        "ci_low": 0.03008081878289908,
+        "ci_high": 0.041462481221740136,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6011099477966777,
+        "ci_low": 0.522966513734878,
+        "ci_high": 0.7008797665665824,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "A4": {
+      "capacity": {
+        "nmse_increase": 0.03132001762426905,
+        "ci_low": 0.027261719276061157,
+        "ci_high": 0.03748822418403837,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.03475478311432867,
+        "ci_low": 0.03016205406776602,
+        "ci_high": 0.0414332081269429,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6019150159261186,
+        "ci_low": 0.5237026691161577,
+        "ci_high": 0.7004485543238058,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "B0": {
+      "capacity": {
+        "nmse_increase": 0.03159737997516742,
+        "ci_low": 0.027428214985634816,
+        "ci_high": 0.0378975662068514,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.034711403849032436,
+        "ci_low": 0.030150253390448606,
+        "ci_high": 0.04166250141912251,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.599545157309018,
+        "ci_low": 0.5224160219779219,
+        "ci_high": 0.6977278972132726,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "B1": {
+      "capacity": {
+        "nmse_increase": 0.03138962315434004,
+        "ci_low": 0.027323573705213607,
+        "ci_high": 0.03749505228312239,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.034646302415586826,
+        "ci_low": 0.030028999942506473,
+        "ci_high": 0.041476689880163384,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6046467026248582,
+        "ci_low": 0.5245093898757818,
+        "ci_high": 0.7054194833312322,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "B2": {
+      "capacity": {
+        "nmse_increase": 0.0313835569645253,
+        "ci_low": 0.02735127874592233,
+        "ci_high": 0.03760638672148745,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.03442622563598304,
+        "ci_low": 0.03006345670606294,
+        "ci_high": 0.0411016944764067,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.5999178728668261,
+        "ci_low": 0.5227657761653842,
+        "ci_high": 0.6988200579625087,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "B3": {
+      "capacity": {
+        "nmse_increase": 0.03136852331118121,
+        "ci_low": 0.027276369361816835,
+        "ci_high": 0.03762071487227458,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.034495734200720496,
+        "ci_low": 0.030073897694165522,
+        "ci_high": 0.04110132136283427,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6035456625501473,
+        "ci_low": 0.5237072792974852,
+        "ci_high": 0.7032820179630154,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    },
+    "B4": {
+      "capacity": {
+        "nmse_increase": 0.03136579072956861,
+        "ci_low": 0.027255450707509933,
+        "ci_high": 0.037708818037143155,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "charge_time": {
+        "nmse_increase": 0.03475032383297358,
+        "ci_low": 0.030240532551200378,
+        "ci_high": 0.041467960075998296,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      },
+      "mean_discharge_voltage": {
+        "nmse_increase": 0.6022676921759416,
+        "ci_low": 0.524099465623209,
+        "ci_high": 0.7023411276535355,
+        "units": 45,
+        "used": true,
+        "used_materially": true
+      }
+    }
+  },
+  "scores": {
+    "integrated_gradients": {
+      "A0": {
+        "rank": {
+          "mean": 0.9605741780016315,
+          "ci_low": 0.9587407032534909,
+          "ci_high": 0.9615133240111184,
+          "units": 45
+        },
+        "allocation": {
+          "mean": 0.0035839648289887863,
+          "ci_low": 0.0029727148827027295,
+          "ci_high": 0.005030736327785451,
+          "units": 45
+        },
+        "temporal": {
+          "mean": 0.7884726631863848,
+          "ci_low": 0.7227928307028053,
+          "ci_high": 0.8538123565681504,
+          "units": 45
+        }
+      },
+      "A1": {
+        "rank": {
+          "mean": 0.9647777238117753
+        },
+        "allocation": {
+          "mean": 0.002549377639841897
+        },
+        "temporal": {
+          "mean": 0.5303167474680361
+        }
+      },
+      "A2": {
+        "rank": {
+          "mean": 0.9625704624675102
+        },
+        "allocation": {
+          "mean": 0.00287994395418078
+        },
+        "temporal": {
+          "mean": 0.6559148049607967
+        }
+      },
+      "A3": {
+        "rank": {
+          "mean": 0.961519459699198
+        },
+        "allocation": {
+          "mean": 0.004698422532764408
+        },
+        "temporal": {
+          "mean": 0.636277705408303
+        }
+      },
+      "A4": {
+        "rank": {
+          "mean": 0.9595033949047302
+        },
+        "allocation": {
+          "mean": 0.003448383459599872
+        },
+        "temporal": {
+          "mean": 0.770385207240762
+        }
+      },
+      "B0": {
+        "rank": {
+          "mean": 0.9580627675188438
+        },
+        "allocation": {
+          "mean": 0.003122357294797808
+        },
+        "temporal": {
+          "mean": 0.8276093872221361
+        }
+      },
+      "B1": {
+        "rank": {
+          "mean": 0.9572341339283814
+        },
+        "allocation": {
+          "mean": 0.003353517612685626
+        },
+        "temporal": {
+          "mean": 0.8508654125594066
+        }
+      },
+      "B2": {
+        "rank": {
+          "mean": 0.9519732976513885
+        },
+        "allocation": {
+          "mean": 0.003719282182327664
+        },
+        "temporal": {
+          "mean": 0.9269337564616593
+        }
+      },
+      "B3": {
+        "rank": {
+          "mean": 0.8880805897521038
+        },
+        "allocation": {
+          "mean": 0.008929615352282058
+        },
+        "temporal": {
+          "mean": 1.000839439285708
+        }
+      },
+      "B4": {
+        "rank": {
+          "mean": 0.9595165950836878
+        },
+        "allocation": {
+          "mean": 0.0033782503552345
+        },
+        "temporal": {
+          "mean": 0.7697992633563461
+        }
+      }
+    },
+    "feature_occlusion": {
+      "A0": {
+        "rank": {
+          "mean": 0.957989825268166,
+          "ci_low": 0.9541424356488097,
+          "ci_high": 0.9599733716236913,
+          "units": 45
+        },
+        "allocation": {
+          "mean": 0.01856041921652098,
+          "ci_low": 0.015029656447672573,
+          "ci_high": 0.02316032711466421,
+          "units": 45
+        },
+        "temporal": {
+          "mean": 0.7537886035831141,
+          "ci_low": 0.6951243112430079,
+          "ci_high": 0.8159928201101185,
+          "units": 45
+        }
+      },
+      "A1": {
+        "rank": {
+          "mean": 0.9625670921619104
+        },
+        "allocation": {
+          "mean": 0.012365726072301167
+        },
+        "temporal": {
+          "mean": 0.5677076992317227
+        }
+      },
+      "A2": {
+        "rank": {
+          "mean": 0.9626515901378668
+        },
+        "allocation": {
+          "mean": 0.024945249511189878
+        },
+        "temporal": {
+          "mean": 0.6845857907245196
+        }
+      },
+      "A3": {
+        "rank": {
+          "mean": 0.9606333832131706
+        },
+        "allocation": {
+          "mean": 0.019467410599066547
+        },
+        "temporal": {
+          "mean": 0.6150086813732363
+        }
+      },
+      "A4": {
+        "rank": {
+          "mean": 0.9561852897919991
+        },
+        "allocation": {
+          "mean": 0.014743408410331721
+        },
+        "temporal": {
+          "mean": 0.8310768877610806
+        }
+      },
+      "B0": {
+        "rank": {
+          "mean": 0.9583023901925399
+        },
+        "allocation": {
+          "mean": 0.012075607081207185
+        },
+        "temporal": {
+          "mean": 0.8356160367335619
+        }
+      },
+      "B1": {
+        "rank": {
+          "mean": 0.9573902074524697
+        },
+        "allocation": {
+          "mean": 0.011898616353997285
+        },
+        "temporal": {
+          "mean": 0.8705695955994897
+        }
+      },
+      "B2": {
+        "rank": {
+          "mean": 0.9500819030620183
+        },
+        "allocation": {
+          "mean": 0.012164926729517325
+        },
+        "temporal": {
+          "mean": 0.9785595858531763
+        }
+      },
+      "B3": {
+        "rank": {
+          "mean": 0.8906757106919432
+        },
+        "allocation": {
+          "mean": 0.014966612679263608
+        },
+        "temporal": {
+          "mean": 1.019495507903364
+        }
+      },
+      "B4": {
+        "rank": {
+          "mean": 0.960384147858401
+        },
+        "allocation": {
+          "mean": 0.013967075658708448
+        },
+        "temporal": {
+          "mean": 0.8068198131334336
+        }
+      }
+    }
+  },
+  "comparison": {
+    "rank": {
+      "primary": {
+        "integrated_gradients": 0.9605741780016315,
+        "feature_occlusion": 0.957989825268166
+      },
+      "largest_method_gap": 0.002584352733465467,
+      "ensemble_range": {
+        "integrated_gradients": 0.07669713405967149,
+        "feature_occlusion": 0.07197587944592365
+      },
+      "restored": false
+    },
+    "allocation": {
+      "primary": {
+        "integrated_gradients": 0.0035839648289887863,
+        "feature_occlusion": 0.01856041921652098
+      },
+      "largest_method_gap": 0.014976454387532194,
+      "ensemble_range": {
+        "integrated_gradients": 0.006380237712440161,
+        "feature_occlusion": 0.013046633157192592
+      },
+      "restored": true
+    },
+    "temporal": {
+      "primary": {
+        "integrated_gradients": 0.7884726631863848,
+        "feature_occlusion": 0.7537886035831141
+      },
+      "largest_method_gap": 0.0346840596032707,
+      "ensemble_range": {
+        "integrated_gradients": 0.4705226918176719,
+        "feature_occlusion": 0.45178780867164137
+      },
+      "restored": false
+    }
+  },
+  "standard_y_for_comparison": {
+    "rank": {
+      "ensemble_range": {
+        "integrated_gradients": 0.15076977211551568,
+        "feature_occlusion": 0.20610063957832991
+      },
+      "largest_method_gap_IG_occlusion": 0.016095253665246223
+    },
+    "allocation": {
+      "ensemble_range": {
+        "integrated_gradients": 0.09312890833386941,
+        "feature_occlusion": 0.09831944765710232
+      },
+      "largest_method_gap_IG_occlusion": 0.017813182753132623
+    },
+    "temporal": {
+      "ensemble_range": {
+        "integrated_gradients": 1.1719242315690814,
+        "feature_occlusion": 0.7282726538801332
+      },
+      "largest_method_gap_IG_occlusion": 0.10767330477014392
+    }
+  }
+}
