@@ -22,7 +22,7 @@
 
 - **Accuracy.**
   - NRMSE on y_obs is 0.0012–0.0019 over the ten members.
-  - RMSE / SD(Σwε) is 0.013–0.018, so every member reads the cell-level values (declared reading ≤ 0.5).
+  - RMSE / SD(Σwε) is 0.011–0.018, so every member reads the cell-level values (declared reading ≤ 0.5).
 - **X4.** Every member uses all three weighted channels materially:
   - capacity 0.031 [0.027, 0.038];
   - charge time 0.034 [0.030, 0.041];
@@ -48,7 +48,7 @@ and the levels rise: rank agreement goes from 0.73–0.75 to 0.96.
 ## Anomalies
 
 1. **One member (B3) is an outlier on rank agreement** (0.888 against 0.950–0.965 for the other nine). It sets most of
-   the rank range, but without it the range is still about 0.013, four times the gap.
+   the rank range, but without it the range is still about 0.013, five times the gap.
 2. **The allocation reading has a small margin:** occlusion's range is 0.013 against a gap of 0.015.
 
 ## Decisions needed

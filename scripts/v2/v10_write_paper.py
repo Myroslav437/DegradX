@@ -55,21 +55,30 @@ def ci(x, digits=2):
 def table_fidelity():
     src = ARTIFACTS_V2 / "v5_fidelity" / "tables" / "fidelity.json"
     R = json.loads(src.read_text())
+    rd_src = ARTIFACTS_V2 / "v5_fidelity" / "tables" / "discriminator_readability.json"
+    RD = json.loads(rd_src.read_text()) if rd_src.exists() else {}
     notes, rows, res = Notes(), [], {}
     for ds in [d for d in ("MATR", "HUST", "ISU_ILCC") if d in R]:
         r = R[ds]
         u, t, v = r["units"], r["tstr"], r["void"]
         disc = [s["discriminative_error"] for s in r["per_generation_seed"]]
+        rd = RD.get(ds)
+        if rd and not rd["readable"] and not v["discriminative_error"]:  # D02b readability (DEVIATIONS T6)
+            seeds_txt = ", ".join(f"{f3(x['discriminative_error'], 2)} [{f3(x['ci_low'], 2)}, {f3(x['ci_high'], 2)}]" for x in rd["per_generation_seed"])
+            v = {**v, "discriminative_error": f"{NAME[ds]}: 95\\% unit-bootstrap half-width above half the distance from 0.5 for "
+                                              f"{sum(not x['readable'] for x in rd['per_generation_seed'])} of 3 generation seeds; values {seeds_txt}"}
         cov = [s["cov_relative_frobenius"] for s in r["per_generation_seed"]]
         base = r["baseline_measured_fitting_vs_held_out"]
         bi = base["cov_relative_frobenius_interval"]
         off = r.get("x3_off_seed0") or {}
         v1 = r.get("v1_vs_v2", {})
-        c_disc = notes.void(f"{v['discriminative_error']} (D02b)") if v["discriminative_error"] else f"{f3(min(disc), 2)}--{f3(max(disc), 2)}"
-        c_cov = (notes.void(f"{v['covariance_agreement']} (D02b)") if v["covariance_agreement"]
+        c_disc = notes.void(f"{v['discriminative_error']}") if v["discriminative_error"] else f"{f3(min(disc), 2)}--{f3(max(disc), 2)}"
+        if rd:
+            prov(f"Table 1 / {NAME[ds]} / discriminative_error readability", rd_src, ds, "scripts/v2/v5_discriminator_readability.py", "generation 0,1,2; evaluation 20260915")
+        c_cov = (notes.void(f"{v['covariance_agreement']}") if v["covariance_agreement"]
                  else f"{f3(np.mean(cov), 2)} ({f3(base['cov_relative_frobenius'], 2)}; {f3(bi['ci_low'], 2)}--{f3(bi['ci_high'], 2)})")
         c_off = f"{f3(off.get('discriminative_error'), 2)} / {f3(off.get('cov_relative_frobenius'), 2)}" if off else "--"
-        c_tstr = (notes.void(f"held-out units reaching EOL: {t['held_out_units']} $<$ 20 (D02b)") if t["void"] else f"{f3(t['ratio'], 2)} [{f3(t['ci_low'], 2)}, {f3(t['ci_high'], 2)}]")
+        c_tstr = (notes.void(f"held-out units reaching EOL: {t['held_out_units']} $<$ 20") if t["void"] else f"{f3(t['ratio'], 2)} [{f3(t['ci_low'], 2)}, {f3(t['ci_high'], 2)}]")
         c_v1 = f"{f3(v1['tstr_ratio']['v1'][0], 2)}" if v1 else "--"
         rows.append(f"    {NAME[ds]} & {u['measured_held_out']} / {u['generated_per_seed']} & {c_disc} & {c_cov} & {c_off} & {c_tstr} & {c_v1} \\\\")
         res[ds] = {"units": u, "discriminative_error_per_generation_seed": disc, "covariance_rel_frobenius_mean": float(np.mean(cov)),
@@ -105,7 +114,7 @@ def table_properties():
         return src, next((r for r in rows if r["property"].startswith(prefix)), None)
 
     specs = [
-        ("Fit error of the profile's family", "trajectory family", lambda v: (f3(float(v.split(";")[1]), 4) if isinstance(v, str) else "--")),
+        ("Fit error of the profile's family [fraction of $q_1$]", "trajectory family", lambda v: (f3(float(v.split(";")[1]), 4) if isinstance(v, str) else "--")),
         ("Drift rate [mAh/100 cyc.]", "drift rate", lambda v: med(v)),
         ("Transition position [$\\times T$]", "transition position", lambda v: med(v)),
         ("Unit length $T$ [cycles]", "unit length", lambda v: med(v, d=0)),
@@ -115,7 +124,9 @@ def table_properties():
         ("Noise autocorrelation, charge time", "noise lag-1 autocorrelation, charge_time", lambda v: num(v, d=2)),
         ("Offset IQR, charge time [min]", "per-unit offset IQR, charge_time", lambda v: num(v, d=2)),
         ("Offset IQR, mean discharge V [mV]", "per-unit offset IQR, mean_discharge_voltage", lambda v: num(v, 1000, 1)),
-        ("Residual correlation, rel. Frob. to fitting split", "within-unit residual correlation", lambda v: f3(v["relative_frobenius"], 2) if isinstance(v, dict) and "relative_frobenius" in v else "--"),
+        ("Residual correlation, rel. Frob. to fitting split", "within-unit residual correlation (X3", lambda v: f3(v["relative_frobenius"], 2) if isinstance(v, dict) and "relative_frobenius" in v else "--"),
+        ("\\quad capacity pairs, mean $|\\Delta r|$", "within-unit residual correlation, capacity pairs", lambda v: num(v, d=3)),
+        ("\\quad other pairs, mean $|\\Delta r|$", "within-unit residual correlation, non-capacity pairs", lambda v: num(v, d=3)),
     ]
     sides = ("fitting", "held_out", "generated")
     lines, res = [], {}
@@ -131,16 +142,26 @@ def table_properties():
                     cells.append(notes.void(row["void_held_out"].replace("<", "$<$")))
                     continue
                 cells.append(fmt(row.get(side)))
-            prov(f"Table 2 / {NAME[ds]} / {label}", src, prefix, "scripts/v2/v5_fidelity.py", "generation 0; evaluation 20260915")
+            prov(f"Table 2 / {NAME[ds]} / {label}", src, prefix, "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)", "generation 0; evaluation 20260915")
         lines.append(f"    {label} & " + " & ".join(cells) + " \\\\")
         res[label] = cells
     (TABLES / "table_properties.tex").write_text("\n".join(lines) + "\n")
-    (TABLES / "table_properties_notes.tex").write_text("\\def\\TabPropertiesNotes{" + notes.text() + "}\n")
+    counts = []
+    for ds in data:
+        _src, drift = row_of(ds, "drift rate")
+        if drift:
+            ns = [str(drift[sd]["n"]) for sd in sides]
+            counts.append(f"{ns[0]}, {ns[1]} and {ns[2]} units in {NAME[ds]}" if not counts else f"{ns[0]}, {ns[1]} and {ns[2]} in {NAME[ds]}")
+    extra = (" Generated series are read with the record-end tolerance applied to measured records, so every generated unit"
+             f" enters the rows that depend on EOL; those rows rest on {' and '.join(counts)} (fitting, held-out, generated). The capacity-pair correlations carry an errors-in-variables bias of the"
+             " estimator (the degradation state is read from noisy capacity), once in the fitted target and again when"
+             " re-estimated on generated data.")
+    (TABLES / "table_properties_notes.tex").write_text("\\def\\TabPropertiesNotes{" + (notes.text() + extra).strip() + "}\n")
     write_json({"profiles": list(data), "columns": list(sides), "rows": res}, RESULTS_V2 / "table2_properties.json")
     return res
 
 
-# ---------------------------------------------------------------------------------------------------------------- Table 3
+# ---------------------------------------------------------------------------------------------------------------- Table 4 (usability)
 def table_usability(kind="recency"):
     notes = Notes()
     data = {}
@@ -148,7 +169,7 @@ def table_usability(kind="recency"):
         src = ARTIFACTS_V2 / "v6_usability" / "tables" / f"usability_{ds}.json"
         if src.exists():
             data[ds] = (src, json.loads(src.read_text())[ds][kind])
-    no_pat = notes.void("no inserted patterns in the profile (D05)") if data else ""
+    no_pat = notes.void("no inserted patterns in the profile") if data else ""
     seeds = "generation 0; model_init 0-4 (A, B); evaluation 20260915"
     rows = []
 
@@ -156,7 +177,7 @@ def table_usability(kind="recency"):
         cells = []
         for ds, (src, r) in data.items():
             cells.append(fn(r))
-            prov(f"Table 3 / {NAME[ds]} / {label}", src, f"{ds}.{kind}.{key}", "scripts/v2/v6_usability.py", seeds)
+            prov(f"Table 4 / {NAME[ds]} / {label}", src, f"{ds}.{kind}.{key}", "scripts/v2/v6_usability.py", seeds)
         rows.append(f"    {label} & " + " & ".join(cells) + " \\\\")
 
     add("Accuracy, NRMSE of the primary model (members passing)", lambda r: f"{f3(r['primary_nrmse'], 3)} ({r['gate_pass_members']}/10)", "primary_nrmse")
@@ -173,8 +194,10 @@ def table_usability(kind="recency"):
                             for c, v in r["redundant_channels"].items()) or "none", "redundant_channels")
     add("Pattern term: variance ratio, ablation", lambda r: no_pat, "term_ablation")
     (TABLES / "table_usability.tex").write_text("\n".join(rows) + "\n")
-    (TABLES / "table_usability_notes.tex").write_text("\\def\\TabUsabilityNotes{" + notes.text() + "}\n")
-    write_json({"weighting": kind, "values": {ds: r for ds, (src, r) in data.items()}}, RESULTS_V2 / "table3_usability.json")
+    n_units = sorted({r["units"]["test"] for _src, r in data.values()})
+    lead = f"{' / '.join(str(n) for n in n_units)} generated test units per profile. " if n_units else ""
+    (TABLES / "table_usability_notes.tex").write_text("\\def\\TabUsabilityNotes{" + lead + notes.text() + "}\n")
+    write_json({"weighting": kind, "values": {ds: r for ds, (src, r) in data.items()}}, RESULTS_V2 / "table4_usability.json")
 
 
 # ---------------------------------------------------------------------------------------------------------------- Table 4
@@ -195,9 +218,9 @@ def table_scores(kind="recency"):
                 m = s[k]["registers"]["registering_magnitude"]
                 cells.append(f"{m}" if m is not None else "--")
         rows.append(f"    {lab} & " + " & ".join(cells) + " \\\\")
-        prov(f"Table 4 / {lab}", src, f"{{{','.join(profs)}}}.{kind}.operators.{op}.<score>.registers", "scripts/v2/v7_scores.py", "generation 0; evaluation 20260915")
+        prov(f"Table 5 / {lab}", src, f"{{{','.join(profs)}}}.{kind}.operators.{op}.<score>.registers", "scripts/v2/v7_scores.py", "generation 0; evaluation 20260915")
     (TABLES / "table_resolution.tex").write_text("\n".join(rows) + "\n")
-    write_json({"weighting": kind, "profiles": profs, "values": {ds: R[ds] for ds in profs}}, RESULTS_V2 / "table4_scores.json")
+    write_json({"weighting": kind, "profiles": profs, "values": {ds: R[ds] for ds in profs}}, RESULTS_V2 / "table5_scores.json")
 
 
 # ---------------------------------------------------------------------------------------------------------------- Table 5
@@ -230,18 +253,18 @@ def table_isolation():
             t = R5.get(ds, {}).get("x1_on_v2", {}).get("tests", {}).get(name)
             cells.append(f"{f3(t['log_ratio_difference'], 2)} [{f3(t['ci_low'], 2)}, {f3(t['ci_high'], 2)}]" if t else "--")
         rows.append(f"    {lab} & " + " & ".join(cells) + " \\\\")
-    prov("Table 5 / v1 profiles", src1, "{MATR,HUST}.input_sets, tests", "scripts/v2/v1_tstr_isolation.py", SEEDS_GEN)
-    prov("Table 5 / v2 profiles", src5, "{MATR,HUST}.tstr_input_sets, x1_on_v2.tests", "scripts/v2/v5_fidelity.py", SEEDS_GEN)
+    prov("Table 3 / profiles without offsets", src1, "{MATR,HUST}.input_sets, tests", "scripts/v2/v1_tstr_isolation.py", SEEDS_GEN)
+    prov("Table 3 / profiles with offsets", src5, "{MATR,HUST}.tstr_input_sets, x1_on_v2.tests", "scripts/v2/v5_fidelity.py", SEEDS_GEN)
     (TABLES / "table_isolation.tex").write_text("\n".join(rows) + "\n")
     write_json({"v1_profiles": {ds: {"input_sets": {k: {kk: vv for kk, vv in v.items() if kk != "runs"} for k, v in R1[ds]["input_sets"].items()},
                                      "tests": R1[ds]["tests"], "readings": R1[ds]["readings"]} for ds in R1},
                 "v2_profiles": {ds: {"input_sets": {k: {kk: vv for kk, vv in v.items() if kk != "runs"} for k, v in R5[ds].get("tstr_input_sets", {}).items()},
                                      "x1_on_v2": R5[ds].get("x1_on_v2")} for ds in R5 if isinstance(R5[ds], dict) and "tstr" in R5[ds]}},
-               RESULTS_V2 / "table5_tstr_isolation.json")
+               RESULTS_V2 / "table3_tstr_isolation.json")
 
 
 # ---------------------------------------------------------------------------------------------------------------- Table 6
-METHODS = [("integrated_gradients", "IG"), ("feature_occlusion", "Feature occlusion"), ("timeshap", "TimeSHAP")]
+METHODS = [("integrated_gradients", "IG"), ("feature_occlusion", "Occlusion"), ("timeshap", "TimeSHAP")]
 
 
 def table_reference(kind="recency"):
@@ -264,20 +287,23 @@ def table_reference(kind="recency"):
                 if cvoid and k in ("allocation", "zero_mass"):
                     return notes.void(cvoid)
                 return ci(t[k], d)
-            rows.append(f"    {label} & {tr('rank')} & {ci(f['rank'], 3)} & {tr('allocation')} & {ci(f['allocation'], 3)} & {tr('temporal', 2)} & {ci(f['temporal'], 2)} & {tr('zero_mass')} & {f3(f['zero_mass']['mean'])} \\\\")
+            # reference model: unit means only (equal to the exact attribution by construction; its interval is on the exact row)
+            rows.append(f"    {label} & {tr('rank')} & {f3(f['rank']['mean'])} & {tr('allocation')} & {f3(f['allocation']['mean'])} & {tr('temporal', 2)} & {f3(f['temporal']['mean'], 2)} & {tr('zero_mass')} & {f3(f['zero_mass']['mean'])} \\\\")
             prov(f"Table 6 / {NAME[ds]} / {label}", src, f"{ds}.weightings.{kind}.scores.{{trained,reference}}/{key}", "scripts/v2/v8_reference_methods.py", seeds)
         ex = sc["reference_exact"]
-        rows.append(f"    Exact attribution $w(x - x^{{0}})$ & -- & {ci(ex['rank'], 3)} & -- & {ci(ex['allocation'], 3)} & -- & {ci(ex['temporal'], 2)} & -- & {f3(ex['zero_mass']['mean'])} \\\\")
+        stk = lambda x, d: (f"\\begin{{tabular}}[t]{{@{{}}c@{{}}}}{f3(x['mean'], d)}\\\\ {{[{f3(x['ci_low'], d)}, {f3(x['ci_high'], d)}]}}"  # noqa: E731
+                            "\\end{tabular}")  # interval under the mean, top-aligned with the row
+        rows.append(f"    Exact $w(x - x^{{0}})$ & -- & {stk(ex['rank'], 3)} & -- & {stk(ex['allocation'], 3)} & -- & {stk(ex['temporal'], 2)} & -- & {f3(ex['zero_mass']['mean'])} \\\\")
         fl = r["identifiability_floor"]
         for key, label in METHODS:
             if key not in fl:
                 continue
             q = fl[key]
-            rows.append(f"    Ensemble range, {label} & {f3(q['rank_min'])}--{f3(q['rank_max'])} & -- & {f3(q['allocation_min'])}--{f3(q['allocation_max'])} & -- & {f3(q['temporal_min'], 2)}--{f3(q['temporal_max'], 2)} & -- & -- & -- \\\\")
+            rows.append(f"    Range, {label} & {f3(q['rank_min'])}--{f3(q['rank_max'])} & -- & {f3(q['allocation_min'])}--{f3(q['allocation_max'])} & -- & {f3(q['temporal_min'], 2)}--{f3(q['temporal_max'], 2)} & -- & -- & -- \\\\")
         prov(f"Table 6 / {NAME[ds]} / ensemble range", src, f"{ds}.weightings.{kind}.identifiability_floor", "scripts/v2/v8_reference_methods.py", seeds)
         if "secondary_average_event" in r:
             s2 = r["secondary_average_event"]["scores"]
-            rows.append(f"    TimeSHAP, average-event background & {ci(s2['rank'], 3)} & -- & {ci(s2['allocation'], 3)} & -- & {ci(s2['temporal'], 2)} & -- & {f3(s2['zero_mass']['mean'])} & -- \\\\")
+            rows.append(f"    TimeSHAP, average event & {ci(s2['rank'], 3)} & -- & {ci(s2['allocation'], 3)} & -- & {ci(s2['temporal'], 2)} & -- & {ci(s2['zero_mass'], 3)} & -- \\\\")
             prov(f"Table 6 / {NAME[ds]} / TimeSHAP average event", src, f"{ds}.weightings.{kind}.secondary_average_event", "scripts/v2/v8_reference_methods.py", seeds)
     (TABLES / "table_reference.tex").write_text("\n".join(rows) + "\n")
     (TABLES / "table_reference_notes.tex").write_text("\\def\\TabReferenceNotes{" + notes.text() + "}\n")
@@ -307,6 +333,18 @@ def write_provenance_md(entries):
     path.write_text("\n".join(lines) + "\n")
 
 
+def tex_minus():
+    """Typeset negative numbers in the generated table bodies with a math minus ("-0.09" -> "$-$0.09"); ranges written
+    with "--" and the void marker are left alone. Notes are not touched (they may contain math)."""
+    import re
+
+    for f in TABLES.glob("table_*.tex"):
+        if f.name.endswith("_notes.tex"):
+            continue
+        t = f.read_text()
+        f.write_text(re.sub(r"(?<![\w$\-])-(?=\d)", "$-$", t))
+
+
 def main() -> int:
     p = stage_parser(__doc__, "v2/v10_write_paper")
     p.add_argument("--tables", nargs="*", default=["fidelity", "properties", "usability", "scores", "isolation", "reference", "figure_fidelity", "figure_degradation",
@@ -330,6 +368,7 @@ def main() -> int:
     for t in args.tables:
         fns[t]()
         print(f"[v10] {t} done", flush=True)
+    tex_minus()
     if args.no_provenance:
         return 0
     old = json.loads((RESULTS_V2 / "provenance.json").read_text()) if (RESULTS_V2 / "provenance.json").exists() else []

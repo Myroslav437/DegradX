@@ -26,7 +26,7 @@
 | | value |
 |---|---|
 | NRMSE on y_obs, ten members | 0.0012–0.0019 (gate 0.30) |
-| RMSE / SD(Σwε) (declared reading: ≤ 0.5 means the model reads the cell-level values) | 0.013–0.018; **all ten members read the cells** |
+| RMSE / SD(Σwε) (declared reading: ≤ 0.5 means the model reads the cell-level values) | 0.011–0.018; **all ten members read the cells** |
 | X4 conditional importance, A0: capacity / charge time / mean discharge V | 0.031 [0.027, 0.038] / 0.034 [0.030, 0.041] / 0.606 [0.526, 0.708]; all used materially by all ten members |
 | IG on the reference model vs ϕ*_obs (correctness check) | max \|Δ\| 7.5e-8 |
 
@@ -38,7 +38,7 @@
 
 Notes on the ranges:
 - **Rank agreement.** The range comes mostly from one member: B3 reads 0.888 and 0.891, while the other nine lie
-  within 0.950–0.965. Without B3 the range is still about 0.013, four times the gap.
+  within 0.950–0.965. Without B3 the range is still about 0.013, five times the gap.
 - **Temporal error.** It spreads over 0.53–1.02 positions across members for both methods.
 
 **On the standard y, the same 120 windows (V8, `reference_values.json`), HUST recency:**

@@ -85,7 +85,7 @@ jobs are cheaper than the benchmark's trained-model windows.
 
   | | rank: gap / ranges | allocation: gap / ranges | temporal: gap / ranges |
   |---|---|---|---|
-  | MATR recency | 0.073 / 0.10, 0.12, 0.10 → **no ordering** | **0.083 / 0.054, 0.039, 0.051 → ordering supported** | 0.74 / 0.87, 1.03, 0.72 → no ordering |
+  | MATR recency | 0.073 / 0.10, 0.12, 0.10 → **no ordering** | **0.083 / 0.054, 0.039, 0.051 → ordering supported** | 0.73 / 0.87, 1.03, 0.72 → no ordering |
   | HUST recency | 0.016 / 0.15, 0.21, 0.18 → no ordering | 0.018 / 0.093, 0.098, 0.094 → no ordering | 0.11 / 1.17, 0.73, 1.20 → no ordering |
 
   Under uniform weighting the IG and occlusion floors give the same pattern. MATR allocation is supported (gap 0.072

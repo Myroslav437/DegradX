@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DegradX Experiment Log v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#F4F6F7; --surface:#FFFFFF; --surface-2:#EDF0F2; --line:#DDE2E6; --line-soft:#E9EDEF;
+    --ink:#13181C; --ink-2:#55626C; --ink-3:#7E8A94;
+    --accent:#A8501C; --accent-soft:#F3E7DE; --slate:#2E4859; --void:#8A939B;
+    --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+    --wrap:1000px; --read:70ch;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+      --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+      --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+    --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+    --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.62;
+       -webkit-font-smoothing:antialiased; overflow-wrap:break-word;}
+  .wrap{max-width:var(--wrap); margin:0 auto; padding-inline:20px;}
+  p,li{max-width:var(--read);}
+  h1,h2,h3{font-family:var(--serif); text-wrap:balance; margin:0;}
+  a{color:var(--accent);}
+  code{font-family:var(--mono); font-size:.86em; overflow-wrap:anywhere;}
+
+  /* header ------------------------------------------------------------------ */
+  header.top{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--ground);
+             border-bottom:1px solid var(--line);}
+  .topbar{display:flex; align-items:center; gap:18px; justify-content:space-between; padding-block:10px;}
+  .topbar .mark{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); white-space:nowrap;}
+  nav.jump{display:flex; gap:2px; overflow-x:auto; scrollbar-width:none; min-width:0;}
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump a{font-family:var(--mono); font-size:12px; color:var(--ink-2); text-decoration:none;
+             padding:4px 7px; border-radius:3px; white-space:nowrap;}
+  nav.jump a:hover{background:var(--surface-2); color:var(--ink);}
+  nav.jump a:focus-visible{outline:2px solid var(--accent); outline-offset:1px;}
+  nav.jump a.hot{color:var(--accent);}
+
+  .masthead{padding-block:52px 34px; border-bottom:2px solid var(--ink); margin-bottom:8px;}
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+  h1{font-size:clamp(32px,5.2vw,50px); line-height:1.08; font-weight:600; letter-spacing:-.015em;}
+  .standfirst{font-family:var(--serif); font-size:19px; line-height:1.55; color:var(--ink-2); margin:16px 0 0; max-width:64ch;}
+  .facts{display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:24px;}
+  .fact{font-family:var(--mono); font-size:12px; color:var(--ink-2); border:1px solid var(--line);
+        border-radius:2px; padding:4px 9px; background:var(--surface);}
+  .fact b{color:var(--ink); font-weight:500;}
+
+  /* summary ----------------------------------------------------------------- */
+  .summary{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:1px;
+           background:var(--line); border:1px solid var(--line); margin:34px 0 10px;}
+  .q{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column; gap:7px;}
+  .q .tag{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);}
+  .q .num{font-family:var(--serif); font-size:30px; line-height:1; font-weight:600; font-variant-numeric:tabular-nums;}
+  .q .num small{font-size:15px; color:var(--ink-2); font-weight:400;}
+  .q p{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.5;}
+
+  /* flags ------------------------------------------------------------------- */
+  .flags{margin:30px 0 6px; border:2px solid var(--accent); background:var(--accent-soft); padding:20px 22px 14px;
+         scroll-margin-top:64px;}
+  .flags h2{font-size:24px; font-weight:600;}
+  .flags .lede{margin:8px 0 0; font-size:14.5px; color:var(--ink-2);}
+  .flags ol{margin:16px 0 0; padding-left:22px;}
+  .flags li{font-size:14.5px; line-height:1.55; margin-bottom:11px; max-width:none;}
+  .flags li > b:first-child{font-weight:600;}
+  .flags li::marker{font-family:var(--mono); font-size:12px; color:var(--accent);}
+
+  /* plain blocks (v1 -> v2, index) ----------------------------------------- */
+  section.block{padding-top:44px; scroll-margin-top:64px;}
+  section.block > h2{font-size:26px; font-weight:600; letter-spacing:-.01em;}
+  section.block > p{margin:12px 0 0;}
+  .note{font-size:13px; color:var(--ink-2); margin:9px 0 0;}
+
+  /* stages ------------------------------------------------------------------ */
+  section.stage{display:grid; grid-template-columns:64px minmax(0,1fr); padding-top:46px; scroll-margin-top:64px;}
+  .close{scroll-margin-top:64px;}
+  .spine{position:relative;}
+  .spine::before{content:""; position:absolute; left:15px; top:6px; bottom:-46px; width:1px; background:var(--line);}
+  section.stage.last .spine::before{bottom:auto; height:36px;}
+  .badge{position:relative; width:31px; height:31px; border-radius:50%; background:var(--surface);
+         border:1px solid var(--ink); color:var(--ink); font-family:var(--mono); font-size:12px;
+         display:grid; place-items:center;}
+  .badge.sm{font-size:11px; letter-spacing:-.02em;}
+  .stage-head h2{font-size:26px; font-weight:600; letter-spacing:-.01em;}
+  .run{font-family:var(--mono); font-size:12px; color:var(--ink-3); margin:6px 0 0;}
+  .run span{white-space:nowrap;}
+  .run span + span::before{content:"·"; margin:0 8px; color:var(--line);}
+  .commits{font-family:var(--mono); font-size:12px; color:var(--ink-3); margin:4px 0 0; line-height:1.6;}
+  .commits code{font-size:12px; color:var(--ink-2);}
+  section.stage > div{min-width:0;}
+  .stage-body{padding-bottom:6px;}
+  .stage-body > p{margin:15px 0 0;}
+  .stage-body ul{margin:10px 0 0; padding-left:20px;}
+  .stage-body li{font-size:15px; margin-bottom:5px;}
+  h3{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+     color:var(--ink-3); font-weight:500; margin:26px 0 10px;}
+
+  /* tables ------------------------------------------------------------------ */
+  .tablewrap{overflow-x:auto; margin-top:18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
+  table{border-collapse:collapse; width:100%; font-size:14px; font-variant-numeric:tabular-nums;}
+  th,td{text-align:right; padding:8px 12px; border-bottom:1px solid var(--line-soft); white-space:nowrap; vertical-align:top;}
+  th:first-child,td:first-child{text-align:left; white-space:normal; min-width:180px;}
+  thead th{font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--ink-3); font-weight:500; vertical-align:bottom;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-family:var(--mono); font-size:13.5px;}
+  td.txt{text-align:left; white-space:normal; min-width:200px; font-size:13.5px;}
+  tr.sub td{color:var(--ink-2);}
+  tr.sub td:first-child{padding-left:24px;}
+  .void{font-family:var(--mono); font-size:11.5px; color:var(--void); border:1px solid var(--line);
+        border-radius:2px; padding:1px 6px; white-space:nowrap;}
+  .ok{font-family:var(--mono); font-size:11.5px; color:var(--slate); white-space:nowrap;}
+
+  /* decisions --------------------------------------------------------------- */
+  .decision{border-left:3px solid var(--accent); background:var(--surface); padding:16px 18px;
+            margin-top:20px; max-width:var(--read);}
+  .decision.dev{border-left-color:var(--slate);}
+  .decision.dev h4 .id{color:var(--slate);}
+  .decision h4{margin:0 0 10px; font-family:var(--sans); font-size:15px; font-weight:600; line-height:1.4;}
+  .decision h4 .id{font-family:var(--mono); font-size:12px; color:var(--accent); margin-right:9px;
+                   letter-spacing:.04em;}
+  .decision dl{display:grid; grid-template-columns:auto 1fr; gap:7px 14px; margin:0;}
+  .decision dt{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+               color:var(--ink-3); padding-top:3px;}
+  .decision dd{margin:0; font-size:14.5px; line-height:1.55; color:var(--ink); min-width:0;}
+  .decision dd ul{margin:2px 0 0; padding-left:18px;}
+  .decision dd li{font-size:14.5px; margin-bottom:3px;}
+  .decision + .decision{margin-top:12px;}
+  .pd{font-family:var(--mono); font-size:10.5px; font-weight:500; letter-spacing:.08em; text-transform:uppercase;
+      color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:0 5px; margin-left:8px;
+      vertical-align:1px; white-space:nowrap;}
+  .pd.pre{color:var(--slate); border-color:var(--slate);}
+  .pd.ex{color:var(--ink-2); border-color:var(--line);}
+
+  .stopbox{border:1px solid var(--line); border-top:3px solid var(--accent); background:var(--surface);
+           padding:16px 18px 18px; margin-top:22px;}
+  .stopbox h4{margin:0 0 8px; font-family:var(--sans); font-size:15px; font-weight:600;}
+  .stopbox p{margin:8px 0 0; font-size:14.5px;}
+  .stopbox .tablewrap{margin-top:12px;}
+
+  .takeaway{display:flex; gap:12px; margin-top:24px; padding-top:14px; border-top:1px solid var(--line);
+            max-width:var(--read);}
+  .takeaway::before{content:"▪"; color:var(--accent); font-size:11px; line-height:1.9;}
+  .takeaway p{margin:0; font-family:var(--serif); font-size:17px; line-height:1.5;}
+
+  /* closing ----------------------------------------------------------------- */
+  .close{margin-top:56px; border-top:2px solid var(--ink); padding-top:30px;}
+  .close h2{font-size:26px; font-weight:600;}
+  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:26px; margin-top:22px;}
+  .cols h3{margin-top:0;}
+  .cols ul{margin:0; padding-left:18px;}
+  .cols li{font-size:14.5px; margin-bottom:7px; color:var(--ink);}
+  footer{margin:44px 0 20px; padding-top:16px; border-top:1px solid var(--line);
+         font-family:var(--mono); font-size:12px; color:var(--ink-3);}
+  footer p{max-width:none;}
+
+  @media (max-width:720px){
+    .wrap{padding-inline:16px;}
+    section.stage{grid-template-columns:minmax(0,1fr); gap:0;}
+    .spine{display:flex; align-items:center; gap:10px; margin-bottom:8px;}
+    .spine::before{display:none;}
+    th:first-child,td:first-child{min-width:140px;}
+    .run span{white-space:normal;}
+    .topbar .mark{display:none;}
+    .flags{padding:16px 14px 8px;}
+    .flags ol{padding-left:18px;}
+  }
+  @media (max-width:520px){
+    .decision{padding:14px 14px;}
+    .decision dl{grid-template-columns:1fr; gap:2px 0;}
+    .decision dt{padding-top:8px;}
+    td.txt{min-width:170px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important;}}
+
+  /* print (A4) -------------------------------------------------------------- */
+  @page{size:A4; margin:15mm 13mm 16mm;}
+  @media print{
+    :root, :root:not([data-theme="light"]), :root[data-theme="dark"]{
+      --ground:#FFFFFF; --surface:#FFFFFF; --surface-2:#EDF0F2; --line:#D3D9DE; --line-soft:#E4E8EB;
+      --ink:#13181C; --ink-2:#4B5862; --ink-3:#6E7A84;
+      --accent:#A8501C; --accent-soft:#F7EEE7; --slate:#2E4859; --void:#7A848C;
+    }
+    body{font-size:10pt; line-height:1.5; background:#FFFFFF; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    .wrap{max-width:none; padding-inline:0;}
+    header.top{display:none;}
+    .masthead{padding-block:0 18px;}
+    h1{font-size:28pt;}
+    .standfirst{font-size:12.5pt;}
+    p,li{max-width:none;}
+    .summary{grid-template-columns:repeat(4,1fr); margin-top:18px;}
+    .q .num{font-size:20pt;}
+    .q p{font-size:8.5pt;}
+    section.stage{grid-template-columns:40px minmax(0,1fr); padding-top:22px;}
+    section.block{padding-top:22px;}
+    .spine::before{display:none;}
+    .stage-head h2, section.block > h2, .close h2{font-size:16pt;}
+    h2,h3,h4,.stage-head{break-after:avoid; page-break-after:avoid;}
+    .decision,.stopbox,.flags li,.q,tr,.takeaway{break-inside:avoid; page-break-inside:avoid;}
+    .decision{max-width:none;}
+    .tablewrap{overflow:visible;}
+    table{font-size:8.5pt;}
+    th,td{white-space:normal; padding:4px 6px;}
+    thead th{font-size:7.5pt;}
+    td.num{font-size:8.5pt;}
+    th:first-child,td:first-child{min-width:34mm;}
+    td.txt{min-width:0;}
+    .decision dd,.decision dd li,.flags li,.stage-body li,.cols li,.stopbox p{font-size:9.5pt;}
+    .takeaway p{font-size:11pt;}
+    a{color:inherit; text-decoration:none;}
+    .close{margin-top:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topbar">
+    <span class="mark">DegradX · experiment log v2</span>
+    <nav class="jump" aria-label="Sections">
+      <a href="#flags" class="hot">Flags</a><a href="#v1v2">v1→v2</a>
+      <a href="#v0">V0</a><a href="#v1">V1</a><a href="#v2">V2</a><a href="#v3">V3</a><a href="#v4">V4</a>
+      <a href="#v5">V5</a><a href="#v6">V6</a><a href="#v7">V7</a><a href="#v8">V8</a><a href="#v9">V9</a><a href="#v10">V10</a>
+      <a href="#records">Records</a><a href="#close">Close</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="masthead">
+    <p class="eyebrow">7–8 October 2026 · stages V0–V10 · branch v2</p>
+    <h1>DegradX Experiment Log — v2</h1>
+    <p class="standfirst">The second experiment programme, run under the brief “DegradX v2” on top of the frozen v1
+      results. It located where MATR's transfer gap sits, gave the generator per-unit offsets and correlated
+      noise, tried a third dataset that stopped at its declared rule, and added two attribution scores. It also ran
+      TimeSHAP at its full declared scale and piloted an observation-level target. Every methodological change made
+      along the way is recorded.</p>
+    <div class="facts">
+      <span class="fact"><b>2</b> profiles: MATR, HUST</span>
+      <span class="fact">third dataset ISU-ILCC: <b>parked</b></span>
+      <span class="fact"><b>5 760</b> TimeSHAP explanations</span>
+      <span class="fact">decisions <b>D25–D31</b></span>
+      <span class="fact">amendments <b>round 7</b></span>
+      <span class="fact">tag <b>v1-results</b> preserved</span>
+    </div>
+  </div>
+
+  <section class="summary" aria-label="Where the research questions landed in v2">
+    <div class="q">
+      <span class="tag">RQ1 · fidelity</span>
+      <span class="num">1.17 <small>/ 1.49</small></span>
+      <p>Transfer ratio for HUST and MATR (v1: 1.46 / 3.42). HUST's interval [0.94, 1.34] contains 1 and HUST is the
+        fidelity anchor (D29). MATR's ratio lies outside that interval. The covariance gap is closed on both profiles.</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ2 · usability</span>
+      <span class="num">3 <small>of 3</small></span>
+      <p>Weighted channels used by every ensemble member on MATR and HUST, under both weightings (X4). The v1 models
+        read capacity alone. NRMSE 0.091 / 0.095, inside the 0.30 gate.</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ3 · scores (X5)</span>
+      <span class="num">0.1 <small>· σ 8</small></span>
+      <p>The temporal profile error registers 10 % of the mass moved to the window's end, and smoothing at σ = 8
+        positions. Rank agreement registers only a complete shift, and never smoothing.</p>
+    </div>
+    <div class="q">
+      <span class="tag">Reference values (X7)</span>
+      <span class="num">0.87–0.96 <small>vs</small> 0.42–0.75</span>
+      <p>Rank agreement of the exact attribution against the three methods on trained models, all 120 windows. Of all
+        method orderings, the ensemble floor supports only one: on MATR, occlusion's channel allocation is worse.</p>
+    </div>
+  </section>
+
+  <!-- FLAGS ----------------------------------------------------------------- -->
+  <section class="flags" id="flags" aria-labelledby="flags-h">
+    <h2 id="flags-h">Flags for the authors</h2>
+    <p class="lede">These items need a decision or a revision by the authors. None of them was settled by the agent.</p>
+    <ol>
+      <li><b>The AI disclosure understates what the AI agent did.</b> The Acknowledgments of
+        <code>paper/paper.tex</code> say that Anthropic Claude Opus 5 was used “for the purposes of readability
+        improvement, proofreading, and assisting with code implementation”. In both v1 and v2, an AI agent ran the
+        experiments and drafted the declarations, the decision records (D25–D31 in v2) and the methodology and results
+        text. The agent did not edit the acknowledgments, which are on the brief's no-touch list. The authors should
+        revise the disclosure.</li>
+      <li><b>The ISU-ILCC stop report awaits your decision.</b>
+        <code>artifacts/v2/STOP_REPORT_third_profile_offsets.md</code> recommends option A: report ISU-ILCC as the X6
+        outcome and continue with MATR and HUST. The X6-pending paper edits encode option A. They are in §3.4, with the
+        related rows in §1, §3.1.1 and §3.3 of AMENDMENTS round 7, and they change if another option is chosen. Option
+        B (condition-level mappings) would be a new D-record plus about 6–8 h of compute.</li>
+      <li><b>The D28 E2 reading is a choice.</b> ISU-ILCC passes E2 only under the declared-extraction branch: the
+        level is tied to the C/5 measurement at the anchors. Under the strict reading, a direct full-capacity
+        measurement at every position, E2 fails, and brief §6 (stop and report) would apply. See D28.</li>
+      <li><b>The Abstract and Conclusion are still template placeholders.</b> The abstract environment is empty, and
+        the Conclusion reads “Your conclusion here”. The brief excluded both from the agent's edits. The authors write
+        them against the v2 results.</li>
+      <li><b>Several rules were set after data were seen.</b> v1: D01, D04, D05, D13 and D20. v2: D27 and D30. The r3
+        declarations themselves were written after the v1 results were known (D25: “with every v1 result known”). The
+        Limitations paragraph of §5 now states each of them in words (no IDs), adds the choice of HUST as the anchor,
+        and says that the declarations for the second set of measurements were written after the first results were known.
+        The authors should confirm that the wording is the one they want to publish.</li>
+      <li><b>The discriminator cells of Table 1 are void under D02b readability (T6).</b> In each profile only one of
+        the three generation seeds is readable. The X3 reading “narrows” is a shift of the seed mean, not a readable
+        level. v1's S5 cells were not re-checked: v1's predictions were not saved.</li>
+      <li><b>v1's TimeSHAP comparisons mixed window sets.</b> TimeSHAP was scored on 40 windows, IG and occlusion on
+        120. On matched windows, MATR's TimeSHAP rank agreement lies between IG and occlusion: its gap to IG is 0.021,
+        against 0.083 on the mixed sets. V7 adds like-for-like rows. v2 runs every method on all 120 windows.</li>
+      <li><b>The within-unit correlation estimator has a known errors-in-variables bias.</b> ρ̄ is estimated from
+        residuals about φ<sub>c</sub>(ẑ), with ẑ read from noisy capacity, so correlations on the capacity pairs are
+        inflated. The generator inherits the bias, and re-estimation on generated data adds it again (V3 anomaly 4,
+        V4 warning 2, V5 anomaly 4). It is reported as a limitation, and the estimator is unchanged.</li>
+      <li><b>X3 (correlated noise) has a negligible share of its own in the two measures where it was isolated
+        (covariance agreement, discriminator).</b> The X3-off set reaches the same values there, so those gains are
+        X2's. Transfer and the property table were not run with X3 off, so X3's share in them is not measured. D29's
+        cost line records this as a negative result for X3.</li>
+      <li><b>v1's S6–S8 intervals used 2 000 bootstrap resamples, not 10 000 (T4).</b> Whether any v1 reading sits
+        within the extra Monte Carlo error of its threshold has not been re-checked. Every v2 interval uses
+        10 000.</li>
+    </ol>
+  </section>
+
+  <!-- v1 -> v2 -------------------------------------------------------------- -->
+  <section class="block" id="v1v2">
+    <h2>v1 → v2: the headline numbers</h2>
+    <p>The same quantity before and after the v2 generator (per-unit offsets X2, correlated noise X3), per profile,
+      recency weighting. v1 values are from <code>artifacts/s5_fidelity</code>, <code>s6_usability</code> and
+      <code>s8_reference_methods</code> at tag <code>v1-results</code>. The v1 allocation and temporal errors are the
+      v1 maps rescored at V7. v2 values are from the V5, V6 and V8 artifacts.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Measure</th><th>MATR v1</th><th>MATR v2</th><th>HUST v1</th><th>HUST v2</th></tr></thead>
+        <tbody>
+          <tr><td>TSTR transfer ratio [95 % BCa]</td><td class="num">3.42 [2.28, 4.96]</td><td class="num">1.49 [1.04, 2.29]</td><td class="num">1.46 [1.11, 1.76]</td><td class="num">1.17 [0.94, 1.34]</td></tr>
+          <tr><td>Discriminative error, mean over generation seeds (0.5 = indistinguishable)</td><td class="num">0.072</td><td class="num">0.333 <span class="void">void · D02b</span></td><td class="num">0.164</td><td class="num">0.485 <span class="void">void · D02b</span></td></tr>
+          <tr><td>Covariance agreement, rel. Frobenius (measured baseline [95 %])</td><td class="num">0.687</td><td class="num">0.209 (0.174 [0.080, 0.442]) <span class="ok">gap closed</span></td><td class="num">0.424</td><td class="num">0.054 (0.038 [0.017, 0.125]) <span class="ok">gap closed</span></td></tr>
+          <tr><td>Primary NRMSE on y (gate ≤ 0.30)</td><td class="num">0.036</td><td class="num">0.091</td><td class="num">0.012</td><td class="num">0.095</td></tr>
+          <tr><td>Permutation importance on the trained model, charge time / mean discharge V</td><td class="num">0.0009 / 0.0003</td><td class="num">0.256 / 0.085</td><td class="num">0.0002 / 0.0000</td><td class="num">0.049 / 0.808</td></tr>
+          <tr><td>X4 conditional importance, charge time / mean discharge V</td><td><span class="void">not measured</span></td><td class="num">0.053 [0.037, 0.092] / 0.049 [0.038, 0.079]</td><td><span class="void">not measured</span></td><td class="num">0.015 [0.012, 0.018] / 0.631 [0.545, 0.744]</td></tr>
+          <tr><td>Spearman(y, RUL)</td><td class="num">−0.74</td><td class="num">−0.71</td><td class="num">−0.91</td><td class="num">−0.61</td></tr>
+          <tr><td>Rank agreement, exact attribution of the reference model</td><td class="num">0.815</td><td class="num">0.869</td><td class="num">0.870</td><td class="num">0.957</td></tr>
+          <tr><td>Rank agreement, trained model: IG / occlusion / TimeSHAP</td><td class="num">0.551 / 0.461 / 0.468<sup>a</sup></td><td class="num">0.485 / 0.420 / 0.493</td><td class="num">0.321 / 0.298 / 0.333<sup>a</sup></td><td class="num">0.734 / 0.750 / 0.739</td></tr>
+          <tr class="sub"><td>v1, all three on the same 40 windows (V7)</td><td class="num">0.489 / 0.434 / 0.468</td><td class="num">—</td><td class="num">0.346 / 0.352 / 0.333</td><td class="num">—</td></tr>
+          <tr><td>Channel allocation error (TV), trained: IG / occlusion / TimeSHAP</td><td class="num">0.613 / 0.644 / 0.639<sup>a</sup></td><td class="num">0.294 / 0.377 / 0.301</td><td class="num">0.689 / 0.672 / 0.674<sup>a</sup></td><td class="num">0.164 / 0.182 / 0.176</td></tr>
+          <tr><td>Temporal profile error [positions], trained: IG / occlusion / TimeSHAP</td><td class="num">3.70 / 3.42 / 4.00<sup>a</sup></td><td class="num">1.86 / 2.56 / 1.82</td><td class="num">2.70 / 2.87 / 3.39<sup>a</sup></td><td class="num">2.82 / 2.93 / 2.86</td></tr>
+          <tr><td>Zero-weight mass, trained</td><td class="num">0.113–0.136</td><td class="num">0.134 / 0.198 / 0.136</td><td class="num">0.014–0.027</td><td class="num">0.037 / 0.040 / 0.038</td></tr>
+          <tr><td>Ensemble floor: rank-agreement range of ten members, IG / occlusion / TimeSHAP</td><td class="num">0.440–0.551 / 0.378–0.470 / not measured (D23)</td><td class="num">0.41–0.51 / 0.33–0.45 / 0.42–0.51</td><td class="num">0.212–0.544 / 0.254–0.372 / not measured (D23)</td><td class="num">0.60–0.75 / 0.57–0.77 / 0.60–0.78</td></tr>
+          <tr><td>Method ordering the floor supports</td><td class="txt">none (rank agreement only)</td><td class="txt">channel allocation only: occlusion worse</td><td class="txt">none (rank agreement only)</td><td class="txt">none</td></tr>
+          <tr><td>TimeSHAP design</td><td class="txt" colspan="2">v1 (D23): 40 of 120 windows; sampling seeds 0–1 on trained models and seed 0 on the reference model; nsamples 32 000; no TimeSHAP floor; about 1 400 explanations over three profiles and three weightings (D23 projection).<br>v2 (X7): 120 windows × seeds 0–2 on the trained and reference models, both weightings; average event × 3 seeds; floor on the other nine members; nsamples 32 000, no reductions. 2 880 explanations per profile, 5 760 in all, run in 1.71 h on 12 CPU workers.</td><td class="txt" colspan="2">As for MATR: the design is per profile, and the run time covers both profiles.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><sup>a</sup> v1 TimeSHAP values rest on the 40 D23 windows, and IG and occlusion on 120. The
+      v1 allocation and temporal errors come from V7 Part B, which rescored the saved v1 S8 maps. The v1
+      discriminative error and covariance are seed means of <code>artifacts/s5_fidelity/tables/fidelity.json</code>,
+      and V5 quotes them identically. The v1 discriminator cells were not checked for D02b readability (T6).</p>
+  </section>
+
+  <p style="margin-top:30px; color:var(--ink-2); font-size:14.5px;">Each stage below records what ran, what came out,
+    the readings declared in r3, the anomalies and the decisions taken. Numbers are copied from the stage
+    <code>REVIEW.md</code> files, the decision records and <code>docs/DEVIATIONS.md</code>, with their rounding. A
+    measurement below its declared minimum is reported as <span class="void">void</span>, as in v1. A decision taken
+    after the data it concerns were seen is marked <span class="pd">post-data</span>.</p>
+
+  <!-- V0 ------------------------------------------------------------------- -->
+  <section class="stage" id="v0">
+    <div class="spine"><span class="badge">V0</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Setup and declarations r3, before any v2 stage ran</h2>
+        <p class="run"><span>7 Oct</span><span>configs/declarations.yaml r3</span><span>3 reviewers + skeptic</span></p>
+        <p class="commits">commits <code>9c25b6c</code> r3 and D25 · <code>60ee2b2</code> r3 addition, X9 declared before V9 · tag <code>v1-results</code> at <code>a6be383</code></p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The tag <code>v1-results</code> marks the v1 HEAD (<code>a6be383</code>) and is pushed. All v2 work is on
+          branch <code>v2</code>, with output roots <code>artifacts/v2/</code>, <code>results/v2/</code> and
+          <code>data/v2/</code>. Declarations r3 were added as <code>declared_by_design.v2</code>, with dated
+          (2026-10-07) supersession entries. The declarations as they stood at <code>v1-results</code> are kept in
+          <code>configs/declarations_history/</code>. r3 declares:</p>
+        <ul>
+          <li>the scope cuts (D25) and the stop rules: the six cases of brief §6;</li>
+          <li>the X1 input sets and readings, with a leave-one-seed-out robustness rule and the HUST control reading;</li>
+          <li>X2 per-unit offsets by backfitting, with a stop rule: Var(y<sub>offset</sub>) / Var(y) &gt; 0.5;</li>
+          <li>X3: one innovation matrix per profile at the pooled φ, targeting the within-unit ρ̄;</li>
+          <li>the X4 channel-usage gate, and the X5 scores with a “registers” reading;</li>
+          <li>X6 eligibility E1–E6, with E3 binding at 67;</li>
+          <li>X7 full-scale TimeSHAP: equivalence ≤ 1e-10, stop above 36 h;</li>
+          <li>the X9 pilot, committed before V9 ran.</li>
+        </ul>
+        <p>Three independent reviewers checked r3 and D25 against the brief. A skeptic was then told to refute each
+          finding, and the surviving ones were applied before the commit:</p>
+        <ul>
+          <li><b>X3 attenuation.</b> Fixed by one matrix at the pooled φ and the within-unit target ρ̄.</li>
+          <li><b>X1 interpretation.</b> Fixed by a state-normalised variant, a per-unit-centred variant and the
+            leave-one-seed-out rule.</li>
+          <li><b>X2 reporting.</b> The between-unit variance of residual means is now reported. v1's AR(1) estimator
+            centred every unit, so offsets never entered the v1 noise variance.</li>
+          <li><b>D18 consistency, X4 materiality and commit order.</b> D27 was committed separately, after r3.</li>
+        </ul>
+        <h3>What came out</h3>
+        <p>r3 parses with every <code>v2</code> key present. The library additions leave v1 generation unchanged: units
+          regenerated from the v1 profiles are bit-identical to the cached v1 units (MATR, HUST and NASA PCoE, 25 units
+          each).</p>
+
+        <div class="decision">
+          <h4><span class="id">D25</span>v2 drops five measurements that v1 showed carry no information<span class="pd pre">pre-data · v1 results known</span></h4>
+          <dl>
+            <dt>Question</dt><dd>v1 ran five things whose results could not change any claim: final-position weighting,
+              the generator-setting sweep, representation distance, NASA PCoE and cross-fitting. Each costs compute in
+              v2, and three of them are multiplied by full-scale TimeSHAP. Which does v2 keep?</dd>
+            <dt>Options</dt><dd>(a) Keep all five. (b) Drop each one that v1 shows answered nothing, keep the v1
+              artifacts citable, and say why in the paper. (c) Keep them, reported only in the supplement.</dd>
+            <dt>Chosen</dt><dd>(b). Each item is dropped for what it measured in v1: tie-dominated rank agreement, a
+              sweep whose exclusions no v2 question needs, an interval wider than the value, void fidelity, an
+              unreadable pooled ratio.
+              Recency is primary and uniform is the sensitivity readout. This saves about 20 % of TimeSHAP compute
+              (720 of 3 720 explanations per profile).</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>The paper loses its only profile with inserted patterns. If the third profile enables none either,
+                  v2 has no sparse set at all, and the pattern-term rows are void. That is what happened (V2).</li>
+                <li>Final-position weighting stays defined (Figure 4) but is not scored. The temporal profile error
+                  would be well defined there, and arguably most informative, but it is not evaluated: a stated
+                  limitation.</li>
+                <li>The operating range of §3.5.3 is no longer reported. Its definition stays, marked as not run, and
+                  the v1 result is cited.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="decision dev">
+          <h4><span class="id">T4</span>v1 bootstrap intervals used 2 000 resamples instead of 10 000<span class="pd ex">tooling · recorded at V0</span></h4>
+          <dl>
+            <dt>Found</dt><dd>v1 S6, S7 and S8 used <code>n_resamples=2000</code>, against the declared 10 000; S5 used
+              10 000. This was a run-time choice, not recorded at the time, and the v2 pre-registration review found
+              it.</dd>
+            <dt>Cost</dt><dd>None to any point estimate. The interval endpoints carry more Monte Carlo error, a few per
+              cent of the interval width. Whether any v1 reading sits within that distance of its threshold has not
+              been re-checked, so v1 intervals are cited with this caveat. Every v2 interval uses 10 000.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>Every v2 reading, stop rule and scope cut was committed before the stage it governs
+          ran. Two v2 rules were set after data were seen: D27, committed separately before V1 and V3, and D30, after the
+          V5 run. Both are marked post-data.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V1 ------------------------------------------------------------------- -->
+  <section class="stage" id="v1">
+    <div class="spine"><span class="badge">V1</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>X1 — where MATR's transfer gap sits (v1 profiles, no generator change)</h2>
+        <p class="run"><span>7 Oct</span><span>CUDA, 70 min (21:44–22:55)</span><span>240 trainings</span></p>
+        <p class="commits">commits <code>ac2726e</code> D27, before the run · <code>a8a9b9a</code> script · <code>b3793d8</code> results, D26 · <code>efe5f37</code> D26 references</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>For MATR and HUST, six input sets were run, each with TRTR (model seeds 0–4) and TSTR (v1 generation seeds
+          0–2 × model seeds 0–4). The held-out units were those of S5: 38 MATR and 23 HUST units reaching EOL. The
+          readings, the leave-one-seed-out rule and the HUST control reading were declared before the run.</p>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Input set</th><th>MATR ratio [95 % BCa]</th><th>HUST ratio [95 % BCa]</th></tr></thead>
+            <tbody>
+              <tr><td>full (reproduces v1 exactly, |Δ| = 0)</td><td class="num">3.420 [2.276, 4.958]</td><td class="num">1.461 [1.111, 1.764]</td></tr>
+              <tr><td>capacity + elapsed position</td><td class="num">1.096 [0.865, 1.497]</td><td class="num">1.280 [1.079, 1.529]</td></tr>
+              <tr><td>capacity / q₁ + elapsed position</td><td class="num">1.106 [0.971, 1.239]</td><td class="num">1.164 [0.920, 1.451]</td></tr>
+              <tr><td>two-point state + elapsed position (variant)</td><td class="num">1.109 [0.946, 1.299]</td><td class="num">1.137 [0.899, 1.396]</td></tr>
+              <tr><td>full, non-capacity centred per unit (variant)</td><td class="num">2.035 [1.415, 2.762]</td><td class="num">1.222 [1.049, 1.455]</td></tr>
+              <tr><td>full, measured side cleaned with D27 (descriptive)</td><td class="num">3.506 [2.299, 4.994]</td><td class="num">1.461 [1.111, 1.764]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Declared reading (paired BCa, Δlog)</th><th>MATR</th><th>holds</th><th>HUST</th><th>holds</th></tr></thead>
+            <tbody>
+              <tr><td>per-cell structure: full − capacity only</td><td class="num">1.138 [0.657, 1.753]</td><td>yes</td><td class="num">0.132 [−0.087, 0.343]</td><td>no</td></tr>
+              <tr><td>initial-capacity spread: capacity only − capacity / q₁</td><td class="num">−0.009 [−0.325, 0.294]</td><td>no</td><td class="num">0.095 [−0.140, 0.343]</td><td>no</td></tr>
+              <tr><td>offsets specifically: full − centred</td><td class="num">0.519 [0.213, 0.923]</td><td>yes</td><td class="num">0.179 [−0.074, 0.401]</td><td>no</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The MATR readings survive the removal of held-out cell MATR_b1c2: per-cell structure 0.902 [0.568, 1.418],
+          offsets 0.437 [0.158, 0.857]. Six checks pass.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>The two models use the non-capacity channels differently.</b> The measured-trained model uses them a
+            great deal: MATR TRTR RMSE is 326 cycles on capacity alone and 151 with all channels. The generated-trained
+            model cannot: TSTR is 357 and 516. That asymmetry is the gap.</li>
+          <li><b>The v1 generator's q₁ spread was far below the measured one</b> (MATR IQR 1.8 against 11.6 mAh). It
+            does not affect transfer.</li>
+          <li><b>The <code>robust_to_leave_one_out</code> flag is descriptive</b>, and it would mis-mark an interval
+            lying wholly below 0. No V1 or V5 interval lies below 0. Noted 2026-10-08.</li>
+        </ul>
+
+        <div class="decision">
+          <h4><span class="id">D26</span>X1 readings reported as declared<span class="pd pre">readings declared before V1</span></h4>
+          <dl>
+            <dt>Question</dt><dd>Is MATR's TSTR gap caused by per-cell structure in the non-capacity channels, or by
+              the missing initial-capacity spread?</dd>
+            <dt>Options</dt><dd>(a) Report the readings as declared. (b) Re-specify the ablation after seeing it.</dd>
+            <dt>Chosen</dt><dd>(a). The gap sits in the non-capacity channels. Constant per-cell offsets explain about
+              half of it (0.52 of the 1.14 log-gap, 46 %), which is what X2 adds. The initial-capacity spread does not
+              contribute, and the HUST control shows neither effect.</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>The interval is conditional on the trained models (3 × 5 TSTR and 5 TRTR trainings per input set);
+                  the leave-one-seed-out rule bounds this.</li>
+                <li>The paper's v1 account of the MATR gap must change. Its evidence, the held-out charge-time
+                  variance, was a single paused cycle (D27). The conclusion is now supported directly and quantified
+                  (about half).</li>
+                <li>The capacity-only interval (MATR [0.87, 1.50]) is wide. “Almost as well as measured” is the point
+                  estimate.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D27</span>The non-capacity glitch rule is extended to runs of up to three readings<span class="pd">post-data</span></h4>
+          <dl>
+            <dt>Question</dt><dd>MATR's held-out charge-time residual variance was 53.5 min², against 0.82 in the
+              fitting split and 0.66 generated. One cell, MATR_b1c2, carries 98 % of the held-out sum of squares. The
+              cause is one reading of 1 301.6 min: a charge interrupted by a pause of about 21 h. Its recovery reading
+              also departs, so D17's “neither neighbour departs” clause left it in. Does the cleaning rule
+              change?</dd>
+            <dt>Options</dt><dd>(a) Mask runs of up to two departing positions. (b) Runs of up to three. (c) Keep the
+              rule and the cell, and report. (d) Runs of up to five.</dd>
+            <dt>Chosen</dt><dd>(b), <code>max_run_v2: 3</code>, applied to every profile before refitting. The
+              held-out variance goes from 53.0 to 1.073. In the MATR fitting split, 41 more charge-time and 48 more
+              temperature readings are masked (0.05 % and 0.06 %).</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>The rule was set after the data were seen, and it is listed among the post-data rules in the v2
+                  Limitations.</li>
+                <li>The run length of 3 is a declaration, not an estimate: runs of 2 and 5 give the same held-out
+                  variance to 2 %.</li>
+                <li>v1's account of the MATR transfer gap partly rested on this artefact.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>MATR's v1 gap is in the non-capacity channels. Constant per-cell offsets account for
+          about half of it, and adding those offsets is what X2 does.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V2 ------------------------------------------------------------------- -->
+  <section class="stage" id="v2">
+    <div class="spine"><span class="badge">V2</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>X6 — a third dataset: ISU-ILCC under D28</h2>
+        <p class="run"><span>7 Oct</span><span>7 files, 11.19 GB, MD5-verified</span><span>145 in-scope cells</span></p>
+        <p class="commits">commits <code>9c25b6c</code> Tongji finding · <code>659a56f</code> D28, before any download · <code>078fed2</code> ingest and audit code · <code>71a9b81</code> results · <code>7da1fd1</code> T5</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>Before any download, a documentation sweep ran: four readers, a synthesis and 12 adversarially verified
+          claims. It found Tongji ineligible, because its largest single cell type has 66 cells and E3 needs 67. D28 was
+          drafted, attacked from three angles and revised, then committed together with its extraction rules. All 7
+          files of figshare article 22582234 v2 were then fetched and ingested one cell per process: 145 in-scope cells
+          plus a 10-cell side table. The audit followed.</p>
+        <h3>What came out</h3>
+        <p>The converter checks pass: calibrated capacity equals the C/5 value at every anchor, to 5.6e-17 Ah. Of
+          407 249 aging cycles, 39 are degenerate, 238 incomplete and 235 non-aging.</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Eligibility under D28</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>E3: units reaching EOL (67 required)</td><td class="num">145; 43 held-out reach EOL</td></tr>
+              <tr><td>E4: every EOL unit T ≥ 44</td><td class="num">pass, minimum T 265</td></tr>
+              <tr><td>E5: charge time and mean discharge V pass the weight guard</td><td class="num">|Δφ| 14.6 min vs noise SD 3.45 min; 0.050 V vs 0.0086 V</td></tr>
+              <tr><td>E1, E2, E6</td><td class="num">pass (E2 under the declared-extraction reading, flagged)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>X6(ii): regeneration at scale (fitting split)</th><th>pooled (102)</th><th>S_full (31)</th><th>S_partial (71)</th></tr></thead>
+            <tbody>
+              <tr><td>D05 positive runs, measured / noise-only rate (enable at ≥ 2)</td><td class="num">1.66, not enabled</td><td class="num">0.94, not enabled</td><td class="num">2.10, enabled</td></tr>
+              <tr><td>Mechanism diagnostic: runs 0–10 positions after a rest event vs random</td><td class="num">7.21 [6.17, 8.22]</td><td class="num">0.99 [0, 2.04]</td><td class="num">9.09 [7.96, 10.18]</td></tr>
+              <tr><td>Operator-null check: the calibration operator alone</td><td class="num">rate 1.75×; ratio 6.16 [5.12, 7.18]</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>Reading: regeneration is not shown at scale.</b> The positive runs cluster after RPTs, but only in
+          partial-DoD cells. Their size grows with 1/DoD and with discharge rate, and the calibration operator alone
+          reproduces most of the clustering (6.2 against 7.2). The paper describes this as “post-RPT recovery of
+          partial-window discharge capacity, not separable from voltage-cutoff kinetics”. No v2 profile enables
+          inserted patterns, so v2 has no sparse set.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>The calibration factor grows far beyond 1 / mean DoD on high-rate partial cycles late in life.</b> It
+            reaches 8.68 before EOL (G27C2, 2.4C discharge), so “nominal ≤ 1.94” is not a bound. The S_partial capacity
+            noise variance is 5.5× that of S_full. It stands as declared.</li>
+          <li><b>The extraction confounds the mechanism diagnostic.</b> The null ratio is 6.2 against an observed 7.2.
+            The stratified reading and the null check keep X6(ii) honest.</li>
+          <li><b>16 cells have backward timestamp steps</b> of 3–53 min, which are logger clock adjustments (T5).</li>
+        </ul>
+
+        <div class="decision">
+          <h4><span class="id">D28</span>Third profile: ISU-ILCC with RPT-calibrated aging-cycle capacity<span class="pd pre">pre-data · before download</span></h4>
+          <dl>
+            <dt>Question</dt><dd>The brief names ISU-ILCC first and Tongji second, and asks for its partial-DoD risk to
+              be settled before ingestion. Which candidate, and which extraction?</dd>
+            <dt>Options</dt><dd>
+              <ul>
+                <li>Tongji, one cell type: fails E3 (66 cells at most).</li>
+                <li>(a) The full-DoD subset: fails E3 (56 released, 49 validated).</li>
+                <li>(b) RPTs as the position axis: fails E4.</li>
+                <li>(c-i) C/5 interpolated onto aging cycles.</li>
+                <li>(c-ii) DoD-normalised aging capacity: fails E2.</li>
+                <li>(c-iii) Multiplicative RPT calibration of the measured aging capacity.</li>
+                <li>(c-iii-add) Additive calibration.</li>
+              </ul></dd>
+            <dt>Chosen</dt><dd>(c-iii), multiplicative, with the additive form as a sensitivity. Scope: the authors'
+              <code>valid_cells_paper.csv</code> ∩ Table A1 mean DoD ≥ 50 % (38 groups, 145 cells). The E3 margin is 78
+              and the nominal amplification ≤ 1.94. (c-i) was rejected because an interpolant between weekly knots would
+              have near-zero capacity innovation and flatter the fidelity checks. E2 passes only under the
+              declared-extraction branch.</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li><b>The capacity channel carries two procedures.</b> Its level is the C/5 RPT. Its within-week
+                  variation is the partial-window discharge scaled by f, so a post-RPT “recovery” can be kinetic.</li>
+                <li><b>Coverage is restricted</b> to 145 of 251 cells, with no condition below 50 % DoD.</li>
+                <li><b>The E2 reading is a choice.</b> Under the strict reading the brief would require stop and
+                  report. This is flagged for the authors.</li>
+                <li><b>Several rules were set from documentation:</b> the 50 % threshold, the 5-cycle anchor, the
+                  0.02 V / 25 mA tolerances and the 30 min pause. They are declarations, listed in the
+                  Limitations.</li>
+                <li><b>Data cost:</b> about 11.2 GB to download.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="decision dev">
+          <h4><span class="id">T5</span>ISU-ILCC cycle timestamps step back in 16 cells<span class="pd ex">tooling</span></h4>
+          <dl>
+            <dt>Found</dt><dd>16 cells have one or two backward steps of 3–53 min, 18 steps in all. They fall at the
+              same wall-clock moments across cells (Unix ≈ 1.66816e9 and 1.67858e9). File order is chronological and is
+              kept.</dd>
+            <dt>Cost</dt><dd>None found. No rest event of either source lies within 3 cycles of any step, and pause
+              detection ignores negative gaps.</dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>ISU-ILCC is eligible under D28's extraction but shows no regeneration at scale. No v2
+          profile carries inserted patterns.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V3 ------------------------------------------------------------------- -->
+  <section class="stage" id="v3">
+    <div class="spine"><span class="badge">V3</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Refit with per-unit offsets (X2) and the within-unit residual correlation (X3)</h2>
+        <p class="run"><span>7 Oct</span><span>CPU, about 1 min per run</span><span>32 checks pass</span></p>
+        <p class="commits">commits <code>b381d56</code> library and scripts · <code>d1b5c9a</code> profiles and units · <code>2aaee63</code> ISU-ILCC refit · <code>c98a789</code> review addendum</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The profiles were refitted under r3 <code>per_unit_offsets</code> and <code>correlated_noise</code>, with
+          D27 as the channel glitch rule, on the same seeded split as v1 (checked identical). V3 ran while V1 was still
+          training. r3 declares that X2 and X3 are built whatever X1 shows, so the order changes nothing. A re-run after
+          a figure-label fix gave byte-identical profiles.</p>
+        <h3>What came out</h3>
+        <p>Backfitting converges in 4–6 iterations on every channel, against a cap of 200. The families are unchanged:
+          MATR two-term exponential, HUST rollover.</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Channel</th><th>between-unit variance, before → after</th><th>within-unit AR(1) variance (lag-1)</th><th>Var(δ), noise-corrected</th></tr></thead>
+            <tbody>
+              <tr><td>MATR charge time [min²]</td><td class="num">7.08 → 0.047</td><td class="num">0.81 → 0.69 (0.91 → 0.89)</td><td class="num">7.04</td></tr>
+              <tr><td>MATR mean discharge V [V²]</td><td class="num">2.81e-3 → 2.5e-5</td><td class="num">5.4e-4 → 4.1e-4 (0.97 → 0.96)</td><td class="num">2.87e-3</td></tr>
+              <tr><td>HUST charge time [min²]</td><td class="num">1.71 → 0.13</td><td class="num">1.40 → 1.39 (0.99 → 0.99)</td><td class="num">0.91</td></tr>
+              <tr><td>HUST mean discharge V [V²]</td><td class="num">1.16e-3 → 1.9e-6</td><td class="num">2.8e-5 → 2.5e-5 (0.98 → 0.98)</td><td class="num">1.13e-3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Within-unit ρ̄, the X3 target, on MATR: charge time–mean discharge V −0.66, charge time–IR +0.62, mean
+          discharge V–IR −0.65 and IR–temperature −0.43. On HUST, charge time–mean discharge V is −0.30. MATR's
+          charge-time offsets are bimodal, around −5 min and around 0, which are the charging-policy groups.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>v1 S3 anomaly 4 was half right.</b> The slow residual component is within-unit, not an offset. The
+            offsets absorb the between-unit level differences.</li>
+          <li><b>Within-unit cross-channel correlations remain large in MATR after the offsets</b> (up to |0.66|). v1
+            generated none of it.</li>
+          <li><b>HUST charge-time offsets carry real sampling noise:</b> the noise term is 0.64 min² of Var(δ) = 1.55 min² (about 41 %).
+            No shrinkage is applied, as declared.</li>
+          <li><b>The ρ̄ estimator is biased on the capacity pairs (errors in variables).</b> Residuals are taken about
+            φ<sub>c</sub>(ẑ), with ẑ read from noisy capacity. Added 2026-10-08, and reported as a limitation of the X3
+            target.</li>
+        </ul>
+        <p><b>ISU-ILCC addendum.</b> Power law, 102 fitting units, backfit in 7–8 iterations, no patterns enabled. The
+          offsets absorb the test condition: charge-time between-unit variance 376.7 → 2.3 min². ρ̄ is small (|ρ̄| ≤ 0.04
+          except capacity–mean discharge V, −0.17).</p>
+
+        <div class="takeaway"><p>The offsets absorb between-unit level differences. The slow residual and the
+          cross-channel correlation are within-unit, and X3 is what generates the correlation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V4 ------------------------------------------------------------------- -->
+  <section class="stage" id="v4">
+    <div class="spine"><span class="badge">V4</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Generated units from the v2 profiles, and the third profile's stop</h2>
+        <p class="run"><span>7 Oct, checks re-run 8 Oct</span><span>3 seeds × 300 units, plus an X3-off set</span><span>95 checks pass, 5 warnings</span></p>
+        <p class="commits">commits <code>d1b5c9a</code> units · <code>2aaee63</code> ISU-ILCC stop and report · <code>c98a789</code> like-for-like estimator check, D30 reading</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The generator produced 300 units per profile for each of generation seeds 0, 1 and 2, under recency and
+          uniform weighting. One extra set per profile (<code>seed0_x3off</code>) has independent per-channel noise, to
+          isolate X3 at V5. The checks were re-run twice on the cached units: once for the declared q₁ comparator, and
+          on 2026-10-08 for a like-for-like estimator check and the D30 reading.</p>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th></th><th>MATR seed 0 / 1 / 2</th><th>HUST seed 0 / 1 / 2</th></tr></thead>
+            <tbody>
+              <tr><td>offset share Var(y<sub>offset</sub>) / Var(y), recency (stop at 0.5)</td><td class="num">0.111 / 0.112 / 0.104</td><td class="num">0.319 / 0.344 / 0.312</td></tr>
+              <tr><td>generated q₁ IQR (measured units reaching EOL)</td><td class="num">12.4 / 10.0 / 10.6 mAh (10.8)</td><td class="num">26.9 / 27.0 / 27.1 mAh (21.2)</td></tr>
+              <tr><td>X3 construction: within-unit correlation vs fitted ρ̄, max |Δ| (≤ 0.05)</td><td class="num">0.087</td><td class="num">0.008</td></tr>
+              <tr><td>estimator check: V3 estimator on generated data vs fitted ρ̄</td><td class="num">0.106</td><td class="num">0.035</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The construction checks pass on every window of every unit, seed and weighting:</p>
+        <ul>
+          <li>Σϕ* = y to 0 relative error;</li>
+          <li>g(x) − y = Σwε to ≤ 6e-16;</li>
+          <li>y = 0 at z = 0 with zero offsets;</li>
+          <li>E[ε] = 0;</li>
+          <li>pattern invariance.</li>
+        </ul>
+        <p>The five warnings are declared readings, not construction errors. They concern three quantities:</p>
+        <ul>
+          <li>MATR X3 construction, 0.087 against an implied pooled-φ gap of 0.127;</li>
+          <li>the MATR estimator check, 0.106: capacity pairs 0.106, other pairs 0.090. The first two runs read
+            0.168 / 0.068, because they compared E4 with ρ̄ rather than like with like;</li>
+          <li>HUST q₁ spread 27 % above the measured one. Two causes are measured: resampling 300 units from 54 already gives
+            24.7 mAh (V4 review), and D18 anchors the generated mapping at the trajectory's own Q<sub>ref</sub>
+            (Q<sub>ref</sub> − q₁ −7.0 mAh median; V4 review).</li>
+        </ul>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>HUST's generated target carries a large offset term, a third of Var(y).</b> This gives a trained model
+            a reason to read those channels, and V6 tests whether it does.</li>
+          <li><b>The pooled-φ construction cannot reproduce MATR's within-unit correlation unit by unit.</b> Per-unit
+            matrices were rejected before data.</li>
+        </ul>
+
+        <div class="stopbox">
+          <h4>Stop and report (brief §6): ISU-ILCC, parked pending the authors' decision</h4>
+          <p>All ISU-ILCC construction checks pass, including X3 construction (0.019). But the declared offset-share
+            rule fails in every seed and weighting: Var(y<sub>offset</sub>) / Var(y) = 0.773 / 0.765 / 0.823 for seeds
+            0 / 1 / 2, recency (uniform the same to 0.001), against a limit of 0.5.</p>
+          <p>The offsets are protocol identity. The test condition explains 99.2 % of the charge-time offset variance
+            and 97.6 % of the mean-discharge-V offset variance. Charge-time offsets run from −24 to +80 min (fitting units), against a
+            mapping range of 14.6 min. The target would mostly encode which test condition a cell ran under. The same
+            mechanism gives 0.10–0.12 on MATR and 0.31–0.35 on HUST (both weightings).</p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>Option</th><th>Cost</th><th>Within the brief?</th></tr></thead>
+              <tbody>
+                <tr><td><b>A</b> (recommended). Report ISU-ILCC as the X6 outcome; continue with MATR and HUST.</td><td class="txt">No third chemistry or format in the v2 tables. The measured profiles stay LFP/18650 only.</td><td class="txt">Yes</td></tr>
+                <tr><td>B. Condition-level mappings φ<sub>c,g</sub>(z), offsets only within a condition.</td><td class="txt">A methodological change the brief does not list, which changes Eq. 2/4 for one profile. About 6–8 h of compute.</td><td class="txt">No</td></tr>
+                <tr><td>C. A protocol-homogeneous subset.</td><td class="txt">No such subset meets E3: each condition has ≤ 4 cells.</td><td class="txt">Infeasible</td></tr>
+                <tr><td>D. v1 shared mappings for ISU-ILCC only.</td><td class="txt">X2 inconsistent across profiles. The fidelity checks fail on construction.</td><td class="txt">Contradicts X2</td></tr>
+                <tr><td>E. Lower β on the non-capacity channels.</td><td class="txt">β = 1/3 is a fixed value of the brief.</td><td class="txt">No</td></tr>
+                <tr><td>F. Proceed as is and report the share.</td><td class="txt">The stop rule exists to prevent this.</td><td class="txt">No</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>While the decision is pending, ISU-ILCC's V5–V8 were not run, and its V2–V4 outputs are committed for the
+            record.</p>
+        </div>
+
+        <div class="takeaway"><p>The construction checks pass on MATR and HUST. On ISU-ILCC the offsets carry 76–82 % of
+          the target's variance, and the profile stopped at its declared rule.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V5 ------------------------------------------------------------------- -->
+  <section class="stage" id="v5">
+    <div class="spine"><span class="badge">V5</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ1 — fidelity of the v2 profiles, with X1 repeated</h2>
+        <p class="run"><span>7–8 Oct</span><span>CUDA, overnight</span><span>held-out units 40 (38 reaching EOL) / 23</span></p>
+        <p class="commits">commits <code>bf63a30</code> results, D29 · <code>c98a789</code> D30 property re-run, D02b readability (T6)</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The measures run on the measured S3 split (cleaned with D12, D17 and D27) against V4 generation seeds 0–2 and
+          the X3-off set:</p>
+        <ul>
+          <li>the discriminator, per generation seed;</li>
+          <li>covariance agreement, with the measured fitting-vs-held-out baseline and its unit-bootstrap interval;</li>
+          <li>TSTR with the X1 input sets;</li>
+          <li>the property table.</li>
+        </ul>
+        <p>Representation distance was not measured (D25).</p>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Table 1 inputs</th><th>MATR</th><th>HUST</th></tr></thead>
+            <tbody>
+              <tr><td>transfer ratio [95 % BCa]; range over 15 seed pairs</td><td class="num">1.490 [1.042, 2.291]; 1.23–2.14</td><td class="num">1.174 [0.936, 1.342]; 1.03–1.38</td></tr>
+              <tr><td>RMSE TSTR / TRTR [cycles]</td><td class="num">219.2 / 147.1</td><td class="num">242.2 / 206.4</td></tr>
+              <tr><td>discriminative error, seeds 0 / 1 / 2 (mean)</td><td class="num">0.333 / 0.244 / 0.423 (0.333) <span class="void">void · D02b</span></td><td class="num">0.373 / 0.460 / 0.623 (0.485) <span class="void">void · D02b</span></td></tr>
+              <tr><td>covariance agreement (mean); measured baseline [95 %]</td><td class="num">0.209; 0.174 [0.080, 0.442]</td><td class="num">0.054; 0.038 [0.017, 0.125]</td></tr>
+              <tr><td>X3 off (seed 0): discriminative error / covariance</td><td class="num">0.355 / 0.207</td><td class="num">0.410 / 0.059</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>Declared readings.</b></p>
+        <ul>
+          <li><b>X2(i), MATR's gap closed: no.</b> 1.49 lies outside HUST's [0.936, 1.342]. This led to D29.</li>
+          <li><b>X3, covariance gap closed: yes</b> on both profiles.</li>
+          <li><b>X3, discriminator gap narrows: yes</b> on both: +0.26 and +0.32, against v1 seed half-ranges of 0.02
+            and 0.04. This is a shift of the seed mean; the cells themselves are void (T6).</li>
+          <li><b>X3's own share, in the two declared measures (covariance agreement, discriminator): negligible.</b> The
+            X3-off set reaches the same values. Transfer and the property table were not run with X3 off.</li>
+        </ul>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>X1 on the v2 profiles</th><th>MATR</th><th>HUST</th></tr></thead>
+            <tbody>
+              <tr><td>all channels</td><td class="num">1.490 [1.042, 2.291]</td><td class="num">1.174 [0.936, 1.342]</td></tr>
+              <tr><td>capacity only</td><td class="num">0.979 [0.924, 1.083]</td><td class="num">1.037 [0.982, 1.127]</td></tr>
+              <tr><td>capacity / q₁</td><td class="num">1.084 [0.946, 1.213]</td><td class="num">1.111 [0.919, 1.350]</td></tr>
+              <tr><td>two-point state</td><td class="num">1.084 [0.926, 1.253]</td><td class="num">1.118 [0.877, 1.375]</td></tr>
+              <tr><td>all, non-capacity centred per unit</td><td class="num">1.935 [1.405, 2.580]</td><td class="num">0.972 [0.853, 1.170]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>On the v2 profile, MATR's per-cell reading is 0.42 [0.06, 0.90]: the interval lies above 0, but the reading
+          fails the leave-one-seed-out rule and does not hold. The offsets reading is −0.26 [−0.59, 0.11] for MATR and
+          +0.19 [0.01, 0.36] for HUST, which also fails leave-one-out.</p>
+        <p><b>The property table</b> was re-run under D30, and every generated unit now enters the EOL-dependent rows:
+          300 of 300, against 222 (MATR) and 177 (HUST) in run 1. Fitting / held-out / generated:</p>
+        <ul>
+          <li>MATR drift 25.6 / 25.6 / 23.9 mAh per 100 cycles.</li>
+          <li>q₁ spread 10.8 / 10.4 / 12.4 mAh for MATR and 21.2 / 19.6 / 26.9 mAh for HUST. v1 generated about 1.8 and
+            1.4 mAh.</li>
+          <li>MATR charge-time noise variance 0.69 / 0.80 / 0.58 min², against 0.82 / 53.5 / 0.66 in v1.</li>
+          <li>MATR within-unit correlation, mean |Δρ| held-out / generated: capacity pairs 0.026 / 0.075, other pairs
+            0.059 / 0.056.</li>
+        </ul>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>Where X3 was isolated, the improvement is X2's.</b> Turning the correlated noise off changes neither
+            the covariance distance nor the discriminator by more than the seed spread. Transfer and the property
+            table were not run with X3 off, so X3's share in those is not measured.</li>
+          <li><b>Centring the non-capacity channels now hurts MATR's transfer:</b> 1.94 against 1.49. In v1 it helped
+            (2.04 against 3.42).</li>
+          <li><b>HUST's discriminator is at chance on average (0.485), but one seed reads 0.62.</b></li>
+          <li><b>MATR's excess correlation distance sits entirely in the capacity pairs.</b> This is the
+            errors-in-variables bias, which the generator carries once and re-estimation adds again.</li>
+          <li><b>D02b readability was not applied in the first V5 run (T6).</b> Unit bootstrap per seed, MATR: 0.333
+            [0.187, 0.483], 0.244 [0.154, 0.359], 0.423 [0.281, 0.561]. HUST: 0.373 [0.267, 0.482], 0.460 [0.381,
+            0.544], 0.623 [0.584, 0.663]. Only one seed per profile is readable.</li>
+        </ul>
+
+        <div class="decision">
+          <h4><span class="id">D29</span>HUST is the fidelity anchor, and the generator is not iterated<span class="pd">outcome post-data</span></h4>
+          <dl>
+            <dt>Question</dt><dd>The declared reading X2(i) fails: MATR 1.490 [1.042, 2.291] lies outside HUST's
+              [0.936, 1.342]. The brief says not to iterate, and to record which profile is the fidelity anchor. Which
+              one? The anchor rule was declared in r3; the choice was made on the V5 result.</dd>
+            <dt>Options</dt><dd>(a) HUST is the anchor, and MATR is reported with its residual gap. (b) MATR is the
+              anchor: more cells, and the dataset the paper cites first. (c) No anchor.</dd>
+            <dt>Chosen</dt><dd>(a). “HUST is the profile whose fidelity is established on every measure; MATR transfers
+              at 1.49 times the measured error, down from 3.42.” The obvious candidate for the remaining MATR gap is
+              charge-time trajectories that differ in shape between charging policies. It is stated, not fixed.</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>MATR stays a profile with a measured transfer gap (1.49), and its scores carry that caveat.</li>
+                <li>The anchor is the smaller profile: 77 cells, one charging protocol.</li>
+                <li><b>X3 did not do what it was introduced for.</b> Its contribution to the covariance and
+                  discriminator gains is negligible beside X2's, which is reported as a negative result for X3.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="decision">
+          <h4><span class="id">D30</span>The property table reads generated series with D13's record-end clause<span class="pd">post-data</span></h4>
+          <dl>
+            <dt>Question</dt><dd>The property estimator ran on generated series without D13's record-end clause, on the
+              r2 premise that generated trajectories are not truncated. But the generator stores each unit only up to
+              its own EOL T. Many units were therefore read as censored: only 222 of 300 MATR and 177 of 300 HUST units
+              were kept. Should the clause apply?</dd>
+            <dt>Options</dt><dd>(a) Keep the r2 reading, which leaves a biased 26–41 % selection. (b) Apply D13's clause
+              to generated series in the property estimator only. (c) Store generated series beyond T. This changes the
+              generator, which D29 excludes.</dd>
+            <dt>Chosen</dt><dd>(b). The table applies one estimator to measured and generated series, so the generated
+              column rests on all 300 units.</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>The rule was set after the data were seen, and is listed with the v2 post-data rules.</li>
+                <li>The generated column of v1's Table 2 had the same selection. v1 numbers are cited unchanged, with a
+                  note.</li>
+                <li>Nothing else depends on it: TSTR, the targets and V6–V8 use the generator's own T.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="decision dev">
+          <h4><span class="id">T6</span>D02b readability of the discriminative error was left out, now applied<span class="pd ex">methodological · S5 and V5</span></h4>
+          <dl>
+            <dt>Found</dt><dd>D02b reads the discriminative error only if its 95 % half-width is ≤ 0.5 |0.5 − value|. v1
+              S5 and the first V5 run applied the minimum count only. The v2 pipeline review found the gap.
+              <code>scripts/v2/v5_discriminator_readability.py</code> reproduces V5 exactly and applies the rule.</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li><b>Table 1's v2 discriminator cells are void for both profiles.</b> The values are still reported,
+                  with the void reason.</li>
+                <li>The X3 reading “narrows” is a shift of the seed mean (0.07 / 0.16 → 0.33 / 0.49), not a readable
+                  level.</li>
+                <li>v1's S5 cells were not re-checked: the predictions were not saved, and v1 is not re-run.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>HUST transfers with an interval that contains 1, and anchors fidelity. MATR improves
+          from 3.42 to 1.49 but stays outside that interval. The covariance and discriminator gains are X2's, not
+          X3's.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V6 ------------------------------------------------------------------- -->
+  <section class="stage" id="v6">
+    <div class="spine"><span class="badge">V6</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ2 — usability, and whether every weighted channel is used (X4)</h2>
+        <p class="run"><span>7 Oct</span><span>89 min, CUDA</span><span>ten members per profile and weighting</span></p>
+        <p class="commits">commits <code>078fed2</code> code · <code>24b01e1</code> results</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The models were trained on V4 generation seed 0, split 210 / 45 / 45 units, with 36 554 (MATR) and 85 660
+          (HUST) test windows. For recency and uniform weighting there were ten members each: configurations A (64 × 2)
+          and B (128 × 1) × model seeds 0–4. The checks were:</p>
+        <ul>
+          <li>the accuracy and null-channel leakage gates;</li>
+          <li>redundant channels;</li>
+          <li>the term ablation, which is void because no profile enables patterns;</li>
+          <li>new: the X4 gate, ridge conditional resampling with BCa over test units (10 000 resamples).</li>
+        </ul>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Recency (uniform)</th><th>MATR</th><th>HUST</th></tr></thead>
+            <tbody>
+              <tr><td>primary NRMSE; members passing ≤ 0.30</td><td class="num">0.091 (0.090); 10/10; members 0.089–0.096 (0.090–0.098)</td><td class="num">0.095 (0.095); 10/10; 0.089–0.097 (0.090–0.097)</td></tr>
+              <tr><td>offset term, share of Var(y)</td><td class="num">0.128 (0.134)</td><td class="num">0.343 (0.344)</td></tr>
+              <tr><td>permutation importance: capacity / charge time / mean discharge V</td><td class="num">0.908 / 0.256 / 0.085</td><td class="num">0.525 / 0.049 / 0.808</td></tr>
+              <tr><td>X4 conditional importance, capacity</td><td class="num">0.076 [0.066, 0.093]</td><td class="num">0.069 [0.057, 0.084]</td></tr>
+              <tr><td>X4, charge time</td><td class="num">0.053 [0.037, 0.092]</td><td class="num">0.015 [0.012, 0.018]</td></tr>
+              <tr><td>X4, mean discharge V</td><td class="num">0.049 [0.038, 0.079]</td><td class="num">0.631 [0.545, 0.744]</td></tr>
+              <tr><td>used materially (lower bound &gt; 0.02)</td><td class="num">all three</td><td class="num">capacity, mean discharge V</td></tr>
+              <tr><td>leakage, null channels (upper bound)</td><td class="num">≤ 0.0001</td><td class="num">≤ 0.0000</td></tr>
+              <tr><td>redundant channels: R² from the others, conditional importance</td><td class="num">IR 0.75, 0.0026; temperature 0.47, 0.0043</td><td class="num">none</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>Readings.</b> X2(ii): the weighted channels are non-redundant for a trained model, on both profiles. Every
+          weighted channel passes the X4 rule on the primary model and on all ten members, under both weightings, so no
+          channel-level score is void. No stop rule is triggered. 28 checks pass.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>Accuracy is lower than in v1:</b> NRMSE 0.09 against 0.01–0.04. The target now carries the offsets,
+            and the models must read three noisy channels.</li>
+          <li><b>HUST's mean discharge voltage dominates</b> the model's use: 0.81 against capacity's 0.53. Charge time
+            is used, but at 0.015, below the materiality reading.</li>
+          <li><b>The association of y with RUL weakens</b> (HUST −0.91 → −0.61) as the offset term enters y. That is
+            the cost of X2 that the stop rule bounds.</li>
+        </ul>
+        <div class="takeaway"><p>With per-unit offsets, a trained model reads every weighted channel. The price is lower
+          accuracy and a weaker link between y and RUL.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V7 ------------------------------------------------------------------- -->
+  <section class="stage" id="v7">
+    <div class="spine"><span class="badge">V7</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ3 — what the scores register (X5), and the v1 maps rescored</h2>
+        <p class="run"><span>7 Oct, re-run 8 Oct</span><span>CPU, a few minutes</span><span>900 windows per profile</span><span>18 checks pass</span></p>
+        <p class="commits">commits <code>078fed2</code> code · <code>8c78232</code> results · <code>c98a789</code> registers condition (i), 40-window rows</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p><b>Part A</b> degraded the ground truth of the V4 test units with the five v1 operators. It then scored
+          three measures: rank agreement, the channel allocation error (TV distance) and the temporal profile error
+          (ϕ*-mass-weighted 1-Wasserstein over positions, in positions). A score <i>registers</i> a degradation if two
+          conditions hold at some magnitude and every larger one: (i) the change is resolved, and (ii) the mean change
+          toward chance is at least 10 % of the chance-to-perfect distance.</p>
+        <p><b>Part B</b> scored the saved v1 S8 maps with the same measures, with no new attribution. The 2026-10-08
+          re-run applied condition (i), which the first run had left out. It gave the same magnitudes in every
+          cell.</p>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Smallest registering magnitude, recency, MATR / HUST</th><th>rank agreement</th><th>allocation error</th><th>temporal profile error</th></tr></thead>
+            <tbody>
+              <tr><td>added noise (× SD)</td><td class="num">0.05 / 0.2</td><td class="num">0.1 / 0.1</td><td class="num">0.5 / 0.5</td></tr>
+              <tr><td>mass to start</td><td class="num">1.0 / 1.0</td><td class="num">—</td><td class="num">0.05 / 0.05</td></tr>
+              <tr><td>mass to end</td><td class="num">1.0 / 1.0 (full shift only)</td><td class="num">—</td><td class="num">0.1 / 0.1</td></tr>
+              <tr><td>smoothing σ</td><td class="num">— / — (change ≤ 0.004 at σ = 8)</td><td class="num">—</td><td class="num">8 / 8</td></tr>
+              <tr><td>permuted fraction</td><td class="num">0.2 / 0.2</td><td class="num">0.1 / 0.1</td><td class="num">0.2 / 0.2</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>“—” means not registered within the grid. Chance levels, MATR / HUST: rank agreement 0.002 / 0.002,
+          allocation error 0.632 / 0.464, temporal error 5.43 / 5.05 positions. Resolution alone is uninformative, as in
+          v1: it resolves almost every operator at its smallest magnitude, even where the mean change is 1e-5. Under
+          uniform weighting no score registers smoothing, as declared in advance.</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Part B: v1 maps, recency</th><th>exact: rank / alloc. / temporal</th><th>trained IG / occl. / TimeSHAP: allocation</th><th>temporal [positions]</th></tr></thead>
+            <tbody>
+              <tr><td>MATR</td><td class="num">0.815 / 0.164 / 0.70</td><td class="num">0.613 / 0.644 / 0.639</td><td class="num">3.70 / 3.42 / 4.00</td></tr>
+              <tr><td>HUST</td><td class="num">0.870 / 0.131 / 0.29</td><td class="num">0.689 / 0.672 / 0.674</td><td class="num">2.70 / 2.87 / 3.39</td></tr>
+              <tr><td>NASA PCoE (v1 only)</td><td class="num">0.733 / 0.171 / 1.20</td><td class="num">0.626 / 0.641 / 0.623</td><td class="num">4.04 / 3.62 / 3.76</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Part B on the 40 TimeSHAP windows</th><th>exact rank, 120 → 40</th><th>trained rank IG / occl. / TimeSHAP, on 40</th><th>same, IG / occl. on 120</th></tr></thead>
+            <tbody>
+              <tr><td>MATR</td><td class="num">0.815 → 0.750</td><td class="num">0.489 / 0.434 / 0.468</td><td class="num">0.551 / 0.461</td></tr>
+              <tr><td>HUST</td><td class="num">0.870 → 0.859</td><td class="num">0.346 / 0.352 / 0.333</td><td class="num">0.321 / 0.298</td></tr>
+              <tr><td>NASA PCoE</td><td class="num">0.733 → 0.743</td><td class="num">0.329 / 0.263 / 0.286</td><td class="num">0.316 / 0.283</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li><b>The X5 answer.</b> The temporal profile error registers end-loaded attributions at 10 % of the mass
+            moved, and blurred ones at σ = 8 (recency). Rank agreement registers neither. The allocation error registers
+            what moves mass between channels and, by construction, nothing positional.</li>
+          <li><b>The v1 trained-model maps were wrong mainly in channel allocation.</b> Every method put about two thirds
+            of the mass on the wrong channels (TV 0.61–0.69), because the v1 models read capacity only.</li>
+          <li><b>The window set moves the scores by as much as the methods differ.</b> v1's TimeSHAP comparisons mixed
+            window sets: on matched windows, MATR's TimeSHAP lies between IG and occlusion, with a gap to IG of 0.021
+            against 0.083. v1's IG–occlusion gap (0.090) remains valid. V8 therefore explains all 120 windows with
+            every method.</li>
+        </ul>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>A first Part B run scored the reference model's exact map on the window,</b> not on its pattern-free
+            counterpart. Only NASA PCoE was affected. The check caught it (4.7e-3 against the 1e-3 bound), and it was
+            fixed.</li>
+          <li><b>Channel exclusions from the temporal error are counted.</b> The score is undefined in no window.</li>
+        </ul>
+        <div class="takeaway"><p>The two new scores separate what rank agreement conflates: where along the window the
+          mass sits, and on which channel.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V8 ------------------------------------------------------------------- -->
+  <section class="stage" id="v8">
+    <div class="spine"><span class="badge">V8</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Reference values at full scale (X7)</h2>
+        <p class="run"><span>8 Oct</span><span>TimeSHAP 1.71 h, 12 CPU workers</span><span>5 760 explanations</span><span>22 checks pass</span></p>
+        <p class="commits">commits <code>078fed2</code> code · <code>242aabd</code> benchmark and floor refinements · <code>c98a789</code> baseline and pool fixes · <code>8b0c4d5</code> results</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>120 windows per profile were drawn from 45 V4 test units with v1's seeded rule, using the pristine baseline
+          (C4). TimeSHAP ran as declared, with no D23 reduction: nsamples 32 000, <code>l1_reg</code> 'auto', cell level.
+          Per profile:</p>
+        <ul>
+          <li>trained A0 and the reference model × seeds 0–2 × two weightings: 1 440 explanations;</li>
+          <li>the average-event background: 360;</li>
+          <li>the ensemble floor, the other nine members × seed 0 × recency: 1 080.</li>
+        </ul>
+        <p>That is 2 880 explanations per profile and 5 760 in all. IG and occlusion (captum) ran on the primary and
+          reference models and on all ten members.</p>
+        <h3>Feasibility</h3>
+        <p>One window takes 6.6 s: coalition sampling 74 %, LassoLarsIC 12 %, the solve 8 %, model evaluation 3 %.
+          TimeSHAP's cost is CPU-bound Python, not the model. Throughput reached 1 932 windows/h at 12 CPU workers with
+          chunk 4096, against 1 879 at 6 CUDA workers, where 8 ran out of memory. Sequential and parallel runs agree
+          exactly (maximum difference 0, against ≤ 1e-10 required). The projection was 2.98 h against a 36 h threshold;
+          the actual run took 1.71 h at 3 376/h.</p>
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Recency, unit means</th><th>MATR rank</th><th>alloc.</th><th>temporal</th><th>HUST rank</th><th>alloc.</th><th>temporal</th></tr></thead>
+            <tbody>
+              <tr><td>exact w(x − x⁰), reference model</td><td class="num">0.869 [0.817, 0.909]</td><td class="num">0.075</td><td class="num">0.38</td><td class="num">0.957 [0.922, 0.978]</td><td class="num">0.063</td><td class="num">0.18</td></tr>
+              <tr><td>IG, trained</td><td class="num">0.485 [0.445, 0.519]</td><td class="num">0.294</td><td class="num">1.86</td><td class="num">0.734 [0.700, 0.758]</td><td class="num">0.164</td><td class="num">2.82</td></tr>
+              <tr><td>occlusion, trained</td><td class="num">0.420 [0.368, 0.466]</td><td class="num">0.377</td><td class="num">2.56</td><td class="num">0.750 [0.715, 0.776]</td><td class="num">0.182</td><td class="num">2.93</td></tr>
+              <tr><td>TimeSHAP, trained (seed 0)</td><td class="num">0.493 [0.454, 0.527]</td><td class="num">0.301</td><td class="num">1.82</td><td class="num">0.739 [0.705, 0.764]</td><td class="num">0.176</td><td class="num">2.86</td></tr>
+              <tr><td>ensemble range IG / occl. / TimeSHAP, rank</td><td class="num" colspan="3">0.41–0.51 / 0.33–0.45 / 0.42–0.51</td><td class="num" colspan="3">0.60–0.75 / 0.57–0.77 / 0.60–0.78</td></tr>
+              <tr><td>TimeSHAP, average-event background</td><td class="num">0.527</td><td class="num">0.313</td><td class="num">2.21</td><td class="num">0.697</td><td class="num">0.156</td><td class="num">2.85</td></tr>
+              <tr><td>zero-weight mass, trained (IG / occl. / TimeSHAP)</td><td class="num" colspan="3">0.134 / 0.198 / 0.136</td><td class="num" colspan="3">0.037 / 0.040 / 0.038</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>Correctness check:</b> on the reference model all three methods equal the exact attribution. The largest
+          absolute map differences, MATR / HUST, are IG ≤ 1.1e-8 / 7.5e-8, occlusion ≤ 1.1e-7 / 1.8e-7 and TimeSHAP
+          ≤ 1.8e-5 / 2.5e-5, against max|w(x − x⁰)| of 0.02–0.08. TimeSHAP's seed spread is at most 0.002 in rank
+          agreement and 0.02 positions.</p>
+        <p><b>X7_values_hold</b> asks whether the D23 40-window subset means lie inside the full 120-window intervals,
+          both computed on v2 maps. It holds on
+          MATR (both weightings, every score) and on HUST recency. It fails on two HUST uniform cells: the trained
+          temporal error (3.56 against [3.03, 3.53]) and the reference allocation error (0.051 against [0.052,
+          0.080]).</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>X7_floor: largest method gap / ten-member ranges (IG, occl., TimeSHAP)</th><th>rank</th><th>allocation</th><th>temporal</th></tr></thead>
+            <tbody>
+              <tr><td>MATR recency</td><td class="num">0.073 / 0.10, 0.12, 0.10 → no ordering</td><td class="num">0.083 / 0.054, 0.039, 0.051 → ordering supported</td><td class="num">0.73 / 0.87, 1.03, 0.72 → no ordering</td></tr>
+              <tr><td>HUST recency</td><td class="num">0.016 / 0.15, 0.21, 0.18 → no ordering</td><td class="num">0.018 / 0.093, 0.098, 0.094 → no ordering</td><td class="num">0.11 / 1.17, 0.73, 1.20 → no ordering</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>The one ordering the floor supports</b> is on MATR: feature occlusion allocates attribution to the wrong
+          channels more than IG and TimeSHAP do (0.377 against 0.294 / 0.301). It holds under both weightings; under
+          uniform, the gap is 0.072 against IG and occlusion ranges of 0.071 and 0.057. It is the only method difference
+          in v2 that survives a change of model.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>Trained-model scores rose sharply on HUST against v1</b> (rank agreement 0.33 → 0.74). With X2, the
+            models read every weighted channel.</li>
+          <li><b>MATR's zero-weight mass stays high (0.13–0.20).</b> Internal resistance carries the state with R² 0.75
+            from the others: the non-identifiability that the floor measures.</li>
+          <li><b>The average-event background moves the scores</b> by up to 0.04 in rank and 0.4 positions, not in the
+            same direction on both profiles. A reference value is quoted with its baseline.</li>
+        </ul>
+        <div class="takeaway"><p>At full scale the reference model is exact for all three methods, and the D23 40-window
+          subset means lie inside the full 120-window intervals on the primary weighting. The floor supports a single method ordering.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V9 ------------------------------------------------------------------- -->
+  <section class="stage" id="v9">
+    <div class="spine"><span class="badge">V9</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>X9 pilot — an observation-level target on HUST (exploratory)</h2>
+        <p class="run"><span>8 Oct</span><span>11:37–12:09, CUDA</span><span>ten members, HUST, recency</span></p>
+        <p class="commits">commits <code>60ee2b2</code> design declared before V9 · <code>242aabd</code> script · <code>c98a789</code> baseline and pool fixes · <code>6df38cf</code> results, D31</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <p>The target was y<sub>obs</sub> = Σ w (x − x⁰) on the observed window, so that ϕ*<sub>obs</sub> = w (x − x⁰)
+          and the reference model is the data-generating function. On V4 generation seed 0, ten LSTM members were
+          trained as in V6. The X4 gate ran on every member, and IG and occlusion on V8's 120 HUST windows for every
+          member. TimeSHAP was optional and was not run. Nothing from V9 enters the paper tables.</p>
+        <h3>What came out</h3>
+        <p>NRMSE on y<sub>obs</sub> is 0.0012–0.0019, and RMSE / SD(Σwε) is 0.011–0.018, so every member reads the
+          cell-level values. Every member uses all three weighted channels materially: X4 for A0 gives capacity 0.031,
+          charge time 0.034 and mean discharge V 0.606.</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Score against ϕ*<sub>obs</sub></th><th>A0: IG / occl.</th><th>gap</th><th>range IG / occl.</th><th>restored</th><th>standard y (V8): gap / ranges</th></tr></thead>
+            <tbody>
+              <tr><td>rank agreement</td><td class="num">0.961 / 0.958</td><td class="num">0.003</td><td class="num">0.077 / 0.072</td><td>no</td><td class="num">0.016 / 0.151, 0.206</td></tr>
+              <tr><td>channel allocation error</td><td class="num">0.004 / 0.019</td><td class="num">0.015</td><td class="num">0.006 / 0.013</td><td>yes</td><td class="num">0.018 / 0.093, 0.098</td></tr>
+              <tr><td>temporal profile error</td><td class="num">0.79 / 0.75</td><td class="num">0.035</td><td class="num">0.47 / 0.45</td><td>no</td><td class="num">0.108 / 1.17, 0.73</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>X9 answer: no.</b> Position-level identifiability is not restored, but the channel allocation becomes
+          identifiable. All ranges narrow by 1.6–15 times against the standard y. The levels rise: rank agreement goes
+          from 0.73–0.75 to 0.96.</p>
+        <h3>Anomalies</h3>
+        <ul>
+          <li><b>Member B3 is an outlier on rank agreement:</b> 0.888 against 0.950–0.965. Without it the range is
+            still about 0.013, five times the gap.</li>
+          <li><b>The allocation reading has a small margin:</b> occlusion's range is 0.013 against a gap of 0.015.</li>
+        </ul>
+
+        <div class="decision">
+          <h4><span class="id">D31</span>The benchmark keeps y after the X9 pilot<span class="pd pre">design declared before V9 · exploratory</span></h4>
+          <dl>
+            <dt>Question</dt><dd>Does defining y on the observed window restore position-level identifiability? It does
+              not; it restores channel-level identifiability. Which target does the benchmark use?</dd>
+            <dt>Options</dt><dd>(a) Keep y, and report the pilot as future work. (b) Adopt y<sub>obs</sub> as the
+              benchmark target, which changes every score after V6. (c) Adopt y<sub>obs</sub> for the allocation score
+              only, giving two ground truths for one map.</dd>
+            <dt>Chosen</dt><dd>(a). “On an observation-level target the channel allocation becomes identifiable, the
+              positions do not; the benchmark keeps the state-level target.” The likely cause, not tested, is that
+              neighbouring positions are almost collinear (lag-1 0.94–0.99 on HUST).</dd>
+            <dt>Cost</dt><dd>
+              <ul>
+                <li>Limited scope: one profile (HUST), one weighting, IG and occlusion only. TimeSHAP was optional and
+                  was not run.</li>
+                <li>The cause of the positional spread is a hypothesis and is not tested.</li>
+                <li>The “restored” reading for the allocation error has a small margin: an occlusion range of 0.013
+                  against a gap of 0.015.</li>
+              </ul></dd>
+          </dl>
+        </div>
+
+        <div class="takeaway"><p>An observation-level target makes channels identifiable but not positions, and the
+          benchmark keeps y.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V10 ------------------------------------------------------------------ -->
+  <section class="stage last" id="v10">
+    <div class="spine"><span class="badge sm">V10</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Results, paper and provenance</h2>
+        <p class="run"><span>7–8 Oct</span><span>6 tables, 3 figures</span><span>AMENDMENTS round 7</span></p>
+        <p class="commits">commits <code>de97a3e</code> round 7 part 1 · <code>242aabd</code> results export · <code>c4abdc4</code> v2 figures · round 7 part 2: the V10 commit on branch <code>v2</code></p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <ul>
+          <li><b>Tables and figures were regenerated from <code>results/v2</code></b> by
+            <code>scripts/v2/v10_write_paper.py</code>: one JSON per table and Figures 6–8 (trajectories, X5
+            degradation, identifiability floor).
+            <ul>
+              <li><b>Table numbering:</b> 1 fidelity, 2 properties, 3 transfer by input set (X1, new),
+                4 usability, 5 registering magnitudes, 6 reference values.</li>
+              <li><b>Void cells</b> carry their reason in a table note. No decision IDs appear in the printed
+                notes.</li>
+              <li><b>Removed:</b> the setting-sweep figure and table (D25).</li>
+            </ul></li>
+          <li><b>Provenance is in <code>docs/RESULTS_PROVENANCE.md</code>:</b> one row per cell or figure, 85 rows,
+            written from <code>results/v2/provenance.json</code>. The v1 section is kept below it.</li>
+          <li><b>The methodology edits are round 7 part 1</b> (<code>docs/AMENDMENTS.md</code>): X2, X3, X4, X5, X7,
+            X8, D27, the X6-pending rows (D28), FIX-1 to FIX-5 and FIX-7. The X6-pending rows encode option A of the
+            stop report.</li>
+          <li><b>Round 7 part 2 carries the v2 results:</b>
+            <ul>
+              <li>D30 in the EOL paragraph;</li>
+              <li>D29's anchor sentence in §3.4;</li>
+              <li>Results §4 and Discussion §5, rewritten for v2.</li>
+            </ul></li>
+          <li><b>How the rewrite was checked:</b>
+            <ul>
+              <li><b>Rewrite workflow.</b> Three section groups (Results opening to §4.2; §4.3–§4.4; Discussion
+                and the methodology sync). Each was drafted, adversarially verified against <code>results/v2</code>,
+                the REVIEWs, the D-records and the declared readings, then revised: 39 edits applied.</li>
+              <li><b>Whole-paper review.</b> Three lenses (numbers; consistency and claims; brief compliance),
+                with a refuter that tried to disprove every finding. 55 findings, 33 confirmed and applied; 22
+                were duplicates or refuted.</li>
+              <li><b>Agent-free check.</b> Both paper variants build without undefined references. The abstract,
+                Conclusion, Acknowledgments and preamble are byte-identical to <code>v1-results</code>.</li>
+              <li><b>latexdiff of round 7 against <code>v1-results</code>:</b>
+                <code>artifacts/amendments/latexdiff_round7.pdf</code>.</li>
+            </ul></li>
+          <li><b>The brief's no-touch list was respected:</b> abstract, conclusion, acknowledgments, template and
+            length.</li>
+        </ul>
+        <div class="takeaway"><p>Every v2 table and figure is regenerated from <code>results/v2</code> with a provenance
+          row. The abstract, conclusion and acknowledgments were left to the authors.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORDS -------------------------------------------------------------- -->
+  <section class="block" id="records">
+    <h2>Decision and deviation records at a glance</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Record</th><th>Stage</th><th>Timing</th><th>What it settles</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#v0">D25</a> scope reductions</td><td class="txt">V0</td><td class="txt">before any v2 stage; every v1 result known</td><td class="txt">final-position weighting, setting sweep, representation distance, NASA PCoE and cross-fitting dropped (X8)</td></tr>
+          <tr><td><a href="#v1">D26</a> TSTR isolation</td><td class="txt">V1</td><td class="txt">readings declared before V1</td><td class="txt">MATR gap in the non-capacity channels; offsets about half; HUST control null</td></tr>
+          <tr><td><a href="#v1">D27</a> channel excursion rule</td><td class="txt">V1</td><td class="txt"><span class="pd" style="margin-left:0">post-data</span></td><td class="txt">glitch rule extended to runs of up to three readings</td></tr>
+          <tr><td><a href="#v2">D28</a> third dataset extraction</td><td class="txt">V2</td><td class="txt">pre-data, before download</td><td class="txt">ISU-ILCC (c-iii), 145 cells; Tongji ineligible; E2 under the declared-extraction branch</td></tr>
+          <tr><td><a href="#v5">D29</a> fidelity anchor</td><td class="txt">V5</td><td class="txt">rule declared; <span class="pd" style="margin-left:0">outcome post-data</span></td><td class="txt">HUST is the anchor; no generator iteration; X3 negligible in covariance and discriminator</td></tr>
+          <tr><td><a href="#v5">D30</a> generated record end</td><td class="txt">V5</td><td class="txt"><span class="pd" style="margin-left:0">post-data</span></td><td class="txt">property table reads generated series with D13's record-end clause</td></tr>
+          <tr><td><a href="#v9">D31</a> observation target pilot</td><td class="txt">V9</td><td class="txt">design declared before V9</td><td class="txt">X9 answer no; the benchmark keeps y</td></tr>
+          <tr><td><a href="#v0">T4</a> resamples</td><td class="txt">v1 S6–S8, recorded at V0</td><td class="txt">tooling</td><td class="txt">2 000 instead of 10 000 bootstrap resamples; v1 intervals cited with caveat</td></tr>
+          <tr><td><a href="#v2">T5</a> timestamps</td><td class="txt">V2</td><td class="txt">tooling</td><td class="txt">ISU-ILCC logger clock steps; no effect found</td></tr>
+          <tr><td><a href="#v5">T6</a> D02b readability</td><td class="txt">S5 and V5</td><td class="txt">methodological, rule now applied</td><td class="txt">discriminator cells of Table 1 void; v1 cells not re-checked</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CLOSE ---------------------------------------------------------------- -->
+  <section class="close" id="close">
+    <h2>What the programme establishes, and where it stops</h2>
+    <p>The construction holds on both v2 profiles: the ground truth is exact, the reference model attains it for every
+      method at full scale, and the target is learnable from every weighted channel. The fidelity gains come from the generator with offsets and
+      correlated noise (X2 + X3); where X3 was isolated (covariance agreement, discriminator), they are X2's. The third dataset, and position-level identifiability on trained models, remain open.</p>
+
+    <div class="cols">
+      <div>
+        <h3>Established</h3>
+        <ul>
+          <li>MATR's v1 transfer gap sat in the non-capacity channels. Constant per-cell offsets explain about half of
+            it, and the initial-capacity spread none (D26).</li>
+          <li>The generator with offsets and correlated noise (X2 + X3) brings HUST's transfer interval to contain 1
+            (1.17 [0.94, 1.34]) and MATR from 3.42 to 1.49. The covariance gap closes on both profiles; with X3 off it
+            closes the same way, so that gain is X2's.</li>
+          <li>Every weighted channel is used by every ensemble member on both profiles and weightings. The accuracy and
+            leakage gates pass.</li>
+          <li>The reference model is exact for IG, occlusion and TimeSHAP at full scale (TimeSHAP ≤ 2.5e-5). The D23
+            40-window subset means lie inside the full 120-window intervals on the primary weighting.</li>
+          <li>The temporal profile error registers end-loading and blur that rank agreement does not, and the
+            allocation error registers mass moved between channels.</li>
+          <li>Full-scale TimeSHAP is feasible: 5 760 explanations in 1.71 h on 12 CPU workers, with exact
+            equivalence.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Void or unsupported</h3>
+        <ul>
+          <li>The discriminator cells of Table 1: only one seed per profile is readable under D02b (T6).</li>
+          <li>Method orderings on trained models, except MATR channel allocation, where occlusion is worse. No score
+            orders the methods on HUST.</li>
+          <li>Position-level identifiability on y<sub>obs</sub> (X9): the rank and temporal ranges exceed the method
+            gap.</li>
+          <li>ISU-ILCC as a third profile: stopped at V4 (offset share 0.76–0.82). Regeneration is not shown at
+            scale.</li>
+          <li>MATR inside HUST's transfer interval (X2(i)).</li>
+          <li>An own share for X3 in transfer or the property table: not measured.</li>
+          <li>The sparse set: no v2 profile enables inserted patterns. The operating range was not run (D25).</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Open for the authors</h3>
+        <ul>
+          <li>The ISU-ILCC option: A is recommended. B (condition-level mappings) would need a new D-record and about
+            6–8 h of compute.</li>
+          <li>Whether to accept the D28 E2 reading or apply the strict one (stop and report).</li>
+          <li>The AI-use disclosure in the Acknowledgments.</li>
+          <li>The Abstract, the Conclusion, and the repository and DOI footnote in §1.</li>
+          <li>The wording of the post-data list in the Limitations (§5), which round 7 part 2 wrote.</li>
+          <li>Whether v1's S5 discriminator cells and T4 intervals need re-checking before they are cited.</li>
+          <li>MATR's remaining gap: charge-time trajectory shape across charging policies is the stated candidate,
+            which the brief forbids iterating on.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>Written from the committed v2 artifacts of the DegradX repository (branch <code>v2</code>): stage reviews in
+        <code>artifacts/v2/*/REVIEW.md</code> and the stop report
+        <code>artifacts/v2/STOP_REPORT_third_profile_offsets.md</code>; decision records in
+        <code>docs/DECISIONS/D25–D31</code>; <code>docs/DEVIATIONS.md</code> (T4–T6); <code>docs/AMENDMENTS.md</code>
+        round 7; <code>docs/RESULTS_PROVENANCE.md</code>; and <code>git log</code> on branch <code>v2</code>. v1 numbers
+        were checked against <code>artifacts/s5_fidelity</code>, <code>s6_usability</code> and
+        <code>s8_reference_methods</code> at tag <code>v1-results</code>. The v1 log is
+        <code>docs/EXPERIMENT_LOG.html</code>. This page has no figures. The v2 results figures are Figures 6–8 of the
+        paper, in <code>results/v2/</code>.</p>
+    </footer>
+  </section>
+</main>
+</body>
+</html>

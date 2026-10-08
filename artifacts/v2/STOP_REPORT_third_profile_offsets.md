@@ -1,7 +1,7 @@
 # Stop and report (brief §6): X2's offset contribution exceeds half of Var(y) on the third profile (ISU-ILCC)
 
 **Status:** the third profile is **parked, pending the authors' decision**. MATR and HUST are unaffected (offset share
-0.10–0.12 and 0.31–0.34) and continue through V5–V8, as brief §5 prioritises. Nothing has been decided alone.
+0.10–0.12 and 0.31–0.35, both weightings) and continue through V5–V8, as brief §5 prioritises. Nothing has been decided alone.
 
 **Raised:** 2026-10-07, at V4 for ISU-ILCC, by the declared rule `declared_by_design.v2.per_unit_offsets.stop_rule`.
 
@@ -30,12 +30,12 @@
 
 - **What the offsets are.** ISU-ILCC's 38 conditions differ in charge rate (0.5–2.4C), discharge rate (0.5–2.475C)
   and depth of discharge (51–98 %). So the level of charge time and mean discharge voltage is set almost entirely by the
-  test protocol: offsets of −25 to +78 min against a degradation range of the charge-time mapping of 14.6 min.
+  test protocol: offsets of −24 to +80 min (fitting units; corrected 2026-10-08 from "−25 to +78") against a degradation range of the charge-time mapping of 14.6 min.
 - **What the target becomes.** β = 1/3 on each of those channels (a fixed value of the brief) converts the protocol
-  into about 77–82 % of the target's variance. **The target would mostly encode which test condition a cell ran
+  into about 76–82 % of the target's variance. **The target would mostly encode which test condition a cell ran
   under**, which is exactly what the stop rule guards against.
 - **The same mechanism on the other profiles is small.** MATR's charging policies vary within one protocol family,
-  giving an offset share of 0.10–0.12. HUST has one protocol and gives 0.31–0.34.
+  giving an offset share of 0.10–0.12. HUST has one protocol and gives 0.31–0.35.
 
 Also measured: generated q₁ spread 11.0–13.7 mAh against 2.7 mAh measured (fitting units reaching EOL). The power-law
 trajectories extrapolated back to the first position vary more than the cells' measured early-life references. This is

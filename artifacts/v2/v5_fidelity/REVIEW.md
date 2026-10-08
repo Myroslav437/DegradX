@@ -37,8 +37,9 @@
 - **X3, covariance gap closed: yes, both profiles.** 0.209 ≤ 0.442 and 0.054 ≤ 0.125.
 - **X3, discriminator gap narrows: yes, both profiles.** +0.26 and +0.32 against v1 seed half-ranges of 0.02 and 0.04.
   The cells themselves are void under D02b readability (anomaly 5); the reading is on the shift of the seed mean.
-- **X3's own share: negligible.** The X3-off set, which keeps X2's offsets, reaches the same covariance (0.207 /
-  0.059) and discriminator (0.355 / 0.410). The gains come from the per-unit offsets.
+- **X3's own share, in the two declared measures: negligible.** The X3-off set, which keeps X2's offsets, reaches the
+  same covariance (0.207 / 0.059) and discriminator (0.355 / 0.410). Those gains come from the per-unit offsets.
+  Transfer was not run with X3 off.
 
 **X1 on the v2 profiles** (`tstr_input_sets`, `x1_on_v2`):
 
@@ -65,7 +66,7 @@ are. The first table is kept as `tables/properties_<ds>_run1.json`.
 - **The trajectory side is reproduced, as in v1.**
   - MATR drift 25.6 / 25.6 / 23.9 mAh per 100 cycles; T 770 / 744 / 823.
   - HUST transition 0.69 / 0.65 / 0.68; T 1860 / 1938 / 1807.
-- **The q₁ spread** (units reaching EOL) is 10.8 / 10.4 / 12.4 mAh for MATR and 21.2 / 19.6 / 27.0 mAh for HUST
+- **The q₁ spread** (units reaching EOL) is 10.8 / 10.4 / 12.4 mAh for MATR and 21.2 / 19.6 / 26.9 mAh for HUST
   (run 1: 30.3). v1 generated about 1.8 and 1.4 mAh.
 - **MATR charge-time noise variance** is 0.69 / **0.80** / 0.58 min², against 0.82 / **53.5** / 0.66 in v1. The
   held-out artefact is gone (D27).
@@ -86,10 +87,14 @@ are. The first table is kept as `tables/properties_<ds>_run1.json`.
 
 ## Anomalies
 
-1. **The improvement is X2's, not X3's.** Generating the offsets moved MATR's transfer from 3.42 to 1.49, its
-   covariance distance from 0.69 to 0.21 and its discriminator from 0.07 to 0.33. Turning the correlated noise off
-   changes none of these by more than the seed spread. The within-unit correlation that X3 adds is real (V3) but does
-   not register in any v2 fidelity measure.
+1. **Where X3 was isolated, the improvement is X2's.**
+   - The v2 generator (X2 + X3) moved MATR's transfer from 3.42 to 1.49, its covariance distance from 0.69 to 0.21 and
+     its discriminator from 0.07 to 0.33.
+   - Turning the correlated noise off changes neither the covariance distance nor the discriminator by more than the
+     seed spread. Those are the two measures declared for the X3-off set (`readings.X3_isolation`).
+   - Transfer and the property table were not run with X3 off, so X3's share in those is not measured.
+   - The within-unit correlation that X3 adds is real (V3), but it does not register in the two measures where X3 was
+     isolated (corrected 2026-10-08: the first wording claimed every fidelity measure).
 2. **Centring the non-capacity channels now hurts MATR's transfer** (1.94 against 1.49). In v1 it helped (2.04 against
    3.42). The generated offsets now resemble the measured ones closely enough that both sides lose information when
    they are removed.

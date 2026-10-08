@@ -1,29 +1,19 @@
-    \multicolumn{7}{l}{\textit{MATR} (120 windows from 45 test units; TimeSHAP on 40 of them)} \\
-    TimeSHAP & 0.468 [0.313, 0.533] & 0.755 [0.531, 0.847] & void$^{a}$ & void$^{a}$ & 0.136 & 0.000 \\
-    IG & 0.551 [0.508, 0.586] & 0.815 [0.754, 0.865] & void$^{a}$ & void$^{a}$ & 0.113 & 0.000 \\
-    Feature occlusion & 0.461 [0.422, 0.496] & 0.815 [0.754, 0.865] & void$^{a}$ & void$^{a}$ & 0.118 & 0.000 \\
-    Exact attribution $w(x - x^{0})$ & -- & 0.815 [0.754, 0.865] & -- & void$^{a}$ & -- & 0.000 \\
-    \quad on the TimeSHAP windows & -- & 0.750 [0.527, 0.842] & -- & void$^{a}$ & -- & -- \\
-    Ensemble range, IG (10 models) & 0.440--0.551 & -- & -- & -- & -- & -- \\
-    Ensemble range, Feature occlusion (10 models) & 0.378--0.470 & -- & -- & -- & -- & -- \\
-    TimeSHAP, average-event background & 0.561 [0.485, 0.610] & -- & -- & -- & 0.070 & -- \\
+    \multicolumn{9}{l}{\textit{MATR} (120 windows from 45 test units; every method on every window)} \\
+    IG & 0.485 [0.445, 0.519] & 0.869 & 0.294 [0.277, 0.314] & 0.075 & 1.86 [1.68, 2.03] & 0.38 & 0.134 [0.117, 0.153] & 0.000 \\
+    Occlusion & 0.420 [0.368, 0.466] & 0.869 & 0.377 [0.353, 0.407] & 0.075 & 2.56 [2.39, 2.76] & 0.38 & 0.198 [0.171, 0.233] & 0.000 \\
+    TimeSHAP & 0.493 [0.454, 0.527] & 0.870 & 0.301 [0.283, 0.321] & 0.075 & 1.82 [1.65, 2.00] & 0.38 & 0.136 [0.120, 0.155] & 0.000 \\
+    Exact $w(x - x^{0})$ & -- & \begin{tabular}[t]{@{}c@{}}0.869\\ {[0.817, 0.909]}\end{tabular} & -- & \begin{tabular}[t]{@{}c@{}}0.075\\ {[0.060, 0.097]}\end{tabular} & -- & \begin{tabular}[t]{@{}c@{}}0.38\\ {[0.31, 0.45]}\end{tabular} & -- & 0.000 \\
+    Range, IG & 0.406--0.506 & -- & 0.287--0.341 & -- & 1.86--2.73 & -- & -- & -- \\
+    Range, Occlusion & 0.326--0.449 & -- & 0.376--0.414 & -- & 2.32--3.36 & -- & -- & -- \\
+    Range, TimeSHAP & 0.415--0.514 & -- & 0.292--0.343 & -- & 1.82--2.55 & -- & -- & -- \\
+    TimeSHAP, average event & 0.527 [0.488, 0.558] & -- & 0.313 [0.292, 0.341] & -- & 2.21 [2.07, 2.35] & -- & 0.138 [0.122, 0.166] & -- \\
     \midrule
-    \multicolumn{7}{l}{\textit{HUST} (120 windows from 45 test units; TimeSHAP on 40 of them)} \\
-    TimeSHAP & 0.333 [0.316, 0.349] & 0.859 [0.715, 0.934] & void$^{a}$ & void$^{a}$ & 0.027 & 0.000 \\
-    IG & 0.321 [0.288, 0.347] & 0.870 [0.806, 0.914] & void$^{a}$ & void$^{a}$ & 0.014 & 0.000 \\
-    Feature occlusion & 0.298 [0.261, 0.330] & 0.870 [0.806, 0.914] & void$^{a}$ & void$^{a}$ & 0.014 & 0.000 \\
-    Exact attribution $w(x - x^{0})$ & -- & 0.870 [0.806, 0.914] & -- & void$^{a}$ & -- & 0.000 \\
-    \quad on the TimeSHAP windows & -- & 0.859 [0.711, 0.933] & -- & void$^{a}$ & -- & -- \\
-    Ensemble range, IG (10 models) & 0.212--0.544 & -- & -- & -- & -- & -- \\
-    Ensemble range, Feature occlusion (10 models) & 0.254--0.372 & -- & -- & -- & -- & -- \\
-    TimeSHAP, average-event background & 0.315 [0.295, 0.334] & -- & -- & -- & 0.012 & -- \\
-    \midrule
-    \multicolumn{7}{l}{\textit{NASA PCoE} (120 windows from 39 test units; TimeSHAP on 40 of them)} \\
-    TimeSHAP & 0.286 [0.226, 0.346] & 0.744 [0.646, 0.821] & void$^{b}$ & 1.00 & 0.252 & 0.000 \\
-    IG & 0.316 [0.276, 0.360] & 0.733 [0.664, 0.788] & void$^{b}$ & 1.00 & 0.255 & 0.000 \\
-    Feature occlusion & 0.283 [0.255, 0.308] & 0.733 [0.664, 0.788] & void$^{b}$ & 1.00 & 0.237 & 0.000 \\
-    Exact attribution $w(x - x^{0})$ & -- & 0.733 [0.664, 0.788] & -- & 1.00 & -- & 0.000 \\
-    \quad on the TimeSHAP windows & -- & 0.743 [0.646, 0.820] & -- & 1.00 & -- & -- \\
-    Ensemble range, IG (10 models) & 0.245--0.339 & -- & -- & -- & -- & -- \\
-    Ensemble range, Feature occlusion (10 models) & 0.259--0.395 & -- & -- & -- & -- & -- \\
-    TimeSHAP, average-event background & 0.435 [0.398, 0.466] & -- & -- & -- & 0.136 & -- \\
+    \multicolumn{9}{l}{\textit{HUST} (120 windows from 45 test units; every method on every window)} \\
+    IG & 0.734 [0.700, 0.758] & 0.957 & 0.164 [0.151, 0.179] & 0.063 & 2.82 [2.65, 3.00] & 0.18 & 0.037 [0.031, 0.051] & 0.000 \\
+    Occlusion & 0.750 [0.715, 0.776] & 0.957 & 0.182 [0.166, 0.203] & 0.063 & 2.93 [2.77, 3.10] & 0.18 & 0.040 [0.032, 0.057] & 0.000 \\
+    TimeSHAP & 0.739 [0.705, 0.764] & 0.957 & 0.176 [0.161, 0.191] & 0.063 & 2.86 [2.71, 3.03] & 0.18 & 0.038 [0.032, 0.052] & 0.000 \\
+    Exact $w(x - x^{0})$ & -- & \begin{tabular}[t]{@{}c@{}}0.957\\ {[0.922, 0.978]}\end{tabular} & -- & \begin{tabular}[t]{@{}c@{}}0.063\\ {[0.051, 0.079]}\end{tabular} & -- & \begin{tabular}[t]{@{}c@{}}0.18\\ {[0.14, 0.24]}\end{tabular} & -- & 0.000 \\
+    Range, IG & 0.597--0.747 & -- & 0.125--0.218 & -- & 2.63--3.80 & -- & -- & -- \\
+    Range, Occlusion & 0.566--0.772 & -- & 0.158--0.257 & -- & 2.81--3.54 & -- & -- & -- \\
+    Range, TimeSHAP & 0.600--0.781 & -- & 0.136--0.230 & -- & 2.61--3.81 & -- & -- & -- \\
+    TimeSHAP, average event & 0.697 [0.664, 0.721] & -- & 0.156 [0.142, 0.174] & -- & 2.85 [2.71, 2.99] & -- & 0.030 [0.026, 0.041] & -- \\

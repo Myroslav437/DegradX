@@ -2,7 +2,7 @@
 
 ## What ran
 
-- **Command.** `python scripts/v2/v1_tstr_isolation.py`, seed 20260915, CUDA, about 2.7 h wall clock.
+- **Command.** `python scripts/v2/v1_tstr_isolation.py`, seed 20260915, CUDA, 70 min wall clock (21:44–22:55).
   - From 22:30 it shared the GPU with V6 (allowed: training determinism does not depend on sharing; only V8's timing
     runs need an exclusive GPU).
   - The empty output folders created at 21:21 came from a `--dry-run`, which creates them but reads no data. They were

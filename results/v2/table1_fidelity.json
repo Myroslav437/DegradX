@@ -1,0 +1,155 @@
+{
+  "MATR": {
+    "units": {
+      "measured_fitting": 95,
+      "measured_held_out": 40,
+      "measured_held_out_reaching_eol": 38,
+      "generated_per_seed": 300
+    },
+    "discriminative_error_per_generation_seed": [
+      0.3331249952316284,
+      0.24375003576278687,
+      0.4231250286102295
+    ],
+    "covariance_rel_frobenius_mean": 0.20906340165307666,
+    "covariance_baseline": 0.17401108623761624,
+    "covariance_baseline_interval": [
+      0.07970374658549728,
+      0.4424459336847821
+    ],
+    "x3_off_seed0": {
+      "discriminative_error": 0.35500001907348633,
+      "cov_relative_frobenius": 0.20678209061481215
+    },
+    "transfer_ratio": 1.4897842084416923,
+    "transfer_ci": [
+      1.0423145833648366,
+      2.2909178615860184
+    ],
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.4424459336847821,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          3.4201964487768874,
+          2.276480201346431,
+          4.957907742362334
+        ],
+        "v2": [
+          1.4897842084416923,
+          1.0423145833648366,
+          2.2909178615860184
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.07187501589457194,
+        "v1_seed_half_range": 0.020312517881393433,
+        "v2": 0.3333333532015483
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.6873697840966545,
+        "v1_baseline": 0.2780475058895786,
+        "v2": 0.20906340165307666,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.17401108623761624,
+          "cov_mean_abs_delta_rho": 0.09718465936836151,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.07970374658549728,
+            "ci_high": 0.4424459336847821,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    },
+    "void": {
+      "discriminative_error": "MATR: 95\\% unit-bootstrap half-width above half the distance from 0.5 for 2 of 3 generation seeds; values 0.33 [0.19, 0.48], 0.24 [0.15, 0.36], 0.42 [0.28, 0.56]",
+      "covariance_agreement": null,
+      "transfer_ratio": null
+    }
+  },
+  "HUST": {
+    "units": {
+      "measured_fitting": 54,
+      "measured_held_out": 23,
+      "measured_held_out_reaching_eol": 23,
+      "generated_per_seed": 300
+    },
+    "discriminative_error_per_generation_seed": [
+      0.37299996614456177,
+      0.4599999785423279,
+      0.6229999959468842
+    ],
+    "covariance_rel_frobenius_mean": 0.054007012160165214,
+    "covariance_baseline": 0.03757220016113322,
+    "covariance_baseline_interval": [
+      0.016822071966465988,
+      0.12486212881494135
+    ],
+    "x3_off_seed0": {
+      "discriminative_error": 0.4099999666213989,
+      "cov_relative_frobenius": 0.05891469933103938
+    },
+    "transfer_ratio": 1.173587562170692,
+    "transfer_ci": [
+      0.9359569231007253,
+      1.342011393954543
+    ],
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.12486212881494135,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          1.4612937680490141,
+          1.1113580311093105,
+          1.76383636719532
+        ],
+        "v2": [
+          1.173587562170692,
+          0.9359569231007253,
+          1.342011393954543
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.1643332839012146,
+        "v1_seed_half_range": 0.04349997639656067,
+        "v2": 0.48533331354459125
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.4243181678171406,
+        "v1_baseline": 0.03757220016113322,
+        "v2": 0.054007012160165214,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.03757220016113322,
+          "cov_mean_abs_delta_rho": 0.03272830234493871,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.016822071966465988,
+            "ci_high": 0.12486212881494135,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    },
+    "void": {
+      "discriminative_error": "HUST: 95\\% unit-bootstrap half-width above half the distance from 0.5 for 2 of 3 generation seeds; values 0.37 [0.27, 0.48], 0.46 [0.38, 0.54], 0.62 [0.58, 0.66]",
+      "covariance_agreement": null,
+      "transfer_ratio": null
+    }
+  },
+  "readings_cross_profile": {
+    "X2_i_matr_gap_closed": false,
+    "matr_ratio": 1.4897842084416923,
+    "hust_interval": [
+      0.9359569231007253,
+      1.342011393954543
+    ],
+    "anchor_d_record_needed": true
+  }
+}

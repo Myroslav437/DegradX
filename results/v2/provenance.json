@@ -1,0 +1,682 @@
+[
+  {
+    "cell": "Table 1 / MATR / discriminative_error readability",
+    "artifact": "artifacts/v2/v5_fidelity/tables/discriminator_readability.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_discriminator_readability.py",
+    "seeds": "generation 0,1,2; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 1 / MATR / discriminative_error",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / MATR / covariance_agreement",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / MATR / x3_off",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / MATR / transfer_ratio",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / MATR / v1_transfer_ratio",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / HUST / discriminative_error readability",
+    "artifact": "artifacts/v2/v5_fidelity/tables/discriminator_readability.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_discriminator_readability.py",
+    "seeds": "generation 0,1,2; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 1 / HUST / discriminative_error",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / HUST / covariance_agreement",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / HUST / x3_off",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / HUST / transfer_ratio",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 1 / HUST / v1_transfer_ratio",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 2 / MATR / Fit error of the profile's family [fraction of $q_1$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "trajectory family",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Fit error of the profile's family [fraction of $q_1$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "trajectory family",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Drift rate [mAh/100 cyc.]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "drift rate",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Drift rate [mAh/100 cyc.]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "drift rate",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Transition position [$\\times T$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "transition position",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Transition position [$\\times T$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "transition position",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Unit length $T$ [cycles]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "unit length",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Unit length $T$ [cycles]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "unit length",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Early-life reference $q_1$, IQR [mAh]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "early-life reference",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Early-life reference $q_1$, IQR [mAh]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "early-life reference",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise variance, capacity [mAh$^2$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise variance, capacity [mAh$^2$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise variance, charge time [min$^2$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise variance, charge time [min$^2$]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise autocorrelation, charge time",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "noise lag-1 autocorrelation, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise autocorrelation, charge time",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "noise lag-1 autocorrelation, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Offset IQR, charge time [min]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "per-unit offset IQR, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Offset IQR, charge time [min]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "per-unit offset IQR, charge_time",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Offset IQR, mean discharge V [mV]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "per-unit offset IQR, mean_discharge_voltage",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Offset IQR, mean discharge V [mV]",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "per-unit offset IQR, mean_discharge_voltage",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / Residual correlation, rel. Frob. to fitting split",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation (X3",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / Residual correlation, rel. Frob. to fitting split",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation (X3",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / \\quad capacity pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation, capacity pairs",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / \\quad capacity pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation, capacity pairs",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / MATR / \\quad other pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation, non-capacity pairs",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 2 / HUST / \\quad other pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/v2/v5_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation, non-capacity pairs",
+    "script": "scripts/v2/v5_properties.py (D30 re-run of the V5 property table)",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 4 / MATR / Accuracy, NRMSE of the primary model (members passing)",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.primary_nrmse",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Accuracy, NRMSE of the primary model (members passing)",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.primary_nrmse",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Offset term, share of Var$(y)$",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.offset_term",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Offset term, share of Var$(y)$",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.offset_term",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Spearman correlation of $y$ with RUL",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.spearman_y_rul",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Spearman correlation of $y$ with RUL",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.spearman_y_rul",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, capacity",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.capacity",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, capacity",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.capacity",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, charge time",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.charge_time",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, charge time",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.charge_time",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, mean discharge V",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.mean_discharge_voltage",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, mean discharge V",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.mean_discharge_voltage",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), capacity",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.capacity",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), capacity",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.capacity",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), charge time",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.charge_time",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), charge time",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.charge_time",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), mean discharge V",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.mean_discharge_voltage",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), mean discharge V",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.mean_discharge_voltage",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Members using every weighted channel",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage_gate",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Members using every weighted channel",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage_gate",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Leakage, null channels (upper bound, flat / permuted)",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.null_*",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Leakage, null channels (upper bound, flat / permuted)",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.null_*",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Redundant channels: $R^2$, conditional importance",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.redundant_channels",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Redundant channels: $R^2$, conditional importance",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.redundant_channels",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / MATR / Pattern term: variance ratio, ablation",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.term_ablation",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 4 / HUST / Pattern term: variance ratio, ablation",
+    "artifact": "artifacts/v2/v6_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.term_ablation",
+    "script": "scripts/v2/v6_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915",
+    "artifact_commit": "24b01e1c62027c7afccaead64898e8dea29854f3"
+  },
+  {
+    "cell": "Table 5 / Added noise",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.added_noise.<score>.registers",
+    "script": "scripts/v2/v7_scores.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 5 / Mass to start",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.shift_to_start.<score>.registers",
+    "script": "scripts/v2/v7_scores.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 5 / Mass to end",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.shift_to_end.<score>.registers",
+    "script": "scripts/v2/v7_scores.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 5 / Smoothing",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.smoothing.<score>.registers",
+    "script": "scripts/v2/v7_scores.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 5 / Permuted fraction",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.permuted_fraction.<score>.registers",
+    "script": "scripts/v2/v7_scores.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Table 3 / profiles without offsets",
+    "artifact": "artifacts/v2/v1_tstr_isolation/tables/tstr_isolation.json",
+    "key": "{MATR,HUST}.input_sets, tests",
+    "script": "scripts/v2/v1_tstr_isolation.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "b3793d8b9b3ef16165701d5cf8a79af95d216254"
+  },
+  {
+    "cell": "Table 3 / profiles with offsets",
+    "artifact": "artifacts/v2/v5_fidelity/tables/fidelity.json",
+    "key": "{MATR,HUST}.tstr_input_sets, x1_on_v2.tests",
+    "script": "scripts/v2/v5_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915",
+    "artifact_commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f"
+  },
+  {
+    "cell": "Table 6 / MATR / IG",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / MATR / Occlusion",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / MATR / ensemble range",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.identifiability_floor",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP average event",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "MATR.weightings.recency.secondary_average_event",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / HUST / IG",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / HUST / Occlusion",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / HUST / ensemble range",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.identifiability_floor",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP average event",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "HUST.weightings.recency.secondary_average_event",
+    "script": "scripts/v2/v8_reference_methods.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  },
+  {
+    "cell": "Figure 6 / MATR",
+    "artifact": "artifacts/v2/v3_fit_profiles/profiles/MATR.json",
+    "key": "V4 generated units seed 0 (first 25) + V3 split units",
+    "script": "scripts/v2/v4_generate_units.py; scripts/v2/v10_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "d1b5c9a4282a54af6e0cb490883ca516ee15b7b6"
+  },
+  {
+    "cell": "Figure 6 / HUST",
+    "artifact": "artifacts/v2/v3_fit_profiles/profiles/HUST.json",
+    "key": "V4 generated units seed 0 (first 25) + V3 split units",
+    "script": "scripts/v2/v4_generate_units.py; scripts/v2/v10_write_paper.py",
+    "seeds": "generation 0",
+    "artifact_commit": "d1b5c9a4282a54af6e0cb490883ca516ee15b7b6"
+  },
+  {
+    "cell": "Figure 7",
+    "artifact": "artifacts/v2/v7_scores/tables/degradation.json",
+    "key": "{MATR,HUST}.recency.operators.<op>.{rank,temporal}",
+    "script": "scripts/v2/v7_scores.py; scripts/v2/v10_write_paper.py",
+    "seeds": "generation 0; evaluation 20260915",
+    "artifact_commit": "c98a78925f5310e4a2ecff73a843bb868754c0bf"
+  },
+  {
+    "cell": "Figure 8",
+    "artifact": "artifacts/v2/v8_reference_methods/tables/reference_values.json",
+    "key": "{MATR,HUST}.weightings.recency.{scores,identifiability_floor}",
+    "script": "scripts/v2/v8_reference_methods.py; scripts/v2/v10_write_paper.py",
+    "seeds": "generation 0; model_init A/B 0-4; attribution_sampling 0,1,2; evaluation 20260915",
+    "artifact_commit": "8b0c4d5ecde65c9fd5cddc6f674a093a44a878f8"
+  }
+]
