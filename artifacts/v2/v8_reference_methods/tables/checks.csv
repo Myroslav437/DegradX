@@ -1,1 +1,23 @@
 name,expected,observed,passed,severity
+MATR [recency]: integrated_gradients on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,1.13e-08 (max|exact| 0.0515),True,error
+MATR [recency]: feature_occlusion on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,1.10e-07 (max|exact| 0.0515),True,error
+MATR [recency]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.64e-05 (max|exact| 0.0515),True,warn
+MATR [recency]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.64e-05 (max|exact| 0.0515),True,warn
+MATR [recency]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.77e-05 (max|exact| 0.0515),True,warn
+MATR [uniform]: integrated_gradients on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,4.13e-09 (max|exact| 0.0185),True,error
+MATR [uniform]: feature_occlusion on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,1.00e-07 (max|exact| 0.0185),True,error
+MATR [uniform]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.57e-05 (max|exact| 0.0185),True,warn
+MATR [uniform]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.57e-05 (max|exact| 0.0185),True,warn
+MATR [uniform]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.57e-05 (max|exact| 0.0185),True,warn
+MATR: all declared TimeSHAP jobs present,all,all,True,error
+HUST [recency]: integrated_gradients on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,7.50e-08 (max|exact| 0.0829),True,error
+HUST [recency]: feature_occlusion on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,1.78e-07 (max|exact| 0.0829),True,error
+HUST [recency]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,2.10e-05 (max|exact| 0.0829),True,warn
+HUST [recency]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,2.49e-05 (max|exact| 0.0829),True,warn
+HUST [recency]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,2.47e-05 (max|exact| 0.0829),True,warn
+HUST [uniform]: integrated_gradients on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,2.88e-08 (max|exact| 0.0297),True,error
+HUST [uniform]: feature_occlusion on the reference model equals w(x - x0) (correctness check),<= 1e-4 x max|w(x - x0)|,1.81e-07 (max|exact| 0.0297),True,error
+HUST [uniform]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.59e-05 (max|exact| 0.0297),True,warn
+HUST [uniform]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.59e-05 (max|exact| 0.0297),True,warn
+HUST [uniform]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported),<= 1e-2 x max|w(x - x0)|,1.59e-05 (max|exact| 0.0297),True,warn
+HUST: all declared TimeSHAP jobs present,all,all,True,error

@@ -1,1 +1,238 @@
-{}
+{
+  "profile_one_window": {
+    "profile": "MATR",
+    "device": "cuda",
+    "wall_s": 6.626110032200813,
+    "split_s": {
+      "coalition_sampling": 4.9257788940000005,
+      "model_evaluation": 0.23118839300000002,
+      "lasso_lars_ic": 0.76845067,
+      "solve": 0.508215466
+    },
+    "split_share": {
+      "coalition_sampling": 0.743389238944458,
+      "model_evaluation": 0.03489051523088162,
+      "lasso_lars_ic": 0.11597312243013942,
+      "solve": 0.07669891739349823
+    }
+  },
+  "benchmark": [
+    {
+      "workers": 1,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 8,
+      "wall_s": 66.39013352594338,
+      "windows_per_hour": 433.8038236761353,
+      "mean_window_s": 8.197174865636043,
+      "ideal_windows_per_hour": 439.175698824215
+    },
+    {
+      "workers": 2,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 8,
+      "wall_s": 38.85963276587427,
+      "windows_per_hour": 741.1456324328287,
+      "mean_window_s": 8.55678187328158,
+      "ideal_windows_per_hour": 841.437833361382
+    },
+    {
+      "workers": 4,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 16,
+      "wall_s": 48.162818427197635,
+      "windows_per_hour": 1195.9681079868378,
+      "mean_window_s": 9.909035213655443,
+      "ideal_windows_per_hour": 1453.2191771965497
+    },
+    {
+      "workers": 6,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 24,
+      "wall_s": 54.515917688841,
+      "windows_per_hour": 1584.8925841506182,
+      "mean_window_s": 10.186695566226263,
+      "ideal_windows_per_hour": 2120.412832559193
+    },
+    {
+      "workers": 8,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 32,
+      "wall_s": 66.03332660114393,
+      "windows_per_hour": 1744.607366756612,
+      "mean_window_s": 11.94114711178554,
+      "ideal_windows_per_hour": 2411.828589865985
+    },
+    {
+      "workers": 12,
+      "device": "cpu",
+      "chunk": 4096,
+      "windows": 48,
+      "wall_s": 89.44214713387191,
+      "windows_per_hour": 1932.442504668672,
+      "mean_window_s": 15.0929211681796,
+      "ideal_windows_per_hour": 2862.2689748806574
+    },
+    {
+      "workers": 1,
+      "device": "cuda",
+      "chunk": 4096,
+      "windows": 8,
+      "wall_s": 51.191719646099955,
+      "windows_per_hour": 562.7263709816743,
+      "mean_window_s": 6.380424336501164,
+      "ideal_windows_per_hour": 564.2257959874395
+    },
+    {
+      "workers": 2,
+      "device": "cuda",
+      "chunk": 4096,
+      "windows": 8,
+      "wall_s": 32.32388436305337,
+      "windows_per_hour": 891.0053927299724,
+      "mean_window_s": 6.654998579528183,
+      "ideal_windows_per_hour": 1081.8935442222823
+    },
+    {
+      "workers": 4,
+      "device": "cuda",
+      "chunk": 4096,
+      "windows": 16,
+      "wall_s": 39.96043485403061,
+      "windows_per_hour": 1441.589614305558,
+      "mean_window_s": 7.672995724045904,
+      "ideal_windows_per_hour": 1876.7115893043929
+    },
+    {
+      "workers": 6,
+      "device": "cuda",
+      "chunk": 4096,
+      "windows": 24,
+      "wall_s": 45.991263621952385,
+      "windows_per_hour": 1878.6781063726664,
+      "mean_window_s": 7.898353527746319,
+      "ideal_windows_per_hour": 2734.7471753601344
+    },
+    {
+      "workers": 8,
+      "device": "cuda",
+      "chunk": 4096,
+      "windows": 32,
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 540.00 MiB. GPU 0 has a total capacity of 5.61 GiB of which 224.75 MiB is free. Process 7806 has 2.93 MiB memory in use. P",
+      "windows_per_hour": null,
+      "mean_window_s": null,
+      "ideal_windows_per_hour": null
+    },
+    {
+      "workers": 8,
+      "device": "cpu",
+      "chunk": 1024,
+      "windows": 32,
+      "wall_s": 62.382757579907775,
+      "windows_per_hour": 1846.8068199279537,
+      "mean_window_s": 11.218851299694506,
+      "ideal_windows_per_hour": 2567.107739522694
+    },
+    {
+      "workers": 8,
+      "device": "cpu",
+      "chunk": 16384,
+      "windows": 32,
+      "wall_s": 71.44554066821001,
+      "windows_per_hour": 1612.4508095034118,
+      "mean_window_s": 13.363123054165044,
+      "ideal_windows_per_hour": 2155.18482343269
+    },
+    {
+      "workers": 8,
+      "device": "cpu",
+      "chunk": 32768,
+      "windows": 32,
+      "wall_s": 73.12295861891471,
+      "windows_per_hour": 1575.4569812284285,
+      "mean_window_s": 13.721343393168354,
+      "ideal_windows_per_hour": 2098.9198487911235
+    },
+    {
+      "workers": 6,
+      "device": "cuda",
+      "chunk": 1024,
+      "windows": 24,
+      "wall_s": 46.61646548914723,
+      "windows_per_hour": 1853.4751755938285,
+      "mean_window_s": 8.223693466949044,
+      "ideal_windows_per_hour": 2626.5570435972863
+    },
+    {
+      "workers": 6,
+      "device": "cuda",
+      "chunk": 16384,
+      "windows": 24,
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.06 GiB. GPU 0 has a total capacity of 5.61 GiB of which 1.39 GiB is free. Process 7806 has 2.93 MiB memory in use. Proce",
+      "windows_per_hour": null,
+      "mean_window_s": null,
+      "ideal_windows_per_hour": null
+    },
+    {
+      "workers": 6,
+      "device": "cuda",
+      "chunk": 32768,
+      "windows": 24,
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 4.00 GiB. GPU 0 has a total capacity of 5.61 GiB of which 3.52 GiB is free. Process 7806 has 2.93 MiB memory in use. Proce",
+      "windows_per_hour": null,
+      "mean_window_s": null,
+      "ideal_windows_per_hour": null
+    }
+  ],
+  "chosen": {
+    "workers": 12,
+    "device": "cpu",
+    "chunk": 4096,
+    "windows_per_hour": 1932.442504668672
+  },
+  "equivalence": {
+    "windows": 20,
+    "workers": 12,
+    "device": "cpu",
+    "chunk": 4096,
+    "max_abs_diff_sequential_vs_parallel": 0.0,
+    "max_abs_diff_vs_v1_code_path_first_window": 0.0,
+    "passes": true
+  },
+  "projection": {
+    "jobs_total": 5760,
+    "jobs_remaining": 5760,
+    "windows_per_hour": 1932.442504668672,
+    "projected_hours": 2.9806837647610034,
+    "threshold_hours": 36,
+    "within_threshold": true,
+    "per_profile_jobs": {
+      "MATR": 2880,
+      "HUST": 2880
+    },
+    "recorded": "2026-10-08 11:33:39"
+  },
+  "runs": [
+    {
+      "label": "v8 full run",
+      "jobs": 5760,
+      "already_done": 0,
+      "ran": 5760,
+      "wall_s": 6142.803890247829,
+      "windows_per_hour": 3375.657170648079,
+      "mean_window_s": 12.728923939153658,
+      "workers": 12,
+      "device": "cpu",
+      "chunk": 4096,
+      "datasets": [
+        "MATR",
+        "HUST"
+      ],
+      "finished": "2026-10-08 13:16:25"
+    }
+  ]
+}
