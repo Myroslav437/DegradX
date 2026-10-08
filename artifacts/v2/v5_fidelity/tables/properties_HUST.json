@@ -1,0 +1,240 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "fitting": "rollover; 0.0027",
+    "held_out": "rollover; 0.0032",
+    "generated": "rollover; 0.0013",
+    "units": {
+      "fitting": 54,
+      "held_out": 23,
+      "generated": 177
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "fitting": {
+      "n": 54,
+      "median": 16.828575324165573,
+      "q25": 14.671265366638718,
+      "q75": 18.82252273195638,
+      "p05": 12.618078308951766,
+      "p95": 21.730717028456226
+    },
+    "held_out": {
+      "n": 23,
+      "median": 16.292134742027308,
+      "q25": 14.734648884656348,
+      "q75": 20.005601546963323,
+      "p05": 12.706605487631432,
+      "p95": 22.297208285990912
+    },
+    "generated": {
+      "n": 177,
+      "median": 16.99231229878699,
+      "q25": 14.575939930214183,
+      "q75": 19.117403217008455,
+      "p05": 12.385301095747156,
+      "p95": 21.899472872710845
+    },
+    "units": {
+      "fitting": 54,
+      "held_out": 23,
+      "generated": 177
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "fitting": {
+      "n": 54,
+      "median": 0.6864008417453673,
+      "q25": 0.6384195949907857,
+      "q75": 0.7298346535898403,
+      "p05": 0.5727748106459414,
+      "p95": 0.8284252035121208
+    },
+    "held_out": {
+      "n": 23,
+      "median": 0.6506996770721205,
+      "q25": 0.6323333333333333,
+      "q75": 0.7118503833879185,
+      "p05": 0.5903751830875025,
+      "p95": 0.9763075113255244
+    },
+    "generated": {
+      "n": 177,
+      "median": 0.6746323529411765,
+      "q25": 0.6341756919374247,
+      "q75": 0.725435148792813,
+      "p05": 0.5652430383105729,
+      "p95": 0.8707168569837946
+    },
+    "units": {
+      "fitting": 54,
+      "held_out": 23,
+      "generated": 177
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "fitting": {
+      "n": 54,
+      "median": 1860.5,
+      "q25": 1656.25,
+      "q75": 2161.75,
+      "p05": 1372.7,
+      "p95": 2653.1
+    },
+    "held_out": {
+      "n": 23,
+      "median": 1938.0,
+      "q25": 1566.5,
+      "q75": 2250.5,
+      "p05": 1315.2,
+      "p95": 2457.7
+    },
+    "generated": {
+      "n": 177,
+      "median": 1805.0,
+      "q25": 1584.0,
+      "q75": 2170.0,
+      "p05": 1343.0,
+      "p95": 2627.8
+    },
+    "units": {
+      "fitting": 54,
+      "held_out": 23,
+      "generated": 177
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "early-life reference q1 [Ah], units reaching EOL",
+    "fitting": {
+      "median": 1.1921709858326897,
+      "iqr": 0.021164030225331087,
+      "p05_p95": [
+        1.1722842124941726,
+        1.2090002754182894
+      ],
+      "n": 54
+    },
+    "held_out": {
+      "median": 1.192580784097388,
+      "iqr": 0.019620552318054596,
+      "p05_p95": [
+        1.1710811759026167,
+        1.2272339443201241
+      ],
+      "n": 23
+    },
+    "generated": {
+      "median": 1.193738058025308,
+      "iqr": 0.03031389065264878,
+      "p05_p95": [
+        1.1650700875950972,
+        1.2125324654105907
+      ],
+      "n": 177
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, capacity (per-unit-centred AR(1))",
+    "fitting": 1.0963455638666938e-06,
+    "held_out": 1.0639060845816568e-06,
+    "generated": 9.447242145741589e-07,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "fitting": 0.9405291037805732,
+    "held_out": 0.9483930822776654,
+    "generated": 0.9192226065652541,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, charge_time (per-unit-centred AR(1))",
+    "fitting": 1.3927395048496134,
+    "held_out": 1.433561940486202,
+    "generated": 1.018836625222186,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "fitting": 0.9934008852788464,
+    "held_out": 0.992810892717347,
+    "generated": 0.9878652182452405,
+    "dataset": "HUST"
+  },
+  {
+    "property": "per-unit offset IQR, charge_time",
+    "fitting": 1.6833993631354067,
+    "held_out": 1.6160130299535798,
+    "generated": 1.9677773747708636,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage (per-unit-centred AR(1))",
+    "fitting": 2.5054481579235322e-05,
+    "held_out": 3.3611609528413264e-05,
+    "generated": 2.1981829469832133e-05,
+    "dataset": "HUST"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "fitting": 0.9779724117629024,
+    "held_out": 0.9837048296461098,
+    "generated": 0.974453483749117,
+    "dataset": "HUST"
+  },
+  {
+    "property": "per-unit offset IQR, mean_discharge_voltage",
+    "fitting": 0.052995242979917756,
+    "held_out": 0.04738565983934773,
+    "generated": 0.054171385104353376,
+    "dataset": "HUST"
+  },
+  {
+    "property": "positive residual runs per 100 positions (enabled in profile: False)",
+    "fitting": 0.057910131328399526,
+    "held_out": 0.043623005395476984,
+    "generated": 0.11420326068785909,
+    "events": {
+      "fitting": 59,
+      "held_out": 19,
+      "generated": 649
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "negative residual runs per 100 positions (enabled in profile: False)",
+    "fitting": 0.12563553915313794,
+    "held_out": 0.15612444036275974,
+    "generated": 0.10522889043349727,
+    "events": {
+      "fitting": 128,
+      "held_out": 68,
+      "generated": 598
+    },
+    "dataset": "HUST"
+  },
+  {
+    "property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
+    "fitting": {
+      "relative_frobenius": 0.0,
+      "mean_abs_delta_rho": 0.0
+    },
+    "held_out": {
+      "relative_frobenius": 0.02853611924326389,
+      "mean_abs_delta_rho": 0.01947785707968451
+    },
+    "generated": {
+      "relative_frobenius": 0.034647918446053395,
+      "mean_abs_delta_rho": 0.023691599787314017
+    },
+    "dataset": "HUST"
+  }
+]

@@ -1,0 +1,18 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[v5] MATR full: ratio 1.490 [1.042, 2.291]
+[v5] MATR capacity_only: ratio 0.979 [0.924, 1.083]
+[v5] MATR capacity_relative: ratio 1.084 [0.946, 1.213]
+[v5] MATR capacity_state: ratio 1.084 [0.926, 1.253]
+[v5] MATR full_centred: ratio 1.935 [1.405, 2.580]
+[v5] HUST full: ratio 1.174 [0.936, 1.342]
+[v5] HUST capacity_only: ratio 1.037 [0.982, 1.127]
+[v5] HUST capacity_relative: ratio 1.111 [0.919, 1.350]
+[v5] HUST capacity_state: ratio 1.118 [0.877, 1.375]
+[v5] HUST full_centred: ratio 0.972 [0.853, 1.170]
+[PASS] MATR: discriminator does not separate trivially (accuracy < 0.99): expected < 0.99; observed 0.667
+[PASS] MATR: TSTR ratio finite with interval: expected finite; observed 1.4897842084416923
+[PASS] HUST: discriminator does not separate trivially (accuracy < 0.99): expected < 0.99; observed 0.515
+[PASS] HUST: TSTR ratio finite with interval: expected finite; observed 1.173587562170692
+v5 exit 0

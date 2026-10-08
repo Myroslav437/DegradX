@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MATR: discriminator does not separate trivially (accuracy < 0.99)",
+    "expected": "< 0.99",
+    "observed": "0.667",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "1.4897842084416923",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: discriminator does not separate trivially (accuracy < 0.99)",
+    "expected": "< 0.99",
+    "observed": "0.515",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "1.173587562170692",
+    "passed": true,
+    "severity": "error"
+  }
+]

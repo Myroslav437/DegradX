@@ -1,0 +1,5 @@
+name,expected,observed,passed,severity
+MATR: discriminator does not separate trivially (accuracy < 0.99),< 0.99,0.667,True,warn
+MATR: TSTR ratio finite with interval,finite,1.4897842084416923,True,error
+HUST: discriminator does not separate trivially (accuracy < 0.99),< 0.99,0.515,True,warn
+HUST: TSTR ratio finite with interval,finite,1.173587562170692,True,error

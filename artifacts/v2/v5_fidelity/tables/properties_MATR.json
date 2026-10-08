@@ -1,0 +1,282 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "fitting": "two_term_exponential; 0.0061",
+    "held_out": "two_term_exponential; 0.0054",
+    "generated": "two_term_exponential; 0.0034",
+    "units": {
+      "fitting": 90,
+      "held_out": 38,
+      "generated": 222
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "fitting": {
+      "n": 90,
+      "median": 25.620018797183704,
+      "q25": 19.636540226315105,
+      "q75": 38.55248804012765,
+      "p05": 11.403853490708862,
+      "p95": 43.49570339091245
+    },
+    "held_out": {
+      "n": 38,
+      "median": 25.60255077163324,
+      "q25": 20.12604381399429,
+      "q75": 40.65106699983032,
+      "p05": 12.043247562878934,
+      "p95": 47.85290589631939
+    },
+    "generated": {
+      "n": 222,
+      "median": 23.70018523879641,
+      "q25": 19.224492762722573,
+      "q75": 37.47580570148238,
+      "p05": 10.864439670360063,
+      "p95": 44.11100544009724
+    },
+    "units": {
+      "fitting": 90,
+      "held_out": 38,
+      "generated": 222
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "fitting": {
+      "n": 90,
+      "median": 0.9987016160288492,
+      "q25": 0.9980353634577603,
+      "q75": 0.9989967071935157,
+      "p05": 0.9978208657679895,
+      "p95": 0.9994034070613114
+    },
+    "held_out": {
+      "n": 38,
+      "median": 0.9986532992809144,
+      "q25": 0.9979412482536903,
+      "q75": 0.9989704754644595,
+      "p05": 0.9975695462222408,
+      "p95": 0.9993252996486097
+    },
+    "generated": {
+      "n": 222,
+      "median": 0.9987856704691573,
+      "q25": 0.9981524237608365,
+      "q75": 0.9990193673151302,
+      "p05": 0.9978308026030369,
+      "p95": 0.9994410285075461
+    },
+    "units": {
+      "fitting": 90,
+      "held_out": 38,
+      "generated": 222
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "fitting": {
+      "n": 90,
+      "median": 770.5,
+      "q25": 509.0,
+      "q75": 996.75,
+      "p05": 458.9,
+      "p95": 1676.85
+    },
+    "held_out": {
+      "n": 38,
+      "median": 743.5,
+      "q25": 485.75,
+      "q75": 974.75,
+      "p05": 414.75,
+      "p95": 1494.5499999999995
+    },
+    "generated": {
+      "n": 222,
+      "median": 823.5,
+      "q25": 541.25,
+      "q75": 1019.75,
+      "p05": 461.0,
+      "p95": 1789.0
+    },
+    "units": {
+      "fitting": 90,
+      "held_out": 38,
+      "generated": 222
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "early-life reference q1 [Ah], units reaching EOL",
+    "fitting": {
+      "median": 1.0742200370629407,
+      "iqr": 0.010785474650349736,
+      "p05_p95": [
+        1.0532097132983718,
+        1.0875275927156214
+      ],
+      "n": 90
+    },
+    "held_out": {
+      "median": 1.0781797342657378,
+      "iqr": 0.010414686888112756,
+      "p05_p95": [
+        1.0615439773076958,
+        1.08878507148019
+      ],
+      "n": 38
+    },
+    "generated": {
+      "median": 1.0780252524935445,
+      "iqr": 0.0124213411358991,
+      "p05_p95": [
+        1.0557609099223806,
+        1.0914399172684863
+      ],
+      "n": 222
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, capacity (per-unit-centred AR(1))",
+    "fitting": 2.818708601780269e-06,
+    "held_out": 4.569370418643904e-06,
+    "generated": 1.8770205950366637e-06,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "fitting": 0.9415210134933107,
+    "held_out": 0.9154154381104281,
+    "generated": 0.9242868610418138,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, charge_time (per-unit-centred AR(1))",
+    "fitting": 0.6940595300883122,
+    "held_out": 0.7991226302019488,
+    "generated": 0.5843472020234866,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "fitting": 0.8879532980843635,
+    "held_out": 0.8117725089681603,
+    "generated": 0.8827792695635102,
+    "dataset": "MATR"
+  },
+  {
+    "property": "per-unit offset IQR, charge_time",
+    "fitting": 4.765008935955318,
+    "held_out": 1.2997699161010812,
+    "generated": 4.961250853966555,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage (per-unit-centred AR(1))",
+    "fitting": 0.00040937365031416286,
+    "held_out": 0.0004304542415935731,
+    "generated": 0.00036136525940784296,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "fitting": 0.9562999397589781,
+    "held_out": 0.9630265857336388,
+    "generated": 0.9499686442171755,
+    "dataset": "MATR"
+  },
+  {
+    "property": "per-unit offset IQR, mean_discharge_voltage",
+    "fitting": 0.05902957216368798,
+    "held_out": 0.05322350466011089,
+    "generated": 0.06378535786732531,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, internal_resistance (per-unit-centred AR(1))",
+    "fitting": 8.063634307630408e-08,
+    "held_out": 8.593968733380622e-08,
+    "generated": 6.670911502606308e-08,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, internal_resistance",
+    "fitting": 0.959350438242031,
+    "held_out": 0.9425203195428989,
+    "generated": 0.9509680189811769,
+    "dataset": "MATR"
+  },
+  {
+    "property": "per-unit offset IQR, internal_resistance",
+    "fitting": 0.0017652739436739813,
+    "held_out": 0.0007593717226245331,
+    "generated": 0.001678517494303305,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise variance, temperature_mean (per-unit-centred AR(1))",
+    "fitting": 0.48613433175138493,
+    "held_out": 0.6011703263847974,
+    "generated": 0.3888476746095081,
+    "dataset": "MATR"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, temperature_mean",
+    "fitting": 0.9309507041311913,
+    "held_out": 0.918139500687141,
+    "generated": 0.9263916257075482,
+    "dataset": "MATR"
+  },
+  {
+    "property": "per-unit offset IQR, temperature_mean",
+    "fitting": 1.9631209435045456,
+    "held_out": 1.2198436818415939,
+    "generated": 2.190321360596836,
+    "dataset": "MATR"
+  },
+  {
+    "property": "positive residual runs per 100 positions (enabled in profile: False)",
+    "fitting": 0.12190830484616931,
+    "held_out": 0.12009354655205108,
+    "generated": 0.09227519210909675,
+    "events": {
+      "fitting": 97,
+      "held_out": 38,
+      "generated": 235
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "negative residual runs per 100 positions (enabled in profile: False)",
+    "fitting": 0.10808365171928412,
+    "held_out": 0.2022628152455597,
+    "generated": 0.09973573955621522,
+    "events": {
+      "fitting": 86,
+      "held_out": 64,
+      "generated": 254
+    },
+    "dataset": "MATR"
+  },
+  {
+    "property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
+    "fitting": {
+      "relative_frobenius": 0.0,
+      "mean_abs_delta_rho": 0.0
+    },
+    "held_out": {
+      "relative_frobenius": 0.09105874965981306,
+      "mean_abs_delta_rho": 0.046187854826474396
+    },
+    "generated": {
+      "relative_frobenius": 0.10874620081500506,
+      "mean_abs_delta_rho": 0.06366703982565589
+    },
+    "dataset": "MATR"
+  }
+]

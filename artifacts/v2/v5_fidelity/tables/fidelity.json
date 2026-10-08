@@ -1,0 +1,2803 @@
+{
+  "MATR": {
+    "window_length": 24,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage",
+      "internal_resistance",
+      "temperature_mean"
+    ],
+    "units": {
+      "measured_fitting": 95,
+      "measured_held_out": 40,
+      "measured_held_out_reaching_eol": 38,
+      "generated_per_seed": 300
+    },
+    "baseline_measured_fitting_vs_held_out": {
+      "cov_relative_frobenius": 0.17401108623761624,
+      "cov_mean_abs_delta_rho": 0.09718465936836151,
+      "cov_relative_frobenius_interval": {
+        "ci_low": 0.07970374658549728,
+        "ci_high": 0.4424459336847821,
+        "n_resamples": 10000,
+        "method": "percentile over held-out units"
+      }
+    },
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "accuracy": 0.6668750047683716,
+        "discriminative_error": 0.3331249952316284,
+        "abs_acc_minus_half": 0.16687500476837158,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.2208618210629101,
+        "cov_mean_abs_delta_rho": 0.12630224062487516,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 1,
+        "accuracy": 0.7562499642372131,
+        "discriminative_error": 0.24375003576278687,
+        "abs_acc_minus_half": 0.25624996423721313,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.20306085735298887,
+        "cov_mean_abs_delta_rho": 0.11593743229570593,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 2,
+        "accuracy": 0.5768749713897705,
+        "discriminative_error": 0.4231250286102295,
+        "abs_acc_minus_half": 0.07687497138977051,
+        "test_windows_per_class": 800,
+        "train_units": {
+          "measured": 32,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.20326752654333102,
+        "cov_mean_abs_delta_rho": 0.11772534344620678,
+        "generated_windows": 30000
+      }
+    ],
+    "x3_off_seed0": {
+      "generation_seed": "x3off",
+      "accuracy": 0.6449999809265137,
+      "discriminative_error": 0.35500001907348633,
+      "abs_acc_minus_half": 0.14499998092651367,
+      "test_windows_per_class": 800,
+      "train_units": {
+        "measured": 32,
+        "generated": 240
+      },
+      "test_units": {
+        "measured": 8,
+        "generated": 60
+      },
+      "cov_relative_frobenius": 0.20678209061481215,
+      "cov_mean_abs_delta_rho": 0.11939221126012016,
+      "generated_windows": 30000
+    },
+    "discriminative_error_mean": 0.3333333532015483,
+    "discriminative_error_seed_half_range": 0.08968749642372131,
+    "cov_relative_frobenius_mean": 0.20906340165307666,
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null
+    },
+    "tstr": {
+      "ratio": 1.4897842084416923,
+      "ci_low": 1.0423145833648366,
+      "ci_high": 2.2909178615860184,
+      "units": 38,
+      "method": "BCa over held-out units",
+      "rmse_tstr_cycles": 219.18292663470896,
+      "rmse_trtr_cycles": 147.12394277824527,
+      "held_out_units": 38,
+      "held_out_windows": 29605,
+      "training_units_each": 90,
+      "ratio_spread": {
+        "min": 1.2316287528781802,
+        "max": 2.143546754104488
+      },
+      "runs": [
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 0,
+          "rmse": 141.69528283686077,
+          "epochs": 13
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 1,
+          "rmse": 193.89874085523087,
+          "epochs": 13
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 2,
+          "rmse": 142.42370318639004,
+          "epochs": 16
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 3,
+          "rmse": 122.64472369378046,
+          "epochs": 15
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 4,
+          "rmse": 123.39675170105292,
+          "epochs": 24
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 0,
+          "rmse": 310.41095056248986,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 1,
+          "rmse": 178.35442646117062,
+          "epochs": 34
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 2,
+          "rmse": 190.09554019731019,
+          "epochs": 21
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 3,
+          "rmse": 248.57289789934165,
+          "epochs": 26
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 4,
+          "rmse": 206.31662131483122,
+          "epochs": 40
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 0,
+          "rmse": 186.03533049319844,
+          "epochs": 19
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 1,
+          "rmse": 255.48725717844925,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 2,
+          "rmse": 190.71833018239616,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 3,
+          "rmse": 181.8978942862019,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 4,
+          "rmse": 202.92949660091222,
+          "epochs": 19
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 0,
+          "rmse": 226.74081345528177,
+          "epochs": 26
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 1,
+          "rmse": 240.48610676753114,
+          "epochs": 36
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 2,
+          "rmse": 216.26928531551158,
+          "epochs": 22
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 3,
+          "rmse": 219.28556373025256,
+          "epochs": 20
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 4,
+          "rmse": 193.21906481750267,
+          "epochs": 15
+        }
+      ],
+      "void": null
+    },
+    "tstr_input_sets": {
+      "full": {
+        "ratio": 1.4897842084416923,
+        "ci_low": 1.0423145833648366,
+        "ci_high": 2.2909178615860184,
+        "units": 38,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 219.18292663470896,
+        "rmse_trtr_cycles": 147.12394277824527,
+        "held_out_units": 38,
+        "held_out_windows": 29605,
+        "training_units_each": 90,
+        "ratio_spread": {
+          "min": 1.2316287528781802,
+          "max": 2.143546754104488
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 141.69528283686077,
+            "epochs": 13
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 193.89874085523087,
+            "epochs": 13
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 142.42370318639004,
+            "epochs": 16
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 122.64472369378046,
+            "epochs": 15
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 123.39675170105292,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 310.41095056248986,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 178.35442646117062,
+            "epochs": 34
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 190.09554019731019,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 248.57289789934165,
+            "epochs": 26
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 206.31662131483122,
+            "epochs": 40
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 186.03533049319844,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 255.48725717844925,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 190.71833018239616,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 181.8978942862019,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 202.92949660091222,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 226.74081345528177,
+            "epochs": 26
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 240.48610676753114,
+            "epochs": 36
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 216.26928531551158,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 219.28556373025256,
+            "epochs": 20
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 193.21906481750267,
+            "epochs": 15
+          }
+        ]
+      },
+      "capacity_only": {
+        "ratio": 0.9787895943797793,
+        "ci_low": 0.9237624530389357,
+        "ci_high": 1.0825646591153966,
+        "units": 38,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 319.0158595688328,
+        "rmse_trtr_cycles": 325.9289446890582,
+        "held_out_units": 38,
+        "held_out_windows": 29605,
+        "training_units_each": 90,
+        "ratio_spread": {
+          "min": 0.9387147050620781,
+          "max": 1.0129492334314034
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 330.61109547683014,
+            "epochs": 31
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 324.0996288538776,
+            "epochs": 35
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 320.2259711251178,
+            "epochs": 32
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 318.60944508780824,
+            "epochs": 16
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 335.77889745012106,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 330.0847096492733,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 325.30978016783484,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 316.16778868963513,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 327.35897772999795,
+            "epochs": 23
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 316.3748849179743,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 323.5729856782968,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 315.34794070564425,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 318.5475021673376,
+            "epochs": 30
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 318.8682193833715,
+            "epochs": 25
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 327.5949912734923,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 313.5914903677302,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 305.89427449811336,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 309.08219289847045,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 315.0652478176156,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 321.3172865268087,
+            "epochs": 27
+          }
+        ]
+      },
+      "capacity_relative": {
+        "ratio": 1.0839611059518064,
+        "ci_low": 0.9459428927301317,
+        "ci_high": 1.213227871060604,
+        "units": 38,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 283.81202713442235,
+        "rmse_trtr_cycles": 261.82860766504365,
+        "held_out_units": 38,
+        "held_out_windows": 29605,
+        "training_units_each": 90,
+        "ratio_spread": {
+          "min": 1.035513801408481,
+          "max": 1.1434544231250343
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 264.5680045284516,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 262.6141643259639,
+            "epochs": 13
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 258.8539371931678,
+            "epochs": 26
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 266.8757495386386,
+            "epochs": 24
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 256.0871807452903,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 283.53355744722086,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 278.89478842199486,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 283.57394612125,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 293.0931045795182,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 291.34197757855236,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 272.80517660466046,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 274.0658951490038,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 272.7207111981872,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 271.2825535211569,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 271.09731363033654,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 298.1038093000319,
+            "epochs": 27
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 283.00749735050175,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 289.4389429883549,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 299.35614759193504,
+            "epochs": 26
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 292.4381111179028,
+            "epochs": 21
+          }
+        ]
+      },
+      "capacity_state": {
+        "ratio": 1.0837610523506813,
+        "ci_low": 0.9257227968696755,
+        "ci_high": 1.2534051144737632,
+        "units": 38,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 284.5910751363154,
+        "rmse_trtr_cycles": 262.59577654967063,
+        "held_out_units": 38,
+        "held_out_windows": 29605,
+        "training_units_each": 90,
+        "ratio_spread": {
+          "min": 1.0322105974337912,
+          "max": 1.1453177160003516
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 275.5007738174946,
+            "epochs": 55
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 262.877722438037,
+            "epochs": 13
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 255.7582957414787,
+            "epochs": 36
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 263.58809985118995,
+            "epochs": 25
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 254.7279799249159,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 282.5432675671579,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 287.1649801121109,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 288.4278572141092,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 300.26397547464603,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 293.20576707415864,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 275.39795179413807,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 270.9455525753246,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 273.49025912325595,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 273.44127908661955,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 273.54050129167797,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 284.1661415766137,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 283.75804270482917,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 288.8477542518139,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 290.7534552786317,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 300.63510509145755,
+            "epochs": 29
+          }
+        ]
+      },
+      "full_centred": {
+        "ratio": 1.9349150140858544,
+        "ci_low": 1.4052140025110489,
+        "ci_high": 2.5801103504151905,
+        "units": 38,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 364.706124550762,
+        "rmse_trtr_cycles": 188.48689575292096,
+        "held_out_units": 38,
+        "held_out_windows": 29605,
+        "training_units_each": 90,
+        "ratio_spread": {
+          "min": 1.6457576035257815,
+          "max": 2.217772763944963
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 190.4613707988188,
+            "epochs": 14
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 202.0924722076273,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 187.13232148536915,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 175.04600090527063,
+            "epochs": 12
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 186.70843603296333,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 311.35535865851597,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 361.67146759054333,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 313.2632256568441,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 309.8766056142776,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 329.0333298981177,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 329.60885341975825,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 394.82861372655276,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 373.06530985400013,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 367.7803879514069,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 393.48736090273854,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 371.4103989499762,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 417.5802649447056,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 408.7406587091534,
+            "epochs": 23
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 379.1315407061248,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 384.7817196805665,
+            "epochs": 19
+          }
+        ]
+      }
+    },
+    "x1_on_v2": {
+      "tests": {
+        "per_cell_structure": {
+          "log_ratio_difference": 0.4200698613872854,
+          "ci_low": 0.06089044977053893,
+          "ci_high": 0.9006142438858893,
+          "ratio_of_ratios": 1.522067885678444,
+          "above_zero": true,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        },
+        "initial_capacity_spread": {
+          "log_ratio_difference": -0.10206060072298258,
+          "ci_low": -0.2271926596302159,
+          "ci_high": 0.02888139699735851,
+          "ratio_of_ratios": 0.902974829083302,
+          "above_zero": false,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        },
+        "offsets_specifically": {
+          "log_ratio_difference": -0.2614321222283593,
+          "ci_low": -0.5912506248435547,
+          "ci_high": 0.10711204369991435,
+          "ratio_of_ratios": 0.7699481360144064,
+          "above_zero": false,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        }
+      },
+      "descriptive": {
+        "full_vs_capacity_relative": {
+          "log_ratio_difference": 0.3180092606643028,
+          "ci_low": -0.07959964109868978,
+          "ci_high": 0.701832894854045,
+          "ratio_of_ratios": 1.3743889889236756,
+          "above_zero": false,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        },
+        "full_vs_capacity_state": {
+          "log_ratio_difference": 0.3181938356117211,
+          "ci_low": -0.07800148673636441,
+          "ci_high": 0.6913070086678667,
+          "ratio_of_ratios": 1.3746426901117599,
+          "above_zero": false,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        }
+      },
+      "leave_one_out": {
+        "without_generation_seed_0": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.396046524924526,
+            "ci_low": 0.028820615291225184,
+            "ci_high": 0.9199255363787735,
+            "ratio_of_ratios": 1.4859384491174024,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.10443170829333631,
+            "ci_low": -0.22962242453963355,
+            "ci_high": 0.039109493908157364,
+            "ratio_of_ratios": 0.900836314955663,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.34025098581087115,
+            "ci_low": -0.6733486343897744,
+            "ci_high": 0.06763108549461211,
+            "ratio_of_ratios": 0.7115917009277078,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_generation_seed_1": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.45288155925816287,
+            "ci_low": 0.07411313400482379,
+            "ci_high": 0.9193430381684129,
+            "ratio_of_ratios": 1.5728378873955173,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.1242247407688718,
+            "ci_low": -0.259176945635823,
+            "ci_high": 0.013678253832574927,
+            "ratio_of_ratios": 0.8831813317254908,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.22053001625808044,
+            "ci_low": -0.5712416290027409,
+            "ci_high": 0.14546429428306787,
+            "ratio_of_ratios": 0.8020935626529117,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_generation_seed_2": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.40958533657312257,
+            "ci_low": 0.056753932874334105,
+            "ci_high": 0.8951654129811,
+            "ratio_of_ratios": 1.5061930924139575,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.0770168460471557,
+            "ci_low": -0.19774644167295738,
+            "ci_high": 0.04286346785560121,
+            "ratio_of_ratios": 0.9258742561537386,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.22113714344413327,
+            "ci_low": -0.5380864274041035,
+            "ci_high": 0.1279620770247479,
+            "ratio_of_ratios": 0.8016067376425702,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_0": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.37588080270216684,
+            "ci_low": 0.03766098125449151,
+            "ci_high": 0.8266554899166904,
+            "ratio_of_ratios": 1.45627353955449,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.10275737824346368,
+            "ci_low": -0.242207241061465,
+            "ci_high": 0.025680367449471525,
+            "ratio_of_ratios": 0.9023458756665839,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.3244644084200492,
+            "ci_low": -0.6357890063771403,
+            "ci_high": 0.05129757709043823,
+            "ratio_of_ratios": 0.7229144368589697,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_1": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.511187567422583,
+            "ci_low": 0.19701937869377367,
+            "ci_high": 0.964086251100911,
+            "ratio_of_ratios": 1.667270015276835,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.1060269610762584,
+            "ci_low": -0.23142296372728663,
+            "ci_high": 0.03373667736341827,
+            "ratio_of_ratios": 0.8994003989462914,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.168303357126819,
+            "ci_low": -0.5693849055415233,
+            "ci_high": 0.12761757316629102,
+            "ratio_of_ratios": 0.8450974294673647,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_2": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.43427723272945157,
+            "ci_low": 0.04800629352885065,
+            "ci_high": 0.913213579042629,
+            "ratio_of_ratios": 1.5438468136594965,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.10174787074357061,
+            "ci_low": -0.21994907692265425,
+            "ci_high": 0.02308692612369736,
+            "ratio_of_ratios": 0.9032572605431012,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.24467106347400142,
+            "ci_low": -0.5788870472605195,
+            "ci_high": 0.15546438384033362,
+            "ratio_of_ratios": 0.7829620407022213,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_3": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.3909910178155026,
+            "ci_low": -0.01851465530998664,
+            "ci_high": 0.9153568843831825,
+            "ratio_of_ratios": 1.4784452336856486,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.10973973612905477,
+            "ci_low": -0.2369569277223675,
+            "ci_high": 0.024613817821302984,
+            "ratio_of_ratios": 0.8960673188996228,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.2877377295762379,
+            "ci_low": -0.6260912981584886,
+            "ci_high": 0.12083025883349956,
+            "ratio_of_ratios": 0.749958258318279,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_4": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.398372011574598,
+            "ci_low": 0.005120053358378092,
+            "ci_high": 0.8746816452269057,
+            "ratio_of_ratios": 1.4893980001544576,
+            "above_zero": true,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.08996801735074936,
+            "ci_low": -0.20976518413144318,
+            "ci_high": 0.04995305608531464,
+            "ratio_of_ratios": 0.9139604156791964,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": -0.27143979876421204,
+            "ci_low": -0.6007803580718991,
+            "ci_high": 0.10229388126614196,
+            "ratio_of_ratios": 0.762281172355335,
+            "above_zero": false,
+            "units": 38,
+            "method": "paired BCa over held-out units"
+          }
+        }
+      },
+      "readings": {
+        "per_cell_structure": {
+          "interval_above_zero": true,
+          "holds": false
+        },
+        "initial_capacity_spread": {
+          "interval_above_zero": false,
+          "holds": false
+        },
+        "offsets_specifically": {
+          "interval_above_zero": false,
+          "holds": false
+        }
+      }
+    },
+    "properties_file": "tables/properties_MATR.json",
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.4424459336847821,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          3.4201964487768874,
+          2.276480201346431,
+          4.957907742362334
+        ],
+        "v2": [
+          1.4897842084416923,
+          1.0423145833648366,
+          2.2909178615860184
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.07187501589457194,
+        "v1_seed_half_range": 0.020312517881393433,
+        "v2": 0.3333333532015483
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.6873697840966545,
+        "v1_baseline": 0.2780475058895786,
+        "v2": 0.20906340165307666,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.17401108623761624,
+          "cov_mean_abs_delta_rho": 0.09718465936836151,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.07970374658549728,
+            "ci_high": 0.4424459336847821,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    }
+  },
+  "HUST": {
+    "window_length": 24,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "units": {
+      "measured_fitting": 54,
+      "measured_held_out": 23,
+      "measured_held_out_reaching_eol": 23,
+      "generated_per_seed": 300
+    },
+    "baseline_measured_fitting_vs_held_out": {
+      "cov_relative_frobenius": 0.03757220016113322,
+      "cov_mean_abs_delta_rho": 0.03272830234493871,
+      "cov_relative_frobenius_interval": {
+        "ci_low": 0.016822071966465988,
+        "ci_high": 0.12486212881494135,
+        "n_resamples": 10000,
+        "method": "percentile over held-out units"
+      }
+    },
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "accuracy": 0.6270000338554382,
+        "discriminative_error": 0.37299996614456177,
+        "abs_acc_minus_half": 0.12700003385543823,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.0523129961482506,
+        "cov_mean_abs_delta_rho": 0.04317728927586542,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 1,
+        "accuracy": 0.5400000214576721,
+        "discriminative_error": 0.4599999785423279,
+        "abs_acc_minus_half": 0.04000002145767212,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.06124434630219748,
+        "cov_mean_abs_delta_rho": 0.04487614229792702,
+        "generated_windows": 30000
+      },
+      {
+        "generation_seed": 2,
+        "accuracy": 0.37700000405311584,
+        "discriminative_error": 0.6229999959468842,
+        "abs_acc_minus_half": 0.12299999594688416,
+        "test_windows_per_class": 500,
+        "train_units": {
+          "measured": 18,
+          "generated": 240
+        },
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        },
+        "cov_relative_frobenius": 0.04846369403004756,
+        "cov_mean_abs_delta_rho": 0.044433545886402505,
+        "generated_windows": 30000
+      }
+    ],
+    "x3_off_seed0": {
+      "generation_seed": "x3off",
+      "accuracy": 0.5900000333786011,
+      "discriminative_error": 0.4099999666213989,
+      "abs_acc_minus_half": 0.09000003337860107,
+      "test_windows_per_class": 500,
+      "train_units": {
+        "measured": 18,
+        "generated": 240
+      },
+      "test_units": {
+        "measured": 5,
+        "generated": 60
+      },
+      "cov_relative_frobenius": 0.05891469933103938,
+      "cov_mean_abs_delta_rho": 0.04856060117132483,
+      "generated_windows": 30000
+    },
+    "discriminative_error_mean": 0.48533331354459125,
+    "discriminative_error_seed_half_range": 0.1250000149011612,
+    "cov_relative_frobenius_mean": 0.054007012160165214,
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null
+    },
+    "tstr": {
+      "ratio": 1.173587562170692,
+      "ci_low": 0.9359569231007253,
+      "ci_high": 1.342011393954543,
+      "units": 23,
+      "method": "BCa over held-out units",
+      "rmse_tstr_cycles": 242.24712582977335,
+      "rmse_trtr_cycles": 206.4158939974688,
+      "held_out_units": 23,
+      "held_out_windows": 43272,
+      "training_units_each": 54,
+      "ratio_spread": {
+        "min": 1.033064095493885,
+        "max": 1.3780520509515928
+      },
+      "runs": [
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 0,
+          "rmse": 210.7712991219097,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 1,
+          "rmse": 192.72083052686656,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 2,
+          "rmse": 216.96421345383254,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 3,
+          "rmse": 207.52054502069777,
+          "epochs": 11
+        },
+        {
+          "model": "TRTR",
+          "generation_seed": null,
+          "model_seed": 4,
+          "rmse": 203.30642118743074,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 0,
+          "rmse": 269.6657054175343,
+          "epochs": 18
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 1,
+          "rmse": 252.8494517464991,
+          "epochs": 18
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 2,
+          "rmse": 213.07635182620749,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 3,
+          "rmse": 224.3485014550499,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 0,
+          "model_seed": 4,
+          "rmse": 221.38999407766644,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 0,
+          "rmse": 213.42893956245186,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 1,
+          "rmse": 231.36125032558087,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 2,
+          "rmse": 224.6341407024732,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 3,
+          "rmse": 256.16651161356464,
+          "epochs": 21
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 1,
+          "model_seed": 4,
+          "rmse": 218.4156835953081,
+          "epochs": 11
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 0,
+          "rmse": 219.78074550123608,
+          "epochs": 12
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 1,
+          "rmse": 261.4705624765365,
+          "epochs": 15
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 2,
+          "rmse": 284.2324159015615,
+          "epochs": 41
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 3,
+          "rmse": 257.4017363242541,
+          "epochs": 13
+        },
+        {
+          "model": "TSTR",
+          "generation_seed": 2,
+          "model_seed": 4,
+          "rmse": 268.83827675931394,
+          "epochs": 33
+        }
+      ],
+      "void": null
+    },
+    "tstr_input_sets": {
+      "full": {
+        "ratio": 1.173587562170692,
+        "ci_low": 0.9359569231007253,
+        "ci_high": 1.342011393954543,
+        "units": 23,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 242.24712582977335,
+        "rmse_trtr_cycles": 206.4158939974688,
+        "held_out_units": 23,
+        "held_out_windows": 43272,
+        "training_units_each": 54,
+        "ratio_spread": {
+          "min": 1.033064095493885,
+          "max": 1.3780520509515928
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 210.7712991219097,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 192.72083052686656,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 216.96421345383254,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 207.52054502069777,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 203.30642118743074,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 269.6657054175343,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 252.8494517464991,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 213.07635182620749,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 224.3485014550499,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 221.38999407766644,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 213.42893956245186,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 231.36125032558087,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 224.6341407024732,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 256.16651161356464,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 218.4156835953081,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 219.78074550123608,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 261.4705624765365,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 284.2324159015615,
+            "epochs": 41
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 257.4017363242541,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 268.83827675931394,
+            "epochs": 33
+          }
+        ]
+      },
+      "capacity_only": {
+        "ratio": 1.0369052470005151,
+        "ci_low": 0.9820801549823283,
+        "ci_high": 1.1272756802935293,
+        "units": 23,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 212.9660001986231,
+        "rmse_trtr_cycles": 205.38617276233853,
+        "held_out_units": 23,
+        "held_out_windows": 43272,
+        "training_units_each": 54,
+        "ratio_spread": {
+          "min": 0.9101435862020968,
+          "max": 1.156290227288763
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 209.6940440520097,
+            "epochs": 16
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 201.748695040052,
+            "epochs": 18
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 195.05458500223804,
+            "epochs": 14
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 208.3904865534721,
+            "epochs": 15
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 211.5901361882629,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 237.38128369078828,
+            "epochs": 42
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 215.8037992952797,
+            "epochs": 23
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 191.18081120834805,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 211.59295451638937,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 212.23905874165337,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 215.33344721081266,
+            "epochs": 30
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 196.334952100581,
+            "epochs": 18
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 186.8484639381428,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 225.36381233017218,
+            "epochs": 45
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 209.89325672120196,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 209.69824033909637,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 234.36344976959066,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 220.11302078992586,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 212.90397507434702,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 208.99712994010247,
+            "epochs": 16
+          }
+        ]
+      },
+      "capacity_relative": {
+        "ratio": 1.110557250121049,
+        "ci_low": 0.919214819153704,
+        "ci_high": 1.3500840201083721,
+        "units": 23,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 239.54683337413132,
+        "rmse_trtr_cycles": 215.69967090667419,
+        "held_out_units": 23,
+        "held_out_windows": 43272,
+        "training_units_each": 54,
+        "ratio_spread": {
+          "min": 0.9756936622290744,
+          "max": 1.1863532164461876
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 223.74323214526441,
+            "epochs": 14
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 203.71254992372778,
+            "epochs": 35
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 214.42209279792493,
+            "epochs": 29
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 224.28240874089462,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 211.6423172915594,
+            "epochs": 32
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 251.39031915399693,
+            "epochs": 27
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 239.62414612335306,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 236.59748197614022,
+            "epochs": 27
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 234.2845798531567,
+            "epochs": 25
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 236.43207699546346,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 238.83302721475062,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 229.83479712788923,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 210.3210333663058,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 255.73091645420715,
+            "epochs": 21
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 249.81648922588803,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 248.08661269424775,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 242.70467961235153,
+            "epochs": 29
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 236.5871076509061,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 242.69207244797198,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 236.90399017797,
+            "epochs": 15
+          }
+        ]
+      },
+      "capacity_state": {
+        "ratio": 1.117525385246048,
+        "ci_low": 0.8772299119589677,
+        "ci_high": 1.37460440261483,
+        "units": 23,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 230.50391363430208,
+        "rmse_trtr_cycles": 206.26279874935594,
+        "held_out_units": 23,
+        "held_out_windows": 43272,
+        "training_units_each": 54,
+        "ratio_spread": {
+          "min": 0.9873557473161296,
+          "max": 1.2651313324523046
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 207.76810609099857,
+            "epochs": 12
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 201.16554151470075,
+            "epochs": 34
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 212.21946578942908,
+            "epochs": 16
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 216.57818880211775,
+            "epochs": 18
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 192.7260652150791,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 221.84871295794468,
+            "epochs": 27
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 230.33587704735584,
+            "epochs": 19
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 242.9470413270243,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 225.89530606760093,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 223.43293439017663,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 218.49482539294434,
+            "epochs": 14
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 222.2782087293172,
+            "epochs": 24
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 203.48560081576161,
+            "epochs": 20
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 222.03338324171511,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 235.8411411104873,
+            "epochs": 27
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 239.02055091425282,
+            "epochs": 22
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 240.32911206572595,
+            "epochs": 16
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 221.3105637867395,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 260.7327804539298,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 243.74661635852155,
+            "epochs": 15
+          }
+        ]
+      },
+      "full_centred": {
+        "ratio": 0.9724346971240793,
+        "ci_low": 0.8525244174995743,
+        "ci_high": 1.1696090310362666,
+        "units": 23,
+        "method": "BCa over held-out units",
+        "rmse_tstr_cycles": 231.99379259207183,
+        "rmse_trtr_cycles": 238.57004822861666,
+        "held_out_units": 23,
+        "held_out_windows": 43272,
+        "training_units_each": 54,
+        "ratio_spread": {
+          "min": 0.8361228337804762,
+          "max": 1.1304614144777663
+        },
+        "runs": [
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 0,
+            "rmse": 241.51083785747528,
+            "epochs": 11
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 1,
+            "rmse": 249.2045838428406,
+            "epochs": 40
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 2,
+            "rmse": 206.76583633418508,
+            "epochs": 21
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 3,
+            "rmse": 251.31370707924304,
+            "epochs": 15
+          },
+          {
+            "model": "TRTR",
+            "generation_seed": null,
+            "model_seed": 4,
+            "rmse": 241.32393107032027,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 0,
+            "rmse": 221.0046395735541,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 1,
+            "rmse": 221.58462376975336,
+            "epochs": 12
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 2,
+            "rmse": 216.19881773647265,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 3,
+            "rmse": 240.72592528869873,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 0,
+            "model_seed": 4,
+            "rmse": 247.37919528333637,
+            "epochs": 17
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 0,
+            "rmse": 204.15087480392032,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 1,
+            "rmse": 202.9322529500657,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 2,
+            "rmse": 225.44031898979466,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 3,
+            "rmse": 199.01711680262247,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 1,
+            "model_seed": 4,
+            "rmse": 207.09517727347546,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 0,
+            "rmse": 269.07669815539106,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 1,
+            "rmse": 261.2185661668544,
+            "epochs": 15
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 2,
+            "rmse": 261.31490910483313,
+            "epochs": 11
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 3,
+            "rmse": 233.05764583623116,
+            "epochs": 13
+          },
+          {
+            "model": "TSTR",
+            "generation_seed": 2,
+            "model_seed": 4,
+            "rmse": 253.1190159351017,
+            "epochs": 11
+          }
+        ]
+      }
+    },
+    "x1_on_v2": {
+      "tests": {
+        "per_cell_structure": {
+          "log_ratio_difference": 0.12382479693079816,
+          "ci_low": -0.07412626611644117,
+          "ci_high": 0.26404211422318374,
+          "ratio_of_ratios": 1.1318175557174213,
+          "above_zero": false,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        },
+        "initial_capacity_spread": {
+          "log_ratio_difference": -0.06862136364124868,
+          "ci_low": -0.2788021826586217,
+          "ci_high": 0.10909797860636217,
+          "ratio_of_ratios": 0.9336801384057365,
+          "above_zero": false,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        },
+        "offsets_specifically": {
+          "log_ratio_difference": 0.18801770500738074,
+          "ci_low": 0.009573977280030625,
+          "ci_high": 0.36274953437749746,
+          "ratio_of_ratios": 1.2068548825350545,
+          "above_zero": true,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        }
+      },
+      "descriptive": {
+        "full_vs_capacity_relative": {
+          "log_ratio_difference": 0.05520343328954948,
+          "ci_low": -0.1430761180913962,
+          "ci_high": 0.25228474565676584,
+          "ratio_of_ratios": 1.056755572072284,
+          "above_zero": false,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        },
+        "full_vs_capacity_state": {
+          "log_ratio_difference": 0.048948586424983176,
+          "ci_low": -0.14418312155760957,
+          "ci_high": 0.2667249015159415,
+          "ratio_of_ratios": 1.0501663565452704,
+          "above_zero": false,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        }
+      },
+      "leave_one_out": {
+        "without_generation_seed_0": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.13674255996793533,
+            "ci_low": -0.07803839020873768,
+            "ci_high": 0.285885784423711,
+            "ratio_of_ratios": 1.1465329470450394,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.07099171184182451,
+            "ci_low": -0.2776308070241661,
+            "ci_high": 0.11159463228256877,
+            "ratio_of_ratios": 0.9314696122630813,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.1932773766571016,
+            "ci_low": -0.0008507091990075343,
+            "ci_high": 0.37220036390836425,
+            "ratio_of_ratios": 1.2132192655564291,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_generation_seed_1": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.13603543093638423,
+            "ci_low": -0.055878976527588456,
+            "ci_high": 0.27004740820139295,
+            "ratio_of_ratios": 1.1457224868962754,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.05980011564438866,
+            "ci_low": -0.26029002628362385,
+            "ci_high": 0.12019264440866123,
+            "ratio_of_ratios": 0.9419527963959504,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.16649382883348648,
+            "ci_low": -0.020997161664139813,
+            "ci_high": 0.343304358700007,
+            "ratio_of_ratios": 1.1811562467360055,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_generation_seed_2": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.09685096007724552,
+            "ci_low": -0.10151926459371285,
+            "ci_high": 0.24855116972970345,
+            "ratio_of_ratios": 1.1016961646731882,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.07533328268043332,
+            "ci_low": -0.2956286928995453,
+            "ci_high": 0.11076574089448087,
+            "ratio_of_ratios": 0.9274343370125927,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.2075875680870561,
+            "ci_low": 0.03669335493425331,
+            "ci_high": 0.409397515793118,
+            "ratio_of_ratios": 1.2307054826464456,
+            "above_zero": true,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_0": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.14040103081975042,
+            "ci_low": -0.07244532050538406,
+            "ci_high": 0.2857673612258845,
+            "ratio_of_ratios": 1.1507351866108915,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.07569564651793137,
+            "ci_low": -0.2840926597407805,
+            "ci_high": 0.10166158995156963,
+            "ratio_of_ratios": 0.9270983292294169,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.1980811395976402,
+            "ci_low": 0.018845376270243887,
+            "ci_high": 0.37498063705228496,
+            "ratio_of_ratios": 1.2190613039525258,
+            "above_zero": true,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_1": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.1090901171037278,
+            "ci_low": -0.07827520427697908,
+            "ci_high": 0.23695707991265375,
+            "ratio_of_ratios": 1.1152628500709512,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.06550637834853752,
+            "ci_low": -0.2846722304657333,
+            "ci_high": 0.11670552099602262,
+            "ratio_of_ratios": 0.9365930728235197,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.15144221041256217,
+            "ci_low": -0.018937321583989464,
+            "ci_high": 0.3137350944835524,
+            "ratio_of_ratios": 1.1635110610425892,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_2": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.13416543429935926,
+            "ci_low": -0.07600418839497516,
+            "ci_high": 0.28563125448906357,
+            "ratio_of_ratios": 1.1435819916819976,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.07609416721131454,
+            "ci_low": -0.29174906955138274,
+            "ci_high": 0.10751806924756366,
+            "ratio_of_ratios": 0.926728934970935,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.23445423999752846,
+            "ci_low": 0.03616390022073557,
+            "ci_high": 0.4220542813901911,
+            "ratio_of_ratios": 1.2642186204649324,
+            "above_zero": true,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_3": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.12153153178118115,
+            "ci_low": -0.09237594773074467,
+            "ci_high": 0.2777543954853332,
+            "ratio_of_ratios": 1.1292249718385121,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.07448887538512533,
+            "ci_low": -0.2742157306292221,
+            "ci_high": 0.10105900290851669,
+            "ratio_of_ratios": 0.9282178000670924,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.16369669152856953,
+            "ci_low": -0.03317561579164203,
+            "ci_high": 0.3512787963352615,
+            "ratio_of_ratios": 1.177857006899834,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        },
+        "without_model_seed_4": {
+          "per_cell_structure": {
+            "log_ratio_difference": 0.11435531481395893,
+            "ci_low": -0.051908374913668065,
+            "ci_high": 0.24099660004881887,
+            "ratio_of_ratios": 1.1211504154719831,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "initial_capacity_spread": {
+            "log_ratio_difference": -0.05159136439457025,
+            "ci_low": -0.26186921153918397,
+            "ci_high": 0.1250008788844296,
+            "ratio_of_ratios": 0.9497168756908598,
+            "above_zero": false,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          },
+          "offsets_specifically": {
+            "log_ratio_difference": 0.19157622359166365,
+            "ci_low": 0.02197736643693959,
+            "ci_high": 0.36425567431858813,
+            "ratio_of_ratios": 1.2111571483695667,
+            "above_zero": true,
+            "units": 23,
+            "method": "paired BCa over held-out units"
+          }
+        }
+      },
+      "readings": {
+        "per_cell_structure": {
+          "interval_above_zero": false,
+          "holds": false
+        },
+        "initial_capacity_spread": {
+          "interval_above_zero": false,
+          "holds": false
+        },
+        "offsets_specifically": {
+          "interval_above_zero": true,
+          "holds": false
+        }
+      }
+    },
+    "properties_file": "tables/properties_HUST.json",
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.12486212881494135,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          1.4612937680490141,
+          1.1113580311093105,
+          1.76383636719532
+        ],
+        "v2": [
+          1.173587562170692,
+          0.9359569231007253,
+          1.342011393954543
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.1643332839012146,
+        "v1_seed_half_range": 0.04349997639656067,
+        "v2": 0.48533331354459125
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.4243181678171406,
+        "v1_baseline": 0.03757220016113322,
+        "v2": 0.054007012160165214,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.03757220016113322,
+          "cov_mean_abs_delta_rho": 0.03272830234493871,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.016822071966465988,
+            "ci_high": 0.12486212881494135,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    }
+  },
+  "readings_cross_profile": {
+    "X2_i_matr_gap_closed": false,
+    "matr_ratio": 1.4897842084416923,
+    "hust_interval": [
+      0.9359569231007253,
+      1.342011393954543
+    ],
+    "anchor_d_record_needed": true
+  }
+}
