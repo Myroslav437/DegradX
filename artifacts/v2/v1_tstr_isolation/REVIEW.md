@@ -26,6 +26,15 @@
     non-capacity log-gap.
   - **The initial-capacity spread does not contribute:** Δlog −0.009 [−0.325, 0.294].
   - **HUST (control):** no reading holds.
+  - **Note on `robust_to_leave_one_out` (added 2026-10-08, v2 pipeline review).**
+    - **What decides a reading.** The `holds` field implements the declared rule: the full interval lies above 0, and
+      so does every leave-one-seed-out interval.
+    - **What the flag means.** It is descriptive. For an interval that does not lie above 0, it asks whether every
+      leave-one-out interval still contains 0.
+    - **A known gap.** The flag would wrongly mark an interval that lies wholly below 0 as not robust. No V1 or V5
+      interval lies below 0, so nothing reported is affected.
+    - **HUST per-cell row.** Its `False` is correct: leaving out generation seed 2 gives [0.012, 0.470], so the null is
+      not robust either.
 - **Descriptive.**
   - D27-cleaned measured side: 3.506 (MATR), so the held-out artefact does not drive the gap.
   - Leaving MATR_b1c2 out keeps every MATR reading (per-cell 0.902 [0.568, 1.418]; offsets 0.437 [0.158, 0.857]).

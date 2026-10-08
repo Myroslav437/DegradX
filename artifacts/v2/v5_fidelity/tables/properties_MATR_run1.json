@@ -3,14 +3,13 @@
     "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
     "fitting": "two_term_exponential; 0.0061",
     "held_out": "two_term_exponential; 0.0054",
-    "generated": "two_term_exponential; 0.0033",
+    "generated": "two_term_exponential; 0.0034",
     "units": {
       "fitting": 90,
       "held_out": 38,
-      "generated": 300
+      "generated": 222
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "drift rate [mAh per 100 cycles]",
@@ -31,20 +30,19 @@
       "p95": 47.85290589631939
     },
     "generated": {
-      "n": 300,
-      "median": 23.879498836982137,
-      "q25": 19.211160242044947,
-      "q75": 37.92079969803923,
-      "p05": 10.988148821026014,
-      "p95": 44.255490530879584
+      "n": 222,
+      "median": 23.70018523879641,
+      "q25": 19.224492762722573,
+      "q75": 37.47580570148238,
+      "p05": 10.864439670360063,
+      "p95": 44.11100544009724
     },
     "units": {
       "fitting": 90,
       "held_out": 38,
-      "generated": 300
+      "generated": 222
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "transition position [fraction of T]",
@@ -65,20 +63,19 @@
       "p95": 0.9993252996486097
     },
     "generated": {
-      "n": 300,
-      "median": 0.9987849331713244,
-      "q25": 0.9981246958251339,
-      "q75": 0.9990368406704979,
-      "p05": 0.997825850146822,
+      "n": 222,
+      "median": 0.9987856704691573,
+      "q25": 0.9981524237608365,
+      "q75": 0.9990193673151302,
+      "p05": 0.9978308026030369,
       "p95": 0.9994410285075461
     },
     "units": {
       "fitting": 90,
       "held_out": 38,
-      "generated": 300
+      "generated": 222
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "unit length T [cycles]",
@@ -99,20 +96,19 @@
       "p95": 1494.5499999999995
     },
     "generated": {
-      "n": 300,
-      "median": 823.0,
-      "q25": 533.25,
-      "q75": 1038.25,
-      "p05": 459.95,
+      "n": 222,
+      "median": 823.5,
+      "q25": 541.25,
+      "q75": 1019.75,
+      "p05": 461.0,
       "p95": 1789.0
     },
     "units": {
       "fitting": 90,
       "held_out": 38,
-      "generated": 300
+      "generated": 222
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "early-life reference q1 [Ah], units reaching EOL",
@@ -135,128 +131,113 @@
       "n": 38
     },
     "generated": {
-      "median": 1.0780247353374293,
-      "iqr": 0.012425737538339865,
+      "median": 1.0780252524935445,
+      "iqr": 0.0124213411358991,
       "p05_p95": [
-        1.0559637895300578,
-        1.0910393811901935
+        1.0557609099223806,
+        1.0914399172684863
       ],
-      "n": 300
+      "n": 222
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise variance, capacity (per-unit-centred AR(1))",
     "fitting": 2.818708601780269e-06,
     "held_out": 4.569370418643904e-06,
     "generated": 1.8770205950366637e-06,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise lag-1 autocorrelation, capacity",
     "fitting": 0.9415210134933107,
     "held_out": 0.9154154381104281,
     "generated": 0.9242868610418138,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise variance, charge_time (per-unit-centred AR(1))",
     "fitting": 0.6940595300883122,
     "held_out": 0.7991226302019488,
     "generated": 0.5843472020234866,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise lag-1 autocorrelation, charge_time",
     "fitting": 0.8879532980843635,
     "held_out": 0.8117725089681603,
     "generated": 0.8827792695635102,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "per-unit offset IQR, charge_time",
     "fitting": 4.765008935955318,
     "held_out": 1.2997699161010812,
     "generated": 4.961250853966555,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise variance, mean_discharge_voltage (per-unit-centred AR(1))",
     "fitting": 0.00040937365031416286,
     "held_out": 0.0004304542415935731,
     "generated": 0.00036136525940784296,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
     "fitting": 0.9562999397589781,
     "held_out": 0.9630265857336388,
     "generated": 0.9499686442171755,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "per-unit offset IQR, mean_discharge_voltage",
     "fitting": 0.05902957216368798,
     "held_out": 0.05322350466011089,
     "generated": 0.06378535786732531,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise variance, internal_resistance (per-unit-centred AR(1))",
     "fitting": 8.063634307630408e-08,
     "held_out": 8.593968733380622e-08,
     "generated": 6.670911502606308e-08,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise lag-1 autocorrelation, internal_resistance",
     "fitting": 0.959350438242031,
     "held_out": 0.9425203195428989,
     "generated": 0.9509680189811769,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "per-unit offset IQR, internal_resistance",
     "fitting": 0.0017652739436739813,
     "held_out": 0.0007593717226245331,
     "generated": 0.001678517494303305,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise variance, temperature_mean (per-unit-centred AR(1))",
     "fitting": 0.48613433175138493,
     "held_out": 0.6011703263847974,
     "generated": 0.3888476746095081,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "noise lag-1 autocorrelation, temperature_mean",
     "fitting": 0.9309507041311913,
     "held_out": 0.918139500687141,
     "generated": 0.9263916257075482,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "per-unit offset IQR, temperature_mean",
     "fitting": 1.9631209435045456,
     "held_out": 1.2198436818415939,
     "generated": 2.190321360596836,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "positive residual runs per 100 positions (enabled in profile: False)",
@@ -268,8 +249,7 @@
       "held_out": 38,
       "generated": 235
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "negative residual runs per 100 positions (enabled in profile: False)",
@@ -281,8 +261,7 @@
       "held_out": 64,
       "generated": 254
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   },
   {
     "property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
@@ -298,23 +277,6 @@
       "relative_frobenius": 0.10874620081500506,
       "mean_abs_delta_rho": 0.06366703982565589
     },
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
-  },
-  {
-    "property": "within-unit residual correlation, capacity pairs: mean |delta rho| against the fitting split",
-    "fitting": 0.0,
-    "held_out": 0.02623308936319371,
-    "generated": 0.0751140354778046,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
-  },
-  {
-    "property": "within-unit residual correlation, non-capacity pairs: mean |delta rho| against the fitting split",
-    "fitting": 0.0,
-    "held_out": 0.05949103180199485,
-    "generated": 0.05603570939089009,
-    "dataset": "MATR",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "MATR"
   }
 ]

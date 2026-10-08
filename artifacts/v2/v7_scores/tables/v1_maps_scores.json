@@ -27,7 +27,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7496648371586322,
+            "ci_low": 0.5456562542595167,
+            "ci_high": 0.8470350368086289,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.17645882728935838,
+            "ci_low": 0.13155822172187367,
+            "ci_high": 0.23511918317106217,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 0.8238881275464235,
+            "ci_low": 0.6088710388152033,
+            "ci_high": 1.1659216024206036,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -55,7 +87,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7496648371586322,
+            "ci_low": 0.5456562542595167,
+            "ci_high": 0.8470350368086289,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.17645839753216777,
+            "ci_low": 0.1315579942466389,
+            "ci_high": 0.23511850717241728,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 0.8238883122028804,
+            "ci_low": 0.608871236951464,
+            "ci_high": 1.1659188675239236,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -83,7 +147,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7496648371586322,
+            "ci_low": 0.5456562542595167,
+            "ci_high": 0.8470350368086289,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.17645839423114665,
+            "ci_low": 0.13155796500548403,
+            "ci_high": 0.23511856410356513,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 0.823889886847676,
+            "ci_low": 0.6088723546872657,
+            "ci_high": 1.1659217537094042,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -111,7 +207,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7548236213446535,
+            "ci_low": 0.5484966700307182,
+            "ci_high": 0.8513094099670491,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.17647119718713042,
+            "ci_low": 0.13162494839489014,
+            "ci_high": 0.23515124301072396,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 0.824661786778831,
+            "ci_low": 0.6094709055948189,
+            "ci_high": 1.16688230915857,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 1.0586626114465313e-07,
+            "ci_low": 0.0,
+            "ci_high": 5.293313057232657e-07,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -139,7 +267,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.4344997140229696,
+            "ci_low": 0.35353629299719547,
+            "ci_high": 0.4966604373658716,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6554197097103869,
+            "ci_low": 0.642475387669589,
+            "ci_high": 0.6738741137395473,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 3.7767486162239052,
+            "ci_low": 3.300175546050326,
+            "ci_high": 4.371077926133514,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.1444858176426755,
+            "ci_low": 0.10761921813801036,
+            "ci_high": 0.2033910321162461,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -167,7 +327,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.4890381277318127,
+            "ci_low": 0.3381425717399613,
+            "ci_high": 0.5654217397849666,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6240046704673768,
+            "ci_low": 0.6073993762988663,
+            "ci_high": 0.6416719814847451,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 3.8247436833046415,
+            "ci_low": 3.3957482522991524,
+            "ci_high": 4.324214463986427,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.1359624361153692,
+            "ci_low": 0.10105500220373081,
+            "ci_high": 0.1856173680582424,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -195,7 +387,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.4675555787490524,
+            "ci_low": 0.30963475890690717,
+            "ci_high": 0.5348063451883702,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6385572036880639,
+            "ci_low": 0.6213593843811428,
+            "ci_high": 0.654612530329092,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 3.9979322462387605,
+            "ci_low": 3.5470754895798446,
+            "ci_high": 4.489615329223729,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.13552884088683073,
+            "ci_low": 0.10156368721099356,
+            "ci_high": 0.1848561390690823,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -223,7 +447,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.46343983469832484,
+            "ci_low": 0.3067940655964923,
+            "ci_high": 0.5302489783261568,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6383047848882567,
+            "ci_low": 0.6213015701879481,
+            "ci_high": 0.6543422908694844,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 4.028483833289041,
+            "ci_low": 3.5854244196943807,
+            "ci_high": 4.513772501345403,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.13395215125687207,
+            "ci_low": 0.09942148182200275,
+            "ci_high": 0.18357343293567854,
+            "units": 30
+          },
+          "windows": 40
+        }
       }
     },
     "uniform": {
@@ -253,7 +509,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.739612929830601,
+            "ci_low": 0.5314755776005895,
+            "ci_high": 0.8322992643687054,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.18834699202249525,
+            "ci_low": 0.1385299407943939,
+            "ci_high": 0.2557135692770754,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 1.0074826606387826,
+            "ci_low": 0.7418332043002367,
+            "ci_high": 1.4910520432108596,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -281,7 +569,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.739612534126459,
+            "ci_low": 0.5314743305679563,
+            "ci_high": 0.8322978247900729,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.18834669380006278,
+            "ci_low": 0.13852980662466965,
+            "ci_high": 0.2557131907415074,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 1.0074838853059862,
+            "ci_low": 0.7418339901154034,
+            "ci_high": 1.491052211916228,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -309,7 +629,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.739612534126459,
+            "ci_low": 0.5314743305679563,
+            "ci_high": 0.8322978247900729,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.1883466292180162,
+            "ci_low": 0.13852971045685003,
+            "ci_high": 0.25571315977817377,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 1.0074837439746995,
+            "ci_low": 0.7418341119777507,
+            "ci_high": 1.4910523648123837,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -337,7 +689,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7423824139622824,
+            "ci_low": 0.5328844455903711,
+            "ci_high": 0.8345836832902186,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.1883483121365529,
+            "ci_low": 0.13853415919872786,
+            "ci_high": 0.2557372901124936,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 1.0084208420531682,
+            "ci_low": 0.7433531967785793,
+            "ci_high": 1.4921399368211468,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -365,7 +749,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.45398388663269634,
+            "ci_low": 0.3609854115472516,
+            "ci_high": 0.5337284958294571,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6792692976537565,
+            "ci_low": 0.6648332985089206,
+            "ci_high": 0.700915269197728,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 2.090671472996812,
+            "ci_low": 1.8299448348378407,
+            "ci_high": 2.4281880316171396,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.1524048587307334,
+            "ci_low": 0.11111891146360571,
+            "ci_high": 0.22951967201537357,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -393,7 +809,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 5
+        "temporal_excluded": 5,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.51525785198303,
+            "ci_low": 0.41554554017013773,
+            "ci_high": 0.5965661055903217,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6681796221653792,
+            "ci_low": 0.6519637896106351,
+            "ci_high": 0.6896137087007078,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 2.143226394449941,
+            "ci_low": 1.8973149977563186,
+            "ci_high": 2.4911562646436787,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.1450279535777453,
+            "ci_low": 0.10569521955971087,
+            "ci_high": 0.20927422179254587,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -421,7 +869,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.47022515612918436,
+            "ci_low": 0.3839432838231217,
+            "ci_high": 0.53576791338061,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6816884117686256,
+            "ci_low": 0.6667341923468145,
+            "ci_high": 0.7002115022853395,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 2.3912610551603355,
+            "ci_low": 2.117805235200659,
+            "ci_high": 2.7381965744519627,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.14749253392776301,
+            "ci_low": 0.1087849173733677,
+            "ci_high": 0.2123325946720534,
+            "units": 30
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -449,7 +929,39 @@
           "units": 30
         },
         "windows": 40,
-        "temporal_excluded": 4
+        "temporal_excluded": 4,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.4765049431559651,
+            "ci_low": 0.3897067990344611,
+            "ci_high": 0.5421858030293333,
+            "units": 30
+          },
+          "allocation": {
+            "mean": 0.6818302089830225,
+            "ci_low": 0.6669203276969946,
+            "ci_high": 0.7003762413179473,
+            "units": 30
+          },
+          "temporal": {
+            "mean": 2.370797786384989,
+            "ci_low": 2.1170201273416582,
+            "ci_high": 2.7073557300446223,
+            "units": 30
+          },
+          "zero_mass": {
+            "mean": 0.14651775073157766,
+            "ci_low": 0.10732737638206716,
+            "ci_high": 0.21154911626439601,
+            "units": 30
+          },
+          "windows": 40
+        }
       }
     }
   },
@@ -481,7 +993,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.858646900102012,
+            "ci_low": 0.7106301469547189,
+            "ci_high": 0.9374684239620411,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.10877451883460873,
+            "ci_low": 0.06895978920274873,
+            "ci_high": 0.1705999569276025,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.2737988015477255,
+            "ci_low": 0.16252820893896908,
+            "ci_high": 0.49939132261051977,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -509,7 +1053,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.858646900102012,
+            "ci_low": 0.7106301469547189,
+            "ci_high": 0.9374684239620411,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.10877451773675917,
+            "ci_low": 0.0689598582970707,
+            "ci_high": 0.17059990180203033,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.2738029404601147,
+            "ci_low": 0.16252914094278278,
+            "ci_high": 0.49939494447123445,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -537,7 +1113,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.858646900102012,
+            "ci_low": 0.7106301469547189,
+            "ci_high": 0.9374684239620411,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.1087745575695327,
+            "ci_low": 0.06895983654982253,
+            "ci_high": 0.17059991468869062,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.27380227845378463,
+            "ci_low": 0.1625276877636868,
+            "ci_high": 0.49939566539020797,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -565,7 +1173,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.8591213174399265,
+            "ci_low": 0.7146153307324294,
+            "ci_high": 0.937575539850191,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.10881486772840321,
+            "ci_low": 0.06896165336615966,
+            "ci_high": 0.17071063198185304,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.27634783610210745,
+            "ci_low": 0.16340674418720438,
+            "ci_high": 0.5078157454061751,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -593,7 +1233,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.3518069366444768,
+            "ci_low": 0.30173193937622594,
+            "ci_high": 0.3968635792828126,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6625069276173249,
+            "ci_low": 0.6388706831442262,
+            "ci_high": 0.6784379490447636,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 2.8807962202564252,
+            "ci_low": 2.64966311299045,
+            "ci_high": 3.1912053907477134,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.012257089782185081,
+            "ci_low": 0.00585612535458567,
+            "ci_high": 0.033388372637670985,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -621,7 +1293,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.34645346513072883,
+            "ci_low": 0.3054603581822717,
+            "ci_high": 0.38598219780868953,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6843881292839455,
+            "ci_low": 0.6770221355258009,
+            "ci_high": 0.6969806673641784,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 2.6683187403932815,
+            "ci_low": 2.4880952433991967,
+            "ci_high": 2.9226731032838322,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.01142805495336866,
+            "ci_low": 0.004095188375584792,
+            "ci_high": 0.033006656395776546,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -649,7 +1353,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.33291041865899335,
+            "ci_low": 0.3165888587810439,
+            "ci_high": 0.3495703010831399,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6735622734919292,
+            "ci_low": 0.6649767946667432,
+            "ci_high": 0.6873676347457492,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 3.3916336735132138,
+            "ci_low": 3.2087489819305297,
+            "ci_high": 3.622358043755438,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.027075113585136333,
+            "ci_low": 0.019792591571364936,
+            "ci_high": 0.04649603356088222,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -677,7 +1413,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.32577825890397305,
+            "ci_low": 0.291438564633165,
+            "ci_high": 0.355985352182541,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.672343863901609,
+            "ci_low": 0.6630290063148075,
+            "ci_high": 0.6866720250043977,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 3.06454565036712,
+            "ci_low": 2.830177726383272,
+            "ci_high": 3.381484454891055,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.025551858226842406,
+            "ci_low": 0.01834142858766251,
+            "ci_high": 0.0456135557044836,
+            "units": 29
+          },
+          "windows": 40
+        }
       }
     },
     "uniform": {
@@ -707,7 +1475,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7946366751205101,
+            "ci_low": 0.6442060319187417,
+            "ci_high": 0.8741823184646375,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.1144392460075566,
+            "ci_low": 0.07190198762010128,
+            "ci_high": 0.18362873554989004,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.38554116964903584,
+            "ci_low": 0.23779955716898069,
+            "ci_high": 0.83858416906249,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -735,7 +1535,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7946402721364394,
+            "ci_low": 0.6441790005731252,
+            "ci_high": 0.8741577946870931,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.11443921633248857,
+            "ci_low": 0.0719019812859297,
+            "ci_high": 0.18362868754831113,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.385543070296912,
+            "ci_low": 0.2377924602991814,
+            "ci_high": 0.8385549266234624,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -763,7 +1595,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7946382529265641,
+            "ci_low": 0.6441777763997139,
+            "ci_high": 0.8741570563017559,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.11443923018457375,
+            "ci_low": 0.07190202520731911,
+            "ci_high": 0.18362866265453634,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.38554315500863545,
+            "ci_low": 0.23779990468137518,
+            "ci_high": 0.8385862002476416,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -791,7 +1655,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7944753503780683,
+            "ci_low": 0.6449366784798896,
+            "ci_high": 0.8744436545451416,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.11445015476034556,
+            "ci_low": 0.0719174258900616,
+            "ci_high": 0.183659473336599,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 0.3860506589684616,
+            "ci_low": 0.23802473457313097,
+            "ci_high": 0.8412782714291626,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -819,7 +1715,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.3645138017643366,
+            "ci_low": 0.29052386467878344,
+            "ci_high": 0.4372119586802879,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.678150021046208,
+            "ci_low": 0.6651498554867172,
+            "ci_high": 0.6923526934026845,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 4.272116500862325,
+            "ci_low": 3.9467239215688874,
+            "ci_high": 4.623344570628066,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.014378842530402773,
+            "ci_low": 0.006308989829221255,
+            "ci_high": 0.03797407547567086,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -847,7 +1775,39 @@
           "units": 45
         },
         "windows": 120,
-        "temporal_excluded": 25
+        "temporal_excluded": 25,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.45612750650703815,
+            "ci_low": 0.41916591527660096,
+            "ci_high": 0.5021489782622158,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6876276978927747,
+            "ci_low": 0.6798394200664841,
+            "ci_high": 0.700906577007485,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 3.5988021782990662,
+            "ci_low": 3.3312566943816293,
+            "ci_high": 3.8728575604439697,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.014371384015834045,
+            "ci_low": 0.006208684610632076,
+            "ci_high": 0.03633544469208251,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -875,7 +1835,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.3630440165661778,
+            "ci_low": 0.31615511897690096,
+            "ci_high": 0.42131047817680733,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6801678620280258,
+            "ci_low": 0.6710034428223655,
+            "ci_high": 0.6951242717291606,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 2.936938169367276,
+            "ci_low": 2.5983630684892316,
+            "ci_high": 3.5192055932371984,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.021069573652528796,
+            "ci_low": 0.01328325839417675,
+            "ci_high": 0.04392361229135085,
+            "units": 29
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -903,7 +1895,39 @@
           "units": 29
         },
         "windows": 40,
-        "temporal_excluded": 6
+        "temporal_excluded": 6,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.33514045568037276,
+            "ci_low": 0.2954801047772379,
+            "ci_high": 0.38791690383680344,
+            "units": 29
+          },
+          "allocation": {
+            "mean": 0.6805369920724538,
+            "ci_low": 0.6714845370374525,
+            "ci_high": 0.6954781285981827,
+            "units": 29
+          },
+          "temporal": {
+            "mean": 2.9417137594851033,
+            "ci_low": 2.5494134048507986,
+            "ci_high": 3.551035626930078,
+            "units": 29
+          },
+          "zero_mass": {
+            "mean": 0.02176712686690974,
+            "ci_low": 0.013984910440813632,
+            "ci_high": 0.04401582455700562,
+            "units": 29
+          },
+          "windows": 40
+        }
       }
     }
   },
@@ -935,7 +1959,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7429664048429977,
+            "ci_low": 0.6449214393690723,
+            "ci_high": 0.8203099179711291,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.1748966556557309,
+            "ci_low": 0.1333735444323038,
+            "ci_high": 0.23091235360714163,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.0889027830727076,
+            "ci_low": 0.9028382876622949,
+            "ci_high": 1.365653119709429,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -963,7 +2019,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7429664048429977,
+            "ci_low": 0.6449214393690723,
+            "ci_high": 0.8203099179711291,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.1748969805569208,
+            "ci_low": 0.1333787509137292,
+            "ci_high": 0.2309397140847973,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.0889080498638026,
+            "ci_low": 0.902843190569777,
+            "ci_high": 1.3656579956569512,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -991,7 +2079,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7429664048429977,
+            "ci_low": 0.6449214393690723,
+            "ci_high": 0.8203099179711291,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.174896972304368,
+            "ci_low": 0.13337350729790337,
+            "ci_high": 0.2309127613855333,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.088906932170597,
+            "ci_low": 0.9028419388669375,
+            "ci_high": 1.3656580849084023,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -1019,7 +2139,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7444285210854881,
+            "ci_low": 0.6459136031579699,
+            "ci_high": 0.82137242355268,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.1748979375973314,
+            "ci_low": 0.13337410782407128,
+            "ci_high": 0.23091361012978773,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.0888959036695594,
+            "ci_low": 0.902843660758488,
+            "ci_high": 1.3656393322454323,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 6.979031883043196e-12,
+            "ci_low": 0.0,
+            "ci_high": 3.489515941521598e-11,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -1047,7 +2199,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.2626315397616015,
+            "ci_low": 0.22849824729279258,
+            "ci_high": 0.29724040851872174,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6398886781606725,
+            "ci_low": 0.6130158656858105,
+            "ci_high": 0.6666778240794569,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 3.542306465596057,
+            "ci_low": 3.0202443132472427,
+            "ci_high": 4.067531688213688,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.23041727435257697,
+            "ci_low": 0.18956813897720207,
+            "ci_high": 0.2892526576563381,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -1075,7 +2259,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.32930349633446254,
+            "ci_low": 0.2681684524963177,
+            "ci_high": 0.3940939547167809,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6262866230743943,
+            "ci_low": 0.5922825675327813,
+            "ci_high": 0.6601543134464485,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 3.936354838819792,
+            "ci_low": 3.569695036410924,
+            "ci_high": 4.2837897367829525,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.2544346277395056,
+            "ci_low": 0.18820808157173236,
+            "ci_high": 0.3355566121832435,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -1103,7 +2319,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.2862292212703203,
+            "ci_low": 0.2277883027606032,
+            "ci_high": 0.3466417649799025,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6228260953569563,
+            "ci_low": 0.5909675394443815,
+            "ci_high": 0.6542559192371429,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 3.7615208523668673,
+            "ci_low": 3.4702746088347287,
+            "ci_high": 4.077599833207342,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.25196526087411486,
+            "ci_low": 0.18882845042530888,
+            "ci_high": 0.3303671546729959,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -1131,7 +2379,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.3003012388187667,
+            "ci_low": 0.24506277197866733,
+            "ci_high": 0.35858106516868266,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6233365947379004,
+            "ci_low": 0.5906624115784225,
+            "ci_high": 0.6561392374905394,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 4.033807024747111,
+            "ci_low": 3.7535491329767625,
+            "ci_high": 4.3852796648839725,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.2551488743335959,
+            "ci_low": 0.19278039428689345,
+            "ci_high": 0.33332415169899954,
+            "units": 24
+          },
+          "windows": 40
+        }
       }
     },
     "uniform": {
@@ -1161,7 +2441,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7024017911968498,
+            "ci_low": 0.6036034480005987,
+            "ci_high": 0.7768648189518597,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.17295781029024646,
+            "ci_low": 0.12928544036582457,
+            "ci_high": 0.2290712227832242,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.8408406979747178,
+            "ci_low": 1.4428138638159904,
+            "ci_high": 2.4348092484642994,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_feature_occlusion": {
         "rank": {
@@ -1189,7 +2501,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7024017911968498,
+            "ci_low": 0.6036034480005987,
+            "ci_high": 0.7768648189518597,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.17295821549919566,
+            "ci_low": 0.1292860744526991,
+            "ci_high": 0.22907186860511705,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.8408448072745724,
+            "ci_low": 1.44281674071583,
+            "ci_high": 2.4348160046191936,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_integrated_gradients": {
         "rank": {
@@ -1217,7 +2561,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7024017911968498,
+            "ci_low": 0.6036034480005987,
+            "ci_high": 0.7768648189518597,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.17295818536056232,
+            "ci_low": 0.12928601883889257,
+            "ci_high": 0.22907182864663653,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.8408455433863278,
+            "ci_low": 1.4428175293813603,
+            "ci_high": 2.434816754718236,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "reference_timeshap_seed0": {
         "rank": {
@@ -1245,7 +2621,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.7036419676151323,
+            "ci_low": 0.6040659823764598,
+            "ci_high": 0.7777789803413834,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.1729606048502366,
+            "ci_low": 0.12928925419377388,
+            "ci_high": 0.22907318621855222,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.8408107621408163,
+            "ci_low": 1.4428171736237188,
+            "ci_high": 2.4347451640335174,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.0,
+            "ci_low": null,
+            "ci_high": null,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_feature_occlusion": {
         "rank": {
@@ -1273,7 +2681,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.271208652234139,
+            "ci_low": 0.22186481060741337,
+            "ci_high": 0.3248850663762214,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6748140987689952,
+            "ci_low": 0.6514716304060455,
+            "ci_high": 0.702393386493006,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 2.7960140363234167,
+            "ci_low": 2.3858541192338683,
+            "ci_high": 3.2842331600999173,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.26074710974676746,
+            "ci_low": 0.2034094093807762,
+            "ci_high": 0.3368107699927559,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_integrated_gradients": {
         "rank": {
@@ -1301,7 +2741,39 @@
           "units": 39
         },
         "windows": 120,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.2152850669987172,
+            "ci_low": 0.1658232579041383,
+            "ci_high": 0.2762601301048858,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6749434862514466,
+            "ci_low": 0.6439880368340679,
+            "ci_high": 0.7079627881528399,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 2.514428312329087,
+            "ci_low": 2.146593289989801,
+            "ci_high": 2.954718851349711,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.33024119182179373,
+            "ci_low": 0.2512708442755939,
+            "ci_high": 0.41604974135232586,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed0": {
         "rank": {
@@ -1329,7 +2801,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.15530810064974107,
+            "ci_low": 0.11061560097214296,
+            "ci_high": 0.20687379939070802,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6644433095176109,
+            "ci_low": 0.6343166508872801,
+            "ci_high": 0.6970021898655994,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 1.849279341327124,
+            "ci_low": 1.4722168537237452,
+            "ci_high": 2.3760373897005582,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.32582024572132323,
+            "ci_low": 0.25185046658654947,
+            "ci_high": 0.4075255320770149,
+            "units": 24
+          },
+          "windows": 40
+        }
       },
       "trained_timeshap_seed1": {
         "rank": {
@@ -1357,7 +2861,39 @@
           "units": 24
         },
         "windows": 40,
-        "temporal_excluded": 0
+        "temporal_excluded": 0,
+        "windows_undefined": {
+          "rank": 0,
+          "allocation": 0,
+          "temporal": 0
+        },
+        "on_timeshap_windows": {
+          "rank": {
+            "mean": 0.1564380793662471,
+            "ci_low": 0.11285377341196151,
+            "ci_high": 0.20722246346098255,
+            "units": 24
+          },
+          "allocation": {
+            "mean": 0.6680302077056656,
+            "ci_low": 0.6376423335339879,
+            "ci_high": 0.7011011426487296,
+            "units": 24
+          },
+          "temporal": {
+            "mean": 2.11902794450096,
+            "ci_low": 1.712417905329266,
+            "ci_high": 2.6356663404048795,
+            "units": 24
+          },
+          "zero_mass": {
+            "mean": 0.32897873128960514,
+            "ci_low": 0.2549937415355042,
+            "ci_high": 0.4105160434007814,
+            "units": 24
+          },
+          "windows": 40
+        }
       }
     }
   }

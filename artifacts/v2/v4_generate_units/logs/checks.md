@@ -52,7 +52,7 @@
 | MATR seed 2: disabling patterns leaves z, T, R, mean and noise unchanged | identical | True | pass |
 | MATR seed 2: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL) | 10.8 mAh +- 20% | 10.6 mAh | pass |
 | MATR: X3 construction - within-unit correlation of generated noise (mean over seeds) within 0.05 of the fitted rho_bar | <= 0.05 | max |delta r| 0.087 (pooled comparison 0.080; implied-by-construction gap 0.127) | warn |
-| MATR: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported) | <= 0.05 | max |delta r| 0.168 | warn |
+| MATR: V3 within-unit estimator on generated observations recovers the fitted rho_bar within 0.05 (reported) | <= 0.05 | max |delta r| 0.106 (capacity pairs 0.106, other pairs 0.090; E4 vs E4 0.089) | warn |
 | HUST seed 0 [recency]: sum(phi*) == y on every window | < 1e-9 (relative) | 0.00e+00 over 562769 windows | pass |
 | HUST seed 0 [recency]: g(x) - y == sum(w eps) on every window | < 1e-9 | 9.37e-16 | pass |
 | HUST seed 0 [recency]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean -8.495e-04, SE 1.058e-03 | pass |
@@ -99,4 +99,4 @@
 | HUST seed 2: disabling patterns leaves z, T, R, mean and noise unchanged | identical | True | pass |
 | HUST seed 2: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL) | 21.2 mAh +- 20% | 27.1 mAh | warn |
 | HUST: X3 construction - within-unit correlation of generated noise (mean over seeds) within 0.05 of the fitted rho_bar | <= 0.05 | max |delta r| 0.008 (pooled comparison 0.033; implied-by-construction gap 0.014) | pass |
-| HUST: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported) | <= 0.05 | max |delta r| 0.068 | warn |
+| HUST: V3 within-unit estimator on generated observations recovers the fitted rho_bar within 0.05 (reported) | <= 0.05 | max |delta r| 0.035 (capacity pairs 0.035, other pairs 0.013; E4 vs E4 0.032) | pass |

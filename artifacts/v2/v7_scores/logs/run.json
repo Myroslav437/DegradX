@@ -1,24 +1,15 @@
 {
   "stage": "v2/v7_scores",
   "argv": [
-    "scripts/v2/v7_scores.py",
-    "--datasets",
-    "MATR",
-    "HUST",
-    "--v1-datasets",
-    "MATR",
-    "HUST",
-    "NASA_PCoE",
-    "--device",
-    "cpu"
+    "v7_scores.py"
   ],
-  "started_utc": "2026-10-07T21:00:28.571938+00:00",
-  "finished_utc": "2026-10-07T21:01:54.078522+00:00",
-  "wall_clock_s": 85.507,
+  "started_utc": "2026-10-08T09:06:51.268874+00:00",
+  "finished_utc": "2026-10-08T09:08:52.308989+00:00",
+  "wall_clock_s": 121.04,
   "status": "ok",
   "error": null,
   "git": {
-    "commit": "efe5f37052ee5b7970100105f72b76ba99094bdf",
+    "commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f",
     "dirty": true,
     "branch": "v2"
   },
@@ -44,9 +35,12 @@
     "evaluation": 20260915
   },
   "device": {
-    "device": "cpu",
+    "device": "cuda",
     "torch": "2.14.0+cu130",
-    "cuda_available": true
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "cuda_runtime": "13.0",
+    "cudnn": 92400
   },
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",

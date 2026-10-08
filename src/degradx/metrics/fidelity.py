@@ -88,7 +88,8 @@ class _GRUDisc(nn.Module):
         return self.head(out[:, -1]).squeeze(-1)
 
 
-def discriminative_score(meas_W, meas_U, gen_W, gen_U, mu, sd, *, seed: int, device: str, iterations: int = 2000, batch: int = 128) -> dict:
+def discriminative_score(meas_W, meas_U, gen_W, gen_U, mu, sd, *, seed: int, device: str, iterations: int = 2000, batch: int = 128,
+                         return_predictions: bool = False) -> dict:
     """Unit-level 80/20 split within each source, classes balanced by subsampling windows; returns test accuracy,
     discriminative error 1 - acc and |acc - 0.5| (declarations fidelity.discriminator)."""
     g = rng(seed, "evaluation", "discriminator")
@@ -107,7 +108,13 @@ def discriminative_score(meas_W, meas_U, gen_W, gen_U, mu, sd, *, seed: int, dev
         return A[g.choice(len(A), n, replace=False)], B[g.choice(len(B), n, replace=False)]
 
     A_tr, B_tr = balance(meas_W[mtr], gen_W[gtr])
-    A_te, B_te = balance(meas_W[mte], gen_W[gte])
+    if return_predictions:  # same draws as balance(), keeping the unit of every test window (v2: D02b readability by unit bootstrap)
+        n_te = min(int(mte.sum()), int(gte.sum()))
+        ia, ib = g.choice(int(mte.sum()), n_te, replace=False), g.choice(int(gte.sum()), n_te, replace=False)
+        A_te, B_te = meas_W[mte][ia], gen_W[gte][ib]
+        UA, UB = meas_U[mte][ia], gen_U[gte][ib]
+    else:
+        A_te, B_te = balance(meas_W[mte], gen_W[gte])
     norm = lambda W: torch.from_numpy(((W - mu) / sd).astype(np.float32)).to(device)  # noqa: E731
     Xtr = torch.cat([norm(A_tr), norm(B_tr)])
     ytr = torch.cat([torch.zeros(len(A_tr)), torch.ones(len(B_tr))]).to(device)
@@ -127,7 +134,12 @@ def discriminative_score(meas_W, meas_U, gen_W, gen_U, mu, sd, *, seed: int, dev
     with torch.no_grad():
         pred = torch.cat([model(Xte[i:i + 8192]) for i in range(0, len(Xte), 8192)]) > 0
     acc = float((pred.float() == yte).float().mean())
-    return {"accuracy": acc, "discriminative_error": 1.0 - acc, "abs_acc_minus_half": abs(acc - 0.5), "test_windows_per_class": int(len(A_te)),
+    extra = {}
+    if return_predictions:
+        correct = (pred.float() == yte).cpu().numpy()
+        extra = {"_correct": correct, "_units": np.concatenate([np.asarray(UA).astype(str), np.char.add("g", np.asarray(UB).astype(str))]),
+                 "_is_generated": np.concatenate([np.zeros(len(UA), bool), np.ones(len(UB), bool)])}
+    return {**extra, "accuracy": acc, "discriminative_error": 1.0 - acc, "abs_acc_minus_half": abs(acc - 0.5), "test_windows_per_class": int(len(A_te)),
             "train_units": {"measured": n_mtr, "generated": n_gtr}, "test_units": {"measured": n_mte, "generated": n_gte}}
 
 

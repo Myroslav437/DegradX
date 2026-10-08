@@ -12,17 +12,25 @@
     positions).
   - Readings, declared in r3 `v2.scoring`:
     - *resolution*: the v1 criterion, sign-aware, with 10 000 BCa resamples;
-    - *registers*: a mean change of at least 10 % of the chance-to-perfect distance at some magnitude and at every
-      larger one.
+    - *registers*: as declared, (i) resolved and (ii) a mean change toward chance of at least 10 % of the
+      chance-to-perfect distance, at some magnitude and at every larger one.
 - **Part B.** The same scores on the saved v1 S8 maps (`data/attributions`) against the v1 ground truth regenerated from
   `data/generated`, for MATR, HUST and (v1 only) NASA PCoE, under recency and uniform weighting. No new attribution.
+- **Re-run 2026-10-08** after the v2 pipeline review. Three changes:
+  - `registers()` now applies condition (i), which the first run left out. It also takes the direction of the change
+    into account (toward chance).
+  - Undefined windows are counted per magnitude.
+  - Part B adds every map scored on the 40 windows v1 explained with TimeSHAP.
+  - The first run's tables are in the session scratch only; they are superseded.
 - **Third profile.** ISU-ILCC is not run: it is parked by the V4 stop rule
   (`artifacts/v2/STOP_REPORT_third_profile_offsets.md`).
 
 ## What came out
 
 **Part A: smallest registering magnitude** (`tables/degradation.json`; figures `<ds>_<weighting>_score_vs_degradation`).
-"—" means not registered within the grid.
+"—" means not registered within the grid. The re-run with condition (i) gives the same magnitudes in every cell: each
+registering magnitude was already at or above the resolved magnitude (`size_condition_only_magnitude` is reported
+alongside).
 
 | operator | rank agreement, MATR / HUST | channel allocation error | **temporal profile error** |
 |---|---|---|---|
@@ -67,6 +75,24 @@ registers reading is what answers X5.
 - The v1 rank agreement values are reproduced exactly (MATR 0.815 / 0.551 / 0.461 / 0.468), so the like-for-like v1/v2
   comparison at V8 rests on the same windows and maps.
 
+**Part B on the 40 TimeSHAP windows** (`on_timeshap_windows`), recency. In v1, TimeSHAP was scored on 40 windows (D23)
+and IG and occlusion on 120. Restricted to the same 40 windows:
+
+| profile | exact (reference): rank / temporal, 120 → 40 windows | trained rank: IG / occlusion / TimeSHAP s0, on 40 | trained temporal: IG / occlusion / TimeSHAP s0, on 40 |
+|---|---|---|---|
+| MATR | 0.815 → 0.750; 0.70 → 0.82 | 0.489 / 0.434 / 0.468 (120: 0.551 / 0.461) | 3.83 / 3.78 / 4.00 (120: 3.70 / 3.42) |
+| HUST | 0.870 → 0.859; 0.29 → 0.27 | 0.346 / 0.352 / 0.333 (120: 0.321 / 0.298) | 2.67 / 2.88 / 3.39 (120: 2.70 / 2.87) |
+| NASA PCoE | 0.733 → 0.743; 1.20 → 1.09 | 0.329 / 0.263 / 0.286 (120: 0.316 / 0.283) | 3.94 / 3.54 / 3.76 (120: 4.04 / 3.62) |
+
+- **The window set moves the scores by as much as the methods differ.** The exact map alone moves 0.065 in rank
+  agreement on MATR.
+- **v1's TimeSHAP comparisons mixed window sets.** On matched windows, MATR's TimeSHAP rank agreement sits between IG
+  and occlusion (gap to IG 0.021, against 0.083 on mixed sets).
+- **Still valid:** v1's IG–occlusion gap (0.090, MATR, the rationale of the 10 % threshold). Both methods ran on the
+  same 120 windows.
+- **Consequence for V8:** the full-scale run explains all 120 windows with every method, so the v2 comparison is
+  like-for-like by design. The v1 Table 6 TimeSHAP comparisons are cited with this caveat.
+
 ## Checks
 
 18 pass, 0 warnings (`logs/checks.md`):
@@ -79,8 +105,12 @@ registers reading is what answers X5.
 1. **A first Part B run scored the reference model's exact map on the window, not on its pattern-free counterpart.**
    This mattered only for NASA PCoE, the one profile with patterns. The check above caught it (4.7e-3 against the
    1e-3 bound). It was fixed and re-run; MATR and HUST were unaffected.
-2. **The temporal profile error is undefined in about 5 of 120 windows per profile** (a weighted channel with zero ϕ*
-   mass: windows at z = 0 where the capacity term vanishes). These are counted (`temporal_excluded`), as declared.
+2. **Some channels are left out of the temporal profile error, but the score is defined in every window.**
+   - A weighted channel is excluded from a window's average when its ϕ* mass or its attributed mass is zero, e.g. the
+     capacity term at z = 0. These exclusions are counted (`temporal_excluded`, channel-windows), as declared.
+   - Part A: 2 of 2 700 channel-windows (MATR), 0 (HUST).
+   - Part B: 5 (MATR), 25 (HUST) and 0 (NASA PCoE) per 120-window map. TimeSHAP's 40-window maps have 4 and 6.
+   - Windows where the score itself is undefined: 0 everywhere (`windows_undefined`).
 
 ## Decisions needed
 

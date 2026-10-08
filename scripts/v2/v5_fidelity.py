@@ -109,6 +109,16 @@ def property_rows(ds, profs: dict, q_nom, rho, minimum) -> list[dict]:
     cm = {k: np.asarray(profs[k]["v2"]["within_unit_correlation"]) for k in cols}
     rows.append({"property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
                  **{k: F.covariance_agreement(cm["fitting"], cm[k]) for k in cols}})
+    # the estimator's z_hat carries capacity noise into the non-capacity residuals, which biases the capacity pairs (v2 pipeline
+    # review, generator F1): the same distance is reported separately over capacity pairs and over the other pairs
+    n = cm["fitting"].shape[0]
+    capm = np.zeros((n, n), bool)
+    capm[0, 1:] = capm[1:, 0] = True
+    other = ~np.eye(n, dtype=bool) & ~capm
+    for lab, msk in (("capacity pairs", capm), ("non-capacity pairs", other)):
+        if msk.any():
+            rows.append({"property": f"within-unit residual correlation, {lab}: mean |delta rho| against the fitting split",
+                         **{k: float(np.mean(np.abs(cm[k] - cm["fitting"])[msk])) for k in cols}})
     for r in rows:
         r["dataset"] = ds
     if n_units["held_out"] < minimum["theta_and_length_units"]:
@@ -259,7 +269,7 @@ def main() -> int:
                                          workers=args.workers, k=2.5, m=2, sweep_k=[2.5], base_seed=args.seed, offsets=offs)
                 gdf = generated_frame(gens[gen_seeds[0]], chans)
                 gsplit = pd.DataFrame({"cell_id": gdf["cell_id"].unique(), "split": "fitting", "reaches_eol": True})
-                gen_prof, _ = fit_profile(gdf, gsplit, dataset=ds, q_nom=q_nom, spec=spec_q1, rule=rule, channels=chans, crule=crule, decl=decl,
+                gen_prof, _ = fit_profile(gdf, gsplit, dataset=ds, q_nom=q_nom, spec=spec, rule=rule, channels=chans, crule=crule, decl=decl,  # D30: same EOL rule as measured
                                           workers=args.workers, k=2.5, m=2, sweep_k=[2.5], base_seed=args.seed, offsets=offs)
                 rows = property_rows(ds, {"fitting": prof, "held_out": meas_ho, "generated": gen_prof}, q_nom, spec.rho, minimum)
                 write_json(rows, out / "tables" / f"properties_{ds}.json")

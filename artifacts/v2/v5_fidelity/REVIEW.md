@@ -36,6 +36,7 @@
   the generator is not iterated.
 - **X3, covariance gap closed: yes, both profiles.** 0.209 ≤ 0.442 and 0.054 ≤ 0.125.
 - **X3, discriminator gap narrows: yes, both profiles.** +0.26 and +0.32 against v1 seed half-ranges of 0.02 and 0.04.
+  The cells themselves are void under D02b readability (anomaly 5); the reading is on the shift of the seed mean.
 - **X3's own share: negligible.** The X3-off set, which keeps X2's offsets, reaches the same covariance (0.207 /
   0.059) and discriminator (0.355 / 0.410). The gains come from the per-unit offsets.
 
@@ -56,18 +57,26 @@ Readings:
   rule.
 - **Initial spread:** null on both.
 
-**Property table** (`tables/properties_<ds>.json`; fitting / held-out / generated):
+**Property table** (`tables/properties_<ds>.json`; fitting / held-out / generated). It was re-run on 2026-10-08 under
+D30 (`scripts/v2/v5_properties.py`): generated series are now read with D13's record-end clause, as measured records
+are. The first table is kept as `tables/properties_<ds>_run1.json`.
+- **Units.** Every generated unit now enters the EOL-dependent rows: 300 of 300 on both profiles, against 222 (MATR)
+  and 177 (HUST) in run 1. The noise, offset and correlation rows do not depend on EOL and are unchanged.
 - **The trajectory side is reproduced, as in v1.**
-  - MATR drift 25.6 / 25.6 / 23.7 mAh per 100 cycles; T 770 / 744 / 824.
-  - HUST transition 0.69 / 0.65 / 0.67; T 1861 / 1938 / 1805.
-- **The q₁ spread** is 10.8 / 10.4 / 12.4 mAh (MATR) and 21.2 / 19.6 / 30.3 mAh (HUST). v1 generated about 1.8 and
-  1.4 mAh.
+  - MATR drift 25.6 / 25.6 / 23.9 mAh per 100 cycles; T 770 / 744 / 823.
+  - HUST transition 0.69 / 0.65 / 0.68; T 1860 / 1938 / 1807.
+- **The q₁ spread** (units reaching EOL) is 10.8 / 10.4 / 12.4 mAh for MATR and 21.2 / 19.6 / 27.0 mAh for HUST
+  (run 1: 30.3). v1 generated about 1.8 and 1.4 mAh.
 - **MATR charge-time noise variance** is 0.69 / **0.80** / 0.58 min², against 0.82 / **53.5** / 0.66 in v1. The
   held-out artefact is gone (D27).
 - **MATR charge-time offset IQR** is 4.77 / 1.30 / 4.96 min. The held-out cells span fewer charging-policy groups than
   the fitting cells.
-- **Within-unit residual correlation** against the fitting split (rel. Frobenius): held-out 0.09 / generated 0.11
-  (MATR), 0.03 / 0.03 (HUST).
+- **Within-unit residual correlation against the fitting split**, rel. Frobenius, held-out / generated: MATR 0.09 /
+  0.11, HUST 0.03 / 0.03.
+  - Split by pairs (mean |Δρ|, held-out / generated):
+    - MATR capacity pairs 0.026 / **0.075**, other pairs 0.059 / 0.056;
+    - HUST 0.023 / 0.029 and 0.012 / 0.013.
+  - MATR's excess sits entirely in the capacity pairs. That is the estimator's errors-in-variables bias (anomaly 4).
 
 ## Checks
 
@@ -86,7 +95,25 @@ Readings:
    they are removed.
 3. **HUST's discriminator is at chance on average (0.485), but one seed reads 0.62.** Above 0.5 means the discriminator
    predicts the wrong class more than half the time, which is what the "coarse indicator" caveat of §3.5.1 covers.
+4. **The X3 estimator is biased on the capacity pairs (errors in variables; v2 pipeline review).**
+   - ρ̄ is estimated from residuals about φ_c(ẑ). ẑ is read from noisy capacity, so capacity noise enters every
+     channel's residual with the slope of its mapping, and capacity-pair correlations are inflated.
+   - The fitted ρ̄, the generator's target, carries this bias once. The estimator on generated data adds it again,
+     which doubles the generated-vs-fitting distance in MATR's capacity pairs (above).
+   - The generator is not changed (D29: no iteration). This is reported as a limitation of the X3 target, and it does
+     not touch the non-capacity pairs.
+5. **D02b readability of the discriminator was not applied in the first V5 run (DEVIATIONS T6).**
+   - `scripts/v2/v5_discriminator_readability.py` re-ran the seeded discriminators with their predictions kept; they
+     reproduce V5 exactly.
+   - Unit bootstrap per seed, 10 000 resamples:
+     - MATR 0.333 [0.187, 0.483], 0.244 [0.154, 0.359], 0.423 [0.281, 0.561];
+     - HUST 0.373 [0.267, 0.482], 0.460 [0.381, 0.544], 0.623 [0.584, 0.663].
+   - Only one seed per profile is readable, so **both Table 1 discriminator cells are void under D02b**
+     (`tables/discriminator_readability.json`).
+   - The values are reported with the void reason. The X3 reading "narrows" is a shift of the seed mean, not a
+     readable level.
 
 ## Decisions needed
 
-None. Taken: D29 (HUST is the fidelity anchor; no generator iteration).
+None. Taken: D29 (HUST is the fidelity anchor; no generator iteration) and D30 (record-end clause for generated series in
+the property table; post-data).

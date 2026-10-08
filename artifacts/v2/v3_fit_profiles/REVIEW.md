@@ -77,6 +77,14 @@ Mappings and reference point:
 3. **HUST charge-time offsets carry real sampling noise.** With lag-1 0.993, a unit median is a noisy level estimate:
    the noise term is 0.64 of Var(δ) = 1.55 min². No shrinkage is applied, as declared, so generated HUST units carry
    slightly more between-unit charge-time spread than measured (V4/V5 report it).
+4. **The ρ̄ estimator is biased on the capacity pairs (errors in variables; added 2026-10-08 after the v2 pipeline
+   review).**
+   - The residuals are taken about φ_c(ẑ), where ẑ is read from noisy capacity. Capacity noise therefore enters each
+     channel's residual through the slope of its mapping.
+   - The correlations of capacity with the other channels are inflated. The non-capacity pairs are not affected.
+   - Since ρ̄ is the X3 target, the generator reproduces the bias, and re-estimating on generated data adds it once
+     more (V4 estimator check; V5 property table, capacity pairs).
+   - It is reported as a limitation of the X3 target. The estimator and generator are not changed (D29).
 
 ## Decisions needed
 

@@ -52,3 +52,25 @@ Format per entry:
 - **Why:** a property of the released timestamps.
 - **Cost to the claim:** none found. There are 18 steps, and no rest event of either source lies within 3 cycles of any
   of them (checked). Pause detection ignores negative gaps.
+
+### T6 — S5 (v1) and V5 (v2), recorded 2026-10-08 — methodological (a declared rule left out, now applied) — D02b readability of the discriminative error
+- **Paper says / declared:** `declared_by_design.minimum_counts.held_out_units_per_measure.discriminative_error`: at least
+  8 held-out units, and the value is readable only if its 95 % half-width is ≤ 0.5 |0.5 − value| (D02b); otherwise the
+  cell is void with the reason stated.
+- **What was done:** v1 S5 and the first V5 run applied the minimum count only. The v2 pipeline review found the gap.
+  `scripts/v2/v5_discriminator_readability.py` re-runs V5's seeded discriminators with their test predictions kept. The
+  accuracies reproduce V5 exactly, and the script applies a unit bootstrap per generation seed (10 000 percentile resamples).
+  - MATR: seeds 0 / 1 / 2 read 0.333 [0.187, 0.483], 0.244 [0.154, 0.359] and 0.423 [0.281, 0.561]. Only seed 1 is
+    readable.
+  - HUST: seeds 0 / 1 / 2 read 0.373 [0.267, 0.482], 0.460 [0.381, 0.544] and 0.623 [0.584, 0.663]. Only seed 2 is
+    readable.
+- **Why:** an omission in v1 that V5 inherited.
+- **Cost to the claim:**
+  - **Table 1's v2 discriminator cells are void under D02b for both profiles:** not every seed is readable
+    (`artifacts/v2/v5_fidelity/tables/discriminator_readability.json`).
+  - **The values are still reported, with the void reason.** The X3 reading "the discriminator gap narrows" rests on
+    the mean moving from 0.07 / 0.16 (v1) to 0.33 / 0.49, against v1 seed half-ranges of 0.02 / 0.04. That reading is
+    a shift of the seed mean, not a readable level, and it is reported as such.
+  - **v1's S5 cells were not re-checked:** v1's predictions were not saved, and v1 is not re-run. They are cited with
+    this caveat.
+  - No other measure is affected.

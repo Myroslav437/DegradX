@@ -1,0 +1,95 @@
+[v8] one window: {
+ "profile": "MATR",
+ "device": "cuda",
+ "wall_s": 6.52850432600826,
+ "split_s": {
+  "coalition_sampling": 4.841165833000001,
+  "model_evaluation": 0.233303957,
+  "lasso_lars_ic": 0.6481972,
+  "solve": 0.383398069
+ },
+ "split_share": {
+  "coalition_sampling": 0.741542869737217,
+  "model_evaluation": 0.03573620317146203,
+  "lasso_lars_ic": 0.09928724369802613,
+  "solve": 0.05872678485830491
+ }
+}
+[v8] bench {'workers': 1, 'device': 'cpu', 'chunk': 4096, 'windows': 8, 'wall_s': 67.43386005912907, 'windows_per_hour': 427.08703877805436, 'mean_window_s': 8.324368293746375, 'ideal_windows_per_hour': 432.4652481683776}
+[v8] bench {'workers': 2, 'device': 'cpu', 'chunk': 4096, 'windows': 8, 'wall_s': 39.5167147947941, 'windows_per_hour': 728.8194583844305, 'mean_window_s': 8.68635443301173, 'ideal_windows_per_hour': 828.8862785332625}
+[v8] bench {'workers': 4, 'device': 'cpu', 'chunk': 4096, 'windows': 16, 'wall_s': 48.644863134017214, 'windows_per_hour': 1184.1121652318077, 'mean_window_s': 9.720070117371506, 'ideal_windows_per_hour': 1481.4707945639839}
+[v8] bench {'workers': 6, 'device': 'cpu', 'chunk': 4096, 'windows': 24, 'wall_s': 57.51430839090608, 'windows_per_hour': 1502.2597072660753, 'mean_window_s': 10.793835068296175, 'ideal_windows_per_hour': 2001.1423060783895}
+[v8] bench {'workers': 8, 'device': 'cpu', 'chunk': 4096, 'windows': 32, 'wall_s': 70.37099105399102, 'windows_per_hour': 1637.17283959574, 'mean_window_s': 12.691292402865656, 'ideal_windows_per_hour': 2269.272433869465}
+[v8] bench {'workers': 12, 'device': 'cpu', 'chunk': 4096, 'windows': 48, 'wall_s': 117.33340304996818, 'windows_per_hour': 1472.8565863934357, 'mean_window_s': 21.23811088774043, 'ideal_windows_per_hour': 2034.0792186435442}
+[v8] bench {'workers': 1, 'device': 'cuda', 'chunk': 4096, 'windows': 8, 'wall_s': 52.39947331394069, 'windows_per_hour': 549.6650148854261, 'mean_window_s': 6.540286359755555, 'ideal_windows_per_hour': 550.4346143239134}
+[v8] bench {'workers': 2, 'device': 'cuda', 'chunk': 4096, 'windows': 8, 'wall_s': 34.15100432001054, 'windows_per_hour': 843.4255488134355, 'mean_window_s': 7.147728364245268, 'ideal_windows_per_hour': 1007.3130417233268}
+[v8] bench {'workers': 4, 'device': 'cuda', 'chunk': 4096, 'windows': 16, 'wall_s': 41.59596444410272, 'windows_per_hour': 1384.7881241170144, 'mean_window_s': 8.068405600264668, 'ideal_windows_per_hour': 1784.7392302052385}
+[v8] bench {'workers': 6, 'device': 'cuda', 'chunk': 4096, 'windows': 24, 'wall_s': 45.24514197302051, 'windows_per_hour': 1909.6435449952278, 'mean_window_s': 7.778870114367844, 'ideal_windows_per_hour': 2776.752880871998}
+[W1008 10:55:48.229189772 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 566231040 bytes (free: 254476288, total: 6027083776).
+[W1008 10:55:48.229445913 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 566231040 bytes (free: 254476288, total: 6027083776).
+[W1008 10:55:48.299389279 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 566231040 bytes (free: 229310464, total: 6027083776).
+[W1008 10:55:48.299599383 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 566231040 bytes (free: 229310464, total: 6027083776).
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/src/degradx/attribution/parallel_timeshap.py", line 92, in explain_one
+    phi = ker.shap_values(x, pruning_idx=0, nsamples=_W["nsamples"], l1_reg=_W["l1_reg"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py", line 298, in shap_values
+    explanation = self.explain(X, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py", line 513, in explain
+    self.run()
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py", line 782, in run
+    modelOut = self.model.f(data)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/src/degradx/attribution/methods.py", line 86, in f
+    res.append(model(_t(xx[i:i + chunk], device)).float().cpu().numpy())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/src/degradx/attribution/methods.py", line 32, in forward
+    return self.inner((x - self.mu) / self.sd) * self.y_std + self.y_mean
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py", line 29, in forward
+    out, _ = self.lstm(x)
+             ^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 1164, in forward
+    result = _VF.lstm(
+             ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 540.00 MiB. GPU 0 has a total capacity of 5.61 GiB of which 218.69 MiB is free. Process 7806 has 2.93 MiB memory in use. Process 2345818 has 696.00 MiB memory in use. Process 2352586 has 696.00 MiB memory in use. Including non-PyTorch memory, this process has 156.00 MiB memory in use. Process 2352649 has 696.00 MiB memory in use. Process 2352621 has 696.00 MiB memory in use. Process 2352559 has 156.00 MiB memory in use. Process 2352662 has 696.00 MiB memory in use. Process 2352575 has 696.00 MiB memory in use. Process 2352637 has 696.00 MiB memory in use. Of the allocated memory 48.83 MiB is allocated by PyTorch, and 13.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mmishchuk/projects/DegradX/scripts/v2/v8_reference_methods.py", line 452, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/mmishchuk/projects/DegradX/scripts/v2/v8_reference_methods.py", line 275, in main
+    r_ = PT.run_jobs(jobs_b, model_specs=specs, backgrounds=bgs, windows=wins, checkpoint_dir=bench_dir, workers=w, device=dev, chunk=ch,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmishchuk/projects/DegradX/src/degradx/attribution/parallel_timeshap.py", line 132, in run_jobs
+    for job, phi, s in pool.imap_unordered(explain_one, todo, chunksize=1):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+    raise value
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 540.00 MiB. GPU 0 has a total capacity of 5.61 GiB of which 218.69 MiB is free. Process 7806 has 2.93 MiB memory in use. Process 2345818 has 696.00 MiB memory in use. Process 2352586 has 696.00 MiB memory in use. Including non-PyTorch memory, this process has 156.00 MiB memory in use. Process 2352649 has 696.00 MiB memory in use. Process 2352621 has 696.00 MiB memory in use. Process 2352559 has 156.00 MiB memory in use. Process 2352662 has 696.00 MiB memory in use. Process 2352575 has 696.00 MiB memory in use. Process 2352637 has 696.00 MiB memory in use. Of the allocated memory 48.83 MiB is allocated by PyTorch, and 13.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

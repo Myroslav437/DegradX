@@ -1,0 +1,6 @@
+{
+  "stage": "v2/v8_reference_methods",
+  "device": "cuda",
+  "wall_clock_s": 601.118,
+  "sections_s": {}
+}

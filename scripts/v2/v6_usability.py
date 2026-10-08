@@ -94,7 +94,7 @@ def main() -> int:
         for ds in args.datasets:
             prof = C.v2_profile(ds)
             units, table = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
-            P = Profile.from_json(prof, np.array([0.0]))
+            P = Profile.from_json(prof, np.array([0.0]))  # dummy null pool: only x0 of null_permuted changes, which has zero weight in y and phi*
             spec = TargetSpec.build(P, beta, L, 6.0)
             split = dict(zip(table["index"], table["split"]))
             by_split = {s: [u for u in units if split[u.index] == s] for s in ("train", "validation", "test")}

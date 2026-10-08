@@ -364,9 +364,9 @@
     "severity": "warn"
   },
   {
-    "name": "MATR: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported)",
+    "name": "MATR: V3 within-unit estimator on generated observations recovers the fitted rho_bar within 0.05 (reported)",
     "expected": "<= 0.05",
-    "observed": "max |delta r| 0.168",
+    "observed": "max |delta r| 0.106 (capacity pairs 0.106, other pairs 0.090; E4 vs E4 0.089)",
     "passed": false,
     "severity": "warn"
   },
@@ -693,10 +693,10 @@
     "severity": "warn"
   },
   {
-    "name": "HUST: S3/V3 estimator on generated observations recovers the fitted residual correlation within 0.05 (reported)",
+    "name": "HUST: V3 within-unit estimator on generated observations recovers the fitted rho_bar within 0.05 (reported)",
     "expected": "<= 0.05",
-    "observed": "max |delta r| 0.068",
-    "passed": false,
+    "observed": "max |delta r| 0.035 (capacity pairs 0.035, other pairs 0.013; E4 vs E4 0.032)",
+    "passed": true,
     "severity": "warn"
   }
 ]

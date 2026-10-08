@@ -1,0 +1,38 @@
+         1207348 function calls (1206333 primitive calls) in 6.522 seconds
+
+   Ordered by: cumulative time
+   List reduced from 570 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    6.522    6.522 /home/mmishchuk/projects/DegradX/src/degradx/attribution/parallel_timeshap.py:77(explain_one)
+        1    0.040    0.040    6.520    6.520 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py:253(shap_values)
+        1    0.332    0.332    6.478    6.478 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py:308(explain)
+    32000    0.197    0.000    4.841    0.000 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py:626(add_sample)
+    32000    3.877    0.000    4.644    0.000 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py:664(cell_add_sample)
+        1    0.123    0.123    0.941    0.941 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/shap/explainers/_kernel.py:637(solve)
+    96001    0.093    0.000    0.750    0.000 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/numpy/lib/arraysetops.py:138(unique)
+      4/1    0.003    0.001    0.743    0.743 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/base.py:1381(wrapper)
+        1    0.000    0.000    0.742    0.742 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/pipeline.py:578(fit)
+        1    0.094    0.094    0.648    0.648 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:2227(fit)
+    96001    0.380    0.000    0.617    0.000 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/numpy/lib/arraysetops.py:323(_unique1d)
+        1    0.000    0.000    0.415    0.415 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:2318(_estimate_noise_variance)
+        1    0.000    0.000    0.404    0.404 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/linear_model/_base.py:653(fit)
+      161    0.001    0.000    0.388    0.002 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:1149(wrapper)
+        1    0.376    0.376    0.383    0.383 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/linalg/_basic.py:1606(lstsq)
+        1    0.109    0.109    0.233    0.233 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/timeshap/explainer/kernel/timeshap_kernel.py:764(run)
+    96001    0.125    0.000    0.125    0.000 {method 'sort' of 'numpy.ndarray' objects}
+        3    0.000    0.000    0.116    0.039 /home/mmishchuk/projects/DegradX/src/degradx/attribution/methods.py:82(f)
+    15971    0.106    0.000    0.106    0.000 {method 'permutation' of 'numpy.random.mtrand.RandomState' objects}
+       10    0.105    0.010    0.105    0.010 {method 'cpu' of 'torch._C.TensorBase' objects}
+        1    0.000    0.000    0.099    0.099 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py:187(wrapper)
+        1    0.000    0.000    0.099    0.099 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:47(lars_path)
+        1    0.091    0.091    0.099    0.099 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:414(_lars_path_solver)
+        1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/pipeline.py:516(_fit)
+        1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/joblib/memory.py:330(__call__)
+        1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/pipeline.py:1578(_fit_transform_one_with_callbacks)
+        1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/pipeline.py:1553(_fit_transform_one)
+      2/1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/utils/_set_output.py:325(wrapped)
+        1    0.000    0.000    0.091    0.091 /home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/sklearn/base.py:913(fit_transform)
+      528    0.070    0.000    0.070    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+
+

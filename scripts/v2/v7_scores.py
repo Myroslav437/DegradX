@@ -8,10 +8,12 @@ uniform weighting. Scores on the pattern-free counterpart map against the graded
   better, X5); paired retrieval only where the profile carries patterns.
 Per score and operator: the resolution (v1 criterion, sign-aware: for error scores the LOWER bound of the 95% paired BCa
 interval of mean(degraded - undegraded) > 0 at this and every larger magnitude; 10 000 resamples), the mean change at the
-resolved magnitude, and the declared registers check (mean change >= 10% of |s_chance - s_perfect| at some magnitude and
-every larger one; s_chance from fully permuted maps).
+resolved magnitude, and the declared registers check (resolved, and the mean change toward chance >= 10% of
+|s_chance - s_perfect| at some magnitude and every larger one; s_chance from fully permuted maps). Windows on which a
+score is undefined are counted per magnitude.
 Part B: the same scores recomputed on the saved v1 S8 maps (``data/attributions``) against the v1 ground truth regenerated
-from ``data/generated`` (recency and uniform; no new attribution). Outputs in ``artifacts/v2/v7_scores``.
+from ``data/generated`` (recency and uniform; no new attribution); every map is also scored on the 40 windows v1
+explained with TimeSHAP, so that the methods are compared on the same windows. Outputs in ``artifacts/v2/v7_scores``.
 """
 
 from __future__ import annotations
@@ -79,12 +81,18 @@ def resolution(unit_scores: dict, grid, sign: int, seed: int, n_resamples: int) 
     return {"bound": bound, "mean_change": mean_change, "resolution": resolved, "change_at_resolution": mean_change.get(resolved) if resolved is not None else None}
 
 
-def registers(mean_change: dict, grid, chance: float, perfect: float, frac: float = 0.10) -> dict:
+def registers(mean_change: dict, grid, chance: float, perfect: float, resolved, frac: float = 0.10) -> dict:
+    """Declared reading (r3 v2.scoring.registers_check): (i) resolved, and (ii) the mean change toward chance reaches frac of
+    |s_chance - s_perfect| at this and every larger magnitude. Since resolution holds at every magnitude from the resolved one
+    on, (i) and (ii) together give the smallest magnitude >= the resolved one from which (ii) holds throughout."""
     thr = frac * abs(chance - perfect)
+    toward = np.sign(chance - perfect)
     mags = grid[1:]
-    big = {m: np.isfinite(mean_change[m]) and abs(mean_change[m]) >= thr for m in mags}
-    mag = next((m for i, m in enumerate(mags) if all(big[k] for k in mags[i:])), None)
-    return {"threshold": thr, "registering_magnitude": mag, "registers": mag is not None}
+    big = {m: bool(np.isfinite(mean_change[m]) and toward * mean_change[m] >= thr) for m in mags}
+    ok = {m: big[m] and resolved is not None and m >= resolved for m in mags}
+    mag = next((m for i, m in enumerate(mags) if all(ok[k] for k in mags[i:])), None)
+    size_only = next((m for i, m in enumerate(mags) if all(big[k] for k in mags[i:])), None)
+    return {"threshold": thr, "registering_magnitude": mag, "registers": mag is not None, "size_condition_only_magnitude": size_only}
 
 
 def part_a(ds, units, spec, kind, ops, weighted_idx, seed, n_boot, has_patterns, per_unit=20):
@@ -99,7 +107,7 @@ def part_a(ds, units, spec, kind, ops, weighted_idx, seed, n_boot, has_patterns,
         grid = cfg["grid"]
         f = OPERATORS[op]
         per = {k: {} for k in SCORES}
-        excl = {}
+        excl, undef = {}, {}
         for mi, mag in enumerate(grid):
             vals = {k: [] for k in SCORES}
             ex = 0
@@ -113,11 +121,12 @@ def part_a(ds, units, spec, kind, ops, weighted_idx, seed, n_boot, has_patterns,
             for k in SCORES:
                 _, per[k][mag] = unit_means(np.array(vals[k], float), U_)
             excl[mag] = ex
-        s = {"grid": grid, "temporal_channels_excluded": excl}
+            undef[mag] = {k: int(np.sum(~np.isfinite(np.array(vals[k], float)))) for k in SCORES}
+        s = {"grid": grid, "temporal_channels_excluded": excl, "windows_undefined": undef}
         for k, sign in SCORES.items():
             res = resolution(per[k], grid, sign, seed, n_boot)
             s[k] = {"mean": [float(np.nanmean(per[k][m])) for m in grid], **res,
-                    "registers": registers(res["mean_change"], grid, out["chance"][k], PERFECT[k])}
+                    "registers": registers(res["mean_change"], grid, out["chance"][k], PERFECT[k], res["resolution"])}
         series[op] = s
     out["operators"] = series
     return out
@@ -182,6 +191,16 @@ def part_b(ds, kind, seed, n_boot):
         out[name] = {k: unit_mean_ci(sc[k], u_, seed, n_boot) for k in ("rank", "allocation", "temporal", "zero_mass")}
         out[name]["windows"] = int(len(mp["idx"]))
         out[name]["temporal_excluded"] = sc["temporal_excluded"]
+        out[name]["windows_undefined"] = {k: int(np.sum(~np.isfinite(np.asarray(sc[k], float)))) for k in ("rank", "allocation", "temporal")}
+        mp["scores"], mp["units"] = sc, u_
+    # like for like: every map on the windows v1 explained with TimeSHAP (its 40 of the 120)
+    ts = [mp["idx"] for name, mp in maps.items() if "timeshap" in name]
+    if ts:
+        common = set(int(i) for i in ts[0])
+        for name, mp in maps.items():
+            keep = [j for j, i in enumerate(mp["idx"]) if int(i) in common]
+            out[name]["on_timeshap_windows"] = {k: unit_mean_ci([mp["scores"][k][j] for j in keep], [mp["units"][j] for j in keep], seed, n_boot)
+                                                for k in ("rank", "allocation", "temporal", "zero_mass")} | {"windows": len(keep)}
     return out
 
 
@@ -219,7 +238,7 @@ def main() -> int:
                 units, table = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
                 split = dict(zip(table["index"], table["split"]))
                 test = [u for u in units if split[u.index] == "test"]
-                P = Profile.from_json(prof, np.array([0.0]))
+                P = Profile.from_json(prof, np.array([0.0]))  # dummy null pool: only x0 of null_permuted changes, which has zero weight in y and phi*
                 spec = TargetSpec.build(P, beta, L, 6.0)
                 widx = np.flatnonzero(spec.kappa != 0)
                 has_patterns = any(len(u.patterns) for u in units)

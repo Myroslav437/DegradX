@@ -42,10 +42,18 @@ class Job:
     background_key: str           # key into the background-event table
 
 
+THREAD_VARS = ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS")
+
+
 def _init_worker(model_specs: dict, backgrounds: dict, windows: dict, device: str, chunk: int, nsamples: int, l1_reg, threads: int) -> None:
-    os.environ["OMP_NUM_THREADS"] = str(threads)
-    os.environ["MKL_NUM_THREADS"] = str(threads)
-    os.environ["OPENBLAS_NUM_THREADS"] = str(threads)
+    # the BLAS thread limit must be in the environment before numpy loads in the child: run_jobs sets it in the parent
+    # before spawning; threadpoolctl enforces it again here in case a library was loaded earlier
+    try:
+        from threadpoolctl import threadpool_limits
+
+        threadpool_limits(threads)
+    except ImportError:
+        pass
     import torch
 
     torch.set_num_threads(threads)
@@ -93,6 +101,37 @@ def explain_one(job: Job) -> tuple[Job, np.ndarray, float]:
     return job, np.asarray(phi, dtype=float).reshape(L, C), time.perf_counter() - t0
 
 
+def _fingerprint(arr) -> str:
+    import hashlib
+
+    return hashlib.sha256(np.ascontiguousarray(np.asarray(arr, dtype=np.float64)).tobytes()).hexdigest()[:16]
+
+
+def manifest_for(jobs, model_specs: dict, backgrounds: dict, windows: dict, nsamples: int, l1_reg) -> dict:
+    """What determines each row's maps: model (checkpoint path or reference weights), background event, windows,
+    nsamples and l1_reg. A checkpoint directory refuses rows whose fingerprint differs from the one stored."""
+    out = {}
+    for j in jobs:
+        if j.row in out:
+            continue
+        ms = model_specs[j.model_key]
+        model_fp = f"trained:{ms.path}" if ms.kind == "trained" else f"reference:{_fingerprint(ms.weights)}:{_fingerprint(ms.x0)}"
+        out[j.row] = {"model": model_fp, "background": _fingerprint(backgrounds[j.background_key]), "windows": _fingerprint(windows[j.window_key]),
+                      "nsamples": int(nsamples), "l1_reg": str(l1_reg)}
+    return out
+
+
+def check_manifest(ckpt: Path, manifest: dict) -> None:
+    f = Path(ckpt) / "manifest.json"
+    old = json.loads(f.read_text()) if f.exists() else {}
+    bad = [r for r, v in manifest.items() if r in old and old[r] != v]
+    if bad:
+        raise RuntimeError(f"checkpoint rows computed under a different model/background/windows/settings: {bad[:3]} ... ({len(bad)})")
+    old.update(manifest)
+    Path(ckpt).mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(old, indent=1))
+
+
 def job_path(ckpt: Path, job: Job) -> Path:
     return Path(ckpt) / job.row.replace("/", "__") / f"w{job.index:04d}_s{job.seed}.npy"
 
@@ -102,6 +141,7 @@ def run_jobs(jobs: list[Job], *, model_specs: dict, backgrounds: dict, windows: 
     """Run every job not yet checkpointed; returns counts and throughput. ``windows`` maps a window key to an array
     (N, L, C); ``model_specs`` maps a model key to a ModelSpec; ``backgrounds`` maps a key to a (C,) event."""
     ckpt = Path(checkpoint_dir)
+    check_manifest(ckpt, manifest_for(jobs, model_specs, backgrounds, windows, nsamples, l1_reg))
     todo = [j for j in jobs if not job_path(ckpt, j).exists()]
     t0 = time.perf_counter()
     done, secs = 0, []
@@ -128,13 +168,23 @@ def run_jobs(jobs: list[Job], *, model_specs: dict, backgrounds: dict, windows: 
     else:
         from multiprocessing import get_context
 
-        with get_context("spawn").Pool(workers, initializer=_init_worker, initargs=init) as pool:
-            for job, phi, s in pool.imap_unordered(explain_one, todo, chunksize=1):
-                _store(job, phi, s)
-                done += 1
-                secs.append(s)
-                if done % log_every == 0:
-                    _log(tp_log, label, done, len(todo), t0, secs)
+        saved = {k: os.environ.get(k) for k in THREAD_VARS}
+        for k in THREAD_VARS:  # inherited by the spawned children before they import numpy
+            os.environ[k] = str(threads_per_worker)
+        try:
+            with get_context("spawn").Pool(workers, initializer=_init_worker, initargs=init) as pool:
+                for job, phi, s in pool.imap_unordered(explain_one, todo, chunksize=1):
+                    _store(job, phi, s)
+                    done += 1
+                    secs.append(s)
+                    if done % log_every == 0:
+                        _log(tp_log, label, done, len(todo), t0, secs)
+        finally:
+            for k, v in saved.items():
+                if v is None:
+                    os.environ.pop(k, None)
+                else:
+                    os.environ[k] = v
     wall = time.perf_counter() - t0
     out = {"label": label, "jobs": len(jobs), "already_done": len(jobs) - len(todo), "ran": done, "wall_s": wall,
            "windows_per_hour": done / wall * 3600 if wall > 0 and done else None, "mean_window_s": float(np.mean(secs)) if secs else None,

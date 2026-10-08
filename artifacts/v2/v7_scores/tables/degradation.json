@@ -28,6 +28,43 @@
             "1.0": 2,
             "2.0": 2
           },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
+          },
           "rank": {
             "mean": [
               1.0,
@@ -59,7 +96,8 @@
             "registers": {
               "threshold": 0.0997840544229775,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           },
           "allocation": {
@@ -93,7 +131,8 @@
             "registers": {
               "threshold": 0.06319061804181991,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -127,7 +166,8 @@
             "registers": {
               "threshold": 0.5425362948318599,
               "registering_magnitude": 0.5,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.5
             }
           }
         },
@@ -151,6 +191,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -186,7 +268,8 @@
             "registers": {
               "threshold": 0.0997840544229775,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -223,7 +306,8 @@
             "registers": {
               "threshold": 0.06319061804181991,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -260,7 +344,8 @@
             "registers": {
               "threshold": 0.5425362948318599,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -284,6 +369,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -319,7 +446,8 @@
             "registers": {
               "threshold": 0.0997840544229775,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -356,7 +484,8 @@
             "registers": {
               "threshold": 0.06319061804181991,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -393,7 +522,8 @@
             "registers": {
               "threshold": 0.5425362948318599,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           }
         },
@@ -413,6 +543,38 @@
             "2": 2,
             "4": 2,
             "8": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -442,7 +604,8 @@
             "registers": {
               "threshold": 0.0997840544229775,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "allocation": {
@@ -473,7 +636,8 @@
             "registers": {
               "threshold": 0.06319061804181991,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -504,7 +668,8 @@
             "registers": {
               "threshold": 0.5425362948318599,
               "registering_magnitude": 8,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 8
             }
           }
         },
@@ -528,6 +693,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -563,7 +770,8 @@
             "registers": {
               "threshold": 0.0997840544229775,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -600,7 +808,8 @@
             "registers": {
               "threshold": 0.06319061804181991,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -637,7 +846,8 @@
             "registers": {
               "threshold": 0.5425362948318599,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           }
         }
@@ -671,6 +881,43 @@
             "1.0": 2,
             "2.0": 2
           },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
+          },
           "rank": {
             "mean": [
               1.0,
@@ -702,7 +949,8 @@
             "registers": {
               "threshold": 0.09992192881435848,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           },
           "allocation": {
@@ -736,7 +984,8 @@
             "registers": {
               "threshold": 0.06316387316348476,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -770,7 +1019,8 @@
             "registers": {
               "threshold": 0.25919058873149,
               "registering_magnitude": 0.5,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.5
             }
           }
         },
@@ -794,6 +1044,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -829,7 +1121,8 @@
             "registers": {
               "threshold": 0.09992192881435848,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -866,7 +1159,8 @@
             "registers": {
               "threshold": 0.06316387316348476,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -903,7 +1197,8 @@
             "registers": {
               "threshold": 0.25919058873149,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -927,6 +1222,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -962,7 +1299,8 @@
             "registers": {
               "threshold": 0.09992192881435848,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -999,7 +1337,8 @@
             "registers": {
               "threshold": 0.06316387316348476,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -1036,7 +1375,8 @@
             "registers": {
               "threshold": 0.25919058873149,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -1056,6 +1396,38 @@
             "2": 2,
             "4": 2,
             "8": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1085,7 +1457,8 @@
             "registers": {
               "threshold": 0.09992192881435848,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "allocation": {
@@ -1116,7 +1489,8 @@
             "registers": {
               "threshold": 0.06316387316348476,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -1147,7 +1521,8 @@
             "registers": {
               "threshold": 0.25919058873149,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           }
         },
@@ -1171,6 +1546,48 @@
             "0.6": 2,
             "0.8": 2,
             "1.0": 2
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1206,7 +1623,8 @@
             "registers": {
               "threshold": 0.09992192881435848,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -1243,7 +1661,8 @@
             "registers": {
               "threshold": 0.06316387316348476,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -1280,7 +1699,8 @@
             "registers": {
               "threshold": 0.25919058873149,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           }
         }
@@ -1316,6 +1736,43 @@
             "1.0": 0,
             "2.0": 0
           },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
+          },
           "rank": {
             "mean": [
               0.9999999999999999,
@@ -1347,7 +1804,8 @@
             "registers": {
               "threshold": 0.09982272040771574,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -1381,7 +1839,8 @@
             "registers": {
               "threshold": 0.04640497772990006,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -1415,7 +1874,8 @@
             "registers": {
               "threshold": 0.5048734284237401,
               "registering_magnitude": 0.5,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.5
             }
           }
         },
@@ -1439,6 +1899,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1474,7 +1976,8 @@
             "registers": {
               "threshold": 0.09982272040771574,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -1511,7 +2014,8 @@
             "registers": {
               "threshold": 0.04640497772990006,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -1548,7 +2052,8 @@
             "registers": {
               "threshold": 0.5048734284237401,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -1572,6 +2077,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1607,7 +2154,8 @@
             "registers": {
               "threshold": 0.09982272040771574,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -1644,7 +2192,8 @@
             "registers": {
               "threshold": 0.04640497772990006,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -1681,7 +2230,8 @@
             "registers": {
               "threshold": 0.5048734284237401,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           }
         },
@@ -1701,6 +2251,38 @@
             "2": 0,
             "4": 0,
             "8": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1730,7 +2312,8 @@
             "registers": {
               "threshold": 0.09982272040771574,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "allocation": {
@@ -1761,7 +2344,8 @@
             "registers": {
               "threshold": 0.04640497772990006,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -1792,7 +2376,8 @@
             "registers": {
               "threshold": 0.5048734284237401,
               "registering_magnitude": 8,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 8
             }
           }
         },
@@ -1816,6 +2401,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -1851,7 +2478,8 @@
             "registers": {
               "threshold": 0.09982272040771574,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -1888,7 +2516,8 @@
             "registers": {
               "threshold": 0.04640497772990006,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -1925,7 +2554,8 @@
             "registers": {
               "threshold": 0.5048734284237401,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           }
         }
@@ -1959,6 +2589,43 @@
             "1.0": 0,
             "2.0": 0
           },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
+          },
           "rank": {
             "mean": [
               0.9999999999999999,
@@ -1990,7 +2657,8 @@
             "registers": {
               "threshold": 0.10001807894379855,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -2024,7 +2692,8 @@
             "registers": {
               "threshold": 0.046608252146451756,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "temporal": {
@@ -2058,7 +2727,8 @@
             "registers": {
               "threshold": 0.1701666908222349,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           }
         },
@@ -2082,6 +2752,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -2117,7 +2829,8 @@
             "registers": {
               "threshold": 0.10001807894379855,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -2154,7 +2867,8 @@
             "registers": {
               "threshold": 0.046608252146451756,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -2191,7 +2905,8 @@
             "registers": {
               "threshold": 0.1701666908222349,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -2215,6 +2930,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -2250,7 +3007,8 @@
             "registers": {
               "threshold": 0.10001807894379855,
               "registering_magnitude": 1.0,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 1.0
             }
           },
           "allocation": {
@@ -2287,7 +3045,8 @@
             "registers": {
               "threshold": 0.046608252146451756,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -2324,7 +3083,8 @@
             "registers": {
               "threshold": 0.1701666908222349,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         },
@@ -2344,6 +3104,38 @@
             "2": 0,
             "4": 0,
             "8": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.5": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -2373,7 +3165,8 @@
             "registers": {
               "threshold": 0.10001807894379855,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "allocation": {
@@ -2404,7 +3197,8 @@
             "registers": {
               "threshold": 0.046608252146451756,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           },
           "temporal": {
@@ -2435,7 +3229,8 @@
             "registers": {
               "threshold": 0.1701666908222349,
               "registering_magnitude": null,
-              "registers": false
+              "registers": false,
+              "size_condition_only_magnitude": null
             }
           }
         },
@@ -2459,6 +3254,48 @@
             "0.6": 0,
             "0.8": 0,
             "1.0": 0
+          },
+          "windows_undefined": {
+            "0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.05": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.1": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.2": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.4": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.6": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "0.8": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            },
+            "1.0": {
+              "rank": 0,
+              "allocation": 0,
+              "temporal": 0
+            }
           },
           "rank": {
             "mean": [
@@ -2494,7 +3331,8 @@
             "registers": {
               "threshold": 0.10001807894379855,
               "registering_magnitude": 0.2,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.2
             }
           },
           "allocation": {
@@ -2531,7 +3369,8 @@
             "registers": {
               "threshold": 0.046608252146451756,
               "registering_magnitude": 0.1,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.1
             }
           },
           "temporal": {
@@ -2568,7 +3407,8 @@
             "registers": {
               "threshold": 0.1701666908222349,
               "registering_magnitude": 0.05,
-              "registers": true
+              "registers": true,
+              "size_condition_only_magnitude": 0.05
             }
           }
         }

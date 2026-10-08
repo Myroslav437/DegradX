@@ -3,14 +3,13 @@
     "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
     "fitting": "rollover; 0.0027",
     "held_out": "rollover; 0.0032",
-    "generated": "rollover; 0.0014",
+    "generated": "rollover; 0.0013",
     "units": {
       "fitting": 54,
       "held_out": 23,
-      "generated": 300
+      "generated": 177
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "drift rate [mAh per 100 cycles]",
@@ -31,20 +30,19 @@
       "p95": 22.297208285990912
     },
     "generated": {
-      "n": 300,
-      "median": 16.99698660474315,
-      "q25": 14.188394209114247,
-      "q75": 19.073640886010644,
-      "p05": 11.720132627418783,
-      "p95": 21.88866777721492
+      "n": 177,
+      "median": 16.99231229878699,
+      "q25": 14.575939930214183,
+      "q75": 19.117403217008455,
+      "p05": 12.385301095747156,
+      "p95": 21.899472872710845
     },
     "units": {
       "fitting": 54,
       "held_out": 23,
-      "generated": 300
+      "generated": 177
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "transition position [fraction of T]",
@@ -65,20 +63,19 @@
       "p95": 0.9763075113255244
     },
     "generated": {
-      "n": 300,
-      "median": 0.6762753888475221,
-      "q25": 0.6323639236038894,
-      "q75": 0.7186104928528141,
-      "p05": 0.5641932248637367,
-      "p95": 0.8626016214121035
+      "n": 177,
+      "median": 0.6746323529411765,
+      "q25": 0.6341756919374247,
+      "q75": 0.725435148792813,
+      "p05": 0.5652430383105729,
+      "p95": 0.8707168569837946
     },
     "units": {
       "fitting": 54,
       "held_out": 23,
-      "generated": 300
+      "generated": 177
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "unit length T [cycles]",
@@ -99,20 +96,19 @@
       "p95": 2457.7
     },
     "generated": {
-      "n": 300,
-      "median": 1807.0,
-      "q25": 1585.0,
-      "q75": 2214.75,
-      "p05": 1343.95,
-      "p95": 2660.0
+      "n": 177,
+      "median": 1805.0,
+      "q25": 1584.0,
+      "q75": 2170.0,
+      "p05": 1343.0,
+      "p95": 2627.8
     },
     "units": {
       "fitting": 54,
       "held_out": 23,
-      "generated": 300
+      "generated": 177
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "early-life reference q1 [Ah], units reaching EOL",
@@ -135,80 +131,71 @@
       "n": 23
     },
     "generated": {
-      "median": 1.1934518941178676,
-      "iqr": 0.026945144884669148,
+      "median": 1.193738058025308,
+      "iqr": 0.03031389065264878,
       "p05_p95": [
-        1.1653677554375597,
-        1.209682916948622
+        1.1650700875950972,
+        1.2125324654105907
       ],
-      "n": 300
+      "n": 177
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise variance, capacity (per-unit-centred AR(1))",
     "fitting": 1.0963455638666938e-06,
     "held_out": 1.0639060845816568e-06,
     "generated": 9.447242145741589e-07,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise lag-1 autocorrelation, capacity",
     "fitting": 0.9405291037805732,
     "held_out": 0.9483930822776654,
     "generated": 0.9192226065652541,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise variance, charge_time (per-unit-centred AR(1))",
     "fitting": 1.3927395048496134,
     "held_out": 1.433561940486202,
     "generated": 1.018836625222186,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise lag-1 autocorrelation, charge_time",
     "fitting": 0.9934008852788464,
     "held_out": 0.992810892717347,
     "generated": 0.9878652182452405,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "per-unit offset IQR, charge_time",
     "fitting": 1.6833993631354067,
     "held_out": 1.6160130299535798,
     "generated": 1.9677773747708636,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise variance, mean_discharge_voltage (per-unit-centred AR(1))",
     "fitting": 2.5054481579235322e-05,
     "held_out": 3.3611609528413264e-05,
     "generated": 2.1981829469832133e-05,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
     "fitting": 0.9779724117629024,
     "held_out": 0.9837048296461098,
     "generated": 0.974453483749117,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "per-unit offset IQR, mean_discharge_voltage",
     "fitting": 0.052995242979917756,
     "held_out": 0.04738565983934773,
     "generated": 0.054171385104353376,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "positive residual runs per 100 positions (enabled in profile: False)",
@@ -220,8 +207,7 @@
       "held_out": 19,
       "generated": 649
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "negative residual runs per 100 positions (enabled in profile: False)",
@@ -233,8 +219,7 @@
       "held_out": 68,
       "generated": 598
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   },
   {
     "property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
@@ -250,23 +235,6 @@
       "relative_frobenius": 0.034647918446053395,
       "mean_abs_delta_rho": 0.023691599787314017
     },
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
-  },
-  {
-    "property": "within-unit residual correlation, capacity pairs: mean |delta rho| against the fitting split",
-    "fitting": 0.0,
-    "held_out": 0.023424151539993616,
-    "generated": 0.02894133308064087,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
-  },
-  {
-    "property": "within-unit residual correlation, non-capacity pairs: mean |delta rho| against the fitting split",
-    "fitting": 0.0,
-    "held_out": 0.011585268159066298,
-    "generated": 0.013192133200660316,
-    "dataset": "HUST",
-    "note": "D30: generated series read with D13's record-end clause"
+    "dataset": "HUST"
   }
 ]

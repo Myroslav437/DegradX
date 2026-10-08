@@ -1,0 +1,104 @@
+{
+  "MATR": {
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "discriminative_error": 0.3331249952316284,
+        "v5_value": 0.3331249952316284,
+        "reproduces_v5": true,
+        "ci_low": 0.1868012484104367,
+        "ci_high": 0.48282385200188394,
+        "half_width": 0.14801130179572364,
+        "bound": 0.08343750238418579,
+        "readable": false,
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 1,
+        "discriminative_error": 0.24375003576278687,
+        "v5_value": 0.24375003576278687,
+        "reproduces_v5": true,
+        "ci_low": 0.1544131330178838,
+        "ci_high": 0.359151608818099,
+        "half_width": 0.10236923790010759,
+        "bound": 0.12812498211860657,
+        "readable": true,
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 2,
+        "discriminative_error": 0.4231250286102295,
+        "v5_value": 0.4231250286102295,
+        "reproduces_v5": true,
+        "ci_low": 0.2812475540075141,
+        "ci_high": 0.5614377034483311,
+        "half_width": 0.1400950747204085,
+        "bound": 0.038437485694885254,
+        "readable": false,
+        "test_units": {
+          "measured": 8,
+          "generated": 60
+        }
+      }
+    ],
+    "readable": false,
+    "void_reason": "discriminative-error interval wider than half its distance from 0.5 (D02b readability)"
+  },
+  "HUST": {
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "discriminative_error": 0.37299996614456177,
+        "v5_value": 0.37299996614456177,
+        "reproduces_v5": true,
+        "ci_low": 0.26734494698780414,
+        "ci_high": 0.4824482205374883,
+        "half_width": 0.10755163677484209,
+        "bound": 0.06350001692771912,
+        "readable": false,
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 1,
+        "discriminative_error": 0.4599999785423279,
+        "v5_value": 0.4599999785423279,
+        "reproduces_v5": true,
+        "ci_low": 0.3807074565078114,
+        "ci_high": 0.5437006109552246,
+        "half_width": 0.0814965772237066,
+        "bound": 0.02000001072883606,
+        "readable": false,
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 2,
+        "discriminative_error": 0.6229999959468842,
+        "v5_value": 0.6229999959468842,
+        "reproduces_v5": true,
+        "ci_low": 0.5835896656534955,
+        "ci_high": 0.662910694224848,
+        "half_width": 0.039660514285676296,
+        "bound": 0.06149999797344208,
+        "readable": true,
+        "test_units": {
+          "measured": 5,
+          "generated": 60
+        }
+      }
+    ],
+    "readable": false,
+    "void_reason": "discriminative-error interval wider than half its distance from 0.5 (D02b readability)"
+  }
+}

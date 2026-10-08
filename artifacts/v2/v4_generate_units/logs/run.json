@@ -1,19 +1,20 @@
 {
   "stage": "v2/v4_generate_units",
   "argv": [
-    "scripts/v2/v4_generate_units.py",
-    "--device",
-    "cpu",
+    "v4_generate_units.py",
+    "--datasets",
+    "MATR",
+    "HUST",
     "--workers",
     "8"
   ],
-  "started_utc": "2026-10-07T19:59:34.569921+00:00",
-  "finished_utc": "2026-10-07T20:03:53.855856+00:00",
-  "wall_clock_s": 259.286,
+  "started_utc": "2026-10-08T09:08:22.584252+00:00",
+  "finished_utc": "2026-10-08T09:13:33.244138+00:00",
+  "wall_clock_s": 310.66,
   "status": "ok",
   "error": null,
   "git": {
-    "commit": "b381d56210a17245065934dffb720c2fb10364ab",
+    "commit": "bf63a3023bfaebc36f649c2b7ea4ec0c0f9ad25f",
     "dirty": true,
     "branch": "v2"
   },
@@ -25,7 +26,7 @@
       "HUST"
     ]
   },
-  "declarations_sha256": "fdd04250fba39bbfd5b93b0de55aedc975c5d985e258814cd57d75175a94fa19",
+  "declarations_sha256": "a8227420766ced397ce82775c510f14ecc1fcd3957ad32b951b4b6a6c685dda4",
   "seeds": {
     "generation": [
       0,
@@ -35,9 +36,12 @@
     "split": "derive_seed(20260915, 'split', <profile>, 'generated', <g>)"
   },
   "device": {
-    "device": "cpu",
+    "device": "cuda",
     "torch": "2.14.0+cu130",
-    "cuda_available": true
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "cuda_runtime": "13.0",
+    "cudnn": 92400
   },
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",

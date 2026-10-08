@@ -69,7 +69,7 @@ def main() -> int:
     beta, L = dd["target"]["weights"]["beta"]["value"], int(dd["target"]["window_length_L"]["value"])
     prof = C.v2_profile(DS)
     units, table = pickle.loads((DATA_V2 / "generated" / DS / "seed0.pkl").read_bytes())
-    P = Profile.from_json(prof, np.array([0.0]))
+    P = Profile.from_json(prof, C.null_pool(DS, decl))  # real pool: the null_permuted reference point enters the baseline
     spec = TargetSpec.build(P, beta, L, 6.0)
     split = dict(zip(table["index"], table["split"]))
     by = {s: [u for u in units if split[u.index] == s] for s in ("train", "validation", "test")}

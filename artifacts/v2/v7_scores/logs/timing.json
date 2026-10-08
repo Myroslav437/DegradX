@@ -1,17 +1,17 @@
 {
   "stage": "v2/v7_scores",
-  "device": "cpu",
-  "wall_clock_s": 85.507,
+  "device": "cuda",
+  "wall_clock_s": 121.04,
   "sections_s": {
-    "MATR_recency_part_a": 19.127,
-    "MATR_uniform_part_a": 19.148,
-    "HUST_recency_part_a": 18.985,
-    "HUST_uniform_part_a": 19.109,
-    "MATR_recency_v1_maps": 0.525,
-    "MATR_uniform_v1_maps": 0.519,
-    "HUST_recency_v1_maps": 0.545,
-    "HUST_uniform_v1_maps": 0.537,
-    "NASA_PCoE_recency_v1_maps": 0.483,
-    "NASA_PCoE_uniform_v1_maps": 0.481
+    "MATR_recency_part_a": 28.307,
+    "MATR_uniform_part_a": 26.6,
+    "HUST_recency_part_a": 27.34,
+    "HUST_uniform_part_a": 25.19,
+    "MATR_recency_v1_maps": 0.604,
+    "MATR_uniform_v1_maps": 0.613,
+    "HUST_recency_v1_maps": 0.636,
+    "HUST_uniform_v1_maps": 0.635,
+    "NASA_PCoE_recency_v1_maps": 0.901,
+    "NASA_PCoE_uniform_v1_maps": 0.912
   }
 }

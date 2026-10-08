@@ -234,14 +234,14 @@ def main() -> int:
             with rec.section(f"{ds}_x3_off_set"):
                 cache_off = DATA_V2 / "generated" / ds / "seed0_x3off.pkl"
                 if ctx.should_skip(cache_off, label=f"{ds} X3-off set"):
-                    pass
+                    units_off, table_off = pickle.loads(cache_off.read_bytes())
                 else:
                     P_off = deepcopy(P)
                     P_off.innov_corr = None
                     units_off, table_off = generate_set(P_off, gen_seeds[0], n_units, args.seed)
                     cache_off.write_bytes(pickle.dumps((units_off, table_off), protocol=pickle.HIGHEST_PROTOCOL))
-                    summary[ds]["x3_off_set"] = {"file": str(cache_off.relative_to(DATA_V2.parent.parent)), "units": len(units_off),
-                                                 "within_unit_correlation": within_unit_correlation([u.eps[:, :nmeas] for u in units_off]).tolist()}
+                summary[ds]["x3_off_set"] = {"file": str(cache_off.relative_to(DATA_V2.parent.parent)), "units": len(units_off),
+                                             "within_unit_correlation": within_unit_correlation([u.eps[:, :nmeas] for u in units_off]).tolist()}
             # X3 estimator check on generation seed 0: V3 estimator applied to generated observations
             with rec.section(f"{ds}_estimator_check"):
                 units0, _t = pickle.loads((DATA_V2 / "generated" / ds / f"seed{gen_seeds[0]}.pkl").read_bytes())
@@ -256,17 +256,29 @@ def main() -> int:
                     rows.append(pd.DataFrame(d))
                 gdf = pd.concat(rows, ignore_index=True)
                 gsplit = pd.DataFrame({"cell_id": gdf["cell_id"].unique(), "split": "fitting", "reaches_eol": True})
-                gprof, _ = fit_profile(gdf, gsplit, dataset=ds, q_nom=q_nom, spec=gen_spec, rule=rule, channels=P.channels, crule=C.channel_rule_v2(dd), decl=decl,
+                # D30: generated series are read with D13's record-end clause, as measured records are
+                gprof, _ = fit_profile(gdf, gsplit, dataset=ds, q_nom=q_nom, spec=spec_from_declarations(decl, q_nom), rule=rule, channels=P.channels,
+                                       crule=C.channel_rule_v2(dd), decl=decl,
                                        workers=args.workers, k=2.5, m=2, sweep_k=[2.5], base_seed=args.seed, offsets=C.offsets_params(dd))
+                # like with like (v2 pipeline review): the within-unit estimator against the fitted rho_bar, and E4 against E4
+                r_est_w = np.asarray(gprof["v2"]["within_unit_correlation"])
                 r_est = np.asarray(gprof["estimated_from_data"]["E4_channel_covariance"]["correlation"])
                 off = ~np.eye(nmeas, dtype=bool)
-                dmax_e = float(np.max(np.abs(r_est - r_fit)[off])) if nmeas > 1 else 0.0
-                summary[ds]["estimator_check"] = {"correlation_estimated_on_generated": r_est.tolist(), "max_abs_diff": dmax_e,
+                dmax_e = float(np.max(np.abs(r_est_w - r_fit)[off])) if nmeas > 1 else 0.0
+                dmax_e4 = float(np.max(np.abs(r_est - r_pool)[off])) if nmeas > 1 else 0.0
+                capm = np.zeros((nmeas, nmeas), bool)
+                capm[0, 1:] = capm[1:, 0] = True
+                d_cap = float(np.max(np.abs(r_est_w - r_fit)[capm])) if nmeas > 1 else 0.0
+                d_other = float(np.max(np.abs(r_est_w - r_fit)[off & ~capm])) if nmeas > 2 else 0.0
+                summary[ds]["estimator_check"] = {"within_unit_correlation_estimated_on_generated": r_est_w.tolist(), "max_abs_diff": dmax_e,
+                                                  "max_abs_diff_capacity_pairs": d_cap, "max_abs_diff_non_capacity_pairs": d_other,
+                                                  "correlation_estimated_on_generated": r_est.tolist(), "max_abs_diff_E4_vs_E4": dmax_e4,
+                                                  "units_reaching_eol": int(gprof["estimated_from_data"]["E1_theta_distribution"]["n_units"]),
                                                   "noise_generated_estimated": gprof["estimated_from_data"]["E5_noise"],
                                                   "offsets_generated_iqr": {c: b["delta_iqr"] for c, b in gprof["v2"]["backfit"].items()},
                                                   "offsets_fitted_iqr": {c: b["delta_iqr"] for c, b in prof["v2"]["backfit"].items()}}
-                ct.require(f"{ds}: S3/V3 estimator on generated observations recovers the fitted residual correlation within {tol_corr} (reported)", dmax_e <= tol_corr,
-                           f"<= {tol_corr}", f"max |delta r| {dmax_e:.3f}", severity="warn")
+                ct.require(f"{ds}: V3 within-unit estimator on generated observations recovers the fitted rho_bar within {tol_corr} (reported)", dmax_e <= tol_corr,
+                           f"<= {tol_corr}", f"max |delta r| {dmax_e:.3f} (capacity pairs {d_cap:.3f}, other pairs {d_other:.3f}; E4 vs E4 {dmax_e4:.3f})", severity="warn")
             with rec.section(f"{ds}_figures"):
                 save_figure(viz.overlay_measured_generated(ds, P, units0, df, msplit, decl, q_nom), out / "figures" / f"{ds.lower()}_generated_vs_measured")
             write_json(summary, out / "tables" / "summary.json")

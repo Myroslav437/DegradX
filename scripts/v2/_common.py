@@ -85,3 +85,21 @@ def summarise(v) -> dict:
         return {"n": 0}
     return {"n": int(len(v)), "median": float(np.median(v)), "q25": float(np.quantile(v, 0.25)), "q75": float(np.quantile(v, 0.75)),
             "p05": float(np.quantile(v, 0.05)), "p95": float(np.quantile(v, 0.95))}
+
+
+def null_pool(ds: str, decl: dict) -> np.ndarray:
+    """The null_permuted pool of a v2 profile: fitting-split charge-time readings over the fit range after D12/D17/D27,
+    as V4 generates with (declarations channels.null.null_permuted). Its median is the channel's pristine reference
+    point, which V8/V9 use as the attribution baseline; a dummy pool would set it to 0."""
+    from degradx.data.audit import CleaningRule
+    from degradx.fitting.profile import prepare_units
+    from degradx.generator.state import spec_from_declarations
+
+    dd = decl["declared_by_design"]
+    q_nom = q_nom_of(ds)
+    split = v2_split(ds)
+    df = load_scope(ds, dd)
+    units = prepare_units(df, split.loc[split["split"] == "fitting", "cell_id"], q_nom, spec_from_declarations(decl, q_nom),
+                          CleaningRule("D12", **dd["capacity_series"]["cleaning_rule"]["params"]), ["capacity", "charge_time"], channel_rule_v2(dd))
+    pool = np.concatenate([u.channels["charge_time"][u.fit_start - 1:u.fit_end] for u in units])
+    return pool[np.isfinite(pool)]

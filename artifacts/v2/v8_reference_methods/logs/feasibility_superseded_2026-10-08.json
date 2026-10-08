@@ -1,0 +1,132 @@
+{
+ "profile_one_window": {
+  "profile": "MATR",
+  "device": "cuda",
+  "wall_s": 6.52850432600826,
+  "split_s": {
+   "coalition_sampling": 4.841165833000001,
+   "model_evaluation": 0.233303957,
+   "lasso_lars_ic": 0.6481972,
+   "solve": 0.383398069
+  },
+  "split_share": {
+   "coalition_sampling": 0.741542869737217,
+   "model_evaluation": 0.03573620317146203,
+   "lasso_lars_ic": 0.09928724369802613,
+   "solve": 0.05872678485830491
+  }
+ },
+ "benchmark": [
+  {
+   "workers": 1,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 8,
+   "wall_s": 67.43386005912907,
+   "windows_per_hour": 427.08703877805436,
+   "mean_window_s": 8.324368293746375,
+   "ideal_windows_per_hour": 432.4652481683776
+  },
+  {
+   "workers": 2,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 8,
+   "wall_s": 39.5167147947941,
+   "windows_per_hour": 728.8194583844305,
+   "mean_window_s": 8.68635443301173,
+   "ideal_windows_per_hour": 828.8862785332625
+  },
+  {
+   "workers": 4,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 16,
+   "wall_s": 48.644863134017214,
+   "windows_per_hour": 1184.1121652318077,
+   "mean_window_s": 9.720070117371506,
+   "ideal_windows_per_hour": 1481.4707945639839
+  },
+  {
+   "workers": 6,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 24,
+   "wall_s": 57.51430839090608,
+   "windows_per_hour": 1502.2597072660753,
+   "mean_window_s": 10.793835068296175,
+   "ideal_windows_per_hour": 2001.1423060783895
+  },
+  {
+   "workers": 8,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 32,
+   "wall_s": 70.37099105399102,
+   "windows_per_hour": 1637.17283959574,
+   "mean_window_s": 12.691292402865656,
+   "ideal_windows_per_hour": 2269.272433869465
+  },
+  {
+   "workers": 12,
+   "device": "cpu",
+   "chunk": 4096,
+   "windows": 48,
+   "wall_s": 117.33340304996818,
+   "windows_per_hour": 1472.8565863934357,
+   "mean_window_s": 21.23811088774043,
+   "ideal_windows_per_hour": 2034.0792186435442
+  },
+  {
+   "workers": 1,
+   "device": "cuda",
+   "chunk": 4096,
+   "windows": 8,
+   "wall_s": 52.39947331394069,
+   "windows_per_hour": 549.6650148854261,
+   "mean_window_s": 6.540286359755555,
+   "ideal_windows_per_hour": 550.4346143239134
+  },
+  {
+   "workers": 2,
+   "device": "cuda",
+   "chunk": 4096,
+   "windows": 8,
+   "wall_s": 34.15100432001054,
+   "windows_per_hour": 843.4255488134355,
+   "mean_window_s": 7.147728364245268,
+   "ideal_windows_per_hour": 1007.3130417233268
+  },
+  {
+   "workers": 4,
+   "device": "cuda",
+   "chunk": 4096,
+   "windows": 16,
+   "wall_s": 41.59596444410272,
+   "windows_per_hour": 1384.7881241170144,
+   "mean_window_s": 8.068405600264668,
+   "ideal_windows_per_hour": 1784.7392302052385
+  },
+  {
+   "workers": 6,
+   "device": "cuda",
+   "chunk": 4096,
+   "windows": 24,
+   "wall_s": 45.24514197302051,
+   "windows_per_hour": 1909.6435449952278,
+   "mean_window_s": 7.778870114367844,
+   "ideal_windows_per_hour": 2776.752880871998
+  },
+  {
+   "workers": 8,
+   "device": "cuda",
+   "chunk": 4096,
+   "windows": 32,
+   "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 540.00 MiB. GPU 0 has a total capacity of 5.61 GiB of which 372.06 MiB is free. Process 7806 has 2.93 MiB memory in use. P",
+   "windows_per_hour": null,
+   "mean_window_s": null,
+   "ideal_windows_per_hour": null
+  }
+ ],
+ "note": "superseded 2026-10-08: measured before the v2 pipeline-review fixes (real null_permuted pool in the baseline; BLAS thread limits set before worker import). Not used for the choice of configuration; the fresh benchmark is in tables/feasibility.json"
+}
