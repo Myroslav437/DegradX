@@ -1,0 +1,4377 @@
+{
+ "rule": "declarations v2_1.archive.extraction / .rule",
+ "matched_by_one_criterion_only": [
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_197.034.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_149.051.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_144.046.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_293.049.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_208.039.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_191.001.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_152.054.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_182.084.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_193.005.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_100.001.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_225.066.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_140.041.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_158.060.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_160.062.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_319.076.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_204.028.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_314.071.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_222.063.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_166.068.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_124.025.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_216.057.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_217.058.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_288.044.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_200.037.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_110.011.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_184.086.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_213.046.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_189.091.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_196.033.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_278.031.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_211.042.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_192.002.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_142.044.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_109.010.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_139.040.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_178.080.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_176.078.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_311.068.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_134.035.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_310.067.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_281.036.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_228.069.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_170.072.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_286.041.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_304.061.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_223.064.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_309.066.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_324.014.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_296.052.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_104.005.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_190.092.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_277.030.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_146.048.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_291.047.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_172.074.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_219.060.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_221.062.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_169.071.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_120.021.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_227.068.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_226.067.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_203.027.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_180.082.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_114.015.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_156.058.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_195.032.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_198.035.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_186.088.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_150.052.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_273.026.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_295.051.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_130.031.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_285.040.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_129.030.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_283.038.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_282.037.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_162.064.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_312.069.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_207.031.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_154.055.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_174.076.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_299.055.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_108.009.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_272.025.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_183.085.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_199.036.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_112.013.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_148.050.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_292.048.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_145.047.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_103.004.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_115.016.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_230.071.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_317.074.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_167.069.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_136.037.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_137.038.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_229.070.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_161.063.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_159.061.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_205.029.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_131.032.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_306.063.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_155.057.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_113.014.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_143.045.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_105.006.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_194.006.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_118.019.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_289.045.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_102.003.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_275.028.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_185.087.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_274.027.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_301.058.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_188.090.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_300.057.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_171.073.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_119.020.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_316.073.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_121.022.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_322.079.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_307.064.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_179.081.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_177.079.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_220.061.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_284.039.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_127.028.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_126.027.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_116.017.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_117.018.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_290.046.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_210.041.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_147.049.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_212.045.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_325.015.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_279.032.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_297.053.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_271.024.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_209.040.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_305.062.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_308.065.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_313.070.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_287.042.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_202.026.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_128.029.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_173.075.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_135.036.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_280.035.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_323.080.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_165.067.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_123.024.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_168.070.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_269.022.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_302.059.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_187.089.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_326.016.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_101.002.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_276.029.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_294.050.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_214.047.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_151.053.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_215.048.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_270.023.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_107.008.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_181.083.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_106.007.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_157.059.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_163.065.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_125.026.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_206.030.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_175.077.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_321.078.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_318.075.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_320.077.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_122.023.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_315.072.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_138.039.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_201.025.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_141.042.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_224.065.json.gz",
+   "by_name": true,
+   "by_dir": false
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_303.060.json.gz",
+   "by_name": true,
+   "by_dir": false
+  }
+ ],
+ "original_used_for_seqs_missing_in_current": [],
+ "members": [
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_197.034.json.gz",
+   "kind": "aging",
+   "seq": 197,
+   "bytes": 68478069,
+   "sha256": "01b65943e5341f05cbe4585da6a0cf376bdeb6c01ee95b8529b9d60ce9a99ce2",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_197.034.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_149.051.json.gz",
+   "kind": "aging",
+   "seq": 149,
+   "bytes": 87711950,
+   "sha256": "4ee21e2e7a800785842aa22e032d9e60a58798314adfb34874ee891020237101",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_149.051.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_144.046.json.gz",
+   "kind": "aging",
+   "seq": 144,
+   "bytes": 77053864,
+   "sha256": "f0c29fb7c54eec8e13a4980c1d074cb8cf65849da6d81e2819474670a5f09838",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_144.046.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_293.049.json.gz",
+   "kind": "aging",
+   "seq": 293,
+   "bytes": 103951209,
+   "sha256": "511fe0e5d541f8ec0c94eeaaa01ce5186804939e23fc5cbf6f113ec7c06c5631",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_293.049.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_208.039.json.gz",
+   "kind": "aging",
+   "seq": 208,
+   "bytes": 63184120,
+   "sha256": "584402dc669917767813e7f9ea63cbe9a3ddb8d2cffebed2da558a78477f6760",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_208.039.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_191.001.json.gz",
+   "kind": "aging",
+   "seq": 191,
+   "bytes": 84826603,
+   "sha256": "7fe25b53bfd6cb2c9fdb1f3b6a99a3e5d9a43dd116f174db3796f84d4665e633",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_191.001.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_152.054.json.gz",
+   "kind": "aging",
+   "seq": 152,
+   "bytes": 82653519,
+   "sha256": "e0aa5024b9a8f811ca75e33fe0f6d238ef64077872fe13ae05e6f08d813c2e4c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_152.054.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_182.084.json.gz",
+   "kind": "aging",
+   "seq": 182,
+   "bytes": 77285224,
+   "sha256": "877b8dd26cc5b2fe1bc2bff9e9955b1bad623120af75b7cbceb3a462530319db",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_182.084.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_193.005.json.gz",
+   "kind": "aging",
+   "seq": 193,
+   "bytes": 69851500,
+   "sha256": "438f0ef84dbe03dfe9e6d776357a344dd5c814333b6ca64176943c307796c945",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_193.005.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_100.001.json.gz",
+   "kind": "aging",
+   "seq": 100,
+   "bytes": 74031917,
+   "sha256": "ae49813c3a61ed736351abcedac05082bcff229b8f15dcfbc8b5ffbc23825304",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_100.001.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_225.066.json.gz",
+   "kind": "aging",
+   "seq": 225,
+   "bytes": 84812551,
+   "sha256": "b39b7a579db47198fcb15c5bc5dcbc38702079da12a39191350497d3c8193ce3",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_225.066.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_140.041.json.gz",
+   "kind": "aging",
+   "seq": 140,
+   "bytes": 73925756,
+   "sha256": "3b4c48d0ace416cd87c63bfd20fe78cc18bd612a7e9413188c2096dd1e138b34",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_140.041.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_158.060.json.gz",
+   "kind": "aging",
+   "seq": 158,
+   "bytes": 76994244,
+   "sha256": "9f2925d8a06d0cf58d329ea07544d1a41cab9ca64dc8ab88c5f94690221563ec",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_158.060.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_160.062.json.gz",
+   "kind": "aging",
+   "seq": 160,
+   "bytes": 82772234,
+   "sha256": "9fbf9be4f4865471909c117f4a4e6924e584adf712348329a947ccc728f38813",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_160.062.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_319.076.json.gz",
+   "kind": "aging",
+   "seq": 319,
+   "bytes": 112932043,
+   "sha256": "7247222624d3fa5a8fa6c41a4f9940e3baa0f3676e488902a431e41115a549cf",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_319.076.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_204.028.json.gz",
+   "kind": "aging",
+   "seq": 204,
+   "bytes": 68212907,
+   "sha256": "c7fca500d1fba3c0bcdb05ab6ae0f8614b75f72e53e0713728fdca79dd1072ff",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_204.028.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_314.071.json.gz",
+   "kind": "aging",
+   "seq": 314,
+   "bytes": 99176081,
+   "sha256": "dfff8022e0a5ac87eca9444cb2d37ba57d1beeb23abf0230511b7f6952dea047",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_314.071.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_222.063.json.gz",
+   "kind": "aging",
+   "seq": 222,
+   "bytes": 67244535,
+   "sha256": "8b69e961ec77903ef9dd41e5b7bd697c6542a9af077ebcfb13ad4913f14f985b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_222.063.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_166.068.json.gz",
+   "kind": "aging",
+   "seq": 166,
+   "bytes": 76694353,
+   "sha256": "d0456d6b46f0804f25d53ef1c0f89e40caee744546113f0d3ae0c9b25bf17401",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_166.068.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_124.025.json.gz",
+   "kind": "aging",
+   "seq": 124,
+   "bytes": 76014141,
+   "sha256": "c5500ec3d033817a713abfb2c104acb18af8141c1d625d6c822518358956ab5e",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_124.025.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_216.057.json.gz",
+   "kind": "aging",
+   "seq": 216,
+   "bytes": 75097850,
+   "sha256": "a01269aea1cb280426b700aadeea8357d8c21c7451d8002d681ff31b3766e485",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_216.057.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_217.058.json.gz",
+   "kind": "aging",
+   "seq": 217,
+   "bytes": 84317626,
+   "sha256": "ea1ae64db01a8d9dcb4327bdff7ed8992da7e3e202e788a3a67b04bc403341bb",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_217.058.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_288.044.json.gz",
+   "kind": "aging",
+   "seq": 288,
+   "bytes": 87873293,
+   "sha256": "04c560222433b4aa551671461b0595cc6ea781b961877c46b0b1e32ba815fad7",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_288.044.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_200.037.json.gz",
+   "kind": "aging",
+   "seq": 200,
+   "bytes": 82988053,
+   "sha256": "3d54406f898b778b5057753f389a165bf9b0981d63eb3ed74987afb073694704",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_200.037.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_110.011.json.gz",
+   "kind": "aging",
+   "seq": 110,
+   "bytes": 82837691,
+   "sha256": "ecfc09287adae9fa4ecabee214c3272b922963a0adb29e87b8bf618e819b64c3",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_110.011.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_184.086.json.gz",
+   "kind": "aging",
+   "seq": 184,
+   "bytes": 69402533,
+   "sha256": "61812ec2faab557476a0674bc24fc4c675a11e2b09f2b5cb873673c924758113",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_184.086.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_213.046.json.gz",
+   "kind": "aging",
+   "seq": 213,
+   "bytes": 81802047,
+   "sha256": "83d453cd585ce510cb95c5fa365907c5798234c62277d3f3abc9e03bcc7b2aef",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_213.046.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_189.091.json.gz",
+   "kind": "aging",
+   "seq": 189,
+   "bytes": 78527498,
+   "sha256": "719db06c2d33d486b84deef7441ee1d335ef634fe5b08d79b843896a96422192",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_189.091.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_196.033.json.gz",
+   "kind": "aging",
+   "seq": 196,
+   "bytes": 75802439,
+   "sha256": "5f8b6fe829721ed2cf252aa433f286d8af4de659464a061bdc184ba6f2675dcf",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_196.033.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_278.031.json.gz",
+   "kind": "aging",
+   "seq": 278,
+   "bytes": 91296587,
+   "sha256": "b15c60eb61b6ea3f2fc1f2692c49f98738855512bcf91abba5b2337e74aa90a1",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_278.031.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_211.042.json.gz",
+   "kind": "aging",
+   "seq": 211,
+   "bytes": 79095979,
+   "sha256": "c450fb9b3c583aac59fca06d4b8a87d94c8d7637acb7091583489a1b10d0a4aa",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_211.042.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_192.002.json.gz",
+   "kind": "aging",
+   "seq": 192,
+   "bytes": 76470785,
+   "sha256": "29215900876e6a3f2a106a484cfcde8637d92560f5763fa1b580e773979cd916",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_192.002.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_142.044.json.gz",
+   "kind": "aging",
+   "seq": 142,
+   "bytes": 83896361,
+   "sha256": "2446408e013b2ce51011f3aa69feb7ea68c7d1a0d5c7e17ca496d20f4f5bcd2d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_142.044.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_109.010.json.gz",
+   "kind": "aging",
+   "seq": 109,
+   "bytes": 94335156,
+   "sha256": "9160293ea4c9deb44e802faf9bce5e753fe1aa597eacd81f601db7c445d79956",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_109.010.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_139.040.json.gz",
+   "kind": "aging",
+   "seq": 139,
+   "bytes": 94772183,
+   "sha256": "9642a7d4d7c8126d0ba09d06711d1a343e8a014f7bf58f32fbd6a10ad7d2f163",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_139.040.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_178.080.json.gz",
+   "kind": "aging",
+   "seq": 178,
+   "bytes": 77383731,
+   "sha256": "0936c6bb31edfef578f279d5f0a7f0378131ab8d456e64c70ba3a5855637ff92",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_178.080.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_176.078.json.gz",
+   "kind": "aging",
+   "seq": 176,
+   "bytes": 78710484,
+   "sha256": "5d93a101e4ae161e3f3470fc0cccb7df9b242bc6d12f67349827aa60aa878573",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_176.078.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_311.068.json.gz",
+   "kind": "aging",
+   "seq": 311,
+   "bytes": 96206602,
+   "sha256": "d183ab4e40e7af36299139389b4fa165fa1d6da6f5bf29922fd60ceae48f92f2",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_311.068.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_134.035.json.gz",
+   "kind": "aging",
+   "seq": 134,
+   "bytes": 79707052,
+   "sha256": "7169b456bfb15ae6b69895f144a7c8d618bc7b171c19d86c2ad82d199abc8a07",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_134.035.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_310.067.json.gz",
+   "kind": "aging",
+   "seq": 310,
+   "bytes": 93692027,
+   "sha256": "cc5882b1d8ab87fe7e528115d329dea619616926e1779bfa81510da116037cd8",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_310.067.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_281.036.json.gz",
+   "kind": "aging",
+   "seq": 281,
+   "bytes": 125388612,
+   "sha256": "a8876024fc9f59a5ba58ea74cb9df73df73d88c21c5b83dcd6474e778e15087b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_281.036.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_228.069.json.gz",
+   "kind": "aging",
+   "seq": 228,
+   "bytes": 91499471,
+   "sha256": "a087f1bc460e17e9989237731aedcd7443bd080bb7928d94432a616f97bcb75c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_228.069.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_170.072.json.gz",
+   "kind": "aging",
+   "seq": 170,
+   "bytes": 84039755,
+   "sha256": "dc19befb8efa06e12600f0a99874481208e4834a91afdf174599d7d02f3a0067",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_170.072.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_286.041.json.gz",
+   "kind": "aging",
+   "seq": 286,
+   "bytes": 108956051,
+   "sha256": "bf3d5504b63651a4883242e764e0963bb109b7c213c323a4d55694f09f868b7a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_286.041.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_304.061.json.gz",
+   "kind": "aging",
+   "seq": 304,
+   "bytes": 101204689,
+   "sha256": "52eb889e6160059b27988cc0072437fff21dcae0d6033565bfbca15e06c18395",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_304.061.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_223.064.json.gz",
+   "kind": "aging",
+   "seq": 223,
+   "bytes": 84123207,
+   "sha256": "4163b723bfb5a4a4e80ee42cc52b46087b6678731a11b10675fc75a0bd01c630",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_223.064.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_309.066.json.gz",
+   "kind": "aging",
+   "seq": 309,
+   "bytes": 88118907,
+   "sha256": "278ac8ef0b84f03a3be60f3fdc058c16a0f10c0dba99941a5f776d349474386c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_309.066.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_324.014.json.gz",
+   "kind": "aging",
+   "seq": 324,
+   "bytes": 60474346,
+   "sha256": "63ca26742315dd6828df09759a7f8696f0f842c3177c4c5a515f2897e56094e5",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_324.014.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_296.052.json.gz",
+   "kind": "aging",
+   "seq": 296,
+   "bytes": 85676136,
+   "sha256": "d399004280fa16106f7131390c44041a46652c5204bdc277cb2d702f270e0c01",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_296.052.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_104.005.json.gz",
+   "kind": "aging",
+   "seq": 104,
+   "bytes": 81763276,
+   "sha256": "9a181c41ba525c8b227396d1397e6e44ff59ed5f6b29287ceced83ee5f34c15f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_104.005.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_190.092.json.gz",
+   "kind": "aging",
+   "seq": 190,
+   "bytes": 79141596,
+   "sha256": "02b18c1d4e681fa5e0ebe00057b9f32223864577ec2462a4423504c86aafafe6",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_190.092.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_277.030.json.gz",
+   "kind": "aging",
+   "seq": 277,
+   "bytes": 92844625,
+   "sha256": "e92d3b6af232f2fea029994f325c2f4c7898fc5a1644402779780904c129753c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_277.030.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_146.048.json.gz",
+   "kind": "aging",
+   "seq": 146,
+   "bytes": 74466876,
+   "sha256": "bc275a88306b9fd764023a1c47fa586db1977007a0810a59083cf8b43f086695",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_146.048.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_291.047.json.gz",
+   "kind": "aging",
+   "seq": 291,
+   "bytes": 97637205,
+   "sha256": "653bc3eee5571d903761c8a86490aad6a083ee0d11b33c8fea7f5258c3f2fd2b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_291.047.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_172.074.json.gz",
+   "kind": "aging",
+   "seq": 172,
+   "bytes": 78093121,
+   "sha256": "3c52d55a2fe42ffb2a0fddda50df1ba9f9050b8c3bf1c4204cfc2f3b14428223",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_172.074.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_219.060.json.gz",
+   "kind": "aging",
+   "seq": 219,
+   "bytes": 68559130,
+   "sha256": "f1a5aa789f8b8b49b7eafde15a87bf7fc29d3bbdcadd2bd57a0a478ce1a2a853",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_219.060.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_221.062.json.gz",
+   "kind": "aging",
+   "seq": 221,
+   "bytes": 68258736,
+   "sha256": "18b07de011e963bb8e9fe07ccbd55979d1f148e9020456ed6987c56cc184b585",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_221.062.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_169.071.json.gz",
+   "kind": "aging",
+   "seq": 169,
+   "bytes": 76356964,
+   "sha256": "7876078b0e2dc8e6d45be452ea9bba85ad34beab06c1420cbd87956752853d2d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_169.071.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_120.021.json.gz",
+   "kind": "aging",
+   "seq": 120,
+   "bytes": 70907264,
+   "sha256": "a8c91e93add93b4ac79903793c5d01408997efb6590f8768578b76b97469e0d8",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_120.021.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_227.068.json.gz",
+   "kind": "aging",
+   "seq": 227,
+   "bytes": 91901447,
+   "sha256": "4a9af2b3acaba78ed9f162f24cd83de6b12f5822feb8054f1201f40662ede487",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_227.068.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_226.067.json.gz",
+   "kind": "aging",
+   "seq": 226,
+   "bytes": 90191574,
+   "sha256": "c4a2b3d9f2de9423b11cbbfd7a53971a1a647c51fea513c0143f5b7f27f047f8",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_226.067.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_203.027.json.gz",
+   "kind": "aging",
+   "seq": 203,
+   "bytes": 67906741,
+   "sha256": "91d8873e9fef33a847c4bf4aaad3066174186e57636335652c355451a4663c6b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_203.027.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_180.082.json.gz",
+   "kind": "aging",
+   "seq": 180,
+   "bytes": 71575365,
+   "sha256": "23c03697bae82d28195a3e143eb71be55cdd143cc842c9d333bed387fb1dd630",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_180.082.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_114.015.json.gz",
+   "kind": "aging",
+   "seq": 114,
+   "bytes": 84093063,
+   "sha256": "a7bc470394303e76e9595df9bde311469b6cdb6af5ced4b215cb1cdc14c5d917",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_114.015.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_156.058.json.gz",
+   "kind": "aging",
+   "seq": 156,
+   "bytes": 82738890,
+   "sha256": "0085a332e04dd30a17b60ced5991c6f01bad2bd6842a8486959369ee8de2f0c4",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_156.058.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_195.032.json.gz",
+   "kind": "aging",
+   "seq": 195,
+   "bytes": 82571990,
+   "sha256": "bff8e03344432d371a194742c014aefda006554faa3991653302bec447d543ce",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_195.032.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_198.035.json.gz",
+   "kind": "aging",
+   "seq": 198,
+   "bytes": 69424908,
+   "sha256": "442d80397e7f15c6a4cb0449a32ae77f08b8e119259406226516fc0510f2d09f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_198.035.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_186.088.json.gz",
+   "kind": "aging",
+   "seq": 186,
+   "bytes": 77783371,
+   "sha256": "058f58cc71f708994c8535473900c78316c6a46114b85cae6cd5ed6c49d6bbd0",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_186.088.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_150.052.json.gz",
+   "kind": "aging",
+   "seq": 150,
+   "bytes": 70753281,
+   "sha256": "aeb9e08ca68b607e721c18cf8fb2b1241d84235343b1c45b3a705385ecca6b65",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_150.052.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_273.026.json.gz",
+   "kind": "aging",
+   "seq": 273,
+   "bytes": 104096036,
+   "sha256": "0fed9e0b1363ad98b9f84ef6469fcf56003aa91594c6dd59010e555e5a7d38ea",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_273.026.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_295.051.json.gz",
+   "kind": "aging",
+   "seq": 295,
+   "bytes": 87303304,
+   "sha256": "e8fb61fe32ae17dda182fd5028ab3c136c13d7f15b291f4485aef53fc907a81f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_295.051.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_130.031.json.gz",
+   "kind": "aging",
+   "seq": 130,
+   "bytes": 77437668,
+   "sha256": "38a67605d512665dddb0db6bc8cbfdec8f4076e94082edf963e1478a0bfc9782",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_130.031.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_285.040.json.gz",
+   "kind": "aging",
+   "seq": 285,
+   "bytes": 103006359,
+   "sha256": "84c39dbb18f062e649db0f673b7fe9fb2d581d9883ed386e0f075d1bda051bdb",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_285.040.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_129.030.json.gz",
+   "kind": "aging",
+   "seq": 129,
+   "bytes": 85872089,
+   "sha256": "efa7d6d209a7d4732184d4328c14fcff92c4a802d2cabe240585e29a53eb9a36",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_129.030.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_283.038.json.gz",
+   "kind": "aging",
+   "seq": 283,
+   "bytes": 114478191,
+   "sha256": "1b5aa4d6e2382ba607f2399cd41cf9ca1f94c272481cfa1982272bb147dbcbdb",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_283.038.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_282.037.json.gz",
+   "kind": "aging",
+   "seq": 282,
+   "bytes": 113456193,
+   "sha256": "3b06a30ba7401b389b6d35c60d5092617c4e8890765e751cf317ee201618e702",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_282.037.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_162.064.json.gz",
+   "kind": "aging",
+   "seq": 162,
+   "bytes": 72282587,
+   "sha256": "b6da26f3b59ffca0e1a56df2e714aa1a568aaaba1c0c157d24a5b10998662bca",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_162.064.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_312.069.json.gz",
+   "kind": "aging",
+   "seq": 312,
+   "bytes": 79848681,
+   "sha256": "39ba618791032b49c4b1c1eae1bb3f3a6c10c3bc1da14ccce8b08d23d9ed531b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_312.069.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_207.031.json.gz",
+   "kind": "aging",
+   "seq": 207,
+   "bytes": 89365725,
+   "sha256": "7b71a28dfb832ec9758161b2d7d8520ff8aabb1cb33ab3a65a73335ce1bb8683",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_207.031.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_154.055.json.gz",
+   "kind": "aging",
+   "seq": 154,
+   "bytes": 79218291,
+   "sha256": "904064d695f4b094d081c9ede6231c7ddc824856e8017c172e526c260af7536a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_154.055.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_174.076.json.gz",
+   "kind": "aging",
+   "seq": 174,
+   "bytes": 79165508,
+   "sha256": "75628ac7bd45900b362da03c43d024fd3befe2f18393418bb5d57b2d5134319c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_174.076.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_299.055.json.gz",
+   "kind": "aging",
+   "seq": 299,
+   "bytes": 90919389,
+   "sha256": "22071f35c8d942a188e07ebd9675448e7d05b7bb0a1f6f02f16870c4a91787f6",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_299.055.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_108.009.json.gz",
+   "kind": "aging",
+   "seq": 108,
+   "bytes": 85270274,
+   "sha256": "4f3ef0d628617cf251cbc37868813bda42157643965253a344334271456ba35c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_108.009.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_272.025.json.gz",
+   "kind": "aging",
+   "seq": 272,
+   "bytes": 126526520,
+   "sha256": "000a448bd2a9cdc761c7426af8bb1f3ba1d647c28794a66a5def4149659e9492",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_272.025.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_183.085.json.gz",
+   "kind": "aging",
+   "seq": 183,
+   "bytes": 82488069,
+   "sha256": "1e42956fcf5ca17144190c8ed53c3c281ea772ecb3dddef0178fa2e333b00c10",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_183.085.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_199.036.json.gz",
+   "kind": "aging",
+   "seq": 199,
+   "bytes": 81500536,
+   "sha256": "44c1e1291e4242e61a5025bffc387b3fd60f10533fd51bdb55cb3fb9c4fd9ef3",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_199.036.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_112.013.json.gz",
+   "kind": "aging",
+   "seq": 112,
+   "bytes": 67164692,
+   "sha256": "a19829fb66f55c49ecbd161d39e15a07353a99bd998c0d2bc634145c1f0badbc",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_112.013.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_148.050.json.gz",
+   "kind": "aging",
+   "seq": 148,
+   "bytes": 83518465,
+   "sha256": "59f5112dfddf2bd907b2c12842d2499691e0700c85f41eb5149549e6521280bd",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_148.050.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_292.048.json.gz",
+   "kind": "aging",
+   "seq": 292,
+   "bytes": 132243536,
+   "sha256": "0e1590ea4c4b832ad7b04688d425ed875cd28ff097214141ae46dd22a3304b0a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_292.048.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_145.047.json.gz",
+   "kind": "aging",
+   "seq": 145,
+   "bytes": 75731875,
+   "sha256": "1dc7048cb09a0c29ecf2d23f7adaa5b5a82c60aadeedc6c6e5c68a5c2de2c857",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_145.047.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_103.004.json.gz",
+   "kind": "aging",
+   "seq": 103,
+   "bytes": 65619026,
+   "sha256": "e98b952c283f7e35791e4d3819397ff5f986b6e5b0250a6bdd9f344db60f7e2d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_103.004.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_115.016.json.gz",
+   "kind": "aging",
+   "seq": 115,
+   "bytes": 68193480,
+   "sha256": "b933ef839fcf61add2062576ba420742b953b56e7485f84a0f6dc3d91b7706d7",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_115.016.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_230.071.json.gz",
+   "kind": "aging",
+   "seq": 230,
+   "bytes": 98537097,
+   "sha256": "120a2dfa1ac5ac1a50a108b4dddbf9587458b802094e91b3196f75118968d6ef",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_230.071.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_317.074.json.gz",
+   "kind": "aging",
+   "seq": 317,
+   "bytes": 91674246,
+   "sha256": "5c3f69807e65220acac6d3e81e5b2e1c64761249311f1d3dfd38ec498e6601f5",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_317.074.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_167.069.json.gz",
+   "kind": "aging",
+   "seq": 167,
+   "bytes": 81206483,
+   "sha256": "bd3ba26e66c5f70561bfd6b78ab43e6f498eec0b3610aadd993857b7ceff7984",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_167.069.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_136.037.json.gz",
+   "kind": "aging",
+   "seq": 136,
+   "bytes": 80542020,
+   "sha256": "89f83947d9d5d1c5c93f0e03e6893a1b3f0da9a4152737653e234de7bba83e93",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_136.037.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_137.038.json.gz",
+   "kind": "aging",
+   "seq": 137,
+   "bytes": 83583360,
+   "sha256": "d07290e0a6d1549d6bbd5bff225781ce19f8aa8048d56485127dd9ba3f90f2b2",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_137.038.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_229.070.json.gz",
+   "kind": "aging",
+   "seq": 229,
+   "bytes": 76575976,
+   "sha256": "81ddcbe0d1cea4bf38b0228b322a7ba40fecad93c7d812329242693b980d6ae5",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_229.070.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_161.063.json.gz",
+   "kind": "aging",
+   "seq": 161,
+   "bytes": 75662078,
+   "sha256": "7722c9de7dc03dd5ce7770ffa54c9914c80c5b43c459a3d9201832d7a41864a3",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_161.063.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_159.061.json.gz",
+   "kind": "aging",
+   "seq": 159,
+   "bytes": 79947681,
+   "sha256": "8d75dddf4e4fa6e685e1fa1be5dad972b83d795e937b0719daf175017366bfc1",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_159.061.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_205.029.json.gz",
+   "kind": "aging",
+   "seq": 205,
+   "bytes": 68500342,
+   "sha256": "e18b4794d37742fb2b681e572beda7af6faa66c45ac244e723b6639a28cccfb6",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_205.029.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_131.032.json.gz",
+   "kind": "aging",
+   "seq": 131,
+   "bytes": 71887648,
+   "sha256": "50e3ff84e1727999bff418a5f0005dd4ac4c8c14d39fec1a4135eb07116b27df",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_131.032.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_306.063.json.gz",
+   "kind": "aging",
+   "seq": 306,
+   "bytes": 94383147,
+   "sha256": "faa34c9beb3705122ffa8fc073b57f8353875131d340fb8891f17effd1c1374f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_306.063.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_155.057.json.gz",
+   "kind": "aging",
+   "seq": 155,
+   "bytes": 77196830,
+   "sha256": "c9e9180f1dc2957b72908262fe2932d84cb57644680abed07717ecff82f707c9",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_155.057.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_113.014.json.gz",
+   "kind": "aging",
+   "seq": 113,
+   "bytes": 75780476,
+   "sha256": "6241f9c5f4160b41397b14b30a849c2a44059da88922d3e980160ffcba5ffd6e",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_113.014.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_143.045.json.gz",
+   "kind": "aging",
+   "seq": 143,
+   "bytes": 106035314,
+   "sha256": "e6fd7fa15753b043bfaab4c3b61d59b87d2d7e35fd8acea7aac73eaa50544e65",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_143.045.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_105.006.json.gz",
+   "kind": "aging",
+   "seq": 105,
+   "bytes": 63672662,
+   "sha256": "566ed070bfb11ba3299e158d7c4f59da0e845b1ab6fb5324c7137e1577873991",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_105.006.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_194.006.json.gz",
+   "kind": "aging",
+   "seq": 194,
+   "bytes": 79225164,
+   "sha256": "526cb76582070b2f2e53052674517292bf19a25bdbe386396293cfd34ba4e079",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_194.006.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_118.019.json.gz",
+   "kind": "aging",
+   "seq": 118,
+   "bytes": 71596193,
+   "sha256": "85d98855a6b113f3bc2fbf2b969d87fc89900e3c2b4d7387966002c103a47205",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_118.019.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_289.045.json.gz",
+   "kind": "aging",
+   "seq": 289,
+   "bytes": 91375647,
+   "sha256": "c36d5455199c860baf3bb44ae5e807345ba2edbd60004e0a79215299ddfc62c9",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_289.045.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_102.003.json.gz",
+   "kind": "aging",
+   "seq": 102,
+   "bytes": 82887933,
+   "sha256": "e101427cd33db68edbf166a7be6d238fdc407b8624fae5342dfe1e7ab95cf7cd",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_102.003.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_275.028.json.gz",
+   "kind": "aging",
+   "seq": 275,
+   "bytes": 106686454,
+   "sha256": "d74c4f09c8b791c9da526472846fe4218b1ed9dbc22d99c401e59c6db0f6ab5a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_275.028.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_185.087.json.gz",
+   "kind": "aging",
+   "seq": 185,
+   "bytes": 77579094,
+   "sha256": "bb2ce364c9215cbb787a80692a01299f3ae5fcb9829e95b095927b230fc69773",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_185.087.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_274.027.json.gz",
+   "kind": "aging",
+   "seq": 274,
+   "bytes": 106698163,
+   "sha256": "253829d856df5ba1758a0b8f198a4ba42c0ae794db39b37156bf71aae156c682",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_274.027.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_301.058.json.gz",
+   "kind": "aging",
+   "seq": 301,
+   "bytes": 96700859,
+   "sha256": "d56bee8191cdc07cdd7eaeedd8aeba8e48d2b08a6780c25014f74993fe857b8b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_301.058.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_188.090.json.gz",
+   "kind": "aging",
+   "seq": 188,
+   "bytes": 68775570,
+   "sha256": "b3bbf4ad371f306ba49ea1118274b93a4c4afb03eb8b80790279b77be3b76350",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_188.090.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_300.057.json.gz",
+   "kind": "aging",
+   "seq": 300,
+   "bytes": 89653339,
+   "sha256": "7b9d912f4952418b915705f13492734fd9a9985c629a19ebfa076fa8f335698b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_300.057.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_171.073.json.gz",
+   "kind": "aging",
+   "seq": 171,
+   "bytes": 76944787,
+   "sha256": "8435a1b4a73d22b98302d8124f092cf299150da0116f5f7ebf242a23ceb7cc64",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_171.073.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_119.020.json.gz",
+   "kind": "aging",
+   "seq": 119,
+   "bytes": 68915297,
+   "sha256": "4e31ae933d5be88493a228b539e14df1ae3c0574768134dff925ac061bc58daa",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_119.020.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_316.073.json.gz",
+   "kind": "aging",
+   "seq": 316,
+   "bytes": 86624768,
+   "sha256": "f64e241d456d824896e35015980e2917ce5959c3aa4c178c209c8a337c4b5a90",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_316.073.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_121.022.json.gz",
+   "kind": "aging",
+   "seq": 121,
+   "bytes": 68940285,
+   "sha256": "76d1b5018f9c80d44e32c05689715d87823702a2aa82149caa9ad84a3d151e76",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_121.022.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_322.079.json.gz",
+   "kind": "aging",
+   "seq": 322,
+   "bytes": 120128992,
+   "sha256": "b181a215f00acd4e80e03d413f1ab7704154596210f1ab64026dc13fd71723c7",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_322.079.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_307.064.json.gz",
+   "kind": "aging",
+   "seq": 307,
+   "bytes": 94009442,
+   "sha256": "8e8715969c1043eee51ebb9c8e2b90ec09841a89ca448697d54c7e3019d8bf31",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_307.064.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_179.081.json.gz",
+   "kind": "aging",
+   "seq": 179,
+   "bytes": 76810198,
+   "sha256": "55ad513346d3891bc0a9958090f168d59d2c1f2e39113d9d638ec5281c75f36a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_179.081.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_177.079.json.gz",
+   "kind": "aging",
+   "seq": 177,
+   "bytes": 75265433,
+   "sha256": "78a0e8814ccb71cdef9b33f274dfad008512ecacbff4db5dce100e4d14e1fcb4",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_177.079.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_220.061.json.gz",
+   "kind": "aging",
+   "seq": 220,
+   "bytes": 82537207,
+   "sha256": "c91ad70343920a55d61595d31ab2fa6094e5491c7160dfc40798d479453cd124",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_220.061.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_284.039.json.gz",
+   "kind": "aging",
+   "seq": 284,
+   "bytes": 127727697,
+   "sha256": "cd40284f01f176cb3aa520362386158a71a1f91e4c6a30330b4f1880c94f0844",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_284.039.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_127.028.json.gz",
+   "kind": "aging",
+   "seq": 127,
+   "bytes": 84142214,
+   "sha256": "60c381ab2c7b4f0b950b686fcb90c5b8e695e9353641444b9fc9a5b6b29feb6f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_127.028.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_126.027.json.gz",
+   "kind": "aging",
+   "seq": 126,
+   "bytes": 94396719,
+   "sha256": "578f7816ccb9315a7029e03f507f4ee559d112b423ce68cfbd3d9b1426e1643d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_126.027.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_116.017.json.gz",
+   "kind": "aging",
+   "seq": 116,
+   "bytes": 82538568,
+   "sha256": "24523f90f48185f1e69385e23bd86343886f4a8df796d63e92ebd308539405ba",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_116.017.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_117.018.json.gz",
+   "kind": "aging",
+   "seq": 117,
+   "bytes": 76605378,
+   "sha256": "e4eaa4532296ca944f5a785da6ed9d6bde3a09fdfb305b5d8056547ff105c117",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_117.018.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_290.046.json.gz",
+   "kind": "aging",
+   "seq": 290,
+   "bytes": 96301456,
+   "sha256": "e2cf1decac4238eff7587d027eedb6861b5415bc2ca074081a47e31dce10e593",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_290.046.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_210.041.json.gz",
+   "kind": "aging",
+   "seq": 210,
+   "bytes": 64476684,
+   "sha256": "73c006b6eaf3de2d0d3b19b6d910641916096195a780ebce392f86b74254ee00",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_210.041.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_147.049.json.gz",
+   "kind": "aging",
+   "seq": 147,
+   "bytes": 73653979,
+   "sha256": "8820517eebc832ede37e2f51e3eebaa310865f41ee25df05531d690993138717",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_147.049.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_212.045.json.gz",
+   "kind": "aging",
+   "seq": 212,
+   "bytes": 65121119,
+   "sha256": "32799f271726ba68e8ef4139561d40d160b869a548f4cdd2eeb18495ceac4c76",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_212.045.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_325.015.json.gz",
+   "kind": "aging",
+   "seq": 325,
+   "bytes": 70817011,
+   "sha256": "e558edc1519419deb5e9ee1586113db9039a8bce8aeb3e25642d4b71f8bf6abd",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_325.015.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_279.032.json.gz",
+   "kind": "aging",
+   "seq": 279,
+   "bytes": 105508680,
+   "sha256": "92748b864e31a3d6a0299c8704a50c23b4ae8648a62217ed83410859415e9b1a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_279.032.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_297.053.json.gz",
+   "kind": "aging",
+   "seq": 297,
+   "bytes": 106514091,
+   "sha256": "b02c9a67618618f71c7fa8f5e7215c64eeb6c5901a397d3bd9fe558b98180d0d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_297.053.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_271.024.json.gz",
+   "kind": "aging",
+   "seq": 271,
+   "bytes": 89635247,
+   "sha256": "9865219877c6f6aafcabfd073d224c89dc1758248ed0c115198e5aa2a79adde2",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_271.024.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_209.040.json.gz",
+   "kind": "aging",
+   "seq": 209,
+   "bytes": 72073142,
+   "sha256": "d9e0240b4a22c879459df411458fac221c4d05a06c2d6bf96eb753343057a55d",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_209.040.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_305.062.json.gz",
+   "kind": "aging",
+   "seq": 305,
+   "bytes": 89572601,
+   "sha256": "f08159fd80f1b2ad9c3c24df370ea6e919df3fe67ca991d7c2d41bddc46064ba",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_305.062.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_308.065.json.gz",
+   "kind": "aging",
+   "seq": 308,
+   "bytes": 89495212,
+   "sha256": "ee40ba46b856c4ea67238308a326b9de70b1db8535867058834f6cb566dfa274",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_308.065.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_313.070.json.gz",
+   "kind": "aging",
+   "seq": 313,
+   "bytes": 90075296,
+   "sha256": "b0d169b03542b257e656babe8afc600a0cdc814102410de301754d9c8ae8b791",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_313.070.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_287.042.json.gz",
+   "kind": "aging",
+   "seq": 287,
+   "bytes": 109532674,
+   "sha256": "87d41b83608732313ad873ea1034b783d97b294ead2eea49caf2c2b457871009",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_287.042.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_202.026.json.gz",
+   "kind": "aging",
+   "seq": 202,
+   "bytes": 82101548,
+   "sha256": "cf3dfd2d748857f26cf5f08981dd82219f1d3d8c695c354f29da49db6fc5c2e5",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_202.026.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_128.029.json.gz",
+   "kind": "aging",
+   "seq": 128,
+   "bytes": 86250446,
+   "sha256": "d910dba96fd5ffb7456e88161d27e66b34424996c655fe0d918dd8c219eca3c3",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_128.029.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_173.075.json.gz",
+   "kind": "aging",
+   "seq": 173,
+   "bytes": 82068533,
+   "sha256": "af19ae9274128c5c4e969b7d9c0838512f3484ad67c83498936f2efe26446373",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_173.075.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_135.036.json.gz",
+   "kind": "aging",
+   "seq": 135,
+   "bytes": 68675704,
+   "sha256": "8a4506c24fae537e14703dc5ba3265c8f3da9ad4ff76ee3069123f3b25d38a35",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_135.036.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_280.035.json.gz",
+   "kind": "aging",
+   "seq": 280,
+   "bytes": 125160162,
+   "sha256": "c8f690e99bdbd14987ff0b2f8b93be52a547b395e1ace2759a08d7f91cf010db",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_280.035.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_323.080.json.gz",
+   "kind": "aging",
+   "seq": 323,
+   "bytes": 86012824,
+   "sha256": "a68cc98e23d55a0404f540d539ad6201d113ad658ff2979ed1e5673bf5f279b2",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_323.080.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_165.067.json.gz",
+   "kind": "aging",
+   "seq": 165,
+   "bytes": 102103155,
+   "sha256": "7859552af5a22e9d4f901fe12943e1f7cdfbd619266d304f1ba3447d7acccf4b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_165.067.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_123.024.json.gz",
+   "kind": "aging",
+   "seq": 123,
+   "bytes": 70175593,
+   "sha256": "150f4939d5e0f310158cfa442a080c9c0f2de25714549b2bcec0f848974eab37",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_123.024.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_168.070.json.gz",
+   "kind": "aging",
+   "seq": 168,
+   "bytes": 78784161,
+   "sha256": "9ffdbc67b33b7f2773c5627286616716897e190796888a4f41282d5be7381b4c",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_168.070.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_269.022.json.gz",
+   "kind": "aging",
+   "seq": 269,
+   "bytes": 99289899,
+   "sha256": "7c8aab6fdce46cff13420f5337dfcc4dafe96e0b36bc979f44ae31027d96c7fb",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_269.022.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_302.059.json.gz",
+   "kind": "aging",
+   "seq": 302,
+   "bytes": 95941211,
+   "sha256": "58e1124bc8943ef376577fc3a785a0ad8357c90a14e3753d3c3938390a0b6db7",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_302.059.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_187.089.json.gz",
+   "kind": "aging",
+   "seq": 187,
+   "bytes": 68964684,
+   "sha256": "057198c5545f0848ea7309f200a3f9ead43ac2ae06daa89551ea828ab6e0237b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_187.089.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_326.016.json.gz",
+   "kind": "aging",
+   "seq": 326,
+   "bytes": 61292848,
+   "sha256": "f58b7785062b52353a49edf5e2bc9b3338caecf76398a95d46a0427a5cde6c7f",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_326.016.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_101.002.json.gz",
+   "kind": "aging",
+   "seq": 101,
+   "bytes": 69903291,
+   "sha256": "58218aa5992629a8a4294918cb65a3b635ebf1bb033f00058917ac47a077f6ad",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_101.002.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_276.029.json.gz",
+   "kind": "aging",
+   "seq": 276,
+   "bytes": 91356958,
+   "sha256": "1f6599ed7ef0c2a1de2be0f34f372099efce8ea7d2ee7e3352fe68276da56cdb",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_276.029.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_294.050.json.gz",
+   "kind": "aging",
+   "seq": 294,
+   "bytes": 91726019,
+   "sha256": "95fc331f80d433a99170157afaa9db2322e6a0d2950e0027989f0cd45aa23ad1",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_294.050.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_214.047.json.gz",
+   "kind": "aging",
+   "seq": 214,
+   "bytes": 75545713,
+   "sha256": "fdf6d13d991cb6282adecb1f3ab7ef34d2f173965ad8eea70565ea31e90b7895",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_214.047.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_151.053.json.gz",
+   "kind": "aging",
+   "seq": 151,
+   "bytes": 76495303,
+   "sha256": "49660a05c39528fd452721008b7de90167a79e37b9158c10d3eb94de0824cb6e",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_151.053.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_215.048.json.gz",
+   "kind": "aging",
+   "seq": 215,
+   "bytes": 87146334,
+   "sha256": "1dcca452380894b78a960008abafc7862e6682b6a8b07a23fc96ce7dffa5e672",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_215.048.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_270.023.json.gz",
+   "kind": "aging",
+   "seq": 270,
+   "bytes": 122823334,
+   "sha256": "17470544aa03a2eee26aa00889fdaea1f17fb6363c3e64034ad400220e9f8031",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_270.023.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_107.008.json.gz",
+   "kind": "aging",
+   "seq": 107,
+   "bytes": 85401222,
+   "sha256": "fab346fc4c0b221ddbc881b28a10e54d12ff33e4afffdffd64629406c96fce70",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_107.008.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_181.083.json.gz",
+   "kind": "aging",
+   "seq": 181,
+   "bytes": 70473435,
+   "sha256": "f8d7c9ac6ca5374fb3132eee2ee249d9d2cbe58a78e5fd420a6a5d70e17890f0",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_181.083.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_106.007.json.gz",
+   "kind": "aging",
+   "seq": 106,
+   "bytes": 85765929,
+   "sha256": "64ad6681fb141015b95a081123caf087cc77d5cc055d55415b92dcbab4d3678e",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_106.007.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_157.059.json.gz",
+   "kind": "aging",
+   "seq": 157,
+   "bytes": 87957246,
+   "sha256": "56a48bba7d07d4eb46240a081930fbc52a7d034eff38935ffaec0018f72f1af1",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_157.059.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_163.065.json.gz",
+   "kind": "aging",
+   "seq": 163,
+   "bytes": 94012237,
+   "sha256": "40d546ccbc11928b40dd18fe67804f04e0b35324a7f0deb810c0fdff9542ba21",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_163.065.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_125.026.json.gz",
+   "kind": "aging",
+   "seq": 125,
+   "bytes": 80578832,
+   "sha256": "3aa34235685486b3d341cf228c118b2dc82d37302c9b586101b8e9b8ea34086a",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_125.026.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_206.030.json.gz",
+   "kind": "aging",
+   "seq": 206,
+   "bytes": 85244681,
+   "sha256": "dfb6528e3a98e55847db13f606aaf7c77013e3a0621900a33ce31285e2ebc735",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_206.030.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_175.077.json.gz",
+   "kind": "aging",
+   "seq": 175,
+   "bytes": 76182483,
+   "sha256": "e4b9dfb7338360900c037b33b9383f6bb6caa15ea29333827b41cb6bbec7ba43",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_175.077.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_321.078.json.gz",
+   "kind": "aging",
+   "seq": 321,
+   "bytes": 100304197,
+   "sha256": "bacfbe9381d1d9c7e6a8458298954805f19362ba8f87d901a1ecb8bc9fd624a7",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_321.078.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_318.075.json.gz",
+   "kind": "aging",
+   "seq": 318,
+   "bytes": 101229002,
+   "sha256": "301655065d46dee54b13aa953c94cfd852346ba8294cc19646675764121668aa",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_318.075.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_320.077.json.gz",
+   "kind": "aging",
+   "seq": 320,
+   "bytes": 119386931,
+   "sha256": "2ef9346488c1b63aaf5d35e38af666282dec46dfe12a226a9aec9f6cd790e9b8",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_320.077.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_122.023.json.gz",
+   "kind": "aging",
+   "seq": 122,
+   "bytes": 67789372,
+   "sha256": "9711273b9343f151123e8735ee0f8d1225d12e935532c9850dd1e16f268a1aac",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_122.023.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_315.072.json.gz",
+   "kind": "aging",
+   "seq": 315,
+   "bytes": 87507805,
+   "sha256": "0c002729a2232a42d4319736b6b97a934b647ba64c3d7977f4ecf78ae9a7f54e",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_315.072.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_138.039.json.gz",
+   "kind": "aging",
+   "seq": 138,
+   "bytes": 76601739,
+   "sha256": "bd3560fb1a39ccb46df36d68a6ec5c6da5f0430302f22ff94b65ba8a24682974",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_138.039.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_201.025.json.gz",
+   "kind": "aging",
+   "seq": 201,
+   "bytes": 74470800,
+   "sha256": "bb82d0a172ca4b9c460885b9fdbc3e06bd918ad81c97ee173ce7ff42cde639ce",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_201.025.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_141.042.json.gz",
+   "kind": "aging",
+   "seq": 141,
+   "bytes": 69461407,
+   "sha256": "6ac2c86b42797869f77b04858b54611baf48d84e4d2fd4d4b1619f6026e8da10",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_141.042.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_224.065.json.gz",
+   "kind": "aging",
+   "seq": 224,
+   "bytes": 114534699,
+   "sha256": "e059e7f81e865ead6402602a56871f4a092430e93aa5428b00f7e6700c7cc4ef",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_224.065.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Aging/Nova_Regular_303.060.json.gz",
+   "kind": "aging",
+   "seq": 303,
+   "bytes": 115519326,
+   "sha256": "dce55d9c2b60711916533345d3cf1ffcc33e9d7933ef3f6b0e19ab6c58132b98",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Aging/Nova_Regular_303.060.json.gz"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-223.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-223.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-196.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-196.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-182.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-182.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-169.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-169.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-155.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-155.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-141.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-141.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-140.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-140.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-154.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-154.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-168.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-168.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-183.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-183.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-197.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-197.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-222.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-222.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-208.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-208.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-220.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-220.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-181.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-181.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-195.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-195.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-142.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-142.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-156.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-156.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-157.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-157.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-143.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-143.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-194.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-194.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-180.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-180.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-221.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-221.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-209.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-209.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-225.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-225.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-219.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-219.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-184.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-184.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-190.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-190.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-147.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-147.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-152.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-152.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-146.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-146.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-191.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-191.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-185.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-185.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-224.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-224.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-230.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-230.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-226.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-226.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-193.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-193.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-187.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-187.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-150.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-150.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-144.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-144.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-178.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-178.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-179.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-179.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-145.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-145.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-151.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-151.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-186.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-186.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-192.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-192.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-227.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-227.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-283.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-283.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-297.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-297.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-136.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-136.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-122.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-122.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-308.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-308.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-320.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-320.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-321.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-321.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-309.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-309.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-123.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-123.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-137.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-137.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-269.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-269.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-296.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-296.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-282.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-282.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-294.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-294.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-280.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-280.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-109.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-109.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-121.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-121.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-135.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-135.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-323.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-323.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-322.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-322.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-134.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-134.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-120.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-120.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-108.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-108.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-281.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-281.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-295.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-295.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-291.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-291.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-285.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-285.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-124.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-124.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-130.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-130.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-118.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-118.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-326.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-326.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-119.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-119.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-131.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-131.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-125.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-125.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-284.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-284.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-290.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-290.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-286.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-286.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-292.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-292.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-279.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-279.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-127.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-127.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-325.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-325.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-319.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-319.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-318.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-318.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-324.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-324.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-126.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-126.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-278.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-278.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-293.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-293.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-287.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-287.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-275.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-275.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-117.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-117.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-103.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-103.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-315.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-315.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-301.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-301.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-300.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-300.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-314.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-314.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-102.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-102.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-116.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-116.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-274.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-274.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-289.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-289.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-276.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-276.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-128.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-128.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-100.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-100.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-114.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-114.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-302.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-302.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-316.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-316.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-317.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-317.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-303.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-303.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-115.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-115.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-101.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-101.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-129.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-129.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-277.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-277.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-288.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-288.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-273.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-273.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-105.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-105.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-139.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-139.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-307.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-307.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-313.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-313.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-312.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-312.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-306.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-306.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-138.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-138.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-110.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-110.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-104.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-104.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-272.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-272.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-299.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-299.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-270.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-270.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-112.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-112.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-106.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-106.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-310.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-310.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-304.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-304.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-305.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-305.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-311.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-311.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-107.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-107.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-113.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-113.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-271.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-271.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-202.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-202.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-216.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-216.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-148.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-148.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-174.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-174.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-160.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-160.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-161.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-161.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-175.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-175.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-149.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-149.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-217.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-217.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-203.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-203.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-229.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-229.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-215.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-215.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-201.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-201.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-188.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-188.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-163.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-163.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-177.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-177.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-176.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-176.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-162.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-162.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-189.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-189.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-200.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-200.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-214.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-214.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-228.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-228.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-210.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-210.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-204.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-204.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-199.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-199.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-166.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-166.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-172.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-172.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-173.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-173.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-167.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-167.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-198.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-198.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-205.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-205.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-211.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-211.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-207.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-207.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-213.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-213.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-171.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-171.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-165.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-165.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-159.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-159.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-158.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-158.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-170.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-170.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-212.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-212.csv"
+  },
+  {
+   "archive": "current",
+   "name": "data_03032025/Formation/._Nova_Formation-206.csv",
+   "kind": "metadata",
+   "seq": null,
+   "bytes": 176,
+   "sha256": "071bffd97da8b804700e3d662d9e4c3f65092428096169eae78f882134c7982b",
+   "path": "data/v2.1/raw/extracted_current/data_03032025/Formation/._Nova_Formation-206.csv"
+  }
+ ],
+ "missing_after_extraction": []
+}

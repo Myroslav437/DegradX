@@ -11,7 +11,7 @@ import numpy as np  # noqa: E402
 
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "ISU_ILCC": "ISU-ILCC"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "ISU_ILCC": "ISU-ILCC", "TRI_FORMATION": "FORM"}
 CH = {"capacity": "capacity", "charge_time": "charge time", "mean_discharge_voltage": "mean discharge V", "internal_resistance": "IR",
       "temperature_mean": "temperature"}
 

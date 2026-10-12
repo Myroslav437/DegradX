@@ -21,6 +21,26 @@ V3_DIR = {"TRI_FORMATION": ARTIFACTS_V21 / "w3_fit_profiles"}
 GEN_DIR = {"TRI_FORMATION": DATA_V21 / "generated"}
 
 
+V21_DATASETS = {"TRI_FORMATION"}
+
+
+def is_v21(datasets) -> bool:
+    """True iff the run is a v2.1 run (its datasets write under the v2.1 roots); a run may not mix v2 and v2.1 datasets."""
+    s = set(datasets)
+    if s & V21_DATASETS and s - V21_DATASETS:
+        raise ValueError(f"a run mixes v2 and v2.1 datasets: {sorted(s)}")
+    return bool(s & V21_DATASETS)
+
+
+def stage_root(datasets, v2_stage: str, v21_stage: str) -> Path:
+    """Artifacts directory of a stage for this run's datasets (v2: artifacts/v2/<v2_stage>; v2.1: artifacts/v2.1/<v21_stage>)."""
+    return ARTIFACTS_V21 / v21_stage if is_v21(datasets) else ARTIFACTS_V2 / v2_stage
+
+
+def data_root(datasets) -> Path:
+    return DATA_V21 if is_v21(datasets) else DATA_V2
+
+
 def register_profile(ds: str, stem: str) -> None:
     PROFILE_CONFIG[ds] = stem
 

@@ -12,7 +12,7 @@ import pandas as pd  # noqa: E402
 from degradx.viz import style  # noqa: E402
 
 DATASETS = ("MATR", "HUST", "NASA_PCoE")
-LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "NASA_PCoE": "NASA PCoE", "ISU_ILCC": "ISU-ILCC", "TRI_FORMATION": "FORM"}
 
 
 def capacity_trajectories(tables: dict[str, pd.DataFrame], column: str = "capacity_cycler_Ah"):

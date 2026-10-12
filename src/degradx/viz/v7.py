@@ -11,7 +11,7 @@ import numpy as np  # noqa: E402
 
 from degradx.viz import style  # noqa: E402
 
-LABEL = {"MATR": "MATR", "HUST": "HUST", "ISU_ILCC": "ISU-ILCC"}
+LABEL = {"MATR": "MATR", "HUST": "HUST", "ISU_ILCC": "ISU-ILCC", "TRI_FORMATION": "FORM"}
 SCORE = {"rank": "rank agreement (↑)", "allocation": "channel allocation error (↓)", "temporal": "temporal profile error [positions] (↓)"}
 OPS = {"added_noise": "added noise [×SD]", "shift_to_start": "mass to start", "shift_to_end": "mass to end", "smoothing": "smoothing σ [positions]",
        "permuted_fraction": "permuted fraction"}

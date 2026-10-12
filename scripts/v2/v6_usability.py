@@ -93,7 +93,7 @@ def main() -> int:
                    {"generation": 0, "model_init": list(range(5)), "evaluation": args.seed}, ctx.device) as rec:
         for ds in args.datasets:
             prof = C.v2_profile(ds)
-            units, table = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
+            units, table = pickle.loads((C.generated_dir(ds) / "seed0.pkl").read_bytes())
             P = Profile.from_json(prof, np.array([0.0]))  # dummy null pool: only x0 of null_permuted changes, which has zero weight in y and phi*
             spec = TargetSpec.build(P, beta, L, 6.0)
             split = dict(zip(table["index"], table["split"]))

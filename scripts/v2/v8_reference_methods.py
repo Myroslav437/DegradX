@@ -84,7 +84,7 @@ class ProfileSetup:
     def __init__(self, ds, dd, seed, weightings):
         self.ds = ds
         prof = C.v2_profile(ds)
-        units, table = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
+        units, table = pickle.loads((C.generated_dir(ds) / "seed0.pkl").read_bytes())
         split = dict(zip(table["index"], table["split"]))
         test = [u for u in units if split[u.index] == "test"]
         train = [u for u in units if split[u.index] == "train"]
@@ -207,6 +207,9 @@ def main() -> int:
     args = p.parse_args()
     for kv in args.profile_config:
         C.register_profile(*kv.split("="))
+    global MODELS_DIR, CKPT  # v2.1 runs (TRI_FORMATION) read W6 models and write under data/v2.1 (declarations v2_1.paths)
+    MODELS_DIR = C.stage_root(args.datasets, "v6_usability", "w6_usability") / "models"
+    CKPT = C.data_root(args.datasets) / "attributions" / "timeshap_ckpt"
     ctx = StageContext.from_args(args)
     decl, dd = ctx.declarations, ctx.declarations["declared_by_design"]
     sc_w = dd["v2"]["scope"]["weightings"]
@@ -261,7 +264,7 @@ def main() -> int:
             print("[v8] one window:", json.dumps(feas["profile_one_window"], indent=1), flush=True)
         # ---------------------------------------------------------------- throughput benchmark
         if args.benchmark:
-            bench_dir = DATA_V2 / "attributions" / "benchmark"
+            bench_dir = C.data_root(args.datasets) / "attributions" / "benchmark"
             ds = args.datasets[0]
             pool = [j for j in all_jobs if j.model_key.endswith("/A0") and j.background_key.endswith("pristine") and j.seed == ts_seeds[0]]
             rows_b = list(feas.get("benchmark", []))  # resumable: configurations already measured are kept
@@ -303,7 +306,7 @@ def main() -> int:
         chunk = args.chunk or chosen.get("chunk", 4096)
         # ---------------------------------------------------------------- equivalence check
         if args.equivalence:
-            eq_seq, eq_par = DATA_V2 / "attributions" / "equivalence_seq", DATA_V2 / "attributions" / "equivalence_par"
+            eq_seq, eq_par = C.data_root(args.datasets) / "attributions" / "equivalence_seq", C.data_root(args.datasets) / "attributions" / "equivalence_par"
             import shutil
 
             shutil.rmtree(eq_seq, ignore_errors=True)
@@ -352,9 +355,9 @@ def main() -> int:
             results = json.loads(res_f.read_text()) if res_f.exists() else {}
             usab = {}
             for ds in args.datasets:
-                f = ARTIFACTS_V2 / "v6_usability" / "tables" / f"usability_{ds}.json"
+                f = C.stage_root(args.datasets, "v6_usability", "w6_usability") / "tables" / f"usability_{ds}.json"
                 usab.update(json.loads(f.read_text()) if f.exists() else {})
-            maps_dir = DATA_V2 / "attributions" / "maps"
+            maps_dir = C.data_root(args.datasets) / "attributions" / "maps"
             maps_dir.mkdir(parents=True, exist_ok=True)
             for ds, S in setups.items():
                 jobs_ds = [j for j in all_jobs if j.row.startswith(ds + "/")]

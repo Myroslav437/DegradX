@@ -55,7 +55,7 @@ def main() -> int:
     L = int(dd["target"]["window_length_L"]["value"])
     rule = CleaningRule("D12", **dd["capacity_series"]["cleaning_rule"]["params"])
     crule = C.channel_rule_v2(dd)
-    fid = json.loads((ARTIFACTS_V2 / "v5_fidelity" / "tables" / "fidelity.json").read_text())
+    fid = json.loads((C.stage_root(args.datasets, "v5_fidelity", "w5_fidelity") / "tables" / "fidelity.json").read_text())
     out = {}
     for ds in args.datasets:
         prof = C.v2_profile(ds)
@@ -74,7 +74,7 @@ def main() -> int:
         seeds = []
         for s in fid[ds]["per_generation_seed"]:
             g = s["generation_seed"]
-            units = pickle.loads((DATA_V2 / "generated" / ds / f"seed{g}.pkl").read_bytes())[0]
+            units = pickle.loads((C.generated_dir(ds) / f"seed{g}.pkl").read_bytes())[0]
             gs = F.generated_series(units, len(chans))
             Wg, Ug, _ = F.windows(gs, L, max_per_unit=args.max_windows_per_unit, seed=args.seed + g)
             d = F.discriminative_score(Wh, Uh, Wg, Ug, mu, sd, seed=args.seed + g, device=ctx.device, return_predictions=True)
@@ -87,7 +87,7 @@ def main() -> int:
             print(f"[v5-disc] {ds} seed {g}: {err:.3f} [{lo:.3f}, {hi:.3f}] half {half:.3f} bound {0.5 * abs(0.5 - err):.3f} readable {seeds[-1]['readable']}", flush=True)
         out[ds] = {"per_generation_seed": seeds, "readable": bool(all(x["readable"] for x in seeds)),
                    "void_reason": None if all(x["readable"] for x in seeds) else "discriminative-error interval wider than half its distance from 0.5 (D02b readability)"}
-    write_json(out, ARTIFACTS_V2 / "v5_fidelity" / "tables" / "discriminator_readability.json")
+    write_json(out, C.stage_root(args.datasets, "v5_fidelity", "w5_fidelity") / "tables" / "discriminator_readability.json")
     bad = [ds for ds in out for x in out[ds]["per_generation_seed"] if not x["reproduces_v5"]]
     if bad:
         print("WARNING: discriminator did not reproduce V5 for", bad)

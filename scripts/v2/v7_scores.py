@@ -235,7 +235,7 @@ def main() -> int:
         if not args.skip_part_a:
             for ds in args.datasets:
                 prof = C.v2_profile(ds)
-                units, table = pickle.loads((DATA_V2 / "generated" / ds / "seed0.pkl").read_bytes())
+                units, table = pickle.loads((C.generated_dir(ds) / "seed0.pkl").read_bytes())
                 split = dict(zip(table["index"], table["split"]))
                 test = [u for u in units if split[u.index] == "test"]
                 P = Profile.from_json(prof, np.array([0.0]))  # dummy null pool: only x0 of null_permuted changes, which has zero weight in y and phi*

@@ -27,7 +27,7 @@ import numpy as np
 import pandas as pd
 
 import _common as C
-from degradx import DATA_V2
+from degradx import DATA_V2, REPO_ROOT  # noqa: F401 (DATA_V2 kept for v2 imports)
 from degradx.data.audit import CleaningRule, clean_capacity
 from degradx.fitting.profile import fit_profile, prepare_units
 from degradx.generator.generate import Profile, generate_unit
@@ -139,7 +139,7 @@ def main() -> int:
                                                              "max_abs_mean_minus_target": float(np.max(np.abs(implied.mean(axis=0) - r_fit)[off_])) if nmeas > 1 else 0.0}
             gen_spec = spec_from_declarations(decl, q_nom, measured=False)
             for gs in gen_seeds:
-                cache = DATA_V2 / "generated" / ds / f"seed{gs}.pkl"
+                cache = C.generated_dir(ds) / f"seed{gs}.pkl"
                 with rec.section(f"{ds}_generate_seed{gs}"):
                     if ctx.should_skip(cache, label=f"{ds} seed {gs} units"):
                         units, table = pickle.loads(cache.read_bytes())
@@ -232,7 +232,7 @@ def main() -> int:
                                          f"{summary[ds]['implied_stationary_correlation']['max_abs_mean_minus_target']:.3f})", severity="warn")
             # X3 isolation (declared reading X3_isolation): one set from the v2 profile with independent per-channel noise
             with rec.section(f"{ds}_x3_off_set"):
-                cache_off = DATA_V2 / "generated" / ds / "seed0_x3off.pkl"
+                cache_off = C.generated_dir(ds) / "seed0_x3off.pkl"
                 if ctx.should_skip(cache_off, label=f"{ds} X3-off set"):
                     units_off, table_off = pickle.loads(cache_off.read_bytes())
                 else:
@@ -240,11 +240,11 @@ def main() -> int:
                     P_off.innov_corr = None
                     units_off, table_off = generate_set(P_off, gen_seeds[0], n_units, args.seed)
                     cache_off.write_bytes(pickle.dumps((units_off, table_off), protocol=pickle.HIGHEST_PROTOCOL))
-                summary[ds]["x3_off_set"] = {"file": str(cache_off.relative_to(DATA_V2.parent.parent)), "units": len(units_off),
+                summary[ds]["x3_off_set"] = {"file": str(cache_off.relative_to(REPO_ROOT)), "units": len(units_off),
                                              "within_unit_correlation": within_unit_correlation([u.eps[:, :nmeas] for u in units_off]).tolist()}
             # X3 estimator check on generation seed 0: V3 estimator applied to generated observations
             with rec.section(f"{ds}_estimator_check"):
-                units0, _t = pickle.loads((DATA_V2 / "generated" / ds / f"seed{gen_seeds[0]}.pkl").read_bytes())
+                units0, _t = pickle.loads((C.generated_dir(ds) / f"seed{gen_seeds[0]}.pkl").read_bytes())
                 rows = []
                 for u in units0:
                     x = u.x

@@ -119,6 +119,10 @@ meta:
        r3: "capacity plus at least two channels that change with degradation in every unit; a failure is not repaired by re-assigning roles",
        r4: "declared_by_design.v2_1.eligibility.E5: charge_time and mean_discharge_voltage named; a failure is repaired neither by re-assigning roles nor by substituting another charge-time or mean-discharge-voltage definition after W1",
        reason: "the alternatives are computed as cross-checks; substituting one after a failed guard would rescue a stop case post hoc"}
+    - {date: 2026-10-13, comment: "D33 (post-data, W1)", keys: [declared_by_design.v2_1.aging_protocol.per_cycle_tuple, declared_by_design.v2_1.aging_protocol.per_cycle_departure],
+       r4: "I_chg = 90th percentile of the positive current over the cycle's charge samples ('the CC level'); every regular cycle tested for a charge-current departure",
+       new: "I_chg = median current over the cycle's constant-current samples (voltage below the cycle's own V_cv - 10 mV, current > C/50), at least 10 such samples; a cycle with fewer is not tested for a charge-current departure (I_dis, V_cv and V_end still test every cycle)",
+       reason: "set AFTER the W1 per-cycle statistics were seen: the p90 left the CC level in collapsed post-EOL cycles (0.006-0.046 Ah) whose charge is nearly all CV, so 40 cells carried departure runs that the declared rule read as a second aging protocol although discharge current, V_cv and V_end equal the modal values (docs/DECISIONS/D33_cc_phase_charge_current.md; literal outcome kept in artifacts/v2.1/w1_ingest/tables/ingest_summary.json d33_r4_literal_estimator)"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -987,6 +991,7 @@ declared_by_design:
         excluded (on a voltage-axis grid, rows beyond the step's range: NaN under slinear, repeating the step-end values under
         index); V_end is lower-cutoff evaluable where the discharge grid extends at least 0.05 V below 3.0 V (always on raw,
         capacity-axis or time-axis discharge data)
+      per_cycle_tuple_d33: "superseded for I_chg by D33 (2026-10-13, post-data, W1): I_chg = median current over the constant-current samples (voltage < own V_cv - 0.01 V, current > C/50), at least 10 such samples, else not tested for a charge-current departure; the r4 p90 is reported beside it"
       per_cell_tuple: "the medians of the per-cycle tuple over the cell's regular cycles"
       modal: "the modal value of each tuple element separately (I_chg and I_dis rounded to 0.01 A; V_cv and V_end rounded to 0.05 V) over the cells meeting cell_scope (i)-(iii), V_end over the cells where it is lower-cutoff evaluable; reported beside the documented values (0.24 A, 4.4 V, 0.18 A, 3.0 V). A modal element that departs from its documented value beyond aging_protocol.tolerance is an E2 failure on the files (eligibility.E2_files)"
       tolerance: "a cell follows the modal protocol iff |I_chg / I_chg,modal - 1| <= 0.05, |I_dis / I_dis,modal - 1| <= 0.05, |V_cv - V_cv,modal| <= 0.03 V, V_end <= V_end,ref + 0.03 V wherever the source's lowest possible discharge voltage (the grid's lowest value on a voltage axis) is at or below V_end,ref, and, where lower-cutoff evaluable, V_end >= V_end,ref - 0.03 V; V_end,ref = the modal V_end, or the documented 3.0 V if no cell is lower-cutoff evaluable; the number of cells whose lower cutoff could not be checked is reported"

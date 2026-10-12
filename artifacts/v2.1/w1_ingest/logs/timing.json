@@ -1,0 +1,9 @@
+{
+  "stage": "v2.1/w1_ingest",
+  "device": "cuda",
+  "wall_clock_s": 942.717,
+  "sections_s": {
+    "pass1": 897.938,
+    "pass2": 42.588
+  }
+}

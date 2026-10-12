@@ -1,0 +1,982 @@
+{
+  "counts": {
+    "aging_files_current": 182,
+    "parsed": 182,
+    "with_sheet_row": 182,
+    "in_scope": 142,
+    "excluded_by_reason": {
+      "out of tolerance (within-cell protocol change: run of > 11 non-aging cycles)": 40
+    },
+    "undocumented_files_current": [],
+    "undocumented_files_original_not_used": [
+      "Nova_Regular_Ref_100.091.json.gz",
+      "Nova_Regular_Ref_101.092.json.gz",
+      "Nova_Regular_Ref_102.093.json.gz"
+    ],
+    "reference_counts": {
+      "designed": 186,
+      "sheet_rows_incl_baseline": 183,
+      "design_rows": 180,
+      "rhyu_used": 178
+    },
+    "sheet_rows_without_file": [
+      298
+    ],
+    "positions": 144453,
+    "cycles_per_cell": {
+      "count": 142.0,
+      "mean": 1017.3,
+      "std": 172.1,
+      "min": 736.0,
+      "25%": 922.2,
+      "50%": 989.0,
+      "75%": 1094.8,
+      "max": 1625.0
+    },
+    "missing_fields": {},
+    "predicates_masks_events_total": {
+      "degenerate_no_samples": 3,
+      "degenerate_capacity": 0,
+      "incomplete_a": 0,
+      "incomplete_b": 0,
+      "incomplete_c": 1,
+      "non_aging": 30,
+      "mask_a": 1785,
+      "mask_c_pause_in_charge": 0,
+      "rest_events.": 142712,
+      "rest_events.diagnostic": 1643,
+      "rest_events.paused": 69,
+      "rest_events.gap": 29,
+      "dst_artefacts": 59,
+      "spring_forward_flagged": 6,
+      "paused_cycles": 128,
+      "paused_located": 0,
+      "overlap_ramp_cycles": 150,
+      "non_aging_only_with_ramp": 0
+    },
+    "labelled_diagnostic_aging_current": {}
+  },
+  "modal_tuple": {
+    "I_chg": 0.24,
+    "I_dis": 0.18,
+    "V_cv": 4.4,
+    "V_end": 3.0
+  },
+  "v_end_ref": 3.0,
+  "documented": {
+    "I_chg": 0.24,
+    "I_dis": 0.18,
+    "V_cv": 4.4,
+    "V_end": 3.0
+  },
+  "e2_files": {
+    "modal_within_documented": {
+      "I_chg": true,
+      "I_dis": true,
+      "V_cv": true,
+      "V_end": true
+    },
+    "incomplete_share_pooled": 6.922666888192007e-06,
+    "fails": false
+  },
+  "second_protocol": {
+    "sources": [
+      {
+        "seq": 100,
+        "kind": "runs",
+        "cycles": 165,
+        "I_chg": 0.1335644841194153,
+        "I_dis": 0.1799890771508216,
+        "V_cv": 4.400140295028686,
+        "V_end": 3.0
+      },
+      {
+        "seq": 101,
+        "kind": "runs",
+        "cycles": 85,
+        "I_chg": 0.1610807791352272,
+        "I_dis": 0.1799905598163604,
+        "V_cv": 4.40014506816864,
+        "V_end": 3.0
+      },
+      {
+        "seq": 102,
+        "kind": "runs",
+        "cycles": 147,
+        "I_chg": 0.1105041876435279,
+        "I_dis": 0.1799893379211425,
+        "V_cv": 4.4001526927948,
+        "V_end": 3.0
+      },
+      {
+        "seq": 103,
+        "kind": "runs",
+        "cycles": 159,
+        "I_chg": 0.0987749710679054,
+        "I_dis": 0.1799883171916008,
+        "V_cv": 4.400286774635315,
+        "V_end": 2.9999237060546875
+      },
+      {
+        "seq": 104,
+        "kind": "runs",
+        "cycles": 130,
+        "I_chg": 0.11463133543729785,
+        "I_dis": 0.1799903512001037,
+        "V_cv": 4.4001507830619815,
+        "V_end": 3.0
+      },
+      {
+        "seq": 109,
+        "kind": "runs",
+        "cycles": 101,
+        "I_chg": 0.1582837551832199,
+        "I_dis": 0.1799900010228157,
+        "V_cv": 4.40013126373291,
+        "V_end": 3.0
+      },
+      {
+        "seq": 110,
+        "kind": "runs",
+        "cycles": 48,
+        "I_chg": 0.17248012870550156,
+        "I_dis": 0.1799897029995918,
+        "V_cv": 4.40015198469162,
+        "V_end": 3.0
+      },
+      {
+        "seq": 115,
+        "kind": "runs",
+        "cycles": 32,
+        "I_chg": 0.19076525494456292,
+        "I_dis": 0.17998969927430147,
+        "V_cv": 4.400142695903778,
+        "V_end": 3.0
+      },
+      {
+        "seq": 116,
+        "kind": "runs",
+        "cycles": 307,
+        "I_chg": 0.0864260233938694,
+        "I_dis": 0.1799882873892784,
+        "V_cv": 4.400398445129395,
+        "V_end": 3.0
+      },
+      {
+        "seq": 137,
+        "kind": "runs",
+        "cycles": 54,
+        "I_chg": 0.1612149707973003,
+        "I_dis": 0.179991353303194,
+        "V_cv": 4.400136768817902,
+        "V_end": 3.0
+      },
+      {
+        "seq": 139,
+        "kind": "runs",
+        "cycles": 20,
+        "I_chg": 0.2004266388714314,
+        "I_dis": 0.17999459803104395,
+        "V_cv": 4.400167036056518,
+        "V_end": 3.0
+      },
+      {
+        "seq": 140,
+        "kind": "runs",
+        "cycles": 159,
+        "I_chg": 0.0659057453274727,
+        "I_dis": 0.1799882277846336,
+        "V_cv": 4.400682916641236,
+        "V_end": 2.99969482421875
+      },
+      {
+        "seq": 146,
+        "kind": "runs",
+        "cycles": 78,
+        "I_chg": 0.1237547740340233,
+        "I_dis": 0.17998937144875526,
+        "V_cv": 4.400126011371612,
+        "V_end": 3.0
+      },
+      {
+        "seq": 148,
+        "kind": "runs",
+        "cycles": 28,
+        "I_chg": 0.18361425772309306,
+        "I_dis": 0.1799930445849895,
+        "V_cv": 4.400095987319946,
+        "V_end": 3.0
+      },
+      {
+        "seq": 149,
+        "kind": "runs",
+        "cycles": 134,
+        "I_chg": 0.1482408300042152,
+        "I_dis": 0.1799913458526134,
+        "V_cv": 4.400142226219177,
+        "V_end": 3.0
+      },
+      {
+        "seq": 161,
+        "kind": "runs",
+        "cycles": 25,
+        "I_chg": 0.1951223492622376,
+        "I_dis": 0.1799928471446037,
+        "V_cv": 4.400211372375488,
+        "V_end": 3.0
+      },
+      {
+        "seq": 177,
+        "kind": "runs",
+        "cycles": 21,
+        "I_chg": 0.2003229916095733,
+        "I_dis": 0.1799903362989425,
+        "V_cv": 4.400139842033386,
+        "V_end": 3.0
+      },
+      {
+        "seq": 183,
+        "kind": "runs",
+        "cycles": 169,
+        "I_chg": 0.1111896321177482,
+        "I_dis": 0.1799888089299202,
+        "V_cv": 4.400167942047119,
+        "V_end": 3.0
+      },
+      {
+        "seq": 201,
+        "kind": "runs",
+        "cycles": 56,
+        "I_chg": 0.1129061862826347,
+        "I_dis": 0.1799884662032127,
+        "V_cv": 4.400151271820068,
+        "V_end": 3.0
+      },
+      {
+        "seq": 209,
+        "kind": "runs",
+        "cycles": 65,
+        "I_chg": 0.1350422874093055,
+        "I_dis": 0.1799880117177963,
+        "V_cv": 4.400194683074951,
+        "V_end": 3.0
+      },
+      {
+        "seq": 215,
+        "kind": "runs",
+        "cycles": 157,
+        "I_chg": 0.0718900591135025,
+        "I_dis": 0.1799875050783157,
+        "V_cv": 4.400450897216797,
+        "V_end": 2.999847412109375
+      },
+      {
+        "seq": 221,
+        "kind": "runs",
+        "cycles": 66,
+        "I_chg": 0.10877008400857441,
+        "I_dis": 0.17998812720179555,
+        "V_cv": 4.400136754512786,
+        "V_end": 2.9999618530273438
+      },
+      {
+        "seq": 224,
+        "kind": "runs",
+        "cycles": 62,
+        "I_chg": 0.1595985680818558,
+        "I_dis": 0.1799910590052604,
+        "V_cv": 4.400157461166382,
+        "V_end": 3.0
+      },
+      {
+        "seq": 226,
+        "kind": "runs",
+        "cycles": 136,
+        "I_chg": 0.08910442814230915,
+        "I_dis": 0.1799883656203746,
+        "V_cv": 4.4001674818992615,
+        "V_end": 3.0
+      },
+      {
+        "seq": 273,
+        "kind": "runs",
+        "cycles": 53,
+        "I_chg": 0.1788766175508499,
+        "I_dis": 0.1799903288483619,
+        "V_cv": 4.400141744613648,
+        "V_end": 3.0
+      },
+      {
+        "seq": 274,
+        "kind": "runs",
+        "cycles": 126,
+        "I_chg": 0.1066724758595228,
+        "I_dis": 0.1799891293048858,
+        "V_cv": 4.400154840946197,
+        "V_end": 3.0
+      },
+      {
+        "seq": 275,
+        "kind": "runs",
+        "cycles": 128,
+        "I_chg": 0.1507608562707901,
+        "I_dis": 0.1799895726144313,
+        "V_cv": 4.400129585266113,
+        "V_end": 3.0
+      },
+      {
+        "seq": 282,
+        "kind": "runs",
+        "cycles": 12,
+        "I_chg": 0.2010777793824673,
+        "I_dis": 0.17999134585261345,
+        "V_cv": 4.4001541256904595,
+        "V_end": 3.0
+      },
+      {
+        "seq": 283,
+        "kind": "runs",
+        "cycles": 23,
+        "I_chg": 0.1979216143488883,
+        "I_dis": 0.1799899712204933,
+        "V_cv": 4.400145559310913,
+        "V_end": 3.0
+      },
+      {
+        "seq": 286,
+        "kind": "runs",
+        "cycles": 101,
+        "I_chg": 0.0914181254804134,
+        "I_dis": 0.1799887046217918,
+        "V_cv": 4.400360803604126,
+        "V_end": 2.9999237060546875
+      },
+      {
+        "seq": 290,
+        "kind": "runs",
+        "cycles": 123,
+        "I_chg": 0.0764014236629009,
+        "I_dis": 0.1799892634153366,
+        "V_cv": 4.400620861053467,
+        "V_end": 2.999847412109375
+      },
+      {
+        "seq": 297,
+        "kind": "runs",
+        "cycles": 396,
+        "I_chg": 0.0666713260114193,
+        "I_dis": 0.1799885518848896,
+        "V_cv": 4.40075736284256,
+        "V_end": 2.999847412109375
+      },
+      {
+        "seq": 299,
+        "kind": "runs",
+        "cycles": 69,
+        "I_chg": 0.140281230211258,
+        "I_dis": 0.179989293217659,
+        "V_cv": 4.400131788253784,
+        "V_end": 3.0
+      },
+      {
+        "seq": 313,
+        "kind": "runs",
+        "cycles": 87,
+        "I_chg": 0.1413486242294312,
+        "I_dis": 0.1799905821681022,
+        "V_cv": 4.400151262283325,
+        "V_end": 3.0
+      },
+      {
+        "seq": 314,
+        "kind": "runs",
+        "cycles": 283,
+        "I_chg": 0.0988486230373382,
+        "I_dis": 0.179988719522953,
+        "V_cv": 4.40025053024292,
+        "V_end": 3.0
+      },
+      {
+        "seq": 317,
+        "kind": "runs",
+        "cycles": 13,
+        "I_chg": 0.2005001306533813,
+        "I_dis": 0.1799889206886291,
+        "V_cv": 4.4001545906066895,
+        "V_end": 3.0
+      },
+      {
+        "seq": 318,
+        "kind": "runs",
+        "cycles": 336,
+        "I_chg": 0.0883298628032207,
+        "I_dis": 0.1799891218543052,
+        "V_cv": 4.400522656440735,
+        "V_end": 3.0
+      },
+      {
+        "seq": 319,
+        "kind": "runs",
+        "cycles": 589,
+        "I_chg": 0.0612580068409442,
+        "I_dis": 0.1799881309270858,
+        "V_cv": 4.400775465965271,
+        "V_end": 2.99969482421875
+      },
+      {
+        "seq": 320,
+        "kind": "runs",
+        "cycles": 643,
+        "I_chg": 0.0865028329193592,
+        "I_dis": 0.1799889802932739,
+        "V_cv": 4.4005393171310425,
+        "V_end": 3.0
+      },
+      {
+        "seq": 322,
+        "kind": "runs",
+        "cycles": 411,
+        "I_chg": 0.0778251253068447,
+        "I_dis": 0.179990567266941,
+        "V_cv": 4.401547994613647,
+        "V_end": 2.9999237060546875
+      }
+    ],
+    "agreeing_pairs": [
+      [
+        100,
+        146
+      ],
+      [
+        100,
+        209
+      ],
+      [
+        100,
+        299
+      ],
+      [
+        100,
+        313
+      ],
+      [
+        101,
+        109
+      ],
+      [
+        101,
+        110
+      ],
+      [
+        101,
+        137
+      ],
+      [
+        101,
+        224
+      ],
+      [
+        101,
+        275
+      ],
+      [
+        102,
+        103
+      ],
+      [
+        102,
+        104
+      ],
+      [
+        102,
+        183
+      ],
+      [
+        102,
+        201
+      ],
+      [
+        102,
+        221
+      ],
+      [
+        102,
+        274
+      ],
+      [
+        102,
+        314
+      ],
+      [
+        103,
+        221
+      ],
+      [
+        103,
+        226
+      ],
+      [
+        103,
+        274
+      ],
+      [
+        103,
+        286
+      ],
+      [
+        103,
+        314
+      ],
+      [
+        103,
+        318
+      ],
+      [
+        104,
+        146
+      ],
+      [
+        104,
+        183
+      ],
+      [
+        104,
+        201
+      ],
+      [
+        104,
+        221
+      ],
+      [
+        104,
+        274
+      ],
+      [
+        109,
+        137
+      ],
+      [
+        109,
+        149
+      ],
+      [
+        109,
+        224
+      ],
+      [
+        109,
+        275
+      ],
+      [
+        110,
+        137
+      ],
+      [
+        110,
+        148
+      ],
+      [
+        110,
+        273
+      ],
+      [
+        115,
+        139
+      ],
+      [
+        115,
+        148
+      ],
+      [
+        115,
+        161
+      ],
+      [
+        115,
+        177
+      ],
+      [
+        115,
+        273
+      ],
+      [
+        115,
+        282
+      ],
+      [
+        115,
+        283
+      ],
+      [
+        115,
+        317
+      ],
+      [
+        116,
+        226
+      ],
+      [
+        116,
+        286
+      ],
+      [
+        116,
+        290
+      ],
+      [
+        116,
+        318
+      ],
+      [
+        116,
+        320
+      ],
+      [
+        116,
+        322
+      ],
+      [
+        137,
+        224
+      ],
+      [
+        137,
+        275
+      ],
+      [
+        139,
+        161
+      ],
+      [
+        139,
+        177
+      ],
+      [
+        139,
+        282
+      ],
+      [
+        139,
+        283
+      ],
+      [
+        139,
+        317
+      ],
+      [
+        140,
+        215
+      ],
+      [
+        140,
+        290
+      ],
+      [
+        140,
+        297
+      ],
+      [
+        140,
+        319
+      ],
+      [
+        140,
+        322
+      ],
+      [
+        146,
+        201
+      ],
+      [
+        146,
+        209
+      ],
+      [
+        148,
+        161
+      ],
+      [
+        148,
+        273
+      ],
+      [
+        149,
+        224
+      ],
+      [
+        149,
+        275
+      ],
+      [
+        149,
+        299
+      ],
+      [
+        149,
+        313
+      ],
+      [
+        161,
+        177
+      ],
+      [
+        161,
+        282
+      ],
+      [
+        161,
+        283
+      ],
+      [
+        161,
+        317
+      ],
+      [
+        177,
+        282
+      ],
+      [
+        177,
+        283
+      ],
+      [
+        177,
+        317
+      ],
+      [
+        183,
+        201
+      ],
+      [
+        183,
+        221
+      ],
+      [
+        183,
+        274
+      ],
+      [
+        201,
+        221
+      ],
+      [
+        201,
+        274
+      ],
+      [
+        209,
+        299
+      ],
+      [
+        209,
+        313
+      ],
+      [
+        215,
+        290
+      ],
+      [
+        215,
+        297
+      ],
+      [
+        215,
+        319
+      ],
+      [
+        215,
+        322
+      ],
+      [
+        221,
+        274
+      ],
+      [
+        221,
+        314
+      ],
+      [
+        224,
+        275
+      ],
+      [
+        226,
+        286
+      ],
+      [
+        226,
+        314
+      ],
+      [
+        226,
+        318
+      ],
+      [
+        226,
+        320
+      ],
+      [
+        226,
+        322
+      ],
+      [
+        274,
+        314
+      ],
+      [
+        275,
+        299
+      ],
+      [
+        275,
+        313
+      ],
+      [
+        282,
+        283
+      ],
+      [
+        282,
+        317
+      ],
+      [
+        283,
+        317
+      ],
+      [
+        286,
+        314
+      ],
+      [
+        286,
+        318
+      ],
+      [
+        286,
+        320
+      ],
+      [
+        290,
+        297
+      ],
+      [
+        290,
+        318
+      ],
+      [
+        290,
+        320
+      ],
+      [
+        290,
+        322
+      ],
+      [
+        297,
+        319
+      ],
+      [
+        297,
+        322
+      ],
+      [
+        299,
+        313
+      ],
+      [
+        314,
+        318
+      ],
+      [
+        318,
+        320
+      ],
+      [
+        318,
+        322
+      ],
+      [
+        320,
+        322
+      ]
+    ],
+    "present": true
+  },
+  "charge_time_validation": {
+    "evaluable": 178,
+    "failing": [],
+    "o_median_min_across_files": {
+      "median": 5.439563605269111,
+      "min": 5.395942942945595,
+      "max": 5.489719719719133
+    },
+    "o_iqr_max_min": 0.29641166166136124,
+    "finiteness_agreement_min": 1.0
+  },
+  "structuring_parameters": {
+    "v_range": {
+      "[3.0, 4.4]": 182
+    },
+    "resolution": {
+      "1000": 182
+    },
+    "diagnostic_resolution": {
+      "500": 182
+    },
+    "nominal_capacity": {
+      "0.24": 182
+    },
+    "full_fast_charge": {
+      "1": 182
+    },
+    "charge_axis": {
+      "test_time": 182
+    },
+    "discharge_axis": {
+      "test_time": 182
+    }
+  },
+  "writer_markers": {
+    "diagnostic_available_in_sp=False | top_level_diagnostic=True | step_index_in_cycles_interpolated=True | raw_data=False": 182
+  },
+  "maccor_protocol_names": {
+    "Formation_Maccor_5_ocv_72h.000": 71,
+    "Formation_Maccor_5_ocv_0h.000": 68,
+    "Formation_Maccor_5_ocv_168h.000": 43
+  },
+  "formation_mapping": {
+    "protocol_groups": 63,
+    "in_scope_per_protocol": {
+      "count": 58.0,
+      "mean": 2.45,
+      "std": 0.68,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 3.0
+    },
+    "tagged_cells_in_scope": {
+      "142": "cells on channel 44-68 after cycling are swallen; ",
+      "143": "Big antechamber incident, the cells are cut open for more than a day, dried in a blue bin; ",
+      "155": "accidentally stopped the tests during formation CV hold at 1.5V, but file is still usable; ",
+      "163": "Dried in a strange bag; ",
+      "187": "Dried in the big antechamber from 10/18 to 10/19, switched to the new electrolyte opened on 10/19; ",
+      "188": "Dried with cells lying down; ",
+      "208": "noticed that electrolyte bottle cap area has brownish liquid; ",
+      "269": "Repeating the problematic batch   1. with my own March electrolyte (opened on 03/28)   2. dry cells on 04/06; ",
+      "276": "shorted; ",
+      "278": "shorted; ",
+      "287": "this has weird composition; ",
+      "312": "This batch was using brown bottle eletrolyte  but then I need to refill it; no electrolyte weight was recorded so need to be careful with this batch; "
+    }
+  },
+  "channels_availability_preview": {
+    "temperature_nonnull_share": 0.0,
+    "ir_nonzero_share": 0.0
+  },
+  "cross_check_mdv_samples_minus_summary_V": {
+    "median_abs": 3.780286167720526e-05,
+    "p95_abs": 5.306414395591653e-05
+  }
+}

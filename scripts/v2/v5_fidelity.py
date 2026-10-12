@@ -171,8 +171,8 @@ def main() -> int:
             ho_u = prepare_units(df, split.loc[split["split"] == "held_out", "cell_id"], q_nom, spec, rule, chans, crule)
             ms_fit, ms_ho = F.measured_series(fit_u, chans), F.measured_series(ho_u, chans)
             n_ho, n_ho_reach = len(ms_ho), sum(s.T is not None for s in ms_ho)
-            gens = {g: pickle.loads((DATA_V2 / "generated" / ds / f"seed{g}.pkl").read_bytes())[0] for g in gen_seeds}
-            x3off_f = DATA_V2 / "generated" / ds / "seed0_x3off.pkl"
+            gens = {g: pickle.loads((C.generated_dir(ds) / f"seed{g}.pkl").read_bytes())[0] for g in gen_seeds}
+            x3off_f = C.generated_dir(ds) / "seed0_x3off.pkl"
             gen_off = pickle.loads(x3off_f.read_bytes())[0] if x3off_f.exists() else None
             res = {"window_length": L, "channels": chans, "units": {"measured_fitting": len(ms_fit), "measured_held_out": n_ho,
                                                                      "measured_held_out_reaching_eol": n_ho_reach, "generated_per_seed": len(gens[gen_seeds[0]])}}

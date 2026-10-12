@@ -62,3 +62,4 @@ option A, named the TRI/Stanford formation dataset as the third profile, and cor
 | id | decision | stage | status |
 |---|---|---|---|
 | D32 | third profile from the TRI/Stanford formation dataset: nominal 0.24 Ah from Cui et al.; cells the authors document (parameter sheet, baseline included, notes as tags); regular aging cycles as positions; CC-CV charge time from the per-cycle charge samples, validated by reproducing BEEP's `charge_duration`; charge time masked after diagnostics; offset pre-screen on fitted mean components (V4's estimator) | W0 | taken (pre-data, before download) |
+| D33 | the aging-protocol check reads the charge current on the constant-current samples; a cycle without a constant-current phase (collapsed post-EOL cycles) is not tested for it, so 40 cells are not read as a second protocol | W1 | taken (post-data) |
