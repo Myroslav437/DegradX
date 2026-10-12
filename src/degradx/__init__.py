@@ -20,3 +20,9 @@ DECLARATIONS_PATH = CONFIG_DIR / "declarations.yaml"
 ARTIFACTS_V2 = ARTIFACTS_DIR / "v2"
 RESULTS_V2 = RESULTS_DIR / "v2"
 DATA_V2 = DATA_DIR / "v2"
+
+# v2.1 (brief "DegradX v2.1", declarations r4 declared_by_design.v2_1.paths): the third profile (TRI/Stanford formation
+# dataset) and the paper sync write only under these roots; v1 and v2 artifacts, results and data are read-only inputs.
+ARTIFACTS_V21 = ARTIFACTS_DIR / "v2.1"
+RESULTS_V21 = RESULTS_DIR / "v2.1"
+DATA_V21 = DATA_DIR / "v2.1"

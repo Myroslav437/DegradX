@@ -1,0 +1,838 @@
+# DegradX — frozen pre-declarations (brief R7)
+#
+# Every constant the paper declares by design lives here, and nothing it says is estimated from
+# data. The split reproduces paper §3.3 (paper/paper.tex l.238) exactly; items the paper needs
+# but does not list are added under `declared_by_design` with source UNDERSPECIFIED-IN-PAPER.
+#
+# Per entry:  value | source (paper line or UNDERSPECIFIED-IN-PAPER) | rationale |
+#             affects_fitted_parameters (true => blocks progress past S3 until confirmed)
+# Research reports behind the rationales: docs/S0_RESEARCH/*.md
+
+meta:
+  revision: r3
+  paper_commit: 6221c50
+  status: >-
+    r1 was frozen at S0 before any data-consuming code ran (tag declarations-frozen). r2 resolves
+    the four OPEN items by review comments C1-C4 and is frozen before S1 (tag declarations-frozen-r2).
+    No data had been ingested or fitted when r2 was written.
+    r3 (2026-10-07, brief "DegradX v2", branch v2, after tag v1-results) adds declared_by_design.v2 for changes X1-X8 before
+    any v2 stage ran; it was written after the v1 results (S0-S9) were known, which every r3 rationale states. The
+    declarations as they stood at tag v1-results (r2 as amended through D20) are kept verbatim in
+    configs/declarations_history/declarations_at_v1-results.yaml; the frozen r2 itself is at tag declarations-frozen-r2.
+  # Supersession record (brief v2 §1: a frozen declaration is superseded with a dated record, never
+  # rewritten silently). r1 is kept verbatim in configs/declarations_history/declarations_r1.yaml.
+  supersession_log:
+    - {date: 2026-09-15, comment: C1, keys: [declared_by_design.target.weights_a_b, declared_by_design.target.decomposable_target, declared_by_design.target.reference_point, declared_by_design.channels.roles, declared_by_design.inserted_patterns_generation.carrying_channels],
+       r1: "weights a (graded) and b (patterns) OPEN; channel roles OPEN (draft only)",
+       r2: "one weight per cell w_{u,c} = kappa_c * pi_u about a declared reference point x0_c = phi_c(0); roles fixed",
+       reason: "a linear map of the observed window cannot reproduce Eq. 4 as written in r1 (pattern channels also carry the mean component)"}
+    - {date: 2026-09-15, comment: C2, keys: [declared_by_design.channels.null, declared_by_design.usability.permutation_importance_tolerance, declared_by_design.usability.redundant_channels, declared_by_design.usability.identifiability_floor, declared_by_design.attribution.primary_scoring_target],
+       r1: "permutation importance ~0 gated on all zero-weight channels (tolerance OPEN); no null channels; no identifiability diagnostic",
+       r2: "two declared null channels per profile carry the gated leakage test; redundant zero-weight channels reported (predictability, conditional importance), not gated; reference model primary; ensemble identifiability floor",
+       reason: "every channel is phi_c(z), so a zero-weight channel still carries the state: the r1 test cannot separate leakage from benign redundancy, and phi* is not identifiable for a trained model"}
+    - {date: 2026-09-15, comment: C3, keys: [declared_by_design.eol.anchor, declared_by_design.eol.q1_reference, declared_by_design.eol.denominator_guard, declared_by_design.eol.rho_sensitivity_grid, declared_by_design.eol.definitions_reported],
+       r1: "z_t = (q1 - q_t) / ((1 - rho) q1), q1 = first position of smoothed capacity (status OPEN)",
+       r2: "z_t = (q1 - q_t) / (q1 - rho * q_nom), q_nom per profile from primary documentation, q1 = max smoothed capacity over first k=20 positions, guard q1 - rho*q_nom >= 0.05 q_nom; r1 definition kept as a sensitivity point",
+       reason: "MATR/HUST cells were cycled to 80% of nominal capacity; rho applied to a higher observed initial capacity puts EOL below where cycling stopped, and early capacity rise makes a first-position anchor give z < 0"}
+    - {date: 2026-09-15, comment: C4, keys: [declared_by_design.attribution.baseline],
+       r1: "attribution baseline OPEN (TimeSHAP convention: average-event background)",
+       r2: "primary baseline = pristine window x0 for IG, occlusion and TimeSHAP background; ground truth supplied per baseline; secondary TimeSHAP run from the average event scored against phi*(xbar)",
+       reason: "Shapley and path methods satisfy sum(phi) = f(x) - f(baseline); scoring against phi* presumes f(baseline) = 0, which an average event does not satisfy under a drifting mean"}
+    - {date: 2026-09-15, comment: D13, keys: [declared_by_design.eol.record_end_rule],
+       r2: "T = min{t : z_t >= 1} only",
+       new: "measured records ending within 0.01 q_nom of the threshold reach EOL at their last position",
+       reason: "HUST and MATR b1/b3 records were truncated at the stopping threshold (S1); strict attainment was 11/77 HUST, 96/180 MATR"}
+    - {date: 2026-09-15, comment: D11, keys: [declared_by_design.capacity_series.source], r2: "capacity = max discharge capacity of the cycle (source unnamed)", new: "cycler-reported per-cycle capacity", reason: "HUST integrated capacity reads +18 mAh; 1/77 vs 77/77 units reach EOL"}
+    - {date: 2026-09-15, comment: D12, keys: [declared_by_design.capacity_series.cleaning_rule], r2: "no glitch rule", new: "isolated > 5% q_nom excursions and recovered collapses below 50% q_nom removed", reason: "single-cycle glitches set q1, T = 1-3 on NASA units, broke monotonicity in 16 MATR units"}
+    - {date: 2026-09-15, comment: D14, keys: [declared_by_design.datasets.matr_batches], r2: "all four MATR batches (status CONFIRM)", new: "the three Severson 2019 batches", reason: "the cited dataset; batch 4 IR is zero in every cycle"}
+    - {date: 2026-09-15, comment: D16, keys: [declared_by_design.pattern_detection.residual, declared_by_design.pattern_detection.max_duration], r2: "families fitted over 1..T; runs of any length >= m", new: "families fitted over t1..T; runs longer than the smoothing window are not patterns", reason: "early-rise misfit and low-frequency misfit dominated MATR/HUST detections"}
+    - {date: 2026-09-15, comment: D04, keys: [declared_by_design.trajectory_families.selection.simplicity_margin, declared_by_design.statistics.splits.measured.stratify_by], r2: "selection by lowest median CV-RMSE, no margin; split unstratified", new: "5% relative simplicity margin; split stratified by EOL attainment", reason: "declared before S3 so the family choice and split cannot follow the observed errors"}
+    - {date: 2026-09-15, comment: D05, keys: [declared_by_design.pattern_detection.enable_rule], r2: "enabled iff >= 1 run detected", new: "enabled iff detected rate >= 2x the rate on the profile's fitted AR(1) noise", reason: "at k = 2.5 MATR/HUST detections are below their noise-only rate (ratio 0.79/0.46); NASA 7.97"}
+    - {date: 2026-09-15, comment: D17, keys: [declared_by_design.channel_series.cleaning_rule], r2: "no channel glitch rule", new: "isolated > 5% of channel median departures masked", reason: "a few readings inflated MATR charge-time noise variance 25x"}
+    - {date: 2026-09-15, comment: D02, keys: [declared_by_design.minimum_counts], r2: "censored units excluded from everything; no minimum counts", new: "censored units feed T-free quantities; minima 5 units / 10 events / 5 held-out units", reason: "z is defined for censored units (C3); readability curves from resampling"}
+    - {date: 2026-09-15, comment: D04b, keys: [declared_by_design.trajectory_families.selection.identifiability], r2: "all families eligible", new: "families with parameters at bounds in > 20% of units not eligible", reason: "NASA rollover: transition width at its lower bound in 6 of 8 units; T reproduction p90 26% vs 9.6% for power law"}
+    - {date: 2026-09-15, comment: D01, keys: [declared_by_design.scoring], r2: "scores unspecified (rank agreement, retrieval, zero-weight mass named only)", new: "Spearman on pattern-free map vs graded field; AP on paired difference vs sparse set; plain AP secondary", reason: "plain retrieval scores the ground truth itself at chance (0.064 vs 0.048); paired 1.000"}
+    - {date: 2026-09-15, comment: D02b, keys: [declared_by_design.minimum_counts.held_out_units_per_measure], r2: "5 held-out units for every measure (provisional)", new: "transfer 20 reaching; covariance 12; discriminator 8 (distance-to-0.5 readability); representation distance by unit bootstrap", reason: "resampling over MATR held-out units; a 5-unit split leaves the discriminator one test unit"}
+    - {date: 2026-09-15, comment: D15, keys: [declared_by_design.eol.eol_search_start], r2: "T = min{t : z_t >= 1}", new: "T = min{t >= t1 : z_t >= 1}", reason: "the fall is measured from q1; one NASA unit had T = 1 from readings before q1"}
+    - {date: 2026-09-16, comment: D20, keys: [declared_by_design.responsiveness.operating_range.probes], r2: "probe unspecified (the paper does not say on which model the operating-range score is computed)", new: "both the reference model and IG on the trained model, with the accuracy gate applied to the trained probe", reason: "on the trained probe alone all 57 examined setting values are responsive, including two whose trained scores are void under the gate"}
+    - {date: 2026-10-07, comment: "r3 / D25 (X8)", keys: [declared_by_design.target.position_profiles.final_position, declared_by_design.responsiveness.generator_settings, declared_by_design.fidelity.representation_distance, declared_by_design.datasets.nasa_pcoe_cells],
+       r2: "three weightings; generator-setting sweep; representation distance; NASA PCoE profile; cross-fitting harness (D19)",
+       r3: "v2 stages: recency primary, uniform sensitivity; no setting sweep, no representation distance, no NASA PCoE, no cross-fitting (declared_by_design.v2.scope)",
+       reason: "v1 showed each answered nothing: final position tie-dominated (0.14-0.18 vs ceiling 0.84-0.87); sweep responsive almost everywhere; representation distance void for MATR; NASA PCoE void on every fidelity measure (D19, D21)"}
+    - {date: 2026-10-07, comment: "r3 (X2)", keys: [declared_by_design.channel_mappings.capacity, declared_by_design.channel_mappings.value, declared_by_design.theta_distribution],
+       r2: "one shared mapping phi_c(z) per channel; capacity affine at the median q1 shared by all units; theta, q1, noise and pattern rate resampled jointly",
+       r3: "non-capacity channels phi_c(z) + delta_{c,i} by backfitting with median_i delta = 0; capacity affine with the unit's own q1; delta resampled jointly with theta (declared_by_design.v2.per_unit_offsets)",
+       reason: "v1: MATR TSTR 3.42; per-cell charging-policy offsets hypothesised (S3 anomaly 4; tested by X1); unconditional permutation importance of charge time / mean discharge V <= 0.032 (usage tested by X4)"}
+    - {date: 2026-10-07, comment: "r3 (X3)", keys: [declared_by_design.noise.cross_channel],
+       r2: "noise independent per channel in generation; residual covariance recorded and compared at S5",
+       r3: "innovations drawn jointly with correlation chosen so the stationary residual correlation equals the fitted one (after X2); null channels independent (declared_by_design.v2.correlated_noise)",
+       reason: "v1 covariance agreement 0.685 (MATR) and 0.421 (HUST) relative Frobenius against baselines 0.278 and 0.038"}
+    - {date: 2026-10-07, comment: "r3 (X4, X5)", keys: [declared_by_design.scoring, declared_by_design.usability],
+       r2: "rank agreement, retrieval (paired), zero-weight mass; no channel-usage requirement",
+       r3: "adds channel allocation error (TV distance) and temporal profile error (1-Wasserstein over positions); channel-level trained-model scores void where a weighted channel is not used (conditional importance lower bound <= 0)",
+       reason: "v1 S7: rank agreement >= 0.96 under smoothing at sigma = 8 and changes < 0.001 for mass moved toward the end below a full shift; S6: unconditional permutation importance of the weighted non-capacity channels <= 0.032 (whether they are used is what X4 tests)"}
+    - {date: 2026-10-07, comment: "r3 (X6, X7)", keys: [declared_by_design.attribution.methods.timeshap, declared_by_design.attribution.windows_scored_per_profile],
+       v1_as_run: "TimeSHAP reduced at run time by D23 to 40 of 120 windows, seeds 0-1 trained / 0 reference, no ensemble floor (the r2 declaration itself was the full scale); NASA PCoE third profile",
+       r3: "TimeSHAP at the full declared scale incl. the ten-member ensemble floor (declared_by_design.v2.timeshap_full_scale); third profile chosen by declared eligibility (declared_by_design.v2.third_profile)",
+       reason: "D23's reductions left TimeSHAP's identifiability floor unmeasured; NASA PCoE gave no usable result"}
+    - {date: 2026-10-07, comment: "D27 (post-data, V1)", keys: [declared_by_design.channel_series.cleaning_rule],
+       r2: "single departing readings masked (D17, runs of 1)",
+       r3: "runs of up to three departing readings masked (max_run_v2: 3), all v2 profiles, before any v2 refit",
+       reason: "held-out MATR charge-time residual variance 53.0 min2 came from one paused cycle (1 301.6 min) in MATR_b1c2 whose recovery reading also departed, so D17's neighbour clause kept it; set after the data were seen"}
+    - {date: 2026-10-07, comment: "D28 (pre-data, V2; documentation only, before any download)", keys: [declared_by_design.v2.third_profile.candidate_rules, declared_by_design.v2.readings.X6_ii_regeneration_at_scale, declared_by_design.v2.third_profile.candidates_in_order],
+       r3: "candidate rules not yet declared; X6(ii) read on the pooled D05 outcome; Tongji note 'one cell type meeting eligibility'",
+       new: "ISU-ILCC (c-iii) with the declared extraction, scope (authors' validated cells, mean DoD >= 50%, 145 cells), strata, controls and the stratified X6(ii) reading; Tongji note superseded by its documentation_finding (entered at v0 commit 9c25b6c from the documentation sweep, no data seen)",
+       reason: "options (a), (b) and Tongji fail E3/E4 on documentation; (c-iii) meets E1-E4 with noise and pattern estimation on measured residuals; reviewed by three lenses and a judge before commit"}
+
+# ---------------------------------------------------------------------------------------------
+# Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
+estimated_from_data:
+  - {id: E1, item: distribution of theta,                      paper: "l.236, l.238"}
+  - {id: E2, item: choice of trajectory family,                paper: "l.236, l.238"}
+  - {id: E3, item: channel mappings phi_c,                     paper: "l.236, l.238"}
+  - {id: E4, item: covariance among channels,                  paper: "l.236, l.238"}
+  - {id: E5, item: noise variance and autocorrelation,         paper: "l.236, l.238"}
+  - {id: E6, item: rate, amplitude and duration of inserted patterns, paper: "l.236, l.238, l.243"}
+  - {id: E7, item: unit-length distribution,                   paper: "l.236, l.238"}
+
+# ---------------------------------------------------------------------------------------------
+declared_by_design:
+
+  datasets:
+    matr_batches:
+      value: [20170512, 20170630, 20180412]
+      source: "paper l.83, l.253 cite severson2019 (first three batches); D14 (2026-09-15) supersedes r1/r2 [all four batches, status CONFIRM]"
+      rationale: "the cited dataset; batch 20190124 (Attia 2020) records IR as zero in every cycle, contradicting the MATR channel set of paper l.253 (docs/DECISIONS/D14_matr_scope.md)"
+      affects_fitted_parameters: true
+    nasa_pcoe_cells: {superseded_r3: "not run in v2 (D25)", value: all_34_in_repository, source: "paper l.253", rationale: "the S2 audit decides which reach EOL; no pre-selection by literature", affects_fitted_parameters: true}
+
+  # ---- paper l.238 list: rho, smoothing, detection thresholds, channels, weights, L, protocol settings
+  eol:
+    rho:
+      value: 0.80
+      source: "paper l.148-158 (Eq. 3); numeric value UNDERSPECIFIED-IN-PAPER"
+      rationale: "80% is the common convention cited in the paper (l.158; Severson 2019 uses 80% of nominal)."
+      affects_fitted_parameters: true
+    # r2 (C3): supersedes r1 `anchor: first_position_smoothed_capacity` (status OPEN).
+    anchor:
+      value: nominal_capacity_endpoint_unit_origin
+      equation: "z_t = (q1 - q_t) / (q1 - rho * q_nom);  T = min{t : z_t >= 1}  (equivalently the first t with q_t <= rho * q_nom)"
+      q_nom: "declared per profile in configs/profiles/<profile>.yaml from the dataset's own primary documentation"
+      source: "paper Eq. 3 as amended by C3"
+      affects_fitted_parameters: true
+    q1_reference:
+      value: "q1 = max of the smoothed capacity over the first k positions of the unit"
+      k: 20
+      rationale: >-
+        Absorbs an early capacity rise without reaching far into life: longer than the Savitzky-Golay window (11), so no
+        single smoothed excursion sets q1 alone, and under half the earliest EOL position documented for a usable NASA
+        cell (B0018 crosses 1.6 Ah at discharge 45; datasets.md §3.4). Under C3, T does not depend on q1 (q_t <= rho q_nom),
+        so k moves only the origin of z.
+      material_difference: "|q1(k) - q_t=1| > 0.01 * q_nom counts as a material difference; S2 reports how often it occurs"
+      sensitivity_k: [1, 10, 20, 50]
+      source: "C3 (r2); k UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: true
+    denominator_guard:
+      value: "exclude a unit if q1 - rho * q_nom < 0.05 * q_nom; count and reason reported"
+      rationale: "a unit starting within 5% of nominal capacity of the EOL threshold (or below it) has too small a permitted fall to define z; same 5% in every profile"
+      source: "C3 (r2); value UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: true
+    rho_sensitivity_grid:
+      value: [0.70, 0.75, 0.80, 0.85, 0.90]
+      source: "paper l.158 ('range these conventions span'); grid UNDERSPECIFIED-IN-PAPER"
+      rationale: "70% NASA rated-capacity rule; 76% Pan 2022; 80% convention; 90% BatteryLife for cells not reaching 80%."
+      affects_fitted_parameters: true
+    eol_search_start:
+      value: "T = min{t >= t1 : z_t >= 1}, t1 = position of q1"
+      source: "docs/DECISIONS/D15_eol_search_start.md (2026-09-15, after S1, before fitting)"
+      affects_fitted_parameters: true
+    record_end_rule:
+      # D13 (2026-09-15, after S1 ingestion, before any fitting): supersedes the strict reading of T for measured records.
+      value: "measured units only: if the smoothed state never reaches 1 but the mean raw capacity of the last 5 recorded positions lies within tau * q_nom of the threshold, T = last recorded position"
+      tau: 0.01
+      applies_to: measured units (never to generated units, whose trajectories are not truncated)
+      source: "docs/DECISIONS/D13_truncated_records.md"
+      affects_fitted_parameters: true
+    definitions_reported:
+      value:
+        nominal_anchor_r2: "z = (q1 - q_t)/(q1 - rho q_nom), q1 = max over first k"
+        first_position_anchor_r1: "z = (q1 - q_t)/((1 - rho) q1), q1 = first smoothed value (paper as given)"
+      use: "S2 measures attainment per profile under both definitions at every rho on the grid; S4 rho-sensitivity reports both"
+      source: "C3 (r2)"
+      affects_fitted_parameters: false
+
+  capacity_series:
+    # D11 + D12 (2026-09-15, after S1 ingestion, before any fitting)
+    source: {value: capacity_cycler_Ah, rationale: "docs/DECISIONS/D11_capacity_source.md", affects_fitted_parameters: true}
+    cleaning_rule:
+      value: "drop degenerate cycles (< 10 samples or no capacity); drop a single position deviating > 0.05 q_nom from the centred 11-position rolling median while neither neighbour does; drop readings < 0.5 q_nom followed later by a reading >= 0.8 q_nom; positions re-indexed over kept cycles"
+      params: {isolated_excursion_frac: 0.05, drop_recovered_collapse: true, drop_degenerate: true}
+      source: "docs/DECISIONS/D12_glitch_rule.md"
+      affects_fitted_parameters: true
+
+  smoothing:
+    filter: {value: savitzky_golay, source: "paper l.236", affects_fitted_parameters: true}
+    window_length:
+      value: 11
+      source: UNDERSPECIFIED-IN-PAPER
+      rationale: "Fixed in cycles for every profile (a fraction of length would tie q_t to experiment duration). Half-width 5 >= longest NASA regeneration Qin 2016 tabulates; 3 dB cutoff 0.197 x Nyquist (Schafer 2011 Table 1)."
+      affects_fitted_parameters: true
+    polyorder: {value: 2, source: UNDERSPECIFIED-IN-PAPER, rationale: "N=2 and N=3 give the same cutoff at W=11; lower order is less edge-sensitive.", affects_fitted_parameters: true}
+    mode: {value: interp, source: UNDERSPECIFIED-IN-PAPER, rationale: "scipy default; edge values from a local polynomial fit, needed for q1.", affects_fitted_parameters: true}
+    window_sensitivity_grid: {value: [7, 11, 21], source: UNDERSPECIFIED-IN-PAPER, affects_fitted_parameters: false}
+
+  pattern_detection:
+    max_duration:
+      value: smoothing_window_length   # 11
+      rationale: "a run longer than the smoothing window survives smoothing, so it is part of q_t and changes z_t, which inserted patterns must not (paper l.175)"
+      source: "docs/DECISIONS/D16_detection_residual.md (2026-09-15, S2, before S3 fitting)"
+      affects_fitted_parameters: true
+    residual:
+      fit_range: "positions t1..T (early-life reference to EOL; D16 supersedes 1..T)"
+      value: raw_capacity_minus_fitted_trajectory
+      source: "paper l.236 (step five uses the step-two residuals), l.243"
+      rationale: "Residuals of the smoothed series would retain only 37-71% of a regeneration peak at W=11 (domain research §2)."
+      affects_fitted_parameters: true
+    residual_scale:
+      value: mad_normal_per_unit          # 1.4826 * median(|r - median(r)|)
+      source: UNDERSPECIFIED-IN-PAPER
+      rationale: "Robust to the patterns being detected, so steps four and five are not circular."
+      affects_fitted_parameters: true
+    multiple_k:
+      value: 2.5
+      source: "paper l.243-245 (declared before fitting); value UNDERSPECIFIED-IN-PAPER"
+      rationale: "Monte Carlo under AR(1) noise: k=2.0, m=2 gives ~1 false run per 1000 positions at phi=0 and many more under autocorrelation; k=2.5 an order of magnitude fewer."
+      affects_fitted_parameters: true
+    min_run_length:
+      value: 2
+      source: "paper l.243-245; value UNDERSPECIFIED-IN-PAPER"
+      rationale: "A single-position excursion cannot be distinguished from an outlier; Qin 2016 regeneration regions span 3-5 cycles."
+      affects_fitted_parameters: true
+    sweep:
+      multiple_k: [2.0, 2.5, 3.0, 3.5, 4.0]
+      min_run_length: [2, 3]
+      source: "paper l.245 ('declared range of the multiple'); grid UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: false
+    types:
+      value: {positive: regeneration, negative: measurement_condition_dip}
+      source: "paper l.173, l.243 ('the sign of the run gives the type')"
+      affects_fitted_parameters: true
+    enable_rule:
+      # D05 (2026-09-15, S3) supersedes r1/r2 "at least one run": noise-calibrated enable rule.
+      value: "a type is enabled in a profile iff its detected rate in the fitting split (declared k, m, max duration) is at least noise_factor times the rate the same rule returns on stationary AR(1) noise with the profile's fitted capacity-noise variance and lag-1 coefficient (200 segments of the median fitted length, generation seed stream 'D05')"
+      noise_factor: 2.0
+      source: "paper l.175, l.245"
+      affects_fitted_parameters: true
+    record_per_pattern: {value: [extremum_position, signed_amplitude, duration], source: "paper l.243", affects_fitted_parameters: true}
+
+  trajectory_families:
+    source: "paper l.236 (families named, equations cited not written); equations UNDERSPECIFIED-IN-PAPER"
+    affects_fitted_parameters: true
+    fit_quantity: {value: capacity_over_q1, rationale: "dimensionless so one bound set serves 1.1 Ah and 2 Ah cells", r2_note: "q1 is the robust early-life reference of eol.q1_reference (C3)"}
+    fit_range: {value: "positions t1..T of the unit (D16 supersedes 1..T; T from Eq. 3 with D13/D15); censored units: t1..N"}
+    candidates:
+      two_term_exponential:
+        equation: "y(n) = a*exp(b*n) + c*exp(d*n)"
+        citation: he2011
+        bounds: {a: [-2, 2], b: [-20, 20], c: [-2, 2], d: [-20, 20]}   # n in thousands of cycles
+        note: "no sign constraints (a knee needs them free); poorly identifiable (Wang 2013 via Johnen 2019) — multistart"
+      rollover:
+        equation: "y(n) = y0 + [m_o*n + (m_f - m_o)*delta*ln((exp(n/delta) + exp(N_k/delta)) / (1 + exp(N_k/delta)))]/q1"
+        citation: saxena2022
+        parameters: [y0, m_o, N_k, delta, m_f]
+        bounds_note: "m_o, m_f <= 0; N_k in [0, 1.5*T]; delta in [5, 500] cycles (free: the paper lists width as a parameter and varies sharpness)"
+      power_law:
+        equation: "y(n) = y0 - a*n^b"
+        bounds: {a: [0, .inf], b: [0, 5]}
+    solver: {value: "scipy.optimize.least_squares(method='trf', loss='linear') with multistart", rationale: "plain NLS as the paper says; robust loss would change the residuals patterns are detected from"}
+    selection:
+      value: "5 contiguous-block folds per unit; RMSE on held-out blocks; family with lowest median CV-RMSE across fitting-split units"
+      simplicity_margin:
+        value: 0.05
+        rule: "if a family with fewer parameters has median CV-RMSE within 5% (relative) of the lowest, the family with fewest parameters among those within the margin is selected; every candidate's error is reported"
+        order: [power_law, two_term_exponential, rollover]
+        source: "D04, declared 2026-09-15 before any S3 fit ran (brief v2 §4 D04)"
+      identifiability:
+        value: "a family with any parameter at a bound in more than 20% of the fitting units reaching EOL is not eligible for selection (all families eligible if none qualifies)"
+        max_frac_units_at_bound: 0.2
+        source: "docs/DECISIONS/D04_family_selection.md (2026-09-15, after the first S3 run: the 20% threshold was the S3 sanity check written before that run)"
+      units: "fitting-split units reaching EOL (fit range t1..T)"
+      source: "paper l.236 ('cross-validated fit error across units'); protocol UNDERSPECIFIED-IN-PAPER"
+
+  theta_distribution:
+    superseded_r3: "v2 stages also resample the unit's offsets delta jointly (v2.per_unit_offsets.generation)"
+    value: empirical_resampling_of_unit_vectors
+    source: "paper l.236 ('empirical distribution of the fitted parameters over units')"
+    rationale: "Literal reading. Noise parameters and pattern rate are resampled jointly by unit index with theta to keep their dependence."
+    affects_fitted_parameters: false
+
+  channel_mappings:
+    value: "isotonic regression (sklearn, increasing='auto') on pooled (z, x_c) of fitting-split units, then PCHIP through the isotonic fit on a 101-point z grid"
+    source: "paper l.236 ('smooth monotone functions of the fitted degradation state'); method UNDERSPECIFIED-IN-PAPER"
+    rationale: "Isotonic gives monotonicity without a shape assumption; PCHIP makes it C1-smooth while preserving monotonicity."
+    # r2 (C1 x C3): capacity uses one affine mapping per profile so that x0 is identical across units.
+    capacity:
+      value: "phi_cap(z) = q1_bar - z * (q1_bar - rho * q_nom), q1_bar = median over fitting-split units of the robust q1"
+      rationale: >-
+        Eq. 3 makes capacity affine in z per unit with the unit's own q1; C1 needs x0 = phi_cap(0) shared by all units, and
+        paper §3.1 already states that units at the same state share expected values in every channel. The unit's own q1 is
+        still used to compute its measured z and is resampled jointly with theta to convert a fitted trajectory into z.
+      cost: "generated units do not vary in initial capacity; the property table reports measured vs generated q1 spread"
+      source: "C1, C3 (r2)"
+      superseded_r3: "v2 stages: per-unit affine capacity mapping and per-unit offsets on the other channels (v2.per_unit_offsets)"
+    affects_fitted_parameters: true
+
+  noise:
+    value: "per channel AR(1): marginal variance and lag-1 autocorrelation (statsmodels acf) of fit residuals with detected-pattern positions masked"
+    superseded_r3: "v2 stages: non-capacity residuals are x - phi_c(z) - delta_{c,i} (v2.per_unit_offsets.noise_residual)"
+    source: "paper l.178, l.236 (variance and autocorrelation); AR(1) form UNDERSPECIFIED-IN-PAPER"
+    cross_channel: {value: "independent per channel in generation; residual cross-channel covariance recorded and compared at S5", source: "paper l.178 ('added per channel'), l.236",
+                    superseded_r3: "v2 stages: jointly drawn innovations (v2.correlated_noise)"}
+    affects_fitted_parameters: true
+
+  inserted_patterns_generation:
+    carrying_channels: {value: [capacity], source: "paper l.173 (capacity regeneration), l.243 (detected on trajectory residuals); roles fixed by C1 (r2)"}
+    shape: {value: raised_cosine, detail: "p_j = A * sin^2(pi*(j+1)/(D+1)), j=0..D-1; extremum at the centre", source: UNDERSPECIFIED-IN-PAPER, rationale: "finite support of exactly D positions so the sparse set is unambiguous; symmetric like paper Fig. 2"}
+    occurrence: {value: "Poisson over positions of the unit at the resampled per-unit rate per type; amplitude and duration resampled from detected patterns of that type", source: UNDERSPECIFIED-IN-PAPER}
+    affects_fitted_parameters: false
+
+  channel_series:
+    cleaning_rule:
+      value: "non-capacity channels: IR = 0 is missing; a single position departing > 0.05 of the unit's channel median from the centred 11-position rolling median, neither neighbour departing, is missing (capacity positions kept)"
+      frac: 0.05
+      source: "docs/DECISIONS/D17_channel_glitch_rule.md (2026-09-15, S3)"
+      max_run_v2: 3
+      value_v2: "v2 stages, every profile, before any v2 refit: a reading or a run of up to three consecutive readings departing > 0.05 of the unit's channel median from the centred 11-position rolling median, the readings on either side of the run not departing, is missing (D17 with the run length extended)"
+      v2_source: "docs/DECISIONS/D27_channel_excursion_rule.md (2026-10-07, V1; set AFTER inspecting the held-out MATR cells, in particular MATR_b1c2)"
+      affects_fitted_parameters: true
+
+  minimum_counts:
+    value: {theta_and_length_units: 5, pattern_events: 10, held_out_units: 5}
+    criterion: "a statistic is reported only where its 95% resampling half-width relative to its value is <= 0.5; below the count the cell is void; counts gate reporting, not generation"
+    held_out_units_status: "superseded by D02b (2026-09-15): per-measure minima below"
+    held_out_units_per_measure:
+      transfer_ratio: {min_units_reaching_eol: 20}
+      covariance_agreement: {min_units: 12}
+      discriminative_error: {min_units: 8, readability: "95% half-width <= 0.5 * |0.5 - value|"}
+      representation_distance: {readability: "unit bootstrap at the profile's own held-out count: 95% half-width <= 0.5 * value"}
+      source: "docs/DECISIONS/D02b_held_out_minimum_per_measure.md"
+    censored_scope: "guard-passing units not reaching EOL feed mappings, noise, covariance and patterns; theta, lengths and the transfer target use units reaching EOL"
+    source: "docs/DECISIONS/D02_censored_units_and_minimum_counts.md (2026-09-15, S3)"
+
+  audit:
+    monotonicity_tolerance:
+      value: 0.01
+      definition: "unit is monotone within tolerance iff max_t (q_t - min_{s<=t} q_s) <= 0.01 * q1 on smoothed capacity"
+      source: "paper l.255; tolerance UNDERSPECIFIED-IN-PAPER"
+      affects_fitted_parameters: false
+
+  channels:
+    source: "paper l.238 (number of channels and which enter the target are declared); l.253 (MATR reference set)"
+    candidates:
+      capacity:               {derivation: "max discharge capacity of the cycle [Ah]"}
+      charge_time:            {derivation: "duration of the positive-current segment of the cycle [min]"}
+      mean_discharge_voltage: {derivation: "time-weighted mean voltage over the negative-current segment [V]"}
+      internal_resistance:    {derivation: "per-cycle IR as recorded [ohm] (MATR only)"}
+      temperature_mean:       {derivation: "time-weighted mean cell temperature over the cycle [degC] (where recorded)"}
+    availability_rule: "a profile uses a candidate iff it is available in every unit of the dataset (S2 audit)"
+    roles:
+      # r2 (C1). Roles differ only in the channel factor kappa_c of w_{u,c} = kappa_c * pi_u and in
+      # whether the channel carries inserted patterns; the graded/sparse split is a split of phi*.
+      weighted_pattern_carrying: [capacity]                       # kappa != 0, carries patterns
+      weighted_graded:           [charge_time, mean_discharge_voltage]  # kappa != 0, no patterns
+      zero_weight_redundant:     [internal_resistance, temperature_mean] # kappa = 0, carry z where available
+      zero_weight_null:          [null_flat, null_permuted]              # kappa = 0, no z dependence (C2)
+      source: "paper l.238 (which channels enter the target is declared); C1, C2 (r2)"
+    null:
+      # r2 (C2). Present in every profile, generated only (no measured counterpart is fitted), zero target weight.
+      null_flat:
+        value: "constant mapping phi(z) = 0 plus AR(1) noise with unit marginal variance and lag-1 autocorrelation equal to the profile's fitted capacity-noise lag-1 autocorrelation"
+        reference_point: 0.0
+        rationale: "no degradation-state dependence by construction; realistic serial dependence so it is not separable by smoothness alone"
+      null_permuted:
+        value: "each position drawn i.i.d. (with replacement) from the pooled measured values of the profile's charge_time channel over fitting-split units and positions, so unit identity and order are destroyed"
+        reference_point: "median of the pooled values (TimeSHAP calc_avg_event convention for a numerical channel)"
+        rationale: "a real marginal (heavy tails, offsets) with no dependence on the generated unit's state or position"
+      measured_side: "null channels have no measured counterpart and are excluded from fidelity measurements"
+      source: "C2 (r2)"
+      affects_fitted_parameters: false
+    affects_fitted_parameters: true
+
+  target:
+    window_length_L: {value: 24, source: "paper l.187; value UNDERSPECIFIED-IN-PAPER", rationale: "TimeGAN/Diffusion-TS evaluation convention; fits the shortest units"}
+    position_profiles:
+      default: recency
+      recency: {value: "pi_u proportional to 2^(-(t-u)/h), h = L/4 = 6, normalised to sum 1", source: "paper l.205 ('decay rate declared per profile'); value UNDERSPECIFIED-IN-PAPER", rationale: "same h in every profile for comparability (paper l.203 argument)"}
+      uniform: {value: "pi_u = 1/L", source: "paper l.205"}
+      final_position: {value: "pi_u = 1 at u = t, else 0", source: "paper l.205", superseded_r3: "not run in v2 (D25)"}
+    # r2 (C1): supersedes r1 `weights_a_b: OPEN`.
+    decomposable_target:
+      value: "y = sum_{(u,c) in W} w_{u,c} (m_{u,c} - x0_c) + sum_{(u,c) in W} w_{u,c} sum_k p_{k,u,c}  (noise-free observation minus x0, weighted)"
+      ground_truth: "phi*_{u,c} = w_{u,c} (m_{u,c} - x0_c)  [graded field]  +  w_{u,c} sum_k p_{k,u,c}  [sparse field]"
+      source: "paper Eq. 4-5 as amended by C1"
+    weights:
+      value: "w_{u,c} = kappa_c * pi_u; pi_u from target.position_profiles (sums to 1 over the window); kappa_c = beta_c / (phi_c(1) - phi_c(0)) on weighted channels, 0 otherwise"
+      beta:
+        value: {capacity: 0.3333333333333333, charge_time: 0.3333333333333333, mean_discharge_voltage: 0.3333333333333333}
+        rationale: >-
+          kappa_c is declared in units of the degradation state: a channel's full change between the
+          pristine level and EOL contributes the share beta_c. Equal shares give every weighted channel
+          the same stake; for capacity (affine phi) the graded contribution is exactly beta * pi_u * z_u,
+          so y is a weighted degradation state over the window, comparable across profiles. The rule is
+          declared; its value per profile follows from the fitted mapping (unit conversion, not a fit of y).
+        source: UNDERSPECIFIED-IN-PAPER
+      guard:
+        superseded_r3: "v2 stages compare with the post-offset AR(1) residual SD (v2.statistics.weight_guard_noise)"
+        value: "a weighted channel whose |phi_c(1) - phi_c(0)| is below its fitted noise std is demoted to zero_weight_redundant and the remaining beta renormalised to sum 1; the demotion is reported"
+        rationale: "kappa_c would otherwise amplify a channel that does not change with degradation"
+        source: UNDERSPECIFIED-IN-PAPER
+      affects_fitted_parameters: false
+    reference_point:
+      value: "x0_c = phi_c(0): the pristine (beginning-of-life) level of channel c from the profile's fitted mapping; identical for every unit and position of the profile; null channels: see channels.null"
+      rationale: "the input at which the decomposable target is zero, so a pristine unit without patterns has y = 0 (C1)"
+      source: "C1 (r2)"
+      affects_fitted_parameters: false
+    reference_model:
+      value: "g(x) = sum_{(u,c) in W} w_{u,c} (x_{u,c} - x0_c); affine, weights known; g(x) - y = sum w eps; exact at eps = 0; intercept does not affect attributions from x0"
+      source: "paper l.218 as amended by C1"
+    s4_acceptance_checks_superseded_r3: "v2 stages run these checks for recency and uniform weighting only (D25), plus declared_by_design.v2.generator_checks"
+    s4_acceptance_checks:
+      - "sum(phi*) == y per window to numerical tolerance"
+      - "g(x) - y == sum(w * eps) per window; mean over units ~ 0"
+      - "pristine unit (z = 0, no patterns): y == 0"
+      - "final-position weighting: graded and sparse fields both zero outside the last position"
+      - "graded/sparse correlation below usability.graded_sparse_correlation_bound under each of the three weightings, reported per weighting"
+    attribution_baseline: {status: OPEN, source: "paper l.218; S0 decision 4"}
+
+  usability:
+    accuracy_gate: {value: "NRMSE = RMSE / std(y_test) <= 0.30 on held-out generated units (R^2 >= 0.91)", source: "paper l.277; value UNDERSPECIFIED-IN-PAPER"}
+    graded_sparse_correlation_bound: {value: 0.30, definition: "|Pearson r| over (window, position) of channel-summed |graded| vs |sparse|", source: "paper l.277; UNDERSPECIFIED-IN-PAPER"}
+    term_ablation: {value: "retrain with one term of Eq. 4 removed from the training target; error on the full y must increase (bootstrap 95% CI > 0)", source: "paper l.277; sign convention UNDERSPECIFIED-IN-PAPER"}
+    # r2 (C2): supersedes r1 (gated on all zero-weight channels, status OPEN). Gate applies to null channels only.
+    permutation_importance_tolerance:
+      superseded_r3: "on failure in a v2 stage: stop and report (v2.stop_rules), no correction by the agent"
+      value: "on each null channel: upper bound of the 95% bootstrap CI (over test units) of the increase in NMSE when the channel is permuted across test windows <= 0.02"
+      applies_to: channels.roles.zero_weight_null
+      failure: "construction-level leakage: open an investigation; the profile is corrected before use (paper l.277)"
+      source: "paper l.277 as amended by C2; value UNDERSPECIFIED-IN-PAPER"
+    redundant_channels:
+      value: >-
+        reported, not gated, for each zero_weight_redundant channel: (i) predictability, R^2 on test windows of a
+        ridge regression (sklearn RidgeCV) predicting the channel's window from the remaining channels' windows;
+        (ii) conditional permutation importance, increase in NMSE when the channel is replaced by its ridge
+        prediction plus residuals permuted across test windows (model-X style conditional resampling), 95% CI over units.
+      reading: "~0 under benign redundancy; positive only when the channel carries information the other channels do not"
+      source: "C2 (r2); estimator UNDERSPECIFIED-IN-PAPER"
+    identifiability_floor:
+      value: >-
+        ensemble of LSTMs: model_init seeds [0,1,2,3,4] x configurations {A: hidden 64 x 2 layers, B: hidden 128 x 1 layer},
+        all trained on the same generated training units and all required to pass the accuracy gate; each attribution method is
+        run on every member at the primary baseline and scored; reported per method and weighting as the spread (min, median,
+        max, IQR) of member scores beside the method scores
+      trained_at: S6
+      reported_at: S8
+      source: "C2 (r2)"
+    variance_ratio_band: {value: [0.05, 0.50], definition: "Var(pattern term) / Var(mean term) over windows", source: "Table 3 row 1; UNDERSPECIFIED-IN-PAPER"}
+
+  scoring:
+    v2_additions: "channel allocation error and temporal profile error (X5) are declared at declared_by_design.v2.scoring"
+    # D01 (2026-09-15, S4, before any attribution method ran)
+    rank_agreement: {value: "Spearman rho (scipy.stats.spearmanr) over the L x C cells of the window between the method's map on the pattern-free counterpart window and the graded field w(m - x0)"}
+    retrieval: {value: "average precision (sklearn.metrics.average_precision_score) of |map(x) - map(x without patterns)| ranking the sparse-set cells (w p != 0)", secondary: "plain AP of |map(x)| (reported for comparability)"}
+    zero_weight_mass: {value: "share of sum |map| on channels with zero target weight (null and redundant channels)"}
+    aggregation: "per window, then mean over windows within a unit, then mean over units; bootstrap over units"
+    paired_runs: "the two maps of a window share the attribution sampling seed"
+    source: "docs/DECISIONS/D01_sparse_retrieval.md"
+
+  responsiveness:
+    operators:
+      added_noise: {grid: [0, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0], unit: "multiple of the std of the window's phi* cells"}
+      shift_to_start: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of each channel's mass moved to the first position"}
+      shift_to_end: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of each channel's mass moved to the last position"}
+      smoothing: {grid: [0, 0.5, 1, 2, 4, 8], unit: "Gaussian sigma in positions (scipy.ndimage.gaussian_filter1d)"}
+      permuted_fraction: {grid: [0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0], unit: "fraction of cells whose values are permuted among themselves"}
+      source: "paper l.281; grids UNDERSPECIFIED-IN-PAPER"
+    reliability_criterion: {value: "paired bootstrap over units: upper bound of 95% CI of mean(score_degraded - score_undegraded) < 0, at this and every larger magnitude on the grid", source: "Table 4 caption; UNDERSPECIFIED-IN-PAPER"}
+    operating_range:
+      normalised_score: "(s - s_chance) / (s_max - s_chance), s_chance from a randomly permuted map, s_max from the undegraded ground truth"
+      saturation: ">= 0.95"
+      near_chance: "<= 0.05 or 95% CI includes s_chance"
+      source: "paper l.283; thresholds UNDERSPECIFIED-IN-PAPER"
+      # D20 (2026-09-16): the probe was OPEN in r2; the paper does not say on which model the score is computed.
+      probes:
+        value: "both the reference model (exact attribution w(x - x0); the declared primary scoring target) and Integrated Gradients on the primary trained model; a setting value is inside the operating range only where the score is responsive on both and the trained model passes usability.accuracy_gate"
+        rationale: "on the trained probe alone every examined value is responsive, so the range excludes nothing, including two values whose trained scores are void under the accuracy gate"
+        source: "D20 (docs/DECISIONS/D20_operating_range_probe.md)"
+    generator_settings_superseded_r3: "the generator-setting sweep below is not run in v2 (D25)"
+    operating_range_superseded_r3: "the operating range (and its D20 probes) is not reported in v2 (D25)"
+    generator_settings:
+      noise_variance_multiplier: [0.25, 0.5, 1, 2, 4, 8, 16]
+      transition_sharpness_multiplier: [0.25, 0.5, 1, 2, 4]
+      window_length_L: [8, 16, 24, 48, 96]
+      pattern_amplitude_multiplier: [0.25, 0.5, 1, 2, 4, 8]
+      source: "paper l.283; grids UNDERSPECIFIED-IN-PAPER"
+
+  statistics:
+    seeds: {generation: [0, 1, 2], model_init: [0, 1, 2, 3, 4], attribution_sampling: [0, 1, 2], source: "paper l.291 (separate seeds); counts UNDERSPECIFIED-IN-PAPER"}
+    bootstrap: {v2_note: "v1 S6-S8 intervals used 2 000 resamples (DEVIATIONS T4); every v2 interval uses 10 000 (v2.statistics)", n_resamples: 10000, method: BCa, confidence: 0.95, resample_over: units, package: scipy.stats.bootstrap, source: "paper l.266, l.296; values UNDERSPECIFIED-IN-PAPER"}
+    splits:
+      measured: {fitting: 0.7, held_out: 0.3, level: unit, source: "paper l.234, l.247; fractions UNDERSPECIFIED-IN-PAPER", affects_fitted_parameters: true,
+               eligible: "units audited at S2 that pass the denominator guard (z is defined)",
+               stratify_by: "reaches EOL (declared 2026-09-15 before S3 ran: keeps censored units in proportion in both splits)",
+               seed_source: "split", rounding: "fitting count = round(0.7 * n) per stratum, at least 1 per non-empty stratum"}
+      model_validation_from_training_units: 0.2
+      generated: {train: 0.7, validation: 0.15, test: 0.15, level: unit}
+    generated_units: {tstr: "same number of units as the measured fitting split", attribution_and_usability: 300}
+
+  fidelity:
+    window_length: "same L as the target"
+    discriminator: {value: "2-layer GRU, hidden 16, 2000 iterations, batch 128, Adam 1e-3, unit-level 80/20 split, classes balanced; report 1 - accuracy and |accuracy - 0.5|", source: "paper l.262 (Yoon 2019); UNDERSPECIFIED-IN-PAPER"}
+    representation_distance: {superseded_r3: "not run in v2 (D25)", value: "Frechet distance between TS2Vec (official code, output_dims 320) embeddings; encoder trained on measured fitting-split windows; measured-fitting vs measured-held-out baseline reported", source: "paper l.262 (Jeha 2022); encoder UNDERSPECIFIED-IN-PAPER"}
+    covariance_agreement: {value: "relative Frobenius distance and mean |delta rho| between cross-channel correlation matrices of windows, with measured-vs-measured baseline", source: "paper l.262; UNDERSPECIFIED-IN-PAPER"}
+    tstr: {error: RMSE_cycles, ratio: "RMSE(profile-trained) / RMSE(measured-fitting-trained) on held-out measured units", interval: "bootstrap over held-out units", inputs: "channels plus elapsed position t", source: "paper l.266; UNDERSPECIFIED-IN-PAPER"}
+
+  attribution:
+    methods:
+      timeshap: {nsamples: 32000, pruning: off, granularity: "cell level with top_x_events=L, top_x_feats=C", l1_reg: auto, source: "timeshap 1.0.4 (no local default for nsamples; 32000 is the global/paper value)",
+                 v2_scale: "full declared scale, no D23 reductions (v2.timeshap_full_scale)"}
+      integrated_gradients: {n_steps: 50, method: gausslegendre, internal_batch_size: null, cudnn: "disabled inside attribution (eval-mode RNN backward)", source: "captum 0.9.0 defaults"}
+      feature_occlusion: {implementation: "captum FeatureAblation, one cell at a time", source: "benchmark code bases occlude single cells (FIT, Dynamask, tint)"}
+      # r2 (C4): supersedes r1 `baseline: {status: OPEN}`.
+      baseline:
+        primary:
+          value: "the pristine window: x0_c = phi_c(0) at every position (target.reference_point; null channels per channels.null)"
+          applied_as: {integrated_gradients: baselines, feature_occlusion: baselines, timeshap: "background instance of shape (1, C) tiled over L (TimeSHAP's single-event background form)"}
+          rationale: "the input at which the target is zero, so efficiency-satisfying attributions sum to g(x) - g(x0) = y (+ noise term); unlike a zero input it lies near the first windows of every unit, so the trained model is not queried far outside its training support"
+        secondary:
+          value: "TimeSHAP only, from the conventional average event: timeshap.utils.calc_avg_event (per-channel median) over the model's normalised training windows"
+          scored_against: "phi*(xbar)_{u,c} = w_{u,c} (m_{u,c} + sum_k p_{k,u,c} - xbar_c)"
+          purpose: "baseline-sensitivity readout: do the method rankings move? reported, not an evaluation of backgrounds"
+        ground_truth_per_baseline: "phi*(b)_{u,c} = w_{u,c} (m_{u,c} + sum_k p_{k,u,c} - b_{u,c}); shipped with the benchmark for the primary and secondary baselines"
+        not_adopted: "a background conditioned on the local mean component: it would make trend-conditional backgrounds correct by construction and any later evaluation of them circular"
+        occlusion_note: "feature occlusion has no efficiency property; its maps are scored in rank and retrieval, not in sum"
+        source: "C4 (r2)"
+    windows_scored_per_profile: 120
+    primary_scoring_target:
+      value: reference_model
+      rationale: "its function is known, so phi* is its faithful attribution and its column measures the method; the trained column also reflects which of the observationally equivalent functions the model learned (C2)"
+      source: "C2 (r2)"
+    excluded: "methods optimising a mask per instance (paper l.289)"
+
+  models:
+    lstm_config: configs/models/lstm.yaml
+    reference_config: configs/models/reference.yaml
+
+  # =============================================================================================
+  # r3 (2026-10-07, brief "DegradX v2"): declared on branch v2 before any v2 stage ran. Values the brief states are
+  # declared as stated; values it leaves open carry a rationale. r2 keys changed for v2 are listed in
+  # meta.supersession_log (date 2026-10-07); keys whose v2 use differs carry a `superseded_r3` (or v2_note) at or beside
+  # the key (beside where v1 code iterates over the key's children). Decision records D25 onward.
+  # v1 (tag v1-results) is reproduced by the v1 scripts with r2; v2 scripts live under scripts/v2/.
+  v2:
+    paths:
+      value: {artifacts: artifacts/v2, results: results/v2, data: data/v2}
+      rule: "v2 stages write only under these roots; v1 artifacts, results and data are read-only inputs"
+
+    # ---- X8 / D25: scope reductions (dropped from every v2 stage)
+    scope:
+      dropped:
+        final_position_weighting: "D25: tie-dominated (methods 0.14-0.18 vs ceiling 0.84-0.87); recency is primary, uniform a sensitivity"
+        generator_setting_sweep: "D25: S7 part two; responsive at almost every value, retrieval had no operating range"
+        representation_distance: "D25: void for MATR, unreadable at the available n"
+        nasa_pcoe: "D25: dropped from every v2 stage; v1 artifacts stay untouched and may be cited"
+        cross_fitting: "D25: dropped (D19 harness)"
+      weightings: {primary: recency, sensitivity: uniform}
+      profiles: [MATR, HUST, third_profile]
+      source: "brief v2 X8; docs/DECISIONS/D25_v2_scope_reductions.md"
+
+    # ---- statistics and small implementation choices for every v2 stage
+    statistics:
+      bootstrap_n_resamples: 10000   # every v2 interval (BCa, units resampled); v1 used 2 000 in S6-S8 (DEVIATIONS T4)
+      weightings_from: "v2.scope.weightings (recency, uniform); no v2 artifact contains final_position (checked)"
+      noise_fallback: "a unit whose own AR(1) estimate is missing or NaN takes the profile's pooled estimate (r2 generator rule)"
+      weight_guard_noise: "the r2 weight guard and E5 compare |phi_c(1) - phi_c(0)| with the SD of the post-offset AR(1) residual (v2 noise)"
+      x4_permutation_stream: "one residual permutation per (profile, weighting, channel, member) from seed stream evaluation/X4/<profile>/<weighting>/<channel>/<member>"
+      timeshap_projection_scope: "the 36 h threshold applies to the projected wall time of all remaining v2 TimeSHAP explanations together (all profiles)"
+      v1_maps_weightings: [recency, uniform]
+
+    # ---- brief §6: stop-and-report cases (they supersede, for v2 stages, the r2 actions on failure)
+    stop_rules:
+      cases:
+      - "no third-dataset candidate meets the eligibility criteria (third_profile.eligibility)"
+      - "TimeSHAP's projected wall time exceeds 36 h (timeshap_full_scale.feasibility.projection)"
+      - "a methodological change is needed that the brief does not list"
+      - "after X2/X3, the accuracy gate (usability.accuracy_gate) fails for a primary model, or the null-channel leakage tolerance (usability.permutation_importance_tolerance) fails, on any profile and weighting: the agent neither corrects the profile nor voids the scores, it stops and reports"
+      - "X2's offset contribution exceeds half of Var(y) (per_unit_offsets.stop_rule)"
+      - "disk or memory limits block ingestion"
+      supersedes: "usability.permutation_importance_tolerance.failure ('the profile is corrected before use') and the r2 gate-failure void for v2 stages"
+      action: "write the state, the options and a recommendation, then wait"
+
+    # ---- X1 / D26: TSTR isolation ablation on the v1 profiles (no generator change)
+    tstr_isolation:
+      input_sets:
+        full: "all measured channels + elapsed position (S5 as run in v1)"
+        capacity_only: "capacity + elapsed position"
+        capacity_relative: "capacity / q1_i + elapsed position; q1_i = the unit's own early-life reference (max of the SG(11,2)-smoothed capacity over its first k = 20 positions, the S3 estimator) computed on the measured or generated series alike (the brief's input set (ii))"
+        capacity_state: "reported variant: (q1_i - q_t) / (q1_i - rho q_nom) on raw capacity + elapsed position; maps every unit to 0 at q1 and 1 at the threshold, whereas capacity / q1 moves the initial spread to EOL (rho q_nom / q1_i at z = 1)"
+        full_D27: "sensitivity, not a reading: the full input set with the measured fitting and held-out series cleaned with D27 (max_run_v2); generated side unchanged; contrasts sensitivity_D27_per_cell_structure (full_D27 vs capacity_only) and sensitivity_full_vs_full_D27"
+        full_centred: "reported variant: all channels + elapsed position, each non-capacity channel centred per unit by its own median over positions 1..k (no look-ahead: every window ends at t >= 24 > k); removes constant per-cell offsets and nothing else"
+      windows: >-
+        all windows of length L = 24 of held-out measured units reaching EOL, as in S5. Every window ends at t >= L = 24 >= k = 20,
+        so the brief's "windows ending at or after position k" removes none; the smoothed value at position 20 uses raw
+        positions up to 25, so the first window of a unit (t = 24) can see one position ahead through q1. Not corrected: it
+        touches one window per unit out of 486-2 250 (MATR/HUST held-out T) and at most one smoothed position of q1.
+      replicates: "v1 seeds: generation [0, 1, 2] (v1 generated units, data/generated) x model_init [0..4]; TRTR model_init [0..4]; the same held-out units (S3 split)"
+      ratio: "RMSE_TSTR / RMSE_TRTR from per-unit squared-error sums averaged over replicates (S5 estimator)"
+      tests:
+        per_cell_structure: "supported iff the 95% BCa interval (10 000 paired bootstrap resamples over held-out units) of log(ratio_full) - log(ratio_capacity_only) lies above 0"
+        initial_capacity_spread: "contributes iff the 95% BCa interval of log(ratio_capacity_only) - log(ratio_capacity_relative) lies above 0"
+        rationale: "the brief's 'falls further' is read with the same paired interval test as the main reading, so both readings carry the same error control"
+        offsets_specifically: "per-cell offsets (the X2 fix) are supported iff the 95% BCa interval of log(ratio_full) - log(ratio_full_centred) lies above 0; its point estimate is reported as a fraction of log(ratio_full) - log(ratio_capacity_only) (the share of the non-capacity gap that constant offsets explain). A positive per_cell_structure reading alone shows only that the gap sits in the non-capacity channels"
+        conditional_on_models: "the paired bootstrap resamples held-out units with per-unit errors averaged over the fixed trained models, so its interval is conditional on them; robustness: every reading is recomputed leaving out each generation seed (3) and each model-initialisation seed (5, removed from TSTR and TRTR together), and a reading holds only if its interval stays on the same side of 0 in every leave-one-out"
+        control: "HUST is run identically; its readings are reported beside MATR's"
+      descriptive_extras: "full_D27 (the full input set with the measured side cleaned by D27, decided at V1 after inspecting the held-out cells), the contrasts full vs full_D27 and full_D27 vs capacity_only, and an influence row leaving out the held-out unit MATR_b1c2, are reported and not read"
+      hust_reading: "HUST (one charging protocol for all cells) is the control: if HUST's per_cell_structure interval also lies above 0, D26 does not attribute MATR's gap specifically to charging-policy offsets"
+      action: "X2 and X3 are built as the brief states whatever X1 shows; D26 interprets X1 and states whether it supports X2 as the fix, nothing is branched on it"
+      declared_before_running: true
+      output: "docs/DECISIONS/D26_tstr_isolation.md"
+      source: "brief v2 X1 / V1"
+
+    # ---- X2: per-unit channel offsets (supersedes channel_mappings.capacity and extends channel_mappings.value)
+    per_unit_offsets:
+      model:
+        non_capacity: "m_{t,c} = phi_c(z_t) + delta_{c,i}"
+        capacity: "phi_cap,i(z) = q1_i - z (q1_i - rho q_nom), with the unit's own robust early-life reference q1_i: for a measured unit its S3 q1 (Eq. 3); for a generated unit its own trajectory reference Q_ref = max of q1_j * family(theta_j, n) over the first k = 20 positions (D18), so the generated mean capacity equals the unit's generated trajectory exactly and no (q1_j - Q_ref) offset is introduced"
+        reference_point: "x0 unchanged in kind: x0_cap = q1_bar (median q1 over fitting-split units passing the guard), x0_c = phi_c(0) of the backfitted mapping; null channels as r2. A unit at z = 0 with zero offsets (delta = 0, q1_i = q1_bar), no patterns and no noise has y = 0"
+        kappa: "kappa_c = beta_c / (phi_c(1) - phi_c(0)) from the backfitted shared mapping; capacity from the profile-level affine mapping (q1_bar - rho q_nom); the r2 weight guard applies to the backfitted mapping"
+      estimation:
+        units_positions: "fitting-split units passing the guard (censored ones included, D02), positions t1..T (t1..N if censored), as the r2 mapping fit; masked readings (D12/D17, and D27 once recorded at V1) excluded"
+        backfitting: >-
+          iteration 0: delta = 0, phi_c = the r2 isotonic + PCHIP fit. Iteration k: (1) phi_c = isotonic (increasing='auto') + PCHIP on pooled
+          (z, x_c - delta_{c,i}); (2) delta_{c,i} = median over the unit's positions of (x_c - phi_c(z)); (3) centre:
+          delta_{c,i} <- delta_{c,i} - median_i delta_{c,i} (constraint median_i delta_{c,i} = 0).
+        convergence_tolerance: "max_i |delta_{c,i}^(k) - delta_{c,i}^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)| and max over the 101-point grid |phi_c^(k) - phi_c^(k-1)| <= 1e-4 |phi_c(1) - phi_c(0)|"
+        max_iterations: 200
+        tolerance_frac: 1.0e-4      # machine-readable form of convergence_tolerance
+        minimum_readings_n: 10      # machine-readable form of minimum_readings
+        non_convergence: "reported per channel with the last change; the last iterate is used"
+        minimum_readings: "a unit with fewer than 10 finite readings of channel c in its fit range gets delta_{c,i} = 0 (counted); 10 is the minimum the r2 AR(1) estimator (ar1_from_residuals) already requires of a unit"
+        rationale: "tolerance in units of the channel's own fitted range, so one rule serves minutes and volts; 200 iterations bound a backfit that would otherwise cycle"
+      generation: "a generated unit resamples one fitting unit j reaching EOL and takes (theta_j, q1_j, noise parameters of j, delta_{.,j}, pattern rate of j) jointly (extends r2 theta_distribution)"
+      noise_residual: "non-capacity: x_c - phi_c(z) - delta_{c,i}; capacity: raw capacity - q1_i * family(theta_i) (unchanged)"
+      reported:
+        - "per channel, before (r2 residual) and after the offsets: (i) the per-unit-centred AR(1) variance and lag-1 (the r2 estimator; within-unit, which constant offsets cannot change), (ii) the globally centred pooled residual variance, (iii) the between-unit variance of the per-unit residual means, (iv) the pooled residual correlation (E4). S3 anomaly 4 is answered by (iii) against (i): offsets absorb between-unit level differences; a slow component that stays in (i) is within-unit"
+        - "offset sampling noise: Var(delta_hat) contains the unit's realised AR(1) mean, about mean_i sigma_i^2 k_i with k_i = (1 + phi_i) / ((1 - phi_i) T_i); reported with the noise-corrected Var_true(delta) = Var(delta_hat) - mean_i sigma_i^2 k_i. No shrinkage is applied (the brief defines delta as the unit median), so generated between-unit level variance can exceed the measured one by about that term; it is reported"
+        - "offset contribution y_offset = sum_{u,c} w_{u,c} (m_{u,c} - phi_c(z_u)) (capacity: (q1_i - q1_bar)(1 - z_u)); its share Var(y_offset) / Var(y) and its ratio to the state term Var(y_offset) / Var(y_state), y_state = sum w (phi_c(z) - x0_c), per weighting over all windows of the generated units of each generation seed"
+      stop_rule: "Var(y_offset) / Var(y) > 0.5 for any profile, generation seed or weighting -> stop and report (brief §6)"
+      source: "brief v2 X2 / V3"
+
+    # ---- X3: cross-channel correlated noise (supersedes noise.cross_channel)
+    correlated_noise:
+      target_correlation: >-
+        r_ij = the within-unit residual correlation after the X2 offsets, as the variance-weighted mean of per-unit correlations
+        rho_bar_ij = sum_k sum_t e_ik,t e_jk,t / sum_k T_k s_ik s_jk (per-unit-centred masked residuals of the measured channels over
+        fitting-split positions; |rho_bar| <= 1). Rationale: the pooled correlation (E4) equals rho_bar_ij * A_ij with
+        A_ij = sum_k T_k s_ik s_jk / sqrt(sum_k T_k s_ik^2 sum_k T_k s_jk^2) <= 1 when unit variances differ, so giving every
+        generated unit the pooled value would attenuate the pooled generated correlation twice; with rho_bar the pooled
+        generated correlation equals the pooled fitted one in expectation. The pooled E4 is still estimated and reported
+      ar1: "each channel keeps the unit's own AR(1) lag-1 coefficient and marginal variance in the dynamics (r2, resampled by unit index)"
+      innovations: >-
+        drawn jointly across the measured channels of a unit (lag-1 coefficients clipped to [-0.999, 0.999] before any of the
+        following, as the r2 AR(1) sampler does), eta_t ~ N(0, S), S_ij = r_eps,ij sd_eta,i sd_eta,j,
+        sd_eta,c = sqrt(var_c (1 - phi_c^2)) with the unit's own variance and phi; ONE innovation correlation per profile,
+        r_eps,ij = r_ij (1 - phi_i phi_j) / sqrt((1 - phi_i^2)(1 - phi_j^2)) with the channel's pooled (profile-level, E5)
+        lag-1 coefficient phi_c ("each channel's AR(1) coefficient"), so that a unit with the pooled coefficients has
+        stationary residual correlation exactly r_ij; the first position is drawn from the stationary covariance implied
+        by S (elementwise S_ij / (1 - phi_i phi_j)); one child stream per unit ('noise_joint')
+      repair: "if the profile's innovation correlation matrix is not positive definite (minimum eigenvalue < 1e-6): nearest correlation matrix by Higham (2002) alternating projections, minimum eigenvalue floored at 1e-6, unit diagonal restored; reported: the largest entry change and the induced change of the stationary correlation |delta r_eps,ij| * B_ij at the pooled phi"
+      feasibility_bound: "the stationary correlation of AR(1) channels cannot exceed B_ij = sqrt((1 - phi_i^2)(1 - phi_j^2)) / (1 - phi_i phi_j) <= 1 (equality iff phi_i = phi_j). Per-unit matrices (each unit's own phi) would exceed it, and need a repair, in many units (v1 MATR per-unit phi differ widely); one profile-level matrix at the pooled phi is positive definite for v1 MATR (min eigenvalue 0.018). A unit whose phi differs from the pooled values has stationary correlation r_eps,ij * B_ij(own phi) instead of r_ij: the generator reproduces r_ij on average, not unit by unit (reported as the distribution over units of the implied stationary correlation)"
+      repair_rationale: "1e-6 keeps the Cholesky factor finite in float64 while changing no entry by more than ~1e-6 beyond the projection itself"
+      null_channels: "independent of all other channels (r2 generation unchanged)"
+      checks:
+        construction: "the within-unit estimator (rho_bar, target_correlation) applied to the generated noise eps of all units, averaged over the three generation seeds, within 0.05 (absolute, every off-diagonal pair) of the fitted rho_bar; per-seed values and the pooled (E4-style) comparison reported"
+        failure: "if the check fails at the pooled-phi construction (the implied correlations averaged over units differ from rho_bar by more than 0.05) it is reported with that cause and is not a stop case (V5's covariance agreement reports the consequence); a failure the implied correlations do not explain is an implementation error and is fixed before V5"
+        estimator: "the S3 estimator (X2 backfit + E4) applied to generated observations, compared with the fitted r_ij; reported with the same 0.05 reading"
+        tolerance_rationale: "with autocorrelation up to 0.99 the effective number of independent positions in 300 units is ~2 000-3 000, so the sampling SE of a correlation is ~0.02 per seed and ~0.012 on the mean of three seeds; 0.05 is ~4 SE on the mean, which keeps the family of up to 10 pairs at a low false-failure rate"
+      source: "brief v2 X3 / V3"
+
+    # ---- generator checks at V3/V4 (in addition to target.s4_acceptance_checks)
+    generator_checks:
+      - "all r2 S4 checks: sum(phi*) = y; g(x) - y = sum w eps; reference model exact at eps = 0"
+      - "y = 0 for a unit at z = 0 with zero offsets, no patterns and no noise"
+      - "generated residual correlation within 0.05 of the fitted one (correlated_noise.checks)"
+      - "generated q1 shows the measured spread: generated q1 (S3 estimator on generated capacity) IQR and 5-95% range reported beside those of the fitting-split units reaching EOL (the population generation resamples); read as matching if the generated IQR lies within 20% of the measured IQR (rationale: generated q1 is the resampled trajectory reference plus AR(1) capacity noise of SD <= 2 mAh on IQRs of tens of mAh, so a construction-correct generator lands within a few %; 20% leaves room for resampling 54-95 units). A failure is reported in the V5 property table, not a stop case"
+
+    # ---- X4: channel-usage gate in RQ2
+    channel_usage_gate:
+      estimator: "v1 ridge conditional resampling (usability.redundant_channels (ii)): channel c := RidgeCV prediction from the other channels' windows (20 000 training windows) + residuals permuted across test windows; increase in NMSE on y"
+      interval: "95% BCa over test units, 10 000 resamples (statistics.bootstrap)"
+      rule: "a weighted channel is 'used' iff the lower bound of the interval is > 0 (as the brief states; primary)"
+      materiality_reading: "reported beside the primary rule, not a gate: 'used materially' iff the lower bound is > 0.02, the declared null-channel leakage tolerance, so that 'used materially' and 'not leaking' are complementary readings of the same statistic (with ~10^4 test windows any channel a model reads at all has a lower bound above 0)"
+      model: "evaluated on every ensemble member; the gate is read on the primary model (configuration A, model seed 0) of each profile and weighting (each weighting has its own trained models, so 'for that profile' is read per weighting); members are listed with their result"
+      void: >-
+        channel-level scores only (brief: "channel-level scores on trained models for that profile are void"): where a weighted
+        channel is not used by the primary model, the trained-model channel allocation error and zero-weight mass for that
+        profile and weighting are void with the reason "weighted channel <c> not used (X4)", and the temporal profile error
+        of the unused channel is not computed (the window mean runs over the used weighted channels, marked as restricted).
+        Rank agreement is a cell-level score and stays reported, with a note naming the unused channel. The ensemble-floor
+        rows of the void scores follow the primary model's void; members' gate results are listed beside the floor.
+      source: "brief v2 X4 / V6"
+
+    # ---- X5: decomposed scores (added under scoring; rank agreement and zero-weight mass kept, retrieval only where patterns exist)
+    scoring:
+      maps: "computed on the same maps as rank agreement: the map of the pattern-free counterpart window against the graded field (D01); for a profile without patterns this is the window map against phi*"
+      channel_allocation_error:
+        value: "total-variation distance 0.5 sum_c |s_A,c - s_phi,c|, s_.,c = sum_u |M_{u,c}| / sum_{u,c} |M_{u,c}|, over all channels (zero-weight channels included, phi share 0 there)"
+        range: "[0, 1], 0 perfect"
+        undefined: "a window where either map has zero total mass is undefined and counted"
+      temporal_profile_error:
+        value: "for each weighted channel c: 1-Wasserstein distance over positions u = 0..L-1 (unit spacing) between |A_{.,c}| and |phi_{.,c}| each normalised to unit mass = sum_u |F_A,c(u) - F_phi,c(u)|; window value = sum_c m_c W1_c / sum_c m_c, m_c = sum_u |phi_{u,c}| over weighted channels"
+        unit: "positions; 0 perfect, at most L - 1"
+        undefined: "a weighted channel with zero attributed mass, or zero phi mass, in a window is excluded from that window's mean and counted; a window where every weighted channel is excluded is undefined and counted"
+      aggregation: "as r2: per window, mean over windows of a unit, mean over units; BCa over units"
+      resolution_criterion: "error scores (0 perfect): resolved at a magnitude iff the LOWER bound of the 95% paired-bootstrap CI of mean(score_degraded - score_undegraded) > 0 at this and every larger magnitude; the mean change at the resolved magnitude is reported"
+      registers_check:
+        probe: "the five r2 operators on phi* of generated test units of generation seed 0 (V4), recency and uniform weighting, as v1 part one (20 windows per unit)"
+        reading: >-
+          a score registers an operator iff (i) it is resolved (resolution criterion) and (ii) its mean change reaches 10% of the
+          score's chance-to-perfect distance |s_chance - s_perfect| at some grid magnitude and stays at or above it at every
+          larger magnitude; the smallest such magnitude is the registering magnitude. s_perfect: 1 (rank agreement), 0 (error
+          scores); s_chance: the score of a fully permuted map (all L x C cells permuted), mean over the probe windows.
+          Reported for rank agreement, channel allocation error and temporal profile error side by side.
+        rationale: "v1's resolution criterion was met by changes of 0.000-0.006 (S7 Table 4), so resolution alone cannot answer X5; 10% of the chance-to-perfect distance is the size of the largest v1 method gap on trained models (0.089 in rank agreement), i.e. the smallest change a reader comparing methods would act on"
+        per_weighting: "smoothing is read on recency weighting; under uniform weighting the graded field is nearly flat along positions and Gaussian smoothing (mode 'nearest') preserves a constant profile, so no positional score can register it there (expected, reported)"
+      v1_maps: "the same scores are recomputed on the saved v1 S8 maps (data/attributions) against the v1 ground truth regenerated from data/generated (no new attribution)"
+      source: "brief v2 X5 / V7"
+
+    # ---- X6: third dataset (replaces NASA PCoE)
+    third_profile:
+      eligibility:
+        E1: "one cell type per profile"
+        E2: "per-position capacity measures full capacity under one consistent procedure, or under a declared extraction rule (D-record)"
+        E3: "at least 67 units reach EOL at rho = 0.8 of documented nominal capacity after the denominator guard. Binding as the brief states it (with the declared rounding, round(0.3 n) >= 20 already holds at n = 66, so 67 carries a margin of one; the count, not the parenthetical, decides)"
+        E4: "every unit that reaches EOL has T >= k + L = 44 positions"
+        E5: "capacity plus at least two channels that change with degradation are available in every unit (channels.availability_rule)"
+        E6: "the licence permits releasing fitted parameters"
+        evaluated: "E3-E5 on the ingested data after D12/D17/D27 cleaning and the S2 rules; E1, E2, E6 from the primary documentation before download"
+        E4_scope: "dataset-level, read literally: any unit reaching EOL with T < 44 makes the candidate (under the chosen extraction) ineligible; units are not excluded to pass it"
+        E5_operational: >-
+          the weighted channels are the r2 roles (capacity, charge_time, mean_discharge_voltage), each derived from the cycles that
+          define the position axis under the declared extraction; E5 holds iff charge_time and mean_discharge_voltage are available
+          in every unit (channels.availability_rule) and each 'changes with degradation' by the r2 weight guard on the fitting
+          split: |phi_c(1) - phi_c(0)| >= the channel's fitted noise SD (isotonic + PCHIP mapping and AR(1) noise, the S3
+          estimators); a candidate failing E5 is not eligible (the roles are not re-assigned to other channels)
+      candidates_in_order:
+        - {name: ISU-ILCC, source: "figshare DOI 10.25380/iastate.22582234, CC BY 4.0; Li et al. arXiv:2307.08382", first_risk: "partial-DoD aging cycles are not full-capacity measurements: D-record between (a) full-DoD subset, (b) RPT capacity as the position axis, (c) another declared extraction; RPT cycles are never positions of an aging-cycle series (they are rest events); under (b) every position is an RPT and the mechanism diagnostic is void"}
+        - {name: Tongji, source: "Zhu et al. Nat. Commun. 13:2261 (2022); Zenodo 10.5281/zenodo.6379165", note: "one cell type meeting eligibility; uniform rests, purpose 1 only",
+           documentation_finding: "ineligible on documentation, recorded before any download (D28): the largest single cell type (NCA, Samsung INR18650-35E) has 66 cells, so E3 (>= 67 reaching EOL) cannot hold; NCM has 55, NCM+NCA 9"}
+      candidate_rules:
+        # D28 (2026-10-07, V2, documentation only, BEFORE any measurement download)
+        chosen: "ISU-ILCC, option (c-iii): aging-cycle positions, measured aging discharge capacity calibrated multiplicatively to the C/5 RPT capacity"
+        source: "figshare 10.25380/iastate.22582234 v2 (CC BY 4.0); README_V2.0.pdf; scope list feature_extraction/valid_cells_paper.csv (github tingkai-li/early-prediction-varying-usage-data @ 7702efd, sha256 0447237d9f510e3ad1c0d45fc4bb5da40c85ac5acc1f96fc7393848eabf5085b)"
+        scope:
+          rule: "cells on the authors' valid_cells_paper.csv whose README v2 Table A1 mean DoD >= 50% (loosest threshold with nominal amplification 1/mean DoD <= 2); fixed from documentation, never moved by measured DoD"
+          groups: [3, 5, 8, 9, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 35, 36, 37, 38, 39, 41, 45, 46, 48, 51, 52, 53, 55, 56, 60, 61, 62, 63, 64]
+          n_cells: 145
+          cells: [G3C1, G3C2, G3C3, G3C4, G5C1, G5C2, G5C3, G5C4, G8C1, G8C2, G8C3, G8C4, G9C1, G9C2, G9C4, G14C1, G16C1, G16C2, G16C3, G16C4, G17C1, G17C2, G17C3, G17C4, G19C1, G19C2, G19C3, G19C4, G20C1, G20C2, G20C3, G20C4, G21C1, G21C2, G21C3, G21C4, G22C1, G22C2, G22C3, G22C4, G23C1, G23C2, G23C3, G23C4, G24C1, G24C2, G24C3, G24C4, G25C1, G25C2, G25C3, G25C4, G27C1, G27C2, G27C3, G27C4, G28C1, G28C2, G28C3, G28C4, G29C1, G29C2, G29C3, G29C4, G35C1, G35C2, G35C3, G35C4, G36C2, G36C3, G36C4, G37C2, G37C3, G37C4, G38C1, G38C2, G38C3, G38C4, G39C1, G39C2, G39C3, G39C4, G41C1, G41C2, G41C3, G41C4, G52C1, G52C2, G52C3, G52C4, G53C1, G53C2, G53C3, G53C4, G55C1, G55C2, G55C3, G55C4, G56C1, G56C2, G56C3, G56C4, G30C1, G30C2, G30C3, G30C4, G31C1, G31C2, G31C3, G31C4, G45C1, G45C2, G45C3, G45C4, G46C1, G46C2, G46C3, G46C4, G48C1, G48C2, G48C3, G48C4, G51C1, G51C2, G51C3, G51C4, G60C1, G60C2, G60C3, G60C4, G61C2, G61C3, G61C4, G62C1, G62C2, G62C3, G62C4, G63C1, G63C2, G63C3, G63C4, G64C1, G64C2, G64C3, G64C4]
+          side_table: "the 10 released in-range cells outside the list (G9C3, G11C1-C4, G14C2-C4, G36C1, G37C1) are converted and reported outside the profile"
+        strata:
+          S_full: {rule: "Table A1 mean DoD >= 95.8%", groups: [5, 9, 16, 20, 21, 22, 23, 24, 35, 36, 37, 38, 39], n_cells: 49}
+          S_partial: {rule: "50% <= Table A1 mean DoD < 95.8%", n_cells: 96}
+        fields: {cycling: [capacity_discharge, capacity_charge, QV_discharge, QV_charge, time_series_charge, time_series_discharge, start_stop_time], rpt: [capacity_discharge_C_5, start_stop_time], encoding: "double-encoded JSON (json.loads(json.load(f)))"}
+        cycle_predicates:
+          degenerate: "fewer than 10 samples; capacity_discharge non-finite, <= 0 or an empty list; or a missing charge or discharge start time"
+          incomplete: "last discharge voltage more than 0.02 V above the unit's median last-discharge voltage, or last charge current above 2 x C/20 = 0.025 A"
+          non_aging: "overlaps an RPT start-stop interval, or median discharge current departs by more than 10% from the group's discharge C-rate x 0.25 A"
+          handling: "masked (degenerate, incomplete) or excluded from positions (non-aging), counted; no halt"
+        order: "1 masks on raw aging capacity; 2 anchors from unmasked cycles; 3 f; 4 calibrated = raw x f; 5 D12 on the calibrated series, D17/D27 on the channels; D12 counts per stratum"
+        anchors:
+          rpt: "for every RPT w with finite C/5 and >= 5 unmasked aging cycles before its start: f_w = C5_w / median raw capacity of the last 5 such cycles, knot at the last of them"
+          week0: "f_0 = week-0 C/5 / median raw capacity of the first 5 unmasked aging cycles, knot at the last of those"
+          interpolation: "PCHIP over knots, constant beyond the first and last knot"
+          minimum: "a unit with fewer than 2 anchors is reported with its C/5 EOL status and cycle count, and counts against E4 if it reached EOL with T < 44"
+          causality: "non-causal (uses the next RPT, at most one RPT interval ahead), like the centred SG and rolling-median rules"
+        channels:
+          charge_time_min: "charge step duration from time_series_charge start/stop; missing by protocol at every RPT-following rest event (charge starts from the RPT's discharged state), counted separately"
+          mean_discharge_voltage_V: "time-weighted mean voltage over the discharge samples (trapezoid over sample times)"
+        rest_events:
+          sources: ["first unmasked aging cycle of each Cycling start_stop_time block after the first", "first cycle after a pause: gap from a cycle's discharge stop to the next charge start exceeding the unit's median gap by more than 30 min"]
+          cross_check: "RPT stop times (mismatches counted)"
+          position_1: "not a rest event"
+          known_losses: "G20-G29 week-4 RPT losses placed from block starts; G25C1 week-23/24 hole: recorded cycles only, no imputation, first cycle after the hole a rest event, cell flagged"
+        x6_ii_controls:
+          recovery_index: "per RPT: ln(median raw Q of the first 5 cycles after / median of the last 5 before); regressed on 1/mean DoD and discharge C-rate"
+          overshoot: "median calibrated capacity over r..r+4 minus that RPT's C/5"
+          placebo_window: "mechanism diagnostic also on -11 <= s - r <= -1; post-minus-pre contrast reported"
+          operator_null: "per fitting unit: SG(11,2)-smoothed raw aging capacity + AR(1) noise at the unit's raw-residual variance and phi (seed stream generation/D28-null/<cell>); identical extraction with the measured f_w at the same knots, cleaning and D05 detection; positive-run rate vs the D05 AR(1) reference and the null mechanism ratio; if the operator alone reaches noise_factor x the reference, X6(ii) is void with that reason"
+          additive_sensitivity: "Q_age(n) + g(n), g PCHIP through (C5_w - anchor median): capacity noise variance and phi, pattern rate and amplitude rows, D05 outcome; a different D05 outcome is reported as extraction-dependent"
+          amplitudes: "pattern amplitudes reported calibrated and in raw aging units, with per-unit f (min, p05, median, p95, max)"
+        cross_checks: ["(q1 - week-0 C/5)/q_nom per unit and the count above 0.01, with and without the week-0 anchor", "EOL agreement: T within the RPT interval where C/5 first drops below 0.200 Ah or the preceding one (count outside reported)"]
+        q_nom: "0.25 Ah (configs/profiles/isu_ilcc.yaml)"
+        after_ingestion: "E3, E4, E5 re-checked under these rules; any failure -> stop and report (brief §6)"
+        e2_reading: "a declared extraction may construct per-position values whose level is tied, at anchor positions, to full-capacity measurements of one procedure; under the strict reading only (b) passes E2 and fails E4 -> brief §6; flagged for the authors"
+      none_eligible: "stop and report (brief §6); XJTU (55 cells) is not a candidate"
+      ingestion: "from the primary release only; SHA-256 of every raw file recorded; converter validated against the raw arrays; one cell at a time; BatteryLife (arXiv:2502.18807) only as a cross-check"
+      audit: "S2-style: EOL attainment, monotonicity, channel availability, detection sweep, D05 enable rule; minimum counts D02/D02b unchanged"
+      rest_events: "positions that follow an interruption of the aging-cycle sequence (an RPT block or a recorded pause); the first aging cycle after the interruption is the rest-event position r. The candidate-specific definition is declared from its documentation before download (third_profile.candidate_rules, added with the eligibility decision)"
+      mechanism_diagnostic:
+        value: "fraction of detected positive runs (declared k, m, max duration, on the residual of the profile's selected family, fitting-split units passing the guard, as the D05 enable rule) whose start s satisfies 0 <= s - r <= W - 1 = 10 for some rest event r, against the fraction of fit-range positions satisfying the same condition (expected at random positions); ratio with a 95% unit-bootstrap interval; repeated on all guard-passing units as a sensitivity"
+        role: "reported, not a gate"
+      source: "brief v2 X6 / V2"
+
+    # ---- X7: TimeSHAP at the full declared scale (supersedes the D23 reductions)
+    timeshap_full_scale:
+      method: "attribution.methods.timeshap unchanged: nsamples 32 000, l1_reg 'auto' (D22), cell level, pruning off; background = pristine window event (C4)"
+      design_per_profile:
+        primary_trained: {windows: 120, seeds: [0, 1, 2], weightings: [recency, uniform]}
+        reference_model: {windows: 120, seeds: [0, 1, 2], weightings: [recency, uniform]}
+        average_event_background_trained: {windows: 120, seeds: [0, 1, 2], weightings: [recency]}
+        ensemble_floor_all_10_members: {windows: 120, seeds: [0], weightings: [recency]}
+        paired_maps: "a profile with inserted patterns doubles the first three rows (window and pattern-free counterpart); the ensemble floor runs on the pattern-free counterpart window only (the map rank agreement and the X5 scores are computed on), keeping 120 x 1 per member"
+      feasibility:
+        profile: "cProfile of one window: coalition sampling, model evaluation, LassoLarsIC, solve"
+        parallelism: "process pool over windows; each window keeps its declared seed; throughput measured for 1, 2, 4, 6, 8 workers (more if the machine allows), GPU vs CPU model evaluation inside workers, model-callable batch sizes; the fastest configuration is used; TimeSHAP runs only when no training job shares the GPU"
+        equivalence: "before the full run, sequential and parallel results on 20 windows agree to <= 1e-10 maximum absolute difference (recorded)"
+        checkpoint: "every window to disk; resumable; throughput logged"
+        projection: "wall time projected from measured throughput and recorded before launch; > 36 h -> stop and report (brief §6); windows, seeds and nsamples are never reduced by the agent"
+      reference_model_column: "a correctness check: for the linear reference model IG, occlusion and exact Shapley all equal w(x - x0); stated, not presented as a finding"
+      source: "brief v2 X7 / V8"
+
+    # ---- declared readings of the brief's questions (answered at V5-V8 by these rules, not after seeing the results)
+    readings:
+      X2_i_closes_matr_gap: "MATR's gap is closed iff MATR's v2 TSTR ratio (point estimate) lies within HUST's v2 95% interval (the brief's V5 criterion); the v1 and v2 ratios with intervals are reported side by side"
+      X2_ii_non_redundant: "the weighted non-capacity channels are non-redundant for the trained model iff both pass the X4 rule (lower bound > 0) on the primary model under recency weighting; the materiality reading (> 0.02) is reported beside it"
+      X3_covariance: "the covariance gap is closed iff the v2 relative Frobenius distance (generated vs held-out, mean over generation seeds) lies at or below the upper end of the 95% unit-bootstrap interval of the measured fitting-vs-held-out baseline"
+      X3_discriminator: "the discriminator gap narrows iff the v2 discriminative error (mean over generation seeds) exceeds v1's by more than v1's seed half-range"
+      X3_isolation: "the v2 profiles carry X2 and X3 together; one extra set per profile (generation seed 0) from the v2 profile with independent per-channel noise (X3 off) is measured for covariance agreement and the discriminator, so X3's own share is reported"
+      X6_i_construction_holds: "the construction holds on the third profile iff every V3 and V4 check passes, the transfer ratio is readable (D02b: >= 20 held-out units reaching EOL) and the accuracy gate and null-channel leakage test pass at V6"
+      X6_ii_regeneration_at_scale: "regeneration is present at scale iff the D05 enable rule enables the positive type on the third profile's fitting split at the declared k, m and maximum duration; the mechanism diagnostic is reported beside it"
+      X6_ii_superseded_D28: "for ISU-ILCC: present at scale iff D05 enables the positive type on the pooled fitting split AND on the S_full fitting split AND the operator-null check stays below the enable level; otherwise 'not shown' and the type is reported as post-RPT recovery of partial-window discharge capacity, not separable from voltage-cutoff kinetics (third_profile.candidate_rules)"
+      X7_values_hold: "TimeSHAP's values hold without the D23 reductions iff, on each v2 profile and weighting, the mean over the 40 windows that D23's seeded selection rule picks lies inside the full 120-window 95% interval; seed spread over the three seeds reported"
+      X7_floor: "TimeSHAP's identifiability floor is read as in v1 S8 for IG and occlusion: if the ten-member range exceeds the largest gap between the three methods on the primary trained model, no ordering of the methods on a trained model is supported, TimeSHAP included"
+
+    # ---- X9: observation-level target pilot (HUST, recency) — declared and committed before V9 runs
+    observation_target:
+      status: "declared 2026-10-07, before V9 ran (exploratory pilot; nothing from V9 enters the paper tables)"
+      question: "does defining y on the observed window restore position-level identifiability?"
+      profile_weighting: {profile: HUST, weighting: recency, units: "V4 generation seed 0, the declared generated train/validation/test split"}
+      target: "y_obs = sum_{(u,c) in W} w_{u,c} (x_{u,c} - x0_c) on the observed window (noise, offsets and any patterns included); the reference model g is then the data-generating function and phi*_obs = w (x - x0)"
+      ensemble: "ten LSTM members as V6 (configurations A 64x2, B 128x1; model seeds 0-4), trained on y_obs; member A/seed 0 primary"
+      accuracy:
+        usual: "NRMSE = RMSE / SD(y_obs) on test windows, against the declared gate 0.30"
+        noise_scale: "RMSE relative to SD(sum w eps) on the test windows"
+        reading: "the model reads the cell-level values (not only the state) iff RMSE(y_obs) <= 0.5 SD(sum w eps)"
+        rationale: "y_obs - y = sum w eps exactly; a model that recovers only the state-level function (as on the standard y) has RMSE ~ SD(sum w eps) on y_obs; RMSE at half that scale means three quarters of the noise contribution's variance is recovered from the observed cells"
+      attribution: "IG and feature occlusion (declared configurations, pristine baseline) on the 120 V8 windows of HUST, on every member; TimeSHAP optional (only if time remains)"
+      scores: "rank agreement, channel allocation error and temporal profile error of each map against phi*_obs (the full observation-level ground truth; HUST has no patterns)"
+      channel_usage_gate: "X4 as declared (v2.channel_usage_gate), on every member against y_obs"
+      comparison:
+        value: "per score: ensemble range (max - min over the ten members, per method) against the largest gap between methods on the primary model"
+        reading: "position-level identifiability is restored for a score iff the ensemble range of every method falls below the largest method gap; reported beside the V6/V8 ensemble range on the standard y for the same windows"
+      outputs: "one D-record and one figure; nothing in the paper tables"
+
+    # ---- V5: fidelity v2
+    fidelity:
+      measures: "TSTR ratio (with the X1 ablation repeated on the v2 profiles), discriminator, covariance agreement, property table with fitting-split and held-out measured columns, v1-vs-v2 comparison per profile (representation distance dropped, D25)"
+      anchor_rule: "if MATR's v2 TSTR ratio does not lie within HUST's v2 95% interval, the generator is not iterated; a D-record states which profile is the fidelity anchor"
+      table2: "every property row shows the fitting-split measured value next to the held-out measured value and the generated value"
+      source: "brief v2 V5"

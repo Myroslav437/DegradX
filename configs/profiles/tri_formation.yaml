@@ -1,0 +1,59 @@
+# TRI/Stanford formation profile (v2.1 third profile; declarations r4 declared_by_design.v2_1, decision D32): dataset-level
+# facts declared from the dataset's own primary documentation (C3) before any measurement file was downloaded. Values here
+# are declared, never fitted. Sources were read on 2026-10-11 (artifacts/v2.1/w0_declarations/documentation_research.md).
+dataset: TRI_FORMATION
+display_name: "TRI formation (Cui et al. 2024)"
+nominal_capacity_Ah:
+  value: 0.24
+  source: >-
+    Cui et al., Joule 8(11):3072-3087 (2024), Experimental Procedures, "Pouch cell preparation" (p.3082): "The cells are
+    nominally 240 mAh (in this paper, 1C is defined as 0.24 A) when cycled between 3 and 4.4 V"; SI Figure S2 caption:
+    "As a reference, 1C current is defined as 0.24 A for this dataset." The words rated / design capacity are not used.
+    BEEP's structuring_parameters.nominal_capacity is NOT the source (it is a structuring argument whose only effect is the
+    charge_duration threshold; it is read per file at W1 and reported).
+c_rate_definition: {value: "1C = 0.24 A", source: "Cui et al. 2024 p.3082; SI Fig. S2"}
+cell:
+  chemistry: "single-crystal LiNi0.5Mn0.3Co0.2O2 (SC-NMC532) / artificial graphite (AG)"
+  format: pouch
+  manufacturer: "dry, sealed pouch cells from Li-FUN Technology, filled by the authors (Gotion 1 M LiPF6 in EC/EMC/DMC 1:1:1 v/v + 2 wt% VC)"
+  source: "Cui et al. 2024 p.3073 (Introduction), p.3082 (Pouch cell preparation), Table 1"
+aging_protocol:
+  charge: "CC 1C (0.24 A) to 4.4 V, CV at 4.4 V to C/20 (0.012 A)"
+  discharge: "CC 3C/4 (0.18 A) to 3.0 V, no voltage hold"
+  window_V: [3.0, 4.4]
+  ambient_C: 30
+  chamber: "temperature-controlled Amerex chamber; cycler Maccor series 4000H"
+  identical_for_all_cells: "stated (Cui Highlights, Conclusions; Rhyu et al. arXiv:2410.07458 Sec. 2.1); regular_* columns identical in every row of the authors' parameter sheet"
+  diagnostics: >-
+    Table S4 sequence: HPPC & RPT; 5 regular cycles; HPPC; 15 regular cycles; HPPC & RPT; loop of 100 regular cycles; back to
+    HPPC. HPPC = C/5 CCCV charge, 30 s +-C/2 pulses after 60 min rests at 20 % SOC steps (6 SOCs), final discharge to 3 V held
+    to C/20. RPT = charge, C/20 discharge to 3 V, charge, C/5 discharge to 3 V (Table S4 gives 1C CCCV charges; Fig. 7 suggests
+    C/5 charges: the RPT charge rate is read from the files). Expected cycle_index layout (inferred, verified per file at W1):
+    HPPC 0, 8, 24, 127 + 103k; RPT C/20 1, 25, 128 + 103k; RPT C/5 2, 26, 129 + 103k.
+  source: "Cui et al. 2024 Experimental Procedures 'Cycling aging protocols' (p.3083), p.3074, SI Table S4, Fig. 7"
+stopping_convention:
+  value: >-
+    cycle life = when the 3C/4 aging-cycle discharge capacity reaches 80 % of its initial value (paper wording; 'initial' is not
+    defined). The authors' code (github.com/cx26/formation-analysis @ 2bc2313, get_cycle_life) uses 80 % of the cell's maximum
+    regular-cycle discharge capacity and returns the last cycle_index at or above it, in BEEP cycle_index units (diagnostic
+    cycles counted). Cycling continued past EOL in at least the inspected cell.
+  source: "Cui et al. 2024 p.3074 and Fig. 2 caption; Rhyu et al. arXiv:2410.07458 Sec. 2.1; cx26/formation-analysis src/nova_feature_helper_functions_commented.py L233-240"
+cells:
+  designed: "186 = 62 formation protocols x 3 replicates (150 batch 1, 36 batch 2); Cui et al. 2024 p.3073, SI S1.1"
+  parameter_sheet_rows: "183 (seq 100-230 and 269-326 minus 111, 132, 133, 153, 164, 218), including the baseline protocol seq 324-326"
+  failed_cells: "cells with failures such as shorting or broken tabs are not in the shared dataset (Cui SI S1.1); which ones is not stated"
+  reached_eol_reported_by_rhyu: "178 of 186 (Rhyu et al. arXiv:2410.07458 Sec. 2.1; their code: non-NaN regu_life minus seq 206, dropped for a formation-file load error)"
+formation_mapping:
+  file: "data/Formation_2022-Parameter.csv"
+  repository: "https://github.com/cx26/formation-analysis"
+  commit: 2bc23139f1da21a8472328cbbddb6ea195ec771f
+  sha256: 3a9696ec055ce231a61bdfb0f5bbbc9f54a564d46c09396de29cf162f4d2dd8e
+  key: seq_num
+  parameters: {formation_temperature_C: [25, 35, 40, 45, 55], CC1_A: [0.0048, 0.66], Vtransition_V: [3.6, 4.1], CC2_A: [0.0048, 0.72], n_verification: [0, 1, 2, 3, 5], ocv_time_h: [0, 72, 168]}
+  source: "Cui SI S1.1 ('The sequence number and all tested formation conditions are uploaded to the GitHub repository'); README of the repository"
+  licence_note: "the repository carries no licence file: the sheet is fetched at W1 into data/v2.1/raw and never committed"
+licence:
+  value: "CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/)"
+  source: "https://data.matr.io/8/ page footer, read 2026-10-11"
+  consequence: "fitted parameters and generated units derived from this profile are released under CC BY-NC 4.0 with attribution to Cui et al. 2024 (repository README)"
+extraction: "declarations r4 declared_by_design.v2_1 (decision D32)"

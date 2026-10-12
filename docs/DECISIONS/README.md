@@ -52,3 +52,13 @@ before any v2 stage ran. Records from D25 on follow the same five-step protocol.
 | D29 | HUST is the v2 fidelity anchor (transfer 1.17 [0.94, 1.34], discriminator 0.49, covariance within baseline); MATR reported with its remaining gap (1.49 [1.04, 2.29]); generator not iterated; X3's own share negligible | V5 | taken |
 | D30 | the property table reads generated series with D13's record-end clause, as measured records are (the generator stores each unit up to its EOL; without the clause 222 / 177 of 300 generated units were kept) | V5 | taken (post-data; paper round 7) |
 | D31 | X9 pilot (HUST, recency): on an observation-level target y_obs the channel allocation becomes identifiable (ensemble range 0.006 / 0.013 < method gap 0.015) but the positions do not (rank and temporal ranges above the gap); ranges narrow 1.6–15× against y; the benchmark keeps y | V9 | taken (exploratory; nothing in the paper tables) |
+
+## v2.1 (brief "DegradX v2.1", 2026-10-11; branch `v2.1`, v2 frozen at tag `v2-results`)
+
+Declarations r4 (`configs/declarations.yaml` → `declared_by_design.v2_1`, supersession log dated 2026-10-11) were committed
+before any byte of the third dataset's archives was downloaded. The authors' decisions of 2026-10-11 closed ISU-ILCC under
+option A, named the TRI/Stanford formation dataset as the third profile, and corrected E3 to 66.
+
+| id | decision | stage | status |
+|---|---|---|---|
+| D32 | third profile from the TRI/Stanford formation dataset: nominal 0.24 Ah from Cui et al.; cells the authors document (parameter sheet, baseline included, notes as tags); regular aging cycles as positions; CC-CV charge time from the per-cycle charge samples, validated by reproducing BEEP's `charge_duration`; charge time masked after diagnostics; offset pre-screen on fitted mean components (V4's estimator) | W0 | taken (pre-data, before download) |

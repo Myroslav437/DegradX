@@ -9,7 +9,7 @@
 # Research reports behind the rationales: docs/S0_RESEARCH/*.md
 
 meta:
-  revision: r3
+  revision: r4
   paper_commit: 6221c50
   status: >-
     r1 was frozen at S0 before any data-consuming code ran (tag declarations-frozen). r2 resolves
@@ -19,6 +19,14 @@ meta:
     any v2 stage ran; it was written after the v1 results (S0-S9) were known, which every r3 rationale states. The
     declarations as they stood at tag v1-results (r2 as amended through D20) are kept verbatim in
     configs/declarations_history/declarations_at_v1-results.yaml; the frozen r2 itself is at tag declarations-frozen-r2.
+    r4 (2026-10-11, brief "DegradX v2.1", branch v2.1, after tag v2-results) adds declared_by_design.v2_1: the third profile
+    from the TRI/Stanford formation dataset, the E3 correction, the closure of ISU-ILCC under option A, the v2.1 stop rules
+    (superseding v2.stop_rules for v2.1 stages) and the one MATR/HUST computation of v2.1 (v2_1.tstr_without_x3). It was
+    committed before any byte of that dataset's archives was downloaded by the agent, and tagged declarations-frozen-r4 at
+    that commit. It was written after the v1 and v2 results were known; the brief itself reports measurements of one cell,
+    and the documentation exposed outcome-adjacent values (v2_1.exposure lists what was seen). The declarations as they
+    stood at v2-results are kept verbatim in configs/declarations_history/declarations_at_v2-results.yaml; r3 itself is at
+    tag declarations-frozen-r3.
   # Supersession record (brief v2 §1: a frozen declaration is superseded with a dated record, never
   # rewritten silently). r1 is kept verbatim in configs/declarations_history/declarations_r1.yaml.
   supersession_log:
@@ -83,6 +91,34 @@ meta:
        r3: "candidate rules not yet declared; X6(ii) read on the pooled D05 outcome; Tongji note 'one cell type meeting eligibility'",
        new: "ISU-ILCC (c-iii) with the declared extraction, scope (authors' validated cells, mean DoD >= 50%, 145 cells), strata, controls and the stratified X6(ii) reading; Tongji note superseded by its documentation_finding (entered at v0 commit 9c25b6c from the documentation sweep, no data seen)",
        reason: "options (a), (b) and Tongji fail E3/E4 on documentation; (c-iii) meets E1-E4 with noise and pattern estimation on measured residuals; reviewed by three lenses and a judge before commit"}
+    - {date: 2026-10-11, comment: "r4 (authors' decision 3, E3 correction)", keys: [declared_by_design.v2.third_profile.eligibility.E3, "declared_by_design.v2.third_profile.candidates_in_order[Tongji].documentation_finding"],
+       r3: "at least 67 units reach EOL ('67 carries a margin of one; the count, not the parenthetical, decides')",
+       r4: "at least 66 units reach EOL (declared_by_design.v2_1.eligibility.E3); Tongji's r3 documentation finding (66 NCA cells < 67) no longer excludes it at E3 = 66 (whether 66 reach EOL after the guard is unknown); Tongji stays closed by the authors' decision of 2026-10-11 (ineligible on other grounds, not stated in the brief); listed in the Notes box with the E3 correction",
+       reason: "off-by-one: the binding requirement is D02b's 20 held-out units reaching EOL, and round(0.7 x 66) = 46 fitting units leave 20; Tongji is not re-opened (authors: ineligible on other grounds)"}
+    - {date: 2026-10-11, comment: "r4 (authors' decisions 1-2; D32, pre-data, before any download)", keys: [declared_by_design.v2.third_profile.candidates_in_order, declared_by_design.v2.third_profile.candidate_rules, declared_by_design.v2.third_profile.eligibility.E2, declared_by_design.v2.third_profile.eligibility.evaluated, declared_by_design.v2.scope.profiles, declared_by_design.v2.stop_rules],
+       r3: "third profile ISU-ILCC under D28 (E2 read with a declared-extraction branch), stopped at V4 by the offset-share rule; v2 stop rules",
+       r4: "ISU-ILCC closed under option A (V2-V4 artifacts unchanged, not re-opened); third profile TRI_FORMATION under declared_by_design.v2_1 with E2 read strictly; v2.1 stop rules (v2_1.stop_rules); E2 is evaluated on documentation and on the files (v2_1.eligibility.E2_files)",
+       reason: "authors' decisions of 2026-10-11 (brief v2.1 §0); the new dataset has one cell type and one aging protocol, and its aging cycles are full-window discharges, so neither of ISU-ILCC's blockers (protocol-driven offsets, a constructed capacity channel) should arise"}
+    - {date: 2026-10-11, comment: "r4 (implementation of a v2 declaration; DEVIATIONS T7)", keys: [declared_by_design.v2.third_profile.mechanism_diagnostic],
+       r3_as_run: "ISU-ILCC audit (scripts/v2/v2_audit_isu.py unit_runs, operator-null) placed run starts one position late, so the declared window 0..10 was evaluated as -1..9 and the placebo -11..-1 as -12..-2",
+       r4: "v2.1 stages place a run start at detect()'s start + fit_start - 1, as fit_profile and audit_unit do (declared_by_design.v2_1.mechanism_diagnostic.start_index); ISU-ILCC values are not recomputed (closed)",
+       reason: "found by the v2.1 code review before any v2.1 data were read"}
+    - {date: 2026-10-11, comment: "r4 (D32, pre-data): rest events for v2.1", keys: [declared_by_design.v2.third_profile.rest_events],
+       r3: "the first aging cycle after the interruption is the rest-event position r; candidate-specific definition declared before download",
+       r4: "declared_by_design.v2_1.rest_events: diagnostic and non_aging interruptions, paused cycles (the paused cycle itself is r), gaps on a rolling reference, later-file starts; one source per event; DST artefacts are not rest events",
+       reason: "the candidate-specific definition for TRI_FORMATION; a pause recorded inside a cycle precedes at least part of that cycle's discharge"}
+    - {date: 2026-10-11, comment: "r4 (D32, pre-data): ingestion", keys: [declared_by_design.v2.third_profile.ingestion],
+       r3: "from the primary release only; SHA-256 of every raw file; converter validated against the raw arrays; one cell at a time",
+       r4: "declared_by_design.v2_1.archive (current archive primary; the 2024 archive per cell under the brief's two conditions) and converter_checks (summary equality; charge-time validation against BEEP's charge_duration)",
+       reason: "brief v2.1 W0.4 Version choice and W1 converter checks; the dataset ships BEEP-structured files"}
+    - {date: 2026-10-11, comment: "r4: TimeSHAP projection for v2.1", keys: [declared_by_design.v2.timeshap_full_scale.feasibility.projection, declared_by_design.v2.statistics.timeshap_projection_scope],
+       r3: "projected wall time of all remaining v2 explanations > 36 h -> stop and report",
+       r4: "v2.1: the projection covers the new profile's W8 explanations (2 880; 4 680 with paired maps); > 36 h is a third-profile-only stop (v2_1.stop_rules)",
+       reason: "v2_1.stop_rules supersedes v2.stop_rules; brief v2.1 §5 classifies cases by scope"}
+    - {date: 2026-10-11, comment: "r4 (D32, pre-data): E5", keys: [declared_by_design.v2.third_profile.eligibility.E5, declared_by_design.v2.third_profile.eligibility.E5_operational],
+       r3: "capacity plus at least two channels that change with degradation in every unit; a failure is not repaired by re-assigning roles",
+       r4: "declared_by_design.v2_1.eligibility.E5: charge_time and mean_discharge_voltage named; a failure is repaired neither by re-assigning roles nor by substituting another charge-time or mean-discharge-voltage definition after W1",
+       reason: "the alternatives are computed as cross-checks; substituting one after a failed guard would rescue a stop case post hoc"}
 
 # ---------------------------------------------------------------------------------------------
 # Paper §3.3 l.238: "Estimated from the measured dataset are ..."  (values produced by S3; never set here)
@@ -836,3 +872,362 @@ declared_by_design:
       anchor_rule: "if MATR's v2 TSTR ratio does not lie within HUST's v2 95% interval, the generator is not iterated; a D-record states which profile is the fidelity anchor"
       table2: "every property row shows the fitting-split measured value next to the held-out measured value and the generated value"
       source: "brief v2 V5"
+
+  # =============================================================================================
+  # r4 (2026-10-11, brief "DegradX v2.1", branch v2.1, after tag v2-results): declared on branch v2.1 BEFORE any byte of the
+  # TRI/Stanford formation dataset's archives was downloaded (only HTTP HEAD metadata and documentation were read). Written
+  # after the v1 and v2 results were known and after the documentation research exposed some outcome-adjacent values
+  # (v2_1.exposure). Keys of r2/r3 changed for v2.1 are listed in meta.supersession_log (date 2026-10-11). Decision D32.
+  v2_1:
+    paths:
+      value: {artifacts: artifacts/v2.1, results: results/v2.1, data: data/v2.1}
+      stages: {W0: w0_declarations, W1: w1_ingest, W2: w2_audit, W3: w3_fit_profiles, W4: w4_generate_units, W5: w5_fidelity,
+               W6: w6_usability, W7: w7_scores, W8: w8_reference_methods, W9: w9_diagrams, W10: w10_write_paper}
+      rule: "v2.1 stages write only under these roots; v1 and v2 artifacts, results and data are read-only inputs"
+
+    # ---- the authors' decisions of 2026-10-11 (brief v2.1 §0), recorded as given
+    authors_decisions:
+      isu_ilcc: "closed under option A of artifacts/v2/STOP_REPORT_third_profile_offsets.md: the X6 outcome is reported as drafted, its V2-V4 artifacts stay as they are, it is not re-opened"
+      third_profile: "the TRI/Stanford formation dataset: Cui et al., Joule 8(11):3072-3087 (2024); data https://data.matr.io/8/; licence CC BY-NC 4.0"
+      e3_correction: "r3's E3 (67) contained an off-by-one error: the binding requirement is >= 20 held-out units reaching EOL, and under the declared rounding round(0.7 x 66) = 46 fitting units leave 20 held out, so 66 units reaching EOL satisfy it. This does not re-open Tongji, which remains ineligible on other grounds"
+
+    # ---- scope of v2.1 (brief v2.1 §2)
+    scope:
+      dataset_key: "TRI_FORMATION: the seed key of the measured split ('split', key), the D05 noise ('generation', 'D05', key) and every generation stream; fixed here and never renamed. Profile config configs/profiles/tri_formation.yaml"
+      profiles: {final_from_v2: [MATR, HUST], new: TRI_FORMATION}
+      unchanged: >-
+        every value and rule of declared_by_design (r2 as amended) and declared_by_design.v2 (r3) that this block does not
+        supersede applies unchanged to the new profile: rho 0.8 of the documented nominal, k = 20, L = 24, beta = 1/3 per weighted
+        channel, h = 6; detection k 2.5 / m 2, noise factor 2, the accuracy gate 0.30 (NRMSE), null tolerance 0.02; Savitzky-Golay
+        11 / 2; split 0.7 / 0.3 stratified by EOL attainment; seeds; TimeSHAP nsamples 32 000 and l1_reg 'auto' with the pristine
+        background; X2 / X3 / X4 / X5 as implemented at v2; D12 / D13 / D15 / D16 / D17 / D27; the X2 offset-share stop at 0.5;
+        recency primary and uniform as the sensitivity
+      not_run: ["any MATR or HUST stage, except tstr_without_x3 (below)", "V9 / X9 for the new profile", "pattern-amplitude inflation (D21: patterns, if enabled, are generated at their fitted amplitudes)"]
+      fidelity_anchor: "HUST remains the fidelity anchor (D29); the new profile's readings are reported beside it and the anchor is not re-decided by the agent; its basis is the TSTR ratio, covariance agreement and the property table, not the discriminator, whose cells are void (brief v2.1 W10)"
+      source: "brief v2.1 §0, §2"
+
+    # ---- eligibility (supersedes declared_by_design.v2.third_profile.eligibility for v2.1 stages)
+    eligibility:
+      E1: "one cell type per profile"
+      E2: "read strictly: a direct full-capacity measurement under one procedure at every position (no constructed or calibrated channel)"
+      E3: "at least 66 units reach EOL at rho = 0.8 of the documented nominal capacity after the denominator guard (corrected from r3's 67, authors' decision 3)"
+      E3_rationale: "the binding requirement is D02b's transfer minimum of 20 held-out units reaching EOL; the stratified split assigns round(0.7 n) of the units reaching EOL to fitting, so n = 66 leaves 66 - 46 = 20 held out"
+      E4: "every unit that reaches EOL has T >= k + L = 44 positions (dataset-level, read literally as in r3)"
+      E5: "capacity plus charge_time and mean_discharge_voltage available in every unit (channels.availability_rule) and each passing the weight guard on the fitting split: |phi_c(1) - phi_c(0)| >= the SD of the channel's post-offset AR(1) residual (v2.statistics.weight_guard_noise); a failure is not repaired by re-assigning roles; nor by redefining a channel: no other charge-time (CC-only, CV_time, charge_duration) or mean-discharge-voltage (sample-integrated) definition is substituted after W1; the cross-checks are reported only"
+      E6: "the licence permits releasing fitted parameters"
+      E2_files: "E2 fails on the files (stop, third profile only) iff a modal tuple element departs from its documented value (0.24 A, 4.4 V, 0.18 A, 3.0 V) beyond aging_protocol.tolerance, or incomplete cycles (cycle_predicates.incomplete) exceed 5 % of the regular cycles of the in-scope cells (pooled). Otherwise incomplete cycles are masked and E2 holds on the remaining positions; counts per cell and per clause are reported"
+      evaluated: "E1, E2 and E6 from documentation now (documentation_verdicts); E2 also on the files at W1 (E2_files); E3-E5 at W2 on the ingested data after D12/D17/D27 cleaning and the S2 rules"
+      documentation_verdicts:
+        E1: "pass: every cell is a single-crystal NMC532 / artificial-graphite pouch cell of one build (Li-FUN dry cells, author-filled; Cui et al. 2024 p.3073, p.3082, Table 1); only cells with a documented identity enter the scope (cell_scope)"
+        E2: "pass on documentation: every regular aging cycle is a CC-CV charge to 4.4 V terminated at C/20 followed by a 3C/4 CC discharge to 3.0 V (the full 3.0-4.4 V window of the cell's nominal capacity), and summary.discharge_capacity is the total charge discharged in that cycle; checked per cycle at W1 (cycle_predicates.incomplete, aging_protocol)"
+        E6: "pass with a condition: CC BY-NC 4.0 permits sharing adapted material (fitted parameters, generated units) for non-commercial purposes with attribution; the derived parameters carry the NC term (README licence note; flagged for the authors)"
+
+    # ---- data source and version (brief v2.1 W0.4 'Version choice')
+    archive:
+      primary: {url: "https://data.matr.io/8/data_03032025.tgz", version: "current, uploaded 2025-03-03", head_2026_10_11: {bytes: 15639357254, last_modified: "2025-03-03 20:46:43 GMT", etag: "48419d76adfbe2df715b4358b5bce7bc-911"}}
+      original: {url: "https://data.matr.io/8/data.tar.gz", version: "original, uploaded 2024-07-31", head_2026_10_11: {bytes: 3254154716, last_modified: "2024-08-01 04:54:09 GMT", etag: "6aaf31ec4771f7a6c1a0018b23e356d7-388"}}
+      rule: >-
+        the current archive is primary. Both archives are downloaded into their own empty directories under data/v2.1/raw; for
+        each, the byte size, SHA-256 and full member list (name, size, type) are recorded and committed to git before any
+        member is opened (configs/raw_checksums_v2_1.sha256, artifacts/v2.1/w1_ingest/tables/archive_members_<version>.csv).
+        The original archive is used for a cell only if (a) the current archive is corrupt (gzip or tar integrity fails, or
+        that cell's member fails to decompress or parse), or (b) the original holds an aging file for a seq number the current
+        archive lacks; each use is listed per cell. No other comparison between the two versions is made (what changed between
+        them is documented nowhere); a cell taken from the 2024 archive is flagged in every cell table
+      integrity: "each downloaded object must match the recorded HEAD values (bytes, Last-Modified, ETag; the S3 version id is recorded from the GET response); a byte-size mismatch is re-downloaded once. Any remaining mismatch means the object is not the declared version: no member is opened, and it is a stop case (third profile only) for an authors' decision. A matching object that fails gzip or tar integrity is corrupt, and archive.rule (a) applies"
+      extraction: 'extract every member whose base name matches ^Nova_Regular_.*\.json(\.gz)?$ or that sits under a directory
+        named maccor (any case), wherever it sits in the tree, and list the members matched by only one of the two criteria.
+        Never extract a member whose base name starts with Nova_Formation. Text metadata members that could carry the
+        formation-protocol mapping are also extracted: README*, *.md, *.txt, and *.csv / *.xlsx / *.json whose base name does
+        not start with Nova_. Sizes are read from the member list before extraction (archive.memory)'
+      layout: "recorded from the member list, not assumed (the brief's data/maccor and data/novonix layout is unconfirmed for the current archive)"
+      raw_records: "the presence of a non-empty raw_data table is recorded per file; raw_data is the source only under channels.charge_time.source"
+      beep_markers: "per file, before analysis: top-level keys and row counts; structuring_parameters (nominal_capacity, full_fast_charge, v_range, resolution, charge_axis, discharge_axis, diagnostic config); the BEEP-writer markers (diagnostic_available vs a top-level 'diagnostic' key; step_index in cycles_interpolated; NaN vs clamped upper tails of interpolated charge test_time)"
+      memory: "one cell per process (spawn, maxtasksperchild = 1), at most 3 processes; disk and memory checked before download and extraction"
+
+    # ---- cell -> formation-protocol mapping (used for the pre-screen share and the profile description only)
+    formation_mapping:
+      source: "data/Formation_2022-Parameter.csv of github.com/cx26/formation-analysis @ 2bc23139f1da21a8472328cbbddb6ea195ec771f (sha256 3a9696ec055ce231a61bdfb0f5bbbc9f54a564d46c09396de29cf162f4d2dd8e), keyed by seq_num (Cui et al. SI S1.1)"
+      storage: "fetched at W1 into data/v2.1/raw/formation_mapping/ (never committed: the repository has no licence file); the checksum is verified; a mapping file found inside the archive is compared and the differences reported, the pinned sheet stays authoritative. Any copy whose SHA-256 equals the declared one (e.g. the copy fetched during the W0 documentation reads) is the pinned sheet. If no copy with that SHA-256 can be obtained at W1, stop and report (third profile only) before conversion; the scope is never formed from another source."
+      protocol_id: "the group of identical (formation_temperature, formation_charge_current_1, formation_cutoff_voltage_1, formation_charge_current_2, formation_verification_repeat, ocv_time) tuples among seq 100-323 (62 groups expected); seq 324-326 form the group 'baseline' (Cui SI Fig. S5), a 63rd group"
+      batch: "batch_1 = seq < 288; batch_2 = 288-323 (n_verification = 1 and tOCV = 0 fixed, 12 h rest after the first-charge CV hold; SI S1.1, Fig. S4); baseline = 324-326"
+      check: "protocol_id equals the authors' consecutive-triplet grouping (cx26 load_data.py, grouper(seq, 3)); mismatches reported"
+      lab_notes: "the free-text notes in the sheet copy of github.com/JinwookRhyu/Systematic_Feature_Design_Framework_Formation @ 9530854b (tsfresh_feature_extraction/Formation_2022_Parameter.csv, sha256 8d824556b10a92c414e8fd15d7cd351ae731e96810d1fd2ae6c7aac936788cbe) are attached to the cells as tags (e.g. 'shorted' 274, 276, 278; 'bulged' 140; formation stopped 155) and reported; a note never excludes a cell"
+      use: "the formation-protocol share of the W2 offset pre-screen and the description of the profile; never a model input and never a generator covariate"
+
+    # ---- which cells enter the profile (brief v2.1 W0.4 'Cell scope')
+    cell_scope:
+      rule: 'a cell is in scope iff (i) an archive (archive.rule) holds a parseable aging file whose base name matches
+        ^Nova_Regular_(\d{3})(\.\d+)?\.json(\.gz)?$, its seq being the three captured digits; (ii) that seq has a row in the
+        pinned parameter sheet; (iii) the file carries at least 10 finite charge and 10 finite discharge samples of the profile-wide source
+        (channels.charge_time.source; the count of cycle_predicates.degenerate) for at least 50 % of its regular summary rows; and (iv) its regular cycles follow the
+        modal aging protocol within the declared tolerance (aging_protocol)'
+      flag: "(ii) narrows the brief's literal scope (every cell with an aging file whose regular cycles follow the modal protocol) to the cells the authors document, because E1 cannot be verified for a file of undocumented identity; listed in the paper's Notes box as an open author decision on the cell universe, with the side-table count"
+      side_table: "every file in the archive(s) used that is excluded by (i)-(ii) or by several_files_per_seq and parses as BEEP JSON is converted with the same rules and reported in a side table outside the profile (protocol tuple and tolerance verdict, q1, EOL under eol_reported.primary, T); it never enters E3, the split or any fit (D28 side_table precedent)"
+      undocumented_files: "a file extracted as an aging file (archive.extraction) whose base name does not match the pattern of (i) (e.g. Nova_Regular_Ref_100.034.json.gz, whose three digits before the first . would read 100), or whose seq has no sheet row, has no documented identity, so E1 cannot be verified for it: excluded, counted and listed by name, never merged with any seq (D32); several_files_per_seq applies only to files passing (i)-(ii)"
+      no_per_cycle_samples: "a cell failing (iii) is excluded before its protocol tuple is computed and counted as no per-cycle samples in counts_reported and in the count against 66; such exclusions are not E5 failures"
+      several_files_per_seq: >-
+        applies only to files passing (i)-(ii). If a seq has more than one aging file: when their date ranges (first to last
+        date_time_iso) are disjoint, they are joined in date order. Each later file's cycle_index is re-based by the previous
+        file's maximum (re-based) cycle_index + 1, with the original kept as cycle_index_file. Each file's diagnostic cycles
+        come from its own diagnostic_summary, and the contiguity check and the charge-time validation run per file. The first
+        aging cycle of each later file is a rest event (source file) and is masked for charge time (protocol_mask (b)); when
+        the date ranges overlap, the cell is excluded and counted. (iii) is evaluated over the joined regular summary rows.
+      baseline_cells: "seq 324-326 (baseline formation) are in scope when (i)-(iv) hold: same cell type and aging protocol; formation differences are manufacturing variation the profile is meant to carry"
+      counts_reported: "aging files; parsed; with a sheet row; in scope; excluded by reason (including no per-cycle samples); against 186 designed, 183 sheet rows (incl. baseline), 180 design rows and the 178 of Rhyu et al."
+
+    # ---- aging protocol and its tolerance (brief v2.1 W0.4 'Cell scope')
+    aging_protocol:
+      documented: {charge: "CC 0.24 A (1C) to 4.4 V, CV at 4.4 V to 0.012 A (C/20)", discharge: "CC 0.18 A (3C/4) to 3.0 V, no hold", ambient_C: 30, source: "Cui et al. 2024 p.3074, p.3083 'Cycling aging protocols', SI Table S4; configs/profiles/tri_formation.yaml"}
+      per_cycle_tuple: >-
+        for every regular cycle, from the profile-wide source (channels.charge_time.source), on the kept charge rows of
+        channels.charge_time.value and the discharge samples, tail rows excluded: I_chg = 90th percentile of the positive
+        current over the cycle's charge samples (the CC level); V_cv = 99th percentile of the charge voltage; I_dis = median of
+        |current| over the discharge samples; V_end = the minimum discharge voltage over the discharge samples, tail rows
+        excluded (on a voltage-axis grid, rows beyond the step's range: NaN under slinear, repeating the step-end values under
+        index); V_end is lower-cutoff evaluable where the discharge grid extends at least 0.05 V below 3.0 V (always on raw,
+        capacity-axis or time-axis discharge data)
+      per_cell_tuple: "the medians of the per-cycle tuple over the cell's regular cycles"
+      modal: "the modal value of each tuple element separately (I_chg and I_dis rounded to 0.01 A; V_cv and V_end rounded to 0.05 V) over the cells meeting cell_scope (i)-(iii), V_end over the cells where it is lower-cutoff evaluable; reported beside the documented values (0.24 A, 4.4 V, 0.18 A, 3.0 V). A modal element that departs from its documented value beyond aging_protocol.tolerance is an E2 failure on the files (eligibility.E2_files)"
+      tolerance: "a cell follows the modal protocol iff |I_chg / I_chg,modal - 1| <= 0.05, |I_dis / I_dis,modal - 1| <= 0.05, |V_cv - V_cv,modal| <= 0.03 V, V_end <= V_end,ref + 0.03 V wherever the source's lowest possible discharge voltage (the grid's lowest value on a voltage axis) is at or below V_end,ref, and, where lower-cutoff evaluable, V_end >= V_end,ref - 0.03 V; V_end,ref = the modal V_end, or the documented 3.0 V if no cell is lower-cutoff evaluable; the number of cells whose lower cutoff could not be checked is reported"
+      tolerance_rationale: "programmed C-rates on this rig differ from each other by >= 25 % (Table S4: C/20, C/5, C/3, C/2, 3C/4, 1C), so 5 % separates any other programmed rate while leaving room for the CV phase in the 90th percentile and for interpolation; 0.03 V is ten times the 3 mV of a capacity- or voltage-grid step and below the 0.05 V rounding of the modal tuple"
+      second_protocol: "a source is a cell meeting cell_scope (i)-(iii) that is out of tolerance or carries runs (per_cycle_departure; its runs are pooled into one tuple of per-element medians, one cell = one source). Two tuples agree iff |I_chg,a - I_chg,b| <= 0.05 I_chg,modal, |I_dis,a - I_dis,b| <= 0.05 I_dis,modal, |V_cv,a - V_cv,b| <= 0.03 V and, where both are lower-cutoff evaluable, |V_end,a - V_end,b| <= 0.03 V. If two or more sources agree, a second aging protocol is present: stop and report (brief v2.1 §5). A single source is excluded and counted. Every source's tuple is listed in the W2 D-record. Side-table files (cell_scope.side_table) are not sources: they never enter the profile, so a protocol of theirs cannot become offset variance of the profile (the ISU-ILCC failure the rule guards against); their tuples and tolerance verdicts are reported in the side table and in the W2 D-record"
+      per_cycle_departure: "a regular cycle of a cell meeting cell_scope (i)-(iii) whose per-cell tuple is within tolerance, and whose own I_chg or I_dis departs from the modal value by more than 10 % (the ISU-ILCC non-aging margin) is not an aging cycle: excluded from positions and counted (cycle_predicates.non_aging). A contiguous run of more than W = 11 non_aging regular cycles is a within-cell change of aging protocol: the cell is out of tolerance (excluded, counted), and the run's tuple (per-element medians over the run) enters the second_protocol test like an out-of-tolerance cell's tuple."
+
+    # ---- positions and cycle predicates (brief v2.1 W0.4 'Positions')
+    positions:
+      value: "the regular aging cycles of an in-scope cell in cycle_index order: summary rows whose cycle_index is not a diagnostic cycle and that are not non_aging; position = ordinal 1..N; cycle_number = BEEP cycle_index"
+      diagnostic_cycles: "every cycle_index listed in diagnostic_summary (all labels: hppc, rpt_0.05C, rpt_0.2C and any other) is a diagnostic cycle and never a position; a summary row sharing a diagnostic cycle_index is removed and counted; a labelled diagnostic cycle whose median |discharge current| (diagnostic_interpolated, by current sign) lies within 10 % of the modal aging I_dis is counted per cell (labelled_diagnostic_aging_current) and listed against the expected layout; it stays a diagnostic cycle and is never relabelled"
+      units_of_T: "T counts aging positions (regular cycles); the authors' cycle lives are BEEP cycle_index labels that include the diagnostic cycles (about 3 per 103), so both are reported where compared"
+    cycle_predicates:
+      degenerate: "summary discharge_capacity non-finite or <= 0; or fewer than 10 finite charge or discharge samples for the cycle in the source used (masked: kept as a row with degenerate = True, dropped by D12); a cycle that is degenerate only for lack of samples is counted separately as no_samples"
+      incomplete: >-
+        masked as degenerate, counted by clause: (a) the cycle's V_cv is more than 0.05 V below the modal V_cv; (b) the current
+        of the last kept charge sample with current > C/50 exceeds 2 x C/20 = 0.024 A (the charge ended before its C/20
+        cutoff; D28's ISU-ILCC predicate); (c) V_end is more than 0.05 V above V_end,ref (discharge stopped early), applied
+        wherever the source's lowest possible discharge voltage is at or below V_end,ref + 0.05 V; (c') where (c) cannot be
+        applied, summary.discharge_capacity < 0.95 x summary.charge_capacity, except at the first aging cycle after a
+        diagnostic or non_aging cycle (ratio reported only)
+      non_aging: "aging_protocol.per_cycle_departure (excluded from positions, counted)"
+      last_cycle: "BEEP may drop an incomplete final summary row; a final row that remains is judged by the predicates above"
+      handling: "counted per cell and in total; no halt, except under eligibility.E2_files (incomplete cycles above 5 % pooled)"
+
+    # ---- channels (brief v2.1 W0.4 'Capacity', 'Mean discharge voltage', 'Charge time', 'Unavailable channels')
+    channels:
+      capacity: "capacity_cycler_Ah = summary.discharge_capacity of the regular cycle (Ah): the maximum of the cycle-cumulative discharge capacity, i.e. the charge discharged in the cycle (BEEP base.py summary aggregation, maccor.py accumulation); D11's cycler-reported capacity"
+      mean_discharge_voltage: "mean_discharge_voltage_V = summary.discharge_energy / summary.discharge_capacity of the regular cycle (V): the charge-weighted mean discharge voltage, equal to the r2 time-weighted mean under the protocol's constant-current discharge. Reported cross-check (not a gate): the charge-weighted mean voltage integrated from the discharge samples where they span >= 95 % of the cycle's discharge capacity"
+      charge_time:
+        value: >-
+          charge_time_min = duration of the CC-CV charge of the regular cycle, in minutes, from the first kept charge sample
+          with current > C/50 = 0.0048 A to the charge end.
+
+          Kept charge rows on cycles_interpolated: on a charge_capacity axis (BEEP's default), the rows whose axis value does
+          not exceed the cycle's summary.charge_capacity Q_chg (this drops slinear-NaN and index-clamped tail rows alike); on
+          any other axis, the rows up to the first at which the interpolated charge_capacity reaches Q_chg - 1e-6 Ah. The charge
+          end on a capacity axis is t_last + 3600 (Q_chg - Q_last) / I_last, where (t_last, Q_last, I_last) is the last kept
+          row with current > C/50; on another axis it is the time of that row.
+
+          On raw_data, charge (discharge) samples are the cycle's rows with current > +C/50 (< -C/50), the end is the last
+          such charge row, and the sign convention is checked per file (regular-cycle discharge rows negative).
+
+          Zero-current rest rows, which post-2023 BEEP labels charge, are excluded by the threshold.
+        source: "one source for the whole profile: raw_data if every aging file passing cell_scope (i)-(ii) (after several_files_per_seq) carries a non-empty raw_data table, decided from the W1 file inventory before (iii) and (iv) are evaluated; otherwise the cycles_interpolated charge rows for every file, with raw_data, where present, used only for a reported per-file cross-check (median raw-minus-interpolated difference). The BEEP writer (NaN or clamped tails, pooled or per-step charge, charge axis) is recorded per file (archive.beep_markers)"
+        resolution: "after the trim and end extrapolation, the residual error on interpolated data is the departure of the current from I_last within the last capacity-grid step, a small fraction of that step's about 1.4 min at C/20; the median end extrapolation (min) is reported per file"
+        validation: >-
+          per file (converter check). Let S be the sorted cycle_index values of summary ∪ diagnostic_summary. BEEP assigns
+          summary.charge_duration positionally, so the value at label l belongs to raw cycle S[l] (G5.6). Comparable labels:
+          those with a finite charge_duration where S[l] is an aging cycle with samples.
+
+          thr = structuring_parameters.nominal_capacity x full_fast_charge of the file (BEEP's default 0.8 if full_fast_charge
+          is absent; both recorded).
+
+          For each comparable label: d_l = t(first kept charge sample of S[l] with cycle-cumulative charge capacity >= thr)
+          - t(first kept charge sample of S[l]); o_l = charge_duration[l]/60 - d_l (min).
+
+          On cycles_interpolated, a file passes iff median o_l >= -1 min and IQR(o_l) <= 1 min, and the first kept charge
+          sample lies at cumulative charge capacity <= 0.001 Ah in at least 95 % of comparable cycles. o_l is then the
+          pre-charge segment that BEEP counts from the cycle's first record and interpolated data do not carry; its per-file
+          median is the documented reason for the level difference.
+
+          On raw_data, the reproduction starts at the first record of S[l], and a file passes iff median |o_l| <= 1 min.
+
+          Reported per file: the number of comparable labels; the median and IQR of o_l; p95 and max of |o_l - median o_l|;
+          and the share of comparable labels whose finiteness agrees (charge_duration finite iff the reproduced S[l] reaches
+          thr).
+
+          A file with fewer than 20 comparable labels is not evaluable (counted, accepted). If no file is evaluable, this is
+          stated and the channel is used.
+        documented_reason: "summary.charge_duration is not the CC-CV duration: BEEP measures from the first record of the cycle to the first record with charged capacity >= nominal_capacity x full_fast_charge (the per-file product structuring_parameters.nominal_capacity x full_fast_charge, recorded at W1; 0.192 Ah only if full_fast_charge = 0.8, which the brief's cell makes doubtful: its charge_duration is NaN from cycle 213 while its capacity stays above 0.192 Ah to cycle 631), so it includes any pre-charge rest, excludes the rest of the charge including the CV tail, and is NaN once a cycle no longer charges that much (BEEP base.py L804-831 at v2022.10.3.16 and main). The declared charge_time therefore differs from it by construction; the validation tests the time axis and the step selection, not the definition"
+        failure: "a failing file's cell is excluded from the profile and counted (charge-time validation). If more than 10 % of the evaluable in-scope files fail, stop and report (third profile only), with the failing files and the candidate explanation. No other charge-time definition or source is substituted after the data are seen (eligibility.E5)."
+        protocol_mask: >-
+          charge_time is missing by protocol at: (a) the first aging cycle after any diagnostic or non_aging cycle, by
+          cycle_index (position 1 included: cycle_index 3 charges from the C/5 RPT discharge of cycle_index 2); (b) the first
+          aging cycle of every later file of a seq; (c) any cycle whose kept charge samples contain a time step longer than
+          10 min (a pause inside the charge; counted as pause_in_charge). The mask is defined from cycle_index order,
+          independently of rest_events.position_1 and of where a rest event is placed. It stays on its cycle, and lapses if
+          that cycle is not a kept position. It is counted separately from the D17/D27 masks; capacity and mean discharge
+          voltage are kept there.
+      unavailable: "temperature_mean_C (BEEP summary temperature_average) and internal_resistance_ohm (BEEP dc_internal_resistance, 0 read as missing) are converted when present; r2's availability rule decides (>= 50 % of non-degenerate regular cycles in every unit). Expected unavailable (BEEP's Maccor schema maps no temperature column; the inspected cell has IR = 0), so no redundant channels, as on HUST"
+      roles: "r2 roles unchanged: capacity weighted and pattern-carrying; charge_time and mean_discharge_voltage weighted graded; null_flat and null_permuted generated; temperature / IR zero-weight redundant only if available"
+
+    # ---- rest events (brief v2.1 W0.4 'Positions': diagnostic positions, paused cycles and gaps are rest events)
+    rest_events:
+      sources:
+        diagnostic: "the first aging cycle (by cycle_index) after one or more diagnostic or non_aging cycles; non_aging cycles count as interruptions of the aging sequence (unlabelled diagnostic cycles land there when labels are missing or shifted, G5.9, G5.13) and are counted per cell (non_aging_interruption)"
+        paused: "an aging cycle with summary.paused > 0 (BEEP: an inter-record gap > 3 600 s inside the cycle, on date_time_iso); the event is the cycle itself. Whether the gap is visible inside its sampled charge or discharge steps (a test_time step > 3 600 s between consecutive samples) is recorded and counted (paused_located / paused_outside_steps)"
+        gap: >-
+          an aging cycle c whose excess e_c = (start_c - start_prev) - paused_prev - M_c exceeds 30 min (D28's pause margin),
+          where start = summary.date_time_iso; prev = the immediately preceding summary row (aging, non_aging or degenerate)
+          with no diagnostic cycle between them (if there is none, c is not evaluated); paused_prev = that row's
+          summary.paused; M_c = the median of the 21 start-to-start intervals of the unit nearest to c in cycle_index order,
+          other than its own, among those that span no diagnostic cycle, no non_aging cycle and no file boundary (edges take
+          the nearest 21; a unit with fewer than 21 such intervals takes all of them, and a unit with none is not evaluated
+          for gaps, counted). Per-unit counts and the distribution of e_c are reported
+        file: "the first regular cycle of a later file of the same seq (cell_scope.several_files_per_seq)"
+      precedence: "one source per event: diagnostic > file > paused > gap"
+      placement: "an event is placed on the first aging cycle (not non_aging) at or after the event cycle; if that cycle is not a kept position (degenerate, incomplete, or dropped by D12), the event moves to the next kept position before the next event, as scripts/v2/v2_audit_isu.py rest_positions does"
+      position_1: "not a rest event (the charge-time mask is defined separately, channels.charge_time.protocol_mask)"
+      dst: >-
+        US daylight-saving transitions are computed from the US rules for every date in a cell's record (fall-back: first
+        Sunday of November, 09:00 UTC; spring-forward: second Sunday of March, 10:00 UTC), not listed by hand. BEEP reads
+        Maccor time as US/Pacific and maps the repeated fall-back hour as PDT (G5.10), so a fall-back puts a +1 h step into
+        date_time_iso.
+
+        Within ±6 h of a fall-back instant, a paused event with 3 600 s < paused <= 4 500 s, and a gap event whose excess e_c
+        lies within 60 ± 10 min, are clock artefacts, not rest events (counted per cell as dst_artefact).
+
+        Events within ±6 h of a spring-forward instant are flagged and kept.
+
+        The per-source mechanism diagnostic and the separability count are also reported with the artefacts included
+        (sensitivity).
+      use: "the mechanism diagnostic; never a model input"
+
+    # ---- EOL definitions reported at W2 (brief v2.1 W2: 'under rho = 0.8 of nominal, and under the authors' 80 %-of-initial definition')
+    eol_reported:
+      primary: "Eq. 3 as amended (C3, D13, D15) with q_nom = 0.24 Ah: threshold rho q_nom = 0.192 Ah, q1 = max of the SG(11,2)-smoothed capacity over the first 20 positions, guard q1 - 0.192 >= 0.012 Ah, record-end tau = 0.0024 Ah. E3, E4 and every profile quantity use it"
+      authors_wording: "the paper's wording with 'initial' read as q1 (DegradX's operationalisation, labelled so wherever reported): 80 % of the initial 3C/4 capacity, with 'initial' operationalised as the unit's q1: T_init = min{t >= t1 : smoothed q_t <= 0.8 q1}, with D13's record-end clause at tau = 0.01 q_nom; reported (counts reaching, T distribution, agreement with the primary T)"
+      authors_code: "80 % of the cell's maximum summary.discharge_capacity, life = the cycle_index of the last row at or above it, None if the minimum never falls below it (cx26 get_cycle_life). Computed on the file's summary rows as stored (BEEP's regular summary: non_aging and degenerate rows included; no DegradX predicates, no D12), in cycle_index order. Reported in cycle_index units as a cross-check, never used in the profile; its count is compared with Rhyu et al.'s 178; labelled 'the authors' code rule'. In the paper, it is named the authors' definition as implemented in their code, with the wording reading beside it"
+      not_used: "BEEP get_cycle_life (median of the first 40 rows, 1.1 Ah fallback)"
+
+    # ---- converter checks (brief v2.1 W1)
+    converter_checks:
+      - "per-cycle capacity and mean discharge voltage in the cycle table equal the values computed from the file's summary (capacity identical; mean voltage to <= 1e-12 relative)"
+      - "charge_time validation (channels.charge_time.validation)"
+      - "summary and diagnostic_summary cycle_index sets are disjoint; cycle_index strictly increasing; contiguity from 0 over summary + diagnostic_summary reported"
+      - "diagnostic labels present per cell, and the labelled cycles' discharge currents (rpt_0.05C about 0.012 A, rpt_0.2C about 0.048 A, from diagnostic_interpolated by current sign) reported; per-cell diagnostic cycle_index lists reported against the expected layout (configs/profiles/tri_formation.yaml)"
+      - "per-cell protocol tuple and the modal tuple (aging_protocol)"
+      - "counts: cells, aging files, files per seq, missing fields per cell (summary columns, cycles_interpolated, diagnostic tables, raw_data)"
+      - "structuring_parameters and BEEP-writer markers per file (archive.beep_markers); any nominal_capacity other than 0.24 reported"
+
+    # ---- W2 audit, mechanism diagnostic, weight guard, offset pre-screen (brief v2.1 W2)
+    audit:
+      value: "S2-style as v2.third_profile.audit: EOL attainment under eol_reported (primary and both authors' definitions), the guard, monotonicity, channel availability, T distribution, the detection sweep (k x m grid of pattern_detection.sweep) and the D05 enable rule on the fitting split; minimum counts D02 / D02b unchanged"
+      split: "the declared measured split (statistics.splits.measured; seed stream ('split', 'TRI_FORMATION')), computed as V3 computes it, so W2 and W3 use the same fitting units"
+    mechanism_diagnostic:
+      value: "v2.third_profile.mechanism_diagnostic (window 0 <= s - r <= W - 1 = 10, expected share at random fit-range positions, ratio with a 95 % unit-bootstrap interval, all guard-passing units as a sensitivity) with the rest events of rest_events, reported pooled and per source (diagnostic; paused + gap + file), with the placebo window -11 <= s - r <= -1"
+      start_index: "a run's start position is detect()'s 1-based start within the residual + fit_start - 1, as fit_profile and audit_unit compute it (the ISU-ILCC audit added one more, evaluating -1..9; DEVIATIONS T7)"
+      separability: >-
+        n_nd = the number of rest events of source paused, gap or file (one source per event, rest_events.precedence; DST
+        artefacts excluded, rest_events.dst) at positions within the fit ranges of the guard-passing fitting-split units (the
+        diagnostic's primary population).
+        (i) n_nd < 10: stated as "not separable in this dataset: only <n_nd> readable rests are not preceded by a lower-rate
+        diagnostic discharge".
+        (ii) n_nd >= 10 and the 95 % interval of the mechanism ratio over these events lies above 1: stated as "positive runs
+        cluster after rests without a rate change: rest-induced recovery is separable from the rate change".
+        (iii) n_nd >= 10 and that interval includes 1 or lies below it: stated as "rests without a rate change are not
+        followed by clustered positive runs; clustering after diagnostic blocks, where their interval lies above 1, is
+        attributed to the diagnostic block (its lower-rate or held discharge and its rests), not to rest alone".
+        The branch, n_nd and both ratios are reported; the count and ratio with DST artefacts included are reported as a
+        sensitivity.
+      role: "reported, not a gate"
+    weight_guard: "E5 as declared (eligibility.E5): |phi_c(1) - phi_c(0)| against the post-offset AR(1) residual SD for charge_time and mean_discharge_voltage, from the W2 fit of the fitting split (X2 backfit, as V3), with the ratio reported"
+    offset_prescreen:
+      fit: "the X2 backfit (v2.per_unit_offsets.estimation, D27 channel rule) on the fitting split, as V3 fits it"
+      units_windows: "fitting-split units reaching EOL (as the population V4 resamples) with T >= L; every window ending at t = L..T of positions 1..T, as V4's offset-share rule takes all windows of a unit; T is the unit's primary T (eol_reported.primary)"
+      terms: >-
+        V4's offset_terms decomposition applied to measured units: z_t = max(0, Eq. 3 z on the unit's smoothed capacity),
+        clipped at 0 as the generator clips its state (generate.py); m_state,c = phi_c(z_t): non-capacity channels use the
+        backfitted mapping, held at its end values outside [0, 1] as Mapping does; capacity uses q1_bar - z_t (q1_bar - rho
+        q_nom); y_state = sum_W w (m_state - x0); y_offset = sum_W w_c delta_{c,i} over the non-capacity channels + w_cap
+        (q1_i - q1_bar)(1 - z_t), with q1_i the unit's S3 q1; y = y_state + y_offset. Noise and patterns are excluded.
+        Because Var(y) has no pattern term, the share is at or above V4's whenever patterns are enabled, which is stated.
+        kappa_c comes from the W2 fit with beta = 1/3 per weighted channel. If the weight guard demotes a weighted channel,
+        E5 fails and the profile stops under E5; the pre-screen is then computed with beta renormalised over the remaining
+        weighted channels and reported in the stop report only, never read.
+      value: "Var(y_offset) / Var(y) over the pooled windows (ddof 0), per weighting (recency, uniform)"
+      reported:
+        - "Var(y_offset) / Var(y_state); the per-channel Var(offset part) / Var(y); the same share on all guard-passing fitting units (windows up to T or N) as a sensitivity"
+        - "per channel, Var(delta_hat) and the noise-corrected Var_true(delta) of v2.per_unit_offsets.reported (offset sampling noise), beside the pre-screen; never gating"
+        - "reported, never gating: the pre-screen share (both weightings) and the E3 count without the cells tagged shorted, bulged or formation-stopped (274, 276, 278, 140, 155); and the largest leave-one-unit-out change of the pre-screen share, with the unit named (as D26's influence row)"
+        - "the pre-screen share (both weightings) without the cells taken from the 2024 archive, if any; never gating"
+        - >-
+          from formation_mapping: headline = the one-way R² of the unit-mean y_offset (recency) on protocol_id over the
+          pre-screen units, with its permutation null (10 000 permutations of protocol labels over those units, seed stream
+          (evaluation, W2-protocol, key)): mean null R², p-value, and the calibrated share (R² - mean null R²) / (1 - mean
+          null R²). Read "formation protocol explains part of the offsets" iff p < 0.05. Per-channel R² (delta_c and q1_i -
+          q1_bar), adjusted R² and calibrated shares go in a table. Under no effect, E[R²] = (g - 1)/(n - 1) for g protocols
+          over n units (about 0.5 on the fitting split)
+      stop: "Var(y_offset) / Var(y) > 0.5 under either weighting: stop before fitting (brief v2.1 §5); the profile is parked"
+      formation_share_role: "reported, not gated: formation-driven offsets are manufacturing variation and are allowed"
+    eligibility_decision: "one D-record at W2 covering E1-E6, the pre-screen and the weight guard"
+
+    # ---- readings for the new profile (declared before W3-W8 run)
+    readings:
+      X6_ii_regeneration: "regeneration (positive capacity-residual runs) is present at scale iff D05 enables the positive type on the fitting split at the declared k, m and maximum duration (v2.readings.X6_ii_regeneration_at_scale). It is called rest-induced iff, in addition, the pooled mechanism ratio (window 0..10) has a 95 % interval above 1 and the placebo ratio (-11..-1) has an interval that includes 1 or lies below it; otherwise it is reported as 'regeneration not localised after rest events'. Separability from the rate change follows mechanism_diagnostic.separability. If enabled, patterns are inserted at the fitted rate and amplitude (no inflation, D21)"
+      D05_governance: "the D05 outcome computed at W2 on the fitting split decides whether the profile carries patterns (brief W4); W3 must reproduce it, and a mismatch is an implementation error fixed before W4"
+      sparse_set_trained: "trained-model sparse-set scores are computed for a weighting iff the pattern-term ablation (usability.term_ablation) on that weighting's primary model has a 95 % CI of the NMSE increase above 0; otherwise void (D21). The variance ratio against [0.05, 0.50] is reported, not gated"
+      transfer: "the transfer interval contains 1 iff the 95 % BCa interval of the TSTR ratio (full input set) includes 1; the point estimate is placed against HUST's v2 interval [0.936, 1.342] (inside or outside), as v2.readings.X2_i_closes_matr_gap places MATR; HUST stays the anchor (D29); and whether its 95 % interval overlaps HUST's [0.936, 1.342] (reported)"
+      covariance: "as v2.readings.X3_covariance against the new profile's own measured baseline"
+      discriminator: "values with the D02b readability rule (DEVIATIONS T6)"
+      usability_gates: "accuracy gate, null-channel leakage gate and X4 channel-usage gate as in v2; a failed accuracy or leakage gate is a stop case (brief v2.1 §5)"
+      offset_share_generated: "the V4 rule on generated data (v2.per_unit_offsets.stop_rule)"
+      y_rul: "Spearman(y, RUL) per weighting exactly as V6 computes it (scripts/v2/v6_usability.py: test windows of generation seed 0, RUL = T - t at the window end; MATR -0.71, HUST -0.61 under recency), reported beside the offset share in Var(y) (brief v2.1 W6 and the §3.2 / §4.2 amendment)"
+
+    # ---- stop and report (brief v2.1 §5; supersedes v2.stop_rules for v2.1 stages)
+    stop_rules:
+      third_profile_only:
+        cases:
+          - "the archives do not contain aging files for at least 66 cells that reach EOL"
+          - "more than one aging protocol among the aging files (aging_protocol.second_protocol)"
+          - "E1-E6 fail, including E5 when mean discharge voltage or charge time fails the weight guard"
+          - "the W2 offset pre-screen exceeds 0.5 (stop before fitting)"
+          - "the offset share on generated data exceeds 0.5 (V4 rule)"
+          - "the accuracy or null-leakage gate fails on the new profile; the agent neither corrects the profile nor voids the scores"
+          - "a downloaded archive object does not match its recorded HEAD values (archive.integrity)"
+          - "the pinned parameter sheet cannot be obtained with its declared SHA-256 (formation_mapping.storage)"
+          - "charge-time validation fails on more than 10 % of the evaluable in-scope files (channels.charge_time.failure)"
+          - "a methodological change the brief does not list that concerns only the third profile's extraction, channels, scope or eligibility (no change is made; the proposed change is stated in the stop report)"
+          - "disk or memory limits block ingestion of the third dataset after the declared memory rule (archive.memory)"
+          - "the projected wall time of the new profile's W8 TimeSHAP explanations (2 880; 4 680 with paired maps, v2.timeshap_full_scale.design_per_profile) exceeds 36 h (v2.timeshap_full_scale.feasibility.projection): W8 is not launched for the new profile; windows, seeds and nsamples are never reduced by the agent"
+        action: "park the profile, write the state, options and a recommendation, record the case in the paper's Notes box, and finish W9-W10 with MATR and HUST"
+      other:
+        cases: ["a methodological change the brief does not list that touches MATR, HUST, tstr_without_x3 or the shared method", "any case touching MATR, HUST or the paper's shared method"]
+        action: "write the state, options and a recommendation, then wait for the authors"
+
+    # ---- the one MATR / HUST computation of v2.1 (brief v2.1 W10, §4.1 and Table 1)
+    tstr_without_x3:
+      purpose: "separate X2's and X3's shares in transfer. The v1 generator (shared mappings, independent noise; MATR 3.42, HUST 1.46, v1 S5) differs from v2 by X2, X3, and D27's effect on the fitted profile and on the measured side. v2 without X3 differs from v1 by X2 (with D27's effect on the fit); the measured side is matched by using v1's full_D27 errors as the comparator of the share."
+      data: "the existing V4 sets data/v2/generated/<MATR|HUST>/seed0_x3off.pkl (nothing is regenerated); identical to generation seed 0 unit by unit except the measured-channel noise, which is drawn per channel"
+      estimator: "V5's TSTR exactly, full input set: train on the first n units in list order (n = measured fitting units reaching EOL: MATR 90, HUST 54), model_init seeds 0-4, the same held-out measured units and windows, ratio = RMSE_TSTR / RMSE_TRTR from per-unit squared-error sums averaged over replicates, with V5's TRTR models and errors reused (not retrained); 95 % BCa over held-out units, 10 000 resamples"
+      rows: 'Table 1: "v1 (shared mappings, independent noise)" printed as the brief states (3.42 / 1.46, v1 S5), with a note giving the full_D27 values (3.51 / 1.46) used for X2''s share; "v2 without X3 (generation seed 0)"; "v2 (generation seed 0)"; "v2 (three seeds)"'
+      shares: >-
+        X3's share = log ratio(v2 without X3, seed 0) - log ratio(v2, seed 0), paired BCa over held-out units. X2's share =
+        log ratio(v1, input set full_D27, generation seeds 0-2 x model_init 0-4, the v1 row's generator and seeds) - log
+        ratio(v2 without X3, seed 0). It uses a paired 95 % BCa over the same held-out units (MATR 38, HUST 23), 10 000
+        resamples, from artifacts/v2/v1_tstr_isolation/tables/per_unit_sse_<ds>.npz (full_D27__TSTR__g*_m*) and V5's TRTR
+        per-unit errors (artifacts/v2/v5_fidelity/tables/per_unit_sse_<ds>.npz, full__TRTR__m0-4, identical to V1's
+        full_D27 TRTR); it is conditional on the trained models. Reported beside it, not read: the same share with v1's full
+        set (D17 measured side, the 3.42 / 1.46 printed) and with v1 generation seed 0 only.
+      only_computation: "the only MATR / HUST computation of v2.1"
+
+    # ---- what was seen before these declarations (pre-registration hygiene)
+    exposure:
+      results_known: "the v1 (S0-S9) and v2 (V0-V10) results of MATR, HUST and ISU-ILCC, including the ISU-ILCC offset-share stop, were known when r4 was written"
+      brief_one_cell: "the brief reports one cell (Nova_Regular_197.034): capacity 0.2452 Ah at the start, 0.8 x 0.24 Ah crossed at cycle 631, 0.088 Ah by cycle ~871; mean discharge voltage 3.742 -> 3.719 V by EOL; summary.charge_duration NaN from cycle 213 (74 % of regular cycles); interpolated charge-step span 76.7 -> 71.8 -> 60.2 min; temperature NaN; IR zero; stored structuring_parameters.nominal_capacity 0.24; diagnostic triplets at cycles 24-26, 127-129, 230-232"
+      documentation: "design metadata (both parameter sheets, Rhyu et al.'s protocol label tables) and outcome-adjacent values printed in the papers or in saved notebook outputs: initial capacities (C/20 RPT 0.24-0.27 Ah; 3C/4 0.239-0.251 Ah; 0.246 +- 0.001 vs 0.244 +- 0.002 Ah slow vs fast formed), the cycle-life range 400-1 300, and the list of 178 seq numbers with a non-NaN authors' cycle life. No cycle-life table and no measurement file was opened"
+      third_party: "BatteryLife arXiv:2502.18807 (v1 and v7 text and dataset statistics, including its life and SOH filters and the 41 / 181 counts), its READMEs and code, and the Hugging Face folder listings (file names only; no processed file opened), including its hard skip of Nova_Regular_197.034"
+      figures: "figures and captions read in the papers: Cui et al. Figs. 2, 3A and 7 and SI Fig. S7 (capacity trajectories, cycle-life distributions, one cell's diagnostic sequence) and Rhyu et al.'s figures"
+      findings: "the published finding that formation conditions drive cycle life (Cui et al.; Rhyu et al.), a prior for the formation-protocol share"
+      review: "the r4 review read per-seed v1 TSTR ratios from the stored V1 per-unit errors (as computed by the reviewers: MATR full 3.89 / 3.48 / 2.80, full_D27 3.99 / 3.57 / 2.87; HUST seed 0 1.58); the X2-share comparator follows the brief's v1 row (three seeds), not these values. The judge read only the already-reported summaries artifacts/v2/v1_tstr_isolation/tables/tstr_isolation.json (full 3.420 / TRTR 150.82; full_D27 3.506 / 147.12) and artifacts/v2/v5_fidelity/tables/fidelity.json (V5 TRTR 147.12), listed the keys of the per-unit npz files and computed no new ratio; the per-seed values above are the reviewers', unverified by the judge"
+      head_requests: "HTTP HEAD requests to both archive URLs (headers only) gave the sizes, dates and ETags in archive"
+    source: "brief 'DegradX v2.1' (2026-10-11) W0; docs/DECISIONS/D32_tri_formation_extraction.md; documentation: artifacts/v2.1/w0_declarations/documentation_research.md"

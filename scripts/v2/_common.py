@@ -4,25 +4,40 @@ definitions they need (S3 scope and channel availability) without importing a st
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from degradx import ARTIFACTS_V2, CONFIG_DIR, DATA_DIR, DATA_V2
+from degradx import ARTIFACTS_V2, ARTIFACTS_V21, CONFIG_DIR, DATA_DIR, DATA_V2, DATA_V21
 from degradx.fitting.profile import CHANNEL_COLUMNS
 
 CANDIDATES = ["capacity", "charge_time", "mean_discharge_voltage", "internal_resistance", "temperature_mean"]
 # dataset -> profile config stem under configs/profiles
-PROFILE_CONFIG = {"MATR": "matr", "HUST": "hust"}
+PROFILE_CONFIG = {"MATR": "matr", "HUST": "hust", "TRI_FORMATION": "tri_formation"}
+# v2.1 (declarations r4 declared_by_design.v2_1.paths): the third profile's fitted profile, split and generated units live
+# under the v2.1 roots; every other dataset resolves to the v2 roots, so v2 runs are unchanged
+V3_DIR = {"TRI_FORMATION": ARTIFACTS_V21 / "w3_fit_profiles"}
+GEN_DIR = {"TRI_FORMATION": DATA_V21 / "generated"}
 
 
 def register_profile(ds: str, stem: str) -> None:
     PROFILE_CONFIG[ds] = stem
 
 
+def v3_dir(ds: str) -> Path:
+    """Directory of the dataset's v2 / v2.1 fitted profile (profiles/, tables/split_<ds>.csv)."""
+    return V3_DIR.get(ds, ARTIFACTS_V2 / "v3_fit_profiles")
+
+
+def generated_dir(ds: str) -> Path:
+    """Directory of the dataset's generated-unit caches (seed<g>.pkl, seed0_x3off.pkl)."""
+    return GEN_DIR.get(ds, DATA_V2 / "generated") / ds
+
+
 def cycle_table(ds: str) -> pd.DataFrame:
-    """v1 cycle tables (MATR, HUST) or the v2 third-profile table."""
-    for root in (DATA_DIR / "processed" / "cycle_tables", DATA_V2 / "processed" / "cycle_tables"):
+    """v1 cycle tables (MATR, HUST), the v2 third-profile table or the v2.1 third-profile table."""
+    for root in (DATA_DIR / "processed" / "cycle_tables", DATA_V2 / "processed" / "cycle_tables", DATA_V21 / "processed" / "cycle_tables"):
         f = root / f"{ds}.csv.gz"
         if f.exists():
             return pd.read_csv(f, low_memory=False)
@@ -59,11 +74,11 @@ def q_nom_of(ds: str) -> float:
 
 
 def v2_profile(ds: str) -> dict:
-    return json.loads((ARTIFACTS_V2 / "v3_fit_profiles" / "profiles" / f"{ds}.json").read_text())
+    return json.loads((v3_dir(ds) / "profiles" / f"{ds}.json").read_text())
 
 
 def v2_split(ds: str) -> pd.DataFrame:
-    return pd.read_csv(ARTIFACTS_V2 / "v3_fit_profiles" / "tables" / f"split_{ds}.csv")
+    return pd.read_csv(v3_dir(ds) / "tables" / f"split_{ds}.csv")
 
 
 def channel_rule_v2(dd: dict):

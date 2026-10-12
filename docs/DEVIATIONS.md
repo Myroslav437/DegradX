@@ -74,3 +74,22 @@ Format per entry:
   - **v1's S5 cells were not re-checked:** v1's predictions were not saved, and v1 is not re-run. They are cited with
     this caveat.
   - No other measure is affected.
+
+### T7 — V2 (v2), recorded at v2.1 W0 (2026-10-11) — tooling — ISU-ILCC mechanism diagnostic evaluated one position late
+
+- **Paper says / declared:** `declared_by_design.v2.third_profile.mechanism_diagnostic`: a detected positive run counts
+  if its start s satisfies 0 ≤ s − r ≤ W − 1 = 10 for some rest event r; placebo window −11 ≤ s − r ≤ −1.
+- **What was done:** `scripts/v2/v2_audit_isu.py` (`unit_runs`, l.80-81, and the operator-null check, l.271) placed a
+  run's start at `detect()`'s 1-based start + `fit_start` instead of + `fit_start − 1`. Every start was therefore one
+  position late. The observed window was in effect −1..9 and the placebo −12..−2. The expected share at random
+  positions was computed on true positions, so the observed and expected shares were not on the same footing. The
+  operator-null check was shifted the same way as the observed runs.
+- **Why:** an indexing slip, found by the v2.1 code review before any v2.1 data were read. `fit_profile` and
+  `audit_unit` place run starts correctly.
+- **Cost to the claim:**
+  - The ISU-ILCC mechanism-diagnostic ratios in `artifacts/v2/v2_third_dataset` are approximate. The paper quotes none
+    of them. ISU-ILCC is closed under option A (authors' decision of 2026-10-11), so they are not recomputed.
+  - v2.1 stages use the correct start (`declared_by_design.v2_1.mechanism_diagnostic.start_index`).
+  - `docs/EXPERIMENT_LOG_v2.html` and its PDF (frozen at v2-results) quote the pooled and stratum ratios
+    (7.21 [6.17, 8.22], 0.99 [0, 2.04], 9.09 [7.96, 10.18]). The v2.1 log reproduces them, if at all, marked
+    "evaluated one position late (T7), not recomputed".
