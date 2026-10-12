@@ -1,0 +1,49 @@
+| check | expected | observed | result |
+|---|---|---|---|
+| TRI_FORMATION seed 0 [recency]: sum(phi*) == y on every window | < 1e-9 (relative) | 2.22e-16 over 215113 windows | pass |
+| TRI_FORMATION seed 0 [recency]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.30e-15 | pass |
+| TRI_FORMATION seed 0 [recency]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean -9.674e-04, SE 1.051e-03 | pass |
+| TRI_FORMATION seed 0 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.131 (Var(y_offset)/Var(y_state) 0.156) | pass |
+| TRI_FORMATION seed 0 [uniform]: sum(phi*) == y on every window | < 1e-9 (relative) | 4.40e-16 over 215113 windows | pass |
+| TRI_FORMATION seed 0 [uniform]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.03e-15 | pass |
+| TRI_FORMATION seed 0 [uniform]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean -9.551e-04, SE 1.050e-03 | pass |
+| TRI_FORMATION seed 0 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.137 (Var(y_offset)/Var(y_state) 0.164) | pass |
+| TRI_FORMATION seed 0: unit at z = 0 with zero offsets, no patterns, no noise has y = 0 | 0 | 0.00e+00 | pass |
+| TRI_FORMATION seed 0: E[eps_capacity] ~ 0 | |mean| <= 3 SE over units | +0.020 noise SD (SE 0.015) | pass |
+| TRI_FORMATION seed 0: E[eps_charge_time] ~ 0 | |mean| <= 3 SE over units | +0.003 noise SD (SE 0.016) | pass |
+| TRI_FORMATION seed 0: E[eps_mean_discharge_voltage] ~ 0 | |mean| <= 3 SE over units | +0.008 noise SD (SE 0.018) | pass |
+| TRI_FORMATION seed 0: z starts at the pristine level and T is the first crossing of z = 1 | z_1 <= 0.05; z_T >= 1 > z_{T-1} | max z_1 0.001; first crossing True | pass |
+| TRI_FORMATION seed 0: disabling patterns leaves z, T, R, mean and noise unchanged | identical | True | pass |
+| TRI_FORMATION seed 0: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL) | 2.6 mAh +- 20% | 3.4 mAh | warn |
+| TRI_FORMATION seed 1 [recency]: sum(phi*) == y on every window | < 1e-9 (relative) | 3.97e-16 over 220011 windows | pass |
+| TRI_FORMATION seed 1 [recency]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.46e-15 | pass |
+| TRI_FORMATION seed 1 [recency]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean 1.951e-03, SE 1.049e-03 | pass |
+| TRI_FORMATION seed 1 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.115 (Var(y_offset)/Var(y_state) 0.135) | pass |
+| TRI_FORMATION seed 1 [uniform]: sum(phi*) == y on every window | < 1e-9 (relative) | 2.22e-16 over 220011 windows | pass |
+| TRI_FORMATION seed 1 [uniform]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.10e-15 | pass |
+| TRI_FORMATION seed 1 [uniform]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean 1.969e-03, SE 1.051e-03 | pass |
+| TRI_FORMATION seed 1 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.120 (Var(y_offset)/Var(y_state) 0.142) | pass |
+| TRI_FORMATION seed 1: unit at z = 0 with zero offsets, no patterns, no noise has y = 0 | 0 | 0.00e+00 | pass |
+| TRI_FORMATION seed 1: E[eps_capacity] ~ 0 | |mean| <= 3 SE over units | -0.007 noise SD (SE 0.015) | pass |
+| TRI_FORMATION seed 1: E[eps_charge_time] ~ 0 | |mean| <= 3 SE over units | -0.004 noise SD (SE 0.016) | pass |
+| TRI_FORMATION seed 1: E[eps_mean_discharge_voltage] ~ 0 | |mean| <= 3 SE over units | -0.028 noise SD (SE 0.020) | pass |
+| TRI_FORMATION seed 1: z starts at the pristine level and T is the first crossing of z = 1 | z_1 <= 0.05; z_T >= 1 > z_{T-1} | max z_1 0.001; first crossing True | pass |
+| TRI_FORMATION seed 1: disabling patterns leaves z, T, R, mean and noise unchanged | identical | True | pass |
+| TRI_FORMATION seed 1: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL) | 2.6 mAh +- 20% | 3.2 mAh | warn |
+| TRI_FORMATION seed 2 [recency]: sum(phi*) == y on every window | < 1e-9 (relative) | 2.22e-16 over 226822 windows | pass |
+| TRI_FORMATION seed 2 [recency]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.28e-15 | pass |
+| TRI_FORMATION seed 2 [recency]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean 5.913e-04, SE 1.050e-03 | pass |
+| TRI_FORMATION seed 2 [recency]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.129 (Var(y_offset)/Var(y_state) 0.156) | pass |
+| TRI_FORMATION seed 2 [uniform]: sum(phi*) == y on every window | < 1e-9 (relative) | 2.22e-16 over 226822 windows | pass |
+| TRI_FORMATION seed 2 [uniform]: g(x) - y == sum(w eps) on every window | < 1e-9 | 1.02e-15 | pass |
+| TRI_FORMATION seed 2 [uniform]: mean over units of g(x) - y ~ 0 | |mean| <= 3 SE | mean 5.682e-04, SE 1.052e-03 | pass |
+| TRI_FORMATION seed 2 [uniform]: offset contribution Var(y_offset)/Var(y) <= 0.5 (brief §6 stop rule) | <= 0.5 | 0.135 (Var(y_offset)/Var(y_state) 0.164) | pass |
+| TRI_FORMATION seed 2: unit at z = 0 with zero offsets, no patterns, no noise has y = 0 | 0 | 0.00e+00 | pass |
+| TRI_FORMATION seed 2: E[eps_capacity] ~ 0 | |mean| <= 3 SE over units | +0.016 noise SD (SE 0.016) | pass |
+| TRI_FORMATION seed 2: E[eps_charge_time] ~ 0 | |mean| <= 3 SE over units | -0.002 noise SD (SE 0.017) | pass |
+| TRI_FORMATION seed 2: E[eps_mean_discharge_voltage] ~ 0 | |mean| <= 3 SE over units | -0.010 noise SD (SE 0.020) | pass |
+| TRI_FORMATION seed 2: z starts at the pristine level and T is the first crossing of z = 1 | z_1 <= 0.05; z_T >= 1 > z_{T-1} | max z_1 0.001; first crossing True | pass |
+| TRI_FORMATION seed 2: disabling patterns leaves z, T, R, mean and noise unchanged | identical | True | pass |
+| TRI_FORMATION seed 2: generated q1 shows the measured spread (IQR within 20% of the fitting units reaching EOL) | 2.6 mAh +- 20% | 3.7 mAh | warn |
+| TRI_FORMATION: X3 construction - within-unit correlation of generated noise (mean over seeds) within 0.05 of the fitted rho_bar | <= 0.05 | max |delta r| 0.032 (pooled comparison 0.035; implied-by-construction gap 0.024) | pass |
+| TRI_FORMATION: V3 within-unit estimator on generated observations recovers the fitted rho_bar within 0.05 (reported) | <= 0.05 | max |delta r| 0.156 (capacity pairs 0.156, other pairs 0.094; E4 vs E4 0.135) | warn |

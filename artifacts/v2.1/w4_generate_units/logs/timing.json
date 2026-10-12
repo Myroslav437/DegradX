@@ -1,0 +1,16 @@
+{
+  "stage": "v2/v4_generate_units",
+  "device": "cpu",
+  "wall_clock_s": 95.26,
+  "sections_s": {
+    "TRI_FORMATION_generate_seed0": 0.796,
+    "TRI_FORMATION_checks_seed0": 2.057,
+    "TRI_FORMATION_generate_seed1": 0.839,
+    "TRI_FORMATION_checks_seed1": 2.102,
+    "TRI_FORMATION_generate_seed2": 0.82,
+    "TRI_FORMATION_checks_seed2": 2.173,
+    "TRI_FORMATION_x3_off_set": 0.658,
+    "TRI_FORMATION_estimator_check": 79.984,
+    "TRI_FORMATION_figures": 2.588
+  }
+}
