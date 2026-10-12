@@ -1,0 +1,13 @@
+| check | expected | observed | result |
+|---|---|---|---|
+| TRI_FORMATION: estimated/declared split matches paper §3.3 (E1-E7 only under estimated_from_data) | ['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution'] | ['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution'] | pass |
+| TRI_FORMATION: capacity affine in z per unit with the unit's own q1 (Eq. 3; X2 capacity mapping) | < 1e-9 Ah | 4.16e-17 | pass |
+| TRI_FORMATION: phi_charge_time monotone on [0, 1] (backfitted) | monotone | True | pass |
+| TRI_FORMATION: phi_mean_discharge_voltage monotone on [0, 1] (backfitted) | monotone | True | pass |
+| TRI_FORMATION: backfit of charge_time converged within 200 iterations (declared tolerance 1e-4 of the mapping range) | converged | 4 it., last change δ 9.47e-05 / φ 1.07e-04 (tol 2.91e-04) | pass |
+| TRI_FORMATION: median offset of charge_time over fitting units = 0 (constraint) | 0 | 0.00e+00 | pass |
+| TRI_FORMATION: backfit of mean_discharge_voltage converged within 200 iterations (declared tolerance 1e-4 of the mapping range) | converged | 5 it., last change δ 9.23e-07 / φ 4.15e-06 (tol 4.17e-06) | pass |
+| TRI_FORMATION: median offset of mean_discharge_voltage over fitting units = 0 (constraint) | 0 | 0.00e+00 | pass |
+| TRI_FORMATION: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units | >= 0.90 | 1.000 | pass |
+| TRI_FORMATION: theta not collapsing to bounds (units with any parameter at a bound <= 20%) | <= 0.20 | 0.118 | pass |
+| TRI_FORMATION: theta from >= 5 units reaching EOL (D02) | >= 5 | 127 | pass |

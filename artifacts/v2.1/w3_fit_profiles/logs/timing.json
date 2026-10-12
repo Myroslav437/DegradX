@@ -1,0 +1,10 @@
+{
+  "stage": "v2/v3_fit_profiles",
+  "device": "cpu",
+  "wall_clock_s": 39.559,
+  "sections_s": {
+    "TRI_FORMATION_split": 0.5,
+    "TRI_FORMATION_fit": 35.303,
+    "TRI_FORMATION_figures": 1.878
+  }
+}

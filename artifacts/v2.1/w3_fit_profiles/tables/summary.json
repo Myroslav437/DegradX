@@ -1,0 +1,182 @@
+{
+  "TRI_FORMATION": {
+    "family": "two_term_exponential",
+    "family_v1": null,
+    "channels": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "weighted": [
+      "capacity",
+      "charge_time",
+      "mean_discharge_voltage"
+    ],
+    "demoted": [],
+    "x0": {
+      "capacity": 0.24593966627808939,
+      "charge_time": 72.03162714584614,
+      "mean_discharge_voltage": 3.7383796788330463
+    },
+    "backfit": {
+      "charge_time": {
+        "iterations": 4,
+        "converged": true,
+        "last_change_delta": 9.470980550929653e-05,
+        "last_change_phi": 0.00010743277421454422,
+        "tolerance": 0.000290889522004089,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 1.433038875617008,
+        "delta_p05_p95": [
+          -1.1480268601894734,
+          2.380372389054384
+        ],
+        "phi0_r2": 72.51521290357027,
+        "phi1_r2": 69.25222288955813
+      },
+      "mean_discharge_voltage": {
+        "iterations": 5,
+        "converged": true,
+        "last_change_delta": 9.230144633054493e-07,
+        "last_change_phi": 4.153908526483008e-06,
+        "tolerance": 4.1691878089331614e-06,
+        "units_without_readings": 0,
+        "increasing": false,
+        "increasing_r2": false,
+        "delta_median": 0.0,
+        "delta_iqr": 0.013291673789483371,
+        "delta_p05_p95": [
+          -0.03796067685178395,
+          0.008760182952216984
+        ],
+        "phi0_r2": 3.7329471855712004,
+        "phi1_r2": 3.6888922443670764
+      }
+    },
+    "residual_before_after": {
+      "charge_time": {
+        "before_r2": {
+          "variance": 0.7664051815077894,
+          "phi": 0.9509777946309831,
+          "n_used": 91527
+        },
+        "after_offsets": {
+          "variance": 0.7650691588677538,
+          "phi": 0.9498426595285209,
+          "n_used": 91527
+        },
+        "variance_ratio_after_to_before": 0.9982567672136465,
+        "between_unit_variance_of_means": {
+          "before_r2": 1.5320083300236549,
+          "after_offsets": 0.0724409655884745
+        },
+        "global_centred_variance": {
+          "before_r2": 2.716673693105175,
+          "after_offsets": 0.8563300597987535
+        },
+        "offset_variance": 1.5016324167589257,
+        "offset_sampling_noise_term": 0.06370869764168548,
+        "offset_variance_noise_corrected": 1.4379237191172403
+      },
+      "mean_discharge_voltage": {
+        "before_r2": {
+          "variance": 5.333159790154951e-05,
+          "phi": 0.9788972802364779,
+          "n_used": 92489
+        },
+        "after_offsets": {
+          "variance": 5.0643327047720715e-05,
+          "phi": 0.9747958652548457,
+          "n_used": 92489
+        },
+        "variance_ratio_after_to_before": 0.949593281289052,
+        "between_unit_variance_of_means": {
+          "before_r2": 0.0002737578070199354,
+          "after_offsets": 3.533937798551708e-06
+        },
+        "global_centred_variance": {
+          "before_r2": 0.0004146529261592714,
+          "after_offsets": 5.6030026116792394e-05
+        },
+        "offset_variance": 0.0002593606752566304,
+        "offset_sampling_noise_term": 6.440846410797836e-06,
+        "offset_variance_noise_corrected": 0.00025291982884583257
+      }
+    },
+    "correlation_before": [
+      [
+        1.0,
+        0.049908079912476366,
+        -0.023529908119059667
+      ],
+      [
+        0.04990807991247637,
+        1.0,
+        -0.8799313573130403
+      ],
+      [
+        -0.02352990811905967,
+        -0.8799313573130403,
+        1.0
+      ]
+    ],
+    "correlation_after": [
+      [
+        1.0,
+        0.09156504655541102,
+        -0.07136843277174436
+      ],
+      [
+        0.09156504655541102,
+        0.9999999999999999,
+        -0.7695513578216656
+      ],
+      [
+        -0.07136843277174436,
+        -0.7695513578216656,
+        0.9999999999999999
+      ]
+    ],
+    "q1_fitting_units": {
+      "median": 0.24593966627808939,
+      "iqr": 0.002629479630536058,
+      "p05_p95": [
+        0.24226190756043367,
+        0.24912118094146882
+      ],
+      "n": 127
+    },
+    "noise": {
+      "capacity": {
+        "variance": 1.433361528708544e-06,
+        "phi": 0.949691323114353,
+        "n_used": 92493
+      },
+      "charge_time": {
+        "variance": 0.7650691588677538,
+        "phi": 0.9498426595285209,
+        "n_used": 91527
+      },
+      "mean_discharge_voltage": {
+        "variance": 5.0643327047720715e-05,
+        "phi": 0.9747958652548457,
+        "n_used": 92489
+      }
+    },
+    "patterns_enabled": {
+      "positive": true,
+      "negative": false
+    },
+    "patterns_ratio_to_noise": {
+      "positive": 2.2848313498586363,
+      "negative": 0.957941348910512
+    },
+    "units": {
+      "fitting_passing_guard": 127,
+      "fitting_reaching_eol": 127
+    }
+  }
+}

@@ -1,0 +1,3482 @@
+[
+  {
+    "cell_id": "TRI_100",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0021496087,
+    "duration": 3,
+    "z_at_extremum": 0.2179924587
+  },
+  {
+    "cell_id": "TRI_100",
+    "type": "positive",
+    "extremum": 402,
+    "amplitude_Ah": 0.003399361,
+    "duration": 11,
+    "z_at_extremum": 0.4241745262
+  },
+  {
+    "cell_id": "TRI_100",
+    "type": "positive",
+    "extremum": 414,
+    "amplitude_Ah": 0.0025267066,
+    "duration": 10,
+    "z_at_extremum": 0.4994407195
+  },
+  {
+    "cell_id": "TRI_100",
+    "type": "negative",
+    "extremum": 437,
+    "amplitude_Ah": -0.0021278294,
+    "duration": 6,
+    "z_at_extremum": 0.7268354113
+  },
+  {
+    "cell_id": "TRI_100",
+    "type": "positive",
+    "extremum": 471,
+    "amplitude_Ah": 0.0026708497,
+    "duration": 5,
+    "z_at_extremum": 1.0011077868
+  },
+  {
+    "cell_id": "TRI_101",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0019384856,
+    "duration": 8,
+    "z_at_extremum": 0.1626340506
+  },
+  {
+    "cell_id": "TRI_101",
+    "type": "negative",
+    "extremum": 520,
+    "amplitude_Ah": -0.0016135835,
+    "duration": 6,
+    "z_at_extremum": 0.86912087
+  },
+  {
+    "cell_id": "TRI_102",
+    "type": "negative",
+    "extremum": 368,
+    "amplitude_Ah": -0.0020604517,
+    "duration": 3,
+    "z_at_extremum": 0.3030733357
+  },
+  {
+    "cell_id": "TRI_102",
+    "type": "negative",
+    "extremum": 372,
+    "amplitude_Ah": -0.0020611102,
+    "duration": 3,
+    "z_at_extremum": 0.3090600265
+  },
+  {
+    "cell_id": "TRI_102",
+    "type": "positive",
+    "extremum": 427,
+    "amplitude_Ah": 0.0024736839,
+    "duration": 2,
+    "z_at_extremum": 0.3438068734
+  },
+  {
+    "cell_id": "TRI_102",
+    "type": "positive",
+    "extremum": 491,
+    "amplitude_Ah": 0.0027395839,
+    "duration": 3,
+    "z_at_extremum": 0.6071586114
+  },
+  {
+    "cell_id": "TRI_103",
+    "type": "negative",
+    "extremum": 320,
+    "amplitude_Ah": -0.0010621079,
+    "duration": 2,
+    "z_at_extremum": 0.1790310112
+  },
+  {
+    "cell_id": "TRI_103",
+    "type": "positive",
+    "extremum": 323,
+    "amplitude_Ah": 0.0016986699,
+    "duration": 3,
+    "z_at_extremum": 0.1650690354
+  },
+  {
+    "cell_id": "TRI_106",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0036249887,
+    "duration": 2,
+    "z_at_extremum": 0.3296717201
+  },
+  {
+    "cell_id": "TRI_106",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.005237266,
+    "duration": 4,
+    "z_at_extremum": 0.7203859068
+  },
+  {
+    "cell_id": "TRI_107",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0035534546,
+    "duration": 3,
+    "z_at_extremum": 0.2523132011
+  },
+  {
+    "cell_id": "TRI_107",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0041634064,
+    "duration": 3,
+    "z_at_extremum": 0.5179282764
+  },
+  {
+    "cell_id": "TRI_107",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0058211827,
+    "duration": 7,
+    "z_at_extremum": 0.6661857382
+  },
+  {
+    "cell_id": "TRI_108",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0029244338,
+    "duration": 2,
+    "z_at_extremum": 0.3569500363
+  },
+  {
+    "cell_id": "TRI_108",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.00338918,
+    "duration": 4,
+    "z_at_extremum": 0.519267111
+  },
+  {
+    "cell_id": "TRI_108",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0039670069,
+    "duration": 5,
+    "z_at_extremum": 0.7261843958
+  },
+  {
+    "cell_id": "TRI_109",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0025475514,
+    "duration": 4,
+    "z_at_extremum": 0.2084438937
+  },
+  {
+    "cell_id": "TRI_109",
+    "type": "negative",
+    "extremum": 420,
+    "amplitude_Ah": -0.0024057807,
+    "duration": 5,
+    "z_at_extremum": 0.3870829885
+  },
+  {
+    "cell_id": "TRI_109",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0047951408,
+    "duration": 6,
+    "z_at_extremum": 0.5359016652
+  },
+  {
+    "cell_id": "TRI_109",
+    "type": "negative",
+    "extremum": 604,
+    "amplitude_Ah": -0.0026050542,
+    "duration": 2,
+    "z_at_extremum": 0.9268371308
+  },
+  {
+    "cell_id": "TRI_109",
+    "type": "negative",
+    "extremum": 619,
+    "amplitude_Ah": -0.0026314784,
+    "duration": 4,
+    "z_at_extremum": 0.9745187266
+  },
+  {
+    "cell_id": "TRI_112",
+    "type": "positive",
+    "extremum": 446,
+    "amplitude_Ah": 0.0024843285,
+    "duration": 2,
+    "z_at_extremum": 0.4407264757
+  },
+  {
+    "cell_id": "TRI_112",
+    "type": "positive",
+    "extremum": 520,
+    "amplitude_Ah": 0.0023709483,
+    "duration": 3,
+    "z_at_extremum": 0.9126270642
+  },
+  {
+    "cell_id": "TRI_114",
+    "type": "negative",
+    "extremum": 401,
+    "amplitude_Ah": -0.0033762361,
+    "duration": 3,
+    "z_at_extremum": 0.3710645234
+  },
+  {
+    "cell_id": "TRI_114",
+    "type": "negative",
+    "extremum": 406,
+    "amplitude_Ah": -0.0031886395,
+    "duration": 8,
+    "z_at_extremum": 0.3770601501
+  },
+  {
+    "cell_id": "TRI_114",
+    "type": "negative",
+    "extremum": 414,
+    "amplitude_Ah": -0.0031114354,
+    "duration": 3,
+    "z_at_extremum": 0.3868752748
+  },
+  {
+    "cell_id": "TRI_115",
+    "type": "negative",
+    "extremum": 317,
+    "amplitude_Ah": -0.0021637866,
+    "duration": 8,
+    "z_at_extremum": 0.2813121601
+  },
+  {
+    "cell_id": "TRI_115",
+    "type": "positive",
+    "extremum": 483,
+    "amplitude_Ah": 0.0022653093,
+    "duration": 2,
+    "z_at_extremum": 0.9651486317
+  },
+  {
+    "cell_id": "TRI_115",
+    "type": "positive",
+    "extremum": 490,
+    "amplitude_Ah": 0.0035875659,
+    "duration": 6,
+    "z_at_extremum": 1.0053044496
+  },
+  {
+    "cell_id": "TRI_117",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0025627368,
+    "duration": 3,
+    "z_at_extremum": 0.1778351899
+  },
+  {
+    "cell_id": "TRI_117",
+    "type": "negative",
+    "extremum": 534,
+    "amplitude_Ah": -0.002529224,
+    "duration": 3,
+    "z_at_extremum": 0.7213368585
+  },
+  {
+    "cell_id": "TRI_117",
+    "type": "negative",
+    "extremum": 546,
+    "amplitude_Ah": -0.002534131,
+    "duration": 3,
+    "z_at_extremum": 0.7991735762
+  },
+  {
+    "cell_id": "TRI_118",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0022753117,
+    "duration": 2,
+    "z_at_extremum": 0.183702617
+  },
+  {
+    "cell_id": "TRI_118",
+    "type": "negative",
+    "extremum": 358,
+    "amplitude_Ah": -0.0019832445,
+    "duration": 3,
+    "z_at_extremum": 0.2899604575
+  },
+  {
+    "cell_id": "TRI_118",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0028289503,
+    "duration": 10,
+    "z_at_extremum": 0.3361209174
+  },
+  {
+    "cell_id": "TRI_118",
+    "type": "positive",
+    "extremum": 522,
+    "amplitude_Ah": 0.0021896352,
+    "duration": 2,
+    "z_at_extremum": 0.6902233208
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "negative",
+    "extremum": 19,
+    "amplitude_Ah": -0.0009936908,
+    "duration": 6,
+    "z_at_extremum": 0.0078198389
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0017661033,
+    "duration": 7,
+    "z_at_extremum": 0.180555883
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0027820834,
+    "duration": 10,
+    "z_at_extremum": 0.3032533685
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "negative",
+    "extremum": 618,
+    "amplitude_Ah": -0.0013954274,
+    "duration": 9,
+    "z_at_extremum": 0.6074291353
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.003382336,
+    "duration": 3,
+    "z_at_extremum": 0.5802433008
+  },
+  {
+    "cell_id": "TRI_120",
+    "type": "negative",
+    "extremum": 629,
+    "amplitude_Ah": -0.001115681,
+    "duration": 2,
+    "z_at_extremum": 0.6476893058
+  },
+  {
+    "cell_id": "TRI_121",
+    "type": "positive",
+    "extremum": 221,
+    "amplitude_Ah": 0.001860267,
+    "duration": 3,
+    "z_at_extremum": 0.1141687919
+  },
+  {
+    "cell_id": "TRI_124",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0020596086,
+    "duration": 4,
+    "z_at_extremum": 0.2101775788
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0022946383,
+    "duration": 5,
+    "z_at_extremum": 0.1992022888
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0025881224,
+    "duration": 3,
+    "z_at_extremum": 0.3070876414
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0029108657,
+    "duration": 8,
+    "z_at_extremum": 0.4727136369
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 566,
+    "amplitude_Ah": 0.0022206493,
+    "duration": 2,
+    "z_at_extremum": 0.5983769215
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 582,
+    "amplitude_Ah": 0.0026404416,
+    "duration": 9,
+    "z_at_extremum": 0.64391759
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 587,
+    "amplitude_Ah": 0.0023117826,
+    "duration": 2,
+    "z_at_extremum": 0.66697432
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "positive",
+    "extremum": 600,
+    "amplitude_Ah": 0.0023474788,
+    "duration": 3,
+    "z_at_extremum": 0.7301746742
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "negative",
+    "extremum": 620,
+    "amplitude_Ah": -0.0021837218,
+    "duration": 2,
+    "z_at_extremum": 0.8936132269
+  },
+  {
+    "cell_id": "TRI_126",
+    "type": "negative",
+    "extremum": 628,
+    "amplitude_Ah": -0.0051148679,
+    "duration": 7,
+    "z_at_extremum": 1.0034292743
+  },
+  {
+    "cell_id": "TRI_127",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0026358485,
+    "duration": 5,
+    "z_at_extremum": 0.2818498858
+  },
+  {
+    "cell_id": "TRI_127",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.002471239,
+    "duration": 2,
+    "z_at_extremum": 0.4300659272
+  },
+  {
+    "cell_id": "TRI_127",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0035506246,
+    "duration": 6,
+    "z_at_extremum": 0.5860614283
+  },
+  {
+    "cell_id": "TRI_127",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0046842612,
+    "duration": 4,
+    "z_at_extremum": 0.8089197479
+  },
+  {
+    "cell_id": "TRI_127",
+    "type": "negative",
+    "extremum": 859,
+    "amplitude_Ah": -0.0031377228,
+    "duration": 4,
+    "z_at_extremum": 1.0070156594
+  },
+  {
+    "cell_id": "TRI_129",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0030280773,
+    "duration": 4,
+    "z_at_extremum": 0.4369486148
+  },
+  {
+    "cell_id": "TRI_129",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.004676014,
+    "duration": 10,
+    "z_at_extremum": 0.6269476061
+  },
+  {
+    "cell_id": "TRI_130",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0026807058,
+    "duration": 7,
+    "z_at_extremum": 0.2556948315
+  },
+  {
+    "cell_id": "TRI_130",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0029509376,
+    "duration": 2,
+    "z_at_extremum": 0.4094169272
+  },
+  {
+    "cell_id": "TRI_130",
+    "type": "negative",
+    "extremum": 706,
+    "amplitude_Ah": -0.0022177233,
+    "duration": 4,
+    "z_at_extremum": 0.6560018305
+  },
+  {
+    "cell_id": "TRI_130",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0048634598,
+    "duration": 9,
+    "z_at_extremum": 0.6210868425
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "negative",
+    "extremum": 17,
+    "amplitude_Ah": -0.0004819504,
+    "duration": 5,
+    "z_at_extremum": 0.0125919661
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "positive",
+    "extremum": 121,
+    "amplitude_Ah": 0.0013442605,
+    "duration": 3,
+    "z_at_extremum": 0.0388684126
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "positive",
+    "extremum": 402,
+    "amplitude_Ah": 0.0008043815,
+    "duration": 2,
+    "z_at_extremum": 0.1734935116
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0008613414,
+    "duration": 10,
+    "z_at_extremum": 0.2632059321
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "negative",
+    "extremum": 562,
+    "amplitude_Ah": -0.0004092932,
+    "duration": 4,
+    "z_at_extremum": 0.3413332578
+  },
+  {
+    "cell_id": "TRI_131",
+    "type": "negative",
+    "extremum": 684,
+    "amplitude_Ah": -0.0008249769,
+    "duration": 3,
+    "z_at_extremum": 1.0147790556
+  },
+  {
+    "cell_id": "TRI_134",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0034352688,
+    "duration": 5,
+    "z_at_extremum": 0.3266266985
+  },
+  {
+    "cell_id": "TRI_134",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0039869461,
+    "duration": 4,
+    "z_at_extremum": 0.5392734026
+  },
+  {
+    "cell_id": "TRI_134",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0049095439,
+    "duration": 8,
+    "z_at_extremum": 0.801113956
+  },
+  {
+    "cell_id": "TRI_135",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.004396057,
+    "duration": 4,
+    "z_at_extremum": 0.4345026994
+  },
+  {
+    "cell_id": "TRI_136",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0023408919,
+    "duration": 5,
+    "z_at_extremum": 0.1668253046
+  },
+  {
+    "cell_id": "TRI_136",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0021871664,
+    "duration": 2,
+    "z_at_extremum": 0.306761868
+  },
+  {
+    "cell_id": "TRI_136",
+    "type": "positive",
+    "extremum": 523,
+    "amplitude_Ah": 0.0028216846,
+    "duration": 7,
+    "z_at_extremum": 0.4745546993
+  },
+  {
+    "cell_id": "TRI_136",
+    "type": "positive",
+    "extremum": 566,
+    "amplitude_Ah": 0.0020582182,
+    "duration": 4,
+    "z_at_extremum": 0.6001080146
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.001719017,
+    "duration": 2,
+    "z_at_extremum": 0.246149042
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0019398942,
+    "duration": 7,
+    "z_at_extremum": 0.3811120581
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 542,
+    "amplitude_Ah": 0.0014212467,
+    "duration": 4,
+    "z_at_extremum": 0.4099188685
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 546,
+    "amplitude_Ah": 0.001298156,
+    "duration": 3,
+    "z_at_extremum": 0.4210109174
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 566,
+    "amplitude_Ah": 0.0014798268,
+    "duration": 2,
+    "z_at_extremum": 0.4663009854
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 568,
+    "amplitude_Ah": 0.0017460264,
+    "duration": 5,
+    "z_at_extremum": 0.4692900663
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 575,
+    "amplitude_Ah": 0.0014885654,
+    "duration": 2,
+    "z_at_extremum": 0.4915316177
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 578,
+    "amplitude_Ah": 0.0014361427,
+    "duration": 3,
+    "z_at_extremum": 0.4998280232
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 581,
+    "amplitude_Ah": 0.0014050664,
+    "duration": 2,
+    "z_at_extremum": 0.5091082039
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 587,
+    "amplitude_Ah": 0.0016935797,
+    "duration": 11,
+    "z_at_extremum": 0.5244611469
+  },
+  {
+    "cell_id": "TRI_137",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0027093203,
+    "duration": 3,
+    "z_at_extremum": 0.6568820442
+  },
+  {
+    "cell_id": "TRI_139",
+    "type": "positive",
+    "extremum": 543,
+    "amplitude_Ah": 0.002955517,
+    "duration": 7,
+    "z_at_extremum": 0.4366574701
+  },
+  {
+    "cell_id": "TRI_139",
+    "type": "positive",
+    "extremum": 549,
+    "amplitude_Ah": 0.0024174158,
+    "duration": 3,
+    "z_at_extremum": 0.474661696
+  },
+  {
+    "cell_id": "TRI_140",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.001845078,
+    "duration": 3,
+    "z_at_extremum": 0.2333516488
+  },
+  {
+    "cell_id": "TRI_140",
+    "type": "positive",
+    "extremum": 574,
+    "amplitude_Ah": 0.001671764,
+    "duration": 8,
+    "z_at_extremum": 0.6525989969
+  },
+  {
+    "cell_id": "TRI_140",
+    "type": "negative",
+    "extremum": 609,
+    "amplitude_Ah": -0.0059623819,
+    "duration": 9,
+    "z_at_extremum": 1.0067945763
+  },
+  {
+    "cell_id": "TRI_142",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0038834638,
+    "duration": 5,
+    "z_at_extremum": 0.3244352666
+  },
+  {
+    "cell_id": "TRI_142",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0036751092,
+    "duration": 2,
+    "z_at_extremum": 0.5117883201
+  },
+  {
+    "cell_id": "TRI_142",
+    "type": "negative",
+    "extremum": 766,
+    "amplitude_Ah": -0.0029738761,
+    "duration": 3,
+    "z_at_extremum": 0.6655783518
+  },
+  {
+    "cell_id": "TRI_142",
+    "type": "positive",
+    "extremum": 842,
+    "amplitude_Ah": 0.0032069845,
+    "duration": 3,
+    "z_at_extremum": 0.7339702851
+  },
+  {
+    "cell_id": "TRI_144",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0038093752,
+    "duration": 5,
+    "z_at_extremum": 0.5306261209
+  },
+  {
+    "cell_id": "TRI_144",
+    "type": "negative",
+    "extremum": 757,
+    "amplitude_Ah": -0.0015229637,
+    "duration": 3,
+    "z_at_extremum": 0.6785105536
+  },
+  {
+    "cell_id": "TRI_145",
+    "type": "negative",
+    "extremum": 666,
+    "amplitude_Ah": -0.0029562293,
+    "duration": 3,
+    "z_at_extremum": 1.0103810099
+  },
+  {
+    "cell_id": "TRI_147",
+    "type": "positive",
+    "extremum": 21,
+    "amplitude_Ah": 0.0017418366,
+    "duration": 3,
+    "z_at_extremum": -0.0049364023
+  },
+  {
+    "cell_id": "TRI_147",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.002183384,
+    "duration": 3,
+    "z_at_extremum": 0.3136189689
+  },
+  {
+    "cell_id": "TRI_147",
+    "type": "positive",
+    "extremum": 524,
+    "amplitude_Ah": 0.0030990457,
+    "duration": 5,
+    "z_at_extremum": 0.5860377771
+  },
+  {
+    "cell_id": "TRI_147",
+    "type": "negative",
+    "extremum": 555,
+    "amplitude_Ah": -0.0025977098,
+    "duration": 2,
+    "z_at_extremum": 0.8154275728
+  },
+  {
+    "cell_id": "TRI_147",
+    "type": "positive",
+    "extremum": 590,
+    "amplitude_Ah": 0.0031043934,
+    "duration": 8,
+    "z_at_extremum": 0.9558782417
+  },
+  {
+    "cell_id": "TRI_149",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0018960704,
+    "duration": 4,
+    "z_at_extremum": 0.2127471735
+  },
+  {
+    "cell_id": "TRI_149",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0026143365,
+    "duration": 3,
+    "z_at_extremum": 0.3845418622
+  },
+  {
+    "cell_id": "TRI_149",
+    "type": "positive",
+    "extremum": 458,
+    "amplitude_Ah": 0.0015983248,
+    "duration": 3,
+    "z_at_extremum": 0.5036359092
+  },
+  {
+    "cell_id": "TRI_149",
+    "type": "negative",
+    "extremum": 491,
+    "amplitude_Ah": -0.0016515852,
+    "duration": 2,
+    "z_at_extremum": 0.7074671645
+  },
+  {
+    "cell_id": "TRI_150",
+    "type": "positive",
+    "extremum": 471,
+    "amplitude_Ah": 0.0067159029,
+    "duration": 10,
+    "z_at_extremum": 1.0005319637
+  },
+  {
+    "cell_id": "TRI_154",
+    "type": "positive",
+    "extremum": 422,
+    "amplitude_Ah": 0.0016133102,
+    "duration": 10,
+    "z_at_extremum": 0.1900482216
+  },
+  {
+    "cell_id": "TRI_155",
+    "type": "positive",
+    "extremum": 422,
+    "amplitude_Ah": 0.0011486663,
+    "duration": 3,
+    "z_at_extremum": 0.2031268556
+  },
+  {
+    "cell_id": "TRI_155",
+    "type": "negative",
+    "extremum": 482,
+    "amplitude_Ah": -0.0010494923,
+    "duration": 3,
+    "z_at_extremum": 0.3047432549
+  },
+  {
+    "cell_id": "TRI_155",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0024907507,
+    "duration": 2,
+    "z_at_extremum": 0.9552813436
+  },
+  {
+    "cell_id": "TRI_155",
+    "type": "positive",
+    "extremum": 728,
+    "amplitude_Ah": 0.0011116306,
+    "duration": 2,
+    "z_at_extremum": 0.9973453049
+  },
+  {
+    "cell_id": "TRI_156",
+    "type": "positive",
+    "extremum": 584,
+    "amplitude_Ah": 0.0030336113,
+    "duration": 5,
+    "z_at_extremum": 1.0021400609
+  },
+  {
+    "cell_id": "TRI_157",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.001222569,
+    "duration": 5,
+    "z_at_extremum": 0.2154294168
+  },
+  {
+    "cell_id": "TRI_157",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0013367594,
+    "duration": 5,
+    "z_at_extremum": 0.3084123092
+  },
+  {
+    "cell_id": "TRI_157",
+    "type": "negative",
+    "extremum": 850,
+    "amplitude_Ah": -0.0038890998,
+    "duration": 10,
+    "z_at_extremum": 1.0006660117
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.002412081,
+    "duration": 2,
+    "z_at_extremum": 0.1829090265
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0027019992,
+    "duration": 2,
+    "z_at_extremum": 0.315450291
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "negative",
+    "extremum": 478,
+    "amplitude_Ah": -0.0024471144,
+    "duration": 2,
+    "z_at_extremum": 0.4694069949
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "negative",
+    "extremum": 500,
+    "amplitude_Ah": -0.0028893992,
+    "duration": 3,
+    "z_at_extremum": 0.5137031824
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0033836195,
+    "duration": 6,
+    "z_at_extremum": 0.4810130916
+  },
+  {
+    "cell_id": "TRI_159",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0035638318,
+    "duration": 3,
+    "z_at_extremum": 0.7075554512
+  },
+  {
+    "cell_id": "TRI_162",
+    "type": "negative",
+    "extremum": 400,
+    "amplitude_Ah": -0.0016266746,
+    "duration": 8,
+    "z_at_extremum": 0.3075935612
+  },
+  {
+    "cell_id": "TRI_163",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0016064481,
+    "duration": 5,
+    "z_at_extremum": 0.2246507986
+  },
+  {
+    "cell_id": "TRI_163",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0015020979,
+    "duration": 2,
+    "z_at_extremum": 0.3198136498
+  },
+  {
+    "cell_id": "TRI_163",
+    "type": "positive",
+    "extremum": 722,
+    "amplitude_Ah": 0.001973286,
+    "duration": 4,
+    "z_at_extremum": 0.4285839398
+  },
+  {
+    "cell_id": "TRI_163",
+    "type": "positive",
+    "extremum": 898,
+    "amplitude_Ah": 0.0064911873,
+    "duration": 9,
+    "z_at_extremum": 0.6960623232
+  },
+  {
+    "cell_id": "TRI_163",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.0046127576,
+    "duration": 11,
+    "z_at_extremum": 0.7477827715
+  },
+  {
+    "cell_id": "TRI_166",
+    "type": "negative",
+    "extremum": 653,
+    "amplitude_Ah": -0.0021350719,
+    "duration": 2,
+    "z_at_extremum": 0.8635421287
+  },
+  {
+    "cell_id": "TRI_166",
+    "type": "negative",
+    "extremum": 657,
+    "amplitude_Ah": -0.0020600722,
+    "duration": 4,
+    "z_at_extremum": 0.8924689599
+  },
+  {
+    "cell_id": "TRI_168",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0015237462,
+    "duration": 3,
+    "z_at_extremum": 0.1269295859
+  },
+  {
+    "cell_id": "TRI_168",
+    "type": "positive",
+    "extremum": 510,
+    "amplitude_Ah": 0.0019902739,
+    "duration": 7,
+    "z_at_extremum": 0.3777177666
+  },
+  {
+    "cell_id": "TRI_168",
+    "type": "positive",
+    "extremum": 625,
+    "amplitude_Ah": 0.0026287083,
+    "duration": 2,
+    "z_at_extremum": 0.8962693343
+  },
+  {
+    "cell_id": "TRI_168",
+    "type": "positive",
+    "extremum": 628,
+    "amplitude_Ah": 0.0028970202,
+    "duration": 3,
+    "z_at_extremum": 0.9174667572
+  },
+  {
+    "cell_id": "TRI_168",
+    "type": "positive",
+    "extremum": 638,
+    "amplitude_Ah": 0.0040967752,
+    "duration": 6,
+    "z_at_extremum": 0.9918732163
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0028033701,
+    "duration": 2,
+    "z_at_extremum": 0.1688419284
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "negative",
+    "extremum": 420,
+    "amplitude_Ah": -0.0025655558,
+    "duration": 4,
+    "z_at_extremum": 0.3211541696
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0035458506,
+    "duration": 6,
+    "z_at_extremum": 0.4600340309
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "positive",
+    "extremum": 537,
+    "amplitude_Ah": 0.0024992818,
+    "duration": 2,
+    "z_at_extremum": 0.4983650847
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "positive",
+    "extremum": 582,
+    "amplitude_Ah": 0.0029755014,
+    "duration": 10,
+    "z_at_extremum": 0.6171269863
+  },
+  {
+    "cell_id": "TRI_169",
+    "type": "negative",
+    "extremum": 632,
+    "amplitude_Ah": -0.0029062154,
+    "duration": 5,
+    "z_at_extremum": 0.9296833864
+  },
+  {
+    "cell_id": "TRI_172",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0023511539,
+    "duration": 5,
+    "z_at_extremum": 0.1585864314
+  },
+  {
+    "cell_id": "TRI_172",
+    "type": "negative",
+    "extremum": 552,
+    "amplitude_Ah": -0.002088844,
+    "duration": 4,
+    "z_at_extremum": 0.841677665
+  },
+  {
+    "cell_id": "TRI_172",
+    "type": "negative",
+    "extremum": 556,
+    "amplitude_Ah": -0.0021145493,
+    "duration": 2,
+    "z_at_extremum": 0.8666560097
+  },
+  {
+    "cell_id": "TRI_172",
+    "type": "positive",
+    "extremum": 577,
+    "amplitude_Ah": 0.0023933068,
+    "duration": 3,
+    "z_at_extremum": 0.9944086721
+  },
+  {
+    "cell_id": "TRI_173",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0022058941,
+    "duration": 10,
+    "z_at_extremum": 0.1976028582
+  },
+  {
+    "cell_id": "TRI_176",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0021492522,
+    "duration": 2,
+    "z_at_extremum": 0.1457080491
+  },
+  {
+    "cell_id": "TRI_176",
+    "type": "positive",
+    "extremum": 523,
+    "amplitude_Ah": 0.0034952702,
+    "duration": 9,
+    "z_at_extremum": 0.4663839799
+  },
+  {
+    "cell_id": "TRI_176",
+    "type": "positive",
+    "extremum": 528,
+    "amplitude_Ah": 0.0029156697,
+    "duration": 3,
+    "z_at_extremum": 0.4986269157
+  },
+  {
+    "cell_id": "TRI_176",
+    "type": "positive",
+    "extremum": 536,
+    "amplitude_Ah": 0.0021645891,
+    "duration": 2,
+    "z_at_extremum": 0.5440766164
+  },
+  {
+    "cell_id": "TRI_178",
+    "type": "negative",
+    "extremum": 475,
+    "amplitude_Ah": -0.0020308898,
+    "duration": 3,
+    "z_at_extremum": 0.3005964194
+  },
+  {
+    "cell_id": "TRI_178",
+    "type": "negative",
+    "extremum": 481,
+    "amplitude_Ah": -0.0020437467,
+    "duration": 5,
+    "z_at_extremum": 0.3070772233
+  },
+  {
+    "cell_id": "TRI_179",
+    "type": "negative",
+    "extremum": 575,
+    "amplitude_Ah": -0.0024468619,
+    "duration": 10,
+    "z_at_extremum": 0.8327464466
+  },
+  {
+    "cell_id": "TRI_179",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.005796238,
+    "duration": 11,
+    "z_at_extremum": 0.9926060996
+  },
+  {
+    "cell_id": "TRI_180",
+    "type": "negative",
+    "extremum": 629,
+    "amplitude_Ah": -0.0017909784,
+    "duration": 7,
+    "z_at_extremum": 0.9263469448
+  },
+  {
+    "cell_id": "TRI_183",
+    "type": "positive",
+    "extremum": 501,
+    "amplitude_Ah": 0.0022664179,
+    "duration": 5,
+    "z_at_extremum": 0.4809309377
+  },
+  {
+    "cell_id": "TRI_183",
+    "type": "positive",
+    "extremum": 508,
+    "amplitude_Ah": 0.0021108828,
+    "duration": 5,
+    "z_at_extremum": 0.5134873316
+  },
+  {
+    "cell_id": "TRI_185",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0031061054,
+    "duration": 4,
+    "z_at_extremum": 0.1513425227
+  },
+  {
+    "cell_id": "TRI_185",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0032163538,
+    "duration": 2,
+    "z_at_extremum": 0.3350506703
+  },
+  {
+    "cell_id": "TRI_185",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0048789601,
+    "duration": 6,
+    "z_at_extremum": 0.5513936909
+  },
+  {
+    "cell_id": "TRI_186",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0026280909,
+    "duration": 3,
+    "z_at_extremum": 0.2489725751
+  },
+  {
+    "cell_id": "TRI_186",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0039380253,
+    "duration": 10,
+    "z_at_extremum": 0.3898202243
+  },
+  {
+    "cell_id": "TRI_187",
+    "type": "positive",
+    "extremum": 514,
+    "amplitude_Ah": 0.0032333299,
+    "duration": 3,
+    "z_at_extremum": 0.5388498731
+  },
+  {
+    "cell_id": "TRI_187",
+    "type": "positive",
+    "extremum": 519,
+    "amplitude_Ah": 0.0031803008,
+    "duration": 2,
+    "z_at_extremum": 0.5733605345
+  },
+  {
+    "cell_id": "TRI_188",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0011268919,
+    "duration": 4,
+    "z_at_extremum": 0.1211084118
+  },
+  {
+    "cell_id": "TRI_188",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0014461264,
+    "duration": 2,
+    "z_at_extremum": 0.2081321492
+  },
+  {
+    "cell_id": "TRI_188",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.002095536,
+    "duration": 11,
+    "z_at_extremum": 0.3774293177
+  },
+  {
+    "cell_id": "TRI_188",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0028789539,
+    "duration": 5,
+    "z_at_extremum": 0.7414264658
+  },
+  {
+    "cell_id": "TRI_188",
+    "type": "negative",
+    "extremum": 648,
+    "amplitude_Ah": -0.0036928494,
+    "duration": 11,
+    "z_at_extremum": 1.0054722933
+  },
+  {
+    "cell_id": "TRI_189",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.002350702,
+    "duration": 3,
+    "z_at_extremum": 0.1560855277
+  },
+  {
+    "cell_id": "TRI_193",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0022218863,
+    "duration": 3,
+    "z_at_extremum": 0.1598210249
+  },
+  {
+    "cell_id": "TRI_193",
+    "type": "positive",
+    "extremum": 545,
+    "amplitude_Ah": 0.0022455584,
+    "duration": 2,
+    "z_at_extremum": 0.5552190577
+  },
+  {
+    "cell_id": "TRI_196",
+    "type": "negative",
+    "extremum": 483,
+    "amplitude_Ah": -0.0026784737,
+    "duration": 7,
+    "z_at_extremum": 0.3904871296
+  },
+  {
+    "cell_id": "TRI_199",
+    "type": "negative",
+    "extremum": 407,
+    "amplitude_Ah": -0.0018075021,
+    "duration": 9,
+    "z_at_extremum": 0.2886057387
+  },
+  {
+    "cell_id": "TRI_199",
+    "type": "positive",
+    "extremum": 509,
+    "amplitude_Ah": 0.0027585297,
+    "duration": 2,
+    "z_at_extremum": 0.442554305
+  },
+  {
+    "cell_id": "TRI_199",
+    "type": "positive",
+    "extremum": 577,
+    "amplitude_Ah": 0.0029648211,
+    "duration": 2,
+    "z_at_extremum": 0.8029322292
+  },
+  {
+    "cell_id": "TRI_199",
+    "type": "positive",
+    "extremum": 602,
+    "amplitude_Ah": 0.0041172735,
+    "duration": 6,
+    "z_at_extremum": 0.9707690797
+  },
+  {
+    "cell_id": "TRI_201",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0017965085,
+    "duration": 4,
+    "z_at_extremum": 0.1879003046
+  },
+  {
+    "cell_id": "TRI_202",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0022296956,
+    "duration": 3,
+    "z_at_extremum": 0.1631871742
+  },
+  {
+    "cell_id": "TRI_202",
+    "type": "negative",
+    "extremum": 420,
+    "amplitude_Ah": -0.0022180067,
+    "duration": 3,
+    "z_at_extremum": 0.288403725
+  },
+  {
+    "cell_id": "TRI_202",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0029774439,
+    "duration": 7,
+    "z_at_extremum": 0.4125791297
+  },
+  {
+    "cell_id": "TRI_202",
+    "type": "positive",
+    "extremum": 530,
+    "amplitude_Ah": 0.0020845729,
+    "duration": 2,
+    "z_at_extremum": 0.4340691178
+  },
+  {
+    "cell_id": "TRI_202",
+    "type": "positive",
+    "extremum": 536,
+    "amplitude_Ah": 0.0020948228,
+    "duration": 2,
+    "z_at_extremum": 0.4568916762
+  },
+  {
+    "cell_id": "TRI_203",
+    "type": "negative",
+    "extremum": 420,
+    "amplitude_Ah": -0.001487502,
+    "duration": 9,
+    "z_at_extremum": 0.2130609048
+  },
+  {
+    "cell_id": "TRI_203",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0019898427,
+    "duration": 9,
+    "z_at_extremum": 0.3309584366
+  },
+  {
+    "cell_id": "TRI_203",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0026212533,
+    "duration": 4,
+    "z_at_extremum": 0.7454918219
+  },
+  {
+    "cell_id": "TRI_203",
+    "type": "negative",
+    "extremum": 642,
+    "amplitude_Ah": -0.0019868045,
+    "duration": 8,
+    "z_at_extremum": 0.9889348387
+  },
+  {
+    "cell_id": "TRI_206",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0035919679,
+    "duration": 2,
+    "z_at_extremum": 0.9756278484
+  },
+  {
+    "cell_id": "TRI_206",
+    "type": "positive",
+    "extremum": 728,
+    "amplitude_Ah": 0.0034150707,
+    "duration": 6,
+    "z_at_extremum": 0.9869967382
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.002026733,
+    "duration": 9,
+    "z_at_extremum": 0.1711605867
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0018735588,
+    "duration": 3,
+    "z_at_extremum": 0.2754588473
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0025204161,
+    "duration": 10,
+    "z_at_extremum": 0.4060710656
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 540,
+    "amplitude_Ah": 0.0016509664,
+    "duration": 3,
+    "z_at_extremum": 0.4529922294
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 549,
+    "amplitude_Ah": 0.0015893927,
+    "duration": 2,
+    "z_at_extremum": 0.4702006942
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 552,
+    "amplitude_Ah": 0.0018109056,
+    "duration": 2,
+    "z_at_extremum": 0.4751116003
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "negative",
+    "extremum": 635,
+    "amplitude_Ah": -0.0017914257,
+    "duration": 2,
+    "z_at_extremum": 0.7914944895
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 685,
+    "amplitude_Ah": 0.0016199724,
+    "duration": 2,
+    "z_at_extremum": 0.98959899
+  },
+  {
+    "cell_id": "TRI_207",
+    "type": "positive",
+    "extremum": 688,
+    "amplitude_Ah": 0.001939062,
+    "duration": 3,
+    "z_at_extremum": 0.9980955098
+  },
+  {
+    "cell_id": "TRI_208",
+    "type": "negative",
+    "extremum": 462,
+    "amplitude_Ah": -0.0029871683,
+    "duration": 4,
+    "z_at_extremum": 0.3536732438
+  },
+  {
+    "cell_id": "TRI_209",
+    "type": "positive",
+    "extremum": 504,
+    "amplitude_Ah": 0.0032929077,
+    "duration": 9,
+    "z_at_extremum": 0.4465283231
+  },
+  {
+    "cell_id": "TRI_209",
+    "type": "negative",
+    "extremum": 568,
+    "amplitude_Ah": -0.0020710684,
+    "duration": 2,
+    "z_at_extremum": 0.7719918979
+  },
+  {
+    "cell_id": "TRI_209",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.0058474366,
+    "duration": 9,
+    "z_at_extremum": 0.9541725718
+  },
+  {
+    "cell_id": "TRI_210",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0013471861,
+    "duration": 2,
+    "z_at_extremum": 0.214878012
+  },
+  {
+    "cell_id": "TRI_210",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0021944192,
+    "duration": 9,
+    "z_at_extremum": 0.3791679533
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0026697961,
+    "duration": 8,
+    "z_at_extremum": 0.4549942137
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "positive",
+    "extremum": 642,
+    "amplitude_Ah": 0.002269715,
+    "duration": 4,
+    "z_at_extremum": 0.509456046
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "positive",
+    "extremum": 656,
+    "amplitude_Ah": 0.0024744491,
+    "duration": 8,
+    "z_at_extremum": 0.5515728715
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "positive",
+    "extremum": 665,
+    "amplitude_Ah": 0.0023840675,
+    "duration": 2,
+    "z_at_extremum": 0.5951814789
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "positive",
+    "extremum": 675,
+    "amplitude_Ah": 0.0023281029,
+    "duration": 3,
+    "z_at_extremum": 0.6357695769
+  },
+  {
+    "cell_id": "TRI_211",
+    "type": "negative",
+    "extremum": 723,
+    "amplitude_Ah": -0.0036686875,
+    "duration": 3,
+    "z_at_extremum": 1.0025230037
+  },
+  {
+    "cell_id": "TRI_212",
+    "type": "negative",
+    "extremum": 673,
+    "amplitude_Ah": -0.0032700782,
+    "duration": 7,
+    "z_at_extremum": 1.0120450581
+  },
+  {
+    "cell_id": "TRI_213",
+    "type": "positive",
+    "extremum": 322,
+    "amplitude_Ah": 0.0021303629,
+    "duration": 6,
+    "z_at_extremum": 0.1586499022
+  },
+  {
+    "cell_id": "TRI_213",
+    "type": "negative",
+    "extremum": 420,
+    "amplitude_Ah": -0.0020345716,
+    "duration": 6,
+    "z_at_extremum": 0.3046969964
+  },
+  {
+    "cell_id": "TRI_213",
+    "type": "positive",
+    "extremum": 540,
+    "amplitude_Ah": 0.0021018352,
+    "duration": 7,
+    "z_at_extremum": 0.54290718
+  },
+  {
+    "cell_id": "TRI_213",
+    "type": "negative",
+    "extremum": 599,
+    "amplitude_Ah": -0.0020407932,
+    "duration": 2,
+    "z_at_extremum": 0.9331086675
+  },
+  {
+    "cell_id": "TRI_214",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0009598828,
+    "duration": 7,
+    "z_at_extremum": 0.234229066
+  },
+  {
+    "cell_id": "TRI_214",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0019441947,
+    "duration": 7,
+    "z_at_extremum": 0.4481755866
+  },
+  {
+    "cell_id": "TRI_214",
+    "type": "positive",
+    "extremum": 807,
+    "amplitude_Ah": 0.0017535914,
+    "duration": 3,
+    "z_at_extremum": 0.6182107788
+  },
+  {
+    "cell_id": "TRI_216",
+    "type": "positive",
+    "extremum": 6,
+    "amplitude_Ah": 0.0011927054,
+    "duration": 2,
+    "z_at_extremum": 0.0035856152
+  },
+  {
+    "cell_id": "TRI_216",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0015425978,
+    "duration": 4,
+    "z_at_extremum": 0.4265720369
+  },
+  {
+    "cell_id": "TRI_216",
+    "type": "negative",
+    "extremum": 688,
+    "amplitude_Ah": -0.0013301902,
+    "duration": 7,
+    "z_at_extremum": 0.5882735939
+  },
+  {
+    "cell_id": "TRI_216",
+    "type": "negative",
+    "extremum": 697,
+    "amplitude_Ah": -0.0011665444,
+    "duration": 3,
+    "z_at_extremum": 0.6064695999
+  },
+  {
+    "cell_id": "TRI_216",
+    "type": "negative",
+    "extremum": 702,
+    "amplitude_Ah": -0.0011036182,
+    "duration": 3,
+    "z_at_extremum": 0.6183540216
+  },
+  {
+    "cell_id": "TRI_219",
+    "type": "negative",
+    "extremum": 561,
+    "amplitude_Ah": -0.0035500257,
+    "duration": 10,
+    "z_at_extremum": 0.8581375543
+  },
+  {
+    "cell_id": "TRI_220",
+    "type": "positive",
+    "extremum": 731,
+    "amplitude_Ah": 0.0022674648,
+    "duration": 2,
+    "z_at_extremum": 0.9664964051
+  },
+  {
+    "cell_id": "TRI_220",
+    "type": "positive",
+    "extremum": 739,
+    "amplitude_Ah": 0.0035360548,
+    "duration": 6,
+    "z_at_extremum": 1.0044329407
+  },
+  {
+    "cell_id": "TRI_223",
+    "type": "negative",
+    "extremum": 614,
+    "amplitude_Ah": -0.00210953,
+    "duration": 2,
+    "z_at_extremum": 0.270452642
+  },
+  {
+    "cell_id": "TRI_223",
+    "type": "negative",
+    "extremum": 617,
+    "amplitude_Ah": -0.0020928914,
+    "duration": 3,
+    "z_at_extremum": 0.274984907
+  },
+  {
+    "cell_id": "TRI_223",
+    "type": "negative",
+    "extremum": 888,
+    "amplitude_Ah": -0.0049572145,
+    "duration": 10,
+    "z_at_extremum": 1.0096703261
+  },
+  {
+    "cell_id": "TRI_224",
+    "type": "positive",
+    "extremum": 930,
+    "amplitude_Ah": 0.0023977671,
+    "duration": 2,
+    "z_at_extremum": 0.737330012
+  },
+  {
+    "cell_id": "TRI_224",
+    "type": "negative",
+    "extremum": 976,
+    "amplitude_Ah": -0.0021051481,
+    "duration": 2,
+    "z_at_extremum": 0.9151358412
+  },
+  {
+    "cell_id": "TRI_225",
+    "type": "positive",
+    "extremum": 827,
+    "amplitude_Ah": 0.0034706805,
+    "duration": 5,
+    "z_at_extremum": 0.7611905342
+  },
+  {
+    "cell_id": "TRI_225",
+    "type": "negative",
+    "extremum": 836,
+    "amplitude_Ah": -0.0024668878,
+    "duration": 4,
+    "z_at_extremum": 0.8759735128
+  },
+  {
+    "cell_id": "TRI_225",
+    "type": "negative",
+    "extremum": 842,
+    "amplitude_Ah": -0.0034029972,
+    "duration": 3,
+    "z_at_extremum": 0.9037264813
+  },
+  {
+    "cell_id": "TRI_225",
+    "type": "negative",
+    "extremum": 853,
+    "amplitude_Ah": -0.0034845346,
+    "duration": 2,
+    "z_at_extremum": 0.9546407328
+  },
+  {
+    "cell_id": "TRI_225",
+    "type": "negative",
+    "extremum": 857,
+    "amplitude_Ah": -0.002491526,
+    "duration": 2,
+    "z_at_extremum": 0.9888571464
+  },
+  {
+    "cell_id": "TRI_226",
+    "type": "negative",
+    "extremum": 608,
+    "amplitude_Ah": -0.0007286847,
+    "duration": 2,
+    "z_at_extremum": 0.4017930599
+  },
+  {
+    "cell_id": "TRI_226",
+    "type": "negative",
+    "extremum": 613,
+    "amplitude_Ah": -0.0007274459,
+    "duration": 5,
+    "z_at_extremum": 0.4098378551
+  },
+  {
+    "cell_id": "TRI_226",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.0015365831,
+    "duration": 10,
+    "z_at_extremum": 0.3921741164
+  },
+  {
+    "cell_id": "TRI_226",
+    "type": "negative",
+    "extremum": 820,
+    "amplitude_Ah": -0.0013260318,
+    "duration": 4,
+    "z_at_extremum": 0.9489488916
+  },
+  {
+    "cell_id": "TRI_226",
+    "type": "negative",
+    "extremum": 825,
+    "amplitude_Ah": -0.0025705766,
+    "duration": 3,
+    "z_at_extremum": 1.0061215227
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "positive",
+    "extremum": 423,
+    "amplitude_Ah": 0.0013901231,
+    "duration": 2,
+    "z_at_extremum": 0.1581935857
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "positive",
+    "extremum": 524,
+    "amplitude_Ah": 0.0008434149,
+    "duration": 4,
+    "z_at_extremum": 0.2187631412
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.0009676177,
+    "duration": 4,
+    "z_at_extremum": 0.3014739137
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "negative",
+    "extremum": 662,
+    "amplitude_Ah": -0.00085363,
+    "duration": 2,
+    "z_at_extremum": 0.3690419167
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0010304818,
+    "duration": 2,
+    "z_at_extremum": 0.4280217098
+  },
+  {
+    "cell_id": "TRI_227",
+    "type": "positive",
+    "extremum": 890,
+    "amplitude_Ah": 0.001342712,
+    "duration": 6,
+    "z_at_extremum": 0.7277786558
+  },
+  {
+    "cell_id": "TRI_228",
+    "type": "positive",
+    "extremum": 522,
+    "amplitude_Ah": 0.0014416205,
+    "duration": 6,
+    "z_at_extremum": 0.2194151756
+  },
+  {
+    "cell_id": "TRI_228",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0015422026,
+    "duration": 3,
+    "z_at_extremum": 0.4333042481
+  },
+  {
+    "cell_id": "TRI_230",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0019645912,
+    "duration": 5,
+    "z_at_extremum": 0.1889730404
+  },
+  {
+    "cell_id": "TRI_230",
+    "type": "positive",
+    "extremum": 750,
+    "amplitude_Ah": 0.0018807244,
+    "duration": 2,
+    "z_at_extremum": 0.5290840347
+  },
+  {
+    "cell_id": "TRI_230",
+    "type": "positive",
+    "extremum": 753,
+    "amplitude_Ah": 0.0024346319,
+    "duration": 2,
+    "z_at_extremum": 0.5337419193
+  },
+  {
+    "cell_id": "TRI_230",
+    "type": "positive",
+    "extremum": 765,
+    "amplitude_Ah": 0.0021169695,
+    "duration": 2,
+    "z_at_extremum": 0.5623878288
+  },
+  {
+    "cell_id": "TRI_230",
+    "type": "positive",
+    "extremum": 769,
+    "amplitude_Ah": 0.0022734373,
+    "duration": 10,
+    "z_at_extremum": 0.5681524704
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.0020525047,
+    "duration": 4,
+    "z_at_extremum": 0.3359343595
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0021261242,
+    "duration": 2,
+    "z_at_extremum": 0.486901634
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "negative",
+    "extremum": 774,
+    "amplitude_Ah": -0.0018638505,
+    "duration": 5,
+    "z_at_extremum": 0.6578778435
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "negative",
+    "extremum": 779,
+    "amplitude_Ah": -0.002100101,
+    "duration": 4,
+    "z_at_extremum": 0.6767253435
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "positive",
+    "extremum": 784,
+    "amplitude_Ah": 0.0070212156,
+    "duration": 3,
+    "z_at_extremum": 0.5885602581
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "positive",
+    "extremum": 794,
+    "amplitude_Ah": 0.004522305,
+    "duration": 2,
+    "z_at_extremum": 0.6558510951
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "negative",
+    "extremum": 845,
+    "amplitude_Ah": -0.0016574053,
+    "duration": 2,
+    "z_at_extremum": 0.8519060777
+  },
+  {
+    "cell_id": "TRI_269",
+    "type": "positive",
+    "extremum": 905,
+    "amplitude_Ah": 0.0032988863,
+    "duration": 9,
+    "z_at_extremum": 1.0003354958
+  },
+  {
+    "cell_id": "TRI_270",
+    "type": "negative",
+    "extremum": 920,
+    "amplitude_Ah": -0.0038219131,
+    "duration": 2,
+    "z_at_extremum": 0.5704816467
+  },
+  {
+    "cell_id": "TRI_270",
+    "type": "positive",
+    "extremum": 1121,
+    "amplitude_Ah": 0.004234424,
+    "duration": 2,
+    "z_at_extremum": 0.746412719
+  },
+  {
+    "cell_id": "TRI_270",
+    "type": "positive",
+    "extremum": 1221,
+    "amplitude_Ah": 0.0057800278,
+    "duration": 6,
+    "z_at_extremum": 0.8433092387
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 522,
+    "amplitude_Ah": 0.0018268919,
+    "duration": 5,
+    "z_at_extremum": 0.2209952877
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "negative",
+    "extremum": 619,
+    "amplitude_Ah": -0.00187347,
+    "duration": 8,
+    "z_at_extremum": 0.3347247783
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "negative",
+    "extremum": 669,
+    "amplitude_Ah": -0.0016694294,
+    "duration": 3,
+    "z_at_extremum": 0.3842294636
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 728,
+    "amplitude_Ah": 0.0047003013,
+    "duration": 4,
+    "z_at_extremum": 0.3665548477
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 737,
+    "amplitude_Ah": 0.0038014796,
+    "duration": 2,
+    "z_at_extremum": 0.394574609
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 848,
+    "amplitude_Ah": 0.0033220896,
+    "duration": 3,
+    "z_at_extremum": 0.5460863036
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 853,
+    "amplitude_Ah": 0.0036795587,
+    "duration": 4,
+    "z_at_extremum": 0.5448052056
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 856,
+    "amplitude_Ah": 0.0039142929,
+    "duration": 2,
+    "z_at_extremum": 0.5538411911
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "positive",
+    "extremum": 859,
+    "amplitude_Ah": 0.0038905961,
+    "duration": 2,
+    "z_at_extremum": 0.569506758
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "negative",
+    "extremum": 931,
+    "amplitude_Ah": -0.0021078935,
+    "duration": 6,
+    "z_at_extremum": 0.8163042992
+  },
+  {
+    "cell_id": "TRI_272",
+    "type": "negative",
+    "extremum": 936,
+    "amplitude_Ah": -0.0030110649,
+    "duration": 5,
+    "z_at_extremum": 0.8399692973
+  },
+  {
+    "cell_id": "TRI_273",
+    "type": "positive",
+    "extremum": 728,
+    "amplitude_Ah": 0.005289151,
+    "duration": 10,
+    "z_at_extremum": 0.44962009
+  },
+  {
+    "cell_id": "TRI_273",
+    "type": "positive",
+    "extremum": 735,
+    "amplitude_Ah": 0.0054055247,
+    "duration": 7,
+    "z_at_extremum": 0.4667417366
+  },
+  {
+    "cell_id": "TRI_273",
+    "type": "positive",
+    "extremum": 804,
+    "amplitude_Ah": 0.0103357028,
+    "duration": 3,
+    "z_at_extremum": 0.7070640742
+  },
+  {
+    "cell_id": "TRI_274",
+    "type": "negative",
+    "extremum": 793,
+    "amplitude_Ah": -0.0032600982,
+    "duration": 2,
+    "z_at_extremum": 0.904266857
+  },
+  {
+    "cell_id": "TRI_274",
+    "type": "negative",
+    "extremum": 795,
+    "amplitude_Ah": -0.0033165447,
+    "duration": 3,
+    "z_at_extremum": 0.9166019593
+  },
+  {
+    "cell_id": "TRI_274",
+    "type": "negative",
+    "extremum": 802,
+    "amplitude_Ah": -0.0038581486,
+    "duration": 4,
+    "z_at_extremum": 0.9188685861
+  },
+  {
+    "cell_id": "TRI_274",
+    "type": "positive",
+    "extremum": 805,
+    "amplitude_Ah": 0.0101131162,
+    "duration": 3,
+    "z_at_extremum": 0.841944841
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "negative",
+    "extremum": 778,
+    "amplitude_Ah": -0.0018976345,
+    "duration": 2,
+    "z_at_extremum": 0.5681534327
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "positive",
+    "extremum": 781,
+    "amplitude_Ah": 0.0038762675,
+    "duration": 3,
+    "z_at_extremum": 0.5355106451
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "positive",
+    "extremum": 791,
+    "amplitude_Ah": 0.0072921253,
+    "duration": 2,
+    "z_at_extremum": 0.5535398588
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "negative",
+    "extremum": 807,
+    "amplitude_Ah": -0.002058298,
+    "duration": 2,
+    "z_at_extremum": 0.6498736889
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "positive",
+    "extremum": 922,
+    "amplitude_Ah": 0.0048961988,
+    "duration": 11,
+    "z_at_extremum": 0.796357046
+  },
+  {
+    "cell_id": "TRI_276",
+    "type": "negative",
+    "extremum": 952,
+    "amplitude_Ah": -0.0031972649,
+    "duration": 7,
+    "z_at_extremum": 1.0062716895
+  },
+  {
+    "cell_id": "TRI_277",
+    "type": "negative",
+    "extremum": 659,
+    "amplitude_Ah": -0.0013621634,
+    "duration": 2,
+    "z_at_extremum": 0.362367717
+  },
+  {
+    "cell_id": "TRI_277",
+    "type": "positive",
+    "extremum": 773,
+    "amplitude_Ah": 0.0048064843,
+    "duration": 4,
+    "z_at_extremum": 0.4326979193
+  },
+  {
+    "cell_id": "TRI_277",
+    "type": "positive",
+    "extremum": 783,
+    "amplitude_Ah": 0.0037127023,
+    "duration": 10,
+    "z_at_extremum": 0.4521777982
+  },
+  {
+    "cell_id": "TRI_277",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.0021902686,
+    "duration": 2,
+    "z_at_extremum": 0.8737011728
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0017877555,
+    "duration": 5,
+    "z_at_extremum": 0.2900985672
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.002675444,
+    "duration": 5,
+    "z_at_extremum": 0.4198547404
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 773,
+    "amplitude_Ah": 0.0041078128,
+    "duration": 3,
+    "z_at_extremum": 0.5025539687
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 783,
+    "amplitude_Ah": 0.0054112892,
+    "duration": 2,
+    "z_at_extremum": 0.5236668149
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 793,
+    "amplitude_Ah": -0.0018368778,
+    "duration": 2,
+    "z_at_extremum": 0.6014810938
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 795,
+    "amplitude_Ah": -0.0019155764,
+    "duration": 9,
+    "z_at_extremum": 0.6120743844
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 805,
+    "amplitude_Ah": -0.0016723043,
+    "duration": 2,
+    "z_at_extremum": 0.629860142
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 809,
+    "amplitude_Ah": -0.001871592,
+    "duration": 6,
+    "z_at_extremum": 0.6410117306
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 815,
+    "amplitude_Ah": -0.001595666,
+    "duration": 2,
+    "z_at_extremum": 0.6492422241
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "negative",
+    "extremum": 820,
+    "amplitude_Ah": -0.0017304068,
+    "duration": 2,
+    "z_at_extremum": 0.6349204868
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.002353434,
+    "duration": 3,
+    "z_at_extremum": 0.6254713059
+  },
+  {
+    "cell_id": "TRI_278",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.0053601221,
+    "duration": 9,
+    "z_at_extremum": 0.8704271099
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0038478392,
+    "duration": 6,
+    "z_at_extremum": 0.302761957
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "positive",
+    "extremum": 756,
+    "amplitude_Ah": 0.0059042303,
+    "duration": 3,
+    "z_at_extremum": 0.3202012382
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "negative",
+    "extremum": 853,
+    "amplitude_Ah": -0.0035145663,
+    "duration": 7,
+    "z_at_extremum": 0.5518771353
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "positive",
+    "extremum": 1041,
+    "amplitude_Ah": 0.003692667,
+    "duration": 3,
+    "z_at_extremum": 0.6984043965
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "positive",
+    "extremum": 1046,
+    "amplitude_Ah": 0.0034369803,
+    "duration": 3,
+    "z_at_extremum": 0.7077297802
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "positive",
+    "extremum": 1054,
+    "amplitude_Ah": 0.0032598272,
+    "duration": 2,
+    "z_at_extremum": 0.7278252719
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "negative",
+    "extremum": 1132,
+    "amplitude_Ah": -0.0037154361,
+    "duration": 2,
+    "z_at_extremum": 0.9910563977
+  },
+  {
+    "cell_id": "TRI_281",
+    "type": "negative",
+    "extremum": 1135,
+    "amplitude_Ah": -0.0039839756,
+    "duration": 2,
+    "z_at_extremum": 1.0044192597
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 802,
+    "amplitude_Ah": 0.0037849789,
+    "duration": 5,
+    "z_at_extremum": 0.3927433363
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 811,
+    "amplitude_Ah": 0.0033986419,
+    "duration": 2,
+    "z_at_extremum": 0.4296493129
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 911,
+    "amplitude_Ah": 0.0008201499,
+    "duration": 2,
+    "z_at_extremum": 0.6019061586
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 914,
+    "amplitude_Ah": 0.0008919076,
+    "duration": 3,
+    "z_at_extremum": 0.6089044257
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.0024524023,
+    "duration": 10,
+    "z_at_extremum": 0.6162230594
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 1021,
+    "amplitude_Ah": 0.0026426891,
+    "duration": 2,
+    "z_at_extremum": 0.8850722232
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 1043,
+    "amplitude_Ah": 0.0008711714,
+    "duration": 2,
+    "z_at_extremum": 0.9651022703
+  },
+  {
+    "cell_id": "TRI_282",
+    "type": "positive",
+    "extremum": 1051,
+    "amplitude_Ah": 0.0011908119,
+    "duration": 8,
+    "z_at_extremum": 0.9885364499
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "negative",
+    "extremum": 720,
+    "amplitude_Ah": -0.0015379771,
+    "duration": 8,
+    "z_at_extremum": 0.3663888126
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 802,
+    "amplitude_Ah": 0.0039031605,
+    "duration": 4,
+    "z_at_extremum": 0.4114092509
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 812,
+    "amplitude_Ah": 0.0036470041,
+    "duration": 2,
+    "z_at_extremum": 0.4417583303
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "negative",
+    "extremum": 876,
+    "amplitude_Ah": -0.0017868139,
+    "duration": 8,
+    "z_at_extremum": 0.5770288193
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "negative",
+    "extremum": 884,
+    "amplitude_Ah": -0.0013467694,
+    "duration": 4,
+    "z_at_extremum": 0.5857221964
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "negative",
+    "extremum": 909,
+    "amplitude_Ah": -0.0015208138,
+    "duration": 4,
+    "z_at_extremum": 0.6307875161
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 970,
+    "amplitude_Ah": 0.0025305767,
+    "duration": 5,
+    "z_at_extremum": 0.6846005796
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 991,
+    "amplitude_Ah": 0.0018710962,
+    "duration": 2,
+    "z_at_extremum": 0.7530292656
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 999,
+    "amplitude_Ah": 0.00225093,
+    "duration": 3,
+    "z_at_extremum": 0.771588345
+  },
+  {
+    "cell_id": "TRI_283",
+    "type": "positive",
+    "extremum": 1009,
+    "amplitude_Ah": 0.0020565473,
+    "duration": 2,
+    "z_at_extremum": 0.8047965904
+  },
+  {
+    "cell_id": "TRI_284",
+    "type": "positive",
+    "extremum": 626,
+    "amplitude_Ah": 0.0014993076,
+    "duration": 2,
+    "z_at_extremum": 0.2545891074
+  },
+  {
+    "cell_id": "TRI_284",
+    "type": "positive",
+    "extremum": 783,
+    "amplitude_Ah": 0.0035459954,
+    "duration": 3,
+    "z_at_extremum": 0.3758049821
+  },
+  {
+    "cell_id": "TRI_284",
+    "type": "positive",
+    "extremum": 958,
+    "amplitude_Ah": 0.0016318897,
+    "duration": 3,
+    "z_at_extremum": 0.5868208098
+  },
+  {
+    "cell_id": "TRI_284",
+    "type": "positive",
+    "extremum": 1001,
+    "amplitude_Ah": 0.0034522465,
+    "duration": 3,
+    "z_at_extremum": 0.6420885159
+  },
+  {
+    "cell_id": "TRI_284",
+    "type": "negative",
+    "extremum": 1108,
+    "amplitude_Ah": -0.0028260497,
+    "duration": 6,
+    "z_at_extremum": 0.933884728
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 751,
+    "amplitude_Ah": 0.0051412338,
+    "duration": 3,
+    "z_at_extremum": 0.3550686049
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 888,
+    "amplitude_Ah": 0.0026207259,
+    "duration": 7,
+    "z_at_extremum": 0.5831090358
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 894,
+    "amplitude_Ah": 0.0033115587,
+    "duration": 4,
+    "z_at_extremum": 0.5829608355
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 897,
+    "amplitude_Ah": 0.0036098259,
+    "duration": 2,
+    "z_at_extremum": 0.5895886157
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 906,
+    "amplitude_Ah": 0.0047312856,
+    "duration": 11,
+    "z_at_extremum": 0.5882519275
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 913,
+    "amplitude_Ah": 0.0039271944,
+    "duration": 2,
+    "z_at_extremum": 0.6453150457
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "positive",
+    "extremum": 918,
+    "amplitude_Ah": 0.0041621024,
+    "duration": 2,
+    "z_at_extremum": 0.6573558759
+  },
+  {
+    "cell_id": "TRI_285",
+    "type": "negative",
+    "extremum": 974,
+    "amplitude_Ah": -0.0024775012,
+    "duration": 5,
+    "z_at_extremum": 0.9154753482
+  },
+  {
+    "cell_id": "TRI_289",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0076828733,
+    "duration": 7,
+    "z_at_extremum": 0.7440120848
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 6,
+    "amplitude_Ah": 0.0016329919,
+    "duration": 2,
+    "z_at_extremum": 0.0039449431
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0019603096,
+    "duration": 4,
+    "z_at_extremum": 0.2614350648
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "negative",
+    "extremum": 616,
+    "amplitude_Ah": -0.0015381557,
+    "duration": 9,
+    "z_at_extremum": 0.43478594
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0025962109,
+    "duration": 6,
+    "z_at_extremum": 0.3916402342
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 715,
+    "amplitude_Ah": 0.006873493,
+    "duration": 5,
+    "z_at_extremum": 0.5028230557
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0048389959,
+    "duration": 8,
+    "z_at_extremum": 0.5430149368
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "negative",
+    "extremum": 791,
+    "amplitude_Ah": -0.001716907,
+    "duration": 2,
+    "z_at_extremum": 0.8092670262
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "negative",
+    "extremum": 800,
+    "amplitude_Ah": -0.0015860314,
+    "duration": 2,
+    "z_at_extremum": 0.8374392274
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "negative",
+    "extremum": 811,
+    "amplitude_Ah": -0.0019280568,
+    "duration": 9,
+    "z_at_extremum": 0.8825456762
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "negative",
+    "extremum": 820,
+    "amplitude_Ah": -0.0016531626,
+    "duration": 6,
+    "z_at_extremum": 0.860476644
+  },
+  {
+    "cell_id": "TRI_290",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0053977312,
+    "duration": 10,
+    "z_at_extremum": 0.8432395583
+  },
+  {
+    "cell_id": "TRI_291",
+    "type": "positive",
+    "extremum": 6,
+    "amplitude_Ah": 0.0027862092,
+    "duration": 7,
+    "z_at_extremum": 0.0012487738
+  },
+  {
+    "cell_id": "TRI_291",
+    "type": "positive",
+    "extremum": 718,
+    "amplitude_Ah": 0.0049438252,
+    "duration": 4,
+    "z_at_extremum": 0.3352108614
+  },
+  {
+    "cell_id": "TRI_292",
+    "type": "positive",
+    "extremum": 656,
+    "amplitude_Ah": 0.0042342554,
+    "duration": 2,
+    "z_at_extremum": 0.3297272481
+  },
+  {
+    "cell_id": "TRI_292",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.003857682,
+    "duration": 2,
+    "z_at_extremum": 0.5695793284
+  },
+  {
+    "cell_id": "TRI_292",
+    "type": "negative",
+    "extremum": 989,
+    "amplitude_Ah": -0.0066839902,
+    "duration": 7,
+    "z_at_extremum": 0.7299098774
+  },
+  {
+    "cell_id": "TRI_292",
+    "type": "positive",
+    "extremum": 1121,
+    "amplitude_Ah": 0.0042881657,
+    "duration": 3,
+    "z_at_extremum": 0.7725476568
+  },
+  {
+    "cell_id": "TRI_292",
+    "type": "positive",
+    "extremum": 1221,
+    "amplitude_Ah": 0.0059590735,
+    "duration": 6,
+    "z_at_extremum": 0.8584199377
+  },
+  {
+    "cell_id": "TRI_293",
+    "type": "negative",
+    "extremum": 753,
+    "amplitude_Ah": -0.0019442822,
+    "duration": 2,
+    "z_at_extremum": 0.4594427933
+  },
+  {
+    "cell_id": "TRI_296",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0024635236,
+    "duration": 4,
+    "z_at_extremum": 0.2622023856
+  },
+  {
+    "cell_id": "TRI_296",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0031092917,
+    "duration": 6,
+    "z_at_extremum": 0.3922045499
+  },
+  {
+    "cell_id": "TRI_296",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0054247325,
+    "duration": 2,
+    "z_at_extremum": 0.5536381726
+  },
+  {
+    "cell_id": "TRI_297",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0035013577,
+    "duration": 3,
+    "z_at_extremum": 0.3037302911
+  },
+  {
+    "cell_id": "TRI_297",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0035760024,
+    "duration": 3,
+    "z_at_extremum": 0.497517546
+  },
+  {
+    "cell_id": "TRI_301",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0042164033,
+    "duration": 4,
+    "z_at_extremum": 0.2692830469
+  },
+  {
+    "cell_id": "TRI_301",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0041635233,
+    "duration": 2,
+    "z_at_extremum": 0.414007994
+  },
+  {
+    "cell_id": "TRI_301",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0049129673,
+    "duration": 2,
+    "z_at_extremum": 0.5815902794
+  },
+  {
+    "cell_id": "TRI_301",
+    "type": "negative",
+    "extremum": 820,
+    "amplitude_Ah": -0.0040137299,
+    "duration": 3,
+    "z_at_extremum": 0.7956900505
+  },
+  {
+    "cell_id": "TRI_302",
+    "type": "negative",
+    "extremum": 819,
+    "amplitude_Ah": -0.0038989222,
+    "duration": 2,
+    "z_at_extremum": 0.7413287786
+  },
+  {
+    "cell_id": "TRI_302",
+    "type": "positive",
+    "extremum": 921,
+    "amplitude_Ah": 0.0053133941,
+    "duration": 5,
+    "z_at_extremum": 0.8339512685
+  },
+  {
+    "cell_id": "TRI_305",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0030974244,
+    "duration": 4,
+    "z_at_extremum": 0.2839787148
+  },
+  {
+    "cell_id": "TRI_305",
+    "type": "positive",
+    "extremum": 713,
+    "amplitude_Ah": 0.0057006551,
+    "duration": 4,
+    "z_at_extremum": 0.4039287093
+  },
+  {
+    "cell_id": "TRI_306",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0033922141,
+    "duration": 2,
+    "z_at_extremum": 0.2605497794
+  },
+  {
+    "cell_id": "TRI_306",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0032081268,
+    "duration": 2,
+    "z_at_extremum": 0.3784025709
+  },
+  {
+    "cell_id": "TRI_306",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0044344904,
+    "duration": 2,
+    "z_at_extremum": 0.6448936292
+  },
+  {
+    "cell_id": "TRI_308",
+    "type": "positive",
+    "extremum": 7,
+    "amplitude_Ah": 0.001868725,
+    "duration": 4,
+    "z_at_extremum": 0.0
+  },
+  {
+    "cell_id": "TRI_308",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.00213386,
+    "duration": 7,
+    "z_at_extremum": 0.3110098929
+  },
+  {
+    "cell_id": "TRI_308",
+    "type": "positive",
+    "extremum": 720,
+    "amplitude_Ah": 0.0051915569,
+    "duration": 7,
+    "z_at_extremum": 0.4536403571
+  },
+  {
+    "cell_id": "TRI_308",
+    "type": "negative",
+    "extremum": 867,
+    "amplitude_Ah": -0.0015794269,
+    "duration": 2,
+    "z_at_extremum": 1.0008089046
+  },
+  {
+    "cell_id": "TRI_310",
+    "type": "positive",
+    "extremum": 723,
+    "amplitude_Ah": 0.0090106876,
+    "duration": 2,
+    "z_at_extremum": 0.6725843273
+  },
+  {
+    "cell_id": "TRI_310",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0075397519,
+    "duration": 5,
+    "z_at_extremum": 0.8908944956
+  },
+  {
+    "cell_id": "TRI_312",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0023367242,
+    "duration": 8,
+    "z_at_extremum": 0.1466424807
+  },
+  {
+    "cell_id": "TRI_312",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0023807995,
+    "duration": 4,
+    "z_at_extremum": 0.2484870492
+  },
+  {
+    "cell_id": "TRI_312",
+    "type": "positive",
+    "extremum": 679,
+    "amplitude_Ah": 0.0082408694,
+    "duration": 6,
+    "z_at_extremum": 0.6317618237
+  },
+  {
+    "cell_id": "TRI_312",
+    "type": "positive",
+    "extremum": 689,
+    "amplitude_Ah": 0.0069628615,
+    "duration": 7,
+    "z_at_extremum": 0.6822809438
+  },
+  {
+    "cell_id": "TRI_312",
+    "type": "positive",
+    "extremum": 697,
+    "amplitude_Ah": 0.0022804404,
+    "duration": 2,
+    "z_at_extremum": 0.7682847492
+  },
+  {
+    "cell_id": "TRI_314",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.004579936,
+    "duration": 10,
+    "z_at_extremum": 0.4878790528
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0040809683,
+    "duration": 3,
+    "z_at_extremum": 0.4107327244
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 665,
+    "amplitude_Ah": 0.0051744354,
+    "duration": 2,
+    "z_at_extremum": 0.4679425046
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 675,
+    "amplitude_Ah": 0.0034980485,
+    "duration": 2,
+    "z_at_extremum": 0.4890391612
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.005676508,
+    "duration": 7,
+    "z_at_extremum": 0.5728916576
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0060813125,
+    "duration": 6,
+    "z_at_extremum": 0.7991758199
+  },
+  {
+    "cell_id": "TRI_316",
+    "type": "positive",
+    "extremum": 903,
+    "amplitude_Ah": 0.0034502852,
+    "duration": 3,
+    "z_at_extremum": 0.9842435905
+  },
+  {
+    "cell_id": "TRI_317",
+    "type": "positive",
+    "extremum": 795,
+    "amplitude_Ah": 0.0048137348,
+    "duration": 2,
+    "z_at_extremum": 0.941145822
+  },
+  {
+    "cell_id": "TRI_318",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.0026736468,
+    "duration": 2,
+    "z_at_extremum": 0.2018193291
+  },
+  {
+    "cell_id": "TRI_318",
+    "type": "negative",
+    "extremum": 407,
+    "amplitude_Ah": -0.0023365116,
+    "duration": 3,
+    "z_at_extremum": 0.4101766876
+  },
+  {
+    "cell_id": "TRI_318",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0032601734,
+    "duration": 3,
+    "z_at_extremum": 0.6536919354
+  },
+  {
+    "cell_id": "TRI_319",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0042043442,
+    "duration": 9,
+    "z_at_extremum": 0.4041439524
+  },
+  {
+    "cell_id": "TRI_319",
+    "type": "positive",
+    "extremum": 622,
+    "amplitude_Ah": 0.0033926307,
+    "duration": 5,
+    "z_at_extremum": 0.6772977072
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 421,
+    "amplitude_Ah": 0.0029463177,
+    "duration": 4,
+    "z_at_extremum": 0.2437509219
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 521,
+    "amplitude_Ah": 0.0040030528,
+    "duration": 4,
+    "z_at_extremum": 0.3731920097
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 621,
+    "amplitude_Ah": 0.0047935046,
+    "duration": 9,
+    "z_at_extremum": 0.5201489925
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 670,
+    "amplitude_Ah": 0.0063275149,
+    "duration": 4,
+    "z_at_extremum": 0.5837624273
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 680,
+    "amplitude_Ah": 0.005543283,
+    "duration": 2,
+    "z_at_extremum": 0.6552111332
+  },
+  {
+    "cell_id": "TRI_321",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.004610641,
+    "duration": 6,
+    "z_at_extremum": 0.9334593873
+  },
+  {
+    "cell_id": "TRI_322",
+    "type": "positive",
+    "extremum": 676,
+    "amplitude_Ah": 0.005459601,
+    "duration": 2,
+    "z_at_extremum": 0.5072182541
+  },
+  {
+    "cell_id": "TRI_322",
+    "type": "positive",
+    "extremum": 821,
+    "amplitude_Ah": 0.0055695119,
+    "duration": 4,
+    "z_at_extremum": 0.8375760821
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "negative",
+    "extremum": 570,
+    "amplitude_Ah": -0.0015133618,
+    "duration": 2,
+    "z_at_extremum": 0.4497978988
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "negative",
+    "extremum": 586,
+    "amplitude_Ah": -0.0014720521,
+    "duration": 2,
+    "z_at_extremum": 0.4701430153
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "negative",
+    "extremum": 596,
+    "amplitude_Ah": -0.0014730201,
+    "duration": 2,
+    "z_at_extremum": 0.4832517933
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "positive",
+    "extremum": 721,
+    "amplitude_Ah": 0.0020406985,
+    "duration": 2,
+    "z_at_extremum": 0.6417312228
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "negative",
+    "extremum": 790,
+    "amplitude_Ah": -0.002021509,
+    "duration": 3,
+    "z_at_extremum": 0.8227675459
+  },
+  {
+    "cell_id": "TRI_323",
+    "type": "negative",
+    "extremum": 794,
+    "amplitude_Ah": -0.0016920355,
+    "duration": 2,
+    "z_at_extremum": 0.8276637476
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "negative",
+    "extremum": 12,
+    "amplitude_Ah": -0.0042797685,
+    "duration": 4,
+    "z_at_extremum": 0.0367095964
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "positive",
+    "extremum": 91,
+    "amplitude_Ah": 0.0069492833,
+    "duration": 5,
+    "z_at_extremum": -0.0708760258
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "positive",
+    "extremum": 321,
+    "amplitude_Ah": 0.001873002,
+    "duration": 4,
+    "z_at_extremum": 0.1364829017
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "positive",
+    "extremum": 528,
+    "amplitude_Ah": 0.0020832423,
+    "duration": 3,
+    "z_at_extremum": 0.8214084195
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "positive",
+    "extremum": 531,
+    "amplitude_Ah": 0.0015672724,
+    "duration": 2,
+    "z_at_extremum": 0.8505974296
+  },
+  {
+    "cell_id": "TRI_324",
+    "type": "positive",
+    "extremum": 547,
+    "amplitude_Ah": 0.0042690208,
+    "duration": 10,
+    "z_at_extremum": 0.9447370192
+  },
+  {
+    "cell_id": "TRI_325",
+    "type": "positive",
+    "extremum": 92,
+    "amplitude_Ah": 0.0065766528,
+    "duration": 5,
+    "z_at_extremum": -0.0644090768
+  },
+  {
+    "cell_id": "TRI_325",
+    "type": "positive",
+    "extremum": 527,
+    "amplitude_Ah": 0.003186815,
+    "duration": 9,
+    "z_at_extremum": 0.4475912957
+  }
+]

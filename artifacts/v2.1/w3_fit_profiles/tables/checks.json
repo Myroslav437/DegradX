@@ -1,0 +1,79 @@
+[
+  {
+    "name": "TRI_FORMATION: estimated/declared split matches paper \u00a73.3 (E1-E7 only under estimated_from_data)",
+    "expected": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "observed": "['E1_theta_distribution', 'E2_family_choice', 'E3_channel_mappings', 'E4_channel_covariance', 'E5_noise', 'E6_patterns', 'E7_length_distribution']",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: capacity affine in z per unit with the unit's own q1 (Eq. 3; X2 capacity mapping)",
+    "expected": "< 1e-9 Ah",
+    "observed": "4.16e-17",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: phi_charge_time monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: phi_mean_discharge_voltage monotone on [0, 1] (backfitted)",
+    "expected": "monotone",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: backfit of charge_time converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "4 it., last change \u03b4 9.47e-05 / \u03c6 1.07e-04 (tol 2.91e-04)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION: median offset of charge_time over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: backfit of mean_discharge_voltage converged within 200 iterations (declared tolerance 1e-4 of the mapping range)",
+    "expected": "converged",
+    "observed": "5 it., last change \u03b4 9.23e-07 / \u03c6 4.15e-06 (tol 4.17e-06)",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION: median offset of mean_discharge_voltage over fitting units = 0 (constraint)",
+    "expected": "0",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: fit residuals centred (|mean| <= 0.5 residual scale) in >= 90% of units",
+    "expected": ">= 0.90",
+    "observed": "1.000",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION: theta not collapsing to bounds (units with any parameter at a bound <= 20%)",
+    "expected": "<= 0.20",
+    "observed": "0.118",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION: theta from >= 5 units reaching EOL (D02)",
+    "expected": ">= 5",
+    "observed": "127",
+    "passed": true,
+    "severity": "warn"
+  }
+]
