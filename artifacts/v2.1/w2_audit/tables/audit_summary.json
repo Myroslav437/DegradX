@@ -1,0 +1,492 @@
+{
+  "dataset": "TRI_FORMATION",
+  "q_nom_Ah": 0.24,
+  "threshold_Ah": 0.192,
+  "audit": {
+    "units_in_table": 182,
+    "too_short": 0,
+    "guard_excluded": 0,
+    "passing_guard": 182,
+    "eol_primary": {
+      "reaching": 182,
+      "from_record_end": 0,
+      "T": {
+        "n": 182,
+        "median": 689.0,
+        "q25": 613.25,
+        "q75": 861.5,
+        "p05": 534.0,
+        "p95": 1053.6499999999999
+      }
+    },
+    "eol_authors_wording_q1": {
+      "reaching": 182,
+      "from_record_end": 0,
+      "T": {
+        "n": 182,
+        "median": 673.0,
+        "q25": 597.25,
+        "q75": 844.75,
+        "p05": 522.2,
+        "p95": 1024.9
+      },
+      "agreement_with_primary_T": {
+        "n": 182,
+        "median": -16.0,
+        "q25": -24.0,
+        "q75": -10.0,
+        "p05": -37.95,
+        "p95": -4.050000000000011
+      },
+      "label": "the paper's wording with 'initial' read as q1 (DegradX's operationalisation)"
+    },
+    "eol_authors_code": {
+      "with_life": 182,
+      "rhyu_178": 178,
+      "life_cycle_index": {
+        "n": 182,
+        "median": 699.5,
+        "q25": 616.0,
+        "q75": 873.75,
+        "p05": 544.1,
+        "p95": 1066.75
+      },
+      "label": "the authors' definition as implemented in their code (cx26 get_cycle_life), cycle_index units"
+    },
+    "eol_attainment_rho_grid": {
+      "rho0.70": {
+        "r2": 182,
+        "r1": 182
+      },
+      "rho0.75": {
+        "r2": 182,
+        "r1": 182
+      },
+      "rho0.80": {
+        "r2": 182,
+        "r1": 182
+      },
+      "rho0.85": {
+        "r2": 182,
+        "r1": 182
+      },
+      "rho0.90": {
+        "r2": 182,
+        "r1": 182
+      }
+    },
+    "q1_material_difference_units": 0,
+    "monotone_within_tolerance": {
+      "units": 58,
+      "of": 182
+    },
+    "best_family_in_sample": {
+      "rollover": 132,
+      "two_term_exponential": 50
+    },
+    "detection_sweep_counts": {
+      "k2.0_m2": {
+        "positive": 578,
+        "negative": 207
+      },
+      "k2.0_m3": {
+        "positive": 414,
+        "negative": 125
+      },
+      "k2.5_m2": {
+        "positive": 470,
+        "negative": 179
+      },
+      "k2.5_m3": {
+        "positive": 334,
+        "negative": 126
+      },
+      "k3.0_m2": {
+        "positive": 365,
+        "negative": 144
+      },
+      "k3.0_m3": {
+        "positive": 269,
+        "negative": 97
+      },
+      "k3.5_m2": {
+        "positive": 304,
+        "negative": 113
+      },
+      "k3.5_m3": {
+        "positive": 232,
+        "negative": 83
+      },
+      "k4.0_m2": {
+        "positive": 255,
+        "negative": 100
+      },
+      "k4.0_m3": {
+        "positive": 190,
+        "negative": 77
+      }
+    },
+    "cycles_dropped_by_D12": 27
+  },
+  "eligibility": {
+    "E1": "pass (documentation; cells with a documented identity only)",
+    "E2": "pass (documentation; E2 on the files at W1)",
+    "E3": {
+      "units_reaching_eol_after_guard": 182,
+      "required": 66,
+      "passes": true,
+      "held_out_reaching_eol": 55,
+      "fitting_reaching_eol": 127
+    },
+    "E4": {
+      "units_reaching_eol_with_T_below_44": [],
+      "min_T": 463.0,
+      "passes": true
+    },
+    "E5": {
+      "availability": {
+        "charge_time_min": {
+          "units_with_channel": 182,
+          "units": 182,
+          "every_unit": true
+        },
+        "mean_discharge_voltage_V": {
+          "units_with_channel": 182,
+          "units": 182,
+          "every_unit": true
+        },
+        "internal_resistance_ohm": {
+          "units_with_channel": 0,
+          "units": 182,
+          "every_unit": false
+        },
+        "temperature_mean_C": {
+          "units_with_channel": 0,
+          "units": 182,
+          "every_unit": false
+        }
+      },
+      "channels_used": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "weighted_after_guard": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "demoted": [],
+      "weight_guard": {
+        "charge_time": {
+          "delta": -2.9088952200408897,
+          "noise_sd": 0.874682318826529,
+          "ratio": 3.3256591078043676
+        },
+        "mean_discharge_voltage": {
+          "delta": -0.04169187808933161,
+          "noise_sd": 0.007116412512475701,
+          "ratio": 5.858552749189576
+        }
+      },
+      "passes": true
+    },
+    "E6": "pass with the CC BY-NC condition (documentation)"
+  },
+  "d05": {
+    "positive": {
+      "enabled": true,
+      "events": 312,
+      "measured_rate_per_100": 0.3303964757709251,
+      "noise_only_rate_per_100": 0.1446043165467626,
+      "ratio_to_noise": 2.2848313498586363
+    },
+    "negative": {
+      "enabled": false,
+      "events": 123,
+      "measured_rate_per_100": 0.13025245679430703,
+      "noise_only_rate_per_100": 0.13597122302158274,
+      "ratio_to_noise": 0.957941348910512
+    }
+  },
+  "mechanism_diagnostic": {
+    "fitting_units": {
+      "all": {
+        "post_0_10": {
+          "ratio": 4.56996699669967,
+          "ci_low": 3.9914600567316456,
+          "ci_high": 5.181303880004177,
+          "runs": 312,
+          "hits": 183,
+          "units": 127,
+          "rest_events": 1114
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.9790755959666608,
+          "ci_low": 0.6329678461229943,
+          "ci_high": 1.340206491992224,
+          "runs": 312,
+          "hits": 37,
+          "units": 127,
+          "rest_events": 1114
+        }
+      },
+      "diagnostic": {
+        "post_0_10": {
+          "ratio": 4.65878617796298,
+          "ci_low": 4.077846358648251,
+          "ci_high": 5.269582896570773,
+          "runs": 312,
+          "hits": 181,
+          "units": 127,
+          "rest_events": 1073
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.49156365604980606,
+          "ci_low": 0.22271852140249396,
+          "ci_high": 0.8166615413653547,
+          "runs": 312,
+          "hits": 18,
+          "units": 127,
+          "rest_events": 1073
+        }
+      },
+      "non_diagnostic": {
+        "post_0_10": {
+          "ratio": 2.0404494382022476,
+          "ci_low": 0.0,
+          "ci_high": 4.510191129489996,
+          "runs": 312,
+          "hits": 3,
+          "units": 127,
+          "rest_events": 41
+        },
+        "placebo_-11_-1": {
+          "ratio": 14.28314606741573,
+          "ci_low": 9.007292606240776,
+          "ci_high": 20.313997556988962,
+          "runs": 312,
+          "hits": 21,
+          "units": 127,
+          "rest_events": 41
+        }
+      }
+    },
+    "separability": {
+      "n_non_diagnostic_rests": 41,
+      "branch": "(iii) rests without a rate change are not followed by clustered positive runs; clustering after diagnostic blocks, where their interval lies above 1, is attributed to the diagnostic block (its lower-rate or held discharge and its rests), not to rest alone"
+    },
+    "sensitivity_dst_included": {
+      "all": {
+        "post_0_10": {
+          "ratio": 4.41725815455778,
+          "ci_low": 3.8642728759048666,
+          "ci_high": 5.006778847357421,
+          "runs": 312,
+          "hits": 183,
+          "units": 127,
+          "rest_events": 1162
+        }
+      },
+      "non_diagnostic": {
+        "post_0_10": {
+          "ratio": 1.0167973124300114,
+          "ci_low": 0.0,
+          "ci_high": 2.242261605609546,
+          "runs": 312,
+          "hits": 3,
+          "units": 127,
+          "rest_events": 89
+        }
+      }
+    },
+    "sensitivity_all_guard_passing_units": {
+      "all": {
+        "post_0_10": {
+          "ratio": 4.728431824956029,
+          "ci_low": 4.252135347038395,
+          "ci_high": 5.210166813215361,
+          "runs": 429,
+          "hits": 261,
+          "units": 182,
+          "rest_events": 1589
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.999460800172544,
+          "ci_low": 0.7194276272394237,
+          "ci_high": 1.2977618452536526,
+          "runs": 429,
+          "hits": 52,
+          "units": 182,
+          "rest_events": 1589
+        }
+      },
+      "diagnostic": {
+        "post_0_10": {
+          "ratio": 4.792897444085156,
+          "ci_low": 4.319679566865018,
+          "ci_high": 5.2725781701050325,
+          "runs": 429,
+          "hits": 257,
+          "units": 182,
+          "rest_events": 1534
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.5348675229153317,
+          "ci_low": 0.30593071192983495,
+          "ci_high": 0.8037437840881856,
+          "runs": 429,
+          "hits": 27,
+          "units": 182,
+          "rest_events": 1534
+        }
+      },
+      "non_diagnostic": {
+        "post_0_10": {
+          "ratio": 2.614808674908842,
+          "ci_low": 0.59072298828884,
+          "ci_high": 5.043813665385009,
+          "runs": 429,
+          "hits": 5,
+          "units": 182,
+          "rest_events": 55
+        },
+        "placebo_-11_-1": {
+          "ratio": 14.191040503121041,
+          "ci_low": 9.586510053417774,
+          "ci_high": 19.31734878843669,
+          "runs": 429,
+          "hits": 27,
+          "units": 182,
+          "rest_events": 55
+        }
+      }
+    },
+    "start_index": "detect() start + fit_start - 1 (DEVIATIONS T7 corrected)"
+  },
+  "readings": {
+    "X6_ii_regeneration": "present at scale; rest-induced (pooled ratio interval above 1, placebo not)",
+    "rest_induced_test": {
+      "pooled_ci_low": 3.9914600567316456,
+      "placebo_ci_low": 0.6329678461229943,
+      "rest_induced": true
+    },
+    "patterns_enabled": {
+      "positive": true,
+      "negative": false
+    }
+  },
+  "offset_prescreen": {
+    "per_weighting": {
+      "recency": {
+        "share": 0.11993480071026576,
+        "offset_to_state": 0.14696582673048322,
+        "corr_offset_state": 0.10227322765651807,
+        "var_y": 0.05080849656761353,
+        "windows": 91992,
+        "units": 127,
+        "per_channel_share": {
+          "capacity": 0.0018475340410238166,
+          "charge_time": 0.4867921733893274,
+          "mean_discharge_voltage": 0.42530629272093406
+        },
+        "sensitivity_all_fitting_units": 0.11993480071026576,
+        "without_tagged_cells": {
+          "share": 0.12051927476786493,
+          "units": 122
+        },
+        "largest_leave_one_out": {
+          "cell_id": "TRI_317",
+          "share_without": 0.11623739802179904,
+          "abs_change": 0.0036974026884667166
+        }
+      },
+      "uniform": {
+        "share": 0.12508710665459907,
+        "offset_to_state": 0.15504918841522833,
+        "corr_offset_state": 0.10727338404382353,
+        "var_y": 0.04880007985800701,
+        "windows": 91992,
+        "units": 127,
+        "per_channel_share": {
+          "capacity": 0.0019449100697071515,
+          "charge_time": 0.5068265982916131,
+          "mean_discharge_voltage": 0.4428102039335171
+        },
+        "sensitivity_all_fitting_units": 0.12508710665459907,
+        "without_tagged_cells": {
+          "share": 0.1256741490568185,
+          "units": 122
+        },
+        "largest_leave_one_out": {
+          "cell_id": "TRI_291",
+          "share_without": 0.1213068135849155,
+          "abs_change": 0.0037802930696835685
+        }
+      }
+    },
+    "max_share": 0.12508710665459907,
+    "stop_threshold": 0.5,
+    "stop": false,
+    "offset_sampling_noise": {
+      "charge_time": {
+        "offset_variance": 1.5016324167589257,
+        "offset_sampling_noise_term": 0.06370869764168548,
+        "offset_variance_noise_corrected": 1.4379237191172403
+      },
+      "mean_discharge_voltage": {
+        "offset_variance": 0.0002593606752566304,
+        "offset_sampling_noise_term": 6.440846410797836e-06,
+        "offset_variance_noise_corrected": 0.00025291982884583257
+      }
+    },
+    "formation_protocol_share": {
+      "headline": {
+        "r2": 0.6891030172140311,
+        "adjusted_r2": 0.40646939649951397,
+        "mean_null_r2": 0.47612480535814394,
+        "expected_null_r2": 0.47619047619047616,
+        "p_value": 0.00029997000299970003,
+        "calibrated_share": 0.4065437990464282,
+        "groups": 61,
+        "units": 127
+      },
+      "reading": "formation protocol explains part of the offsets",
+      "per_channel": {
+        "delta_charge_time": {
+          "r2": 0.6010635584605715,
+          "adjusted_r2": 0.2383940661520001,
+          "mean_null_r2": 0.47637101336375437,
+          "expected_null_r2": 0.47619047619047616,
+          "p_value": 0.0565943405659434,
+          "calibrated_share": 0.2381314791181308,
+          "groups": 61,
+          "units": 127
+        },
+        "delta_mean_discharge_voltage": {
+          "r2": 0.558215237441734,
+          "adjusted_r2": 0.15659272602512853,
+          "mean_null_r2": 0.47660625187881533,
+          "expected_null_r2": 0.47619047619047616,
+          "p_value": 0.1528847115288471,
+          "calibrated_share": 0.15592273666979908,
+          "groups": 61,
+          "units": 127
+        },
+        "q1_minus_q1bar": {
+          "r2": 0.6911531508425471,
+          "adjusted_r2": 0.4103832879721355,
+          "mean_null_r2": 0.47614109532966703,
+          "expected_null_r2": 0.47619047619047616,
+          "p_value": 0.00019998000199980003,
+          "calibrated_share": 0.41043886740493274,
+          "groups": 61,
+          "units": 127
+        }
+      }
+    },
+    "units_reaching_eol": 127,
+    "e3_without_tagged_cells": 177
+  },
+  "eligible": true
+}

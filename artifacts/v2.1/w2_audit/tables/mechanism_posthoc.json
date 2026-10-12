@@ -1,0 +1,43 @@
+{
+ "note": "post-hoc, not declared: the declared separability reading (audit_summary.json) stands; this separates gap events that echo a diagnostic block",
+ "non_diagnostic_far": {
+  "post_0_10": {
+   "ratio": 2.543417366946779,
+   "ci_low": 0.0,
+   "ci_high": 5.776950029648893,
+   "runs": 312,
+   "hits": 3,
+   "units": 127,
+   "rest_events": 33
+  },
+  "placebo_-11_-1": {
+   "ratio": 15.842056932966022,
+   "ci_low": 9.879178372519712,
+   "ci_high": 22.82146557834475,
+   "runs": 312,
+   "hits": 19,
+   "units": 127,
+   "rest_events": 33
+  }
+ },
+ "non_diagnostic_within_11_after_diagnostic": {
+  "post_0_10": {
+   "ratio": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "runs": 312,
+   "hits": 0,
+   "units": 127,
+   "rest_events": 8
+  },
+  "placebo_-11_-1": {
+   "ratio": 7.382113821138211,
+   "ci_low": 0.0,
+   "ci_high": 17.85218193533271,
+   "runs": 312,
+   "hits": 2,
+   "units": 127,
+   "rest_events": 8
+  }
+ }
+}

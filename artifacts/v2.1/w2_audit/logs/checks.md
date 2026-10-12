@@ -1,0 +1,6 @@
+| check | expected | observed | result |
+|---|---|---|---|
+| E3: >= 66 units reach EOL after the guard | >= 66 | 182 (held out 55) | pass |
+| E4: every unit reaching EOL has T >= 44 | all | all | pass |
+| E5: charge time and mean discharge voltage available in every unit and pass the weight guard | both | {"charge_time": 3.33, "mean_discharge_voltage": 5.86} | pass |
+| offset pre-screen: Var(y_offset)/Var(y) <= 0.5 under both weightings (stop before fitting above) | <= 0.5 | {"recency": 0.12, "uniform": 0.125} | pass |
