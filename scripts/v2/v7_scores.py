@@ -129,6 +129,63 @@ def part_a(ds, units, spec, kind, ops, weighted_idx, seed, n_boot, has_patterns,
                     "registers": registers(res["mean_change"], grid, out["chance"][k], PERFECT[k], res["resolution"])}
         series[op] = s
     out["operators"] = series
+    if has_patterns:
+        out["paired_retrieval"] = paired_retrieval(ds, units, spec, kind, ops, seed, n_boot, per_unit)
+    return out
+
+
+def sample_sparse_windows(units, spec, kind, per_unit, g):
+    """Windows with at least one sparse cell (v1 S7 sample_windows with need_sparse=True)."""
+    rows = []
+    for ui, u in enumerate(units):
+        if u.T < spec.L:
+            continue
+        tg = unit_targets(u, spec, kind)
+        idx = np.arange(len(tg["y"]))[np.abs(tg["sparse"]).sum(axis=(1, 2)) > 0]
+        if not len(idx):
+            continue
+        for i in np.sort(g.choice(idx, size=min(per_unit, len(idx)), replace=False)):
+            rows.append((ui, tg["phi_star"][i], tg["graded"][i], tg["sparse"][i] != 0))
+    return rows
+
+
+def paired_retrieval(ds, units, spec, kind, ops, seed, n_boot, per_unit=20):
+    """Paired retrieval (D01) on a profile with inserted patterns, ported from v1 S7 part one: the window map phi* and its
+    pattern-free counterpart (the graded field) are degraded by the same operator with independent streams; AP of
+    |d(phi*) - d(graded)| against the sparse set; plain AP of d(phi*) as the secondary score. Resolution by the declared
+    criterion (higher is better); the registers reading is computed as for the X5 scores and marked descriptive, since
+    declarations v2.scoring.registers_check names rank, allocation and temporal only."""
+    g = rng(seed, "evaluation", "v7", ds, kind, "sparse")
+    WS = sample_sparse_windows(units, spec, kind, per_unit, g)
+    if not WS:
+        return {"void": "no test window contains a sparse cell"}
+    US = np.array([w[0] for w in WS])
+    out = {"windows": len(WS), "units": int(len(np.unique(US))),
+           "chance": float(np.nanmean([retrieval_ap(g.permutation(w[1].ravel()).reshape(w[1].shape), w[3]) for w in WS])),
+           "chance_plain": float(np.nanmean([retrieval_ap(g.permutation(w[1].ravel()).reshape(w[1].shape), w[3]) for w in WS]))}
+    series = {}
+    for op, cfg in ops.items():
+        grid = cfg["grid"]
+        f = OPERATORS[op]
+        paired_u, plain_u = {}, {}
+        for mi, mag in enumerate(grid):
+            pv, qv = [], []
+            for wi, (ui, phi, grd, lab) in enumerate(WS):
+                gb = rng(seed, "evaluation", "v7", ds, kind, op, mi, wi, "b")
+                gc = rng(seed, "evaluation", "v7", ds, kind, op, mi, wi, "c")
+                d1 = f(phi, mag, gb) if op != "added_noise" else f(phi, mag, gb, scale=np.std(phi))
+                d2 = f(grd, mag, gc) if op != "added_noise" else f(grd, mag, gc, scale=np.std(phi))
+                pv.append(retrieval_ap(d1 - d2, lab))
+                qv.append(retrieval_ap(d1, lab))
+            _, paired_u[mag] = unit_means(np.array(pv, float), US)
+            _, plain_u[mag] = unit_means(np.array(qv, float), US)
+        s = {"grid": grid}
+        for name, per, ch in (("paired", paired_u, out["chance"]), ("plain", plain_u, out["chance_plain"])):
+            res = resolution(per, grid, +1, seed, n_boot)
+            s[name] = {"mean": [float(np.nanmean(per[m])) for m in grid], **res,
+                       "registers_descriptive": registers(res["mean_change"], grid, ch, 1.0, res["resolution"])}
+        series[op] = s
+    out["operators"] = series
     return out
 
 

@@ -1,0 +1,9 @@
+{
+  "stage": "v2/v7_scores",
+  "device": "cpu",
+  "wall_clock_s": 110.147,
+  "sections_s": {
+    "TRI_FORMATION_recency_part_a": 53.486,
+    "TRI_FORMATION_uniform_part_a": 53.511
+  }
+}
