@@ -1,0 +1,56 @@
+{
+ "archives": [
+  {
+   "version": "current",
+   "url": "https://data.matr.io/8/data_03032025.tgz",
+   "path": "data/v2.1/raw/archive_current/data_03032025.tgz",
+   "bytes": 15639357254,
+   "bytes_head": 15639357254,
+   "etag": "48419d76adfbe2df715b4358b5bce7bc-911",
+   "etag_declared": "48419d76adfbe2df715b4358b5bce7bc-911",
+   "last_modified": "Mon, 03 Mar 2025 20:46:43 GMT",
+   "last_modified_declared": "2025-03-03 20:46:43 GMT",
+   "s3_version_id": "Zyuwg.302wRI6yyul_nwdssVDG2l8T0Y",
+   "matches_declared_head": true,
+   "sha256": "4e6ec37a8c89da38e7493b72914b8cb67c911d0f808ed968382eda08d131c032",
+   "members": 736,
+   "files": 732,
+   "recorded_unix": 1791845705.7969186,
+   "seconds": 471.1
+  },
+  {
+   "version": "original",
+   "url": "https://data.matr.io/8/data.tar.gz",
+   "path": "data/v2.1/raw/archive_original/data.tar.gz",
+   "bytes": 3254154716,
+   "bytes_head": 3254154716,
+   "etag": "6aaf31ec4771f7a6c1a0018b23e356d7-388",
+   "etag_declared": "6aaf31ec4771f7a6c1a0018b23e356d7-388",
+   "last_modified": "Thu, 01 Aug 2024 04:54:09 GMT",
+   "last_modified_declared": "2024-08-01 04:54:09 GMT",
+   "s3_version_id": "lAaFrqGMxn5pCzb9z.bumNm.VJAf_PC5",
+   "matches_declared_head": true,
+   "sha256": "b3fdf33138c5b83e9acc00c0bae847864af91e1c8d457e2bfb5c3820586578c0",
+   "members": 85,
+   "files": 82,
+   "recorded_unix": 1791845802.0610125,
+   "seconds": 96.3
+  }
+ ],
+ "formation_mapping": [
+  {
+   "name": "Formation_2022-Parameter.csv",
+   "url": "https://raw.githubusercontent.com/cx26/formation-analysis/2bc23139f1da21a8472328cbbddb6ea195ec771f/data/Formation_2022-Parameter.csv",
+   "sha256": "3a9696ec055ce231a61bdfb0f5bbbc9f54a564d46c09396de29cf162f4d2dd8e",
+   "expected": "3a9696ec055ce231a61bdfb0f5bbbc9f54a564d46c09396de29cf162f4d2dd8e",
+   "match": true
+  },
+  {
+   "name": "Formation_2022_Parameter_rhyu.csv",
+   "url": "https://raw.githubusercontent.com/JinwookRhyu/Systematic_Feature_Design_Framework_Formation/9530854b76f83f5cd85ad66d7e273c86dc8ea437/tsfresh_feature_extraction/Formation_2022_Parameter.csv",
+   "sha256": "8d824556b10a92c414e8fd15d7cd351ae731e96810d1fd2ae6c7aac936788cbe",
+   "expected": "8d824556b10a92c414e8fd15d7cd351ae731e96810d1fd2ae6c7aac936788cbe",
+   "match": true
+  }
+ ]
+}
