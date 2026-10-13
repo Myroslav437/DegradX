@@ -1,0 +1,10 @@
+{
+  "stage": "v2/v5_fidelity",
+  "device": "cuda",
+  "wall_clock_s": 3365.632,
+  "sections_s": {
+    "TRI_FORMATION_distributional": 78.123,
+    "TRI_FORMATION_tstr": 3053.852,
+    "TRI_FORMATION_properties": 229.181
+  }
+}

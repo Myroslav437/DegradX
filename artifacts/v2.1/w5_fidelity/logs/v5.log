@@ -1,0 +1,11 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[v5] TRI_FORMATION full: ratio 1.539 [1.284, 1.742]
+[v5] TRI_FORMATION capacity_only: ratio 1.083 [0.991, 1.146]
+[v5] TRI_FORMATION capacity_relative: ratio 1.121 [1.076, 1.167]
+[v5] TRI_FORMATION capacity_state: ratio 1.104 [1.057, 1.150]
+[v5] TRI_FORMATION full_centred: ratio 1.162 [1.053, 1.234]
+[PASS] TRI_FORMATION: discriminator does not separate trivially (accuracy < 0.99): expected < 0.99; observed 0.877
+[PASS] TRI_FORMATION: TSTR ratio finite with interval: expected finite; observed 1.539302379184526
+V5_EXIT 0

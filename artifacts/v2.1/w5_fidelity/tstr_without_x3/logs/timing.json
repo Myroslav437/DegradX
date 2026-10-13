@@ -1,0 +1,9 @@
+{
+  "stage": "v2.1/w5_tstr_without_x3",
+  "device": "cuda",
+  "wall_clock_s": 232.422,
+  "sections_s": {
+    "MATR": 94.767,
+    "HUST": 137.655
+  }
+}

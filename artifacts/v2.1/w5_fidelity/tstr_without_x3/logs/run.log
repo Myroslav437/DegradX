@@ -1,0 +1,23 @@
+/home/mmishchuk/projects/DegradX/src/degradx/models/lstm.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(idx)
+[w5-x3off] MATR m0: rmse 325.48
+[w5-x3off] MATR m1: rmse 171.92
+[w5-x3off] MATR m2: rmse 198.25
+[w5-x3off] MATR m3: rmse 206.01
+[w5-x3off] MATR m4: rmse 246.21
+[w5-x3off] MATR: v1 3.420 (D27 3.506) | v2 w/o X3 seed0 1.602 [1.063, 2.496] | v2 seed0 1.576 | v2 3 seeds 1.490
+[w5-x3off] HUST m0: rmse 195.90
+[w5-x3off] HUST m1: rmse 252.20
+[w5-x3off] HUST m2: rmse 257.35
+[w5-x3off] HUST m3: rmse 228.70
+[w5-x3off] HUST m4: rmse 218.03
+[w5-x3off] HUST: v1 1.461 (D27 1.461) | v2 w/o X3 seed0 1.122 [0.917, 1.290] | v2 seed0 1.149 | v2 3 seeds 1.174
+[PASS] MATR: held-out units and windows equal V5's and V1's stored per-unit errors: expected identical; observed True
+[PASS] MATR: retrained TRTR full m0 reproduces V5's per-unit errors: expected max rel diff < 1e-6; observed 0.00e+00
+[PASS] MATR: retrained TSTR full g0 m0 reproduces V5's per-unit errors: expected max rel diff < 1e-6; observed 0.00e+00
+[PASS] MATR: V5 TRTR equals V1 full_D27 TRTR (the measured side of the X2-share comparator): expected equal; observed max rel 0.00e+00
+[PASS] HUST: held-out units and windows equal V5's and V1's stored per-unit errors: expected identical; observed True
+[PASS] HUST: retrained TRTR full m0 reproduces V5's per-unit errors: expected max rel diff < 1e-6; observed 0.00e+00
+[PASS] HUST: retrained TSTR full g0 m0 reproduces V5's per-unit errors: expected max rel diff < 1e-6; observed 0.00e+00
+[PASS] HUST: V5 TRTR equals V1 full_D27 TRTR (the measured side of the X2-share comparator): expected equal; observed max rel 0.00e+00

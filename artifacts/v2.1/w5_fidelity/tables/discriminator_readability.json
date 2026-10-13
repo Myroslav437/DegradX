@@ -1,0 +1,53 @@
+{
+  "TRI_FORMATION": {
+    "per_generation_seed": [
+      {
+        "generation_seed": 0,
+        "discriminative_error": 0.09727269411087036,
+        "v5_value": 0.09727269411087036,
+        "reproduces_v5": true,
+        "ci_low": 0.05927601809954752,
+        "ci_high": 0.15384701159678857,
+        "half_width": 0.04728549674862052,
+        "bound": 0.20136365294456482,
+        "readable": true,
+        "test_units": {
+          "measured": 11,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 1,
+        "discriminative_error": 0.10272729396820068,
+        "v5_value": 0.10272729396820068,
+        "reproduces_v5": true,
+        "ci_low": 0.08222291798476355,
+        "ci_high": 0.124483328065392,
+        "half_width": 0.021130205040314223,
+        "bound": 0.19863635301589966,
+        "readable": true,
+        "test_units": {
+          "measured": 11,
+          "generated": 60
+        }
+      },
+      {
+        "generation_seed": 2,
+        "discriminative_error": 0.1677272915840149,
+        "v5_value": 0.1677272915840149,
+        "reproduces_v5": true,
+        "ci_low": 0.12191752570847407,
+        "ci_high": 0.22293686306860322,
+        "half_width": 0.050509668680064575,
+        "bound": 0.16613635420799255,
+        "readable": true,
+        "test_units": {
+          "measured": 11,
+          "generated": 60
+        }
+      }
+    ],
+    "readable": true,
+    "void_reason": null
+  }
+}

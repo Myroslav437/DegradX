@@ -1,0 +1,16 @@
+[
+  {
+    "name": "TRI_FORMATION: discriminator does not separate trivially (accuracy < 0.99)",
+    "expected": "< 0.99",
+    "observed": "0.877",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION: TSTR ratio finite with interval",
+    "expected": "finite",
+    "observed": "1.539302379184526",
+    "passed": true,
+    "severity": "error"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "MATR: held-out units and windows equal V5's and V1's stored per-unit errors",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR: retrained TRTR full m0 reproduces V5's per-unit errors",
+    "expected": "max rel diff < 1e-6",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: retrained TSTR full g0 m0 reproduces V5's per-unit errors",
+    "expected": "max rel diff < 1e-6",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR: V5 TRTR equals V1 full_D27 TRTR (the measured side of the X2-share comparator)",
+    "expected": "equal",
+    "observed": "max rel 0.00e+00",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: held-out units and windows equal V5's and V1's stored per-unit errors",
+    "expected": "identical",
+    "observed": "True",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST: retrained TRTR full m0 reproduces V5's per-unit errors",
+    "expected": "max rel diff < 1e-6",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: retrained TSTR full g0 m0 reproduces V5's per-unit errors",
+    "expected": "max rel diff < 1e-6",
+    "observed": "0.00e+00",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST: V5 TRTR equals V1 full_D27 TRTR (the measured side of the X2-share comparator)",
+    "expected": "equal",
+    "observed": "max rel 0.00e+00",
+    "passed": true,
+    "severity": "error"
+  }
+]

@@ -1,0 +1,250 @@
+{
+  "declaration": "declared_by_design.v2_1.tstr_without_x3",
+  "input_set": "full",
+  "MATR": {
+    "held_out_units": 38,
+    "held_out_windows": 29605,
+    "training_units": 90,
+    "rows": {
+      "v1_full_printed": {
+        "ratio": 3.4201964487768874,
+        "ci_low": 2.276480201346431,
+        "ci_high": 4.957907742362334,
+        "units": 38,
+        "method": "BCa over held-out units"
+      },
+      "v1_full_D27": {
+        "ratio": 3.5057902583921647,
+        "ci_low": 2.299019830680623,
+        "ci_high": 4.99385158610979,
+        "units": 38,
+        "method": "BCa over held-out units"
+      },
+      "v2_without_x3_seed0": {
+        "ratio": 1.6022841078591572,
+        "ci_low": 1.0634844525606484,
+        "ci_high": 2.496420253052916,
+        "units": 38,
+        "method": "BCa over held-out units"
+      },
+      "v2_seed0": {
+        "ratio": 1.5755435286800121,
+        "ci_low": 1.127287416001801,
+        "ci_high": 2.367838330174229,
+        "units": 38,
+        "method": "BCa over held-out units"
+      },
+      "v2_three_seeds": {
+        "ratio": 1.4897842084416923,
+        "ci_low": 1.0423145833648366,
+        "ci_high": 2.2909178615860184,
+        "units": 38,
+        "method": "BCa over held-out units"
+      }
+    },
+    "shares": {
+      "X3_share_seed0": {
+        "log_ratio_difference": 0.01682986833234834,
+        "ci_low": -0.08782541168394448,
+        "ci_high": 0.09909627388681429,
+        "ratio_of_ratios": 1.0169722884150008,
+        "above_zero": false,
+        "units": 38,
+        "method": "paired BCa over held-out units"
+      },
+      "X2_share_vs_v1_full_D27": {
+        "log_ratio_difference": 0.7829857824385631,
+        "ci_low": 0.5228987713563483,
+        "ci_high": 1.0251686904491915,
+        "ratio_of_ratios": 2.1879954005637106,
+        "above_zero": true,
+        "units": 38,
+        "method": "paired BCa over held-out units"
+      },
+      "not_read": {
+        "X2_share_vs_v1_full_D17": {
+          "log_ratio_difference": 0.7582678119355823,
+          "ci_low": 0.49076276340807556,
+          "ci_high": 1.0015427100301704,
+          "ratio_of_ratios": 2.1345755300205016,
+          "above_zero": true,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        },
+        "X2_share_vs_v1_full_D27_seed0": {
+          "log_ratio_difference": 0.91138550841029,
+          "ci_low": 0.6041174531878507,
+          "ci_high": 1.2372618380772296,
+          "ratio_of_ratios": 2.48776696874477,
+          "above_zero": true,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        }
+      }
+    },
+    "determinism": {
+      "trtr_full_m0_max_rel_diff": 0.0,
+      "tstr_full_g0_m0_max_rel_diff": 0.0
+    },
+    "runs": [
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 0,
+        "rmse": 325.4767347187154,
+        "epochs": 18
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 1,
+        "rmse": 171.919232990735,
+        "epochs": 15
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 2,
+        "rmse": 198.24769818887128,
+        "epochs": 27
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 3,
+        "rmse": 206.0130590827052,
+        "epochs": 31
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 4,
+        "rmse": 246.20839488574177,
+        "epochs": 18
+      }
+    ]
+  },
+  "HUST": {
+    "held_out_units": 23,
+    "held_out_windows": 43272,
+    "training_units": 54,
+    "rows": {
+      "v1_full_printed": {
+        "ratio": 1.4612937680490141,
+        "ci_low": 1.1113580311093105,
+        "ci_high": 1.76383636719532,
+        "units": 23,
+        "method": "BCa over held-out units"
+      },
+      "v1_full_D27": {
+        "ratio": 1.4613278483760144,
+        "ci_low": 1.1113785161424299,
+        "ci_high": 1.7638928483261593,
+        "units": 23,
+        "method": "BCa over held-out units"
+      },
+      "v2_without_x3_seed0": {
+        "ratio": 1.1217198338566052,
+        "ci_low": 0.9166677744970054,
+        "ci_high": 1.2901666948256678,
+        "units": 23,
+        "method": "BCa over held-out units"
+      },
+      "v2_seed0": {
+        "ratio": 1.1493008185073006,
+        "ci_low": 0.9086753818418984,
+        "ci_high": 1.3125372086412779,
+        "units": 23,
+        "method": "BCa over held-out units"
+      },
+      "v2_three_seeds": {
+        "ratio": 1.173587562170692,
+        "ci_low": 0.9359569231007253,
+        "ci_high": 1.342011393954543,
+        "units": 23,
+        "method": "BCa over held-out units"
+      }
+    },
+    "shares": {
+      "X3_share_seed0": {
+        "log_ratio_difference": -0.02429070009673645,
+        "ci_low": -0.12587759134883247,
+        "ci_high": 0.05786338854848939,
+        "ratio_of_ratios": 0.9760019446549101,
+        "above_zero": false,
+        "units": 23,
+        "method": "paired BCa over held-out units"
+      },
+      "X2_share_vs_v1_full_D27": {
+        "log_ratio_difference": 0.2644824341036699,
+        "ci_low": 0.026644156241676008,
+        "ci_high": 0.46803585329184466,
+        "ratio_of_ratios": 1.3027565389049034,
+        "above_zero": true,
+        "units": 23,
+        "method": "paired BCa over held-out units"
+      },
+      "not_read": {
+        "X2_share_vs_v1_full_D17": {
+          "log_ratio_difference": 0.26445911235253367,
+          "ci_low": 0.026608890608864327,
+          "ci_high": 0.46793468552114414,
+          "ratio_of_ratios": 1.3027261566953965,
+          "above_zero": true,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        },
+        "X2_share_vs_v1_full_D27_seed0": {
+          "log_ratio_difference": 0.3395673974198065,
+          "ci_low": 0.08982931930413914,
+          "ci_high": 0.5310941601009053,
+          "ratio_of_ratios": 1.4043399380563772,
+          "above_zero": true,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        }
+      }
+    },
+    "determinism": {
+      "trtr_full_m0_max_rel_diff": 0.0,
+      "tstr_full_g0_m0_max_rel_diff": 0.0
+    },
+    "runs": [
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 0,
+        "rmse": 195.8970606070822,
+        "epochs": 12
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 1,
+        "rmse": 252.20225917283057,
+        "epochs": 45
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 2,
+        "rmse": 257.35329080777734,
+        "epochs": 22
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 3,
+        "rmse": 228.70487256830364,
+        "epochs": 28
+      },
+      {
+        "model": "TSTR_x3off",
+        "generation_seed": 0,
+        "model_seed": 4,
+        "rmse": 218.0308298910191,
+        "epochs": 17
+      }
+    ]
+  }
+}
