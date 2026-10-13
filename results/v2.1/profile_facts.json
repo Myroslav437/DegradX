@@ -1,0 +1,181 @@
+{
+  "FORM": {
+    "cells_in_scope": 182,
+    "positions": 189485,
+    "modal_protocol": {
+      "I_chg": 0.24,
+      "I_dis": 0.18,
+      "V_cv": 4.4,
+      "V_end": 3.0
+    },
+    "reaching_eol": 182,
+    "held_out_reaching_eol": 55,
+    "fitting_reaching_eol": 127,
+    "T": {
+      "n": 182,
+      "median": 689.0,
+      "q25": 613.25,
+      "q75": 861.5,
+      "p05": 534.0,
+      "p95": 1053.6499999999999
+    },
+    "min_T": 463.0,
+    "weight_guard": {
+      "charge_time": {
+        "delta": -2.9088952200408897,
+        "noise_sd": 0.874682318826529,
+        "ratio": 3.3256591078043676
+      },
+      "mean_discharge_voltage": {
+        "delta": -0.04169187808933161,
+        "noise_sd": 0.007116412512475701,
+        "ratio": 5.858552749189576
+      }
+    },
+    "offset_prescreen": {
+      "recency": 0.11993480071026576,
+      "uniform": 0.12508710665459907
+    },
+    "formation_protocol_share": {
+      "r2": 0.6891030172140311,
+      "adjusted_r2": 0.40646939649951397,
+      "mean_null_r2": 0.47612480535814394,
+      "expected_null_r2": 0.47619047619047616,
+      "p_value": 0.00029997000299970003,
+      "calibrated_share": 0.4065437990464282,
+      "groups": 61,
+      "units": 127
+    },
+    "d05": {
+      "positive": {
+        "enabled": true,
+        "events": 312,
+        "measured_rate_per_100": 0.3303964757709251,
+        "noise_only_rate_per_100": 0.1446043165467626,
+        "ratio_to_noise": 2.2848313498586363
+      },
+      "negative": {
+        "enabled": false,
+        "events": 123,
+        "measured_rate_per_100": 0.13025245679430703,
+        "noise_only_rate_per_100": 0.13597122302158274,
+        "ratio_to_noise": 0.957941348910512
+      }
+    },
+    "mechanism": {
+      "all": {
+        "post_0_10": {
+          "ratio": 4.56996699669967,
+          "ci_low": 3.9914600567316456,
+          "ci_high": 5.181303880004177,
+          "runs": 312,
+          "hits": 183,
+          "units": 127,
+          "rest_events": 1114
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.9790755959666608,
+          "ci_low": 0.6329678461229943,
+          "ci_high": 1.340206491992224,
+          "runs": 312,
+          "hits": 37,
+          "units": 127,
+          "rest_events": 1114
+        }
+      },
+      "diagnostic": {
+        "post_0_10": {
+          "ratio": 4.65878617796298,
+          "ci_low": 4.077846358648251,
+          "ci_high": 5.269582896570773,
+          "runs": 312,
+          "hits": 181,
+          "units": 127,
+          "rest_events": 1073
+        },
+        "placebo_-11_-1": {
+          "ratio": 0.49156365604980606,
+          "ci_low": 0.22271852140249396,
+          "ci_high": 0.8166615413653547,
+          "runs": 312,
+          "hits": 18,
+          "units": 127,
+          "rest_events": 1073
+        }
+      },
+      "non_diagnostic": {
+        "post_0_10": {
+          "ratio": 2.0404494382022476,
+          "ci_low": 0.0,
+          "ci_high": 4.510191129489996,
+          "runs": 312,
+          "hits": 3,
+          "units": 127,
+          "rest_events": 41
+        },
+        "placebo_-11_-1": {
+          "ratio": 14.28314606741573,
+          "ci_low": 9.007292606240776,
+          "ci_high": 20.313997556988962,
+          "runs": 312,
+          "hits": 21,
+          "units": 127,
+          "rest_events": 41
+        }
+      }
+    },
+    "separability": {
+      "n_non_diagnostic_rests": 41,
+      "branch": "(iii) rests without a rate change are not followed by clustered positive runs; clustering after diagnostic blocks, where their interval lies above 1, is attributed to the diagnostic block (its lower-rate or held discharge and its rests), not to rest alone"
+    },
+    "offset_share_generated": {
+      "0": {
+        "recency": 0.13069982981799094,
+        "uniform": 0.13673606336650024
+      },
+      "1": {
+        "recency": 0.11482501729863706,
+        "uniform": 0.11990904877219058
+      },
+      "2": {
+        "recency": 0.12941818164860056,
+        "uniform": 0.13470580516920572
+      }
+    },
+    "pattern_to_state_variance": {
+      "0": {
+        "recency": 2.4036905628368882e-05,
+        "uniform": 1.79507272255768e-05
+      },
+      "1": {
+        "recency": 2.3078371943508838e-05,
+        "uniform": 1.7273883714792216e-05
+      },
+      "2": {
+        "recency": 1.963814694292697e-05,
+        "uniform": 1.4863302373529242e-05
+      }
+    },
+    "patterns_per_seed": {
+      "0": 741,
+      "1": 803,
+      "2": 743
+    }
+  },
+  "ISU_ILCC": {
+    "offset_share": {
+      "0": {
+        "recency": 0.7726004360881626,
+        "uniform": 0.7721665821754946
+      },
+      "1": {
+        "recency": 0.7649023645769523,
+        "uniform": 0.7642244962743566
+      },
+      "2": {
+        "recency": 0.8226506755068693,
+        "uniform": 0.8225861201593824
+      }
+    }
+  }
+}

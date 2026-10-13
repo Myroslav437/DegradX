@@ -1,0 +1,222 @@
+{
+ "baseline": "6221c50",
+ "scope": "\\section{Introduction} .. \\section{Results} (exclusive)",
+ "highlighted_tokens": 6998,
+ "criterion": "unhighlighted current tokens form an in-order subsequence of the original tokens",
+ "uncovered_spans": [],
+ "pure_deletions": [
+  {
+   "line": 118,
+   "deleted": "latter keeps scores comparable with those reported on existing benchmarks . The",
+   "next_to_highlight": true
+  },
+  {
+   "line": 118,
+   "deleted": ",",
+   "next_to_highlight": true
+  },
+  {
+   "line": 118,
+   "deleted": "} , \\textbf { NASA PCoE } ~ \\cite { saha2007",
+   "next_to_highlight": true
+  },
+  {
+   "line": 123,
+   "deleted": "and separable into the contributions of the mean component and of the inserted patterns ?",
+   "next_to_highlight": true
+  },
+  {
+   "line": 124,
+   "deleted": "over which generator settings do they remain responsive ?",
+   "next_to_highlight": true
+  },
+  {
+   "line": 142,
+   "deleted": "The closer the match , the stronger the case for assuming that the contributions it records approximate those of the measured process",
+   "next_to_highlight": true
+  },
+  {
+   "line": 169,
+   "deleted": "One channel",
+   "next_to_highlight": true
+  },
+  {
+   "line": 169,
+   "deleted": "a",
+   "next_to_highlight": true
+  },
+  {
+   "line": 183,
+   "deleted": "and let $ q _ 1 $ be its value at the first position . EOL is reached when capacity has fallen to a fraction $ \\rho $ of that initial value , and the degradation state measures how much of that permit",
+   "next_to_highlight": true
+  },
+  {
+   "line": 184,
+   "deleted": "z _ t \\ ; = \\ ; \\frac { q _ 1 - q _ t } { \\left ( 1 - \\rho \\right ) q _ 1 } ,",
+   "next_to_highlight": true
+  },
+  {
+   "line": 190,
+   "deleted": "the first position",
+   "next_to_highlight": true
+  },
+  {
+   "line": 190,
+   "deleted": "$ \\rho $",
+   "next_to_highlight": true
+  },
+  {
+   "line": 190,
+   "deleted": ",",
+   "next_to_highlight": true
+  },
+  {
+   "line": 193,
+   "deleted": ",",
+   "next_to_highlight": true
+  },
+  {
+   "line": 193,
+   "deleted": "it",
+   "next_to_highlight": true
+  },
+  {
+   "line": 201,
+   "deleted": ", giving mean components that differ in timing but not in the relationship between channels ( c ) . Curves are illustrative",
+   "next_to_highlight": true
+  },
+  {
+   "line": 208,
+   "deleted": "entering prognostic models as an explicit input on the usable capacity of a cycle ~ \\cite { olivares2013 } and appearing",
+   "next_to_highlight": true
+  },
+  {
+   "line": 223,
+   "deleted": "y \\ ; = \\ ; \\sum _ { ( u , c ) \\ , \\in \\ , W } a _ { u , c } \\ , m _ { u , c } \\ ; + \\ ; \\sum _ { ( u , c ) \\ , \\in \\ , W } b _ { u , c } \\sum _ k p _ { k , u , c } .",
+   "next_to_highlight": true
+  },
+  {
+   "line": 226,
+   "deleted": "$ m _ { u , c } = \\varphi _ c ( z _ u ) $",
+   "next_to_highlight": true
+  },
+  {
+   "line": 230,
+   "deleted": "\\phi ^ { \\star } _ { u , c } \\ ; = \\ ; a _ { u , c } \\ , m _ { u , c } \\ ; + \\ ; b _ { u , c } \\sum _ k p _ { k , u , c } .",
+   "next_to_highlight": true
+  },
+  {
+   "line": 233,
+   "deleted": "$ a _ { u , c } $ is zero on channels that do not enter the decomposable target and follows one of the position profiles below on the channels that do ; $ b _ { u , c } $ is zero on channels that carr",
+   "next_to_highlight": true
+  },
+  {
+   "line": 238,
+   "deleted": "$ a $",
+   "next_to_highlight": true
+  },
+  {
+   "line": 240,
+   "deleted": "used",
+   "next_to_highlight": true
+  },
+  {
+   "line": 240,
+   "deleted": "the graded field collapses into one cell ,",
+   "next_to_highlight": true
+  },
+  {
+   "line": 240,
+   "deleted": "all three",
+   "next_to_highlight": true
+  },
+  {
+   "line": 240,
+   "deleted": "all three",
+   "next_to_highlight": true
+  },
+  {
+   "line": 253,
+   "deleted": "the linear map that applies the weights $ a $ and $ b $ to the observed values of the window . It reproduces the target exactly when noise is absent and otherwise differs from it only through $ \\varep",
+   "next_to_highlight": true
+  },
+  {
+   "line": 271,
+   "deleted": ", and",
+   "next_to_highlight": true
+  },
+  {
+   "line": 273,
+   "deleted": "weights $ a $ and $ b $ , the",
+   "next_to_highlight": true
+  },
+  {
+   "line": 276,
+   "deleted": ", either",
+   "next_to_highlight": true
+  },
+  {
+   "line": 276,
+   "deleted": "or by decomposing the sequence and assigning the components uncorrelated with the trend to regeneration ~ \\cite { pan2022 } .",
+   "next_to_highlight": true
+  },
+  {
+   "line": 276,
+   "deleted": "triggers on",
+   "next_to_highlight": true
+  },
+  {
+   "line": 280,
+   "deleted": "that is not detected in a dataset is not enabled in its profile",
+   "next_to_highlight": true
+  },
+  {
+   "line": 288,
+   "deleted": "supplies the largest number of units and is the profile against which the fidelity measurements are primarily read ; it also supplies",
+   "next_to_highlight": true
+  },
+  {
+   "line": 288,
+   "deleted": ". \\textbf { NASA PCoE } ~ \\cite { saha2007 } is the smallest of the three and is included for one property the others lack : documented capacity regeneration , without which the corresponding pattern ",
+   "next_to_highlight": true
+  },
+  {
+   "line": 297,
+   "deleted": "Three",
+   "next_to_highlight": true
+  },
+  {
+   "line": 297,
+   "deleted": ", a Fr \\ ' { e } chet - style distance computed in a learned representation space ~ \\cite { psagan2022 } , and",
+   "next_to_highlight": true
+  },
+  {
+   "line": 297,
+   "deleted": "All three",
+   "next_to_highlight": true
+  },
+  {
+   "line": 312,
+   "deleted": "and",
+   "next_to_highlight": true
+  },
+  {
+   "line": 312,
+   "deleted": "the channels whose target weights are zero ;",
+   "next_to_highlight": true
+  },
+  {
+   "line": 318,
+   "deleted": "over which generator settings they continue to do so",
+   "next_to_highlight": true
+  },
+  {
+   "line": 318,
+   "deleted": "decrease",
+   "next_to_highlight": true
+  }
+ ],
+ "highlighted_paragraphs_without_note": [],
+ "uncovered_count": 0,
+ "deletions_not_next_to_highlight": 0
+}

@@ -1,0 +1,292 @@
+{
+  "MATR": {
+    "units": {
+      "measured_fitting": 95,
+      "measured_held_out": 40,
+      "measured_held_out_reaching_eol": 38,
+      "generated_per_seed": 300
+    },
+    "discriminative_error_per_generation_seed": [
+      0.3331249952316284,
+      0.24375003576278687,
+      0.4231250286102295
+    ],
+    "covariance_rel_frobenius_mean": 0.20906340165307666,
+    "covariance_baseline": 0.17401108623761624,
+    "covariance_baseline_interval": [
+      0.07970374658549728,
+      0.4424459336847821
+    ],
+    "x3_off_seed0": {
+      "discriminative_error": 0.35500001907348633,
+      "cov_relative_frobenius": 0.20678209061481215,
+      "transfer_ratio": {
+        "ratio": 1.6022841078591572,
+        "ci_low": 1.0634844525606484,
+        "ci_high": 2.496420253052916,
+        "units": 38,
+        "method": "BCa over held-out units"
+      }
+    },
+    "transfer_ratio": 1.4897842084416923,
+    "transfer_ci": [
+      1.0423145833648366,
+      2.2909178615860184
+    ],
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.4424459336847821,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          3.4201964487768874,
+          2.276480201346431,
+          4.957907742362334
+        ],
+        "v2": [
+          1.4897842084416923,
+          1.0423145833648366,
+          2.2909178615860184
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.07187501589457194,
+        "v1_seed_half_range": 0.020312517881393433,
+        "v2": 0.3333333532015483
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.6873697840966545,
+        "v1_baseline": 0.2780475058895786,
+        "v2": 0.20906340165307666,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.17401108623761624,
+          "cov_mean_abs_delta_rho": 0.09718465936836151,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.07970374658549728,
+            "ci_high": 0.4424459336847821,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    },
+    "x2_x3_shares": {
+      "X3_share_seed0": {
+        "log_ratio_difference": 0.01682986833234834,
+        "ci_low": -0.08782541168394448,
+        "ci_high": 0.09909627388681429,
+        "ratio_of_ratios": 1.0169722884150008,
+        "above_zero": false,
+        "units": 38,
+        "method": "paired BCa over held-out units"
+      },
+      "X2_share_vs_v1_full_D27": {
+        "log_ratio_difference": 0.7829857824385631,
+        "ci_low": 0.5228987713563483,
+        "ci_high": 1.0251686904491915,
+        "ratio_of_ratios": 2.1879954005637106,
+        "above_zero": true,
+        "units": 38,
+        "method": "paired BCa over held-out units"
+      },
+      "not_read": {
+        "X2_share_vs_v1_full_D17": {
+          "log_ratio_difference": 0.7582678119355823,
+          "ci_low": 0.49076276340807556,
+          "ci_high": 1.0015427100301704,
+          "ratio_of_ratios": 2.1345755300205016,
+          "above_zero": true,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        },
+        "X2_share_vs_v1_full_D27_seed0": {
+          "log_ratio_difference": 0.91138550841029,
+          "ci_low": 0.6041174531878507,
+          "ci_high": 1.2372618380772296,
+          "ratio_of_ratios": 2.48776696874477,
+          "above_zero": true,
+          "units": 38,
+          "method": "paired BCa over held-out units"
+        }
+      }
+    },
+    "void": {
+      "discriminative_error": "MATR: 95\\% unit-bootstrap half-width above half the distance from 0.5 for 2 of 3 generation seeds; values 0.33 [0.19, 0.48], 0.24 [0.15, 0.36], 0.42 [0.28, 0.56]",
+      "covariance_agreement": null,
+      "transfer_ratio": null
+    },
+    "source": "artifacts/v2/v5_fidelity/tables/fidelity.json"
+  },
+  "HUST": {
+    "units": {
+      "measured_fitting": 54,
+      "measured_held_out": 23,
+      "measured_held_out_reaching_eol": 23,
+      "generated_per_seed": 300
+    },
+    "discriminative_error_per_generation_seed": [
+      0.37299996614456177,
+      0.4599999785423279,
+      0.6229999959468842
+    ],
+    "covariance_rel_frobenius_mean": 0.054007012160165214,
+    "covariance_baseline": 0.03757220016113322,
+    "covariance_baseline_interval": [
+      0.016822071966465988,
+      0.12486212881494135
+    ],
+    "x3_off_seed0": {
+      "discriminative_error": 0.4099999666213989,
+      "cov_relative_frobenius": 0.05891469933103938,
+      "transfer_ratio": {
+        "ratio": 1.1217198338566052,
+        "ci_low": 0.9166677744970054,
+        "ci_high": 1.2901666948256678,
+        "units": 23,
+        "method": "BCa over held-out units"
+      }
+    },
+    "transfer_ratio": 1.173587562170692,
+    "transfer_ci": [
+      0.9359569231007253,
+      1.342011393954543
+    ],
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.12486212881494135,
+      "X3_discriminator_narrows": true
+    },
+    "v1_vs_v2": {
+      "tstr_ratio": {
+        "v1": [
+          1.4612937680490141,
+          1.1113580311093105,
+          1.76383636719532
+        ],
+        "v2": [
+          1.173587562170692,
+          0.9359569231007253,
+          1.342011393954543
+        ]
+      },
+      "discriminative_error_mean": {
+        "v1": 0.1643332839012146,
+        "v1_seed_half_range": 0.04349997639656067,
+        "v2": 0.48533331354459125
+      },
+      "cov_relative_frobenius_mean": {
+        "v1": 0.4243181678171406,
+        "v1_baseline": 0.03757220016113322,
+        "v2": 0.054007012160165214,
+        "v2_baseline_interval": {
+          "cov_relative_frobenius": 0.03757220016113322,
+          "cov_mean_abs_delta_rho": 0.03272830234493871,
+          "cov_relative_frobenius_interval": {
+            "ci_low": 0.016822071966465988,
+            "ci_high": 0.12486212881494135,
+            "n_resamples": 10000,
+            "method": "percentile over held-out units"
+          }
+        }
+      }
+    },
+    "x2_x3_shares": {
+      "X3_share_seed0": {
+        "log_ratio_difference": -0.02429070009673645,
+        "ci_low": -0.12587759134883247,
+        "ci_high": 0.05786338854848939,
+        "ratio_of_ratios": 0.9760019446549101,
+        "above_zero": false,
+        "units": 23,
+        "method": "paired BCa over held-out units"
+      },
+      "X2_share_vs_v1_full_D27": {
+        "log_ratio_difference": 0.2644824341036699,
+        "ci_low": 0.026644156241676008,
+        "ci_high": 0.46803585329184466,
+        "ratio_of_ratios": 1.3027565389049034,
+        "above_zero": true,
+        "units": 23,
+        "method": "paired BCa over held-out units"
+      },
+      "not_read": {
+        "X2_share_vs_v1_full_D17": {
+          "log_ratio_difference": 0.26445911235253367,
+          "ci_low": 0.026608890608864327,
+          "ci_high": 0.46793468552114414,
+          "ratio_of_ratios": 1.3027261566953965,
+          "above_zero": true,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        },
+        "X2_share_vs_v1_full_D27_seed0": {
+          "log_ratio_difference": 0.3395673974198065,
+          "ci_low": 0.08982931930413914,
+          "ci_high": 0.5310941601009053,
+          "ratio_of_ratios": 1.4043399380563772,
+          "above_zero": true,
+          "units": 23,
+          "method": "paired BCa over held-out units"
+        }
+      }
+    },
+    "void": {
+      "discriminative_error": "HUST: 95\\% unit-bootstrap half-width above half the distance from 0.5 for 2 of 3 generation seeds; values 0.37 [0.27, 0.48], 0.46 [0.38, 0.54], 0.62 [0.58, 0.66]",
+      "covariance_agreement": null,
+      "transfer_ratio": null
+    },
+    "source": "artifacts/v2/v5_fidelity/tables/fidelity.json"
+  },
+  "TRI_FORMATION": {
+    "units": {
+      "measured_fitting": 127,
+      "measured_held_out": 55,
+      "measured_held_out_reaching_eol": 55,
+      "generated_per_seed": 300
+    },
+    "discriminative_error_per_generation_seed": [
+      0.09727269411087036,
+      0.10272729396820068,
+      0.1677272915840149
+    ],
+    "covariance_rel_frobenius_mean": 0.35060846506232446,
+    "covariance_baseline": 0.30359505098499684,
+    "covariance_baseline_interval": [
+      0.1997153237005485,
+      0.4347712666892439
+    ],
+    "x3_off_seed0": {
+      "discriminative_error": 0.08727270364761353,
+      "cov_relative_frobenius": 0.3221427360815653,
+      "transfer_ratio": null
+    },
+    "transfer_ratio": 1.539302379184526,
+    "transfer_ci": [
+      1.2837686459757442,
+      1.7417565165035584
+    ],
+    "readings": {
+      "X3_covariance_closed": true,
+      "X3_covariance_threshold": 0.4347712666892439
+    },
+    "v1_vs_v2": null,
+    "x2_x3_shares": null,
+    "void": {
+      "discriminative_error": null,
+      "covariance_agreement": null,
+      "transfer_ratio": null
+    },
+    "source": "artifacts/v2.1/w5_fidelity/tables/fidelity.json"
+  },
+  "readings_cross_profile_v2": {
+    "X2_i_matr_gap_closed": false,
+    "matr_ratio": 1.4897842084416923,
+    "hust_interval": [
+      0.9359569231007253,
+      1.342011393954543
+    ],
+    "anchor_d_record_needed": true
+  }
+}

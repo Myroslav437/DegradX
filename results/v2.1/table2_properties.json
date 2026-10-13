@@ -1,0 +1,252 @@
+{
+  "profiles": [
+    "MATR",
+    "HUST",
+    "TRI_FORMATION"
+  ],
+  "columns": [
+    "fitting",
+    "held_out",
+    "generated"
+  ],
+  "rows": {
+    "Fit error of the profile's family [fraction of $q_1$]": {
+      "MATR": [
+        "0.0061",
+        "0.0054",
+        "0.0033"
+      ],
+      "HUST": [
+        "0.0027",
+        "0.0032",
+        "0.0014"
+      ],
+      "TRI_FORMATION": [
+        "0.0105",
+        "0.0109",
+        "0.0077"
+      ]
+    },
+    "Drift rate [mAh/100 cyc.]": {
+      "MATR": [
+        "25.6",
+        "25.6",
+        "23.9"
+      ],
+      "HUST": [
+        "16.8",
+        "16.3",
+        "17.0"
+      ],
+      "TRI_FORMATION": [
+        "7.78",
+        "8.27",
+        "7.87"
+      ]
+    },
+    "Transition position [$\\times T$]": {
+      "MATR": [
+        "0.999",
+        "0.999",
+        "0.999"
+      ],
+      "HUST": [
+        "0.686",
+        "0.651",
+        "0.676"
+      ],
+      "TRI_FORMATION": [
+        "0.999",
+        "0.998",
+        "0.999"
+      ]
+    },
+    "Unit length $T$ [cycles]": {
+      "MATR": [
+        "770",
+        "744",
+        "823"
+      ],
+      "HUST": [
+        "1860",
+        "1938",
+        "1807"
+      ],
+      "TRI_FORMATION": [
+        "701",
+        "665",
+        "683"
+      ]
+    },
+    "Early-life reference $q_1$, IQR [mAh]": {
+      "MATR": [
+        "10.8",
+        "10.4",
+        "12.4"
+      ],
+      "HUST": [
+        "21.2",
+        "19.6",
+        "26.9"
+      ],
+      "TRI_FORMATION": [
+        "2.63",
+        "2.31",
+        "3.43"
+      ]
+    },
+    "Noise variance, capacity [mAh$^2$]": {
+      "MATR": [
+        "2.82",
+        "4.57",
+        "1.88"
+      ],
+      "HUST": [
+        "1.10",
+        "1.06",
+        "0.945"
+      ],
+      "TRI_FORMATION": [
+        "1.43",
+        "1.56",
+        "0.989"
+      ]
+    },
+    "Noise variance, charge time [min$^2$]": {
+      "MATR": [
+        "0.694",
+        "0.799",
+        "0.584"
+      ],
+      "HUST": [
+        "1.39",
+        "1.43",
+        "1.02"
+      ],
+      "TRI_FORMATION": [
+        "0.765",
+        "0.624",
+        "0.575"
+      ]
+    },
+    "Noise autocorrelation, charge time": {
+      "MATR": [
+        "0.89",
+        "0.81",
+        "0.88"
+      ],
+      "HUST": [
+        "0.99",
+        "0.99",
+        "0.99"
+      ],
+      "TRI_FORMATION": [
+        "0.95",
+        "0.95",
+        "0.94"
+      ]
+    },
+    "Offset IQR, charge time [min]": {
+      "MATR": [
+        "4.77",
+        "1.30",
+        "4.96"
+      ],
+      "HUST": [
+        "1.68",
+        "1.62",
+        "1.97"
+      ],
+      "TRI_FORMATION": [
+        "1.43",
+        "1.21",
+        "1.31"
+      ]
+    },
+    "Offset IQR, mean discharge V [mV]": {
+      "MATR": [
+        "59.0",
+        "53.2",
+        "63.8"
+      ],
+      "HUST": [
+        "53.0",
+        "47.4",
+        "54.2"
+      ],
+      "TRI_FORMATION": [
+        "13.3",
+        "8.48",
+        "12.9"
+      ]
+    },
+    "Positive residual runs per 100 positions": {
+      "MATR": [
+        "0.12",
+        "0.12",
+        "0.09"
+      ],
+      "HUST": [
+        "0.06",
+        "0.04",
+        "0.11"
+      ],
+      "TRI_FORMATION": [
+        "0.33",
+        "0.29",
+        "0.27"
+      ]
+    },
+    "Residual correlation, rel. Frob. to fitting split": {
+      "MATR": [
+        "0.00",
+        "0.09",
+        "0.11"
+      ],
+      "HUST": [
+        "0.00",
+        "0.03",
+        "0.03"
+      ],
+      "TRI_FORMATION": [
+        "0.00",
+        "0.10",
+        "0.13"
+      ]
+    },
+    "\\quad capacity pairs, mean $|\\Delta r|$": {
+      "MATR": [
+        "0.000",
+        "0.026",
+        "0.075"
+      ],
+      "HUST": [
+        "0.000",
+        "0.023",
+        "0.029"
+      ],
+      "TRI_FORMATION": [
+        "0.000",
+        "0.065",
+        "0.109"
+      ]
+    },
+    "\\quad other pairs, mean $|\\Delta r|$": {
+      "MATR": [
+        "0.000",
+        "0.059",
+        "0.056"
+      ],
+      "HUST": [
+        "0.000",
+        "0.012",
+        "0.013"
+      ],
+      "TRI_FORMATION": [
+        "0.000",
+        "0.085",
+        "0.094"
+      ]
+    }
+  }
+}

@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DegradX Experiment Log v2.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#F4F6F7; --surface:#FFFFFF; --surface-2:#EDF0F2; --line:#DDE2E6; --line-soft:#E9EDEF;
+    --ink:#13181C; --ink-2:#55626C; --ink-3:#7E8A94;
+    --accent:#A8501C; --accent-soft:#F3E7DE; --slate:#2E4859; --void:#8A939B;
+    --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+    --wrap:1000px; --read:70ch;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+      --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+      --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#14181B; --surface:#1C2126; --surface-2:#232A30; --line:#2E363D; --line-soft:#262E34;
+    --ink:#E8ECEF; --ink-2:#9EAAB4; --ink-3:#7C8892;
+    --accent:#D5824E; --accent-soft:#2A2119; --slate:#9CBBCD; --void:#808C96;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.62;
+       -webkit-font-smoothing:antialiased; overflow-wrap:break-word;}
+  .wrap{max-width:var(--wrap); margin:0 auto; padding-inline:20px;}
+  p,li{max-width:var(--read);}
+  h1,h2,h3{font-family:var(--serif); text-wrap:balance; margin:0;}
+  a{color:var(--accent);}
+  code{font-family:var(--mono); font-size:.86em; overflow-wrap:anywhere;}
+
+  /* header ------------------------------------------------------------------ */
+  header.top{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--ground);
+             border-bottom:1px solid var(--line);}
+  .topbar{display:flex; align-items:center; gap:18px; justify-content:space-between; padding-block:10px;}
+  .topbar .mark{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); white-space:nowrap;}
+  nav.jump{display:flex; gap:2px; overflow-x:auto; scrollbar-width:none; min-width:0;}
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump a{font-family:var(--mono); font-size:12px; color:var(--ink-2); text-decoration:none;
+             padding:4px 7px; border-radius:3px; white-space:nowrap;}
+  nav.jump a:hover{background:var(--surface-2); color:var(--ink);}
+  nav.jump a:focus-visible{outline:2px solid var(--accent); outline-offset:1px;}
+  nav.jump a.hot{color:var(--accent);}
+
+  .masthead{padding-block:52px 34px; border-bottom:2px solid var(--ink); margin-bottom:8px;}
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+  h1{font-size:clamp(32px,5.2vw,50px); line-height:1.08; font-weight:600; letter-spacing:-.015em;}
+  .standfirst{font-family:var(--serif); font-size:19px; line-height:1.55; color:var(--ink-2); margin:16px 0 0; max-width:64ch;}
+  .facts{display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:24px;}
+  .fact{font-family:var(--mono); font-size:12px; color:var(--ink-2); border:1px solid var(--line);
+        border-radius:2px; padding:4px 9px; background:var(--surface);}
+  .fact b{color:var(--ink); font-weight:500;}
+
+  /* summary ----------------------------------------------------------------- */
+  .summary{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:1px;
+           background:var(--line); border:1px solid var(--line); margin:34px 0 10px;}
+  .q{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column; gap:7px;}
+  .q .tag{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);}
+  .q .num{font-family:var(--serif); font-size:30px; line-height:1; font-weight:600; font-variant-numeric:tabular-nums;}
+  .q .num small{font-size:15px; color:var(--ink-2); font-weight:400;}
+  .q p{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.5;}
+
+  /* flags ------------------------------------------------------------------- */
+  .flags{margin:30px 0 6px; border:2px solid var(--accent); background:var(--accent-soft); padding:20px 22px 14px;
+         scroll-margin-top:64px;}
+  .flags h2{font-size:24px; font-weight:600;}
+  .flags .lede{margin:8px 0 0; font-size:14.5px; color:var(--ink-2);}
+  .flags ol{margin:16px 0 0; padding-left:22px;}
+  .flags li{font-size:14.5px; line-height:1.55; margin-bottom:11px; max-width:none;}
+  .flags li > b:first-child{font-weight:600;}
+  .flags li::marker{font-family:var(--mono); font-size:12px; color:var(--accent);}
+
+  /* plain blocks (v1 -> v2, index) ----------------------------------------- */
+  section.block{padding-top:44px; scroll-margin-top:64px;}
+  section.block > h2{font-size:26px; font-weight:600; letter-spacing:-.01em;}
+  section.block > p{margin:12px 0 0;}
+  .note{font-size:13px; color:var(--ink-2); margin:9px 0 0;}
+
+  /* stages ------------------------------------------------------------------ */
+  section.stage{display:grid; grid-template-columns:64px minmax(0,1fr); padding-top:46px; scroll-margin-top:64px;}
+  .close{scroll-margin-top:64px;}
+  .spine{position:relative;}
+  .spine::before{content:""; position:absolute; left:15px; top:6px; bottom:-46px; width:1px; background:var(--line);}
+  section.stage.last .spine::before{bottom:auto; height:36px;}
+  .badge{position:relative; width:31px; height:31px; border-radius:50%; background:var(--surface);
+         border:1px solid var(--ink); color:var(--ink); font-family:var(--mono); font-size:12px;
+         display:grid; place-items:center;}
+  .badge.sm{font-size:11px; letter-spacing:-.02em;}
+  .stage-head h2{font-size:26px; font-weight:600; letter-spacing:-.01em;}
+  .run{font-family:var(--mono); font-size:12px; color:var(--ink-3); margin:6px 0 0;}
+  .run span{white-space:nowrap;}
+  .run span + span::before{content:"·"; margin:0 8px; color:var(--line);}
+  .commits{font-family:var(--mono); font-size:12px; color:var(--ink-3); margin:4px 0 0; line-height:1.6;}
+  .commits code{font-size:12px; color:var(--ink-2);}
+  section.stage > div{min-width:0;}
+  .stage-body{padding-bottom:6px;}
+  .stage-body > p{margin:15px 0 0;}
+  .stage-body ul{margin:10px 0 0; padding-left:20px;}
+  .stage-body li{font-size:15px; margin-bottom:5px;}
+  h3{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+     color:var(--ink-3); font-weight:500; margin:26px 0 10px;}
+
+  /* tables ------------------------------------------------------------------ */
+  .tablewrap{overflow-x:auto; margin-top:18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
+  table{border-collapse:collapse; width:100%; font-size:14px; font-variant-numeric:tabular-nums;}
+  th,td{text-align:right; padding:8px 12px; border-bottom:1px solid var(--line-soft); white-space:nowrap; vertical-align:top;}
+  th:first-child,td:first-child{text-align:left; white-space:normal; min-width:180px;}
+  thead th{font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--ink-3); font-weight:500; vertical-align:bottom;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-family:var(--mono); font-size:13.5px;}
+  td.txt{text-align:left; white-space:normal; min-width:200px; font-size:13.5px;}
+  tr.sub td{color:var(--ink-2);}
+  tr.sub td:first-child{padding-left:24px;}
+  .void{font-family:var(--mono); font-size:11.5px; color:var(--void); border:1px solid var(--line);
+        border-radius:2px; padding:1px 6px; white-space:nowrap;}
+  .ok{font-family:var(--mono); font-size:11.5px; color:var(--slate); white-space:nowrap;}
+
+  /* decisions --------------------------------------------------------------- */
+  .decision{border-left:3px solid var(--accent); background:var(--surface); padding:16px 18px;
+            margin-top:20px; max-width:var(--read);}
+  .decision.dev{border-left-color:var(--slate);}
+  .decision.dev h4 .id{color:var(--slate);}
+  .decision h4{margin:0 0 10px; font-family:var(--sans); font-size:15px; font-weight:600; line-height:1.4;}
+  .decision h4 .id{font-family:var(--mono); font-size:12px; color:var(--accent); margin-right:9px;
+                   letter-spacing:.04em;}
+  .decision dl{display:grid; grid-template-columns:auto 1fr; gap:7px 14px; margin:0;}
+  .decision dt{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+               color:var(--ink-3); padding-top:3px;}
+  .decision dd{margin:0; font-size:14.5px; line-height:1.55; color:var(--ink); min-width:0;}
+  .decision dd ul{margin:2px 0 0; padding-left:18px;}
+  .decision dd li{font-size:14.5px; margin-bottom:3px;}
+  .decision + .decision{margin-top:12px;}
+  .pd{font-family:var(--mono); font-size:10.5px; font-weight:500; letter-spacing:.08em; text-transform:uppercase;
+      color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:0 5px; margin-left:8px;
+      vertical-align:1px; white-space:nowrap;}
+  .pd.pre{color:var(--slate); border-color:var(--slate);}
+  .pd.ex{color:var(--ink-2); border-color:var(--line);}
+
+  .stopbox{border:1px solid var(--line); border-top:3px solid var(--accent); background:var(--surface);
+           padding:16px 18px 18px; margin-top:22px;}
+  .stopbox h4{margin:0 0 8px; font-family:var(--sans); font-size:15px; font-weight:600;}
+  .stopbox p{margin:8px 0 0; font-size:14.5px;}
+  .stopbox .tablewrap{margin-top:12px;}
+
+  .takeaway{display:flex; gap:12px; margin-top:24px; padding-top:14px; border-top:1px solid var(--line);
+            max-width:var(--read);}
+  .takeaway::before{content:"▪"; color:var(--accent); font-size:11px; line-height:1.9;}
+  .takeaway p{margin:0; font-family:var(--serif); font-size:17px; line-height:1.5;}
+
+  /* closing ----------------------------------------------------------------- */
+  .close{margin-top:56px; border-top:2px solid var(--ink); padding-top:30px;}
+  .close h2{font-size:26px; font-weight:600;}
+  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:26px; margin-top:22px;}
+  .cols h3{margin-top:0;}
+  .cols ul{margin:0; padding-left:18px;}
+  .cols li{font-size:14.5px; margin-bottom:7px; color:var(--ink);}
+  footer{margin:44px 0 20px; padding-top:16px; border-top:1px solid var(--line);
+         font-family:var(--mono); font-size:12px; color:var(--ink-3);}
+  footer p{max-width:none;}
+
+  @media (max-width:720px){
+    .wrap{padding-inline:16px;}
+    section.stage{grid-template-columns:minmax(0,1fr); gap:0;}
+    .spine{display:flex; align-items:center; gap:10px; margin-bottom:8px;}
+    .spine::before{display:none;}
+    th:first-child,td:first-child{min-width:140px;}
+    .run span{white-space:normal;}
+    .topbar .mark{display:none;}
+    .flags{padding:16px 14px 8px;}
+    .flags ol{padding-left:18px;}
+  }
+  @media (max-width:520px){
+    .decision{padding:14px 14px;}
+    .decision dl{grid-template-columns:1fr; gap:2px 0;}
+    .decision dt{padding-top:8px;}
+    td.txt{min-width:170px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important;}}
+
+  /* print (A4) -------------------------------------------------------------- */
+  @page{size:A4; margin:15mm 13mm 16mm;}
+  @media print{
+    :root, :root:not([data-theme="light"]), :root[data-theme="dark"]{
+      --ground:#FFFFFF; --surface:#FFFFFF; --surface-2:#EDF0F2; --line:#D3D9DE; --line-soft:#E4E8EB;
+      --ink:#13181C; --ink-2:#4B5862; --ink-3:#6E7A84;
+      --accent:#A8501C; --accent-soft:#F7EEE7; --slate:#2E4859; --void:#7A848C;
+    }
+    body{font-size:10pt; line-height:1.5; background:#FFFFFF; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    .wrap{max-width:none; padding-inline:0;}
+    header.top{display:none;}
+    .masthead{padding-block:0 18px;}
+    h1{font-size:28pt;}
+    .standfirst{font-size:12.5pt;}
+    p,li{max-width:none;}
+    .summary{grid-template-columns:repeat(4,1fr); margin-top:18px;}
+    .q .num{font-size:20pt;}
+    .q p{font-size:8.5pt;}
+    section.stage{grid-template-columns:40px minmax(0,1fr); padding-top:22px;}
+    section.block{padding-top:22px;}
+    .spine::before{display:none;}
+    .stage-head h2, section.block > h2, .close h2{font-size:16pt;}
+    h2,h3,h4,.stage-head{break-after:avoid; page-break-after:avoid;}
+    .decision,.stopbox,.flags li,.q,tr,.takeaway{break-inside:avoid; page-break-inside:avoid;}
+    .decision{max-width:none;}
+    .tablewrap{overflow:visible;}
+    table{font-size:8.5pt;}
+    th,td{white-space:normal; padding:4px 6px;}
+    thead th{font-size:7.5pt;}
+    td.num{font-size:8.5pt;}
+    th:first-child,td:first-child{min-width:34mm;}
+    td.txt{min-width:0;}
+    .decision dd,.decision dd li,.flags li,.stage-body li,.cols li,.stopbox p{font-size:9.5pt;}
+    .takeaway p{font-size:11pt;}
+    a{color:inherit; text-decoration:none;}
+    .close{margin-top:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topbar">
+    <span class="mark">DegradX · experiment log v2.1</span>
+    <nav class="jump" aria-label="Sections">
+      <a href="#flags" class="hot">Flags</a><a href="#v2v21">v2→v2.1</a><a href="#order">Order</a>
+      <a href="#w0">W0</a><a href="#w1">W1</a><a href="#w2">W2</a><a href="#w3">W3</a><a href="#w4">W4</a>
+      <a href="#w5">W5</a><a href="#w6">W6</a><a href="#w7">W7</a><a href="#w8">W8</a><a href="#w9">W9</a><a href="#w10">W10</a>
+      <a href="#records">Records</a><a href="#close">Close</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="masthead">
+    <p class="eyebrow">11–13 October 2026 · stages W0–W10 · branch v2.1</p>
+    <h1>DegradX Experiment Log — v2.1</h1>
+    <p class="standfirst">The third experiment programme, run under the brief “DegradX v2.1” on top of the frozen v2
+      results. It added a third evaluated profile, FORM, built from the TRI/Stanford formation dataset of Cui
+      <i>et al.</i> (2024). FORM is the first profile whose generator inserts patterns. The one MATR and HUST computation
+      of this programme measured the share of the correlated noise in transfer. The programme also delivered a review
+      build of the paper in which every change since the authors' text is highlighted. ISU-ILCC stays closed under
+      option A.</p>
+    <div class="facts">
+      <span class="fact"><b>3</b> profiles: MATR, HUST, FORM</span>
+      <span class="fact">FORM: <b>182</b> cells, all reach EOL</span>
+      <span class="fact"><b>4 680</b> TimeSHAP explanations</span>
+      <span class="fact">decisions <b>D32–D34</b></span>
+      <span class="fact">amendments <b>round 8</b></span>
+      <span class="fact">tags <b>v2-results</b>, <b>declarations-frozen-r4</b></span>
+    </div>
+  </div>
+
+  <section class="summary" aria-label="Where the research questions landed in v2.1">
+    <div class="q">
+      <span class="tag">RQ1 · fidelity (FORM)</span>
+      <span class="num">1.54 <small>[1.28, 1.74]</small></span>
+      <p>FORM's transfer ratio. It lies outside HUST's interval [0.94, 1.34], as MATR's does, but the intervals overlap.
+        Unlike MATR's, the gap is located: in the non-capacity channels, mostly in their early-life levels. FORM's
+        discriminator cell is the first readable one (0.10–0.17).</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ2 · usability (FORM)</span>
+      <span class="num">3 <small>of 3</small> · 0.0000</span>
+      <p>Every weighted channel is used materially by every member (NRMSE 0.179). The pattern term is separable
+        (|r| 0.045) but not shown to be learned: removing it leaves the error at 0.0000 [−0.0001, 0.0002], a test that cannot detect a term this small. So the trained-model
+        sparse-set scores are void (D21 logic, no inflation).</p>
+    </div>
+    <div class="q">
+      <span class="tag">RQ3 · scores</span>
+      <span class="num">1.00 <small>→</small> 0.37</span>
+      <p>Paired retrieval of the undegraded map, then under the smallest added noise, measured for the first time. FORM
+        reproduces the registering pattern of MATR and HUST exactly: rank agreement misses smoothing and partial shifts,
+        and the temporal profile error registers them.</p>
+    </div>
+    <div class="q">
+      <span class="tag">Transfer shares (MATR / HUST)</span>
+      <span class="num">2.19× <small>/ 1.30×</small></span>
+      <p>The part of the v1 → v2 transfer gain carried by the per-unit offsets. Correlated noise carries
+        1.02× / 0.98×, i.e. none: the gains of v2 are the offsets' in every measure where the two were separated.</p>
+    </div>
+  </section>
+
+  <!-- FLAGS ----------------------------------------------------------------- -->
+  <section class="flags" id="flags" aria-labelledby="flags-h">
+    <h2 id="flags-h">Flags for the authors</h2>
+    <p class="lede">These need a decision or a revision by the authors. The Notes box on the first page of
+      <code>paper/review/DegradX_review.pdf</code> lists the same items, with pointers into the paper. None was settled
+      by the agent.</p>
+    <ol>
+      <li><b>Licence.</b> The FORM profile and its generated units inherit CC BY-NC 4.0, a non-commercial term. The
+        README says so. The cell-to-protocol sheet (the authors' GitHub file, no licence) is fetched and pinned, never
+        redistributed.</li>
+      <li><b>Nominal capacity of FORM</b>: 0.24 Ah, from Cui <i>et al.</i> p.3082 (“nominally 240 mAh … 1C is defined
+        as 0.24 A”). BEEP's stored <code>nominal_capacity</code> agrees.</li>
+      <li><b>HUST stays the anchor</b> (D29, the brief's ruling), on transfer, covariance and the property table, not the
+        discriminator. FORM's transfer ratio, 1.54, lies outside HUST's interval, as MATR's does. The agent reports this
+        and does not re-decide the anchor.</li>
+      <li><b>Post-data rules and declaration timing.</b> v2.1 adds two post-data rules, both for FORM:
+        <ul>
+          <li><b>D33</b>, the charge current of the protocol check read on constant-current samples. Read as declared,
+            it would have stopped FORM on a false second protocol made by post-EOL collapsed cycles.</li>
+          <li><b>A post-hoc sensitivity</b> of the mechanism diagnostic, which gives the same reading.</li>
+        </ul>
+        r4 was written after every earlier result, and after FORM's documentation (with outcome-adjacent values) and the
+        measured values of one of its cells had been read (all listed in <code>v2_1.exposure</code>), but before any download. All of this is in the Limitations, coloured.</li>
+      <li><b>E3 = 66</b> corrects an off-by-one (67). Tongji is not re-opened.</li>
+      <li><b>The D28 E2 reading for ISU-ILCC</b> is still a choice. ISU-ILCC is closed and reported, not evaluated.</li>
+      <li><b>FORM's sparse set.</b> It exists, but no trained model is shown to learn it, so its retrieval is read on the reference
+        model and on degraded maps only. Decide whether the paper presents it as a construction check only.</li>
+      <li><b>The AI-use disclosure.</b> The Acknowledgments are untouched. A proposed disclosure is in the Notes box:
+        the experiments were run by an AI agent, which also proposed the decision records and drafted the methodology
+        amendments and the results text.</li>
+      <li><b>The Abstract and Conclusion are agent drafts</b>, marked “DRAFT (agent) — for the authors to rewrite”. The
+        repository and DOI footnote in §1 is still a placeholder.</li>
+      <li><b>Table 1 layout.</b> r4 lists four TSTR rows for MATR/HUST. The paper prints “v2 (three seeds)” as the main row and
+        “v2 without X3 (seed 0)” and “v1” as rows. “v2 (seed 0)” goes into the note.</li>
+      <li><b>21 of 300 generated FORM units</b> end above the EOL threshold by more than the declared record-end
+        tolerance (2.4 mAh), because their capacity noise varies slowly. They are left out of the property rows that
+        depend on EOL (D30 applied as declared).</li>
+    </ol>
+  </section>
+
+  <!-- v2 -> v2.1 ------------------------------------------------------------ -->
+  <section class="block" id="v2v21">
+    <h2>v2 → v2.1: what changed</h2>
+    <p>MATR and HUST values are the v2 values (tag <code>v2-results</code>, not re-run), except the TSTR rows on their X3-off
+      sets. FORM values are from the W5–W8 artifacts. Recency weighting throughout.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Item</th><th>v2</th><th>v2.1</th></tr></thead>
+        <tbody>
+          <tr><td>Evaluated profiles</td><td class="txt">MATR, HUST</td><td class="txt">MATR, HUST, <b>FORM</b> (182 cells; 127 fitting / 55 held out)</td></tr>
+          <tr><td>Third dataset</td><td class="txt">ISU-ILCC, parked at V4 (offset share 0.77–0.82)</td><td class="txt">ISU-ILCC closed under option A; FORM evaluated (offset share 0.12 measured, 0.11–0.14 generated)</td></tr>
+          <tr><td>Inserted patterns</td><td class="txt">none enabled</td><td class="txt">FORM: post-diagnostic recovery enabled (2.28× noise rate); not shown to be learned by trained models</td></tr>
+          <tr><td>Transfer ratio [95 % BCa]</td><td class="txt">MATR 1.49 [1.04, 2.29]; HUST 1.17 [0.94, 1.34]</td><td class="txt">unchanged; FORM 1.54 [1.28, 1.74]</td></tr>
+          <tr><td>Transfer without X3 (seed 0)</td><td><span class="void">not measured</span></td><td class="txt">MATR 1.60 [1.06, 2.50]; HUST 1.12 [0.92, 1.29]</td></tr>
+          <tr><td>Shares in transfer: offsets / correlated noise</td><td><span class="void">not separable</span></td><td class="txt">MATR 2.19× / 1.02×; HUST 1.30× / 0.98×</td></tr>
+          <tr><td>Discriminator cells</td><td class="txt">void (D02b) on both</td><td class="txt">MATR, HUST void; <b>FORM readable, 0.10–0.17</b></td></tr>
+          <tr><td>Covariance gap</td><td class="txt">closed on both</td><td class="txt">closed on all three (FORM 0.35 within [0.20, 0.43])</td></tr>
+          <tr><td>Primary NRMSE on y; channels used</td><td class="txt">0.091 / 0.095; all, every member</td><td class="txt">FORM 0.179; all, every member, materially</td></tr>
+          <tr><td>Retrieval of the sparse set</td><td><span class="void">not computed</span></td><td class="txt">FORM: paired retrieval on degraded maps (W7) and on the reference model (W8); trained models void</td></tr>
+          <tr><td>TimeSHAP explanations</td><td class="txt">5 760 (MATR, HUST)</td><td class="txt">4 680 (FORM, with pattern-free counterparts)</td></tr>
+          <tr><td>Methodology diagrams</td><td class="txt">the diagrams of the paper as given (Figure 4 redrawn at v1 S4), showing the generator without offsets or correlated noise</td><td class="txt">redrawn from scripts; every label from declarations or the FORM profile</td></tr>
+          <tr><td>Highlighting in the review build</td><td class="txt">methodology rounds 1–7 in <code>\rev</code></td><td class="txt">every change since 6221c50 in §1–§3, two categories, checked mechanically; §4–§5 new with banners; Notes box</td></tr>
+          <tr><td>Abstract, Conclusion</td><td class="txt">template placeholders</td><td class="txt">agent drafts, marked for the authors</td></tr>
+          <tr><td>Declarations</td><td class="txt">r3 (<code>v2</code> block)</td><td class="txt">r4 (<code>v2_1</code> block), frozen at <code>declarations-frozen-r4</code> before download</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block" id="order">
+    <h2>Stage order</h2>
+    <p>The stages ran and were committed in the order W0, W1, W2, W3, W4, <b>W7, W9, W6, W5, W8</b>, W10. W7, the
+      degraded-map test, and W9, the diagrams, need no trained model, so they ran on the CPU while W6, the ensembles,
+      and W5, the TSTR models, shared the GPU. W8 needs W6's models. Each stage reads only the artifacts of the stages it
+      depends on, so the order changes no result. The sections below follow the stage numbers.</p>
+  </section>
+
+  <!-- W0 -------------------------------------------------------------------- -->
+  <section class="stage" id="w0">
+    <div class="spine"><span class="badge">W0</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Documentation and declarations r4, before any download</h2>
+        <p class="run"><span>11 Oct</span><span>no data</span><span>HEAD requests only</span></p>
+        <p class="commits">commit <code>23ac263</code> · tag <code>declarations-frozen-r4</code></p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <ul>
+          <li><b>Branch and tag.</b> Tag <code>v2-results</code> on the v2 HEAD; branch <code>v2.1</code>; output roots
+            <code>artifacts/v2.1</code>, <code>results/v2.1</code> and <code>data/v2.1</code>.</li>
+          <li><b>Documentation research.</b> Four readers, a synthesis of 72 claims in six groups, and 12 verifiers (source
+            fidelity and an adversary per group). It covered Cui <i>et al.</i> and SI, Rhyu <i>et al.</i>, the data page,
+            the authors' code and parameter sheet, BEEP, and BatteryLife (non-binding).</li>
+          <li><b>r4.</b> The block <code>declared_by_design.v2_1</code>: paths, authors' decisions, scope, eligibility (E3 = 66,
+            E2 strict), archive rules, the pinned formation mapping, the cell scope, the aging protocol with its
+            tolerance and second-protocol rule, positions and predicates, the three channels with the CC-CV charge-time
+            definition and its validation, rest events, EOL reporting, converter checks, the mechanism diagnostic with
+            its corrected start index (T7), the weight guard, the offset pre-screen, readings, 12 third-profile-only stop
+            cases, <code>tstr_without_x3</code>, and exposure.</li>
+          <li><b>D32</b> settles what the documentation leaves open, before data. <b>T7</b> records the off-by-one in v2's
+            ISU-ILCC mechanism diagnostic (closed, not recomputed).</li>
+          <li><b>Review before commit.</b> Three lenses (brief compliance, measurement science, pre-registration hygiene)
+            and a judge. 57 objections (1 blocker, 27 major, 29 minor), all accepted: 12 as proposed, 45 modified.</li>
+        </ul>
+        <div class="takeaway"><p>Everything that governs FORM was committed and tagged before any byte of the archives was
+          downloaded. What had been read by then, including outcome-adjacent values printed in the papers and the measured values of one cell, is listed in
+          <code>v2_1.exposure</code>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- W1 -------------------------------------------------------------------- -->
+  <section class="stage" id="w1">
+    <div class="spine"><span class="badge">W1</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Acquisition and ingestion, with converter checks</h2>
+        <p class="run"><span>12–13 Oct</span><span>15.6 GB archive</span><span>943 s conversion</span></p>
+        <p class="commits">commits <code>01889fd</code> hashes and member lists (before any member was opened) · <code>f818fda</code> ingestion, D33</p>
+      </div>
+      <div class="stage-body">
+        <h3>What ran</h3>
+        <ul>
+          <li><b>Fetch.</b> Size, ETag and Last-Modified match the declared HEAD values. SHA-256 and member lists were committed
+            before extraction. The parameter sheet was fetched at its pinned commit and hash.</li>
+          <li><b>Extraction.</b> 182 aging files from the current archive, with the tarfile <code>data</code> filter. The
+            original archive contributes nothing, since its 39 seqs are all in the current one.</li>
+          <li><b>Conversion.</b> <code>src/degradx/data/tri_formation.py</code> in two passes: per-cycle statistics, then the
+            cross-cell rules.</li>
+        </ul>
+        <h3>What came out</h3>
+        <ul>
+          <li><b>182 of 182 cells in scope</b>, 189 485 aging positions (736–1 625 per cell). The modal protocol is
+            0.24 A / 0.18 A / 4.4 V / 3.0 V, as documented. 1 incomplete cycle in about 189 000.</li>
+          <li><b>BEEP.</b> Every file is from the post-2023 writer, with <code>full_fast_charge</code> = 1. This explains the
+            brief's observation that <code>charge_duration</code> is NaN once a cycle charges less than 0.24 Ah.</li>
+          <li><b>Charge-time validation:</b> 178 of 178 evaluable files pass (4 not evaluable). BEEP's duration exceeds the
+            reproduced CC-CV time by a near-constant 5.40–5.49 min, the zero-current segment at the cycle start (the
+            documented reason).</li>
+          <li><b>Rest events:</b> 2 140 diagnostic, 88 paused and 112 gap events. <b>75 DST artefacts were set aside</b>:
+            fall-back hours that BEEP maps as PDT.</li>
+          <li><b>All converter checks pass.</b> Summaries are equal to machine precision, the index structure is sound,
+            and the diagnostics are in their documented layout in 543 of 546 (cell, type) pairs.</li>
+        </ul>
+        <div class="decision">
+          <h4><span class="id">D33</span>The protocol check reads the charge current on constant-current samples<span class="pd">post-data</span></h4>
+          <dl>
+            <dt>Found</dt><dd>Read as declared (the 90th percentile of all charge samples), 40 cells carry runs of more than
+              11 cycles with a departing charge current, agreeing in 114 pairs. That is a second aging protocol, which is
+              a stop case. Every such cycle is long after EOL, with capacity at 0.006–0.046 Ah: the charge is almost all
+              CV, so the percentile no longer measures the CC level. Discharge current and voltages are unchanged.</dd>
+            <dt>Chosen</dt><dd>The median current over CC samples (below the cycle's own V<sub>cv</sub> − 10 mV, current
+              above C/50, at least 10 samples). A cycle without a CC phase is not tested. Result: no cell out of
+              tolerance, no second protocol.</dd>
+            <dt>Kept</dt><dd>The literal outcome is kept in <code>ingest_summary_r4_literal.json</code>,
+              <code>cells_r4_literal.csv</code> and <code>checks_r4_literal.md</code>. Listed in the paper's Limitations
+              and Notes box.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- W2 -------------------------------------------------------------------- -->
+  <section class="stage" id="w2">
+    <div class="spine"><span class="badge">W2</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Audit, eligibility, mechanism diagnostic, offset pre-screen</h2>
+        <p class="run"><span>13 Oct</span><span>CPU</span><span>split 127 / 55</span></p>
+        <p class="commits">commit <code>e6d1d06</code> · D34</p>
+      </div>
+      <div class="stage-body">
+        <h3>What came out</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Criterion</th><th>Measured</th><th>Verdict</th></tr></thead>
+            <tbody>
+              <tr><td>E3, units reaching EOL (≥ 66)</td><td class="txt">182 of 182 (127 fitting, 55 held out); T median 689, min 463</td><td class="txt">pass</td></tr>
+              <tr><td>E5, weight guard (|Δφ| / noise SD ≥ 1)</td><td class="txt">charge time 3.33; mean discharge voltage 5.86</td><td class="txt">pass</td></tr>
+              <tr><td>E6, licence</td><td class="txt">CC BY-NC 4.0</td><td class="txt">pass, NC flagged</td></tr>
+              <tr><td>Offset pre-screen, Var(y<sub>offset</sub>)/Var(y) (stop &gt; 0.5)</td><td class="txt">0.120 (recency), 0.125 (uniform)</td><td class="txt">pass</td></tr>
+              <tr><td>Formation-protocol share of the offset term</td><td class="txt">R² 0.689 vs null 0.476, p = 0.0003; calibrated 0.41</td><td class="txt">reported</td></tr>
+              <tr><td>D05, positive / negative runs vs noise</td><td class="txt">2.28 (312 runs) / 0.96</td><td class="txt">positive enabled</td></tr>
+              <tr><td>Mechanism, runs within 0–10 after a rest event</td><td class="txt">4.57 [3.99, 5.18]; placebo 0.98 [0.63, 1.34]</td><td class="txt">localised after rests</td></tr>
+              <tr><td>Separability, 41 rests without a rate change</td><td class="txt">2.04 [0, 4.51]</td><td class="txt">branch (iii): attributed to the diagnostic block</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><b>Post-hoc sensitivity (not declared).</b> The declared gap events mostly sit one position after a diagnostic
+          block (112 events, median distance 1). The first aging cycle after a block charges from the RPT's deep discharge
+          and lasts longer. Restricted to rests with no diagnostic in the 11 preceding positions (33 events), the ratio is
+          2.54 [0, 5.78]. The branch is the same, and the declared reading stands.</p>
+        <div class="decision">
+          <h4><span class="id">D34</span>FORM is eligible, and the positive pattern type is enabled<span class="pd pre">pre-declared readings</span></h4>
+          <dl>
+            <dt>Reading</dt><dd>E1–E6 hold, the pre-screen reads 0.12, and D05 enables the post-diagnostic recovery. By the
+              separability rule, the recovery is attributed to the diagnostic block (a rest and a lower-rate discharge),
+              not to rest alone.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- W3 -------------------------------------------------------------------- -->
+  <section class="stage" id="w3">
+    <div class="spine"><span class="badge">W3</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Profile fit under X2 and X3</h2>
+        <p class="run"><span>13 Oct</span><span>CPU, 40 s</span><span>v2 V3 code</span></p>
+        <p class="commits">commit <code>47a6595</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>W2 reproduced exactly:</b> the same split, the two-term exponential family, and D05 positive enabled at
+            2.285.</li>
+          <li><b>Mappings:</b> charge time falls 2.91 min and mean discharge voltage 41.7 mV from z = 0 to 1. x₀ = 0.2459 Ah,
+            72.03 min, 3.738 V. The backfit converged in 4–5 iterations.</li>
+          <li><b>Within-unit residual correlation:</b> charge time against mean discharge voltage is <b>−0.89</b>, far beyond
+            any MATR or HUST pair. Capacity against the others is about ±0.12. No positive-definite repair was needed.</li>
+          <li>All checks pass. There are no redundant channels: temperature and internal resistance are absent.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- W4 -------------------------------------------------------------------- -->
+  <section class="stage" id="w4">
+    <div class="spine"><span class="badge">W4</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Generated units: 3 × 300, plus X3 off</h2>
+        <p class="run"><span>13 Oct</span><span>CPU, 95 s</span><span>first v2 profile with patterns</span></p>
+        <p class="commits">commit <code>3e7f635</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>Every construction check passes</b> in every seed and weighting, including “disabling patterns leaves z, T,
+            R, the mean and the noise unchanged”.</li>
+          <li><b>Offset share</b> 0.115–0.137, far below 0.5.</li>
+          <li><b>Patterns are live but negligible in y:</b> 741–803 per seed in 213–216 units, amplitude median 2.7 mAh, and a
+            pattern/state variance ratio of about 2e-5. This is NASA PCoE's situation in v1, and the amplitudes are not
+            inflated (D21).</li>
+          <li><b>Warnings (declared severity):</b> the generated q₁ IQR is 3.2–3.7 against 2.6 mAh, and the estimator check
+            is 0.156 / 0.094 against 0.05.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- W5 -------------------------------------------------------------------- -->
+  <section class="stage" id="w5">
+    <div class="spine"><span class="badge">W5</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ1 — fidelity of FORM, and TSTR without X3 on MATR and HUST</h2>
+        <p class="run"><span>13 Oct</span><span>CUDA, 56 min</span><span>held-out units 55 (all reach EOL)</span></p>
+        <p class="commits">commit <code>cc91851</code></p>
+      </div>
+      <div class="stage-body">
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>FORM input set</th><th>Transfer ratio [95 % BCa]</th><th>RMSE TSTR / TRTR [cycles]</th></tr></thead>
+            <tbody>
+              <tr><td>full</td><td class="num">1.539 [1.284, 1.742]; seed pairs 1.42–1.78</td><td class="num">145 / 94</td></tr>
+              <tr><td>capacity only</td><td class="num">1.083 [0.991, 1.146]</td><td class="num">147 / 135</td></tr>
+              <tr><td>capacity relative</td><td class="num">1.121 [1.076, 1.167]</td><td class="num">138 / 123</td></tr>
+              <tr><td>capacity state</td><td class="num">1.104 [1.057, 1.150]</td><td class="num">141 / 128</td></tr>
+              <tr><td>full centred</td><td class="num">1.162 [1.053, 1.234]</td><td class="num">133 / 115</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li><b>Transfer reading:</b> the interval excludes 1; the ratio lies outside HUST's interval, which it overlaps.</li>
+          <li><b>Where the gap sits.</b> Both readings hold under every leave-one-seed-out:
+            <ul>
+              <li>full vs capacity only: 0.35 [0.17, 0.48];</li>
+              <li>full vs full centred: 0.28 [0.10, 0.40].</li>
+            </ul>
+            Capacity relative does not hold (−0.03 [−0.10, 0.01]). FORM's v2 profile looks like MATR's v1 profile: the
+            measured model gains from the early-life channel levels (135 → 94 cycles) and the generated-trained model
+            does not (147 → 145).</li>
+          <li><b>Discriminator: readable</b> (D02b): 0.097 [0.059, 0.154], 0.103 [0.082, 0.124], 0.168 [0.122, 0.223].
+            X3 off: 0.087.</li>
+          <li><b>Covariance agreement</b> 0.35 against a measured 0.30 [0.20, 0.43]: closed. X3 off: 0.32.</li>
+          <li><b>Property table.</b>
+            <ul>
+              <li>Reproduced: drift 7.78 / 8.27 / 7.87 mAh per 100 cycles; T 701 / 665 / 683; offset IQRs; positive runs
+                0.33 / 0.29 / 0.27 per 100 positions.</li>
+              <li>Departing: capacity noise variance 1.43 → 0.99 mAh², and the q₁ IQR 2.63 → 3.43 mAh.</li>
+              <li>279 of 300 generated units enter the EOL rows (see flags).</li>
+            </ul></li>
+        </ul>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>TSTR without X3 (declared <code>tstr_without_x3</code>)</th><th>MATR</th><th>HUST</th></tr></thead>
+            <tbody>
+              <tr><td>v1 (printed) / v1 full_D27</td><td class="num">3.42 / 3.51</td><td class="num">1.46 / 1.46</td></tr>
+              <tr><td>v2 without X3, seed 0</td><td class="num">1.60 [1.06, 2.50]</td><td class="num">1.12 [0.92, 1.29]</td></tr>
+              <tr><td>v2, seed 0 / three seeds</td><td class="num">1.58 / 1.49</td><td class="num">1.15 / 1.17</td></tr>
+              <tr><td>share of X2 (offsets) / X3 (correlated noise)</td><td class="num">2.19× [1.69, 2.79] / 1.02× [0.92, 1.10]</td><td class="num">1.30× [1.03, 1.60] / 0.98× [0.88, 1.06]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The retrained seed-0 TRTR and TSTR models reproduce V5's per-unit errors exactly (relative difference 0).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- W6 -------------------------------------------------------------------- -->
+  <section class="stage" id="w6">
+    <div class="spine"><span class="badge">W6</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ2 — usability of FORM, with the pattern term read for the first time</h2>
+        <p class="run"><span>13 Oct</span><span>CUDA, 40 min</span><span>10 members per weighting</span></p>
+        <p class="commits">commit <code>830ef2b</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>Gates pass:</b> NRMSE 0.179 / 0.183 (recency / uniform), 10/10 members; null leakage ≤ 0.0008.</li>
+          <li><b>X4:</b> every weighted channel is used by every member, materially. Conditional importance: capacity 0.146,
+            charge time 0.094, mean discharge voltage 0.096 (lower bounds ≥ 0.074).</li>
+          <li><b>Offset share</b> 0.159 / 0.167; Spearman(y, RUL) −0.69.</li>
+          <li><b>Pattern term.</b>
+            <ul>
+              <li>Variance ratio 1.7e-5, against a band of 0.05–0.50.</li>
+              <li>Ablation 0.0000 [−0.0001, 0.0002], and 0.0003 [−0.0006, 0.0012] uniform: <b>not shown to be learned</b>. At a variance ratio of 1.7e-5 a learned term would change the error by about 1e-5, inside the interval.</li>
+              <li>Graded/sparse |r| 0.045 / 0.008, against a bound of 0.3. This check was declared but never computed in
+                v2 and is added for profiles with patterns.</li>
+            </ul></li>
+        </ul>
+        <div class="takeaway"><p>By the declared reading (<code>v2_1.readings.sparse_set_trained</code>, D21 logic), FORM's
+          trained-model sparse-set scores are void. The amplitudes are not inflated.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- W7 -------------------------------------------------------------------- -->
+  <section class="stage" id="w7">
+    <div class="spine"><span class="badge">W7</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>RQ3 — degraded maps on FORM, and paired retrieval</h2>
+        <p class="run"><span>13 Oct</span><span>CPU, 110 s</span><span>900 windows / 45 units; retrieval 640 / 32</span></p>
+        <p class="commits">commit <code>7b538bb</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>The registering magnitudes equal those of HUST</b> on every operator and score: noise 0.2 / 0.1 / 0.5; mass to
+            start 1.0 / – / 0.05; mass to end 1.0 / – / 0.1; smoothing – / – / 8; permutation 0.2 / 0.1 / 0.2.</li>
+          <li><b>Chance (recency):</b> rank −0.001, allocation 0.476, temporal 5.21 positions.</li>
+          <li><b>Paired retrieval</b>, ported from v1 S7 into V7, run for the first time.
+            <ul>
+              <li>Undegraded 1.00 against a chance of 0.07.</li>
+              <li>Noise at 0.05 gives 0.37; permuting 5 % gives 0.29.</li>
+              <li>A shift of 40 % gives 0.74–0.75, and a full shift 0.10–0.11.</li>
+              <li>Smoothing at σ = 8 gives 0.993.</li>
+            </ul>
+            Plain retrieval stays near chance (0.095), as D01 found.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- W8 -------------------------------------------------------------------- -->
+  <section class="stage" id="w8">
+    <div class="spine"><span class="badge">W8</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Reference values on FORM, with paired maps</h2>
+        <p class="run"><span>13 Oct</span><span>12 CPU workers, 1.31 h</span><span>4 680 TimeSHAP explanations</span></p>
+        <p class="commits">commit <code>8c049a6</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>Runner:</b> benchmark 1 920 windows/h at 12 workers, chunk 4096. Equivalence with the sequential path: max
+            |diff| 0. Projection 2.44 h, within the 36 h ceiling.</li>
+          <li><b>Run:</b> 4 680 TimeSHAP jobs in 1.31 h (02:46–04:04). The 120 windows of 45 test units are each explained with
+            their pattern-free counterpart. Scoring: 21 s on CUDA. 13 of 13 checks pass.</li>
+          <li><b>Reference model exact:</b> IG 4.6e-8, occlusion 1.4e-7, TimeSHAP ≤ 2.4e-5, against max |exact| 0.056. Ceiling
+            0.849 rank / 0.125 allocation / 0.63 positions.</li>
+          <li><b>Trained model:</b> rank 0.744–0.771, allocation 0.215–0.265, temporal 3.71–3.89 positions; zero-weight mass
+            0.039–0.048 (null channels).</li>
+          <li><b>Floor: no ordering in any FORM score.</b> Rank ranges are 0.32–0.34 against a method gap of 0.027. The
+            allocation gap of 0.050 is below the IG and TimeSHAP ranges (0.061, 0.068). The ten FORM models disagree far
+            more than those of MATR or HUST.</li>
+          <li><b>Paired retrieval</b>, on the 11 test units whose windows contain the sparse set: <b>1.00 on the reference
+            model</b> for every method. On the trained model it is <b>void</b>: the pattern term is not shown to be learned (W6). The
+            computed 0.82–0.94 only show that attribution changes where the input changes.</li>
+          <li><b>Stability:</b> the TimeSHAP seed spread is ≤ 0.0024 in rank. The D23 40-window subset holds in every
+            cell.</li>
+          <li><b>Readouts:</b>
+            <ul>
+              <li>average event: TimeSHAP rank 0.771 → 0.740 (first to last, within the floor);</li>
+              <li>uniform weighting: trained rank falls to 0.53–0.57 against a ceiling of 0.826, the largest weighting
+                effect of the three profiles, and temporal 3.63–4.25 lies above the permuted 1.77.</li>
+            </ul></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- W9 -------------------------------------------------------------------- -->
+  <section class="stage" id="w9">
+    <div class="spine"><span class="badge">W9</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Methodology diagrams redrawn from scripts</h2>
+        <p class="run"><span>13 Oct</span><span>5 figures</span><span><code>paper/img/scripts/</code></span></p>
+        <p class="commits">commit <code>195ce3f</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li>Figures 1–5 are drawn by <code>fig_loop.py</code>, <code>fig_generator.py</code>,
+            <code>fig_mean_component.py</code>, <code>fig_weights.py</code> and <code>fig_tstr.py</code> (new). A shared
+            read-only loader feeds them. Every number and label is read from the declarations or from the fitted or
+            generated FORM profile.</li>
+          <li>The figures show the three profiles, per-unit offsets, correlated noise (r = −0.89), patterns in FORM only,
+            recency as primary, and the five TSTR input sets.</li>
+          <li><code>fig_weights_r3.py</code> was removed: it would have overwritten the figure with the old L = 40 drawing.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- W10 ------------------------------------------------------------------- -->
+  <section class="stage last" id="w10">
+    <div class="spine"><span class="badge sm">W10</span></div>
+    <div>
+      <div class="stage-head">
+        <h2>Results, the highlighted paper, and provenance</h2>
+        <p class="run"><span>13 Oct</span><span>6 tables, 8 figures</span><span>AMENDMENTS round 8</span></p>
+        <p class="commits">commit the W10 commit on branch <code>v2.1</code></p>
+      </div>
+      <div class="stage-body">
+        <ul>
+          <li><b>Results.</b> <code>scripts/v2_1/w10_write_paper.py</code> writes <code>results/v2.1</code> (one JSON per table),
+            the table bodies, Figures 6–8 and the v2.1 section of <code>docs/RESULTS_PROVENANCE.md</code>. MATR and HUST
+            are read from the v2 artifacts.</li>
+          <li><b>Highlighting.</b> Every change to §1–§3 since <code>6221c50</code> is in <code>\rev</code> (methodology) or
+            <code>\revw</code> (wording, lighter), with a margin note.
+            <ul>
+              <li>The mechanical check (<code>scripts/v2_1/w10_rev_coverage.py</code>) finds <b>0 uncovered spans, 42 pure
+                deletions all next to a highlight, and 0 highlighted paragraphs without a note</b>.</li>
+              <li>It found six unhighlighted edits from earlier rounds and five paragraphs without notes. All are now
+                marked.</li>
+            </ul></li>
+          <li><b>§4–§5</b> are written new for three profiles, with a banner each. The Limitations post-data list is in
+            <code>\rev</code>. The Abstract and Conclusion are drafted and marked. The Notes box sits on page 1 of the
+            review build.</li>
+          <li><b>Consistency pass:</b> Three review lenses (numbers; consistency and claims; brief compliance), each followed by a refuter, reported 60 findings. The refuters rejected 14, confirmed 41 and corrected the fix of 5. <b>All 46 surviving findings (35 distinct after merging duplicates across lenses) were applied.</b> They include: the r4 timing now also names one cell's measured values; “not learned” became “not shown to be learned”; FORM's 63 formation groups; the discriminator statement of §3.4; the covariance claim limited to what was measured; and the formation-protocol share added to §3.4. The workflow journal is in the session; the findings and verdicts are summarised in the W10 review.</li>
+          <li><b>Builds</b> in <code>paper/review/</code>, as regular files: <code>DegradX_review.pdf</code>,
+            <code>DegradX_clean.pdf</code> (no review markup, checked) and <code>latexdiff_vs_original.pdf</code> (against
+            <code>6221c50</code>).</li>
+          <li><b>README.</b> Licence note: CC BY-NC 4.0 for FORM-derived parameters and units, with attribution to
+            Cui <i>et al.</i> 2024.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORDS -------------------------------------------------------------- -->
+  <section class="block" id="records">
+    <h2>Decision and deviation records at a glance</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Record</th><th>Stage</th><th>Timing</th><th>What it settles</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#w0">D32</a> FORM extraction</td><td class="txt">W0</td><td class="txt">pre-data, before download</td><td class="txt">documented cells only; aging cycles as positions; CC-CV charge time and its validation; rest events; pre-screen; archives; tolerance</td></tr>
+          <tr><td><a href="#w1">D33</a> CC-phase charge current</td><td class="txt">W1</td><td class="txt"><span class="pd" style="margin-left:0">post-data</span></td><td class="txt">the protocol check reads the charge current on CC samples; no false second protocol</td></tr>
+          <tr><td><a href="#w2">D34</a> FORM eligibility</td><td class="txt">W2</td><td class="txt">readings declared in r4</td><td class="txt">eligible; pre-screen 0.12; positive pattern type enabled, attributed to the diagnostic block</td></tr>
+          <tr><td><a href="#w0">T7</a> ISU-ILCC run start</td><td class="txt">v2 V2, recorded at W0</td><td class="txt">methodological, closed</td><td class="txt">mechanism window evaluated one position late; corrected for FORM, not recomputed for ISU-ILCC</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CLOSE ---------------------------------------------------------------- -->
+  <section class="close" id="close">
+    <h2>What the programme establishes, and where it stops</h2>
+    <p>The construction holds on all three profiles, and FORM tests it on a third chemistry, format and laboratory. The
+      benchmark now carries an inserted pattern type, but at its fitted amplitude no trained model is shown to learn it.</p>
+    <div class="cols">
+      <div>
+        <h3>Established</h3>
+        <ul>
+          <li>FORM is eligible by the rules declared before download. It is learnable and every channel is used.</li>
+          <li>FORM's transfer gap (1.54) is located: in the non-capacity channels, mostly their early-life levels.</li>
+          <li>Correlated noise has no share in transfer (MATR 1.02×, HUST 0.98×). The offsets carry the v2 gains.</li>
+          <li>The covariance gap is closed on all three profiles.</li>
+          <li>The registering pattern of the scores is identical on a third profile. Paired retrieval works as designed on
+            degraded maps.</li>
+          <li>On the reference model all three methods are exact on FORM too, and they localize its sparse set exactly
+            (paired retrieval 1.00).</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Void or unsupported</h3>
+        <ul>
+          <li>Trained-model sparse-set scores on FORM (pattern term not shown to be learned).</li>
+          <li>The transfer ratio of FORM with independent noise (declared for MATR and HUST only).</li>
+          <li>The discriminator cells of MATR and HUST (D02b).</li>
+          <li>MATR or FORM inside HUST's transfer interval.</li>
+          <li>Any method ordering on FORM's trained models: the ten-model floor exceeds every gap.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Open for the authors</h3>
+        <ul>
+          <li>The licence term (NC) for the release.</li>
+          <li>The post-data rules D33 and the mechanism sensitivity; the r4 timing wording.</li>
+          <li>Whether FORM's sparse set is presented as a construction check only.</li>
+          <li>The AI-use disclosure, the Abstract and Conclusion drafts, the repository footnote.</li>
+          <li>The candidate for the remaining gaps of MATR and FORM: channel trajectories whose shape differs between
+            protocols. Mappings per protocol would test it, at the cost the offset bound governs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div>Written from the committed v2.1 artifacts of the DegradX repository (branch <code>v2.1</code>):
+        <ul>
+          <li>the stage reviews <code>artifacts/v2.1/*/REVIEW.md</code>;</li>
+          <li>the decision records <code>docs/DECISIONS/D32–D34</code> and <code>docs/DEVIATIONS.md</code> (T7);</li>
+          <li><code>docs/AMENDMENTS.md</code> round 8 and <code>docs/RESULTS_PROVENANCE.md</code> (v2.1 section);</li>
+          <li><code>configs/declarations.yaml</code> (r4);</li>
+          <li><code>git log</code> on branch <code>v2.1</code>.</li>
+        </ul>
+        MATR and HUST numbers are those of tag <code>v2-results</code>. The v2 log is <code>docs/EXPERIMENT_LOG_v2.html</code>.
+        This page has no figures; the v2.1 results figures are Figures 6–8 of the paper, in <code>results/v2.1/</code>.</div>
+    </footer>
+  </section>
+</main>
+</body>
+</html>
