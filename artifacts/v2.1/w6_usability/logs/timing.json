@@ -1,0 +1,17 @@
+{
+  "stage": "v2/v6_usability",
+  "device": "cuda",
+  "wall_clock_s": 2369.787,
+  "sections_s": {
+    "TRI_FORMATION_recency_windows": 0.757,
+    "TRI_FORMATION_recency_ensemble": 748.784,
+    "TRI_FORMATION_recency_importance": 2.028,
+    "TRI_FORMATION_recency_x4": 9.336,
+    "TRI_FORMATION_recency_ablation": 412.715,
+    "TRI_FORMATION_uniform_windows": 0.736,
+    "TRI_FORMATION_uniform_ensemble": 809.333,
+    "TRI_FORMATION_uniform_importance": 1.991,
+    "TRI_FORMATION_uniform_x4": 9.348,
+    "TRI_FORMATION_uniform_ablation": 373.204
+  }
+}

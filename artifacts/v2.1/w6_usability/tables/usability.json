@@ -1,0 +1,969 @@
+{
+  "TRI_FORMATION": {
+    "recency": {
+      "windows": {
+        "train_incl_validation": 184700,
+        "test": 30413
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "weighted_channels": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "variance_ratio_pattern_to_mean": 1.6936702320660818e-05,
+      "variance_ratio_void": null,
+      "graded_sparse_abs_corr": 0.04509693114561749,
+      "graded_sparse_correlation_bound": 0.3,
+      "offset_term": {
+        "share_of_var_y": 0.1589835524778,
+        "ratio_to_state_term": 0.1960501066731163,
+        "corr_with_state_term": 0.04187296597283705
+      },
+      "spearman_y_rul": -0.6899673911073457,
+      "ensemble": [
+        {
+          "member": "A0",
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.039827853109564104,
+          "nrmse": 0.17927165515708834,
+          "epochs": 14,
+          "passes_gate": true
+        },
+        {
+          "member": "A1",
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.04119232691240128,
+          "nrmse": 0.1854133740285574,
+          "epochs": 21,
+          "passes_gate": true
+        },
+        {
+          "member": "A2",
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.041623115020655424,
+          "nrmse": 0.1873524214830175,
+          "epochs": 13,
+          "passes_gate": true
+        },
+        {
+          "member": "A3",
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.0404695993186829,
+          "nrmse": 0.1821602593904882,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "member": "A4",
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.04226383086673891,
+          "nrmse": 0.19023638788454014,
+          "epochs": 12,
+          "passes_gate": true
+        },
+        {
+          "member": "B0",
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.03928066791530361,
+          "nrmse": 0.17680868545639475,
+          "epochs": 19,
+          "passes_gate": true
+        },
+        {
+          "member": "B1",
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.0411443286601924,
+          "nrmse": 0.18519732607602374,
+          "epochs": 25,
+          "passes_gate": true
+        },
+        {
+          "member": "B2",
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.041098476360826114,
+          "nrmse": 0.18499093740682934,
+          "epochs": 30,
+          "passes_gate": true
+        },
+        {
+          "member": "B3",
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.03910441291695799,
+          "nrmse": 0.17601533299533675,
+          "epochs": 26,
+          "passes_gate": true
+        },
+        {
+          "member": "B4",
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.041800648376456785,
+          "nrmse": 0.1881515280392396,
+          "epochs": 12,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.17927165515708834,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 0.8756333763492735,
+          "ci_low": 0.8060697823376443,
+          "ci_high": 0.9770848206114963,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.15099031974371394,
+          "ci_low": 0.11729696602427472,
+          "ci_high": 0.21815458010875363,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.24328808214959097,
+          "ci_low": 0.21060048394996245,
+          "ci_high": 0.2926872171130643,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": -4.469351983216972e-05,
+          "ci_low": -0.0004117364112613546,
+          "ci_high": 0.00030906896449587966,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": 7.854957003463097e-05,
+          "ci_low": -0.0001324209157270159,
+          "ci_high": 0.0003003713473480632,
+          "units": 45
+        }
+      },
+      "redundant_channels": {},
+      "channel_usage": {
+        "A0": {
+          "capacity": {
+            "nmse_increase": 0.1457101913283564,
+            "ci_low": 0.12849841928004124,
+            "ci_high": 0.18112352747428576,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09367622266698955,
+            "ci_low": 0.07378587679725088,
+            "ci_high": 0.11952605358204721,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09631709930990377,
+            "ci_low": 0.07621046158316892,
+            "ci_high": 0.12235971221977016,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "A1": {
+          "capacity": {
+            "nmse_increase": 0.15820036412899452,
+            "ci_low": 0.14156552879359569,
+            "ci_high": 0.19160665149587428,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09551740469473052,
+            "ci_low": 0.07505383016163553,
+            "ci_high": 0.1219535255175925,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08521550433237775,
+            "ci_low": 0.06779332240237075,
+            "ci_high": 0.10920362715501626,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "A2": {
+          "capacity": {
+            "nmse_increase": 0.14432848307401458,
+            "ci_low": 0.12797855482122994,
+            "ci_high": 0.1805174883272084,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09949477486233212,
+            "ci_low": 0.0784884629952368,
+            "ci_high": 0.1262488855667507,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09099819699214036,
+            "ci_low": 0.07130891819310048,
+            "ci_high": 0.11693652157480543,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "A3": {
+          "capacity": {
+            "nmse_increase": 0.16025276087748755,
+            "ci_low": 0.14223489055460803,
+            "ci_high": 0.19065496641815263,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09346003402633332,
+            "ci_low": 0.07315606688480346,
+            "ci_high": 0.11912224795898631,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08751859713299183,
+            "ci_low": 0.0690998986684591,
+            "ci_high": 0.11234431839395342,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "A4": {
+          "capacity": {
+            "nmse_increase": 0.15164160283288405,
+            "ci_low": 0.13589816290334739,
+            "ci_high": 0.18458290777632386,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09354807171821658,
+            "ci_low": 0.07257607467899682,
+            "ci_high": 0.11993914489413116,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08940995331960024,
+            "ci_low": 0.07029990560217561,
+            "ci_high": 0.11439621256036261,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "B0": {
+          "capacity": {
+            "nmse_increase": 0.16618832099907035,
+            "ci_low": 0.1478297680631145,
+            "ci_high": 0.19890786174697866,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09601923482859474,
+            "ci_low": 0.07604702102343391,
+            "ci_high": 0.12081830874234534,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.07731541166099797,
+            "ci_low": 0.06047808729027411,
+            "ci_high": 0.09968267420187363,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "B1": {
+          "capacity": {
+            "nmse_increase": 0.15887371141659287,
+            "ci_low": 0.1419751025905735,
+            "ci_high": 0.1900130539933841,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.10094484837732419,
+            "ci_low": 0.08130069808595425,
+            "ci_high": 0.12594744209134545,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.0826663466206711,
+            "ci_low": 0.06569469384149053,
+            "ci_high": 0.10520211397026302,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "B2": {
+          "capacity": {
+            "nmse_increase": 0.15226911727943518,
+            "ci_low": 0.13597572663111665,
+            "ci_high": 0.177820318995147,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.10257838589996403,
+            "ci_low": 0.08210014495448667,
+            "ci_high": 0.12791152811729997,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08809665081926596,
+            "ci_low": 0.07098121341459435,
+            "ci_high": 0.11091430494372775,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "B3": {
+          "capacity": {
+            "nmse_increase": 0.1597141085548282,
+            "ci_low": 0.14211328101602635,
+            "ci_high": 0.19173998804326997,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.10156674742493133,
+            "ci_low": 0.08149226320779175,
+            "ci_high": 0.12665903880162319,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09045551775408298,
+            "ci_low": 0.07300999158453457,
+            "ci_high": 0.11465319222861971,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        },
+        "B4": {
+          "capacity": {
+            "nmse_increase": 0.15358973570352197,
+            "ci_low": 0.13765664540902237,
+            "ci_high": 0.18632100251706232,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7737607806921005
+          },
+          "charge_time": {
+            "nmse_increase": 0.09331419113352221,
+            "ci_low": 0.07268175046217876,
+            "ci_high": 0.1189787812856827,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6477330029010773
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08621555797977692,
+            "ci_low": 0.06764372338420369,
+            "ci_high": 0.10988936694067086,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6794962584972382
+          }
+        }
+      },
+      "channel_usage_gate": {
+        "primary_used": {
+          "capacity": true,
+          "charge_time": true,
+          "mean_discharge_voltage": true
+        },
+        "primary_used_materially": {
+          "capacity": true,
+          "charge_time": true,
+          "mean_discharge_voltage": true
+        },
+        "unused_on_primary": [],
+        "void_channel_level_scores": null,
+        "members_using_all": 10
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 2.5807890912686497,
+          "ci_low": 2.2301742215529936,
+          "ci_high": 3.0334169292754156,
+          "units": 45
+        },
+        "pattern_term_removed": {
+          "nmse_increase": 3.5208885416877904e-05,
+          "ci_low": -0.00010200685842763403,
+          "ci_high": 0.0002141217969299043,
+          "units": 45
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.03800990028274195,
+        0.038373683239444074,
+        0.04317070339301919,
+        0.0467044913754836,
+        0.043758923541534205
+      ]
+    },
+    "uniform": {
+      "windows": {
+        "train_incl_validation": 184700,
+        "test": 30413
+      },
+      "units": {
+        "train": 210,
+        "validation": 45,
+        "test": 45
+      },
+      "weighted_channels": [
+        "capacity",
+        "charge_time",
+        "mean_discharge_voltage"
+      ],
+      "variance_ratio_pattern_to_mean": 1.2748991045741414e-05,
+      "variance_ratio_void": null,
+      "graded_sparse_abs_corr": 0.00812975585246893,
+      "graded_sparse_correlation_bound": 0.3,
+      "offset_term": {
+        "share_of_var_y": 0.1668424307298309,
+        "ratio_to_state_term": 0.20860625213521333,
+        "corr_with_state_term": 0.04569120270395269
+      },
+      "spearman_y_rul": -0.6850351263122851,
+      "ensemble": [
+        {
+          "member": "A0",
+          "config": "A",
+          "model_seed": 0,
+          "rmse": 0.03981226390080542,
+          "nrmse": 0.1833768316265004,
+          "epochs": 19,
+          "passes_gate": true
+        },
+        {
+          "member": "A1",
+          "config": "A",
+          "model_seed": 1,
+          "rmse": 0.040837010439655444,
+          "nrmse": 0.18809685392874229,
+          "epochs": 28,
+          "passes_gate": true
+        },
+        {
+          "member": "A2",
+          "config": "A",
+          "model_seed": 2,
+          "rmse": 0.040690946267540974,
+          "nrmse": 0.1874240766869548,
+          "epochs": 14,
+          "passes_gate": true
+        },
+        {
+          "member": "A3",
+          "config": "A",
+          "model_seed": 3,
+          "rmse": 0.04006824970749011,
+          "nrmse": 0.18455591218037573,
+          "epochs": 20,
+          "passes_gate": true
+        },
+        {
+          "member": "A4",
+          "config": "A",
+          "model_seed": 4,
+          "rmse": 0.04084430659617258,
+          "nrmse": 0.18813046030863811,
+          "epochs": 17,
+          "passes_gate": true
+        },
+        {
+          "member": "B0",
+          "config": "B",
+          "model_seed": 0,
+          "rmse": 0.039603714479851476,
+          "nrmse": 0.18241624490509817,
+          "epochs": 19,
+          "passes_gate": true
+        },
+        {
+          "member": "B1",
+          "config": "B",
+          "model_seed": 1,
+          "rmse": 0.042671238400344154,
+          "nrmse": 0.19654537905531835,
+          "epochs": 11,
+          "passes_gate": true
+        },
+        {
+          "member": "B2",
+          "config": "B",
+          "model_seed": 2,
+          "rmse": 0.04053139110045209,
+          "nrmse": 0.18668915939907343,
+          "epochs": 31,
+          "passes_gate": true
+        },
+        {
+          "member": "B3",
+          "config": "B",
+          "model_seed": 3,
+          "rmse": 0.04003709512201799,
+          "nrmse": 0.18441241295137561,
+          "epochs": 23,
+          "passes_gate": true
+        },
+        {
+          "member": "B4",
+          "config": "B",
+          "model_seed": 4,
+          "rmse": 0.04249511302888649,
+          "nrmse": 0.19573413876344706,
+          "epochs": 12,
+          "passes_gate": true
+        }
+      ],
+      "primary_nrmse": 0.1833768316265004,
+      "gate_pass_primary": true,
+      "gate_pass_members": 10,
+      "permutation_importance": {
+        "capacity": {
+          "nmse_increase": 0.8098656527334098,
+          "ci_low": 0.7263073110644473,
+          "ci_high": 0.9288266629083082,
+          "units": 45
+        },
+        "charge_time": {
+          "nmse_increase": 0.18494555348159228,
+          "ci_low": 0.14820943976557235,
+          "ci_high": 0.26980200439367386,
+          "units": 45
+        },
+        "mean_discharge_voltage": {
+          "nmse_increase": 0.31090070316241103,
+          "ci_low": 0.2646884085472042,
+          "ci_high": 0.3898659174530463,
+          "units": 45
+        },
+        "null_flat": {
+          "nmse_increase": -0.0002721112362062403,
+          "ci_low": -0.0008066813479553496,
+          "ci_high": 0.0002507980947169858,
+          "units": 45
+        },
+        "null_permuted": {
+          "nmse_increase": 0.00038990531429056776,
+          "ci_low": 5.2001111775418354e-05,
+          "ci_high": 0.000796483425811388,
+          "units": 45
+        }
+      },
+      "redundant_channels": {},
+      "channel_usage": {
+        "A0": {
+          "capacity": {
+            "nmse_increase": 0.14327259959093164,
+            "ci_low": 0.12646166173409326,
+            "ci_high": 0.17197306962091746,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.10029979314220021,
+            "ci_low": 0.07904199000928205,
+            "ci_high": 0.12723315339442703,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09976300467655948,
+            "ci_low": 0.08021622080026711,
+            "ci_high": 0.12508833390607124,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "A1": {
+          "capacity": {
+            "nmse_increase": 0.1647122745637426,
+            "ci_low": 0.1467323466751652,
+            "ci_high": 0.19212125985220893,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.10120021220255669,
+            "ci_low": 0.08017815653758735,
+            "ci_high": 0.1275223777913296,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.0897843849269914,
+            "ci_low": 0.0726817307318778,
+            "ci_high": 0.1125276589109453,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "A2": {
+          "capacity": {
+            "nmse_increase": 0.1506264711050988,
+            "ci_low": 0.13448292620912078,
+            "ci_high": 0.177060578237493,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.10621250839266347,
+            "ci_low": 0.08394744148780534,
+            "ci_high": 0.13481376670167433,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09538473452692245,
+            "ci_low": 0.07500371812353662,
+            "ci_high": 0.12235605421903645,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "A3": {
+          "capacity": {
+            "nmse_increase": 0.14902424011190993,
+            "ci_low": 0.1328864772867113,
+            "ci_high": 0.17722879531363103,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.09861258999929556,
+            "ci_low": 0.07702868256212074,
+            "ci_high": 0.12583563332721132,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.0927189005701916,
+            "ci_low": 0.07326339127241431,
+            "ci_high": 0.11868232026026107,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "A4": {
+          "capacity": {
+            "nmse_increase": 0.15100879446926296,
+            "ci_low": 0.13469931382783437,
+            "ci_high": 0.18597719119592632,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.10048263011444389,
+            "ci_low": 0.07978635537949505,
+            "ci_high": 0.12713946020197536,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09115056480758715,
+            "ci_low": 0.07304747451701324,
+            "ci_high": 0.1156592902888098,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "B0": {
+          "capacity": {
+            "nmse_increase": 0.15718147885322728,
+            "ci_low": 0.1401106712002994,
+            "ci_high": 0.1895836780333885,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.1011359935257046,
+            "ci_low": 0.07992643453979324,
+            "ci_high": 0.12841817462114957,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08434033279525924,
+            "ci_low": 0.06548032819735769,
+            "ci_high": 0.1092847539902532,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "B1": {
+          "capacity": {
+            "nmse_increase": 0.1580018337916562,
+            "ci_low": 0.14180304012476413,
+            "ci_high": 0.18776509599075256,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.09566044391891251,
+            "ci_low": 0.07394711709625729,
+            "ci_high": 0.12251212212347284,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.08700423204654606,
+            "ci_low": 0.06843603840927143,
+            "ci_high": 0.11061964034441482,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "B2": {
+          "capacity": {
+            "nmse_increase": 0.1593401865872904,
+            "ci_low": 0.14166608375217637,
+            "ci_high": 0.18867845156236546,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.11370880902862514,
+            "ci_low": 0.09141495143637385,
+            "ci_high": 0.14154065566724752,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.0954957170393116,
+            "ci_low": 0.07626066375923299,
+            "ci_high": 0.12223157321483033,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "B3": {
+          "capacity": {
+            "nmse_increase": 0.13799040281460442,
+            "ci_low": 0.12251988785523436,
+            "ci_high": 0.16273907863485437,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.10527112808936791,
+            "ci_low": 0.08327572967887609,
+            "ci_high": 0.13303985993941808,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09976839938577496,
+            "ci_low": 0.08050197662700007,
+            "ci_high": 0.12593094464687118,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        },
+        "B4": {
+          "capacity": {
+            "nmse_increase": 0.15101515401444002,
+            "ci_low": 0.13496637402466521,
+            "ci_high": 0.18116488722142543,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.7719382494688034
+          },
+          "charge_time": {
+            "nmse_increase": 0.09843743609962169,
+            "ci_low": 0.07643716440443027,
+            "ci_high": 0.1255799960404125,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6472079157829285
+          },
+          "mean_discharge_voltage": {
+            "nmse_increase": 0.09364644280961829,
+            "ci_low": 0.07369451319413851,
+            "ci_high": 0.11948809749256045,
+            "units": 45,
+            "used": true,
+            "used_materially": true,
+            "predictability_r2": 0.6801905930042267
+          }
+        }
+      },
+      "channel_usage_gate": {
+        "primary_used": {
+          "capacity": true,
+          "charge_time": true,
+          "mean_discharge_voltage": true
+        },
+        "primary_used_materially": {
+          "capacity": true,
+          "charge_time": true,
+          "mean_discharge_voltage": true
+        },
+        "unused_on_primary": [],
+        "void_channel_level_scores": null,
+        "members_using_all": 10
+      },
+      "term_ablation": {
+        "mean_term_removed": {
+          "nmse_increase": 2.5807869786566786,
+          "ci_low": 2.215881797820672,
+          "ci_high": 3.0524308908918503,
+          "units": 45
+        },
+        "pattern_term_removed": {
+          "nmse_increase": 0.0003144780746542524,
+          "ci_low": -0.0005695047452673673,
+          "ci_high": 0.0012497580353680701,
+          "units": 45
+        }
+      },
+      "rmse_by_state_quintile": [
+        0.03821731781999167,
+        0.03796036485293865,
+        0.04307762328743614,
+        0.048501036959806794,
+        0.0409266682119784
+      ]
+    }
+  },
+  "_stop_and_report": []
+}

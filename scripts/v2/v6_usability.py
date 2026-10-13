@@ -114,6 +114,17 @@ def main() -> int:
                 vg, vs = float(np.var(te["graded_sum"])), float(np.var(te["sparse_sum"]))
                 r["variance_ratio_pattern_to_mean"] = vs / vg if has_patterns else None
                 r["variance_ratio_void"] = None if has_patterns else "no inserted patterns in this profile (D05)"
+                if has_patterns:  # declarations usability.graded_sparse_correlation_bound, on the test windows (first run with patterns: v2.1 FORM)
+                    G_, S_ = [], []
+                    for u in by_split["test"]:
+                        if u.T < L:
+                            continue
+                        tg_ = unit_targets(u, spec, kind)
+                        G_.append(np.abs(tg_["graded"]).sum(axis=2).ravel())
+                        S_.append(np.abs(tg_["sparse"]).sum(axis=2).ravel())
+                    G_, S_ = np.concatenate(G_), np.concatenate(S_)
+                    r["graded_sparse_abs_corr"] = float(np.corrcoef(G_, S_)[0, 1]) if np.std(S_) > 0 else None
+                    r["graded_sparse_correlation_bound"] = corr_bound
                 if len(te["offset_sum"]):
                     y_state = te["graded_sum"] - te["offset_sum"]
                     r["offset_term"] = {"share_of_var_y": float(np.var(te["offset_sum"]) / var_y), "ratio_to_state_term": float(np.var(te["offset_sum"]) / np.var(y_state)),
@@ -228,6 +239,9 @@ def main() -> int:
                     for name, a in r["term_ablation"].items():
                         ct.require(f"{ds} [{kind}]: {name.replace('_', ' ')} increases error on y (95% CI > 0)", a["ci_low"] > 0, "CI > 0",
                                    f"{a['nmse_increase']:.4f} [{a['ci_low']:.4f}, {a['ci_high']:.4f}]", severity="warn")
+                    if r.get("graded_sparse_abs_corr") is not None:
+                        ct.require(f"{ds} [{kind}]: |graded/sparse correlation| <= {corr_bound} (test windows)", abs(r["graded_sparse_abs_corr"]) <= corr_bound,
+                                   f"<= {corr_bound}", f"{r['graded_sparse_abs_corr']:.4f}", severity="warn")
                     ct.require(f"{ds} [{kind}]: variance ratio within the declared band {band}", band[0] <= r["variance_ratio_pattern_to_mean"] <= band[1],
                                str(band), f"{r['variance_ratio_pattern_to_mean']:.4f}", severity="warn")
                 write_json({ds: res_ds}, out / "tables" / f"usability_{ds}.json")
