@@ -1,0 +1,13 @@
+| check | expected | observed | result |
+|---|---|---|---|
+| TRI_FORMATION [recency]: integrated_gradients on the reference model equals w(x - x0) (correctness check) | <= 1e-4 x max|w(x - x0)| | 4.63e-08 (max|exact| 0.0564) | pass |
+| TRI_FORMATION [recency]: feature_occlusion on the reference model equals w(x - x0) (correctness check) | <= 1e-4 x max|w(x - x0)| | 1.39e-07 (max|exact| 0.0564) | pass |
+| TRI_FORMATION [recency]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 1.90e-05 (max|exact| 0.0564) | pass |
+| TRI_FORMATION [recency]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 1.90e-05 (max|exact| 0.0564) | pass |
+| TRI_FORMATION [recency]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 1.79e-05 (max|exact| 0.0564) | pass |
+| TRI_FORMATION [uniform]: integrated_gradients on the reference model equals w(x - x0) (correctness check) | <= 1e-4 x max|w(x - x0)| | 1.86e-08 (max|exact| 0.0209) | pass |
+| TRI_FORMATION [uniform]: feature_occlusion on the reference model equals w(x - x0) (correctness check) | <= 1e-4 x max|w(x - x0)| | 1.12e-07 (max|exact| 0.0209) | pass |
+| TRI_FORMATION [uniform]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 2.37e-05 (max|exact| 0.0209) | pass |
+| TRI_FORMATION [uniform]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 2.37e-05 (max|exact| 0.0209) | pass |
+| TRI_FORMATION [uniform]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported) | <= 1e-2 x max|w(x - x0)| | 2.37e-05 (max|exact| 0.0209) | pass |
+| TRI_FORMATION: all declared TimeSHAP jobs present | all | all | pass |

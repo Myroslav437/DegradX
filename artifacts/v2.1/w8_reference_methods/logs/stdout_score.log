@@ -1,0 +1,48 @@
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+  a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+/home/mmishchuk/projects/DegradX/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+  return fun(*args, **kwargs)
+[PASS] TRI_FORMATION [recency]: integrated_gradients on the reference model equals w(x - x0) (correctness check): expected <= 1e-4 x max|w(x - x0)|; observed 4.63e-08 (max|exact| 0.0564)
+[PASS] TRI_FORMATION [recency]: feature_occlusion on the reference model equals w(x - x0) (correctness check): expected <= 1e-4 x max|w(x - x0)|; observed 1.39e-07 (max|exact| 0.0564)
+[PASS] TRI_FORMATION [recency]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 1.90e-05 (max|exact| 0.0564)
+[PASS] TRI_FORMATION [recency]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 1.90e-05 (max|exact| 0.0564)
+[PASS] TRI_FORMATION [recency]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 1.79e-05 (max|exact| 0.0564)
+[PASS] TRI_FORMATION [uniform]: integrated_gradients on the reference model equals w(x - x0) (correctness check): expected <= 1e-4 x max|w(x - x0)|; observed 1.86e-08 (max|exact| 0.0209)
+[PASS] TRI_FORMATION [uniform]: feature_occlusion on the reference model equals w(x - x0) (correctness check): expected <= 1e-4 x max|w(x - x0)|; observed 1.12e-07 (max|exact| 0.0209)
+[PASS] TRI_FORMATION [uniform]: TimeSHAP seed 0 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 2.37e-05 (max|exact| 0.0209)
+[PASS] TRI_FORMATION [uniform]: TimeSHAP seed 1 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 2.37e-05 (max|exact| 0.0209)
+[PASS] TRI_FORMATION [uniform]: TimeSHAP seed 2 on the reference model reproduces w(x - x0) (sampled Shapley with l1_reg auto; reported): expected <= 1e-2 x max|w(x - x0)|; observed 2.37e-05 (max|exact| 0.0209)
+[PASS] TRI_FORMATION: all declared TimeSHAP jobs present: expected all; observed all
+SCORE_EXIT 0

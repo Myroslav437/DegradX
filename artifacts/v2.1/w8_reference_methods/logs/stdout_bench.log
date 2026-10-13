@@ -1,0 +1,23 @@
+[v8] one window: {
+ "profile": "TRI_FORMATION",
+ "device": "cpu",
+ "wall_s": 8.316608916968107,
+ "split_s": {
+  "coalition_sampling": 4.805494153000001,
+  "model_evaluation": 2.162254028,
+  "lasso_lars_ic": 0.7560325440000001,
+  "solve": 0.573296614
+ },
+ "split_share": {
+  "coalition_sampling": 0.5778189405053672,
+  "model_evaluation": 0.2599922696362965,
+  "lasso_lars_ic": 0.0909063479536102,
+  "solve": 0.06893393926824207
+ }
+}
+[v8] bench {'workers': 8, 'device': 'cpu', 'chunk': 4096, 'windows': 32, 'wall_s': 65.96825471520424, 'windows_per_hour': 1746.332765516706, 'mean_window_s': 11.586158291946049, 'ideal_windows_per_hour': 2485.724713429809}
+[v8] bench {'workers': 12, 'device': 'cpu', 'chunk': 4096, 'windows': 48, 'wall_s': 89.98160617798567, 'windows_per_hour': 1920.4392256856859, 'mean_window_s': 14.98286390468032, 'ideal_windows_per_hour': 2883.293893265977}
+[v8] bench {'workers': 8, 'device': 'cpu', 'chunk': 1024, 'windows': 32, 'wall_s': 64.40246087987907, 'windows_per_hour': 1788.7916614528829, 'mean_window_s': 11.253025428573892, 'ideal_windows_per_hour': 2559.311732013908}
+[v8] bench {'workers': 8, 'device': 'cpu', 'chunk': 16384, 'windows': 32, 'wall_s': 72.95727762603201, 'windows_per_hour': 1579.0393055798352, 'mean_window_s': 13.43075803812826, 'ideal_windows_per_hour': 2144.331683903497}
+[v8] bench {'workers': 8, 'device': 'cpu', 'chunk': 32768, 'windows': 32, 'wall_s': 76.34655075892806, 'windows_per_hour': 1508.9340607120582, 'mean_window_s': 14.212732329157006, 'ideal_windows_per_hour': 2026.3520998645447}
+BENCH_EXIT 0

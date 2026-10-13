@@ -1,0 +1,6 @@
+[timeshap] equivalence sequential 20/20 446/h eta 0.00 h
+[timeshap] equivalence parallel 20/20 1330/h eta 0.00 h
+[v8] equivalence max |diff| 0.000e+00 (vs v1 code path 0.000e+00)
+[v8] projection: 4680 jobs at 1920.4392256856859 windows/h = 2.4369425167979597 h
+[PASS] V8: sequential and parallel TimeSHAP agree on 20 windows (<= 1e-10 max abs difference): expected <= 1e-10; observed 0.00e+00
+EQ_EXIT 0
