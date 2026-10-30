@@ -1,0 +1,13 @@
+{
+  "stage": "s07_fidelity_baseline",
+  "device": "cuda",
+  "wall_clock_s": 874.216,
+  "sections_s": {
+    "MATR_distributional": 62.979,
+    "MATR_tstr": 217.264,
+    "MATR_properties": 97.469,
+    "HUST_distributional": 58.271,
+    "HUST_tstr": 236.923,
+    "HUST_properties": 90.432
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "s15_reference_values",
+  "device": "cuda",
+  "wall_clock_s": 27.143,
+  "sections_s": {}
+}

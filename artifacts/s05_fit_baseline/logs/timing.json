@@ -1,0 +1,13 @@
+{
+  "stage": "s05_fit_baseline",
+  "device": "cuda",
+  "wall_clock_s": 58.229,
+  "sections_s": {
+    "MATR_split": 0.336,
+    "MATR_fit": 23.803,
+    "MATR_figures": 3.559,
+    "HUST_split": 0.167,
+    "HUST_fit": 19.861,
+    "HUST_figures": 3.39
+  }
+}

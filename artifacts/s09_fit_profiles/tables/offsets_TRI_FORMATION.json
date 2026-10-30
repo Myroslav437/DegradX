@@ -1,0 +1,637 @@
+[
+  {
+    "cell_id": "TRI_100",
+    "charge_time": 1.0531189523,
+    "mean_discharge_voltage": 0.0046646095
+  },
+  {
+    "cell_id": "TRI_101",
+    "charge_time": 1.2112047246,
+    "mean_discharge_voltage": -0.0086422748
+  },
+  {
+    "cell_id": "TRI_102",
+    "charge_time": 0.4019317651,
+    "mean_discharge_voltage": -0.0004256219
+  },
+  {
+    "cell_id": "TRI_103",
+    "charge_time": 1.4232505113,
+    "mean_discharge_voltage": 0.0009073334
+  },
+  {
+    "cell_id": "TRI_105",
+    "charge_time": 2.4767699366,
+    "mean_discharge_voltage": -0.0132755284
+  },
+  {
+    "cell_id": "TRI_106",
+    "charge_time": 0.3341327623,
+    "mean_discharge_voltage": -0.0082438546
+  },
+  {
+    "cell_id": "TRI_107",
+    "charge_time": 1.3081562314,
+    "mean_discharge_voltage": -0.0100265646
+  },
+  {
+    "cell_id": "TRI_108",
+    "charge_time": -0.6476651075,
+    "mean_discharge_voltage": 0.0088786736
+  },
+  {
+    "cell_id": "TRI_109",
+    "charge_time": 0.259698365,
+    "mean_discharge_voltage": -0.0082908192
+  },
+  {
+    "cell_id": "TRI_110",
+    "charge_time": -1.0526203213,
+    "mean_discharge_voltage": 0.0049129037
+  },
+  {
+    "cell_id": "TRI_112",
+    "charge_time": -0.5770211879,
+    "mean_discharge_voltage": 0.001905339
+  },
+  {
+    "cell_id": "TRI_114",
+    "charge_time": 1.2121062729,
+    "mean_discharge_voltage": -0.0211947277
+  },
+  {
+    "cell_id": "TRI_115",
+    "charge_time": 1.1307078745,
+    "mean_discharge_voltage": -0.0042397083
+  },
+  {
+    "cell_id": "TRI_117",
+    "charge_time": 1.1541494606,
+    "mean_discharge_voltage": -0.0165636473
+  },
+  {
+    "cell_id": "TRI_118",
+    "charge_time": -0.2815987654,
+    "mean_discharge_voltage": -7.32294e-05
+  },
+  {
+    "cell_id": "TRI_120",
+    "charge_time": 1.0018412324,
+    "mean_discharge_voltage": -0.0095743514
+  },
+  {
+    "cell_id": "TRI_121",
+    "charge_time": -0.1329556223,
+    "mean_discharge_voltage": 0.0057326244
+  },
+  {
+    "cell_id": "TRI_124",
+    "charge_time": 1.3886638305,
+    "mean_discharge_voltage": -0.0267509089
+  },
+  {
+    "cell_id": "TRI_126",
+    "charge_time": 1.2420378712,
+    "mean_discharge_voltage": -0.0243628201
+  },
+  {
+    "cell_id": "TRI_127",
+    "charge_time": -1.1606409743,
+    "mean_discharge_voltage": 0.0069204476
+  },
+  {
+    "cell_id": "TRI_129",
+    "charge_time": -0.7000362029,
+    "mean_discharge_voltage": 0.0029404373
+  },
+  {
+    "cell_id": "TRI_130",
+    "charge_time": 1.0856161161,
+    "mean_discharge_voltage": -0.0124324056
+  },
+  {
+    "cell_id": "TRI_131",
+    "charge_time": -0.1265874208,
+    "mean_discharge_voltage": 0.0007258858
+  },
+  {
+    "cell_id": "TRI_134",
+    "charge_time": 3.525579995,
+    "mean_discharge_voltage": -0.0490689061
+  },
+  {
+    "cell_id": "TRI_135",
+    "charge_time": 0.7906538205,
+    "mean_discharge_voltage": 0.0062398784
+  },
+  {
+    "cell_id": "TRI_136",
+    "charge_time": -0.945828662,
+    "mean_discharge_voltage": 0.0084287209
+  },
+  {
+    "cell_id": "TRI_137",
+    "charge_time": -0.4300089256,
+    "mean_discharge_voltage": 0.0088515676
+  },
+  {
+    "cell_id": "TRI_139",
+    "charge_time": 1.7742959626,
+    "mean_discharge_voltage": -0.0306336107
+  },
+  {
+    "cell_id": "TRI_140",
+    "charge_time": 0.2822527522,
+    "mean_discharge_voltage": 0.0010888239
+  },
+  {
+    "cell_id": "TRI_142",
+    "charge_time": -0.5504942375,
+    "mean_discharge_voltage": 0.0061227857
+  },
+  {
+    "cell_id": "TRI_144",
+    "charge_time": -0.3422486289,
+    "mean_discharge_voltage": 1.40078e-05
+  },
+  {
+    "cell_id": "TRI_145",
+    "charge_time": 1.3274012346,
+    "mean_discharge_voltage": -0.0291891888
+  },
+  {
+    "cell_id": "TRI_147",
+    "charge_time": 0.1223160661,
+    "mean_discharge_voltage": -0.0052025325
+  },
+  {
+    "cell_id": "TRI_149",
+    "charge_time": -0.5896799299,
+    "mean_discharge_voltage": -0.002167021
+  },
+  {
+    "cell_id": "TRI_150",
+    "charge_time": -0.866854688,
+    "mean_discharge_voltage": 0.0095520962
+  },
+  {
+    "cell_id": "TRI_154",
+    "charge_time": 0.4866731732,
+    "mean_discharge_voltage": -0.0013073786
+  },
+  {
+    "cell_id": "TRI_155",
+    "charge_time": 0.6603541875,
+    "mean_discharge_voltage": -0.000477633
+  },
+  {
+    "cell_id": "TRI_156",
+    "charge_time": -0.0366559893,
+    "mean_discharge_voltage": 0.0011881923
+  },
+  {
+    "cell_id": "TRI_157",
+    "charge_time": -0.1896481482,
+    "mean_discharge_voltage": -0.0131019739
+  },
+  {
+    "cell_id": "TRI_159",
+    "charge_time": -0.5095804395,
+    "mean_discharge_voltage": 0.0030449745
+  },
+  {
+    "cell_id": "TRI_160",
+    "charge_time": 0.1042186853,
+    "mean_discharge_voltage": 0.0050502461
+  },
+  {
+    "cell_id": "TRI_162",
+    "charge_time": -0.4614616283,
+    "mean_discharge_voltage": -0.0041559484
+  },
+  {
+    "cell_id": "TRI_163",
+    "charge_time": -0.1475558892,
+    "mean_discharge_voltage": -0.0126174951
+  },
+  {
+    "cell_id": "TRI_166",
+    "charge_time": 0.8708860527,
+    "mean_discharge_voltage": -0.0145800257
+  },
+  {
+    "cell_id": "TRI_168",
+    "charge_time": 0.2272360694,
+    "mean_discharge_voltage": 0.0023801445
+  },
+  {
+    "cell_id": "TRI_169",
+    "charge_time": 2.0329956623,
+    "mean_discharge_voltage": -0.0237033395
+  },
+  {
+    "cell_id": "TRI_170",
+    "charge_time": -0.5924213635,
+    "mean_discharge_voltage": -0.0023788944
+  },
+  {
+    "cell_id": "TRI_171",
+    "charge_time": 0.0752391324,
+    "mean_discharge_voltage": -0.0009248767
+  },
+  {
+    "cell_id": "TRI_172",
+    "charge_time": 0.2225764097,
+    "mean_discharge_voltage": 0.0070352635
+  },
+  {
+    "cell_id": "TRI_173",
+    "charge_time": 0.9125760829,
+    "mean_discharge_voltage": -0.009176593
+  },
+  {
+    "cell_id": "TRI_176",
+    "charge_time": -0.6108813814,
+    "mean_discharge_voltage": 0.0002414066
+  },
+  {
+    "cell_id": "TRI_178",
+    "charge_time": 0.2012972973,
+    "mean_discharge_voltage": -0.0050720085
+  },
+  {
+    "cell_id": "TRI_179",
+    "charge_time": -0.3765005005,
+    "mean_discharge_voltage": 0.0065604693
+  },
+  {
+    "cell_id": "TRI_180",
+    "charge_time": 0.1534581248,
+    "mean_discharge_voltage": 0.0004721468
+  },
+  {
+    "cell_id": "TRI_181",
+    "charge_time": -0.1967929596,
+    "mean_discharge_voltage": 0.0
+  },
+  {
+    "cell_id": "TRI_183",
+    "charge_time": -0.0871356356,
+    "mean_discharge_voltage": 0.0052772318
+  },
+  {
+    "cell_id": "TRI_185",
+    "charge_time": 0.0231429763,
+    "mean_discharge_voltage": 0.0063713163
+  },
+  {
+    "cell_id": "TRI_186",
+    "charge_time": 0.0,
+    "mean_discharge_voltage": 0.0036770381
+  },
+  {
+    "cell_id": "TRI_187",
+    "charge_time": 0.2357011178,
+    "mean_discharge_voltage": 0.0020082195
+  },
+  {
+    "cell_id": "TRI_188",
+    "charge_time": -0.0026319669,
+    "mean_discharge_voltage": 0.0025857331
+  },
+  {
+    "cell_id": "TRI_189",
+    "charge_time": -0.6144537871,
+    "mean_discharge_voltage": 0.0005982799
+  },
+  {
+    "cell_id": "TRI_193",
+    "charge_time": -0.3081588255,
+    "mean_discharge_voltage": 0.0049567221
+  },
+  {
+    "cell_id": "TRI_196",
+    "charge_time": 0.1346059934,
+    "mean_discharge_voltage": -0.0101267708
+  },
+  {
+    "cell_id": "TRI_199",
+    "charge_time": -0.3921880214,
+    "mean_discharge_voltage": 0.0038383084
+  },
+  {
+    "cell_id": "TRI_201",
+    "charge_time": 0.725981984,
+    "mean_discharge_voltage": -0.0084899959
+  },
+  {
+    "cell_id": "TRI_202",
+    "charge_time": -0.0294335169,
+    "mean_discharge_voltage": -0.0025429692
+  },
+  {
+    "cell_id": "TRI_203",
+    "charge_time": 0.9150448782,
+    "mean_discharge_voltage": -0.000293416
+  },
+  {
+    "cell_id": "TRI_206",
+    "charge_time": 0.890788622,
+    "mean_discharge_voltage": -0.0188734244
+  },
+  {
+    "cell_id": "TRI_207",
+    "charge_time": -0.9227881215,
+    "mean_discharge_voltage": 0.0096518942
+  },
+  {
+    "cell_id": "TRI_208",
+    "charge_time": 0.067798048,
+    "mean_discharge_voltage": 0.0013540089
+  },
+  {
+    "cell_id": "TRI_209",
+    "charge_time": 0.5103074741,
+    "mean_discharge_voltage": 0.0009957569
+  },
+  {
+    "cell_id": "TRI_210",
+    "charge_time": -0.6207443277,
+    "mean_discharge_voltage": -0.0061711738
+  },
+  {
+    "cell_id": "TRI_211",
+    "charge_time": -0.1258108108,
+    "mean_discharge_voltage": 0.0069394321
+  },
+  {
+    "cell_id": "TRI_212",
+    "charge_time": -0.4598598355,
+    "mean_discharge_voltage": -0.0012158879
+  },
+  {
+    "cell_id": "TRI_213",
+    "charge_time": -0.479323657,
+    "mean_discharge_voltage": 0.0028013485
+  },
+  {
+    "cell_id": "TRI_214",
+    "charge_time": -0.7107534201,
+    "mean_discharge_voltage": 0.0032560617
+  },
+  {
+    "cell_id": "TRI_216",
+    "charge_time": -1.6147025359,
+    "mean_discharge_voltage": 0.0075730667
+  },
+  {
+    "cell_id": "TRI_217",
+    "charge_time": -0.1318683684,
+    "mean_discharge_voltage": -0.0013990336
+  },
+  {
+    "cell_id": "TRI_219",
+    "charge_time": -0.1134627127,
+    "mean_discharge_voltage": -0.002014946
+  },
+  {
+    "cell_id": "TRI_220",
+    "charge_time": 0.2530195195,
+    "mean_discharge_voltage": -0.0007815062
+  },
+  {
+    "cell_id": "TRI_223",
+    "charge_time": 1.3311783196,
+    "mean_discharge_voltage": -0.0082212709
+  },
+  {
+    "cell_id": "TRI_224",
+    "charge_time": 2.419644311,
+    "mean_discharge_voltage": -0.0462977239
+  },
+  {
+    "cell_id": "TRI_225",
+    "charge_time": -0.5697210544,
+    "mean_discharge_voltage": 0.0021957649
+  },
+  {
+    "cell_id": "TRI_226",
+    "charge_time": 0.8339574574,
+    "mean_discharge_voltage": 0.004128623
+  },
+  {
+    "cell_id": "TRI_227",
+    "charge_time": 0.3863828829,
+    "mean_discharge_voltage": -0.0033952367
+  },
+  {
+    "cell_id": "TRI_228",
+    "charge_time": -0.3479266345,
+    "mean_discharge_voltage": 0.0027714336
+  },
+  {
+    "cell_id": "TRI_230",
+    "charge_time": -1.0970427648,
+    "mean_discharge_voltage": 0.0066237955
+  },
+  {
+    "cell_id": "TRI_269",
+    "charge_time": -0.6965279091,
+    "mean_discharge_voltage": 0.0085469522
+  },
+  {
+    "cell_id": "TRI_270",
+    "charge_time": 6.782920337,
+    "mean_discharge_voltage": -0.101276913
+  },
+  {
+    "cell_id": "TRI_272",
+    "charge_time": 1.7226749771,
+    "mean_discharge_voltage": -0.0264963379
+  },
+  {
+    "cell_id": "TRI_273",
+    "charge_time": 0.3961009343,
+    "mean_discharge_voltage": 0.0002133424
+  },
+  {
+    "cell_id": "TRI_274",
+    "charge_time": 0.990845679,
+    "mean_discharge_voltage": -0.0123070721
+  },
+  {
+    "cell_id": "TRI_275",
+    "charge_time": -0.5316671672,
+    "mean_discharge_voltage": 0.0097843865
+  },
+  {
+    "cell_id": "TRI_276",
+    "charge_time": -0.1568736492,
+    "mean_discharge_voltage": 0.0048555155
+  },
+  {
+    "cell_id": "TRI_277",
+    "charge_time": -0.1959386887,
+    "mean_discharge_voltage": 0.0078531169
+  },
+  {
+    "cell_id": "TRI_278",
+    "charge_time": 0.027802636,
+    "mean_discharge_voltage": 0.0039715122
+  },
+  {
+    "cell_id": "TRI_281",
+    "charge_time": 3.0863284952,
+    "mean_discharge_voltage": -0.0386335727
+  },
+  {
+    "cell_id": "TRI_282",
+    "charge_time": -0.3598810477,
+    "mean_discharge_voltage": -0.0016792129
+  },
+  {
+    "cell_id": "TRI_283",
+    "charge_time": -0.2113140062,
+    "mean_discharge_voltage": 5.37222e-05
+  },
+  {
+    "cell_id": "TRI_284",
+    "charge_time": 3.1939876286,
+    "mean_discharge_voltage": -0.0464539433
+  },
+  {
+    "cell_id": "TRI_285",
+    "charge_time": 3.7092288956,
+    "mean_discharge_voltage": -0.041523293
+  },
+  {
+    "cell_id": "TRI_289",
+    "charge_time": -1.243937761,
+    "mean_discharge_voltage": 0.0123876297
+  },
+  {
+    "cell_id": "TRI_290",
+    "charge_time": -0.4403378378,
+    "mean_discharge_voltage": -0.0001383904
+  },
+  {
+    "cell_id": "TRI_291",
+    "charge_time": 2.2214946613,
+    "mean_discharge_voltage": -0.0506692731
+  },
+  {
+    "cell_id": "TRI_292",
+    "charge_time": 1.2628124039,
+    "mean_discharge_voltage": -0.0357607546
+  },
+  {
+    "cell_id": "TRI_293",
+    "charge_time": -1.0102180514,
+    "mean_discharge_voltage": 0.0032144221
+  },
+  {
+    "cell_id": "TRI_296",
+    "charge_time": -1.6339417751,
+    "mean_discharge_voltage": 0.0068164149
+  },
+  {
+    "cell_id": "TRI_297",
+    "charge_time": -1.1185939273,
+    "mean_discharge_voltage": 0.0076102194
+  },
+  {
+    "cell_id": "TRI_301",
+    "charge_time": -0.912337596,
+    "mean_discharge_voltage": -0.0077252248
+  },
+  {
+    "cell_id": "TRI_302",
+    "charge_time": -1.4640289269,
+    "mean_discharge_voltage": 0.0046358568
+  },
+  {
+    "cell_id": "TRI_305",
+    "charge_time": -0.16479663,
+    "mean_discharge_voltage": -0.0077662785
+  },
+  {
+    "cell_id": "TRI_306",
+    "charge_time": -1.0496274608,
+    "mean_discharge_voltage": 0.0033903934
+  },
+  {
+    "cell_id": "TRI_308",
+    "charge_time": -0.1279076577,
+    "mean_discharge_voltage": -0.0079525381
+  },
+  {
+    "cell_id": "TRI_309",
+    "charge_time": -0.6819411912,
+    "mean_discharge_voltage": -0.0050912612
+  },
+  {
+    "cell_id": "TRI_310",
+    "charge_time": -1.0578525557,
+    "mean_discharge_voltage": -0.004825954
+  },
+  {
+    "cell_id": "TRI_311",
+    "charge_time": 1.1900845083,
+    "mean_discharge_voltage": -0.0215412273
+  },
+  {
+    "cell_id": "TRI_312",
+    "charge_time": -0.5310458792,
+    "mean_discharge_voltage": 0.0048040498
+  },
+  {
+    "cell_id": "TRI_314",
+    "charge_time": 0.2565142643,
+    "mean_discharge_voltage": 0.0015599698
+  },
+  {
+    "cell_id": "TRI_316",
+    "charge_time": 2.2887379046,
+    "mean_discharge_voltage": -0.0363905866
+  },
+  {
+    "cell_id": "TRI_317",
+    "charge_time": -2.1132564394,
+    "mean_discharge_voltage": 0.0060545849
+  },
+  {
+    "cell_id": "TRI_318",
+    "charge_time": 0.6518800467,
+    "mean_discharge_voltage": 0.002416923
+  },
+  {
+    "cell_id": "TRI_319",
+    "charge_time": -1.0329482816,
+    "mean_discharge_voltage": 0.0066261343
+  },
+  {
+    "cell_id": "TRI_321",
+    "charge_time": 1.1387932933,
+    "mean_discharge_voltage": -0.0217569496
+  },
+  {
+    "cell_id": "TRI_322",
+    "charge_time": 0.1860757424,
+    "mean_discharge_voltage": -0.0112855082
+  },
+  {
+    "cell_id": "TRI_323",
+    "charge_time": -2.0948192764,
+    "mean_discharge_voltage": 0.0138557645
+  },
+  {
+    "cell_id": "TRI_324",
+    "charge_time": 0.6449607941,
+    "mean_discharge_voltage": 0.0026780472
+  },
+  {
+    "cell_id": "TRI_325",
+    "charge_time": 1.6745206874,
+    "mean_discharge_voltage": -0.0263720683
+  }
+]

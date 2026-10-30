@@ -1,0 +1,677 @@
+[
+  {
+    "cell_id": "MATR_b1c0",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c10",
+    "split": "held_out",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b1c11",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c12",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b1c13",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b1c14",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c15",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c16",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c17",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c18",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c19",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c2",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c20",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c21",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c22",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b1c23",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c24",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c25",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c26",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c27",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c28",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c29",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c30",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c31",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c32",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c33",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c34",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c35",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c36",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c37",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c38",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c39",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c40",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c41",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c42",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c43",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c44",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c45",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c5",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c6",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c7",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b1c8",
+    "split": "held_out",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b1c9",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c0",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c10",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c11",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c12",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c13",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c14",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c17",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c18",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c19",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c20",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c22",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c23",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c25",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c26",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c27",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c28",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c29",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c3",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c30",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c31",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c32",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c33",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c34",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c35",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c36",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c37",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c38",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c39",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c4",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c40",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c42",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c43",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c44",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c45",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c46",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c47",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c5",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c0",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c1",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c10",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c11",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c12",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c13",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c14",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c15",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c16",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c17",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c18",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c19",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c2",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c20",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c21",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c22",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c23",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b3c24",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c25",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c26",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c27",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c28",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c29",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c3",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c30",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c31",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c32",
+    "split": "fitting",
+    "reaches_eol": false
+  },
+  {
+    "cell_id": "MATR_b3c33",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c34",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c35",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c36",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c37",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c38",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c39",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c4",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c40",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c41",
+    "split": "held_out",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c42",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c43",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c44",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c45",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c5",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c6",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c7",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c8",
+    "split": "fitting",
+    "reaches_eol": true
+  },
+  {
+    "cell_id": "MATR_b3c9",
+    "split": "held_out",
+    "reaches_eol": true
+  }
+]

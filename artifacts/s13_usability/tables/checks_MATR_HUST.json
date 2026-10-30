@@ -1,0 +1,198 @@
+[
+  {
+    "name": "MATR [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.091",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0002, 0.0001]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0001, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [recency]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0763 [0.0659, 0.0925]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0525 [0.0369, 0.0920]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [recency]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0488 [0.0378, 0.0791]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.090",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0002, 0.0001]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0001, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "MATR [uniform]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0760 [0.0655, 0.0918]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0532 [0.0380, 0.0895]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "MATR [uniform]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0496 [0.0393, 0.0774]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.095",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0001, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [recency]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0685 [0.0573, 0.0843]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0145 [0.0118, 0.0184]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [recency]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.6305 [0.5447, 0.7438]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.095",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0001, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0000 [-0.0000, 0.0000]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "HUST [uniform]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0679 [0.0569, 0.0833]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0146 [0.0118, 0.0185]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "HUST [uniform]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.6340 [0.5473, 0.7452]",
+    "passed": true,
+    "severity": "warn"
+  }
+]

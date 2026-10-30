@@ -1,0 +1,142 @@
+[
+  {
+    "model": "TRTR",
+    "generation_seed": null,
+    "model_seed": 0,
+    "rmse": 87.3585308794,
+    "epochs": 15
+  },
+  {
+    "model": "TRTR",
+    "generation_seed": null,
+    "model_seed": 1,
+    "rmse": 97.3331867194,
+    "epochs": 11
+  },
+  {
+    "model": "TRTR",
+    "generation_seed": null,
+    "model_seed": 2,
+    "rmse": 97.8035477052,
+    "epochs": 11
+  },
+  {
+    "model": "TRTR",
+    "generation_seed": null,
+    "model_seed": 3,
+    "rmse": 95.4902345511,
+    "epochs": 11
+  },
+  {
+    "model": "TRTR",
+    "generation_seed": null,
+    "model_seed": 4,
+    "rmse": 93.7559745037,
+    "epochs": 13
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 0.0,
+    "model_seed": 0,
+    "rmse": 146.0857719334,
+    "epochs": 18
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 0.0,
+    "model_seed": 1,
+    "rmse": 163.2880881279,
+    "epochs": 26
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 0.0,
+    "model_seed": 2,
+    "rmse": 168.1425885534,
+    "epochs": 24
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 0.0,
+    "model_seed": 3,
+    "rmse": 148.4740474613,
+    "epochs": 19
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 0.0,
+    "model_seed": 4,
+    "rmse": 167.3853448779,
+    "epochs": 27
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 1.0,
+    "model_seed": 0,
+    "rmse": 145.7662292355,
+    "epochs": 17
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 1.0,
+    "model_seed": 1,
+    "rmse": 137.9324281523,
+    "epochs": 16
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 1.0,
+    "model_seed": 2,
+    "rmse": 138.9718259367,
+    "epochs": 14
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 1.0,
+    "model_seed": 3,
+    "rmse": 134.2340555587,
+    "epochs": 16
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 1.0,
+    "model_seed": 4,
+    "rmse": 144.3155440903,
+    "epochs": 18
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 2.0,
+    "model_seed": 0,
+    "rmse": 135.8471018818,
+    "epochs": 11
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 2.0,
+    "model_seed": 1,
+    "rmse": 133.5994962463,
+    "epochs": 12
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 2.0,
+    "model_seed": 2,
+    "rmse": 134.5254187374,
+    "epochs": 15
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 2.0,
+    "model_seed": 3,
+    "rmse": 134.7161859708,
+    "epochs": 11
+  },
+  {
+    "model": "TSTR",
+    "generation_seed": 2.0,
+    "model_seed": 4,
+    "rmse": 139.8810557331,
+    "epochs": 22
+  }
+]

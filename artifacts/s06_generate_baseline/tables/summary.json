@@ -1,0 +1,228 @@
+{
+  "MATR": {
+    "kappa": {
+      "capacity": -1.7124190611808285,
+      "charge_time": -0.039974040206984744,
+      "mean_discharge_voltage": -1.691541134024754,
+      "internal_resistance": 0.0,
+      "temperature_mean": 0.0,
+      "null_flat": 0.0,
+      "null_permuted": 0.0
+    },
+    "x0": {
+      "capacity": 1.0746564020979057,
+      "charge_time": 29.33692023358584,
+      "mean_discharge_voltage": 2.7830866524978757,
+      "internal_resistance": 0.016169184684427042,
+      "temperature_mean": 33.10833726921993,
+      "null_flat": 0.0,
+      "null_permuted": 26.419019999999243
+    },
+    "seeds": {
+      "0": {
+        "units": 300,
+        "T_median": 823.0,
+        "T_q25": 534.75,
+        "T_q75": 1039.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 249438,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.0010189520084663243,
+            "se": 0.0013043567459091368
+          },
+          "uniform": {
+            "windows": 249438,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.0010065615365162277,
+            "se": 0.0013024160737008133
+          },
+          "final_position": {
+            "windows": 249438,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.0010550024896804793,
+            "se": 0.0013058043368750652
+          }
+        }
+      },
+      "1": {
+        "units": 300,
+        "T_median": 748.0,
+        "T_q25": 506.0,
+        "T_q75": 985.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 238319,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.001755057076879031,
+            "se": 0.0015054546728509753
+          },
+          "uniform": {
+            "windows": 238319,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.0017506631551042913,
+            "se": 0.0015011668520877692
+          },
+          "final_position": {
+            "windows": 238319,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.0017487188494256694,
+            "se": 0.0015124593532187009
+          }
+        }
+      },
+      "2": {
+        "units": 300,
+        "T_median": 727.0,
+        "T_q25": 515.0,
+        "T_q75": 1020.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 243588,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0018551560922791198,
+            "se": 0.001230527936815274
+          },
+          "uniform": {
+            "windows": 243588,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0018856852490105587,
+            "se": 0.0012319289954121377
+          },
+          "final_position": {
+            "windows": 243588,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0018061537113938275,
+            "se": 0.0012308642112678018
+          }
+        }
+      }
+    }
+  },
+  "HUST": {
+    "kappa": {
+      "capacity": -1.0677908853194509,
+      "charge_time": -0.025902224225457626,
+      "mean_discharge_voltage": -5.580320085059462,
+      "null_flat": 0.0,
+      "null_permuted": 0.0
+    },
+    "x0": {
+      "capacity": 1.1921709858326897,
+      "charge_time": 34.39557438794727,
+      "mean_discharge_voltage": 3.1013467206867307,
+      "null_flat": 0.0,
+      "null_permuted": 29.716666666666665
+    },
+    "seeds": {
+      "0": {
+        "units": 300,
+        "T_median": 1807.0,
+        "T_q25": 1585.0,
+        "T_q75": 2221.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 562769,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.00011329952913409825,
+            "se": 0.0012253584373325339
+          },
+          "uniform": {
+            "windows": 562769,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.00010529094916776884,
+            "se": 0.0012262196131266757
+          },
+          "final_position": {
+            "windows": 562769,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": 0.00012410692500313439,
+            "se": 0.0012242859686762498
+          }
+        }
+      },
+      "1": {
+        "units": 300,
+        "T_median": 1903.0,
+        "T_q25": 1602.0,
+        "T_q75": 2178.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 562851,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0007454077023038619,
+            "se": 0.0011329560768037093
+          },
+          "uniform": {
+            "windows": 562851,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0007376255183846171,
+            "se": 0.0011326145425610752
+          },
+          "final_position": {
+            "windows": 562851,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0007554341623893983,
+            "se": 0.0011333041954124377
+          }
+        }
+      },
+      "2": {
+        "units": 300,
+        "T_median": 1881.0,
+        "T_q25": 1680.0,
+        "T_q75": 2063.0,
+        "units_with_patterns": 0,
+        "patterns": 0,
+        "checks": {
+          "recency": {
+            "windows": 562398,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0026158332818973476,
+            "se": 0.0012448055629581437
+          },
+          "uniform": {
+            "windows": 562398,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0026225395622917675,
+            "se": 0.001244806522327527
+          },
+          "final_position": {
+            "windows": 562398,
+            "graded_sparse_abs_corr": null,
+            "has_sparse": false,
+            "g_minus_y_unit_mean": -0.0026077818357911195,
+            "se": 0.0012450619181251237
+          }
+        }
+      }
+    }
+  }
+}

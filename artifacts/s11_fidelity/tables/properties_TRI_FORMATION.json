@@ -1,0 +1,254 @@
+[
+  {
+    "property": "trajectory family (selected); median CV-RMSE of the profile's family [fraction of q1]",
+    "fitting": "two_term_exponential; 0.0105",
+    "held_out": "two_term_exponential; 0.0109",
+    "generated": "two_term_exponential; 0.0077",
+    "units": {
+      "fitting": 127,
+      "held_out": 55,
+      "generated": 279
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "drift rate [mAh per 100 cycles]",
+    "fitting": {
+      "n": 127,
+      "median": 7.784338943546786,
+      "q25": 6.101589184849768,
+      "q75": 8.659902044655702,
+      "p05": 5.046639206386074,
+      "p95": 10.348775297742597
+    },
+    "held_out": {
+      "n": 55,
+      "median": 8.272680950559934,
+      "q25": 6.323885959999779,
+      "q75": 9.01884325340001,
+      "p05": 4.99608821711774,
+      "p95": 10.042714548767705
+    },
+    "generated": {
+      "n": 279,
+      "median": 7.874972783351681,
+      "q25": 6.141818276409543,
+      "q75": 8.89309061421763,
+      "p05": 4.839044904840376,
+      "p95": 11.00308644443132
+    },
+    "units": {
+      "fitting": 127,
+      "held_out": 55,
+      "generated": 279
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "transition position [fraction of T]",
+    "fitting": {
+      "n": 127,
+      "median": 0.9985734664764622,
+      "q25": 0.9984038216560509,
+      "q75": 0.998842586390745,
+      "p05": 0.9981294370842417,
+      "p95": 0.9990290084791078
+    },
+    "held_out": {
+      "n": 55,
+      "median": 0.9984962406015038,
+      "q25": 0.9983207282202257,
+      "q75": 0.9987973328704909,
+      "p05": 0.9981166194928096,
+      "p95": 0.9990712796312554
+    },
+    "generated": {
+      "n": 279,
+      "median": 0.9985358711566618,
+      "q25": 0.9983633387888707,
+      "q75": 0.9988518943742825,
+      "p05": 0.9980911617565315,
+      "p95": 0.999103808988817
+    },
+    "units": {
+      "fitting": 127,
+      "held_out": 55,
+      "generated": 279
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "unit length T [cycles]",
+    "fitting": {
+      "n": 127,
+      "median": 701.0,
+      "q25": 626.5,
+      "q75": 864.0,
+      "p05": 534.6,
+      "p95": 1030.0999999999997
+    },
+    "held_out": {
+      "n": 55,
+      "median": 665.0,
+      "q25": 595.5,
+      "q75": 831.5,
+      "p05": 531.0,
+      "p95": 1076.8
+    },
+    "generated": {
+      "n": 279,
+      "median": 683.0,
+      "q25": 611.0,
+      "q75": 871.0,
+      "p05": 523.9,
+      "p95": 1115.899999999999
+    },
+    "units": {
+      "fitting": 127,
+      "held_out": 55,
+      "generated": 279
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "early-life reference q1 [Ah], units reaching EOL",
+    "fitting": {
+      "median": 0.24593966627808939,
+      "iqr": 0.002629479630536058,
+      "p05_p95": [
+        0.24226190756043367,
+        0.24912118094146882
+      ],
+      "n": 127
+    },
+    "held_out": {
+      "median": 0.24529994763076934,
+      "iqr": 0.0023106691706293314,
+      "p05_p95": [
+        0.2431433738302896,
+        0.2496003613176227
+      ],
+      "n": 55
+    },
+    "generated": {
+      "median": 0.24663315787268833,
+      "iqr": 0.0034255768192850145,
+      "p05_p95": [
+        0.24205529590917643,
+        0.2504398588137648
+      ],
+      "n": 279
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise variance, capacity (per-unit-centred AR(1))",
+    "fitting": 1.433361528708544e-06,
+    "held_out": 1.5623802503004676e-06,
+    "generated": 9.894752965537296e-07,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, capacity",
+    "fitting": 0.949691323114353,
+    "held_out": 0.9545105277640115,
+    "generated": 0.9061752180111146,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise variance, charge_time (per-unit-centred AR(1))",
+    "fitting": 0.7650691588677538,
+    "held_out": 0.62381922714167,
+    "generated": 0.575475163214852,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, charge_time",
+    "fitting": 0.9498426595285209,
+    "held_out": 0.9543958364495477,
+    "generated": 0.9385784543654733,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "per-unit offset IQR, charge_time",
+    "fitting": 1.433038875617008,
+    "held_out": 1.2077091686236905,
+    "generated": 1.3141125206178792,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise variance, mean_discharge_voltage (per-unit-centred AR(1))",
+    "fitting": 5.0643327047720715e-05,
+    "held_out": 1.1104901007756534e-05,
+    "generated": 3.07499952620107e-05,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "noise lag-1 autocorrelation, mean_discharge_voltage",
+    "fitting": 0.9747958652548457,
+    "held_out": 0.9685479014865963,
+    "generated": 0.9663597058690719,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "per-unit offset IQR, mean_discharge_voltage",
+    "fitting": 0.013291673789483371,
+    "held_out": 0.008480729740667159,
+    "generated": 0.012870075001159498,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "positive residual runs per 100 positions (enabled in profile: True)",
+    "fitting": 0.3303964757709251,
+    "held_out": 0.2928367622766181,
+    "generated": 0.2738465183673097,
+    "events": {
+      "fitting": 312,
+      "held_out": 117,
+      "generated": 601
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "negative residual runs per 100 positions (enabled in profile: False)",
+    "fitting": 0.13025245679430703,
+    "held_out": 0.09761225409220603,
+    "generated": 0.12029198144587316,
+    "events": {
+      "fitting": 123,
+      "held_out": 39,
+      "generated": 264
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "within-unit residual correlation (X3 estimator): relative Frobenius / mean |delta rho| against the fitting split",
+    "fitting": {
+      "relative_frobenius": 0.0,
+      "mean_abs_delta_rho": 0.0
+    },
+    "held_out": {
+      "relative_frobenius": 0.09735697097595533,
+      "mean_abs_delta_rho": 0.07190857176107064
+    },
+    "generated": {
+      "relative_frobenius": 0.12634772123972038,
+      "mean_abs_delta_rho": 0.1041096428358514
+    },
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "within-unit residual correlation, capacity pairs: mean |delta rho| against the fitting split",
+    "fitting": 0.0,
+    "held_out": 0.06516306931292802,
+    "generated": 0.1089172720898236,
+    "dataset": "TRI_FORMATION"
+  },
+  {
+    "property": "within-unit residual correlation, non-capacity pairs: mean |delta rho| against the fitting split",
+    "fitting": 0.0,
+    "held_out": 0.08539957665735587,
+    "generated": 0.09449438432790702,
+    "dataset": "TRI_FORMATION"
+  }
+]

@@ -1,0 +1,79 @@
+batch 20170512 (b1): cells=46 total_cycle_entries=38811 n_cycles min/median/max=533/857/1226 summary_len mismatches=[]
+   cycle_life - n_cycles distribution: Counter({1: 46})
+   cycle_life min/max: 534.0 1227.0 nan count 0
+   summary fields ['IR', 'QCharge', 'QDischarge', 'Tavg', 'Tmax', 'Tmin', 'chargetime', 'cycle'] cycle fields ['I', 'Qc', 'Qd', 'Qdlin', 'T', 'Tdlin', 'V', 'discharge_dQdV', 't']
+   policies distinct: 23
+   sample {'cell': 0, 'cycle': 0, 'I': [2], 'I_dtype': 'uint64', 'Qc': [2], 'Qd': [2], 'Qdlin': [2], 'T': [2], 'Tdlin': [2], 'V': [2], 'discharge_dQdV': [2], 't': [2], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 1, 'I': [1, 1087], 'I_dtype': 'float64', 'Qc': [1, 1087], 'Qd': [1, 1087], 'Qdlin': [1, 1000], 'T': [1, 1087], 'Tdlin': [1, 1000], 'V': [1, 1087], 'discharge_dQdV': [1, 1000], 't': [1, 1087], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 594, 'I': [1, 1105], 'I_dtype': 'float64', 'Qc': [1, 1105], 'Qd': [1, 1105], 'Qdlin': [1, 1000], 'T': [1, 1105], 'Tdlin': [1, 1000], 'V': [1, 1105], 'discharge_dQdV': [1, 1000], 't': [1, 1105], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 1188, 'I': [1, 1034], 'I_dtype': 'float64', 'Qc': [1, 1034], 'Qd': [1, 1034], 'Qdlin': [1, 1000], 'T': [1, 1034], 'Tdlin': [1, 1000], 'V': [1, 1034], 'discharge_dQdV': [1, 1000], 't': [1, 1034], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 15, 'cycle': 0, 'I': [2], 'I_dtype': 'uint64', 'Qc': [2], 'Qd': [2], 'Qdlin': [2], 'T': [2], 'Tdlin': [2], 'V': [2], 'discharge_dQdV': [2], 't': [2], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 15, 'cycle': 1, 'I': [1, 1070], 'I_dtype': 'float64', 'Qc': [1, 1070], 'Qd': [1, 1070], 'Qdlin': [1, 1000], 'T': [1, 1070], 'Tdlin': [1, 1000], 'V': [1, 1070], 'discharge_dQdV': [1, 1000], 't': [1, 1070], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 15, 'cycle': 359, 'I': [1, 1055], 'I_dtype': 'float64', 'Qc': [1, 1055], 'Qd': [1, 1055], 'Qdlin': [1, 1000], 'T': [1, 1055], 'Tdlin': [1, 1000], 'V': [1, 1055], 'discharge_dQdV': [1, 1000], 't': [1, 1055], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 15, 'cycle': 717, 'I': [1, 991], 'I_dtype': 'float64', 'Qc': [1, 991], 'Qd': [1, 991], 'Qdlin': [1, 1000], 'T': [1, 991], 'Tdlin': [1, 1000], 'V': [1, 991], 'discharge_dQdV': [1, 1000], 't': [1, 991], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 30, 'cycle': 0, 'I': [2], 'I_dtype': 'uint64', 'Qc': [2], 'Qd': [2], 'Qdlin': [2], 'T': [2], 'Tdlin': [2], 'V': [2], 'discharge_dQdV': [2], 't': [2], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 30, 'cycle': 1, 'I': [1, 1068], 'I_dtype': 'float64', 'Qc': [1, 1068], 'Qd': [1, 1068], 'Qdlin': [1, 1000], 'T': [1, 1068], 'Tdlin': [1, 1000], 'V': [1, 1068], 'discharge_dQdV': [1, 1000], 't': [1, 1068], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 30, 'cycle': 354, 'I': [1, 1075], 'I_dtype': 'float64', 'Qc': [1, 1075], 'Qd': [1, 1075], 'Qdlin': [1, 1000], 'T': [1, 1075], 'Tdlin': [1, 1000], 'V': [1, 1075], 'discharge_dQdV': [1, 1000], 't': [1, 1075], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 30, 'cycle': 707, 'I': [1, 980], 'I_dtype': 'float64', 'Qc': [1, 980], 'Qd': [1, 980], 'Qdlin': [1, 1000], 'T': [1, 980], 'Tdlin': [1, 1000], 'V': [1, 980], 'discharge_dQdV': [1, 1000], 't': [1, 980], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 45, 'cycle': 0, 'I': [2], 'I_dtype': 'uint64', 'Qc': [2], 'Qd': [2], 'Qdlin': [2], 'T': [2], 'Tdlin': [2], 'V': [2], 'discharge_dQdV': [2], 't': [2], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 45, 'cycle': 1, 'I': [1, 1075], 'I_dtype': 'float64', 'Qc': [1, 1075], 'Qd': [1, 1075], 'Qdlin': [1, 1000], 'T': [1, 1075], 'Tdlin': [1, 1000], 'V': [1, 1075], 'discharge_dQdV': [1, 1000], 't': [1, 1075], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 45, 'cycle': 299, 'I': [1, 1071], 'I_dtype': 'float64', 'Qc': [1, 1071], 'Qd': [1, 1071], 'Qdlin': [1, 1000], 'T': [1, 1071], 'Tdlin': [1, 1000], 'V': [1, 1071], 'discharge_dQdV': [1, 1000], 't': [1, 1071], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 45, 'cycle': 597, 'I': [1, 895], 'I_dtype': 'float64', 'Qc': [1, 895], 'Qd': [1, 895], 'Qdlin': [1, 1000], 'T': [1, 895], 'Tdlin': [1, 1000], 'V': [1, 895], 'discharge_dQdV': [1, 1000], 't': [1, 895], 'I_compression': None, 'I_chunks': None}
+batch 20170630 (b2): cells=48 total_cycle_entries=24920 n_cycles min/median/max=170/508/1060 summary_len mismatches=[]
+   cycle_life - n_cycles distribution: Counter({-27: 8, -26: 7, 1: 5, -22: 3, -24: 3, -31: 3, -25: 3, -35: 2, -28: 2, -29: 2, -32: 2, -23: 2, -34: 1, -33: 1, -37: 1, -36: 1, -21: 1, -20: 1})
+   cycle_life min/max: 148.0 1061.0 nan count 0
+   summary fields ['IR', 'QCharge', 'QDischarge', 'Tavg', 'Tmax', 'Tmin', 'chargetime', 'cycle'] cycle fields ['I', 'Qc', 'Qd', 'Qdlin', 'T', 'Tdlin', 'V', 'discharge_dQdV', 't']
+   policies distinct: 43
+   sample {'cell': 0, 'cycle': 0, 'I': [1, 1308], 'I_dtype': 'float64', 'Qc': [1, 1308], 'Qd': [1, 1308], 'Qdlin': [1, 1000], 'T': [1, 1308], 'Tdlin': [1, 1000], 'V': [1, 1308], 'discharge_dQdV': [1, 1000], 't': [1, 1308], 'I_compression': 'gzip', 'I_chunks': [1, 1308]}
+   sample {'cell': 0, 'cycle': 1, 'I': [1, 1263], 'I_dtype': 'float64', 'Qc': [1, 1263], 'Qd': [1, 1263], 'Qdlin': [1, 1000], 'T': [1, 1263], 'Tdlin': [1, 1000], 'V': [1, 1263], 'discharge_dQdV': [1, 1000], 't': [1, 1263], 'I_compression': 'gzip', 'I_chunks': [1, 1263]}
+   sample {'cell': 0, 'cycle': 163, 'I': [1, 1485], 'I_dtype': 'float64', 'Qc': [1, 1485], 'Qd': [1, 1485], 'Qdlin': [1, 1000], 'T': [1, 1485], 'Tdlin': [1, 1000], 'V': [1, 1485], 'discharge_dQdV': [1, 1000], 't': [1, 1485], 'I_compression': 'gzip', 'I_chunks': [1, 1485]}
+   sample {'cell': 0, 'cycle': 325, 'I': [1, 1596], 'I_dtype': 'float64', 'Qc': [1, 1596], 'Qd': [1, 1596], 'Qdlin': [1, 1000], 'T': [1, 1596], 'Tdlin': [1, 1000], 'V': [1, 1596], 'discharge_dQdV': [1, 1000], 't': [1, 1596], 'I_compression': 'gzip', 'I_chunks': [1, 1596]}
+batch 20180412 (b3): cells=46 total_cycle_entries=51007 n_cycles min/median/max=540/1017/2237 summary_len mismatches=[]
+   cycle_life - n_cycles distribution: Counter({1: 44, 'nan': 2})
+   cycle_life min/max: 541.0 1935.0 nan count 2
+   summary fields ['IR', 'QCharge', 'QDischarge', 'Tavg', 'Tmax', 'Tmin', 'chargetime', 'cycle'] cycle fields ['I', 'Qc', 'Qd', 'Qdlin', 'T', 'Tdlin', 'V', 'discharge_dQdV', 't']
+   policies distinct: 8
+   sample {'cell': 0, 'cycle': 0, 'I': [1, 762], 'I_dtype': 'float64', 'Qc': [1, 762], 'Qd': [1, 762], 'Qdlin': [1, 1000], 'T': [1, 762], 'Tdlin': [1, 1000], 'V': [1, 762], 'discharge_dQdV': [1, 1000], 't': [1, 762], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 1, 'I': [1, 764], 'I_dtype': 'float64', 'Qc': [1, 764], 'Qd': [1, 764], 'Qdlin': [1, 1000], 'T': [1, 764], 'Tdlin': [1, 1000], 'V': [1, 764], 'discharge_dQdV': [1, 1000], 't': [1, 764], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 504, 'I': [1, 717], 'I_dtype': 'float64', 'Qc': [1, 717], 'Qd': [1, 717], 'Qdlin': [1, 1000], 'T': [1, 717], 'Tdlin': [1, 1000], 'V': [1, 717], 'discharge_dQdV': [1, 1000], 't': [1, 717], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 1007, 'I': [1, 1018], 'I_dtype': 'float64', 'Qc': [1, 1018], 'Qd': [1, 1018], 'Qdlin': [1, 1000], 'T': [1, 1018], 'Tdlin': [1, 1000], 'V': [1, 1018], 'discharge_dQdV': [1, 1000], 't': [1, 1018], 'I_compression': None, 'I_chunks': None}
+batch 20190124 (b4): cells=45 total_cycle_entries=39673 n_cycles min/median/max=530/904/1231 summary_len mismatches=[]
+   cycle_life - n_cycles distribution: Counter({-74: 2, -103: 2, -114: 2, -126: 1, -101: 1, -42: 1, -134: 1, -256: 1, -154: 1, -71: 1, -33: 1, -41: 1, -87: 1, -210: 1, -67: 1, -80: 1, -98: 1, -160: 1, -196: 1, -151: 1, -120: 1, -57: 1, -130: 1, -56: 1, -127: 1, -63: 1, -54: 1, -69: 1, -104: 1, -273: 1, -85: 1, -25: 1, -106: 1, -50: 1, -142: 1, -65: 1, -23: 1, -34: 1, -161: 1, -141: 1, -201: 1, -135: 1})
+   cycle_life min/max: 443.0 1166.0 nan count 0
+   summary fields ['IR', 'QCharge', 'QDischarge', 'Tavg', 'Tmax', 'Tmin', 'chargetime', 'cycle'] cycle fields ['I', 'Qc', 'Qd', 'Qdlin', 'T', 'Tdlin', 'V', 'discharge_dQdV', 't']
+   policies distinct: 9
+   sample {'cell': 0, 'cycle': 0, 'I': [1, 743], 'I_dtype': 'float64', 'Qc': [1, 743], 'Qd': [1, 743], 'Qdlin': [1, 1000], 'T': [1, 743], 'Tdlin': [1, 1000], 'V': [1, 743], 'discharge_dQdV': [1, 1000], 't': [1, 743], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 1, 'I': [1, 751], 'I_dtype': 'float64', 'Qc': [1, 751], 'Qd': [1, 751], 'Qdlin': [1, 1000], 'T': [1, 751], 'Tdlin': [1, 1000], 'V': [1, 751], 'discharge_dQdV': [1, 1000], 't': [1, 751], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 491, 'I': [1, 707], 'I_dtype': 'float64', 'Qc': [1, 707], 'Qd': [1, 707], 'Qdlin': [1, 1000], 'T': [1, 707], 'Tdlin': [1, 1000], 'V': [1, 707], 'discharge_dQdV': [1, 1000], 't': [1, 707], 'I_compression': None, 'I_chunks': None}
+   sample {'cell': 0, 'cycle': 982, 'I': [1, 1229], 'I_dtype': 'float64', 'Qc': [1, 1229], 'Qd': [1, 1229], 'Qdlin': [1, 1000], 'T': [1, 1229], 'Tdlin': [1, 1000], 'V': [1, 1229], 'discharge_dQdV': [1, 1000], 't': [1, 1229], 'I_compression': None, 'I_chunks': None}
+total cycle entries all batches 154411
+b1c0 n_cycles 1189 cycle_life 1190.0 policy 3.6C(80%)-3.6C
+b1c1 n_cycles 1178 cycle_life 1179.0 policy 3.6C(80%)-3.6C
+b1c2 n_cycles 1176 cycle_life 1177.0 policy 3.6C(80%)-3.6C
+b1c3 n_cycles 1225 cycle_life 1226.0 policy 4C(80%)-4C
+b1c4 n_cycles 1226 cycle_life 1227.0 policy 4C(80%)-4C
+b2c7 n_cycles 662 cycle_life 663.0 policy 80%)-3.6C
+b2c8 n_cycles 981 cycle_life 982.0 policy 80%)-3.6C
+b2c9 n_cycles 1060 cycle_life 1061.0 policy 80%)-3.6C
+b2c15 n_cycles 208 cycle_life 209.0 policy 80%)-4C
+b2c16 n_cycles 482 cycle_life 483.0 policy 80%)-4C
+b1c8 n_cycles 878 cycle_life 879.0 policy 5.4C(40%)-3.6C
+b1c10 n_cycles 905 cycle_life 906.0 policy 5.4C(50%)-3C
+b1c12 n_cycles 901 cycle_life 902.0 policy 5.4C(50%)-3.6C
+b1c13 n_cycles 896 cycle_life 897.0 policy 5.4C(50%)-3.6C
+b1c22 n_cycles 890 cycle_life 891.0 policy 6C(30%)-3.6C
+b2c1 n_cycles 170 cycle_life 148.0 policy 2C(10%)-6C
+b3c2 n_cycles 1266 cycle_life 1267.0 policy 5.6C(19%)-4.6C-newstructure
+b3c23 n_cycles 2189 cycle_life nan policy 4.8C(80%)-4.8C-newstructure
+b3c32 n_cycles 2237 cycle_life nan policy 4.8C(80%)-4.8C-newstructure
+b3c37 n_cycles 1389 cycle_life 1390.0 policy 4.8C(80%)-4.8C-newstructure
+b3c42 n_cycles 1641 cycle_life 1642.0 policy 4.8C(80%)-4.8C-newstructure
+b3c43 n_cycles 1045 cycle_life 1046.0 policy 5C(67%)-4C-newstructure
+merged b1c0 + b2c7 = 1851 cycles; python cycle_life 1852.0
+merged b1c1 + b2c8 = 2159 cycles; python cycle_life 2160.0
+merged b1c2 + b2c9 = 2236 cycles; python cycle_life 2237.0
+merged b1c3 + b2c15 = 1433 cycles; python cycle_life 1434.0
+merged b1c4 + b2c16 = 1708 cycles; python cycle_life 1709.0
+largest single-file cells [('b3c32', 2237), ('b3c23', 2189), ('b3c38', 1934), ('b3c7', 1835), ('b3c45', 1800)]
+Severson-124 set: n 124 cycle_life min/max/mean/sd 148.0 2237.0 801.6 379.7
+b4 cycle_life min/max 443.0 1166.0 n 45

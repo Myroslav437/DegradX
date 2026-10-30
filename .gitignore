@@ -1,0 +1,15 @@
+# measured datasets and generated units are not committed: the fetch scripts and configs/raw_checksums*.sha256
+# reproduce the data, and the generation stages regenerate the units bit-identically from the seeds
+/data/
+# release bundle written by scripts/export_benchmark.py
+/dist/
+# caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.cache/

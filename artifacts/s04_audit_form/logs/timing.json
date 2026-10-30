@@ -1,0 +1,11 @@
+{
+  "stage": "s04_audit_form",
+  "device": "cpu",
+  "wall_clock_s": 236.47,
+  "sections_s": {
+    "audit": 10.149,
+    "fit": 35.304,
+    "mechanism": 94.234,
+    "prescreen": 95.889
+  }
+}

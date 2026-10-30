@@ -1,0 +1,1010 @@
+[
+  {
+    "cell": "Figure 6 / MATR",
+    "artifact": "artifacts/s09_fit_profiles/profiles/MATR.json",
+    "key": "generated units seed 0 (first 25) + the split units",
+    "script": "scripts/s10_generate_units.py; scripts/s16_export_results.py",
+    "seeds": "generation 0"
+  },
+  {
+    "cell": "Figure 6 / HUST",
+    "artifact": "artifacts/s09_fit_profiles/profiles/HUST.json",
+    "key": "generated units seed 0 (first 25) + the split units",
+    "script": "scripts/s10_generate_units.py; scripts/s16_export_results.py",
+    "seeds": "generation 0"
+  },
+  {
+    "cell": "Figure 6 / FORM",
+    "artifact": "artifacts/s09_fit_profiles/profiles/TRI_FORMATION.json",
+    "key": "generated units seed 0 (first 25) + the split units",
+    "script": "scripts/s10_generate_units.py; scripts/s16_export_results.py",
+    "seeds": "generation 0"
+  },
+  {
+    "cell": "Section 3.4 / FORM / cells_in_scope, positions, modal_protocol",
+    "artifact": "artifacts/s02_ingest_form/tables/ingest_summary.json",
+    "key": "cells_in_scope, positions, modal_protocol",
+    "script": "scripts/s02c_ingest_form.py",
+    "seeds": "split 20260915; generation 0,1,2"
+  },
+  {
+    "cell": "Section 3.4 / FORM / eligibility, EOL, weight guard, pre-screen, D05, mechanism",
+    "artifact": "artifacts/s04_audit_form/tables/audit_summary.json",
+    "key": "eligibility, EOL, weight guard, pre-screen, D05, mechanism",
+    "script": "scripts/s04_audit_form.py",
+    "seeds": "split 20260915; generation 0,1,2"
+  },
+  {
+    "cell": "Section 3.4 / FORM / offset share and pattern term on generated data",
+    "artifact": "artifacts/s10_generate_units/tables/summary.json",
+    "key": "offset share and pattern term on generated data",
+    "script": "scripts/s10_generate_units.py",
+    "seeds": "split 20260915; generation 0,1,2"
+  },
+  {
+    "cell": "Table 1 / MATR / transfer ratio without X3",
+    "artifact": "artifacts/s12_tstr_without_correlated_noise/tables/tstr_without_x3.json",
+    "key": "MATR.rows.profile_without_x3_seed0",
+    "script": "scripts/s12_tstr_without_correlated_noise.py",
+    "seeds": "generation 0 (X3-off set); model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / baseline generator row",
+    "artifact": "artifacts/s07_fidelity_baseline/tables/fidelity.json",
+    "key": "MATR.{per_generation_seed,tstr,baseline_measured_fitting_vs_held_out}",
+    "script": "scripts/s07_fidelity_baseline.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / discriminative_error",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / covariance_agreement",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / x3_off",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / transfer_ratio",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "MATR",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / discriminative_error readability",
+    "artifact": "artifacts/s11_fidelity/tables/discriminator_readability.json",
+    "key": "MATR",
+    "script": "scripts/s11b_fidelity_readability.py",
+    "seeds": "generation 0,1,2; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / transfer ratio without X3",
+    "artifact": "artifacts/s12_tstr_without_correlated_noise/tables/tstr_without_x3.json",
+    "key": "HUST.rows.profile_without_x3_seed0",
+    "script": "scripts/s12_tstr_without_correlated_noise.py",
+    "seeds": "generation 0 (X3-off set); model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / baseline generator row",
+    "artifact": "artifacts/s07_fidelity_baseline/tables/fidelity.json",
+    "key": "HUST.{per_generation_seed,tstr,baseline_measured_fitting_vs_held_out}",
+    "script": "scripts/s07_fidelity_baseline.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / discriminative_error",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / covariance_agreement",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / x3_off",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / transfer_ratio",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "HUST",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / discriminative_error readability",
+    "artifact": "artifacts/s11_fidelity/tables/discriminator_readability.json",
+    "key": "HUST",
+    "script": "scripts/s11b_fidelity_readability.py",
+    "seeds": "generation 0,1,2; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / FORM / discriminative_error",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "TRI_FORMATION",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / FORM / covariance_agreement",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "TRI_FORMATION",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / FORM / x3_off",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "TRI_FORMATION",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / FORM / transfer_ratio",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "TRI_FORMATION",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / FORM / discriminative_error readability",
+    "artifact": "artifacts/s11_fidelity/tables/discriminator_readability.json",
+    "key": "TRI_FORMATION",
+    "script": "scripts/s11b_fidelity_readability.py",
+    "seeds": "generation 0,1,2; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / MATR / X2 and X3 shares in transfer",
+    "artifact": "artifacts/s12_tstr_without_correlated_noise/tables/tstr_without_x3.json",
+    "key": "MATR.shares",
+    "script": "scripts/s12_tstr_without_correlated_noise.py",
+    "seeds": "generation 0 and baseline 0-2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 1 / HUST / X2 and X3 shares in transfer",
+    "artifact": "artifacts/s12_tstr_without_correlated_noise/tables/tstr_without_x3.json",
+    "key": "HUST.shares",
+    "script": "scripts/s12_tstr_without_correlated_noise.py",
+    "seeds": "generation 0 and baseline 0-2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Fit error of the profile's family [fraction of $q_1$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "trajectory family",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Fit error of the profile's family [fraction of $q_1$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "trajectory family",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Fit error of the profile's family [fraction of $q_1$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "trajectory family",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Drift rate [mAh/100 cyc.]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "drift rate",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Drift rate [mAh/100 cyc.]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "drift rate",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Drift rate [mAh/100 cyc.]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "drift rate",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Transition position [$\\times T$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "transition position",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Transition position [$\\times T$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "transition position",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Transition position [$\\times T$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "transition position",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Unit length $T$ [cycles]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "unit length",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Unit length $T$ [cycles]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "unit length",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Unit length $T$ [cycles]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "unit length",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Early-life reference $q_1$, IQR [mAh]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "early-life reference",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Early-life reference $q_1$, IQR [mAh]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "early-life reference",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Early-life reference $q_1$, IQR [mAh]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "early-life reference",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise variance, capacity [mAh$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise variance, capacity [mAh$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Noise variance, capacity [mAh$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "noise variance, capacity",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise variance, charge time [min$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise variance, charge time [min$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Noise variance, charge time [min$^2$]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "noise variance, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Noise autocorrelation, charge time",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "noise lag-1 autocorrelation, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Noise autocorrelation, charge time",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "noise lag-1 autocorrelation, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Noise autocorrelation, charge time",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "noise lag-1 autocorrelation, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Offset IQR, charge time [min]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "per-unit offset IQR, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Offset IQR, charge time [min]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "per-unit offset IQR, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Offset IQR, charge time [min]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "per-unit offset IQR, charge_time",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Offset IQR, mean discharge V [mV]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "per-unit offset IQR, mean_discharge_voltage",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Offset IQR, mean discharge V [mV]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "per-unit offset IQR, mean_discharge_voltage",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Offset IQR, mean discharge V [mV]",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "per-unit offset IQR, mean_discharge_voltage",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Positive residual runs per 100 positions",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "positive residual runs per 100 positions",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Positive residual runs per 100 positions",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "positive residual runs per 100 positions",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Positive residual runs per 100 positions",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "positive residual runs per 100 positions",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / Residual correlation, rel. Frob. to fitting split",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation (X3",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / Residual correlation, rel. Frob. to fitting split",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation (X3",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / Residual correlation, rel. Frob. to fitting split",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "within-unit residual correlation (X3",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / \\quad capacity pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation, capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / \\quad capacity pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation, capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / \\quad capacity pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "within-unit residual correlation, capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / MATR / \\quad other pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_MATR.json",
+    "key": "within-unit residual correlation, non-capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / HUST / \\quad other pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_HUST.json",
+    "key": "within-unit residual correlation, non-capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 2 / FORM / \\quad other pairs, mean $|\\Delta r|$",
+    "artifact": "artifacts/s11_fidelity/tables/properties_TRI_FORMATION.json",
+    "key": "within-unit residual correlation, non-capacity pairs",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Accuracy, NRMSE of the primary model (members passing)",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.primary_nrmse",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Accuracy, NRMSE of the primary model (members passing)",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.primary_nrmse",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Accuracy, NRMSE of the primary model (members passing)",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.primary_nrmse",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Offset term, share of Var$(y)$",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.offset_term",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Offset term, share of Var$(y)$",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.offset_term",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Offset term, share of Var$(y)$",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.offset_term",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Spearman correlation of $y$ with RUL",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.spearman_y_rul",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Spearman correlation of $y$ with RUL",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.spearman_y_rul",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Spearman correlation of $y$ with RUL",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.spearman_y_rul",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Permutation importance, capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.permutation_importance.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Permutation importance, charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.permutation_importance.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Permutation importance, mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Permutation importance, mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Permutation importance, mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.permutation_importance.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Channel use (conditional importance), capacity",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.channel_usage.A0.capacity",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Channel use (conditional importance), charge time",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.channel_usage.A0.charge_time",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Channel use (conditional importance), mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage.A0.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Channel use (conditional importance), mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage.A0.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Channel use (conditional importance), mean discharge V",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.channel_usage.A0.mean_discharge_voltage",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Members using every weighted channel",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.channel_usage_gate",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Members using every weighted channel",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.channel_usage_gate",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Members using every weighted channel",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.channel_usage_gate",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Leakage, null channels (upper bound, flat / permuted)",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.permutation_importance.null_*",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Leakage, null channels (upper bound, flat / permuted)",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.permutation_importance.null_*",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Leakage, null channels (upper bound, flat / permuted)",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.permutation_importance.null_*",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Redundant channels: $R^2$, conditional importance",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.redundant_channels",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Redundant channels: $R^2$, conditional importance",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.redundant_channels",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Redundant channels: $R^2$, conditional importance",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.redundant_channels",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Pattern term, variance ratio to the mean term",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.variance_ratio_pattern_to_mean",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Pattern term, variance ratio to the mean term",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.variance_ratio_pattern_to_mean",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Pattern term, variance ratio to the mean term",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.variance_ratio_pattern_to_mean",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Pattern term removed, NMSE increase",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.term_ablation.pattern_term_removed",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Pattern term removed, NMSE increase",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.term_ablation.pattern_term_removed",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Pattern term removed, NMSE increase",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.term_ablation.pattern_term_removed",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / MATR / Graded/sparse correlation $|r|$",
+    "artifact": "artifacts/s13_usability/tables/usability_MATR.json",
+    "key": "MATR.recency.graded_sparse_abs_corr",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / HUST / Graded/sparse correlation $|r|$",
+    "artifact": "artifacts/s13_usability/tables/usability_HUST.json",
+    "key": "HUST.recency.graded_sparse_abs_corr",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 4 / FORM / Graded/sparse correlation $|r|$",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.graded_sparse_abs_corr",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0-4 (A, B); evaluation 20260915"
+  },
+  {
+    "cell": "Table 5 / MATR",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "MATR.recency.operators.<op>.<score>.registers",
+    "script": "scripts/s14_degraded_map_test.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 5 / HUST",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "HUST.recency.operators.<op>.<score>.registers",
+    "script": "scripts/s14_degraded_map_test.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 5 / FORM",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "TRI_FORMATION.recency.operators.<op>.<score>.registers",
+    "script": "scripts/s14_degraded_map_test.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Table 3 / profiles without offsets (baseline)",
+    "artifact": "artifacts/s08_tstr_isolation_baseline/tables/tstr_isolation.json",
+    "key": "{MATR,HUST}.input_sets, tests",
+    "script": "scripts/s08_tstr_isolation_baseline.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 3 / MATR / profile with offsets",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "MATR.tstr_input_sets, x1_on_profile.tests",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 3 / HUST / profile with offsets",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "HUST.tstr_input_sets, x1_on_profile.tests",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 3 / FORM / profile with offsets",
+    "artifact": "artifacts/s11_fidelity/tables/fidelity.json",
+    "key": "TRI_FORMATION.tstr_input_sets, x1_on_profile.tests",
+    "script": "scripts/s11_fidelity.py",
+    "seeds": "generation 0,1,2; model_init 0-4; evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / MATR / IG",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / MATR / Occlusion",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / MATR / ensemble range",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.identifiability_floor",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / MATR / TimeSHAP average event",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.secondary_average_event",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / HUST / IG",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / HUST / Occlusion",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / HUST / ensemble range",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.identifiability_floor",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / HUST / TimeSHAP average event",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.secondary_average_event",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / IG",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.scores.{trained,reference}/integrated_gradients",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / Occlusion",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.scores.{trained,reference}/feature_occlusion",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / TimeSHAP",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.scores.{trained,reference}/timeshap",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / ensemble range",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.identifiability_floor",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / TimeSHAP average event",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.secondary_average_event",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / paired retrieval (note)",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.scores.*.retrieval",
+    "script": "scripts/s15_reference_values.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Table 6 / FORM / trained retrieval void reading",
+    "artifact": "artifacts/s13_usability/tables/usability_TRI_FORMATION.json",
+    "key": "TRI_FORMATION.recency.term_ablation.pattern_term_removed",
+    "script": "scripts/s13_usability.py",
+    "seeds": "generation 0; model_init 0 (A), ensemble A/B 0-4; attribution_sampling 0,1,2 (TimeSHAP), 0 (floor); evaluation 20260915"
+  },
+  {
+    "cell": "Figure 7 / MATR",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "MATR.recency.operators.<op>.{rank,temporal}, chance",
+    "script": "scripts/s14_degraded_map_test.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Figure 7 / HUST",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "HUST.recency.operators.<op>.{rank,temporal}, chance",
+    "script": "scripts/s14_degraded_map_test.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Figure 7 / FORM",
+    "artifact": "artifacts/s14_degraded_map_test/tables/degradation.json",
+    "key": "TRI_FORMATION.recency.operators.<op>.{rank,temporal}, chance",
+    "script": "scripts/s14_degraded_map_test.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; evaluation 20260915"
+  },
+  {
+    "cell": "Figure 8 / MATR",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "MATR.weightings.recency.{scores,identifiability_floor}",
+    "script": "scripts/s15_reference_values.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; model_init A/B 0-4; attribution_sampling 0,1,2; evaluation 20260915"
+  },
+  {
+    "cell": "Figure 8 / HUST",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "HUST.weightings.recency.{scores,identifiability_floor}",
+    "script": "scripts/s15_reference_values.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; model_init A/B 0-4; attribution_sampling 0,1,2; evaluation 20260915"
+  },
+  {
+    "cell": "Figure 8 / FORM",
+    "artifact": "artifacts/s15_reference_values/tables/reference_values.json",
+    "key": "TRI_FORMATION.weightings.recency.{scores,identifiability_floor}",
+    "script": "scripts/s15_reference_values.py; scripts/s16_export_results.py",
+    "seeds": "generation 0; model_init A/B 0-4; attribution_sampling 0,1,2; evaluation 20260915"
+  }
+]

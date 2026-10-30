@@ -1,0 +1,9 @@
+name,expected,observed,passed,severity
+MATR: held-out units and windows equal S11's and S08's stored per-unit errors,identical,True,True,error
+MATR: retrained TRTR full m0 reproduces S11's per-unit errors,max rel diff < 1e-6,0.00e+00,True,warn
+MATR: retrained TSTR full g0 m0 reproduces S11's per-unit errors,max rel diff < 1e-6,0.00e+00,True,warn
+MATR: S11 TRTR equals S08 full_D27 TRTR (the measured side of the X2-share comparator),equal,max rel 0.00e+00,True,error
+HUST: held-out units and windows equal S11's and S08's stored per-unit errors,identical,True,True,error
+HUST: retrained TRTR full m0 reproduces S11's per-unit errors,max rel diff < 1e-6,0.00e+00,True,warn
+HUST: retrained TSTR full g0 m0 reproduces S11's per-unit errors,max rel diff < 1e-6,0.00e+00,True,warn
+HUST: S11 TRTR equals S08 full_D27 TRTR (the measured side of the X2-share comparator),equal,max rel 0.00e+00,True,error

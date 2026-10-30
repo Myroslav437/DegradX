@@ -1,0 +1,7 @@
+# S2 run config. Declared constants live in configs/declarations.yaml; these mirror D11/D12 for the audit runner.
+capacity_column: capacity_cycler_Ah         # declarations capacity_series.source (D11)
+cleaning_rule:                              # declarations capacity_series.cleaning_rule (D12)
+  name: iso05_rc
+  drop_degenerate: true
+  isolated_excursion_frac: 0.05
+  drop_recovered_collapse: true

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use DegradX, please cite the paper below."
+title: "DegradX"
+abstract: "A dataset-calibrated synthetic benchmark for evaluating feature attribution on degrading systems: generator, fitted profiles, seeds, trained models, attribution ground truth and scoring."
+repository-code: "https://github.com/Myroslav437/DegradX"
+type: software
+authors:
+  - family-names: Mishchuk
+    given-names: Myroslav
+    affiliation: "Silesian University of Technology; Lviv Polytechnic National University"
+  - family-names: Cupek
+    given-names: Rafał
+    affiliation: "Silesian University of Technology"
+  - family-names: Pavliuk
+    given-names: Olena
+    affiliation: "Silesian University of Technology; Lviv Polytechnic National University"
+preferred-citation:
+  type: conference-paper
+  title: "DegradX: A Dataset-Calibrated Synthetic Benchmark for Attribution Evaluation on Degrading Systems"
+  authors:
+    - family-names: Mishchuk
+      given-names: Myroslav
+    - family-names: Cupek
+      given-names: Rafał
+    - family-names: Pavliuk
+      given-names: Olena
+  collection-title: "Asian Conference on Intelligent Information and Database Systems (ACIIDS 2027)"
+  conference:
+    name: "ACIIDS 2027"
+    website: "https://aciids.pwr.edu.pl/2027/"
+  year: 2027
+  notes: "Submitted"

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "TRI_FORMATION [recency]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.179",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0000 [-0.0004, 0.0003]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0001 [-0.0001, 0.0003]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.1457 [0.1285, 0.1811]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0937 [0.0738, 0.1195]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0963 [0.0762, 0.1224]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: mean term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "2.5808 [2.2302, 3.0334]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: pattern term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "0.0000 [-0.0001, 0.0002]",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: |graded/sparse correlation| <= 0.3 (test windows)",
+    "expected": "<= 0.3",
+    "observed": "0.0451",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [recency]: variance ratio within the declared band [0.05, 0.5]",
+    "expected": "[0.05, 0.5]",
+    "observed": "0.0000",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: primary model reaches the accuracy gate (NRMSE <= 0.3)",
+    "expected": "<= 0.3",
+    "observed": "0.183",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: all 10 ensemble members pass the gate",
+    "expected": "10/10",
+    "observed": "10/10",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: permutation importance of null_flat <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "-0.0003 [-0.0008, 0.0003]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: permutation importance of null_permuted <= 0.02 (upper 95% bound; leakage test)",
+    "expected": "<= 0.02",
+    "observed": "0.0004 [0.0001, 0.0008]",
+    "passed": true,
+    "severity": "error"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: X4 weighted channel capacity used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.1433 [0.1265, 0.1720]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: X4 weighted channel charge_time used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.1003 [0.0790, 0.1272]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: X4 weighted channel mean_discharge_voltage used by the primary model (lower bound > 0; reported, voids channel-level trained scores if not)",
+    "expected": "> 0",
+    "observed": "0.0998 [0.0802, 0.1251]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: mean term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "2.5808 [2.2159, 3.0524]",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: pattern term removed increases error on y (95% CI > 0)",
+    "expected": "CI > 0",
+    "observed": "0.0003 [-0.0006, 0.0012]",
+    "passed": false,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: |graded/sparse correlation| <= 0.3 (test windows)",
+    "expected": "<= 0.3",
+    "observed": "0.0081",
+    "passed": true,
+    "severity": "warn"
+  },
+  {
+    "name": "TRI_FORMATION [uniform]: variance ratio within the declared band [0.05, 0.5]",
+    "expected": "[0.05, 0.5]",
+    "observed": "0.0000",
+    "passed": false,
+    "severity": "warn"
+  }
+]

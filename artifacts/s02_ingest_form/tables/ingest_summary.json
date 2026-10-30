@@ -1,0 +1,178 @@
+{
+  "counts": {
+    "aging_files_current": 182,
+    "parsed": 182,
+    "with_sheet_row": 182,
+    "in_scope": 182,
+    "excluded_by_reason": {},
+    "undocumented_files_current": [],
+    "undocumented_files_original_not_used": [
+      "Nova_Regular_Ref_100.091.json.gz",
+      "Nova_Regular_Ref_101.092.json.gz",
+      "Nova_Regular_Ref_102.093.json.gz"
+    ],
+    "reference_counts": {
+      "designed": 186,
+      "sheet_rows_incl_baseline": 183,
+      "design_rows": 180,
+      "rhyu_used": 178
+    },
+    "sheet_rows_without_file": [
+      298
+    ],
+    "positions": 189485,
+    "cycles_per_cell": {
+      "count": 182.0,
+      "mean": 1041.1,
+      "std": 184.4,
+      "min": 736.0,
+      "25%": 922.2,
+      "50%": 1020.0,
+      "75%": 1123.0,
+      "max": 1625.0
+    },
+    "missing_fields": {},
+    "predicates_masks_events_total": {
+      "degenerate_no_samples": 8,
+      "degenerate_capacity": 0,
+      "incomplete_a": 0,
+      "incomplete_b": 0,
+      "incomplete_c": 1,
+      "non_aging": 1,
+      "mask_a": 2322,
+      "mask_c_pause_in_charge": 0,
+      "rest_events.": 187145,
+      "rest_events.diagnostic": 2140,
+      "rest_events.gap": 112,
+      "rest_events.paused": 88,
+      "dst_artefacts": 75,
+      "spring_forward_flagged": 6,
+      "paused_cycles": 164,
+      "paused_located": 0,
+      "overlap_ramp_cycles": 190,
+      "non_aging_only_with_ramp": 0
+    },
+    "labelled_diagnostic_aging_current": {}
+  },
+  "d33_r4_literal_estimator": {
+    "excluded_by_reason": {
+      "out of tolerance (within-cell protocol change: run of > 11 non-aging cycles)": 40
+    },
+    "sources": 40,
+    "agreeing_pairs": 114,
+    "second_protocol_present": true,
+    "modal": {
+      "I_chg": 0.24,
+      "I_dis": 0.18,
+      "V_cv": 4.4,
+      "V_end": 3.0
+    }
+  },
+  "modal_tuple": {
+    "I_chg": 0.24,
+    "I_dis": 0.18,
+    "V_cv": 4.4,
+    "V_end": 3.0
+  },
+  "v_end_ref": 3.0,
+  "documented": {
+    "I_chg": 0.24,
+    "I_dis": 0.18,
+    "V_cv": 4.4,
+    "V_end": 3.0
+  },
+  "e2_files": {
+    "modal_within_documented": {
+      "I_chg": true,
+      "I_dis": true,
+      "V_cv": true,
+      "V_end": true
+    },
+    "incomplete_share_pooled": 5.277462595983851e-06,
+    "fails": false
+  },
+  "second_protocol": {
+    "sources": [],
+    "agreeing_pairs": [],
+    "present": false
+  },
+  "charge_time_validation": {
+    "evaluable": 178,
+    "failing": [],
+    "o_median_min_across_files": {
+      "median": 5.439563605269111,
+      "min": 5.395942942945595,
+      "max": 5.489719719719133
+    },
+    "o_iqr_max_min": 0.29641166166136124,
+    "finiteness_agreement_min": 1.0
+  },
+  "structuring_parameters": {
+    "v_range": {
+      "[3.0, 4.4]": 182
+    },
+    "resolution": {
+      "1000": 182
+    },
+    "diagnostic_resolution": {
+      "500": 182
+    },
+    "nominal_capacity": {
+      "0.24": 182
+    },
+    "full_fast_charge": {
+      "1": 182
+    },
+    "charge_axis": {
+      "test_time": 182
+    },
+    "discharge_axis": {
+      "test_time": 182
+    }
+  },
+  "writer_markers": {
+    "diagnostic_available_in_sp=False | top_level_diagnostic=True | step_index_in_cycles_interpolated=True | raw_data=False": 182
+  },
+  "maccor_protocol_names": {
+    "Formation_Maccor_5_ocv_72h.000": 71,
+    "Formation_Maccor_5_ocv_0h.000": 68,
+    "Formation_Maccor_5_ocv_168h.000": 43
+  },
+  "formation_mapping": {
+    "protocol_groups": 63,
+    "in_scope_per_protocol": {
+      "count": 63.0,
+      "mean": 2.89,
+      "std": 0.32,
+      "min": 2.0,
+      "25%": 3.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 3.0
+    },
+    "tagged_cells_in_scope": {
+      "140": "this cell after regular cycling bulged up like a ballon; ",
+      "142": "cells on channel 44-68 after cycling are swallen; ",
+      "143": "Big antechamber incident, the cells are cut open for more than a day, dried in a blue bin; ",
+      "155": "accidentally stopped the tests during formation CV hold at 1.5V, but file is still usable; ",
+      "163": "Dried in a strange bag; ",
+      "187": "Dried in the big antechamber from 10/18 to 10/19, switched to the new electrolyte opened on 10/19; ",
+      "188": "Dried with cells lying down; ",
+      "208": "noticed that electrolyte bottle cap area has brownish liquid; ",
+      "269": "Repeating the problematic batch   1. with my own March electrolyte (opened on 03/28)   2. dry cells on 04/06; ",
+      "274": "shorted; ",
+      "276": "shorted; ",
+      "278": "shorted; ",
+      "287": "this has weird composition; ",
+      "312": "This batch was using brown bottle eletrolyte  but then I need to refill it; no electrolyte weight was recorded so need to be careful with this batch; "
+    }
+  },
+  "channels_availability_preview": {
+    "temperature_nonnull_share": 0.0,
+    "ir_nonzero_share": 0.0
+  },
+  "cross_check_mdv_samples_minus_summary_V": {
+    "median_abs": 3.7556119570236746e-05,
+    "p95_abs": 5.341991940881474e-05
+  }
+}

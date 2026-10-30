@@ -1,0 +1,25 @@
+{
+  "stage": "s10_generate_units",
+  "device": "cuda",
+  "wall_clock_s": 310.66,
+  "sections_s": {
+    "MATR_generate_seed0": 0.054,
+    "MATR_checks_seed0": 4.426,
+    "MATR_generate_seed1": 0.056,
+    "MATR_checks_seed1": 3.021,
+    "MATR_generate_seed2": 0.04,
+    "MATR_checks_seed2": 2.908,
+    "MATR_x3_off_set": 0.071,
+    "MATR_estimator_check": 134.643,
+    "MATR_figures": 1.52,
+    "HUST_generate_seed0": 0.078,
+    "HUST_checks_seed0": 5.249,
+    "HUST_generate_seed1": 0.07,
+    "HUST_checks_seed1": 5.072,
+    "HUST_generate_seed2": 0.06,
+    "HUST_checks_seed2": 5.1,
+    "HUST_x3_off_set": 0.113,
+    "HUST_estimator_check": 144.4,
+    "HUST_figures": 1.002
+  }
+}

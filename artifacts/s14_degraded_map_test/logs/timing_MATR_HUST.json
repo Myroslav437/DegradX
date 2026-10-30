@@ -1,0 +1,11 @@
+{
+  "stage": "s14_degraded_map_test",
+  "device": "cuda",
+  "wall_clock_s": 121.04,
+  "sections_s": {
+    "MATR_recency_part_a": 28.307,
+    "MATR_uniform_part_a": 26.6,
+    "HUST_recency_part_a": 27.34,
+    "HUST_uniform_part_a": 25.19
+  }
+}

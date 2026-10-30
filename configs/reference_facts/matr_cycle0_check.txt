@@ -1,0 +1,12 @@
+cell0 cycle0 I (2,) uint64 [0 0] {'H5PATH': b'/#refs#/r0', 'MATLAB_class': b'double', 'MATLAB_empty': 1}
+cell0 cycle0 Qd (2,) uint64 [0 0] {'H5PATH': b'/#refs#/Y5b', 'MATLAB_class': b'double', 'MATLAB_empty': 1}
+cell0 cycle0 V (2,) uint64 [0 0] {'H5PATH': b'/#refs#/Csb', 'MATLAB_class': b'double', 'MATLAB_empty': 1}
+cell0 cycle0 t (2,) uint64 [0 0] {'H5PATH': b'/#refs#/6w', 'MATLAB_class': b'double', 'MATLAB_empty': 1}
+cell0 cycle1 Qd (1, 1087) {'H5PATH': b'/#refs#/Z5b', 'MATLAB_class': b'double'} max 1.0706892
+summary cycle (1189,) [1. 2. 3. 4.] [1188. 1189.]
+summary QDischarge (1189,) [0.        1.0706892 1.0719005 1.0725095] [1.0266768 1.0262098]
+summary IR (1189,) [0.         0.01674235 0.01672431 0.01668125] [0.01707222 0.0170891 ]
+summary chargetime (1189,) [ 0.         13.34125    13.42577667 13.42516667] [13.34097167 13.42571167]
+summary Tavg (1189,) [ 0.         31.87501078 31.93149033 31.93260348] [32.20877834 32.20080358]
+b1c8 cycle_life raw [[879.]]
+fetched MB 11.712817
