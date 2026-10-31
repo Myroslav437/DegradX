@@ -1,4 +1,4 @@
-"""DegradX: dataset-calibrated synthetic benchmark for attribution evaluation on degrading systems.
+"""DegradX: dataset-calibrated synthetic testbed for attribution evaluation on degrading systems.
 
 The package implements the generator, the fitting procedure, the decomposable target and its attribution ground truth,
 the fidelity / usability measures and the attribution scores. Stage scripts under ``scripts/`` are the entry points.

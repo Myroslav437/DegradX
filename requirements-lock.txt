@@ -2,7 +2,7 @@
 # torch and its nvidia-* / cuda-* dependencies come from the PyTorch CUDA 13.0 wheel index:
 #   --extra-index-url https://download.pytorch.org/whl/cu130
 # Install with:  pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu130
-# (scripts/s0_setup_env.sh does this). BatteryML is installed from git at the pinned commit.
+# (scripts/setup_env.sh does this). BatteryML is installed from git at the pinned commit.
 # timeshap 1.0.4 needs a shap Kernel alias at import time (see pyproject.toml comment).
 addict==2.4.0
 altair==6.3.0

@@ -134,17 +134,17 @@ def run_checks(ct: CheckTable, tables: dict[str, pd.DataFrame], logs: dict) -> d
     ok = all(int(merged.at[c, "n"] + merged.at[c, "dropped"] + 1) == MATR_MERGED[c] for c in MATR_MERGED)
     ct.require("MATR merged b1c0..4 lengths equal merged entries", ok, MATR_MERGED, {c: int(merged.at[c, "n"] + merged.at[c, "dropped"] + 1) for c in MATR_MERGED})
     summary["MATR_dropped_placeholder_cycles"] = {k: v for k, v in dropped.items() if v}
-    # ---- HUST against ESI Table S01
+    # ---- HUST against ESI Table S1
     h = tables["HUST"]
     ref = pd.read_csv(REF / "hust_tableS1.csv")
     hn = h.groupby("cell_id").size()
     ids = sorted(c.split("_", 1)[1] for c in hn.index)
-    ct.require("HUST: 77 cells equal to ESI Table S01 channels", ids == sorted(ref["channel"]), "Table S01 channels", f"{len(ids)} cells; diff {sorted(set(ids) ^ set(ref['channel']))}")
+    ct.require("HUST: 77 cells equal to ESI Table S1 channels", ids == sorted(ref["channel"]), "Table S1 channels", f"{len(ids)} cells; diff {sorted(set(ids) ^ set(ref['channel']))}")
     exp_n = ref.set_index("channel")["cycle_life"].copy()
     exp_n.loc["7-5"] -= 2  # BatteryML skips the first two cycles of 7-5
     obs_n = hn.rename(lambda c: c.split("_", 1)[1])
     mism = {c: (int(exp_n[c]), int(obs_n.get(c, -1))) for c in exp_n.index if int(obs_n.get(c, -1)) != int(exp_n[c])}
-    ct.require("HUST: per-cell cycle counts equal Table S01 cycle life (7-5 minus 2)", not mism, "0 mismatches", mism or "0 mismatches")
+    ct.require("HUST: per-cell cycle counts equal Table S1 cycle life (7-5 minus 2)", not mism, "0 mismatches", mism or "0 mismatches")
     ct.require("HUST: total stored cycles = 146,120", int(hn.sum()) == 146120, 146120, int(hn.sum()))
     ct.require("HUST: cycler capacity attached to every cycle", int(h["capacity_cycler_Ah"].isna().sum()) == 0, 0, int(h["capacity_cycler_Ah"].isna().sum()))
     return summary

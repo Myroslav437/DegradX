@@ -118,7 +118,7 @@ def main() -> int:
                 vg, vs = float(np.var(te["graded_sum"])), float(np.var(te["sparse_sum"]))
                 r["variance_ratio_pattern_to_mean"] = vs / vg if has_patterns else None
                 r["variance_ratio_void"] = None if has_patterns else "no inserted patterns in this profile (D05)"
-                if has_patterns:  # declarations usability.graded_sparse_correlation_bound, on the test windows (first run with patterns: FORM FORM)
+                if has_patterns:  # declarations usability.graded_sparse_correlation_bound, on the test windows (first run with patterns: FORM)
                     G_, S_ = [], []
                     for u in by_split["test"]:
                         if u.T < L:

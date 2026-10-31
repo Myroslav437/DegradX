@@ -1,6 +1,6 @@
 # DegradX
 
-DegradX is a dataset-calibrated synthetic benchmark for evaluating feature attribution on degrading systems.
+DegradX is a dataset-calibrated synthetic testbed for evaluating feature attribution on degrading systems.
 
 A generator is fitted to a measured battery-degradation dataset; each fitted configuration is called a *profile*. The
 generated multivariate sequences carry a regression target that is an exact additive function of a nonstationary mean
@@ -19,13 +19,13 @@ the ground truth and the scores, and the code and outputs behind every reported 
 
 ## Citation
 
-> M. Mishchuk, R. Cupek, O. Pavliuk. *DegradX: A Dataset-Calibrated Synthetic Benchmark for Attribution Evaluation on
+> M. Mishchuk, R. Cupek, O. Pavliuk. *DegradX: A Dataset-Calibrated Synthetic Testbed for Attribution Evaluation on
 > Degrading Systems.* Asian Conference on Intelligent Information and Database Systems (ACIIDS 2027),
 > <https://aciids.pwr.edu.pl/2027/>. Submitted.
 
 ```bibtex
 @inproceedings{mishchuk2027degradx,
-  title     = {{DegradX}: A Dataset-Calibrated Synthetic Benchmark for Attribution Evaluation on Degrading Systems},
+  title     = {{DegradX}: A Dataset-Calibrated Synthetic Testbed for Attribution Evaluation on Degrading Systems},
   author    = {Mishchuk, Myroslav and Cupek, Rafa{\l} and Pavliuk, Olena},
   booktitle = {Asian Conference on Intelligent Information and Database Systems (ACIIDS 2027)},
   year      = {2027},

@@ -36,7 +36,7 @@ MATR 2018-04-12: stored + dropped + skipped index 0 equals file cycle entries,51
 MATR 2019-01-24: cells emitted,45,45,True,error
 MATR 2019-01-24: stored + dropped + skipped index 0 equals file cycle entries,39673,39673,True,error
 MATR merged b1c0..4 lengths equal merged entries,"{'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}","{'MATR_b1c0': 1851, 'MATR_b1c1': 2159, 'MATR_b1c2': 2236, 'MATR_b1c3': 1433, 'MATR_b1c4': 1708}",True,error
-HUST: 77 cells equal to ESI Table S01 channels,Table S1 channels,77 cells; diff [],True,error
-HUST: per-cell cycle counts equal Table S01 cycle life (7-5 minus 2),0 mismatches,0 mismatches,True,error
+HUST: 77 cells equal to ESI Table S1 channels,Table S1 channels,77 cells; diff [],True,error
+HUST: per-cell cycle counts equal Table S1 cycle life (7-5 minus 2),0 mismatches,0 mismatches,True,error
 "HUST: total stored cycles = 146,120",146120,146120,True,error
 HUST: cycler capacity attached to every cycle,0,0,True,error

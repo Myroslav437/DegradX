@@ -259,14 +259,14 @@
     "severity": "error"
   },
   {
-    "name": "HUST: 77 cells equal to ESI Table S01 channels",
+    "name": "HUST: 77 cells equal to ESI Table S1 channels",
     "expected": "Table S1 channels",
     "observed": "77 cells; diff []",
     "passed": true,
     "severity": "error"
   },
   {
-    "name": "HUST: per-cell cycle counts equal Table S01 cycle life (7-5 minus 2)",
+    "name": "HUST: per-cell cycle counts equal Table S1 cycle life (7-5 minus 2)",
     "expected": "0 mismatches",
     "observed": "0 mismatches",
     "passed": true,

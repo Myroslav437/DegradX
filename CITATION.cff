@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use DegradX, please cite the paper below."
 title: "DegradX"
-abstract: "A dataset-calibrated synthetic benchmark for evaluating feature attribution on degrading systems: generator, fitted profiles, seeds, trained models, attribution ground truth and scoring."
+abstract: "A dataset-calibrated synthetic testbed for evaluating feature attribution on degrading systems: generator, fitted profiles, seeds, trained models, attribution ground truth and scoring."
 repository-code: "https://github.com/Myroslav437/DegradX"
 type: software
 authors:
@@ -16,7 +16,7 @@ authors:
     affiliation: "Silesian University of Technology; Lviv Polytechnic National University"
 preferred-citation:
   type: conference-paper
-  title: "DegradX: A Dataset-Calibrated Synthetic Benchmark for Attribution Evaluation on Degrading Systems"
+  title: "DegradX: A Dataset-Calibrated Synthetic Testbed for Attribution Evaluation on Degrading Systems"
   authors:
     - family-names: Mishchuk
       given-names: Myroslav

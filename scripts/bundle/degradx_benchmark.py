@@ -61,7 +61,8 @@ class Benchmark:
     def __init__(self, profile: str, seed: int, root: Path):
         self.root = Path(root)
         d = self.root / profile
-        z = np.load(d / f"seed{seed}.npz", allow_pickle=False)
+        with np.load(d / f"seed{seed}.npz", allow_pickle=False) as npz:
+            z = {k: npz[k] for k in npz.files}  # decompress once: every NpzFile access decompresses the whole array again
         meta = json.loads((self.root / "manifest.json").read_text())["profiles"][profile]
         self.profile, self.seed = profile, seed
         self.channels: list[str] = list(meta["channels"])

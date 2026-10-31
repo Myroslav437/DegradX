@@ -384,7 +384,7 @@ def main() -> int:
                 ps[kind]["_per_unit"] = r_main["_per_unit"]
             # formation-protocol share (headline: unit-mean y_offset under recency)
             pu = pd.DataFrame(ps["recency"]["_per_unit"]).merge(df.drop_duplicates("cell_id")[["cell_id", "protocol_id", "seq"]], on="cell_id")
-            g_ = rng(seed, "evaluation", "S04-protocol", DS)
+            g_ = rng(seed, "evaluation", "W2-protocol", DS)  # stream name of the run behind the committed artifacts; renaming it changes the draws
             n_perm = int(n_boot)
             head = protocol_share(pu["y_offset_mean"], pu["protocol_id"], g_, n_perm)
             offs = prof["offsets_noise"]["offsets_all_fitting_units"]

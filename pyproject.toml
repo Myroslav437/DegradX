@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "degradx"
 version = "0.0.1"
-description = "DegradX: a dataset-calibrated synthetic benchmark for attribution evaluation on degrading systems"
+description = "DegradX: a dataset-calibrated synthetic testbed for attribution evaluation on degrading systems"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 authors = [{ name = "Myroslav Mishchuk" }]

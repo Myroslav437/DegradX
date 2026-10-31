@@ -131,7 +131,7 @@ gives the same arrays.
 
 ```bibtex
 @inproceedings{mishchuk2027degradx,
-  title     = {{DegradX}: A Dataset-Calibrated Synthetic Benchmark for Attribution Evaluation on Degrading Systems},
+  title     = {{DegradX}: A Dataset-Calibrated Synthetic Testbed for Attribution Evaluation on Degrading Systems},
   author    = {Mishchuk, Myroslav and Cupek, Rafa{\l} and Pavliuk, Olena},
   booktitle = {Asian Conference on Intelligent Information and Database Systems (ACIIDS 2027)},
   year      = {2027},

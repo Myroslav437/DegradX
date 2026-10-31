@@ -4,7 +4,7 @@ declared_by_design.form.archive) into their own empty directories, then record e
 member list (name, size, type) BEFORE any member is opened, and fetch the pinned formation-protocol sheet
 (form.formation_mapping). Nothing is extracted here.
 
-Outputs: data/FORM/raw/{archive_current,archive_original,formation_mapping}/ (gitignored),
+Outputs: data/raw/TRI_FORMATION/{archive_current,archive_original,formation_mapping}/ (gitignored),
 configs/raw_checksums_form.sha256, artifacts/s02_ingest_form/tables/archive_members_<version>.csv and
 artifacts/s02_ingest_form/tables/raw_files.json.
 """

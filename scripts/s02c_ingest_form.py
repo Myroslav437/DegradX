@@ -4,10 +4,10 @@ declared_by_design.form (decision D32), one file per process (spawn, maxtasksper
 
   pass 1  per file (degradx.data.tri_formation.convert_file): BEEP writer markers and structuring_parameters, per-cycle summary
           quantities and sample statistics, diagnostic cycles, the positional charge-time validation;
-          data/FORM/processed/tri_cycles/<seq>_{cycles,diagnostics}.csv.gz
+          data/processed/tri_cycles/<seq>_{cycles,diagnostics}.csv.gz
   pass 2  across files (build_cycle_table): cell scope (i)-(iv), the modal aging protocol and its tolerance, the second-protocol
           test, E2 on the files, non-aging cycles, predicates, positions, the charge-time mask, rest events (diagnostic, paused,
-          gap; DST artefacts), formation protocol and tags; data/FORM/processed/cycle_tables/TRI_FORMATION.csv.gz
+          gap; DST artefacts), formation protocol and tags; data/processed/cycle_tables/TRI_FORMATION.csv.gz
   checks  declarations form.converter_checks and the S02 stop cases (archive integrity was checked by s02a_fetch_form.py)
 Outputs in artifacts/s02_ingest_form.
 """

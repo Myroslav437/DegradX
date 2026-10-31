@@ -8,7 +8,7 @@ by opening other members:
     name does not start with Nova_;
   * the original (2024) archive contributes an aging file only for a seq the current archive lacks (archive.rule (b)); an
     integrity failure of the current archive is recorded and stops the script for the archive.rule (a) decision.
-Safe extraction (tarfile 'data' filter) into new directories data/FORM/raw/extracted_{current,original}/. Writes
+Safe extraction (tarfile 'data' filter) into new directories data/raw/TRI_FORMATION/extracted_{current,original}/. Writes
 artifacts/s02_ingest_form/tables/extraction_manifest.json (member, archive, criterion, bytes, sha256).
 """
 from __future__ import annotations
